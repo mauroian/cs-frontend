@@ -1,0 +1,56 @@
+/* Poppins and EB Garamond in: regular, medium, semi-bold, bold, extra-bold. And italics. */
+@import url("https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600;1,700;1,800&family=Poppins:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600;1,700;1,800&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+    font-size: 1vw;
+}
+
+.header {
+    @apply max-h-24;
+}
+
+.menu {
+    @apply gap-4 mr-auto ml-auto; /* Eg. mr-4 or ml-4  */
+}
+
+.menu-item {
+    @apply font-serif uppercase text-sm tracking-wide relative;
+}
+
+.menu-item-span {
+    @apply relative;
+    line-height: 1;
+    transition-duration: .3s;
+    transition-property: all;
+    transition-timing-function: cubic-bezier(.4,0,.2,1);
+    transition-timing-function: cubic-bezier(.4,0,1,1);
+}
+
+.menu-item-icon {
+    @apply ml-1;
+}
+
+.menu-auth-icon {
+    @apply ml-1;
+}
+
+.menu-auth-item {
+    @apply font-sans uppercase font-bold;
+}
+
+.menu-item-span:after {
+    @apply -bottom-1 block h-0.5 left-1/2 absolute w-0 bg-cs-red-main;
+    --tw-bg-opacity: 1;
+    --tw-content: "";
+    content: var(--tw-content);
+    transition: width .3s ease 0s, left .3s ease 0s;
+}
+
+.menu-item-span:hover:after {
+    width: 100%;
+    left: 0;
+}
