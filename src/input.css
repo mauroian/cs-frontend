@@ -10,7 +10,7 @@
 }
 
 .menu {
-    @apply gap-4 mr-auto ml-auto; /* Eg. mr-4 or ml-4  */
+    @apply ml-auto mr-auto gap-4; /* Eg. mr-4 or ml-4  */
 }
 
 .menu-logo {
@@ -22,16 +22,16 @@
 }
 
 .menu-item {
-    @apply font-serif uppercase text-sm tracking-wide relative;
+    @apply relative font-serif text-sm uppercase tracking-wide;
 }
 
 .menu-item-span {
     @apply relative;
     line-height: 1;
-    transition-duration: .3s;
+    transition-duration: 0.3s;
     transition-property: all;
-    transition-timing-function: cubic-bezier(.4,0,.2,1);
-    transition-timing-function: cubic-bezier(.4,0,1,1);
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-timing-function: cubic-bezier(0.4, 0, 1, 1);
 }
 
 .menu-item-icon {
@@ -43,15 +43,17 @@
 }
 
 .menu-auth-item {
-    @apply font-sans uppercase font-bold;
+    @apply font-sans font-bold uppercase;
 }
 
 .menu-item-span:after {
-    @apply -bottom-1 block h-0.5 left-1/2 absolute w-0 bg-cs-red-main;
+    @apply absolute -bottom-1 left-1/2 block h-0.5 w-0 bg-cs-red-main;
     --tw-bg-opacity: 1;
     --tw-content: "";
     content: var(--tw-content);
-    transition: width .3s ease 0s, left .3s ease 0s;
+    transition:
+        width 0.3s ease 0s,
+        left 0.3s ease 0s;
 }
 
 .menu-item-span:hover:after {
@@ -60,7 +62,7 @@
 }
 
 .testimonials-badge {
-    @apply px-1 py-0 text-badge -top-2.5 -right-9;
+    @apply -right-9 -top-2.5 px-1 py-0 text-badge;
 }
 
 .sign-up-login-spacing {

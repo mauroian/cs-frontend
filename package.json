@@ -2,8 +2,9 @@
   "name": "cs-frontend",
   "private": true,
   "version": "0.0.0",
+  "type": "module",
   "scripts": {
-    "dev": "tailwindcss -i ./src/input.css -o ./src/output.css --watch",
+    "dev": "vite dev",
     "build": "vite build",
     "preview": "vite preview",
     "format": "prettier --write  './**/*.{css,scss,html,md}'",
@@ -15,6 +16,10 @@
     "prettier": "^3.4.2",
     "prettier-plugin-tailwindcss": "^0.6.11",
     "tailwindcss": "^3.4.17",
-    "vite": "^6.0.5"
+    "vite": "^6.0.5",
+    "vite-imagetools": "^7.0.5",
+    "vite-plugin-ejs": "^1.7.0",
+    "vite-plugin-php": "^1.0.68",
+    "vite-plugin-static-copy": "^2.2.0"
   }
 }
