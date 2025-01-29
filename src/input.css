@@ -5,16 +5,20 @@
 @tailwind components;
 @tailwind utilities;
 
-html {
-    font-size: 1vw;
-}
-
 .header {
-    @apply max-h-24;
+    @apply h-24;
 }
 
 .menu {
     @apply gap-4 mr-auto ml-auto; /* Eg. mr-4 or ml-4  */
+}
+
+.menu-logo {
+    @apply ml-0;
+}
+
+.menu-auth {
+    @apply mr-0;
 }
 
 .menu-item {
@@ -53,4 +57,12 @@ html {
 .menu-item-span:hover:after {
     width: 100%;
     left: 0;
+}
+
+.testimonials-badge {
+    @apply px-1 py-0 text-badge -top-2.5 -right-9;
+}
+
+.sign-up-login-spacing {
+    @apply mr-0;
 }

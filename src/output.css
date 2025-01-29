@@ -564,14 +564,6 @@ video {
   position: relative;
 }
 
-.-right-8{
-  right: -2rem;
-}
-
-.-top-2{
-  top: -0.5rem;
-}
-
 .mx-auto{
   margin-left: auto;
   margin-right: auto;
@@ -669,17 +661,8 @@ video {
   padding: 1rem;
 }
 
-.px-1{
-  padding-left: 0.25rem;
-  padding-right: 0.25rem;
-}
-
 .text-sm{
-  font-size: 0.9vw;
-}
-
-.text-xs{
-  font-size: 0.5vw;
+  font-size: 0.875rem;
 }
 
 .font-bold{
@@ -700,12 +683,8 @@ video {
   color: rgb(254 226 226 / var(--tw-text-opacity, 1));
 }
 
-html {
-  font-size: 1vw;
-}
-
 .header{
-  max-height: 6rem;
+  height: 6rem;
 }
 
 .menu{
@@ -715,10 +694,18 @@ html {
   /* Eg. mr-4 or ml-4  */
 }
 
+.menu-logo{
+  margin-left: 0px;
+}
+
+.menu-auth{
+  margin-right: 0px;
+}
+
 .menu-item{
   position: relative;
   font-family: "EB Garamond", serif;
-  font-size: 0.9vw;
+  font-size: 0.875rem;
   text-transform: uppercase;
   letter-spacing: 0.025em;
 }
@@ -763,6 +750,20 @@ html {
 .menu-item-span:hover:after {
   width: 100%;
   left: 0;
+}
+
+.testimonials-badge{
+  top: -0.625rem;
+  right: -2.25rem;
+  padding-left: 0.25rem;
+  padding-right: 0.25rem;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  font-size: 0.6rem;
+}
+
+.sign-up-login-spacing{
+  margin-right: 0px;
 }
 
 @media (min-width: 768px){
