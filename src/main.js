@@ -21,19 +21,22 @@ btn.addEventListener("click", () => {
   menuToggle(menu);
 });
 
-onClickOutside(() => {
-  loggedMenu.classList.add('invisible');
-  loggedMenu.classList.remove('visible');
-  loggedMenu.classList.remove("opacity-100");
-  loggedMenu.classList.add("opacity-0");
-});
 
-loggedMenuBtn.addEventListener("click", () => {
-  loggedMenu.classList.toggle('invisible');
-  loggedMenu.classList.toggle('visible');
-  loggedMenu.classList.toggle("opacity-0");
-  loggedMenu.classList.toggle("opacity-100");
-});
+if(loggedMenuBtn) {
+  onClickOutside(() => {
+    loggedMenu.classList.add('invisible');
+    loggedMenu.classList.remove('visible');
+    loggedMenu.classList.remove("opacity-100");
+    loggedMenu.classList.add("opacity-0");
+  });
+
+  loggedMenuBtn.addEventListener("click", () => {
+    loggedMenu.classList.toggle('invisible');
+    loggedMenu.classList.toggle('visible');
+    loggedMenu.classList.toggle("opacity-0");
+    loggedMenu.classList.toggle("opacity-100");
+  });
+}
 
 document.addEventListener("DOMContentLoaded", () => {
   const mobileMenuButtons = document.querySelectorAll(".cs-mobile-menu-button");

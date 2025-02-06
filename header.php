@@ -1,6 +1,6 @@
 <?php
 // changing the following variable to false will toggle the user logged state
-$isLogged = true;
+$isLogged = isset($_GET['logged']) && $_GET['logged'] === 'true';
 ?>
 <header class="bg-cs-paper">
     <nav class="cs-header relative mx-auto flex  items-center p-4 text-cs-red-main" aria-label="Header">
@@ -259,7 +259,7 @@ $isLogged = true;
                         </li>
                     </ul>
                     <div class="cs-menu-logged-bottom flex">
-                        <a href="#" class="flex flex-row items-center">
+                        <a href="/" class="flex flex-row items-center">
                             <img src="src/assets/log-out.svg" class="h-4 w-auto my-auto cs-menu-logged-icon"
                                  alt="Log Out"/>
                             Log out
@@ -273,7 +273,7 @@ $isLogged = true;
                     <span>Sign Up</span>
                     <img src="src/assets/sign-up.svg" class="h-4 w-auto my-auto cs-menu-auth-icon" alt="Sign Up"/>
                 </a>
-                <a href="#" class="text-sm font-medium ml-4 flex flex-row cs-menu-auth-item">
+                <a href="/?logged=true" class="text-sm font-medium ml-4 flex flex-row cs-menu-auth-item">
                     <span>Log In</span>
                     <img src="src/assets/log-in.svg" class="h-4 w-auto my-auto cs-menu-auth-icon" alt="Log In"/>
                 </a>
@@ -281,7 +281,8 @@ $isLogged = true;
         <?php } ?>
     </nav>
     <!-- mobile menu voices -->
-    <div class="cs-mobile-menu hidden overflow-hidden md:hidden text-cs-red-main">
+    <div class="md:hidden">
+    <div class="cs-mobile-menu hidden overflow-hidden text-cs-red-main">
         <div class=" group flex flex-col items-center cs-menu-item w-full">
             <button
                     aria-haspopup="true"
@@ -451,15 +452,16 @@ $isLogged = true;
                 <img src="src/assets/sign-up.svg" class="w-auto my-auto cs-mobile-menu-auth-icon" alt="Sign Up"/>
                 <span>Sign Up</span>
             </a>
-            <a href="#" class="text-sm font-medium flex flex-row cs-mobile-menu-auth-item">
+            <a href="/?logged=true" class="text-sm font-medium flex flex-row cs-mobile-menu-auth-item">
                 <img src="src/assets/log-in.svg" class="w-auto my-auto cs-mobile-menu-auth-icon" alt="Log In"/>
                 <span>Log In</span>
             </a>
         <?php } else { ?>
-            <a href="#" class="text-sm font-medium flex flex-row cs-mobile-menu-auth-item">
+            <a href="/" class="text-sm font-medium flex flex-row cs-mobile-menu-auth-item">
                 <img src="src/assets/log-in.svg" class="w-auto my-auto cs-mobile-menu-auth-icon" alt="Log Out"/>
                 <span>Log Out</span>
             </a>
         <?php } ?>
+    </div>
     </div>
 </header>
