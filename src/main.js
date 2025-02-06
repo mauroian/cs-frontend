@@ -39,6 +39,20 @@ if(loggedMenuBtn) {
 }
 
 document.addEventListener("DOMContentLoaded", () => {
+
+  $('.group.inline-block').hover(function() {
+    $(this).find('ul.cs-menu-nested').stop(true, true).delay(50).fadeIn(500);
+  }, function() {
+    $(this).find('ul.cs-menu-nested').stop(true, true).delay(50).fadeOut(200);
+  });
+
+
+  $('.cs-dropdown').hover(function() {
+    $(this).find('ul.cs-menu-inner').stop(true, true).delay(50).fadeIn(500);
+  }, function() {
+    $(this).find('ul.cs-menu-inner').stop(true, true).delay(50).fadeOut(200);
+  });
+
   const mobileMenuButtons = document.querySelectorAll(".cs-mobile-menu-button");
 
   /** logic to trigger the opening and close of the menu items **/

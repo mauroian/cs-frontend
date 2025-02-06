@@ -8,7 +8,7 @@
 @layer components {
     /* navbar main element */
     .cs-header {
-        @apply h-20 border-b-4 border-cs-red-main md:border-0 max-w-[1500px];
+        @apply h-20 border-b-4 border-cs-red-main md:border-0 max-w-[1500px] text-nowrap;
     }
 
     /* navbar container */
@@ -32,7 +32,7 @@
         @apply relative w-full font-serif text-sm uppercase tracking-wide md:w-auto;
     }
 
-    /* hover effect underline */
+    /* hover effect underline. If you need to change the animation from middle to left, change the class left-1/2 to left-0 and viceversa*/
     .cs-menu-item-span:after {
         @apply absolute -bottom-1 left-1/2 block h-0.5 w-0 bg-cs-red-main;
         --tw-bg-opacity: 1;
@@ -44,7 +44,7 @@
     }
 
     /* hover effect */
-    .cs-menu-item-span:hover:after {
+    .cs-menu-item:hover > .cs-menu-item-span:after {
         width: 100%;
         left: 0;
     }
@@ -82,12 +82,12 @@
 
     /* nested menu */
     .cs-menu-nested {
-        @apply absolute mt-3 origin-top scale-0 transform rounded-xl bg-orange-50 uppercase text-cs-red-main opacity-0 shadow-cs-all-around transition duration-300 ease-in-out group-hover:scale-100 group-hover:opacity-100;
+        @apply absolute mt-3 origin-top rounded-xl bg-orange-50 uppercase text-cs-red-main hidden shadow-cs-all-around;
     }
 
     /* nested menu transition */
     .cs-menu-inner {
-        @apply right-0 top-0 opacity-0 shadow-cs-all-around transition duration-300 ease-in;
+        @apply right-0 top-0 hidden shadow-cs-all-around transition duration-300 ease-in;
     }
 
     /* logged in navbar */
@@ -207,5 +207,13 @@
 
     .cs-mobile-menu-auth-icon {
         @apply ml-0 mr-2 h-4 md:ml-1 md:mr-0;
+    }
+
+    .cs-mobile-menu ul .cs-menu-voice-item {
+        @apply pl-6;
+    }
+
+    .cs-mobile-menu ul ul  .cs-menu-voice-item {
+        @apply pl-12;
     }
 }

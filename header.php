@@ -35,7 +35,7 @@ $isLogged = isset($_GET['logged']) && $_GET['logged'] === 'true';
                             <span class="cs-menu-item-span">The bible and the mass</span>
                         </a>
                     </li>
-                    <li class="relative cs-menu-voice-item">
+                    <li class="relative cs-menu-voice-item cs-dropdown">
                         <a
                                 aria-haspopup="true"
                                 aria-controls="menu-lang"
@@ -68,7 +68,7 @@ $isLogged = isset($_GET['logged']) && $_GET['logged'] === 'true';
                             </li>
                         </ul>
                     </li>
-                    <li class="rounded-sm relative cs-menu-voice-item">
+                    <li class="rounded-sm relative cs-menu-voice-item cs-dropdown">
                         <a
                                 aria-haspopup="true"
                                 aria-controls="menu-lang"
@@ -313,8 +313,8 @@ $isLogged = isset($_GET['logged']) && $_GET['logged'] === 'true';
                             aria-controls="cs-menu-lang"
                             class="w-full cs-mobile-menu-button cs-menu-voice-item text-left flex items-center cs-menu-item h-10"
                     >
-                        <span class="pr-1 flex-1">Sunday gospels</span>
-                        <span class="mr-auto">
+                        <span class="pr-1 cs-menu-item-span">Sunday gospels</span>
+                        <span class="ml-auto flex-1  flex justify-end">
                 <img src="src/assets/menu-arrow-down.svg"
                      class="cs-menu-item-icon object-contain shrink-0 self-stretch my-auto w-3 aspect-[1.5]"
                      alt="Arrow Down"/>
@@ -342,8 +342,8 @@ $isLogged = isset($_GET['logged']) && $_GET['logged'] === 'true';
                             aria-controls="menu-lang"
                             class="cs-mobile-menu-button cs-menu-voice-item  w-full text-left flex items-center cs-menu-item h-10"
                     >
-                        <span class="pr-1 flex-1">The four last things</span>
-                        <span class="mr-auto">
+                        <span class="pr-1 cs-menu-item-span">The four last things</span>
+                        <span class="ml-auto flex-1 flex justify-end">
                 <img src="src/assets/menu-arrow-down.svg"
                      class="cs-menu-item-icon object-contain shrink-0 self-stretch my-auto w-3 aspect-[1.5]"
                      alt="Arrow Down"/>
