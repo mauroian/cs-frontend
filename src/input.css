@@ -5,66 +5,207 @@
 @tailwind components;
 @tailwind utilities;
 
-.header {
-    @apply h-24;
-}
+@layer components {
+    /* navbar main element */
+    .cs-header {
+        @apply h-20 border-b-4 border-cs-red-main md:border-0;
+    }
 
-.menu {
-    @apply ml-auto mr-auto gap-4; /* Eg. mr-4 or ml-4  */
-}
+    /* navbar container */
+    .cs-menu {
+        @apply ml-auto mr-auto gap-4;
+        /* Eg. mr-4 or ml-4  */
+    }
 
-.menu-logo {
-    @apply ml-0;
-}
+    /* logo */
+    .cs-menu-logo {
+        @apply ml-0 mr-auto md:mr-auto;
+    }
 
-.menu-auth {
-    @apply mr-0;
-}
+    /* login logout */
+    .cs-menu-auth {
+        @apply mr-0;
+    }
 
-.menu-item {
-    @apply relative font-serif text-sm uppercase tracking-wide;
-}
+    /* menu item li */
+    .cs-menu-item {
+        @apply relative w-full font-serif text-sm uppercase tracking-wide md:w-auto;
+    }
 
-.menu-item-span {
-    @apply relative;
-    line-height: 1;
-    transition-duration: 0.3s;
-    transition-property: all;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-    transition-timing-function: cubic-bezier(0.4, 0, 1, 1);
-}
+    /* hover effect underline */
+    .cs-menu-item-span:after {
+        @apply absolute -bottom-1 left-1/2 block h-0.5 w-0 bg-cs-red-main;
+        --tw-bg-opacity: 1;
+        --tw-content: "";
+        content: var(--tw-content);
+        transition:
+            width 0.3s ease 0s,
+            left 0.3s ease 0s;
+    }
 
-.menu-item-icon {
-    @apply ml-1;
-}
+    /* hover effect */
+    .cs-menu-item-span:hover:after {
+        width: 100%;
+        left: 0;
+    }
 
-.menu-auth-icon {
-    @apply ml-1;
-}
+    /* menu item inner element */
+    .cs-menu-voice-item,
+    .cs-mobile-menu-auth-item {
+        @apply h-10;
+    }
 
-.menu-auth-item {
-    @apply font-sans font-bold uppercase;
-}
+    /* menu item */
+    .cs-menu-voice-item {
+        @apply border-b border-cs-red-main px-4 py-3 last:border-b-0;
+    }
 
-.menu-item-span:after {
-    @apply absolute -bottom-1 left-1/2 block h-0.5 w-0 bg-cs-red-main;
-    --tw-bg-opacity: 1;
-    --tw-content: "";
-    content: var(--tw-content);
-    transition:
-        width 0.3s ease 0s,
-        left 0.3s ease 0s;
-}
+    /* submenu item */
+    .cs-menu-nested .cs-menu-item {
+        @apply w-full;
+    }
 
-.menu-item-span:hover:after {
-    width: 100%;
-    left: 0;
-}
+    /* menu item text element */
+    .cs-menu-item-span {
+        @apply relative mr-auto md:mr-0;
+        line-height: 1;
+        transition-duration: 0.3s;
+        transition-property: all;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+        transition-timing-function: cubic-bezier(0.4, 0, 1, 1);
+    }
 
-.testimonials-badge {
-    @apply -right-9 -top-2.5 px-1 py-0 text-badge;
-}
+    /* menu item icon */
+    .cs-menu-item-icon {
+        @apply ml-1;
+    }
 
-.sign-up-login-spacing {
-    @apply mr-0;
+    /* nested menu */
+    .cs-menu-nested {
+        @apply absolute mt-3 origin-top scale-0 transform rounded-xl bg-orange-50 uppercase text-cs-red-main opacity-0 shadow-cs-all-around transition duration-300 ease-in-out group-hover:scale-100 group-hover:opacity-100;
+    }
+
+    /* nested menu transition */
+    .cs-menu-inner {
+        @apply right-0 top-0 opacity-0 shadow-cs-all-around transition duration-300 ease-in;
+    }
+
+    /* logged in navbar */
+    .cs-menu-auth-logged {
+        @apply ml-4 mr-0 md:ml-auto;
+    }
+
+    /* logged in navbar avatar */
+    .cs-menu-auth-icon {
+        @apply ml-0 mr-2 md:ml-1 md:mr-0;
+    }
+
+    /* logged in navbar li */
+    .cs-menu-auth-item {
+        @apply border-b border-cs-red-main bg-cs-red-main/10 px-4 py-3 font-sans font-bold uppercase md:border-0 md:bg-transparent md:px-0 md:py-0;
+    }
+
+    /* testimonials badge */
+    .cs-testimonials-badge {
+        @apply -right-9 -top-2.5 bg-cs-red-main px-1 py-0 text-cs-badge text-white;
+    }
+
+    /* login logout spacing */
+    .cs-sign-up-login-spacing {
+        @apply mr-0;
+    }
+
+    /* avatar of the user */
+    .cs-logged-avatar {
+        @apply h-8 w-8 rounded-full ring-2 ring-cs-blue-light;
+    }
+
+    /* name under the avatar */
+    .cs-logged-name {
+        @apply text-cs-badge text-black;
+    }
+
+    /* menu of the user */
+    .cs-menu-logged {
+        @apply right-0 top-12 z-10 w-[190px] divide-y divide-gray-100 rounded-xl bg-white shadow-cs-all-around transition-all duration-300 ease-in-out;
+    }
+
+    /* header of the user menu */
+    .cs-menu-logged-top {
+        @apply justify-start gap-3 rounded-tl-xl rounded-tr-xl bg-cs-blue-light px-4 py-3 text-sm text-white;
+    }
+
+    /* user menu container */
+    .cs-menu-logged-items {
+        @apply bg-cs-paper text-xs uppercase tracking-wider text-cs-blue-light;
+    }
+
+    /* user menu item */
+    .cs-menu-logged-item {
+        @apply border-b border-cs-blue-light/15 px-4 py-1 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white;
+    }
+
+    /* nested menu list item */
+    .dropdown-menu .cs-menu-logged-item {
+        @apply px-6;
+    }
+
+    /* avoid border on last element of list */
+    .cs-menu-logged-items li {
+        @apply last:border-b-0;
+    }
+
+    /* user menu logout container */
+    .cs-menu-logged-bottom {
+        @apply h-10 rounded-bl-xl rounded-br-xl bg-cs-blue-light/15 px-4 py-1 text-xs font-semibold uppercase text-cs-blue-light;
+    }
+
+    /* user menu logout icon */
+    .cs-menu-logged-icon {
+        @apply ml-0 mr-1;
+    }
+
+    /* Initial state */
+    .dropdown-menu {
+        @apply bg-cs-paper-dark;
+    }
+
+    /* since nested groups are not supported we have to use
+       regular css for the nested dropdowns event
+    */
+    .cs-menu li > ul {
+        transform: translatex(100%);
+        opacity: 0;
+    }
+
+    .cs-menu li:hover > ul {
+        transform: translatex(101%);
+        opacity: 1;
+    }
+
+    .cs-menu li > a .cs-menu-item-icon {
+        transform: rotate(-90deg);
+    }
+
+    /*** Mobile specific styles ***/
+    .cs-mobile-menu-container {
+        @apply mr-0;
+    }
+
+    .cs-mobile-menu-button.cs-active .cs-menu-item-icon,
+    .cs-logged-nested.cs-active .cs-menu-item-icon {
+        transform: rotate(-180deg);
+    }
+
+    .cs-mobile-testimonials-badge {
+        @apply rounded-full bg-cs-red-main px-1 text-cs-badge font-bold text-white;
+    }
+
+    .cs-mobile-menu-auth-item {
+        @apply border-b border-cs-red-main bg-cs-red-main/10 px-4 py-3 font-sans font-bold uppercase md:border-0 md:bg-transparent md:px-0 md:py-0;
+    }
+
+    .cs-mobile-menu-auth-icon {
+        @apply ml-0 mr-2 h-4 md:ml-1 md:mr-0;
+    }
 }

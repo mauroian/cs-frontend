@@ -19,7 +19,7 @@ export default {
         mono: ["Courier New", "monospace"], // Custom monospace font
       },
       fontSize: {
-        "badge": "0.6rem",
+        "cs-badge": "0.6rem",
         "xs": "0.75rem",
         "sm": "0.875rem",
         "base": "1rem",
@@ -72,9 +72,21 @@ export default {
         "cs-period12-pri": "#FFFFFF",
         "cs-period12-sec": "#D9D9D9",
       },
+      keyframes: {
+        'cs-slide-in-down': {
+          '0%': {visibility: 'visible', transform: 'translate3d(0, -100%, 0)'},
+          '100%': {transform: 'translate3d(0, 0, 0)'},
+        },
+      },
+      animation: {
+        "cs-slide-in-down": "cs-slide-in-down 0.25s linear 1 ",
+      },
+      boxShadow: {
+        'cs-all-around': '0 0 10px 7px rgba(0, 0, 0, 0.1)',
+      }
     },
   },
-  plugins: [],
+  plugins: [require('tailwindcss-motion')],
   variants: {
     extend: {
       translate: ['group-hover', 'hover'],
