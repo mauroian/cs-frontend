@@ -14,9 +14,7 @@ $isLogged = isset($_GET['logged']) && $_GET['logged'] === 'true';
         <!-- Container div for public menu (desktop) -->
         <div class="flex-row hidden md:flex cs-menu">
             <!-- Container div for L1 public menu item (desktop) -->
-            <!--xxx Why not done as a <ul><li>, as it happens fo L2->L3 ? -->
             <div class="inline-block group">
-                <!--xxx Why not done as a <a> <span>What we offer</span> </a>? -->
                 <!-- L1 public menu item (desktop) -->
                 <button
                     aria-haspopup="true"

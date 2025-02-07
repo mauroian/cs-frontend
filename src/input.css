@@ -38,9 +38,6 @@
             ml-2 /* [param] left margin of logo (desktop, mobile) */
             mr-auto /* for mobile, this must be set */
             md:mr-0; /* [param] right margin of logo (desktop) */ 
-            /*
-            md:mr-auto 
-            ??? correct to remove md:mr-auto? */
     }
 
     /* login logout */
@@ -131,11 +128,11 @@
         @apply 
             absolute
             hidden
-            mt-3 /* [param] distance of Level 2 box of public menu items from the reative level 1 word (desktop) */
-            uppercase  /* ??? necessary? */
-            origin-top /* ??? what is it? */
+            mt-10 /* [param] distance of Level 2 box of public menu items from the reative level 1 word (desktop) */
+            uppercase
+            origin-top 
             rounded-xl /* [param] roundness of Level 2 box of public menu items (desktop) */
-            bg-cs-paper-shade /* [param] background colour of Level 2 box of public menu items (desktop) /* ??? cs-paper-shade */
+            bg-cs-paper-shade /* [param] background colour of Level 2 box of public menu items (desktop) */
             text-cs-red-main /* [param] font colour of Level 2 box of public menu items (desktop) */
             shadow-cs-all-around; /* [param] kind of shadow of Level 2 box of public menu items (desktop) */
     }
@@ -144,11 +141,10 @@
     .cs-menu-inner {
         @apply 
             top-0 /* [param] vertical drop of Level 3 box from the relative level 2 menu item in public manu (desktop) */
-            right-0 /* [param] left-shift of Level 3 box from the relative level 2 menu item in public manu (desktop) */
-            /* ??? if right-10, it can be seen that the z-order needs to be fixed */
+            right-10 /* [param] left-shift of Level 3 box from the relative level 2 menu item in public manu (desktop) */
             hidden
             transition
-            duration-300    /* ??? */
+            duration-300
             ease-in
             shadow-cs-all-around; /* [param] kind of shadow of Level 3 box of public menu items (desktop) */
     }
@@ -157,7 +153,7 @@
     .cs-menu-auth-logged {
         @apply 
         ml-10 /* [param] */
-        mr-20 /* [param] right margin of the 'block' user avatar and dropdown user menu */
+        mr-4 /* [param] right margin of the 'block' user avatar and dropdown user menu */
         md:ml-auto;
     }
 
