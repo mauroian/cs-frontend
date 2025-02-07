@@ -3,7 +3,7 @@
 $isLogged = true;
 ?>
 <header class="bg-cs-paper">
-    <nav class="cs-header relative mx-auto flex  items-center p-4 text-cs-red-main" aria-label="Header">
+    <nav class="cs-header relative mx-auto flex items-center p-4 text-cs-red-main" aria-label="Header">
         <div class="flex cs-menu-logo">
             <a href="/" class="">
                 <img src="/src/assets/logo.svg" class="h-14 w-auto" alt="Logo"/>
