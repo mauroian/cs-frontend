@@ -13,41 +13,41 @@
         <div class="font-sans uppercase tracking-widest">
             <p class="text-lg font-bold my-2.5">Quick links</p>
             <div class="text-xs flex flex-row">
-            <ul class="mr-8">
-                <li class="mb-2.5">Bible Timeline Course</li>
-                <li class="mb-2.5 ml-5">Sunday Gospels</li>
-                <li class="mb-2.5 ml-5">Testimonials</li>
-                <li class="mb-2.5 ml-5">Endorsements</li>
-                <li class="mb-2.5">Resources</li>
-                <li class="mb-2.5">Bible Timeline Course</li>
-                <li class="mb-2.5">Sunday Gospels</li>
-                <li class="mb-2.5">Testimonials</li>
-                <li class="mb-2.5">Endorsements</li>
-                <li class="mb-2.5">Resources</li>
+            <ul class="cs-ul-footer mr-8">
+                <li>Bible Timeline Course</li>
+                <li class="ml-5">Sunday Gospels</li>
+                <li class="ml-5">Testimonials</li>
+                <li class="ml-5">Endorsements</li>
+                <li>Resources</li>
+                <li>Bible Timeline Course</li>
+                <li>Sunday Gospels</li>
+                <li>Testimonials</li>
+                <li>Endorsements</li>
+                <li>Resources</li>
             </ul>
-            <ul class="mr-8">
-                <li class="mb-2.5">Let's get personal!</li>
-                <li class="mb-2.5">Our Gallery</li>
-                <li class="mb-2.5">Support us</li>
-                <li class="mb-2.5">Login</li>
-                <li class="mb-2.5">Register</li>
-                <li class="mb-2.5">Let's get personal!</li>
-                <li class="mb-2.5">Our Gallery</li>
-                <li class="mb-2.5">Support us</li>
-                <li class="mb-2.5">Login</li>
-                <li class="mb-2.5">Register</li>
+            <ul class="cs-ul-footer mr-8">
+                <li>Let's get personal!</li>
+                <li>Our Gallery</li>
+                <li>Support us</li>
+                <li>Login</li>
+                <li>Register</li>
+                <li>Let's get personal!</li>
+                <li>Our Gallery</li>
+                <li>Support us</li>
+                <li>Login</li>
+                <li>Register</li>
             </ul>
-            <ul>
-                <li class="mb-2.5">Bible Timeline Course</li>
-                <li class="mb-2.5">Sunday Gospels</li>
-                <li class="mb-2.5">Testimonials</li>
-                <li class="mb-2.5">Endorsements</li>
-                <li class="mb-2.5">Resources</li>
-                <li class="mb-2.5">Bible Timeline Course</li>
-                <li class="mb-2.5">Sunday Gospels</li>
-                <li class="mb-2.5">Testimonials</li>
-                <li class="mb-2.5">Endorsements</li>
-                <li class="mb-2.5">Resources</li>
+            <ul class="cs-ul-footer">
+                <li>Bible Timeline Course</li>
+                <li>Sunday Gospels</li>
+                <li>Testimonials</li>
+                <li>Endorsements</li>
+                <li>Resources</li>
+                <li>Bible Timeline Course</li>
+                <li>Sunday Gospels</li>
+                <li>Testimonials</li>
+                <li>Endorsements</li>
+                <li>Resources</li>
             </ul>
         </div>
         </div>
