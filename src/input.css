@@ -14,11 +14,12 @@
             md:border-0
             border-cs-red-main /* [param] colour of header's bottom line (mobile) */
             max-w-[1500px] /* [param] max width of container of logo and auth buttons (desktop) */
+          text-cs-red-main /* [param] font colour of header (desktop, mobile) */
             text-nowrap;
     }
 
     /* navbar container */
-    .cs-menu {
+    .cs-menu-level1 {
         @apply gap-4
         /* [param] gap between public menu items (desktop) */
         ml-auto
@@ -30,6 +31,11 @@
             Centered: ml-auto mr-auto;
             Right aligned: ml-auto mr-4;
         */
+    }
+
+    .inline-block.group:hover:after {
+        @apply w-full h-20 absolute top-3 left-0;
+        content: "";
     }
 
     /* logo */
@@ -100,11 +106,14 @@
             py-3 /* [param] vertical padding of each public menu item (desktop & mobile) */
             border-b  /* [param] border around each public menu item (desktop & mobile) */
             border-cs-red-main /* [param] color of the border of each public menu item (desktop & mobile) */
-            last:border-b-0; /* [param] color of the border of the last public menu item of each group (desktop & mobile) */
+            md:last:border-b-0 /* [param] color of the border of the last public menu item of each group (desktop & mobile) */
+            flex
+            flex-wrap
+            items-center
     }
 
     /* submenu item */
-    .cs-menu-nested .cs-menu-item {
+    .cs-menu-level2 .cs-menu-item {
         @apply w-full;
     }
 
@@ -124,7 +133,7 @@
     }
 
     /* nested menu */
-    .cs-menu-nested {
+    .cs-menu-level2 {
         @apply 
             absolute
             hidden
@@ -138,14 +147,12 @@
     }
 
     /* nested menu transition */
-    .cs-menu-inner {
+    .cs-menu-level3 {
         @apply 
             top-0 /* [param] vertical drop of Level 3 box from the relative level 2 menu item in public manu (desktop) */
             right-10 /* [param] left-shift of Level 3 box from the relative level 2 menu item in public manu (desktop) */
             hidden
-            transition
-            duration-300
-            ease-in
+            z-20
             shadow-cs-all-around; /* [param] kind of shadow of Level 3 box of public menu items (desktop) */
     }
 
@@ -157,6 +164,11 @@
         md:ml-auto;
     }
 
+    .cs-menu-auth-logged,
+    .cs-menu-auth {
+        @apply md:min-w-40; /* [param] the minimum width of the 'block' user avatar and signup/login menu */
+    }
+
     /* logged in navbar avatar */
     .cs-menu-auth-icon {
         @apply ml-0 mr-2 md:ml-1 md:mr-0;
@@ -164,7 +176,7 @@
 
     /* logged in navbar li */
     .cs-menu-auth-item {
-        @apply px-4 py-3 font-sans font-bold uppercase border-b border-cs-red-main bg-cs-red-main/10 md:border-0 md:bg-transparent md:px-0 md:py-0;
+        @apply pl-4 pr-4 py-3 font-sans font-bold uppercase border-b border-cs-red-main bg-cs-red-main/10 md:border-0 md:bg-transparent md:px-0 md:py-0;
     }
 
     /* testimonials badge */
@@ -214,7 +226,7 @@
 
     /* avoid border on last element of list */
     .cs-menu-logged-items li {
-        @apply last:border-b-0;
+        @apply md:last:border-b-0;
     }
 
     /* user menu logout container */
@@ -235,23 +247,27 @@
     /* since nested groups are not supported we have to use
        regular css for the nested dropdowns event
     */
-    .cs-menu li > ul {
+    .cs-menu-level2 li > ul {
         transform: translatex(100%);
         opacity: 0;
     }
 
-    .cs-menu li:hover > ul {
+    .cs-menu-level2 li:hover > ul {
         transform: translatex(101%);
         opacity: 1;
     }
 
-    .cs-menu li > a .cs-menu-item-icon {
+    .cs-menu-level2 li > a .cs-menu-item-icon {
         transform: rotate(-90deg);
     }
 
     /*** Mobile specific styles ***/
     .cs-mobile-menu-container {
         @apply mr-0;
+    }
+
+    .cs-mobile-menu {
+        @apply text-cs-red-main;
     }
 
     .cs-mobile-menu-button.cs-active .cs-menu-item-icon,
@@ -264,7 +280,7 @@
     }
 
     .cs-mobile-menu-auth-item {
-        @apply px-4 py-3 font-sans font-bold uppercase border-b border-cs-red-main bg-cs-red-main/10 md:border-0 md:bg-transparent md:px-0 md:py-0;
+        @apply pl-4 pr-4 py-3 font-sans font-bold uppercase border-b border-cs-red-main bg-cs-red-main/10 md:border-0 md:bg-transparent md:px-0 md:py-0;
     }
 
     .cs-mobile-menu-auth-icon {

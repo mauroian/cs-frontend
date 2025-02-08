@@ -1,3 +1,11 @@
+/*
+  DEFINE CONSTANT TO CHANGE DINAMICALLY THE ANIMATION OF THE MENU
+ */
+const MENU_LEVEL_2_DELAY = 250;
+const MENU_LEVEL_2_DURATION = 500;
+const MENU_LEVEL_3_DELAY = 50;
+const MENU_LEVEL_3_DURATION = 200;
+
 // For click event and also reference for outer div tag
 const btn = document.querySelector("button.cs-mobile-menu-button");
 const menu = document.querySelector("div.cs-mobile-menu");
@@ -40,17 +48,19 @@ if(loggedMenuBtn) {
 
 document.addEventListener("DOMContentLoaded", () => {
 
+  /** convert to mouseenter and mouseleave **/
   $('.group.inline-block').hover(function() {
-    $(this).find('ul.cs-menu-nested').stop(true, true).delay(50).fadeIn(500);
+    $(this).find('ul.cs-menu-level2').stop(true, true).delay(MENU_LEVEL_2_DELAY).fadeIn(MENU_LEVEL_2_DURATION);
   }, function() {
-    $(this).find('ul.cs-menu-nested').stop(true, true).delay(50).fadeOut(200);
+    $(this).find('ul.cs-menu-level2').stop(true, true).delay(MENU_LEVEL_2_DELAY).fadeOut(MENU_LEVEL_2_DURATION);
   });
 
 
+
   $('.cs-dropdown').hover(function() {
-    $(this).find('ul.cs-menu-inner').stop(true, true).delay(50).fadeIn(500);
+    $(this).find('ul.cs-menu-level3').stop(true, true).delay(MENU_LEVEL_3_DELAY).fadeIn(MENU_LEVEL_3_DURATION);
   }, function() {
-    $(this).find('ul.cs-menu-inner').stop(true, true).delay(50).fadeOut(200);
+    $(this).find('ul.cs-menu-level3').stop(true, true).delay(MENU_LEVEL_3_DELAY).fadeOut(MENU_LEVEL_3_DURATION);
   });
 
   const mobileMenuButtons = document.querySelectorAll(".cs-mobile-menu-button");
