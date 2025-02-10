@@ -1,3 +1,11 @@
+/*
+  DEFINE CONSTANT TO CHANGE DINAMICALLY THE ANIMATION OF THE MENU
+ */
+const MENU_LEVEL_2_DELAY = 250;
+const MENU_LEVEL_2_DURATION = 500;
+const MENU_LEVEL_3_DELAY = 50;
+const MENU_LEVEL_3_DURATION = 200;
+
 // For click event and also reference for outer div tag
 const btn = document.querySelector("button.cs-mobile-menu-button");
 const menu = document.querySelector("div.cs-mobile-menu");
@@ -21,21 +29,40 @@ btn.addEventListener("click", () => {
   menuToggle(menu);
 });
 
-onClickOutside(() => {
-  loggedMenu.classList.add('invisible');
-  loggedMenu.classList.remove('visible');
-  loggedMenu.classList.remove("opacity-100");
-  loggedMenu.classList.add("opacity-0");
-});
 
-loggedMenuBtn.addEventListener("click", () => {
-  loggedMenu.classList.toggle('invisible');
-  loggedMenu.classList.toggle('visible');
-  loggedMenu.classList.toggle("opacity-0");
-  loggedMenu.classList.toggle("opacity-100");
-});
+if(loggedMenuBtn) {
+  onClickOutside(() => {
+    loggedMenu.classList.add('invisible');
+    loggedMenu.classList.remove('visible');
+    loggedMenu.classList.remove("opacity-100");
+    loggedMenu.classList.add("opacity-0");
+  });
+
+  loggedMenuBtn.addEventListener("click", () => {
+    loggedMenu.classList.toggle('invisible');
+    loggedMenu.classList.toggle('visible');
+    loggedMenu.classList.toggle("opacity-0");
+    loggedMenu.classList.toggle("opacity-100");
+  });
+}
 
 document.addEventListener("DOMContentLoaded", () => {
+
+  /** convert to mouseenter and mouseleave **/
+  $('.group.inline-block').hover(function() {
+    $(this).find('ul.cs-menu-level2').stop(true, true).delay(MENU_LEVEL_2_DELAY).fadeIn(MENU_LEVEL_2_DURATION);
+  }, function() {
+    $(this).find('ul.cs-menu-level2').stop(true, true).delay(MENU_LEVEL_2_DELAY).fadeOut(MENU_LEVEL_2_DURATION);
+  });
+
+
+
+  $('.cs-dropdown').hover(function() {
+    $(this).find('ul.cs-menu-level3').stop(true, true).delay(MENU_LEVEL_3_DELAY).fadeIn(MENU_LEVEL_3_DURATION);
+  }, function() {
+    $(this).find('ul.cs-menu-level3').stop(true, true).delay(MENU_LEVEL_3_DELAY).fadeOut(MENU_LEVEL_3_DURATION);
+  });
+
   const mobileMenuButtons = document.querySelectorAll(".cs-mobile-menu-button");
 
   /** logic to trigger the opening and close of the menu items **/
