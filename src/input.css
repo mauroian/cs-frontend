@@ -46,10 +46,6 @@
             md:mr-0; /* [param] right margin of logo (desktop) */ 
     }
 
-    /* login logout */
-    .cs-menu-auth {
-        @apply mr-6; /* [param] right margin of auth buttons div (desktop) */
-    }
 
     /* menu item li */
     .cs-menu-item {
@@ -157,16 +153,15 @@
     }
 
     /* logged in navbar */
-    .cs-menu-auth-logged {
-        @apply 
-        ml-10 /* [param] */
-        mr-4 /* [param] right margin of the 'block' user avatar and dropdown user menu */
-        md:ml-auto;
-    }
+    /* login logout */
 
     .cs-menu-auth-logged,
     .cs-menu-auth {
-        @apply md:min-w-40; /* [param] the minimum width of the 'block' user avatar and signup/login menu */
+        @apply 
+        ml-10 /* [param] */
+        mr-4 /* [param] right margin of the 'block' user avatar and dropdown user menu */
+        md:ml-auto /* [param]  right margin of the 'block' user avatar and dropdown user menu on desktop */
+        md:min-w-40; /* [param] the minimum width of the 'block' user avatar and signup/login menu */
     }
 
     /* logged in navbar avatar */
