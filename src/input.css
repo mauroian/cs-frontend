@@ -296,6 +296,18 @@
     }
 }
 
-    .cs-ul-footer li {
+.cs-foot-container {
+    @apply text-cs-paper mt-[36px] mb-[46px] md:gap-28;
+}
+
+.cs-ul-footer {
+    @apply w-[175px];
+}
+
+.cs-ul-footer li {
         @apply mb-2.5;
+    }
+
+    .cs-footer-hide-link {
+        @apply hidden md:block;
     }
