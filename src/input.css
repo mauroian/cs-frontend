@@ -6,7 +6,8 @@
 @tailwind utilities;
 
 @layer components {
-    /* navbar main element */
+
+    /* whole navbar features (desktop & mobile) */
     .cs-header {
         @apply 
             h-20  /* [param] header height (desktop, mobile) */
@@ -18,13 +19,13 @@
             text-nowrap;
     }
 
-    /* navbar container */
+    /* Level 1 menu items: positioning and gap (desktop) */
     .cs-menu-level1 {
-        @apply gap-4
+        @apply gap-6
         /* [param] gap between public menu items (desktop) */
         ml-auto
         /* [param] left margin of public menu items container div (desktop) */
-        mr-12;
+        mr-auto;
         /* [param] right margin of public menu items container div (desktop) */
         /* 
             Left aligned: ml-4 mr-auto;
@@ -33,12 +34,13 @@
         */
     }
 
+    /* ??? since this is not used as parameter, can it be moved inside the HTML? */
     .inline-block.group:hover:after {
-        @apply w-full h-20 absolute top-3 left-0;
+        @apply absolute left-0 w-full h-20 top-3;
         content: "";
     }
 
-    /* logo */
+    /* Logo positioning (desktop & mobile) */
     .cs-menu-logo {
         @apply 
             ml-2 /* [param] left margin of logo (desktop, mobile) */
@@ -47,21 +49,21 @@
     }
 
 
-    /* menu item li */
+    /* L1, L2, L3 menu items features (desktop & mobile) */
     .cs-menu-item {
         @apply 
             relative
             w-full 
             font-serif /* [param] font family for public menu items (desktop & mobile) */
-            text-sm /* [param] font size for public menu items (desktop & mobile) */
+            text-base /* [param] font size for public menu items (desktop & mobile) */
             tracking-wide /* [param] letter spacing for public menu items (desktop & mobile) */
             uppercase /* [param] words case for public menu items (desktop & mobile) */
             md:w-auto;
     }
 
-    /* hover effect underline. 
-    Animation from middle to left: 
-    , change the class left-1/2 to left-0 and viceversa
+    /*
+    L1, L2, L3 menu items: underline on hover (desktop & mobile)
+    Animation from middle to left: change the class left-1/2 to left-0 and viceversa
     */
     .cs-menu-item-span:after {
         @apply 
@@ -79,41 +81,47 @@
             --tw-content: "";
             content: var(--tw-content);
             transition:
-                width 0.1s ease 0s, /* [param] underline animation speed for public menu (desktop & mobile) */
+                width 0.1s ease 0s, /* [param] the first value: underline animation speed for public menu (desktop & mobile) */
                 left 0.1s ease 0s;
     }
 
+    /* ??? since this is not used as parameter, can it be moved inside the HTML? */
     /* hover effect */
     .cs-menu-item:hover > .cs-menu-item-span:after {
         width: 100%;
         left: 0;
     }
 
-    /* menu item inner element */
+    /*  L1, L2, L3 menu items height  (desktop & mobile)*/
     .cs-menu-voice-item,
     .cs-mobile-menu-auth-item {
-        @apply h-10; /* [param] height of container of individual menu item for public menu (desktop & mobile) */
+        @apply h-12; /* [param] height of container of individual menu item for public menu (desktop & mobile) */
     }
 
-    /* menu item */
+    /*  L1, L2, L3 menu items features (desktop & mobile)*/
     .cs-menu-voice-item {
         @apply 
             px-4 /* [param] horizontal padding of each public menu item (desktop & mobile) */
-            py-3 /* [param] vertical padding of each public menu item (desktop & mobile) */
-            border-b  /* [param] border around each public menu item (desktop & mobile) */
-            border-cs-red-main /* [param] color of the border of each public menu item (desktop & mobile) */
-            md:last:border-b-0 /* [param] color of the border of the last public menu item of each group (desktop & mobile) */
+            /* ??? px- needs to be split in pr- and pl- */
+
+            py-4 /* ??? correct to say that py- should not be here because items are vertically centered anyway? */
+            
+            border-b  /* [param] thickness of divider line of public menu items (desktop & mobile) */
+            border-cs-red-main /* [param] color of divider line of public menu items (desktop & mobile) */
+            md:last:border-b-0
             flex
             flex-wrap
             items-center
     }
 
+    /* ??? since this is not used as parameter, can it be moved inside the HTML? */
     /* submenu item */
     .cs-menu-level2 .cs-menu-item {
         @apply w-full;
     }
 
     /* menu item text element */
+    /* ??? What is it? Any parameters in it? */
     .cs-menu-item-span {
         @apply relative mr-auto md:mr-0;
         line-height: 1;
@@ -121,19 +129,20 @@
         transition-property: all;
         transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
         transition-timing-function: cubic-bezier(0.4, 0, 1, 1);
+        /* ??? remove duplicate */
     }
 
-    /* menu item icon */
+    /* Level 1 menu items: gap from dropdown arrow (desktop) */
     .cs-menu-item-icon {
-        @apply ml-1; /* [param] gap between public menu item and dropdown arrow for public menu (desktop) */
+        @apply ml-2; /* [param] gap between public menu item and dropdown arrow for public menu (desktop) */
     }
 
-    /* nested menu */
+    /* Level 2 menu items container box features (desktop) */
     .cs-menu-level2 {
         @apply 
             absolute
             hidden
-            mt-10 /* [param] distance of Level 2 box of public menu items from the reative level 1 word (desktop) */
+            mt-6 /* [param] distance of Level 2 box of public menu items from the reative level 1 word (desktop) */
             uppercase
             origin-top 
             rounded-xl /* [param] roundness of Level 2 box of public menu items (desktop) */
@@ -142,81 +151,168 @@
             shadow-cs-all-around; /* [param] kind of shadow of Level 2 box of public menu items (desktop) */
     }
 
-    /* nested menu transition */
+    /* Level 3 menu items container box features (desktop) */
     .cs-menu-level3 {
         @apply 
-            top-0 /* [param] vertical drop of Level 3 box from the relative level 2 menu item in public manu (desktop) */
-            right-10 /* [param] left-shift of Level 3 box from the relative level 2 menu item in public manu (desktop) */
+            top-3 /* [param] vertical drop of Level 3 box from the relative level 2 menu item in public manu (desktop) */
+            right-2 /* [param] left-shift of Level 3 box from the relative level 2 menu item in public manu (desktop) */
             hidden
             z-20
             shadow-cs-all-around; /* [param] kind of shadow of Level 3 box of public menu items (desktop) */
     }
 
-    /* logged in navbar */
-    /* login logout */
-
+    /* auth 'block' and dropdown user menu (desktop & mobile) */
     .cs-menu-auth-logged,
     .cs-menu-auth {
         @apply 
-        ml-10 /* [param] */
-        mr-4 /* [param] right margin of the 'block' user avatar and dropdown user menu */
-        md:ml-auto /* [param]  right margin of the 'block' user avatar and dropdown user menu on desktop */
-        md:min-w-40; /* [param] the minimum width of the 'block' user avatar and signup/login menu */
+            ml-4 /* [param] left margin of the auth 'block' and dropdown user menu (mobile): controls the gap between user avatar and hamburger  */        
+            md:ml-4 /* [param] left margin of the auth 'block' and dropdown user menu (desktop): controls the gap from the L1 menu items, if these are right aligned */
+            mr-2 /* [param] right margin of the auth 'block' and dropdown user menu (mobile) */
+            md:mr-8 /* [param] right margin of the auth 'block' and dropdown user menu (desktop) */
+            md:min-w-56; /* [param] the minimum width of the of the auth 'block': : must not be too small to have the desired effect of not making L1 items change position if user is logged or not */
     }
 
-    /* logged in navbar avatar */
+    /* menu auth block (desktop) */
+    /* ??? class used only for signup and login buttons in public desktop menu) NOT in mobile: hence can we remove the two mobile selectors for ml- and mr- as they seem to be useless? */
     .cs-menu-auth-icon {
-        @apply ml-0 mr-2 md:ml-1 md:mr-0;
+        @apply
+            ml-0 /* ??? remove? */
+            md:ml-2 /* [param] gap between icons and words next to them (desktop) */
+            mr-0 /* ??? remove? */
+            md:mr-6 /* ??? remove? I created cs-menu-auth-gap to control this */
+            h-6; /* ??? moved here from HTML, to control size of the two auth icons */
+            /* but how do I center vertically <span>Sign Up</span> and <span>Log in</span> ? */
     }
 
-    /* logged in navbar li */
+    /* menu auth block (desktop): gap between signup block and login block */
+    /* ??? MI created this */
+    .cs-menu-auth-gap {
+        @apply md:mr-8; /* [param] gap between signup block and login block (desktop) */
+    }
+
+    /* menu auth items (desktop) */
     .cs-menu-auth-item {
-        @apply pl-4 pr-4 py-3 font-sans font-bold uppercase border-b border-cs-red-main bg-cs-red-main/10 md:border-0 md:bg-transparent md:px-0 md:py-0;
-    }
+        @apply
+            
+            /* ??? 
+            The below 5 properties seem to have no effect. 
+            I control those margins and gaps from:
+             .cs-menu-auth-icon
+             .cs-menu-auth-gap.
+            Therefore, can we remove the below 5 properties?
+            
+                pl-4
+                pr-4
+                md:px-0
+                py-3
+                md:py-20
+            */
 
-    /* testimonials badge */
+            font-sans /* [param] (desktop) */
+            font-medium /* [param] (desktop) */
+            uppercase /* [param] (desktop) */
+           
+            border-b-0  /* ??? border not needed: can it be removed? */
+            md:border-0 /* ??? border not needed: can it be removed? */
+            
+            border-cs-red-main /* ??? border not needed: can it be removed? */
+
+            bg-cs-red-main/10 /* ??? can it be removed? */
+            md:bg-transparent /* ??? can it be removed? */
+    }   /* CORRESPONDS TO:  .cs-mobile-menu-auth-item */
+
+    /* testimonials badge (desktop) */
     .cs-testimonials-badge {
-        @apply -right-8 -top-3.5 bg-cs-red-main px-1 py-0 text-cs-badge text-white;
+        @apply 
+        -right-10 /* [param] */
+        -top-3.5 /* [param] */
+        bg-cs-red-main /* [param] */
+        px-1 /* [param] */
+        py-0 /* [param] */
+        text-cs-badge  /* ??? We will remove this once we define better typography */
+        text-white; /* [param] */
     }
 
     /* login logout spacing */
+    /* ??? CLASS NOT USED ANYWHERE: can we remove this? */
     .cs-sign-up-login-spacing {
         @apply mr-0;
     }
 
-    /* avatar of the user */
+    /* user avatar (desktop, mobile) */
     .cs-logged-avatar {
-        @apply w-8 h-8 rounded-full ring-2 ring-cs-blue-light;
+        @apply
+            w-8 /* [param] */
+            h-8 /* [param] */
+            rounded-full
+            ring-2 /* [param] */
+            ring-cs-blue-light; /* [param] */
     }
 
-    /* name under the avatar */
+    /* user firstname under avatar (desktop) */
     .cs-logged-name {
-        @apply text-black text-cs-badge;
+        @apply
+        text-black /* [param] */
+        text-cs-badge; /* [param] */
     }
 
-    /* menu of the user */
+    /* user menu outer container (desktop, mobile) */
     .cs-menu-logged {
-        @apply right-0 top-12 z-10 w-[190px] divide-y divide-gray-100 rounded-xl bg-white shadow-cs-all-around transition-all duration-300 ease-in-out;
+        @apply 
+            right-0 /* [param] (desktop, mobile) */
+            top-12 /* [param] (desktop, mobile) */
+            z-10
+            w-[190px] /* [param] (desktop, mobile) */
+            divide-y
+            divide-gray-100
+            rounded-xl
+            bg-white
+            shadow-cs-all-around
+            transition-all
+            duration-300 /* [param] (desktop, mobile) */
+            ease-in-out;
     }
 
-    /* header of the user menu */
+    /* user menu header (desktop, mobile) */
     .cs-menu-logged-top {
-        @apply justify-start gap-3 px-4 py-3 text-sm text-white rounded-tl-xl rounded-tr-xl bg-cs-blue-light;
+        @apply
+            justify-start
+            gap-3 /* [param] (desktop, mobile) */
+            px-4 /* [param] (desktop, mobile) */
+            py-3 /* [param] (desktop, mobile) */
+            text-sm
+            text-white /* [param] (desktop, mobile) */
+            rounded-tl-xl
+            rounded-tr-xl
+            bg-cs-blue-light; /* [param] (desktop, mobile) */
     }
 
-    /* user menu container */
+    /* user menu items continer (desktop, mobile) */
     .cs-menu-logged-items {
-        @apply text-xs tracking-wider uppercase bg-cs-paper text-cs-blue-light;
+        @apply
+            text-xs
+            tracking-wider /* [param] (desktop, mobile) */
+            uppercase /* [param] (desktop, mobile) */
+            bg-cs-paper /* [param] (desktop, mobile) */
+            text-cs-blue-light; /* [param] (desktop, mobile) */
     }
 
-    /* user menu item */
+    /* user menu items L1, L2 (desktop, mobile) */
     .cs-menu-logged-item {
-        @apply px-4 py-1 border-b border-cs-blue-light/15 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white;
+        @apply 
+            px-4 /* [param] (desktop, mobile) */
+            pt-2.5 /* [param] (desktop, mobile) */
+            pb-2 /* [param] (desktop, mobile) */
+            border-b /* [param] (desktop, mobile) */
+            border-cs-blue-light/15 /* [param] (desktop, mobile) */
+            hover:bg-gray-100 /* [param] (desktop, mobile) */
+            dark:hover:bg-gray-600 /* ??? no effect [param] (desktop, mobile) */
+            dark:hover:text-white; /* ??? no effect [param] (desktop, mobile) */
     }
 
-    /* nested menu list item */
+    /* user menu  items L2 indentation (desktop, mobile) */
     .dropdown-menu .cs-menu-logged-item {
-        @apply px-6;
+        @apply px-8; /* [param] (desktop, mobile) */
     }
 
     /* avoid border on last element of list */
@@ -226,22 +322,33 @@
 
     /* user menu logout container */
     .cs-menu-logged-bottom {
-        @apply h-10 px-4 py-1 text-xs font-semibold uppercase rounded-bl-xl rounded-br-xl bg-cs-blue-light/15 text-cs-blue-light;
+        @apply 
+            h-10 /* [param] (desktop, mobile) */
+            px-4 /* [param] (desktop, mobile) */
+            py-1
+            text-xs
+            font-semibold /* [param] (desktop, mobile) */
+            uppercase /* [param] (desktop, mobile) */
+            rounded-bl-xl
+            rounded-br-xl
+            bg-cs-blue-light/15 /* [param] (desktop, mobile) */
+            text-cs-blue-light; /* [param] (desktop, mobile) */
     }
 
-    /* user menu logout icon */
-    .cs-menu-logged-icon {
-        @apply ml-0 mr-1;
+    /* user menu logout icon (desktop, mobile) */
+    .cs-menu-logout-icon {
+        @apply 
+            ml-0 /* [param] (desktop, mobile) */
+            mr-1; /* [param] (desktop, mobile) */
     }
 
-    /* Initial state */
+    /* user menu L2 items initial background color (desktop, mobile) */
     .dropdown-menu {
-        @apply bg-cs-paper-dark;
+        @apply bg-cs-paper-shade; /* [param] (desktop, mobile) */
     }
 
     /* since nested groups are not supported we have to use
-       regular css for the nested dropdowns event
-    */
+       regular css for the nested dropdowns event    */
     .cs-menu-level2 li > ul {
         transform: translatex(100%);
         opacity: 0;
@@ -257,52 +364,90 @@
     }
 
     /*** Mobile specific styles ***/
+
+    /* public menu hamburger (mobile) */
     .cs-mobile-menu-container {
-        @apply mr-0;
+        @apply mr-0; /* [param] (mobile) */
     }
 
+    /* public menu items (mobile) */
     .cs-mobile-menu {
-        @apply text-cs-red-main;
+        @apply text-cs-red-main; /* [param] public menu items colour (mobile) */
     }
-
     .cs-mobile-menu-button.cs-active .cs-menu-item-icon,
     .cs-logged-nested.cs-active .cs-menu-item-icon {
         transform: rotate(-180deg);
     }
 
+    /* public menu items (mobile) */
     .cs-mobile-testimonials-badge {
-        @apply px-1 font-bold text-white rounded-full bg-cs-red-main text-cs-badge;
+        @apply
+            px-1.5 /* [param] (mobile) */
+            font-bold /* [param] (mobile) */
+            text-white /* [param] (mobile) */
+            rounded-full /* [param] (mobile) */
+            bg-cs-red-main /* [param] (mobile) */
+            text-cs-badge; 
     }
 
+    /* public menu auth items (mobile) */
     .cs-mobile-menu-auth-item {
-        @apply pl-4 pr-4 py-3 font-sans font-bold uppercase border-b border-cs-red-main bg-cs-red-main/10 md:border-0 md:bg-transparent md:px-0 md:py-0;
-    }
+        @apply
 
+            pl-4 /* [param] (mobile) */
+            pr-4 /* ??? no effect: remove ? */
+            md:px-0 /* ??? remove ? */
+            
+            py-3 /* [param] (mobile) */
+            md:py-0 /* ??? remove ? */
+            
+            font-sans /* [param] (mobile) */
+            font-medium /* [param] (mobile) */
+            uppercase /* [param] (mobile) */
+            border-b
+            border-cs-red-main /* [param] (mobile) */
+            bg-cs-red-main/10 /* [param] (mobile) */
+            md:border-0 /* ??? remove? */
+            md:bg-transparent /* ??? remove? */
+    }  /* CORRESPONDS TO:  .cs-menu-auth-item */
+
+    /* public menu auth items (mobile) */
     .cs-mobile-menu-auth-icon {
-        @apply h-4 ml-0 mr-2 md:ml-1 md:mr-0;
+        @apply
+            h-4 /* [param] (mobile) */
+            ml-0 /* [param] (mobile) */
+            mr-2 /* [param] (mobile) */
+            md:ml-1 /* ??? remove ? */
+            md:mr-0; /* ??? remove ? */
     }
 
+    /* public menu L2 items (mobile) */
     .cs-mobile-menu ul .cs-menu-voice-item {
-        @apply pl-6;
+        @apply pl-6; /* [param] L2 menu items indentation (mobile) */
     }
 
+    /* public menu L3 items (mobile) */
     .cs-mobile-menu ul ul  .cs-menu-voice-item {
-        @apply pl-12;
+        @apply pl-12; /* [param] L3 menu items indentation (mobile) */
     }
 }
 
-.cs-foot-container {
-    @apply text-cs-paper mt-[36px] mb-[46px] md:gap-28;
+.cs-footer-container {
+    @apply
+        text-cs-paper
+        mt-[36px]
+        mb-[46px]
+        md:gap-28; /* [param] */
 }
 
 .cs-ul-footer {
-    @apply w-[175px];
+    @apply w-[175px]; /* [param] */
 }
 
 .cs-ul-footer li {
-        @apply mb-2.5;
-    }
+    @apply mb-2.5; /* [param] */
+}
 
-    .cs-footer-hide-link {
-        @apply hidden md:block;
-    }
+.cs-footer-hide-link {
+    @apply hidden md:block;
+}

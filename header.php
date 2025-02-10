@@ -11,11 +11,10 @@ $isLogged = isset($_GET['logged']) && $_GET['logged'] === 'true';
                 <img src="/src/assets/logo.svg" class="w-auto h-14" alt="Logo" />
             </a>
         </div>
-        <!-- Container div for public menu (desktop) -->
+        <!-- Container list for public menu (desktop) -->
         <ul class="flex-row hidden md:flex cs-menu-level1">
-            <!-- Container div for L1 public menu item (desktop) -->
-            <li class="inline-block group relative">
-                <!-- L1 public menu item (desktop) -->
+            <!-- L1 public menu item (desktop) -->
+            <li class="relative inline-block group">
                 <a
                     aria-haspopup="true"
                     aria-controls="menu"
@@ -130,14 +129,13 @@ $isLogged = isset($_GET['logged']) && $_GET['logged'] === 'true';
                 </ul>
             </li>
             <!-- L1 public menu item (desktop) -->
-                <li>
-            <a href="" class="flex items-center cs-menu-item">
-                <span class="cs-menu-item-span">Endorsement</span>
-            </a>
-                </li>
-            <!-- Container div for L1 public menu item (desktop) -->
-            <li class="inline-block group relative">
-                <!-- L1 public menu item (desktop) -->
+            <li>
+                <a href="" class="flex items-center cs-menu-item">
+                    <span class="cs-menu-item-span">Endorsement</span>
+                </a>
+            </li>
+            <!-- L1 public menu item (desktop) -->
+            <li class="relative inline-block group">
                 <a
                     aria-haspopup="true"
                     aria-controls="menu-2"
@@ -166,9 +164,8 @@ $isLogged = isset($_GET['logged']) && $_GET['logged'] === 'true';
                     </li>
                 </ul>
             </li>
-            <!-- Container div for L1 public menu item (desktop) -->
-            <li class="inline-block group relative" >
-                <!-- L1 public menu item (desktop) -->
+            <!-- L1 public menu item (desktop) -->
+            <li class="relative inline-block group">
                 <a
                     aria-haspopup="true"
                     aria-controls="menu-2"
@@ -199,13 +196,13 @@ $isLogged = isset($_GET['logged']) && $_GET['logged'] === 'true';
             </li>
             <!-- L1 public menu item (desktop) -->
             <li>
-               <a href="" class="relative flex items-center cs-menu-item">
-                <span class="cs-menu-item-span">Testimonials</span>
-                <!-- Testimonials badge -->
-                <span class="absolute font-bold rounded-full cs-testimonials-badge">1,252</span>
-            </a>
+                <a href="" class="relative flex items-center cs-menu-item">
+                    <span class="cs-menu-item-span">Testimonials</span>
+                    <!-- Testimonials badge -->
+                    <span class="absolute font-bold rounded-full cs-testimonials-badge">1,252</span>
+                </a>
             </li>
-            </ul>
+        </ul>
         <!-- Hamburger button (mobile) -->
         <div class="flex justify-end cs-mobile-menu-container md:hidden">
             <button class="inline-flex items-center justify-center w-6 h-6 text-center transition cs-mobile-menu-button group"
@@ -309,7 +306,7 @@ $isLogged = isset($_GET['logged']) && $_GET['logged'] === 'true';
                     <!-- L1 Log out user menu item (desktop & mobile) -->
                     <div class="flex cs-menu-logged-bottom">
                         <a href="/" class="flex flex-row items-center">
-                            <img src="src/assets/log-out.svg" class="w-auto h-4 my-auto cs-menu-logged-icon"
+                            <img src="src/assets/log-out.svg" class="w-auto h-4 my-auto cs-menu-logout-icon"
                                 alt="Log Out" />
                             Log out
                         </a>
@@ -320,14 +317,14 @@ $isLogged = isset($_GET['logged']) && $_GET['logged'] === 'true';
             <!-- Container div for auth buttons (desktop) | If user is not logged -->
             <div class="justify-end hidden cs-menu-auth md:flex">
                 <!-- Sign up button (desktop) | If user is not logged -->
-                <a href="#" class="flex flex-row text-sm font-medium cs-menu-auth-item sign-up-login-spacing">
+                <a href="#" class="flex flex-row text-sm cs-menu-auth-item sign-up-login-spacing">
                     <span>Sign Up</span>
-                    <img src="src/assets/sign-up.svg" class="w-auto h-4 my-auto cs-menu-auth-icon" alt="Sign Up" />
+                    <img src="src/assets/sign-up.svg" class="w-auto my-auto cs-menu-auth-icon cs-menu-auth-gap" alt="Sign Up" />
                 </a>
                 <!-- Log in button (desktop) | If user is not logged -->
-                <a href="/?logged=true" class="flex flex-row ml-4 text-sm font-medium cs-menu-auth-item">
+                <a href="/?logged=true" class="flex flex-row text-sm cs-menu-auth-item">
                     <span>Log In</span>
-                    <img src="src/assets/log-in.svg" class="w-auto h-4 my-auto cs-menu-auth-icon" alt="Log In" />
+                    <img src="src/assets/log-in.svg" class="w-auto my-auto cs-menu-auth-icon" alt="Log In" />
                 </a>
             </div>
         <?php } ?>
@@ -511,7 +508,7 @@ $isLogged = isset($_GET['logged']) && $_GET['logged'] === 'true';
                         </a>
                     </li>
                     <!-- L2 public menu item (mobile) -->
-                    <li class="cs-menu-voice-item  ">
+                    <li class="cs-menu-voice-item ">
                         <a href="" class="flex items-center cs-menu-item">
                             <span class="cs-menu-item-span">Gallery</span>
                         </a>
@@ -520,18 +517,18 @@ $isLogged = isset($_GET['logged']) && $_GET['logged'] === 'true';
             </div>
             <?php if (!$isLogged) { ?>
                 <!-- Sign up button (mobile) | If user is not logged -->
-                <a href="#" class="flex flex-row text-sm items-center font-medium cs-mobile-menu-auth-item">
+                <a href="#" class="flex flex-row items-center text-sm cs-mobile-menu-auth-item">
                     <img src="src/assets/sign-up.svg" class="w-auto my-auto cs-mobile-menu-auth-icon" alt="Sign Up" />
                     <span>Sign Up</span>
                 </a>
                 <!-- Log in button (mobile) | If user is not logged -->
-                <a href="/?logged=true" class="flex flex-row items-center text-sm font-medium cs-mobile-menu-auth-item">
+                <a href="/?logged=true" class="flex flex-row items-center text-sm cs-mobile-menu-auth-item">
                     <img src="src/assets/log-in.svg" class="w-auto my-auto cs-mobile-menu-auth-icon" alt="Log In" />
                     <span>Log In</span>
                 </a>
             <?php } else { ?>
                 <!-- Log out button (mobile) | If user is logged -->
-                <a href="/" class="flex flex-row text-sm font-medium cs-mobile-menu-auth-item">
+                <a href="/" class="flex flex-row text-sm cs-mobile-menu-auth-item">
                     <img src="src/assets/log-in.svg" class="w-auto my-auto cs-mobile-menu-auth-icon" alt="Log Out" />
                     <span>Log Out</span>
                 </a>

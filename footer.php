@@ -1,5 +1,5 @@
 <footer class="bg-cs-red-main">
-    <div class="cs-foot-container flex justify-center flex-col-reverse md:items-center lg:flex-row">
+    <div class="cs-footer-container flex justify-center flex-col-reverse md:items-center lg:flex-row">
         <div class="flex flex-col items-center md:items-start md:flex-row lg:flex-col">
         <div class="flex flex-col md:mr-28 lg:mr-0"><img src="/src/assets/logo_footer.svg" class="h-14 w-auto mt-[70px] md:mt-0" alt="Logo"/>
             <h6 class="font-sans uppercase text-xs font-bold tracking-widest mt-4 mb-[75px]">Serving parishes with teachings, </br>formation & new evangelisation.</h6>
