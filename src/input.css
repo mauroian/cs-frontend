@@ -34,7 +34,8 @@
         */
     }
 
-    /* ??? since this is not used as parameter, can it be moved inside the HTML? */
+    /* not a parameter, but cannot be placed in HTML */
+    /* trick to avoid that the below L2 items block disappears when mouse is between L1 word and L2 block */
     .inline-block.group:hover:after {
         @apply absolute left-0 w-full h-20 top-3;
         content: "";
@@ -80,13 +81,26 @@
             --tw-bg-opacity: 1; 
             --tw-content: "";
             content: var(--tw-content);
+
+            /* IF I WANT 'NORMAL' UNDERLINE WITHOUT TRANSITION, JUST COMMENT THE transition: code */
             transition:
                 width 0.1s ease 0s, /* [param] the first value: underline animation speed for public menu (desktop & mobile) */
                 left 0.1s ease 0s;
+      
     }
 
-    /* ??? since this is not used as parameter, can it be moved inside the HTML? */
-    /* hover effect */
+    /* menu item text element */
+    /* underline hover effect (part 1) */
+    .cs-menu-item-span {
+        @apply relative mr-auto md:mr-0;
+        line-height: 1;
+        transition-duration: 0.3s;
+        transition-property: all;
+        /* it means that the transition acts on all properties */
+        transition-timing-function: cubic-bezier(0.4, 0, 1, 1);
+    }    
+    /* underline hover effect (part 2) */
+    /* not a parameter, but cannot be placed in HTML */
     .cs-menu-item:hover > .cs-menu-item-span:after {
         width: 100%;
         left: 0;
@@ -95,16 +109,14 @@
     /*  L1, L2, L3 menu items height  (desktop & mobile)*/
     .cs-menu-voice-item,
     .cs-mobile-menu-auth-item {
-        @apply h-12; /* [param] height of container of individual menu item for public menu (desktop & mobile) */
+        @apply h-10; /* [param] height of container of individual menu item for public menu (desktop & mobile) */
     }
 
     /*  L1, L2, L3 menu items features (desktop & mobile)*/
     .cs-menu-voice-item {
         @apply 
-            px-4 /* [param] horizontal padding of each public menu item (desktop & mobile) */
-            /* ??? px- needs to be split in pr- and pl- */
-
-            py-4 /* ??? correct to say that py- should not be here because items are vertically centered anyway? */
+            pl-4 /* [param] left padding of each public menu item (desktop & mobile) */
+            pr-4 /* [param] right padding of each public menu item (desktop & mobile) */
             
             border-b  /* [param] thickness of divider line of public menu items (desktop & mobile) */
             border-cs-red-main /* [param] color of divider line of public menu items (desktop & mobile) */
@@ -114,22 +126,10 @@
             items-center
     }
 
-    /* ??? since this is not used as parameter, can it be moved inside the HTML? */
+        /* not a parameter, but cannot be placed in HTML */
     /* submenu item */
     .cs-menu-level2 .cs-menu-item {
         @apply w-full;
-    }
-
-    /* menu item text element */
-    /* ??? What is it? Any parameters in it? */
-    .cs-menu-item-span {
-        @apply relative mr-auto md:mr-0;
-        line-height: 1;
-        transition-duration: 0.3s;
-        transition-property: all;
-        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-        transition-timing-function: cubic-bezier(0.4, 0, 1, 1);
-        /* ??? remove duplicate */
     }
 
     /* Level 1 menu items: gap from dropdown arrow (desktop) */
@@ -173,19 +173,13 @@
     }
 
     /* menu auth block (desktop) */
-    /* ??? class used only for signup and login buttons in public desktop menu) NOT in mobile: hence can we remove the two mobile selectors for ml- and mr- as they seem to be useless? */
     .cs-menu-auth-icon {
         @apply
-            ml-0 /* ??? remove? */
             md:ml-2 /* [param] gap between icons and words next to them (desktop) */
-            mr-0 /* ??? remove? */
-            md:mr-6 /* ??? remove? I created cs-menu-auth-gap to control this */
-            h-6; /* ??? moved here from HTML, to control size of the two auth icons */
-            /* but how do I center vertically <span>Sign Up</span> and <span>Log in</span> ? */
+            h-6; /* [param] size of the two auth icons */
     }
 
     /* menu auth block (desktop): gap between signup block and login block */
-    /* ??? MI created this */
     .cs-menu-auth-gap {
         @apply md:mr-8; /* [param] gap between signup block and login block (desktop) */
     }
@@ -193,33 +187,11 @@
     /* menu auth items (desktop) */
     .cs-menu-auth-item {
         @apply
-            
-            /* ??? 
-            The below 5 properties seem to have no effect. 
-            I control those margins and gaps from:
-             .cs-menu-auth-icon
-             .cs-menu-auth-gap.
-            Therefore, can we remove the below 5 properties?
-            
-                pl-4
-                pr-4
-                md:px-0
-                py-3
-                md:py-20
-            */
 
             font-sans /* [param] (desktop) */
             font-medium /* [param] (desktop) */
             uppercase /* [param] (desktop) */
-           
-            border-b-0  /* ??? border not needed: can it be removed? */
-            md:border-0 /* ??? border not needed: can it be removed? */
-            
-            border-cs-red-main /* ??? border not needed: can it be removed? */
-
-            bg-cs-red-main/10 /* ??? can it be removed? */
-            md:bg-transparent /* ??? can it be removed? */
-    }   /* CORRESPONDS TO:  .cs-mobile-menu-auth-item */
+    }
 
     /* testimonials badge (desktop) */
     .cs-testimonials-badge {
@@ -231,12 +203,6 @@
         py-0 /* [param] */
         text-cs-badge  /* ??? We will remove this once we define better typography */
         text-white; /* [param] */
-    }
-
-    /* login logout spacing */
-    /* ??? CLASS NOT USED ANYWHERE: can we remove this? */
-    .cs-sign-up-login-spacing {
-        @apply mr-0;
     }
 
     /* user avatar (desktop, mobile) */
@@ -306,8 +272,6 @@
             border-b /* [param] (desktop, mobile) */
             border-cs-blue-light/15 /* [param] (desktop, mobile) */
             hover:bg-gray-100 /* [param] (desktop, mobile) */
-            dark:hover:bg-gray-600 /* ??? no effect [param] (desktop, mobile) */
-            dark:hover:text-white; /* ??? no effect [param] (desktop, mobile) */
     }
 
     /* user menu  items L2 indentation (desktop, mobile) */
@@ -395,21 +359,14 @@
         @apply
 
             pl-4 /* [param] (mobile) */
-            pr-4 /* ??? no effect: remove ? */
-            md:px-0 /* ??? remove ? */
-            
             py-3 /* [param] (mobile) */
-            md:py-0 /* ??? remove ? */
-            
             font-sans /* [param] (mobile) */
             font-medium /* [param] (mobile) */
             uppercase /* [param] (mobile) */
-            border-b
+            border-b /* [param] (mobile) */
             border-cs-red-main /* [param] (mobile) */
             bg-cs-red-main/10 /* [param] (mobile) */
-            md:border-0 /* ??? remove? */
-            md:bg-transparent /* ??? remove? */
-    }  /* CORRESPONDS TO:  .cs-menu-auth-item */
+    }
 
     /* public menu auth items (mobile) */
     .cs-mobile-menu-auth-icon {
@@ -417,8 +374,6 @@
             h-4 /* [param] (mobile) */
             ml-0 /* [param] (mobile) */
             mr-2 /* [param] (mobile) */
-            md:ml-1 /* ??? remove ? */
-            md:mr-0; /* ??? remove ? */
     }
 
     /* public menu L2 items (mobile) */

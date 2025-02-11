@@ -317,12 +317,12 @@ $isLogged = isset($_GET['logged']) && $_GET['logged'] === 'true';
             <!-- Container div for auth buttons (desktop) | If user is not logged -->
             <div class="justify-end hidden cs-menu-auth md:flex">
                 <!-- Sign up button (desktop) | If user is not logged -->
-                <a href="#" class="flex flex-row text-sm cs-menu-auth-item sign-up-login-spacing">
+                <a href="#" class="flex flex-row items-center text-sm cs-menu-auth-item sign-up-login-spacing">
                     <span>Sign Up</span>
                     <img src="src/assets/sign-up.svg" class="w-auto my-auto cs-menu-auth-icon cs-menu-auth-gap" alt="Sign Up" />
                 </a>
                 <!-- Log in button (desktop) | If user is not logged -->
-                <a href="/?logged=true" class="flex flex-row text-sm cs-menu-auth-item">
+                <a href="/?logged=true" class="flex flex-row items-center text-sm cs-menu-auth-item">
                     <span>Log In</span>
                     <img src="src/assets/log-in.svg" class="w-auto my-auto cs-menu-auth-icon" alt="Log In" />
                 </a>

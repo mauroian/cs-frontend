@@ -7,8 +7,8 @@ export default {
   theme: {
     screens: {
       sm: "480px",
-      md: "900px",
-      lg: "1000px",
+      md: "768px",
+      lg: "1024px",
       xl: "1280px",
       "2xl": "1536px",
     },
@@ -33,6 +33,19 @@ export default {
         "7xl": "5rem",
         "8xl": "6rem",
         "9xl": "7rem",
+        "cs-xs": "0.75rem", // text-xs in Tailwind (12px)
+        "cs-sm": "0.875rem", // text-sm in Tailwind (14px)
+        "cs-base": "1rem", // text-base in Tailwind (16px)
+        "cs-lg": "1.125rem", // text-lg in Tailwind (18px)
+        "cs-xl": "1.25rem", // text-xl in Tailwind (20px)
+        "cs-2xl": "1.5rem", // text-2xl in Tailwind (24px)
+        "cs-3xl": "1.875rem", // text-3xl in Tailwind (30px)
+        "cs-4xl": "2.25rem", // text-4xl in Tailwind (36px)
+        "cs-5xl": "3rem", // text-5xl in Tailwind (48px)
+        "cs-6xl": "3.75rem", // text-6xl in Tailwind (60px)
+        "cs-7xl": "4.5rem", // text-7xl in Tailwind (72px)
+        "cs-8xl": "6rem", // text-8xl in Tailwind (96px)
+        "cs-9xl": "8rem", // text-9xl in Tailwind (128px)
       },
       colors: {
         "cs-red-dark": "#570208",
