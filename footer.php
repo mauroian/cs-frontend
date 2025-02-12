@@ -5,7 +5,7 @@
             <h6 class="font-sans uppercase text-xs font-bold tracking-widest mt-4 mb-[75px]">Serving parishes with teachings, </br>formation & new evangelisation.</h6>
         </div>
             <div class="flex flex-col"><h2 class="font-sans uppercase text-lg font-bold tracking-widest mb-1.5">Get in touch</h2>
-            <p class="font-sans text-xs tracking-widest">info@comeandsee.org</p>
+             <img src="/src/assets/email_comeandsee.svg" class="h-3.5 -ml-5" alt="Email"/>
             <div class="flex flex-row gap-2.5 my-3.5"><img src="/src/assets/youtube.svg"><img src="/src/assets/facebook.svg">
             </div>
             <p class="font-sans text-[9px] tracking-wider">Come & See 2023 - All rights Reserved</p>
