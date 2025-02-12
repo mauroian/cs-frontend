@@ -13,7 +13,9 @@
         </div>
         </div>
         <div class="font-sans uppercase tracking-widest">
-            <p class="text-lg font-bold my-2.5 text-center md:text-left">Quick links</p>
+            <div class="text-xs flex flex-col items-center md:items-start md:flex-row ">
+                <p class="text-lg font-bold my-2.5 text-left md:text-left w-[175px]">Quick links</p>
+            </div>
             <div class="text-xs flex flex-col items-center md:items-start md:flex-row">
             <ul class="cs-ul-footer md:mr-8">
                 <li><a href="#">Bible Timeline Course</a></li>
