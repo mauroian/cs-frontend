@@ -37,7 +37,7 @@
     /* not a parameter, but cannot be placed in HTML */
     /* trick to avoid that the below L2 items block disappears when mouse is between L1 word and L2 block */
     .inline-block.group:hover:after {
-        @apply absolute left-0 w-full h-20 top-3;
+        @apply absolute left-0 w-full h-8 top-3;
         content: "";
     }
 
@@ -46,7 +46,8 @@
         @apply 
             ml-2 /* [param] left margin of logo (desktop, mobile) */
             mr-auto /* for mobile, this must be set */
-            md:mr-0; /* [param] right margin of logo (desktop) */ 
+            md:mr-0 /* [param] right margin of logo (desktop) */
+            min-w-48;
     }
 
 
@@ -229,8 +230,6 @@
             top-12 /* [param] (desktop, mobile) */
             z-10
             w-[190px] /* [param] (desktop, mobile) */
-            divide-y
-            divide-gray-100
             rounded-xl
             bg-white
             shadow-cs-all-around
@@ -264,25 +263,21 @@
     }
 
     /* user menu items L1, L2 (desktop, mobile) */
-    .cs-menu-logged-item {
-        @apply 
-            px-4 /* [param] (desktop, mobile) */
-            pt-2.5 /* [param] (desktop, mobile) */
-            pb-2 /* [param] (desktop, mobile) */
-            border-b /* [param] (desktop, mobile) */
-            border-cs-blue-light/15 /* [param] (desktop, mobile) */
-            hover:bg-gray-100 /* [param] (desktop, mobile) */
+    .cs-menu-logged-item a {
+        @apply
+        px-4 /* [param] (desktop, mobile) */
+        pt-2.5 /* [param] (desktop, mobile) */
+        pb-2 /* [param] (desktop, mobile) */
+        border-b /* [param] (desktop, mobile) */
+        border-cs-blue-light/15 /* [param] (desktop, mobile) */
+        hover:bg-gray-100 /* [param] (desktop, mobile) */
     }
 
     /* user menu  items L2 indentation (desktop, mobile) */
-    .dropdown-menu .cs-menu-logged-item {
+    .dropdown-menu .cs-menu-logged-item a {
         @apply px-8; /* [param] (desktop, mobile) */
     }
 
-    /* avoid border on last element of list */
-    .cs-menu-logged-items li {
-        @apply md:last:border-b-0;
-    }
 
     /* user menu logout container */
     .cs-menu-logged-bottom {
