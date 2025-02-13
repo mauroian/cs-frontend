@@ -5,6 +5,7 @@ const MENU_LEVEL_2_DELAY = 250;
 const MENU_LEVEL_2_DURATION = 500;
 const MENU_LEVEL_3_DELAY = 50;
 const MENU_LEVEL_3_DURATION = 200;
+const CLOSE_OTHER_MENUS = true;
 
 // For click event and also reference for outer div tag
 const btn = document.querySelector("button.cs-mobile-menu-button");
@@ -19,18 +20,29 @@ function onClickOutside(cb) {
   });
 }
 
-/** here you can define the animation for the menu **/
+/** function to toggle the menu with animation **/
 const menuToggle = (element) => {
-  $(element).slideToggle("fast");
+  if (element.style.display === "none" || element.style.display === "") {
+    element.style.display = "block";
+    setTimeout(() => {
+      element.style.transition = `all ${MENU_LEVEL_2_DURATION}ms ease-in-out`;
+      element.style.opacity = 1;
+    } , 50);
+  } else {
+    element.style.transition = `all ${MENU_LEVEL_2_DURATION}ms ease-in-out`;
+    element.style.opacity = 0;
+    setTimeout(() => {
+      element.style.display = "none";
+      delete element.style.transition;
+    }, MENU_LEVEL_2_DURATION);
+  }
 }
-
 
 btn.addEventListener("click", () => {
   menuToggle(menu);
 });
 
-
-if(loggedMenuBtn) {
+if (loggedMenuBtn) {
   onClickOutside(() => {
     loggedMenu.classList.add('invisible');
     loggedMenu.classList.remove('visible');
@@ -46,88 +58,138 @@ if(loggedMenuBtn) {
   });
 }
 
+const closeOtherMenu = (menu) => {
+  menu.style.display = 'none';
+  menu.style.opacity = 0;
+  menu.classList.remove('active');
+  delete menu.style.transition;
+}
+
 document.addEventListener("DOMContentLoaded", () => {
 
   /** convert to mouseenter and mouseleave **/
-  $('.group.inline-block').hover(function() {
-    $(this).find('ul.cs-menu-level2').stop(true, true).delay(MENU_LEVEL_2_DELAY).fadeIn(MENU_LEVEL_2_DURATION);
-  }, function() {
-    $(this).find('ul.cs-menu-level2').stop(true, true).delay(MENU_LEVEL_2_DELAY).fadeOut(MENU_LEVEL_2_DURATION);
-  });
-
-
-
-  $('.cs-dropdown').hover(function() {
-    $(this).find('ul.cs-menu-level3').stop(true, true).delay(MENU_LEVEL_3_DELAY).fadeIn(MENU_LEVEL_3_DURATION);
-  }, function() {
-    $(this).find('ul.cs-menu-level3').stop(true, true).delay(MENU_LEVEL_3_DELAY).fadeOut(MENU_LEVEL_3_DURATION);
-  });
-
-
-  /** logic to trigger the opening and close of the menu items **/
-  $('.cs-mobile-menu-button').on('click', function() {
-    const menu = $(this).next("ul.cs-mobile-menu");
-    if (menu) {
-      if(menu.hasClass('cs-inner')) {
-        $('ul.active.cs-inner').slideUp("fast");
-        $('ul.active.cs-inner').not(menu).removeClass('active');
-        $(this).parents('li').find('.cs-active').removeClass("cs-active");
-      } else {
-        $('ul.active').slideUp("fast");
-        $('ul.active').not(menu).removeClass('active');
-        $("ul.cs-mobile-menu").find('.cs-active').removeClass("cs-active");
-
-      }
-      if(menu.hasClass('active')){
-        menu.slideUp("fast");
-        menu.removeClass('active');
-        $(this).removeClass("cs-active");
-      } else {
-        $(menu).addClass('active');
-        $(this).addClass("cs-active");
-        menuToggle(menu);
-      }
-    }
-  });
-
-
-  $('.cs-logged-nested').on('click', function() {
-    const menu = $(this).find(".dropdown-menu");
-    if (menu) {
-        $('ul.dropdown-menu.active').slideUp("fast");
-        $('ul.dropdown-menu.active').not(menu).removeClass('active');
-        $(".cs-menu-logged-items").find('.cs-active').removeClass("cs-active");
-      }
-      if(menu.hasClass('active')){
-        menu.slideUp("fast");
-        menu.removeClass('active');
-        $(this).removeClass("cs-active");
-      } else {
-        $(menu).addClass('active');
-        $(this).addClass("cs-active");
-        menuToggle(menu);
-      }
-  });
-
-  /** logic to trigger the opening and close of the logged menu items **/
- /* const loggedMenuItems = document.querySelectorAll('.cs-logged-nested');
-  loggedMenuItems.forEach(button => {
-    button.addEventListener("click", function () {
-      const closeMenu = document.querySelectorAll(".dropdown-menu");
-      closeMenu.forEach(menu => {
-        if (menu !== this.closest("li") && menu.style.display !== "none" && menu !== this) {
-          //menu.style.display = "none";
-          $(menu).slideUp("fast");
-          menu.previousElementSibling.classList.remove("cs-active");
-        }
-      });
-      const menu = $(button).next(".dropdown-menu");
+  document.querySelectorAll('.group.inline-block').forEach(item => {
+    item.addEventListener('mouseenter', () => {
+      const menu = item.querySelector('ul.cs-menu-level2');
       if (menu) {
-        button.classList.toggle("cs-active");
-        menuToggle(menu);
+        menu.style.display = 'block';
+        setTimeout(() => {
+          menu.style.transition = `opacity ${MENU_LEVEL_2_DURATION}ms ease`;
+          menu.style.opacity = 1;
+        }, MENU_LEVEL_2_DELAY);
       }
     });
-  });*/
 
+    item.addEventListener('mouseleave', () => {
+      const menu = item.querySelector('ul.cs-menu-level2');
+      if (menu) {
+        setTimeout(() => {
+          menu.style.transition = `opacity ${MENU_LEVEL_2_DURATION}ms ease`;
+          menu.style.opacity = 0;
+          setTimeout(() => {
+            menu.style.display = 'none';
+          }, MENU_LEVEL_2_DURATION);
+        }, MENU_LEVEL_2_DELAY);
+      }
+    });
+  });
 
+  document.querySelectorAll('.cs-dropdown').forEach(item => {
+    item.addEventListener('mouseenter', () => {
+      const menu = item.querySelector('ul.cs-menu-level3');
+      if (menu) {
+        menu.style.display = 'block';
+        setTimeout(() => {
+          menu.style.transition = `opacity ${MENU_LEVEL_3_DURATION}ms ease`;
+          menu.style.opacity = 1;
+        }, MENU_LEVEL_3_DELAY);
+      }
+    });
+
+    item.addEventListener('mouseleave', () => {
+      const menu = item.querySelector('ul.cs-menu-level3');
+      if (menu) {
+        setTimeout(() => {
+          menu.style.transition = `opacity ${MENU_LEVEL_3_DURATION}ms ease`;
+          menu.style.opacity = 0;
+          setTimeout(() => {
+            menu.style.display = 'none';
+          }, MENU_LEVEL_3_DURATION);
+        }, MENU_LEVEL_3_DELAY);
+      }
+    });
+  });
+
+  /** logic to trigger the opening and close of the menu items **/
+  document.querySelectorAll('.cs-mobile-menu-button').forEach(button => {
+    button.addEventListener('click', function() {
+      const menu = this.nextElementSibling;
+      if (menu) {
+       if(CLOSE_OTHER_MENUS) {
+         if (menu.classList.contains('cs-inner')) {
+           document.querySelectorAll('ul.active.cs-inner').forEach(activeMenu => {
+             if(activeMenu !== menu) {
+               closeOtherMenu(activeMenu);
+             }
+           });
+           document.querySelectorAll('.cs-active').forEach(activeItem => {
+             if(activeItem !== this) {
+               activeItem.classList.remove('cs-active');
+             }
+           });
+         } else {
+           document.querySelectorAll('ul.active').forEach(activeMenu => {
+             if(activeMenu !== menu) {
+               closeOtherMenu(activeMenu);
+             }
+           });
+           document.querySelectorAll('.cs-active').forEach(activeItem => {
+             if(activeItem !== this) {
+               activeItem.classList.remove('cs-active');
+             }
+           });
+         }
+       }
+
+        if (menu.classList.contains('active')) {
+          menuToggle(menu);
+          menu.classList.remove('active');
+          this.classList.remove('cs-active');
+        } else {
+          menu.classList.add('active');
+          this.classList.add('cs-active');
+          menuToggle(menu);
+        }
+      }
+    });
+  });
+
+  document.querySelectorAll('.cs-logged-nested').forEach(button => {
+    button.addEventListener('click', function() {
+      const menu = this.querySelector(".dropdown-menu");
+      if (menu) {
+        if(CLOSE_OTHER_MENUS) {
+          document.querySelectorAll('ul.dropdown-menu.active').forEach(activeMenu => {
+            if(activeMenu !== menu) {
+              closeOtherMenu(activeMenu);
+            }
+          });
+          document.querySelectorAll('.cs-active').forEach(activeItem => {
+            if(activeItem !== this) {
+              activeItem.classList.remove('cs-active');
+            }
+          });
+        }
+        if (menu.classList.contains('active')) {
+          menuToggle(menu);
+          menu.classList.remove('active');
+          this.classList.remove('cs-active');
+        } else {
+          menu.classList.add('active');
+          this.classList.add('cs-active');
+          menuToggle(menu);
+        }
+      }
+    });
+  });
 });
