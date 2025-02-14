@@ -57,8 +57,8 @@
             relative
             w-full 
             font-serif /* [param] font family for public menu items (desktop & mobile) */
-            text-base /* [param] font size for public menu items (desktop & mobile) */
-            tracking-wide /* [param] letter spacing for public menu items (desktop & mobile) */
+            text-sm /* [param] font size for public menu items (desktop & mobile) */
+            tracking-normal /* [param] letter spacing for public menu items (desktop & mobile) */
             uppercase /* [param] words case for public menu items (desktop & mobile) */
             md:w-auto;
     }
@@ -382,22 +382,6 @@
     }
 }
 
-.cs-footer-container {
-    @apply
-        text-cs-paper
-        mt-[36px]
-        mb-[46px]
-        md:gap-28; /* [param] */
-}
-
-.cs-ul-footer {
-    @apply w-[175px]; /* [param] */
-}
-
-.cs-ul-footer li {
-    @apply mb-2.5; /* [param] */
-}
-
-.cs-footer-hide-link {
-    @apply hidden md:block;
+.cs-quicklinks>a {
+    @apply sm:ml-5;
 }
