@@ -21,7 +21,10 @@
 
     /* Level 1 menu items: positioning and gap (desktop) */
     .cs-menu-level1 {
-        @apply gap-6
+        @apply
+        gap-6
+        md:gap-4
+        lg:gap-6
         /* [param] gap between public menu items (desktop) */
         ml-auto
         /* [param] left margin of public menu items container div (desktop) */
@@ -47,7 +50,8 @@
             ml-2 /* [param] left margin of logo (desktop, mobile) */
             mr-auto /* for mobile, this must be set */
             md:mr-0 /* [param] right margin of logo (desktop) */
-            min-w-56;
+            md:min-w-32
+            lg:min-w-32;
     }
 
 
@@ -58,6 +62,8 @@
             w-full 
             font-serif /* [param] font family for public menu items (desktop & mobile) */
             text-sm /* [param] font size for public menu items (desktop & mobile) */
+            md:text-xs
+            lg:text-sm
             tracking-normal /* [param] letter spacing for public menu items (desktop & mobile) */
             uppercase /* [param] words case for public menu items (desktop & mobile) */
             md:w-auto;
@@ -169,20 +175,22 @@
             ml-4 /* [param] left margin of the auth 'block' and dropdown user menu (mobile): controls the gap between user avatar and hamburger  */        
             md:ml-4 /* [param] left margin of the auth 'block' and dropdown user menu (desktop): controls the gap from the L1 menu items, if these are right aligned */
             mr-2 /* [param] right margin of the auth 'block' and dropdown user menu (mobile) */
-            md:mr-8 /* [param] right margin of the auth 'block' and dropdown user menu (desktop) */
-            md:min-w-56; /* [param] the minimum width of the of the auth 'block': : must not be too small to have the desired effect of not making L1 items change position if user is logged or not */
+            md:mr-2 /* [param] right margin of the auth 'block' and dropdown user menu (desktop) */
+            md:min-w-8
+            lg:min-w-56; /* [param] the minimum width of the of the auth 'block': : must not be too small to have the desired effect of not making L1 items change position if user is logged or not */
     }
 
     /* menu auth block (desktop) */
     .cs-menu-auth-icon {
         @apply
             md:ml-2 /* [param] gap between icons and words next to them (desktop) */
-            h-6; /* [param] size of the two auth icons */
+            h-5
+            lg:h-6; /* [param] size of the two auth icons */
     }
 
     /* menu auth block (desktop): gap between signup block and login block */
     .cs-menu-auth-gap {
-        @apply md:mr-8; /* [param] gap between signup block and login block (desktop) */
+        @apply md:mr-4; /* [param] gap between signup block and login block (desktop) */
     }
 
     /* menu auth items (desktop) */
@@ -194,9 +202,17 @@
             uppercase /* [param] (desktop) */
     }
 
+    .cs-menu-auth-item span {
+        @apply
+          md:hidden
+          lg:inline-block;
+    }
+
     /* testimonials badge (desktop) */
     .cs-testimonials-badge {
-        @apply 
+        @apply
+        md:hidden
+        lg:inline-block
         -right-10 /* [param] */
         -top-3.5 /* [param] */
         bg-cs-red-main /* [param] */
