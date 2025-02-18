@@ -38,7 +38,7 @@
 
     /* whole navbar features (desktop & mobile) */
     .cs-header {
-        @apply 
+        @apply
             h-20  /* [param] header height (desktop, mobile) */
             border-b-4 /* [param] thickness of header's bottom line (mobile) */
             md:border-0
@@ -136,8 +136,18 @@
     /* underline hover effect (part 2) */
     /* not a parameter, but cannot be placed in HTML */
     .cs-menu-item:hover > .cs-menu-item-span:after {
-        width: 100%;
-        left: 0;
+        @apply
+        w-0
+        left-1/2
+        md:w-full
+        md:left-0;
+    }
+
+    /** rule for mobile menu */
+    .cs-menu-item.cs-active > .cs-menu-item-span:after {
+        @apply
+        w-full
+        left-0;
     }
 
     /*  L1, L2, L3 menu items height  (desktop & mobile)*/
@@ -267,7 +277,8 @@
     /* user menu outer container (desktop, mobile) */
     .cs-menu-logged {
         @apply 
-            right-0 /* [param] (desktop, mobile) */
+            md:right-0 /* [param] (desktop, mobile) */
+            -right-5
             top-12 /* [param] (desktop, mobile) */
             z-10
             w-[300px] /* [param] (desktop, mobile) */

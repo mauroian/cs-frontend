@@ -11,7 +11,7 @@
 
 <body class="flex flex-col min-h-screen">
     <?php require_once 'header.php'; ?>
-    <main class="flex-grow">
+    <main class="flex-grow mt-20 md:mt-0">
         <div class="flex flex-col items-center gap-2 mt-8 mb-32">
 
             <div class="cs-fs-sm">

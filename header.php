@@ -2,9 +2,11 @@
 // changing the following variable to false will toggle the user logged state
 $isLogged = isset($_GET['logged']) && $_GET['logged'] === 'true';
 ?>
-<header class="bg-cs-paper">
+<header class="bg-cs-paper             fixed
+            top-0
+            md:relative w-full">
     <!-- Container nav for header (desktop & mobile) -->
-    <nav class="relative flex items-center p-4 mx-auto cs-header" aria-label="Header">
+    <nav class="flex w-full bg-cs-paper z-10 items-center p-4 mx-auto cs-header" aria-label="Header">
         <!-- Container div for logo (desktop & mobile)-->
         <div class="flex cs-menu-logo">
             <a href="/">
@@ -220,10 +222,12 @@ $isLogged = isset($_GET['logged']) && $_GET['logged'] === 'true';
         if ($isLogged) { ?>
             <!-- Container div for user avatar and user menu (desktop & mobile) | If user is logged -->
             <div class="relative z-30 flex flex-col items-end justify-end cs-menu-auth-logged group">
-                <!-- user avatar picture (desktop & mobile) -->
-                <img class="cs-logged-avatar" src="/src/assets/sample_avatar.png" alt="Bordered avatar">
-                <!-- user avatar name (desktop & mobile) -->
-                <span class="hidden cs-logged-name md:block">Mauro</span>
+                <div class="flex flex-col items-center justify-end">
+                    <!-- user avatar picture (desktop & mobile) -->
+                    <img class="cs-logged-avatar" src="/src/assets/sample_avatar.png" alt="Bordered avatar">
+                    <!-- user avatar name (desktop & mobile) -->
+                    <span class="hidden cs-logged-name md:block">Mauro</span>
+                </div>
                 <!-- Container div for user menu (desktop & mobile) -->
                 <div class="absolute flex-col justify-start invisible opacity-0 cs-menu-logged">
                     <!-- Container div for user menu upper part (user picture, name and email) (desktop & mobile) -->
@@ -325,9 +329,9 @@ $isLogged = isset($_GET['logged']) && $_GET['logged'] === 'true';
         <?php } ?>
     </nav>
     <!-- Container of public menu (mobile) -->
-    <div class="fixed z-20 w-full md:hidden bg-cs-paper">
+    <div class="z-20 w-full md:hidden overscroll-contain overflow-auto cs-mobile-menu-container bg-transparent max-h-[91vh]">
         <!-- Inner container of public menu (mobile) -->
-        <ul class="hidden overflow-hidden cs-mobile-menu ">
+        <ul class="hidden cs-mobile-menu h-full bg-cs-paper">
             <!-- Container div for L1 public menu item (mobile) -->
             <li class="flex flex-col items-center w-full group cs-menu-item">
                 <!-- L1 public menu item (mobile) -->

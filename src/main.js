@@ -1,4 +1,4 @@
-/*
+/**
   DEFINE CONSTANT TO CHANGE DINAMICALLY THE ANIMATION OF THE MENU
  */
 const MENU_LEVEL_2_DELAY = 50;
@@ -7,44 +7,16 @@ const MENU_LEVEL_3_DELAY = 50;
 const MENU_LEVEL_3_DURATION = 200;
 const CLOSE_OTHER_MENUS = false;
 
-// For click event and also reference for outer div tag
-const btn = document.querySelector("button.cs-mobile-menu-button");
-const menu = document.querySelector("ul.cs-mobile-menu");
-const loggedMenuBtn = document.querySelector('.cs-logged-avatar');
-const loggedMenu = document.querySelector('.cs-menu-logged');
 
-/** function to close the menu when clicking outside **/
-function onClickOutside(cb) {
-  document.addEventListener('click', event => {
-    if (!loggedMenu.contains(event.target) && !loggedMenuBtn.contains(event.target)) cb();
-  });
-}
-
-btn.addEventListener("click", () => {
-  slideToggle(menu, MENU_LEVEL_2_DURATION);
-});
-
-if (loggedMenuBtn) {
-  onClickOutside(() => {
-    loggedMenu.classList.add('invisible');
-    loggedMenu.classList.remove('visible');
-    loggedMenu.classList.remove("opacity-100");
-    loggedMenu.classList.add("opacity-0");
-  });
-
-  loggedMenuBtn.addEventListener("click", () => {
-    loggedMenu.classList.toggle('invisible');
-    loggedMenu.classList.toggle('visible');
-    loggedMenu.classList.toggle("opacity-0");
-    loggedMenu.classList.toggle("opacity-100");
-  });
-}
 
 
 document.addEventListener("DOMContentLoaded", () => {
-
-  /** convert to mouseenter and mouseleave **/
+  /**
+   FUNCTION TO MANAGE THE DESKTOP MENU
+   */
   new HoverIntent(document.querySelectorAll('.group.inline-block'), {
+    interval: MENU_LEVEL_2_DELAY,
+    exitDelay: MENU_LEVEL_2_DELAY,
     onEnter: function(item) {
       const menu = item.querySelector('ul.cs-menu-level2');
       if (menu) {
@@ -60,6 +32,8 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 
   new HoverIntent(document.querySelectorAll('.cs-dropdown'), {
+    interval: MENU_LEVEL_3_DELAY,
+    exitDelay: MENU_LEVEL_3_DELAY,
     onEnter: function(item) {
       const menu = item.querySelector('ul.cs-menu-level3');
       if (menu) {
@@ -74,8 +48,16 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   });
 
+  /**
+   * FUNCTION TO MANAGE THE MOBILE MENU
+   */
+    // For click event and also reference for outer div tag
+  const btn = document.querySelector("button.cs-mobile-menu-button");
+  const menu = document.querySelector("ul.cs-mobile-menu");
+  btn.addEventListener("click", () => {
+    slideToggle(menu, MENU_LEVEL_2_DURATION);
+  });
 
-  /** logic to trigger the opening and close of the menu items **/
   document.querySelectorAll('.cs-mobile-menu-button').forEach(button => {
     button.addEventListener('click', function() {
       const menu = this.nextElementSibling;
@@ -119,6 +101,28 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
 
+
+  /**
+   * FUNCTION TO MANAGE THE USER MENU (BOTH MOBILE AND DESKTOP)
+   */
+  const loggedMenuBtn = document.querySelector('.cs-logged-avatar');
+  const loggedMenu = document.querySelector('.cs-menu-logged');
+  if (loggedMenuBtn) {
+    onClickOutside(() => {
+      loggedMenu.classList.add('invisible');
+      loggedMenu.classList.remove('visible');
+      loggedMenu.classList.remove("opacity-100");
+      loggedMenu.classList.add("opacity-0");
+    });
+
+    loggedMenuBtn.addEventListener("click", () => {
+      loggedMenu.classList.toggle('invisible');
+      loggedMenu.classList.toggle('visible');
+      loggedMenu.classList.toggle("opacity-0");
+      loggedMenu.classList.toggle("opacity-100");
+    });
+  }
+
   document.querySelectorAll('.cs-logged-nested').forEach(button => {
     button.addEventListener('click', function() {
       const menu = this.querySelector(".dropdown-menu");
@@ -147,7 +151,20 @@ document.addEventListener("DOMContentLoaded", () => {
       }
     });
   });
+  /** function to close the menu when clicking outside **/
+  function onClickOutside(cb) {
+    document.addEventListener('click', event => {
+      if (!loggedMenu.contains(event.target) && !loggedMenuBtn.contains(event.target)) cb();
+    });
+  }
+
 });
+
+
+/**
+ * FROM HERE AFTER THERE ARE THE FUNCTIONS TO MANAGE THE ANIMATIONS AND SPECIAL JQUERY MIGRATIONS
+ */
+
 
 const slideUp = (target, duration=500) => {
   target.style.transitionProperty = 'height, margin, padding';
