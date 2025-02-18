@@ -4,21 +4,21 @@
     <div class="flex flex-col items-center justify-center w-auto mt-12 mb-8">
 
         <!-- LOGO | GET IN TOUCH | QUICK LINKS container -->
-        <div class="flex flex-col-reverse items-center justify-center gap-8 md:items-start md:flex-row">
+        <div class="flex flex-col-reverse items-start justify-center gap-8 md:items-start md:flex-row">
 
             <!-- LOGO | GET IN TOUCH container -->
-            <div class="flex flex-col items-center gap-12 md:items-start md:flex-col">
+            <div class="flex flex-col items-start md:flex-col">
 
                 <!-- LOGO block -->
-                <div class="flex flex-col gap-3">
+                <div class="flex flex-col gap-3 mt-8 sm:mt-0 ">
                     <img src="/src/assets/logo_footer.svg" class="" alt="Logo" />
-                    <h6 class="font-sans text-xs font-bold tracking-widest uppercase">Serving parishes with teachings, </br>formation & new evangelisation.</h6>
+                    <h6 class="font-sans font-bold tracking-widest uppercase cs-fs-xs">Serving parishes with teachings, </br>formation & new evangelisation.</h6>
                 </div>
 
                 <!-- GET IN TOUCH block -->
-                <div class="flex flex-col">
-                    <h2 class="font-sans text-lg font-bold tracking-widest uppercase">Get in touch</h2>
-                    <img src="/src/assets/email_comeandsee.svg" class="mt-1" alt="Email" />
+                <div class="flex flex-col mt-14">
+                    <h2 class="font-sans font-bold tracking-widest uppercase cs-fs-sm">Get in touch</h2>
+                    <img src="/src/assets/email_comeandsee.svg" class="h-5 mt-1 sm:h-4" alt="Email" />
                     <div class="flex flex-row gap-3 mt-2">
                         <img src="/src/assets/youtube.svg"><img src="/src/assets/facebook.svg">
                     </div>
@@ -27,9 +27,9 @@
             </div>
 
             <!-- QUICK LINKS block -->
-            <div class="font-sans tracking-normal">
-                <p class="text-lg font-bold sm:ml-5">Quick links</p>
-                <div class="flex flex-col flex-wrap justify-start text-sm  sm:h-[600px]  mt-3 gap-2.5 cs-quicklinks">
+            <div class="font-sans cs-fs-xs">
+                <p class="mb-5 font-bold sm:ml-5">Quick links</p>
+                <div class="flex flex-col flex-wrap justify-start sm:h-[510px]  mt-3 gap-2.5 cs-quicklinks">
                     <a href="#"><span>Bible Timeline Course</span></a>
                     <a href="#"><span>Biblical Journey </br>Through the Mass</span></a>
                     <a href="#"><span>Sunday Gospels</span></a>
@@ -63,7 +63,7 @@
         </div>
 
         <!-- T&C block -->
-        <div class="flex flex-col items-center mt-8 mb-10 text-sm">
+        <div class="flex flex-col items-center mb-10 mt-14 sm:mt-6 cs-fs-xs">
             <p class="font-sans tracking-wider">Come & See 2023 - All rights Reserved</p>
             <p class="font-sans tracking-wider">Terms and Conditions | Privacy | Cookies</p>
         </div>

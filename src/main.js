@@ -1,11 +1,11 @@
 /*
   DEFINE CONSTANT TO CHANGE DINAMICALLY THE ANIMATION OF THE MENU
  */
-const MENU_LEVEL_2_DELAY = 250;
-const MENU_LEVEL_2_DURATION = 500;
+const MENU_LEVEL_2_DELAY = 50;
+const MENU_LEVEL_2_DURATION = 200;
 const MENU_LEVEL_3_DELAY = 50;
 const MENU_LEVEL_3_DURATION = 200;
-const CLOSE_OTHER_MENUS = true;
+const CLOSE_OTHER_MENUS = false;
 
 // For click event and also reference for outer div tag
 const btn = document.querySelector("button.cs-mobile-menu-button");
