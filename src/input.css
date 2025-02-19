@@ -311,3 +311,11 @@
     .cs-footer-hide-link {
         @apply hidden md:block;
     }
+
+    .cs-form-link {
+        @apply font-sans font-bold text-cs-red-main underline;
+    }
+
+    .cs-form-input {
+        @apply py-3 my-2 text-cs-red-main font-semibold text-lg border-cs-red-main border-2 rounded-l-[30px] rounded-r-xl bg-cs-paper-shade pl-12 w-[430px];
+    }
