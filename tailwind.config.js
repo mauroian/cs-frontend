@@ -7,8 +7,8 @@ export default {
   theme: {
     screens: {
       sm: "480px",
-      md: "900px",
-      lg: "1000px",
+      md: "920px",  /* "768px" */
+      lg: "1024px",
       xl: "1280px",
       "2xl": "1536px",
     },
@@ -19,7 +19,6 @@ export default {
         mono: ["Courier New", "monospace"], // Custom monospace font
       },
       fontSize: {
-        "cs-badge": "0.6rem",
         "xs": "0.75rem",
         "sm": "0.875rem",
         "base": "1rem",
