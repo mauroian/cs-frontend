@@ -2,11 +2,9 @@
 // changing the following variable to false will toggle the user logged state
 $isLogged = isset($_GET['logged']) && $_GET['logged'] === 'true';
 ?>
-<header class="bg-cs-paper             fixed
-            top-0
-            md:relative w-full">
+<header class="fixed top-0 w-full bg-cs-paper md:relative">
     <!-- Container nav for header (desktop & mobile) -->
-    <nav class="flex w-full bg-cs-paper z-10 items-center p-4 mx-auto cs-header" aria-label="Header">
+    <nav class="z-10 flex items-center w-full p-4 mx-auto bg-cs-paper cs-header" aria-label="Header">
         <!-- Container div for logo (desktop & mobile)-->
         <div class="flex cs-menu-logo">
             <a href="/">
@@ -221,7 +219,7 @@ $isLogged = isset($_GET['logged']) && $_GET['logged'] === 'true';
         <?php
         if ($isLogged) { ?>
             <!-- Container div for user avatar and user menu (desktop & mobile) | If user is logged -->
-            <div class="relative z-30 flex flex-col items-end justify-end cs-menu-auth-logged group">
+            <div class="relative z-30 flex flex-col items-end justify-end pt-1 cs-menu-auth-logged group">
                 <div class="flex flex-col items-center justify-end">
                     <!-- user avatar picture (desktop & mobile) -->
                     <img class="cs-logged-avatar" src="/src/assets/sample_avatar.png" alt="Bordered avatar">
@@ -331,7 +329,7 @@ $isLogged = isset($_GET['logged']) && $_GET['logged'] === 'true';
     <!-- Container of public menu (mobile) -->
     <div class="z-20 w-full md:hidden overscroll-contain overflow-auto cs-mobile-menu-container bg-transparent max-h-[91vh]">
         <!-- Inner container of public menu (mobile) -->
-        <ul class="hidden cs-mobile-menu h-full bg-cs-paper">
+        <ul class="hidden h-full cs-mobile-menu bg-cs-paper">
             <!-- Container div for L1 public menu item (mobile) -->
             <li class="flex flex-col items-center w-full group cs-menu-item">
                 <!-- L1 public menu item (mobile) -->
