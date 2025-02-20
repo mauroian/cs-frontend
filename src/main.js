@@ -5,6 +5,7 @@ const MENU_LEVEL_2_DELAY = 50;
 const MENU_LEVEL_2_DURATION = 200;
 const MENU_LEVEL_3_DELAY = 50;
 const MENU_LEVEL_3_DURATION = 200;
+const MENU_MOBILE_DURATION = 200;
 const CLOSE_OTHER_MENUS = false;
 
 
@@ -55,7 +56,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const btn = document.querySelector("button.cs-mobile-menu-button");
   const menu = document.querySelector("ul.cs-mobile-menu");
   btn.addEventListener("click", () => {
-    slideToggle(menu, MENU_LEVEL_2_DURATION);
+    slideToggle(menu, MENU_MOBILE_DURATION);
   });
 
   document.querySelectorAll('.cs-mobile-menu-button').forEach(button => {
@@ -66,7 +67,7 @@ document.addEventListener("DOMContentLoaded", () => {
          if (menu.classList.contains('cs-inner')) {
            document.querySelectorAll('ul.active.cs-inner').forEach(activeMenu => {
              if(activeMenu !== menu) {
-               slideToggle(activeMenu, MENU_LEVEL_2_DURATION);
+               slideToggle(activeMenu, MENU_MOBILE_DURATION);
              }
            });
            document.querySelectorAll('.cs-active').forEach(activeItem => {
@@ -77,7 +78,7 @@ document.addEventListener("DOMContentLoaded", () => {
          } else {
            document.querySelectorAll('ul.active').forEach(activeMenu => {
              if(activeMenu !== menu) {
-               slideToggle(activeMenu, MENU_LEVEL_2_DURATION);
+               slideToggle(activeMenu, MENU_MOBILE_DURATION);
              }
            });
            document.querySelectorAll('.cs-active').forEach(activeItem => {
@@ -89,13 +90,13 @@ document.addEventListener("DOMContentLoaded", () => {
        }
 
         if (menu.classList.contains('active')) {
-          slideToggle(menu, MENU_LEVEL_2_DURATION);
+          slideToggle(menu, MENU_MOBILE_DURATION);
           menu.classList.remove('active');
           this.classList.remove('cs-active');
         } else {
           menu.classList.add('active');
           this.classList.add('cs-active');
-          slideToggle(menu, MENU_LEVEL_2_DURATION);
+          slideToggle(menu, MENU_MOBILE_DURATION);
         }
       }
     });
