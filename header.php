@@ -2,7 +2,7 @@
 // changing the following variable to false will toggle the user logged state
 $isLogged = isset($_GET['logged']) && $_GET['logged'] === 'true';
 ?>
-<header class="fixed top-0 w-full bg-cs-paper md:relative">
+<header class="fixed top-0 w-full bg-cs-paper md:relative z-50">
     <!-- Container nav for header (desktop & mobile) -->
     <nav class="z-10 flex items-center w-full p-4 mx-auto bg-cs-paper cs-header" aria-label="Header">
         <!-- Container div for logo (desktop & mobile)-->

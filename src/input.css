@@ -75,7 +75,7 @@
 
     /* Logo positioning (desktop & mobile) */
     .cs-menu-logo {
-        @apply 
+        @apply
             ml-2 /* [param] left margin of logo (desktop, mobile) */
             mr-auto /* for mobile, this must be set */
             md:mr-0 /* [param] right margin of logo (desktop) */
@@ -84,9 +84,9 @@
     }
     /* L1, L2, L3 menu items features (desktop & mobile) */
     .cs-menu-item {
-        @apply 
+        @apply
             relative
-            w-full 
+            w-full
             font-serif /* [param] font family for public menu items (desktop & mobile) */
             font-medium
             cs-fs-base /* [param] font size for public menu items (desktop & mobile) */
@@ -101,8 +101,8 @@
     Animation from middle to left: change the class left-1/2 to left-0 and viceversa
     */
     .cs-menu-item-span:after {
-        @apply 
-            absolute 
+        @apply
+            absolute
             -bottom-1 /* [param] distance of underline from the word underlined for public menu (desktop & mobile) */
             left-0  /* [param] kind of underline animation for public menu (desktop & mobile)
                     Underline animation from left to right: left-0
@@ -110,9 +110,9 @@
                     */
             block
             h-0.5 /* [param] underline thickness for public menu (desktop & mobile) */
-            w-0  
+            w-0
             bg-cs-red-main; /* [param] underline colour for public menu (desktop & mobile) */
-            --tw-bg-opacity: 1; 
+            --tw-bg-opacity: 1;
             --tw-content: "";
             content: var(--tw-content);
 
@@ -158,7 +158,7 @@
 
     /*  L1, L2, L3 menu items features (desktop & mobile)*/
     .cs-menu-voice-item {
-        @apply 
+        @apply
             pl-4 /* [param] left padding of each public menu item (desktop & mobile) */
             pr-4 /* [param] right padding of each public menu item (desktop & mobile) */
 
@@ -183,12 +183,12 @@
 
     /* Level 2 menu items container box features (desktop) */
     .cs-menu-level2 {
-        @apply 
+        @apply
             absolute
             hidden
             mt-6 /* [param] distance of Level 2 box of public menu items from the reative level 1 word (desktop) */
             uppercase
-            origin-top 
+            origin-top
             rounded-xl /* [param] roundness of Level 2 box of public menu items (desktop) */
             bg-cs-paper-shade /* [param] background colour of Level 2 box of public menu items (desktop) */
             text-cs-red-main /* [param] font colour of Level 2 box of public menu items (desktop) */
@@ -197,7 +197,7 @@
 
     /* Level 3 menu items container box features (desktop) */
     .cs-menu-level3 {
-        @apply 
+        @apply
             top-3 /* [param] vertical drop of Level 3 box from the relative level 2 menu item in public manu (desktop) */
             right-2 /* [param] left-shift of Level 3 box from the relative level 2 menu item in public manu (desktop) */
             hidden
@@ -445,10 +445,269 @@
 }
 
 
+.cs-form-box {
+    @apply
+    md:w-auto
+    shadow-cs-all-around
+    rounded-[30px]
+    w-[98%]
+    md:mx-0;
+}
+
+.cs-form-container {
+    @apply
+    bg-cs-paper
+    w-full
+    rounded-b-[30px]
+    flex
+    flex-col
+    items-center
+    pt-9
+    pb-6
+    px-10;
+}
+
+.cs-form-header {
+    @apply
+    font-serif
+    uppercase
+    cs-fs-xl
+    md:tracking-[0.45rem]
+    tracking-wider
+    text-cs-paper
+    bg-cs-red-main
+    flex
+    flex-row
+    items-baseline
+    justify-center
+    h-20
+    pt-4
+    md:px-10
+    w-full
+    rounded-t-[30px];
+}
+
+.cs-form-title {
+    @apply
+    font-semibold
+    cs-fs-xl
+    text-left
+    w-full
+    mb-6
+    max-w-[450px]
+    md:max-w-full
+    text-cs-red-main;
+}
+
+.cs-form-text {
+    @apply
+    w-full
+    max-w-[450px]
+    mb-6
+    text-left
+    cs-fs-base
+    text-black;
+}
+
+.cs-form-text.cs-form-thank-you {
+    @apply max-w-[450px];
+}
+
     .cs-form-link {
-        @apply font-sans font-bold text-cs-red-main underline;
+        @apply font-sans font-bold text-cs-red-main hover:text-cs-red-dark underline;
+    }
+
+    .cs-form-label {
+        @apply
+        font-sans
+        uppercase
+        cs-fs-base
+        tracking-widest
+        pl-1
+    }
+
+    .cs-form-input-container {
+        @apply
+        mt-2
+        mb-8
+        w-full;
     }
 
     .cs-form-input {
-        @apply py-3 my-2 text-cs-red-main font-semibold text-lg border-cs-red-main border-2 rounded-l-[30px] rounded-r-xl bg-cs-paper-shade pl-12 w-[430px];
+        @apply
+        py-2.5
+        placeholder:text-cs-red-main/50
+        text-cs-red-main
+        font-semibold
+        cs-fs-base
+        border-cs-red-main
+        border-2
+        rounded-l-[30px]
+        rounded-r-xl
+        bg-cs-paper-shade
+        pl-12
+        w-full
+        md:w-[430px];
     }
+
+    .cs-form-submit {
+        @apply self-end
+        mt-8
+        font-sans
+        font-bold
+        uppercase
+        cs-fs-base
+        tracking-wider
+        rounded-xl
+        bg-cs-red-main
+        text-white
+        py-2.5
+        px-5
+        border
+        border-transparent
+        text-center
+        transition-all
+        shadow-sm
+        hover:bg-cs-red-dark
+        disabled:pointer-events-none
+        disabled:opacity-50
+        disabled:shadow-none;
+    }
+
+.cs-course-container {
+    @apply
+    bg-cs-paper-shade
+    w-full
+    rounded-b-[30px]
+    flex
+    flex-col
+    items-center
+    pt-9
+    pb-6
+    px-4
+    md:px-10;
+}
+
+    .cs-course-header {
+        @apply
+        font-sans
+        cs-fs-xl
+        font-semibold
+        text-cs-paper
+        bg-cs-red-dark
+        flex
+        flex-row
+        items-baseline
+        justify-center
+        h-20
+        pt-4
+        md:px-10
+        w-full
+        rounded-t-[30px];
+    }
+
+.cs-course-input,
+.cs-course-select {
+    @apply
+    py-2.5
+    placeholder:text-cs-red-dark
+    text-cs-red-dark
+    font-semibold
+    cs-fs-base
+    border-cs-red-dark
+    border-2
+    rounded-l-[30px]
+    rounded-r-xl
+    bg-cs-paper
+    pl-12
+    w-full;
+}
+
+.cs-course-select:focus + .cs-course-arrow svg {
+    transform: rotate(180deg);
+}
+
+.cs-course-select option {
+    @apply pl-2 text-left;
+}
+
+.cs-course-phone-prefix {
+    @apply
+    py-2.5
+    placeholder:text-cs-red-dark
+    text-cs-red-dark
+    font-semibold
+    cs-fs-base
+    border-cs-red-dark
+    border-2
+    rounded-l-[30px]
+    rounded-r-xl
+    w-full
+    min-w-[150px]
+    bg-cs-paper
+    pl-10;
+}
+.cs-course-phone-number {
+    @apply
+    py-2.5
+    placeholder:text-cs-red-dark
+    text-cs-red-dark
+    font-semibold
+    cs-fs-base
+    border-cs-red-dark
+    border-2
+    rounded-xl
+    bg-cs-paper
+    pl-12
+}
+
+.cs-course-submit {
+    @apply self-end
+    mt-8
+    font-sans
+    font-bold
+    uppercase
+    cs-fs-base
+    tracking-wider
+    rounded-xl
+    bg-cs-red-main
+    text-white
+    py-2.5
+    px-5
+    border
+    border-transparent
+    text-center
+    transition-all
+    shadow-sm
+    hover:bg-cs-red-dark
+    disabled:pointer-events-none
+    disabled:opacity-50
+    disabled:shadow-none;
+}
+
+.cs-course-reset {
+    @apply self-end
+    mt-8
+    font-sans
+    font-bold
+    uppercase
+    cs-fs-base
+    tracking-wider
+    bg-cs-paper-shade
+    rounded-xl
+    border-cs-red-main
+    text-cs-red-main
+    py-2.5
+    px-5
+    border-2
+    bg-transparent
+    text-center
+    transition-all
+    shadow-sm
+    hover:bg-cs-red-dark
+    hover:border-cs-red-dark
+    hover:text-white
+    disabled:pointer-events-none
+    disabled:opacity-50
+    disabled:shadow-none;
+}
