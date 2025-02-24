@@ -143,6 +143,7 @@
                     <li>
                         <a class="flex items-center cs-sidebar-item"
                            href="#">
+                            <img src="/src/assets/events.svg" alt="Membership" class="w-5 h-5">
                             <span class="select-none uppercase">Events</span>
                         </a>
                     </li>
