@@ -47,7 +47,7 @@
                         <label for="default" class="cs-fs-sm">Default</label>
                         <input type="text" name="default" id="default" class="cs-admin-form-input" placeholder="Type product name" required="">
                     </div>
-                    <div class="w-full flex flex-col md:flex-row gap-2 md:items-center justify-between">
+                    <div class="w-full flex flex-col md:flex-row gap-2 md:items-center justify-between mt-4 md:mt-0">
                         <button type="reset" class="inline-flex items-center justify-center cs-admin-form-button">
                             Cancel
                         </button>
