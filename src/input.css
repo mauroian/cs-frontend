@@ -441,6 +441,114 @@
     }
 
 
+    /* whole navbar features (desktop & mobile) */
+    .cs-admin-header {
+        @apply
+        h-20  /* [param] header height (desktop, mobile) */
+        text-white /* [param] font colour of header (desktop, mobile) */
+        text-nowrap
+        p-4
+        mx-auto
+        bg-cs-blue-main
+        gap-2;
+    }
+
+    /* user avatar (desktop, mobile) */
+    .cs-admin-logged-avatar {
+        @apply
+        w-10 /* [param] */
+        h-10 /* [param] */
+        rounded-full
+        ring-2 /* [param] */
+        ring-white; /* [param] */
+    }
+
+    /* user firstname under avatar (desktop) */
+    .cs-admin-logged-name {
+        @apply
+        text-white /* [param] */
+        cs-fs-xs; /* [param] */
+    }
+
+    .cs-admin-breadcrumb {
+        @apply
+        cs-fs-sm
+            font-thin
+        text-cs-breadcrumb
+        transition-colors duration-300
+        hover:text-slate-800
+    }
+
+    #sidebar ul li a.active {
+        background: #1f2937;
+        background-color: #1f2937;
+    }
+
+    .cs-sidebar {
+        @apply
+        w-full
+        md:w-3/4
+        bg-cs-blue-main
+        pt-6
+        pb-8
+        sm:max-w-xs
+        lg:w-80;
+        -webkit-transition: all 300ms cubic-bezier(0, 0.77, 0.58, 1);
+        transition: all 300ms cubic-bezier(0, 0.77, 0.58, 1);
+    }
+
+    .cs-sidebar.show {
+        transform: translateX(0);
+    }
+
+    .cs-sidebar-item {
+        @apply
+        rounded
+        py-3
+        pl-3
+        pr-4
+        tracking-widest
+        text-gray-50
+        hover:bg-cs-blue-light
+        gap-2
+    }
+
+    .cs-admin-submenu {
+        @apply mx-2;
+    }
+
+    .cs-admin-submenu a:before {
+        @apply -mt-5 block w-5 h-5;
+        content: url("/src/assets/admin-caret.svg");
+    }
+
+    .cs-admin-submenu-button.cs-active img {
+        transform: rotate(-180deg);
+    }
+
+    .cs-admin-form-input {
+        @apply border-2
+        border-cs-blue-main
+        cs-fs-sm
+        rounded-lg
+        w-full
+        md:w-4/5
+        p-2.5;
+    }
+
+    .cs-admin-form-button {
+        @apply
+        bg-cs-blue-main
+        text-white
+        uppercase
+        px-5
+        py-1.5
+        cs-fs-sm
+        font-bold
+        text-center
+        rounded-lg;
+    }
+
 
 }
 

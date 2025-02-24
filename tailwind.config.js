@@ -70,6 +70,7 @@ export default {
         "cs-period11-sec": "#B08600",
         "cs-period12-pri": "#FFFFFF",
         "cs-period12-sec": "#D9D9D9",
+        "cs-breadcrumb": "#676767"
       },
       keyframes: {
         'cs-slide-in-down': {

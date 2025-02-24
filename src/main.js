@@ -7,6 +7,7 @@ const MENU_LEVEL_3_DELAY = 50;
 const MENU_LEVEL_3_DURATION = 200;
 const MENU_MOBILE_DURATION = 200;
 const CLOSE_OTHER_MENUS = false;
+const CLOSE_OTHER_MENUS_ADMIN = false;
 
 
 
@@ -55,53 +56,54 @@ document.addEventListener("DOMContentLoaded", () => {
     // For click event and also reference for outer div tag
   const btn = document.querySelector("button.cs-mobile-menu-button");
   const menu = document.querySelector("ul.cs-mobile-menu");
-  btn.addEventListener("click", () => {
-    slideToggle(menu, MENU_MOBILE_DURATION);
-  });
-
-  document.querySelectorAll('.cs-mobile-menu-button').forEach(button => {
-    button.addEventListener('click', function() {
-      const menu = this.nextElementSibling;
-      if (menu) {
-       if(CLOSE_OTHER_MENUS) {
-         if (menu.classList.contains('cs-inner')) {
-           document.querySelectorAll('ul.active.cs-inner').forEach(activeMenu => {
-             if(activeMenu !== menu) {
-               slideToggle(activeMenu, MENU_MOBILE_DURATION);
-             }
-           });
-           document.querySelectorAll('.cs-active').forEach(activeItem => {
-             if(activeItem !== this) {
-               activeItem.classList.remove('cs-active');
-             }
-           });
-         } else {
-           document.querySelectorAll('ul.active').forEach(activeMenu => {
-             if(activeMenu !== menu) {
-               slideToggle(activeMenu, MENU_MOBILE_DURATION);
-             }
-           });
-           document.querySelectorAll('.cs-active').forEach(activeItem => {
-             if(activeItem !== this) {
-               activeItem.classList.remove('cs-active');
-             }
-           });
-         }
-       }
-
-        if (menu.classList.contains('active')) {
-          slideToggle(menu, MENU_MOBILE_DURATION);
-          menu.classList.remove('active');
-          this.classList.remove('cs-active');
-        } else {
-          menu.classList.add('active');
-          this.classList.add('cs-active');
-          slideToggle(menu, MENU_MOBILE_DURATION);
-        }
-      }
+  if(btn && menu) {
+    btn.addEventListener("click", () => {
+      slideToggle(menu, MENU_MOBILE_DURATION);
     });
-  });
 
+    document.querySelectorAll('.cs-mobile-menu-button').forEach(button => {
+      button.addEventListener('click', function () {
+        const menu = this.nextElementSibling;
+        if (menu) {
+          if (CLOSE_OTHER_MENUS) {
+            if (menu.classList.contains('cs-inner')) {
+              document.querySelectorAll('ul.active.cs-inner').forEach(activeMenu => {
+                if (activeMenu !== menu) {
+                  slideToggle(activeMenu, MENU_MOBILE_DURATION);
+                }
+              });
+              document.querySelectorAll('.cs-active').forEach(activeItem => {
+                if (activeItem !== this) {
+                  activeItem.classList.remove('cs-active');
+                }
+              });
+            } else {
+              document.querySelectorAll('ul.active').forEach(activeMenu => {
+                if (activeMenu !== menu) {
+                  slideToggle(activeMenu, MENU_MOBILE_DURATION);
+                }
+              });
+              document.querySelectorAll('.cs-active').forEach(activeItem => {
+                if (activeItem !== this) {
+                  activeItem.classList.remove('cs-active');
+                }
+              });
+            }
+          }
+
+          if (menu.classList.contains('active')) {
+            slideToggle(menu, MENU_MOBILE_DURATION);
+            menu.classList.remove('active');
+            this.classList.remove('cs-active');
+          } else {
+            menu.classList.add('active');
+            this.classList.add('cs-active');
+            slideToggle(menu, MENU_MOBILE_DURATION);
+          }
+        }
+      });
+    });
+  }
 
   /**
    * FUNCTION TO MANAGE THE USER MENU (BOTH MOBILE AND DESKTOP)
@@ -159,6 +161,67 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
 
+
+  /**
+   * ADMIN SIDEBAR MENU
+   */
+  document.querySelectorAll('.cs-admin-submenu-button').forEach(button => {
+    button.addEventListener('click', function () {
+      const menu = this.nextElementSibling;
+      if (menu) {
+        if (CLOSE_OTHER_MENUS_ADMIN) {
+            document.querySelectorAll('ul.active').forEach(activeMenu => {
+              if (activeMenu !== menu) {
+                slideToggle(activeMenu, MENU_MOBILE_DURATION);
+              }
+            });
+            document.querySelectorAll('.cs-active').forEach(activeItem => {
+              if (activeItem !== this) {
+                activeItem.classList.remove('cs-active');
+              }
+            });
+        }
+
+        if (menu.classList.contains('active')) {
+          slideToggle(menu, MENU_MOBILE_DURATION);
+          menu.classList.remove('active');
+          this.classList.remove('cs-active');
+        } else {
+          menu.classList.add('active');
+          this.classList.add('cs-active');
+          slideToggle(menu, MENU_MOBILE_DURATION);
+        }
+      }
+    });
+  });
+
+  document.querySelector('.cs-admin-expand').addEventListener('click', function () {
+    document.querySelectorAll('.cs-admin-submenu').forEach(menu => {
+      menu.classList.add('active');
+      slideDown(menu, MENU_MOBILE_DURATION);
+    });
+  });
+
+  document.querySelector('.cs-admin-collapse').addEventListener('click', function () {
+    document.querySelectorAll('.cs-admin-submenu').forEach(menu => {
+      menu.classList.remove('active');
+      slideUp(menu, MENU_MOBILE_DURATION);
+    });
+  });
+
+  const navbar = document.getElementById("navbar");
+  const sidebar = document.getElementById("sidebar");
+  const btnSidebarToggler = document.getElementById("btnSidebarToggler");
+
+  if(btnSidebarToggler) {
+    console.log('here');
+    btnSidebarToggler.addEventListener("click", (e) => {
+      e.preventDefault();
+      sidebar.classList.toggle("show");
+    });
+
+    sidebar.style.top = parseInt(navbar.clientHeight) - 1 + "px";
+  }
 });
 
 
