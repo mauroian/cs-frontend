@@ -12,7 +12,7 @@
 <?php require_once 'header_admin.php'; ?>
 
 <main class="flex-grow mt-20 md:mt-0">
-    <nav aria-label="breadcrumb" class="w-max justify-self-end mt-3">
+    <nav aria-label="breadcrumb" class="w-max justify-self-end mt-3 hidden md:flex">
         <ol class="flex w-full flex-wrap items-center rounded-md uppercase px-4 py-2">
             <li class="flex cursor-pointer items-center cs-admin-breadcrumb">
                 <a href="#">Membership</a>
