@@ -244,6 +244,14 @@
           md:hidden lg:inline-block;
     }
 
+    .cs-mobile-menu-footer-item {
+        @apply
+            cs-fs-badge
+            py-5 border-b
+            border-cs-red-main
+            tracking-wide;
+    }
+
     /* testimonials badge (desktop) */
     .cs-testimonials-badge {
         @apply

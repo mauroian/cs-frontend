@@ -86,6 +86,10 @@ export default {
       }
     },
   },
+  safelist: [
+    "ml-80",
+    "md:ml-80"
+  ],
   plugins: [require('tailwindcss-motion')],
   variants: {
     extend: {

@@ -535,6 +535,10 @@ $isLogged = isset($_GET['logged']) && $_GET['logged'] === 'true';
                     <span>Log Out</span>
                 </a>
             <?php } ?>
+            <li class="flex flex-col items-center cs-mobile-menu-footer-item">
+                <span>Come & See 2025</span>
+                <span>All rights Reserved</span>
+            </li>
         </ul>
     </div>
 </header>

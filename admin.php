@@ -11,7 +11,7 @@
 <body class="flex flex-col min-h-screen">
 <?php require_once 'header_admin.php'; ?>
 
-<main class="flex-grow mt-20 md:mt-0">
+<main class="flex-grow mt-20 md:mt-0 md:ml-0 transform duration-300 main-admin">
     <nav aria-label="breadcrumb" class="w-max justify-self-end mt-3 hidden md:flex">
         <ol class="flex w-full flex-wrap items-center rounded-md uppercase px-4 py-2">
             <li class="flex cursor-pointer items-center cs-admin-breadcrumb">

@@ -196,43 +196,52 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
 
-  document.querySelector('.cs-admin-expand').addEventListener('click', function () {
-    document.querySelectorAll('.cs-admin-submenu-button').forEach(button => {
-      if(!button.classList.contains('cs-active')) {
-        button.classList.add('cs-active');
-      }
-    });
+  const expandButton = document.querySelector('.cs-admin-expand');
+  if(expandButton !== null) {
+    expandButton.addEventListener('click', function () {
+      document.querySelectorAll('.cs-admin-submenu-button').forEach(button => {
+        if (!button.classList.contains('cs-active')) {
+          button.classList.add('cs-active');
+        }
+      });
       document.querySelectorAll('.cs-admin-submenu').forEach(menu => {
-      if(!menu.classList.contains('active')) {
-        menu.classList.add('active');
-        slideDown(menu, SIDEBAR_ADMIN_DURATION);
-      }
+        if (!menu.classList.contains('active')) {
+          menu.classList.add('active');
+          slideDown(menu, SIDEBAR_ADMIN_DURATION);
+        }
+      });
     });
-  });
+  }
 
-  document.querySelector('.cs-admin-collapse').addEventListener('click', function () {
-    document.querySelectorAll('.cs-admin-submenu-button').forEach(button => {
-      if(button.classList.contains('cs-active')) {
-        button.classList.remove('cs-active');
-      }
+  const collapseButton = document.querySelector('.cs-admin-collapse');
+  if(collapseButton !== null) {
+    collapseButton.addEventListener('click', function () {
+      document.querySelectorAll('.cs-admin-submenu-button').forEach(button => {
+        if (button.classList.contains('cs-active')) {
+          button.classList.remove('cs-active');
+        }
+      });
+      document.querySelectorAll('.cs-admin-submenu').forEach(menu => {
+        if (menu.classList.contains('active')) {
+          menu.classList.remove('active');
+          slideUp(menu, SIDEBAR_ADMIN_DURATION);
+        }
+      });
     });
-    document.querySelectorAll('.cs-admin-submenu').forEach(menu => {
-      if(menu.classList.contains('active')) {
-        menu.classList.remove('active');
-        slideUp(menu, SIDEBAR_ADMIN_DURATION);
-      }
-    });
-  });
+  }
 
   const navbar = document.getElementById("navbar");
   const sidebar = document.getElementById("sidebar");
   const btnSidebarToggler = document.getElementById("btnSidebarToggler");
+  const main = document.querySelector(".main-admin");
 
   if(btnSidebarToggler) {
     console.log('here');
     btnSidebarToggler.addEventListener("click", (e) => {
       e.preventDefault();
+
       sidebar.classList.toggle("show");
+      main.classList.toggle("md:ml-80");
     });
 
     sidebar.style.top = parseInt(navbar.clientHeight) - 1 + "px";
@@ -390,21 +399,7 @@ const fadeAnime = async (target, duration, type) => {
     animeType = isDisplayNone ? typeFadeIn : typeFadeOut;
   }
 
-  const busyClass = 'is-fade-busy';
-  const targetClassList = target.classList;
-
-  const isFadeIn = animeType === typeFadeIn;
   const isFadeOut = animeType === typeFadeOut;
-  const isBusy = targetClassList.contains(busyClass);
-  if (
-    (isFadeIn && (!isDisplayNone || isBusy))
-    || (isFadeOut && (isDisplayNone || isBusy))
-    || (!isFadeIn && !isFadeOut)
-  ) {
-    return false;
-  }
-  targetClassList.add(busyClass);
-
 
   const targetStyle = target.style;
   const displayStyle = options.displayStyle;
@@ -431,7 +426,6 @@ const fadeAnime = async (target, duration, type) => {
 
   targetStyle.opacity = '';
 
-  targetClassList.remove(busyClass);
 
   if(isFadeOut) {
     targetStyle.display = textNone;
