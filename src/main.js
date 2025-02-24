@@ -197,16 +197,30 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 
   document.querySelector('.cs-admin-expand').addEventListener('click', function () {
-    document.querySelectorAll('.cs-admin-submenu').forEach(menu => {
-      menu.classList.add('active');
-      slideDown(menu, SIDEBAR_ADMIN_DURATION);
+    document.querySelectorAll('.cs-admin-submenu-button').forEach(button => {
+      if(!button.classList.contains('cs-active')) {
+        button.classList.add('cs-active');
+      }
+    });
+      document.querySelectorAll('.cs-admin-submenu').forEach(menu => {
+      if(!menu.classList.contains('active')) {
+        menu.classList.add('active');
+        slideDown(menu, SIDEBAR_ADMIN_DURATION);
+      }
     });
   });
 
   document.querySelector('.cs-admin-collapse').addEventListener('click', function () {
+    document.querySelectorAll('.cs-admin-submenu-button').forEach(button => {
+      if(button.classList.contains('cs-active')) {
+        button.classList.remove('cs-active');
+      }
+    });
     document.querySelectorAll('.cs-admin-submenu').forEach(menu => {
-      menu.classList.remove('active');
-      slideUp(menu, SIDEBAR_ADMIN_DURATION);
+      if(menu.classList.contains('active')) {
+        menu.classList.remove('active');
+        slideUp(menu, SIDEBAR_ADMIN_DURATION);
+      }
     });
   });
 

@@ -327,7 +327,7 @@ $isLogged = isset($_GET['logged']) && $_GET['logged'] === 'true';
         <?php } ?>
     </nav>
     <!-- Container of public menu (mobile) -->
-    <div class="z-20 w-full md:hidden overscroll-contain overflow-auto cs-mobile-menu-container bg-transparent max-h-[91dvh]">
+    <div class="z-20 w-full md:hidden overscroll-contain overflow-auto cs-mobile-menu-container bg-transparent max-h-[89dvh]">
         <!-- Inner container of public menu (mobile) -->
         <ul class="hidden h-full cs-mobile-menu bg-cs-paper">
             <!-- Container div for L1 public menu item (mobile) -->

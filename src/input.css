@@ -523,7 +523,7 @@
         content: url("/src/assets/admin-caret.svg");
     }
 
-    .cs-admin-submenu-button.cs-active img {
+    .cs-admin-submenu-button.cs-active img.cs-menu-item-icon {
         transform: rotate(-180deg);
     }
 
