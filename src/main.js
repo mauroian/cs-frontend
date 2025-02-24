@@ -6,6 +6,7 @@ const MENU_LEVEL_2_DURATION = 200;
 const MENU_LEVEL_3_DELAY = 50;
 const MENU_LEVEL_3_DURATION = 200;
 const MENU_MOBILE_DURATION = 200;
+const SIDEBAR_ADMIN_DURATION = 200;
 const CLOSE_OTHER_MENUS = false;
 const CLOSE_OTHER_MENUS_ADMIN = false;
 
@@ -172,7 +173,7 @@ document.addEventListener("DOMContentLoaded", () => {
         if (CLOSE_OTHER_MENUS_ADMIN) {
             document.querySelectorAll('ul.active').forEach(activeMenu => {
               if (activeMenu !== menu) {
-                slideToggle(activeMenu, MENU_MOBILE_DURATION);
+                slideToggle(activeMenu, SIDEBAR_ADMIN_DURATION);
               }
             });
             document.querySelectorAll('.cs-active').forEach(activeItem => {
@@ -183,13 +184,13 @@ document.addEventListener("DOMContentLoaded", () => {
         }
 
         if (menu.classList.contains('active')) {
-          slideToggle(menu, MENU_MOBILE_DURATION);
+          slideToggle(menu, SIDEBAR_ADMIN_DURATION);
           menu.classList.remove('active');
           this.classList.remove('cs-active');
         } else {
           menu.classList.add('active');
           this.classList.add('cs-active');
-          slideToggle(menu, MENU_MOBILE_DURATION);
+          slideToggle(menu, SIDEBAR_ADMIN_DURATION);
         }
       }
     });
@@ -198,14 +199,14 @@ document.addEventListener("DOMContentLoaded", () => {
   document.querySelector('.cs-admin-expand').addEventListener('click', function () {
     document.querySelectorAll('.cs-admin-submenu').forEach(menu => {
       menu.classList.add('active');
-      slideDown(menu, MENU_MOBILE_DURATION);
+      slideDown(menu, SIDEBAR_ADMIN_DURATION);
     });
   });
 
   document.querySelector('.cs-admin-collapse').addEventListener('click', function () {
     document.querySelectorAll('.cs-admin-submenu').forEach(menu => {
       menu.classList.remove('active');
-      slideUp(menu, MENU_MOBILE_DURATION);
+      slideUp(menu, SIDEBAR_ADMIN_DURATION);
     });
   });
 

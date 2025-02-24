@@ -111,3 +111,111 @@
             </div>
         </div>
 </header>
+<div id="containerSidebar" class="z-40">
+    <div class="navbar-menu relative z-40">
+        <nav id="sidebar"
+             class="fixed left-0 bottom-0 flex -translate-x-full flex-col overflow-y-auto cs-sidebar">
+            <div class="px-5 pb-6">
+                <button class="mr-1 cs-admin-expand">
+                    <img src="/src/assets/plus.svg" alt="Expand" class="w-6 h-6">
+                </button>
+                <button class=" cs-admin-collapse">
+                    <img src="/src/assets/minus.svg" alt="Collapse" class="w-6 h-6">
+                </button>
+            </div>
+            <!-- one category / navigation group -->
+            <div class="px-4 pb-6">
+                <ul class="mb-8 text-sm font-medium">
+                    <li>
+                        <a class="active flex items-center cs-sidebar-item"
+                           href="#">
+                            <img src="/src/assets/dashboard.svg" alt="Dashboard" class="w-5 h-5">
+                            <span class="select-none uppercase">Dashboard</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="flex items-center cs-sidebar-item"
+                           href="#">
+                            <img src="/src/assets/users.svg" alt="Users" class="w-5 h-5">
+                            <span class="select-none uppercase">Users</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="flex items-center cs-sidebar-item"
+                           href="#">
+                            <span class="select-none uppercase">Events</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="flex items-center cs-sidebar-item"
+                           href="#">
+                            <img src="/src/assets/membership.svg" alt="Membership" class="w-5 h-5">
+                            <span class="select-none uppercase">Membership</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="flex items-center cs-sidebar-item  cs-admin-submenu-button"
+                           href="#">
+                            <img src="/src/assets/stats.svg" alt="Stats" class="w-5 h-5">
+                            <span class="select-none uppercase">Stats</span>
+                            <span class="flex justify-end flex-1 ml-auto">
+                                <img src="src/assets/admin-arrow.svg"
+                                     class="cs-menu-item-icon object-contain shrink-0 self-stretch my-auto w-3 aspect-[1.5]"
+                                     alt="Arrow Down" />
+
+                            </span>
+                        </a>
+                        <ul class="pl-4 cs-admin-submenu mr-0 hidden">
+                            <li>
+                                <a class="flex items-center cs-sidebar-item cs-admin-submenu-button"
+                                   href="#">
+                                    <span class="select-none uppercase">Devices</span>
+                                    <span class="flex justify-end flex-1 ml-auto">
+                                        <img src="src/assets/admin-arrow.svg"
+                                             class="cs-menu-item-icon object-contain shrink-0 self-stretch my-auto w-3 aspect-[1.5]"
+                                             alt="Arrow Down" />
+
+                                    </span>
+                                </a>
+                                <ul class="pl-4 cs-admin-submenu mr-0 hidden">
+                                    <li>
+                                        <a class="flex items-center cs-sidebar-item"
+                                           href="#">
+                                            <span class="select-none uppercase">Browsers</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="flex items-center cs-sidebar-item"
+                                           href="#">
+                                            <span class="select-none uppercase">O.S.</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="flex items-center cs-sidebar-item"
+                                           href="#">
+                                            <span class="select-none uppercase">Resolutions</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a class="flex items-center cs-sidebar-item"
+                                   href="#">
+                                    <span class="select-none uppercase">Online</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="flex items-center cs-sidebar-item"
+                                   href="#">
+                                    <span class="select-none uppercase">Pending</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <!-- navigation group end-->
+        </nav>
+    </div>
+    <div class="mx-auto lg:ml-80"></div>
+</div>
