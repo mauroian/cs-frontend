@@ -14,13 +14,10 @@
 <main class="flex-grow flex justify-center items-center bg-[url('/src/assets/background-login.png')] bg-no-repeat bg-center bg-cover min-h-[746px] mt-20 md:mt-0">
     <!-- Box -->
     <div class="flex flex-col items-center w-[98%] md:w-auto">
-        <!-- Box Logo -->
-        <div class="relative w-[119px] h-[119px] bg-transparent">
-            <img src="/src/assets/logo-login.svg" class="absolute top-10">
-        </div>
         <!-- Box Titolo -->
-        <div class="font-serif uppercase cs-fs-xl tracking-[0.45rem] text-white bg-cs-red-main flex flex-row items-baseline justify-center h-28 pt-12 md:px-28 w-full rounded-t-[30px]">
-            <span class="text-[35px]">W</span>elcome <span class="text-[35px]">&nbsp;B</span>ack.
+        <div class="relative flex flex-row items-baseline justify-center cs-form-login-header">
+            <img src="/src/assets/logo-login.svg" class="absolute -top-[80px] block" alt="Login">
+            <span class="cs-form-header-bigger-letter">W</span>elcome <span class="cs-form-header-bigger-letter">&nbsp;B</span>ack.
         </div>
         <!-- Box Form -->
         <div class="cs-form-container">

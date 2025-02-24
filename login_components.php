@@ -16,7 +16,7 @@
     <div class="flex flex-col items-center cs-form-box">
         <!-- Box Titolo -->
         <div class="cs-form-header">
-            <span class="text-[35px]">R</span>eset <span class="text-[35px]">&nbsp;P</span>assword
+            <span class="cs-form-header-bigger-letter">R</span>eset <span class="cs-form-header-bigger-letter">&nbsp;P</span>assword
         </div>
         <!-- Box Form -->
         <div class="cs-form-container">
@@ -51,7 +51,7 @@
     <div class="flex flex-col items-center cs-form-box">
         <!-- Box Titolo -->
         <div class="cs-form-header">
-            <span class="text-[35px]">R</span>eset <span class="text-[35px]">&nbsp;P</span>assword
+            <span class="cs-form-header-bigger-letter">R</span>eset <span class="cs-form-header-bigger-letter">&nbsp;P</span>assword
         </div>
         <!-- Box Form -->
         <div class="cs-form-container">
@@ -98,7 +98,7 @@
     <div class="flex flex-col items-center cs-form-box">
         <!-- Box Titolo -->
         <div class="cs-form-header">
-            <span class="text-[35px]">F</span>orgot <span class="text-[35px]">&nbsp;Y</span>our&nbsp;<span class="text-[35px]">E</span>mail?
+            <span class="cs-form-header-bigger-letter">F</span>orgot <span class="cs-form-header-bigger-letter">&nbsp;Y</span>our&nbsp;<span class="cs-form-header-bigger-letter">E</span>mail?
         </div>
         <!-- Box Form -->
         <div class="cs-form-container">

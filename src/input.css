@@ -576,6 +576,25 @@
     px-10;
 }
 
+.cs-form-login-header {
+    @apply
+    font-serif
+    uppercase
+    cs-fs-xl
+    tracking-[0.45rem]
+    text-white
+    bg-cs-red-main
+    h-28
+    pt-12
+    md:px-28
+    w-full
+    rounded-t-[30px];
+}
+
+.cs-form-header-bigger-letter {
+    @apply text-[35px];
+}
+
 .cs-form-header {
     @apply
     font-serif
@@ -618,9 +637,9 @@
     text-black;
 }
 
-.cs-form-text.cs-form-thank-you {
-    @apply max-w-[450px];
-}
+    .cs-form-text.cs-form-thank-you {
+        @apply max-w-[450px];
+    }
 
     .cs-form-link {
         @apply font-sans font-bold text-cs-red-main hover:text-cs-red-dark underline;
@@ -646,6 +665,8 @@
         @apply
         py-2.5
         placeholder:text-cs-red-main/50
+        autofill:text-cs-red-main/50
+        autofill:cs-fs-base
         text-cs-red-main
         font-semibold
         cs-fs-base
@@ -719,8 +740,11 @@
 .cs-course-select {
     @apply
     py-2.5
-    placeholder:text-cs-red-dark
+    placeholder:text-cs-red-dark/50
     text-cs-red-dark
+    autofill:text-cs-red-dark/50
+    autofill:text-cs-red-dark
+    autofill:cs-fs-base
     font-semibold
     cs-fs-base
     border-cs-red-dark
