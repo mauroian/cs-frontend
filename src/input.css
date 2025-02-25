@@ -597,7 +597,7 @@
     @apply
     font-serif
     uppercase
-    cs-fs-xl
+    cs-fs-lg
     md:tracking-[0.45rem]
     tracking-wider
     text-cs-paper
@@ -628,7 +628,7 @@
 .cs-form-text {
     @apply
     w-full
-    max-w-[450px]
+    md:max-w-[550px]
     mb-6
     text-left
     cs-fs-base
