@@ -11,7 +11,7 @@
 
 <body class="flex flex-col min-h-screen">
     <?php require_once 'header.php'; ?>
-    <main class="flex-grow flex flex-col gap-6 justify-center items-center min-h-[746px] mt-20 md:mt-0">
+    <main class="flex-grow flex flex-col gap-6 justify-center items-center min-h-[746px] mt-20 md:mt-0 mb-8">
         <!-- Box -->
         <div class="flex flex-col items-center mt-12 cs-form-box">
             <!-- Box Titolo -->
@@ -36,9 +36,9 @@
             </div>
         </div>
         <!-- Box -->
-        <div class="flex flex-col items-center cs-form-box">
+        <div class="flex flex-col items-center cs-form-box-success">
             <!-- Box Form -->
-            <div class="cs-form-container  rounded-[30px]">
+            <div class="cs-form-container-success">
                 <div class="cs-form-title">
                     Thank you.
                 </div>
@@ -82,9 +82,9 @@
             </div>
         </div>
         <!-- Box -->
-        <div class="flex flex-col items-center cs-form-box">
+        <div class="flex flex-col items-center cs-form-box-success">
             <!-- Box Form -->
-            <div class="cs-form-container  rounded-[30px]">
+            <div class="cs-form-container-success">
                 <div class="cs-form-title">
                     Thank you.
                 </div>
@@ -135,9 +135,9 @@
             </div>
         </div>
         <!-- Box -->
-        <div class="flex flex-col items-center cs-form-box">
+        <div class="flex flex-col items-center cs-form-box-success">
             <!-- Box Form -->
-            <div class="cs-form-container  rounded-[30px]">
+            <div class="cs-form-container-success">
                 <div class="cs-form-title">
                     Thank you.
                 </div>

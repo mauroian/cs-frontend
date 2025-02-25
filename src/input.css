@@ -555,7 +555,7 @@
     @apply
     md:w-auto
     shadow-cs-all-around
-    sm:rounded-[30px]
+    md:rounded-[30px]
     w-[98%]
     md:mx-0;
 }
@@ -565,6 +565,28 @@
     bg-cs-paper
     w-full
     md:rounded-b-[30px]
+    flex
+    flex-col
+    items-center
+    pt-9
+    pb-12
+    px-6
+    sm:px-10  /* [param] padding between outer auth form and input textboxes */
+}
+
+.cs-form-box-success {
+    @apply
+    w-auto
+    shadow-cs-all-around
+    md:rounded-[30px]
+    md:mx-0;
+}
+
+.cs-form-container-success {
+    @apply
+    bg-cs-paper
+    w-auto
+    md:rounded-[30px]
     flex
     flex-col
     items-center
@@ -631,7 +653,7 @@
     md:max-w-[550px]
     mb-6
     text-left
-    cs-fs-base
+    cs-fs-sm
     text-black;
 }
 
