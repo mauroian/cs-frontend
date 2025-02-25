@@ -26,14 +26,14 @@
                     <!-- Input Email -->
                     <div class="relative w-full my-2">
                         <input id="email" required type="text" placeholder="Your email address" class="cs-form-input" />
-                        <img src="/src/assets/email-login.svg" class="absolute top-5 left-5" />
+                        <img src="/src/assets/email-login.svg" />
                     </div>
                     <a class="cs-form-link" href="#">Forgot email?</a>
                     <label for="password" class="mt-6 cs-form-label">Password</label>
                     <!-- Input Password -->
                     <div class="relative w-full my-2">
                         <input id="password" required type="password" placeholder="Enter your password" class="cs-form-input" />
-                        <img src="/src/assets/password-login.svg" class="absolute top-5 left-5" />
+                        <img src="/src/assets/password-login.svg" />
                     </div>
                     <a class="cs-form-link" href="#">Reset password?</a>
                     <button class="cs-form-submit">Login</button>

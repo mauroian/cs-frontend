@@ -29,7 +29,7 @@
                 <div class="relative cs-form-input-container">
                     <input id="email" required type="text" placeholder="Your email on our system"
                            class="cs-form-input"/>
-                    <img src="/src/assets/email-login.svg" class="absolute top-5 left-5"/>
+                    <img src="/src/assets/email-login.svg" />
                 </div>
                 <button class="cs-form-submit">Send me the password reset link</button>
             </form>
@@ -63,13 +63,13 @@
                 <!-- Input Email -->
                 <div class="relative cs-form-input-container">
                     <input id="email" required type="text" placeholder="youremail@example.com" class="cs-form-input"/>
-                    <img src="/src/assets/email-login.svg" class="absolute top-5 left-5"/>
+                    <img src="/src/assets/email-login.svg" />
                 </div>
                 <label for="password" class="cs-form-label">Password</label>
                 <!-- Input Password -->
                 <div class="relative cs-form-input-container">
                     <input id="password" required type="password" placeholder="Password" class="cs-form-input"/>
-                    <img src="/src/assets/password-login.svg" class="absolute top-5 left-5"/>
+                    <img src="/src/assets/password-login.svg" />
                 </div>
                 <label for="password" class="cs-form-label">Password</label>
                 <!-- Input Password -->
@@ -120,7 +120,7 @@
                 <!-- Input Email -->
                 <div class="relative cs-form-input-container">
                     <input id="email" required type="text" placeholder="youremail@example.com" class="cs-form-input"/>
-                    <img src="/src/assets/email-login.svg" class="absolute top-5 left-5"/>
+                    <img src="/src/assets/email-login.svg"/>
                 </div>
                 <label for="phone" class="cs-form-label">Your phone number</label>
                 <!-- Input Phone -->

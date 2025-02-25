@@ -555,7 +555,7 @@
     @apply
     md:w-auto
     shadow-cs-all-around
-    rounded-[30px]
+    sm:rounded-[30px]
     w-[98%]
     md:mx-0;
 }
@@ -564,13 +564,13 @@
     @apply
     bg-cs-paper
     w-full
-    rounded-b-[30px]
+    md:rounded-b-[30px]
     flex
     flex-col
     items-center
     pt-9
     pb-6
-    px-8
+    px-2
     md:px-10;
 }
 
@@ -586,7 +586,7 @@
     pt-12
     md:px-20 /*  greatr than 20 for an effect */
     w-full
-    rounded-t-[30px];
+    md:rounded-t-[30px];
 }
 
 .cs-form-header-bigger-letter {
@@ -610,7 +610,7 @@
     pt-4
     md:px-10
     w-full
-    rounded-t-[30px];
+    md:rounded-t-[30px];
 }
 
 .cs-form-title {
@@ -647,7 +647,7 @@
         @apply
         font-sans
         uppercase
-        cs-fs-base
+        cs-fs-sm
         tracking-widest
         pl-1
     }
@@ -674,28 +674,28 @@
         pl-4
         md:pl-12
         w-full
-        min-w-[400px]
+        sm:min-w-[400px]
         md:w-[550px];
     }
 
     .cs-form-input + img
     {
-        @apply hidden md:block;
+        @apply hidden md:block absolute top-2.5 left-4 w-4 h-4;
     }
 
     .cs-form-submit {
         @apply self-end
-        mt-8
+        mt-6
         font-sans
         font-bold
         uppercase
-        cs-fs-base
+        cs-fs-sm
         tracking-wider
         rounded-xl
         bg-cs-red-main
         text-white
-        py-2.5
-        px-5
+        py-1.5
+        px-4
         border
         border-transparent
         text-center
