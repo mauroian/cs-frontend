@@ -17,7 +17,7 @@
         <h1 class="font-serif font-semibold text-center text-7xl italic">Bible Timeline Course</h1>
         <span class="uppercase tracking-widest cs-fs-xl ">September 2024</span>
     </div>
-    <div class="flex flex-col items-center w-[98%] md:w-auto rounded-[30px] max-w-[650px]">
+    <div class="flex flex-col items-center w-full md:w-auto rounded-[30px] max-w-[650px]">
         <!-- Box Titolo -->
         <div class="cs-course-header">
             Create an Account
@@ -39,41 +39,60 @@
                 <!-- Input Email -->
                 <div class="relative cs-form-input-container">
                     <input id="email" required type="text" placeholder="" class="cs-course-input"/>
-                    <img src="/src/assets/email-login.svg" class="absolute top-5 left-5"/>
+                    <img src="/src/assets/email-login.svg"/>
                 </div>
                 <label for="confirm_email" class="cs-form-label">Confirm Email</label>
                 <!-- Input Email -->
                 <div class="relative cs-form-input-container">
                     <input id="confirm_email" required type="text" placeholder="" class="cs-course-input"/>
-                    <img src="/src/assets/email-login.svg" class="absolute top-5 left-5"/>
+                    <img src="/src/assets/email-login.svg"/>
                 </div>
                 <label for="password" class="cs-form-label">Password</label>
                 <!-- Input Phone -->
                 <div class="relative cs-form-input-container">
                     <input id="password" required type="password" placeholder="" class="cs-course-input"/>
-                    <img src="/src/assets/password-login.svg" class="absolute top-5 left-5"/>
+                    <img src="/src/assets/password-login.svg"/>
+                    <button type="button" class="cs-password-eye absolute inset-y-0 end-0 flex items-center z-20 px-3 cursor-pointer text-cs-red-dark" onclick="togglePassword(this)">
+                        <svg class="shrink-0 size-5" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path class="hs-password-active" d="M9.88 9.88a3 3 0 1 0 4.24 4.24"></path>
+                            <path class="hs-password-active" d="M10.73 5.08A10.43 10.43 0 0 1 12 5c7 0 10 7 10 7a13.16 13.16 0 0 1-1.67 2.68"></path>
+                            <path class="hs-password-active" d="M6.61 6.61A13.526 13.526 0 0 0 2 12s3 7 10 7a9.74 9.74 0 0 0 5.39-1.61"></path>
+                            <line class="hs-password-active" x1="2" x2="22" y1="2" y2="22"></line>
+                            <path class="hs-password-deactive" d="M2 12s3-7 10-7 10 7 10 7-3 7-10 7-10-7-10-7Z"></path>
+                            <circle class="hs-password-deactive" cx="12" cy="12" r="3"></circle>
+                        </svg>
+                    </button>
                 </div>
                 <label for="confirm_password" class="cs-form-label">Confirm Password</label>
                 <!-- Input Phone -->
                 <div class="relative cs-form-input-container">
                     <input id="confirm_password" required type="password" placeholder="" class="cs-course-input"/>
-                    <img src="/src/assets/password-login.svg" class="absolute top-5 left-5"/>
-
+                    <img src="/src/assets/password-login.svg"/>
+                    <button type="button" class="cs-password-eye absolute inset-y-0 end-0 flex items-center z-20 px-3 cursor-pointer text-cs-red-dark" onclick="togglePassword(this)">
+                        <svg class="shrink-0 size-5" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path class="hs-password-active" d="M9.88 9.88a3 3 0 1 0 4.24 4.24"></path>
+                            <path class="hs-password-active" d="M10.73 5.08A10.43 10.43 0 0 1 12 5c7 0 10 7 10 7a13.16 13.16 0 0 1-1.67 2.68"></path>
+                            <path class="hs-password-active" d="M6.61 6.61A13.526 13.526 0 0 0 2 12s3 7 10 7a9.74 9.74 0 0 0 5.39-1.61"></path>
+                            <line class="hs-password-active" x1="2" x2="22" y1="2" y2="22"></line>
+                            <path class="hs-password-deactive" d="M2 12s3-7 10-7 10 7 10 7-3 7-10 7-10-7-10-7Z"></path>
+                            <circle class="hs-password-deactive" cx="12" cy="12" r="3"></circle>
+                        </svg>
+                    </button>
                 </div>
                 <div class="w-full md:w-auto">
-                    <span class="uppercase cs-fs-base tracking-widest">agree to Terms and Conditions</span>
+                    <span class="uppercase cs-fs-sm tracking-widest">agree to Terms and Conditions</span>
                     <button type="button" onclick="toggleAccordion(1)"
-                            class="w-full mt-4 uppercase flex justify-between items-center py-2 rounded-[30px] px-5 bg-cs-paper-dark text-cs-red-dark">
+                            class="w-full flex justify-between items-center cs-course-accordion-button">
                         <span class="text-1">Show terms and conditions</span>
                         <span class="text-1 hidden">Hide terms and conditions</span>
-                        <span id="icon-1" class="text-cs-red-dark transition-transform duration-300">
+                        <span id="icon-1" class="transition-transform duration-300">
                           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" class="w-4 h-4">
                             <path d="M8.75 3.75a.75.75 0 0 0-1.5 0v3.5h-3.5a.75.75 0 0 0 0 1.5h3.5v3.5a.75.75 0 0 0 1.5 0v-3.5h3.5a.75.75 0 0 0 0-1.5h-3.5v-3.5Z"/>
                           </svg>
                         </span>
                     </button>
                     <div id="content-1" class="max-h-0 overflow-hidden transition-all duration-300 ease-in-out">
-                        <div class="pb-5 text-sm px-3 text-black bg-cs-paper cs-fs-sm">
+                        <div class="cs-course-accordion-content">
                             In order to comply with GDPR data protection rules, please confirm by ticking the box that
                             you agree that your personal details provided by you above may be retained and used by Mauro
                             Iannicelli and his ‘Come & See Ministry’ (‘us’, ‘we’), and that we can contact you in
@@ -88,8 +107,8 @@
                 </div>
                 <div class="flex items-center my-6">
                     <input id="agree" type="checkbox" value=""
-                           class="appearance-none w-4 h-4 text-cs-red-dark bg-white border border-cs-red-dark rounded-md">
-                    <label for="agree" class="ms-2 uppercase cs-fs-base font-bold tracking-wider text-black">Yes, i
+                           class="cs-course-checkbox">
+                    <label for="agree" class="cs-course-checkbox-label">Yes, i
                         agree <span class="font-normal">(required)<span></label>
                 </div>
                 <div class="flex flex-row justify-end w-full gap-4">
@@ -100,7 +119,7 @@
         </div>
     </div>
 
-    <div class="flex flex-col items-center w-[98%] md:w-auto rounded-[30px] max-w-[650px]">
+    <div class="flex flex-col items-center w-full md:w-auto rounded-[30px] max-w-[650px]">
         <!-- Box Titolo -->
         <div class="cs-course-header">
             Course Registration
@@ -114,18 +133,18 @@
             <form class="flex flex-col items-start w-full">
                 <label for="birthdate" class="cs-form-label">Your Year of birth</label>
                 <!-- Input Firstname -->
-                <div class="relative cs-form-input-container">
-                    <input id="birthdate" required type="date" placeholder="" class="cs-course-input md:!w-1/2"/>
+                <div class="relative cs-form-input-container md:!w-1/2">
+                    <input id="birthdate" required type="date" placeholder="" class="cs-course-input  md:!min-w-full"/>
                 </div>
                 <label for="sex" class="cs-form-label">Your sex</label>
                 <!-- Input Lastname -->
-                <div class="relative cs-form-input-container md:!w-1/2">
-                    <select id="sex" required class="cs-course-select">
+                <div class="relative cs-form-input-container  md:!w-1/2">
+                    <select id="sex" required class="cs-course-select md:!min-w-full">
                         <option value=""></option>
                         <option value="M">Male</option>
                         <option value="F">Female</option>
                     </select>
-                    <div class="cs-course-arrow absolute top-0 right-0 bg-cs-red-dark w-14 h-[3.4rem] rounded-r-xl text-white flex flex-row items-center justify-center pointer-events-none">
+                    <div class="cs-course-arrow absolute top-0 right-0 flex flex-row items-center justify-center pointer-events-none">
                         <svg width="23" height="10" viewBox="0 0 23 10" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M12.0365 8.90009C11.7091 9.10825 11.2909 9.10825 10.9635 8.90009L0.976737 2.5506C0.1323 2.01372 0.512612 0.706726 1.51327 0.706726L21.4867 0.706728C22.4874 0.706728 22.8677 2.01372 22.0233 2.55061L12.0365 8.90009Z"
                                   fill="#FEFBF7"/>
@@ -141,7 +160,7 @@
                         <option value="US">United States</option>
                         <option value="CA">Canada</option>
                     </select>
-                    <div class="cs-course-arrow absolute top-0 right-0 bg-cs-red-dark w-14 h-[3.4rem] rounded-r-xl text-white flex flex-row items-center justify-center pointer-events-none">
+                    <div class="cs-course-arrow absolute top-0 right-0 flex flex-row items-center justify-center pointer-events-none">
                         <svg width="23" height="10" viewBox="0 0 23 10" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M12.0365 8.90009C11.7091 9.10825 11.2909 9.10825 10.9635 8.90009L0.976737 2.5506C0.1323 2.01372 0.512612 0.706726 1.51327 0.706726L21.4867 0.706728C22.4874 0.706728 22.8677 2.01372 22.0233 2.55061L12.0365 8.90009Z"
                                   fill="#FEFBF7"/>
@@ -173,7 +192,7 @@
                             <option value="1">+1</option>
                             <option value="011">+011</option>
                         </select>
-                        <div class="cs-course-arrow absolute top-0 right-0 bg-cs-red-dark w-14 h-[3.4rem] rounded-r-xl text-white flex flex-row items-center justify-center pointer-events-none">
+                        <div class="cs-course-arrow absolute top-0 right-0 flex flex-row items-center justify-center pointer-events-none">
                             <svg width="23" height="10" viewBox="0 0 23 10" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M12.0365 8.90009C11.7091 9.10825 11.2909 9.10825 10.9635 8.90009L0.976737 2.5506C0.1323 2.01372 0.512612 0.706726 1.51327 0.706726L21.4867 0.706728C22.4874 0.706728 22.8677 2.01372 22.0233 2.55061L12.0365 8.90009Z"
                                       fill="#FEFBF7"/>
@@ -183,19 +202,19 @@
                     <input id="phone" required type="text" placeholder="" class="cs-course-phone-number"/>
                 </div>
                 <div class="w-full md:w-auto">
-                    <span class="uppercase cs-fs-base tracking-widest">agree to Terms and Conditions</span>
+                    <span class="uppercase cs-fs-sm tracking-widest">agree to Terms and Conditions</span>
                     <button type="button" onclick="toggleAccordion(2)"
-                            class="w-full mt-4 uppercase flex justify-between items-center py-2 rounded-[30px] px-5 bg-cs-paper-dark text-cs-red-dark">
+                            class="w-full flex justify-between items-center cs-course-accordion-button">
                         <span class="text-2">Show terms and conditions</span>
                         <span class="text-2 hidden">Hide terms and conditions</span>
-                        <span id="icon-2" class="text-cs-red-dark transition-transform duration-300">
+                        <span id="icon-2" class="transition-transform duration-300">
                           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" class="w-4 h-4">
                             <path d="M8.75 3.75a.75.75 0 0 0-1.5 0v3.5h-3.5a.75.75 0 0 0 0 1.5h3.5v3.5a.75.75 0 0 0 1.5 0v-3.5h3.5a.75.75 0 0 0 0-1.5h-3.5v-3.5Z"/>
                           </svg>
                         </span>
                     </button>
                     <div id="content-2" class="max-h-0 overflow-hidden transition-all duration-300 ease-in-out">
-                        <div class="pb-5 px-3 text-sm text-black bg-cs-paper cs-fs-sm">
+                        <div class="cs-course-accordion-content">
                             In order to comply with GDPR data protection rules, please confirm by ticking the box that
                             you agree that your personal details provided by you above may be retained and used by Mauro
                             Iannicelli and his ‘Come & See Ministry’ (‘us’, ‘we’), and that we can contact you in
@@ -210,8 +229,8 @@
                 </div>
                 <div class="flex items-center my-6">
                     <input id="agree" type="checkbox" value=""
-                           class="appearance-none w-4 h-4 text-cs-red-dark bg-white border border-cs-red-dark rounded-md">
-                    <label for="agree" class="ms-2 uppercase cs-fs-base font-bold tracking-wider text-black">Yes, i
+                           class="cs-course-checkbox">
+                    <label for="agree" class="cs-course-checkbox-label">Yes, i
                         agree <span class="font-normal">(required)<span></label>
                 </div>
                 <div class="flex flex-row justify-end w-full gap-4">

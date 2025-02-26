@@ -198,7 +198,16 @@ function toggleAccordion(index) {
     content.style.maxHeight = content.scrollHeight + 'px';
     icon.innerHTML = minusSVG;
   }
+
+
 }
+
+
+window.togglePassword = (el) => {
+  const i = el.closest('div').querySelector('input');
+  i.type = i.type=='password' ? 'text': 'password'
+  el.classList.toggle('active');
+};
 
 window.toggleAccordion = toggleAccordion;
 
