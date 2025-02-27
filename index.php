@@ -14,13 +14,11 @@
     <main class="flex-grow mt-20 md:mt-0">
         <div class="flex flex-col items-center gap-2 mt-8 mb-32">
 
-            <div class="cs-fs-sm">
-                <div class="inline sm:hidden"> less than sm (0 - 480) </div>
-                <div class="hidden sm:inline md:hidden"> sm (480 - 920) </div>
-                <div class="hidden md:inline lg:hidden"> md (920 - 1024) </div>
-                <div class="hidden lg:inline xl:hidden"> lg (1024 - 1280) </div>
-                <div class="hidden xl:inline 2xl:hidden"> xl (1280 - 1536) </div>
-                <div class="hidden 2xl:inline"> 2xl (1536 and greater) </div>
+            <div class="flex flex-col gap-2 mb-8">
+                <div class="cs-fs-sm"><a href="/login">Login</a></div>
+                <div class="cs-fs-sm"><a href="/login_components">Login components</a></div>
+                <div class="cs-fs-sm"><a href="/course">Course Registration</a></div>
+                <div class="cs-fs-sm"><a href="/admin">Admin</a></div>
             </div>
 
             <div class="cs-fs-xs">(cs-fs-xs) The quick brown fox jumps over the lazy dog</div>
