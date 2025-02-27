@@ -1,108 +1,15 @@
 /**
-  DEFINE CONSTANT TO CHANGE DINAMICALLY THE ANIMATION OF THE MENU
+ DEFINE CONSTANT TO CHANGE DINAMICALLY THE ANIMATION OF THE MENU
  */
-const MENU_LEVEL_2_DELAY = 50;
 const MENU_LEVEL_2_DURATION = 200;
-const MENU_LEVEL_3_DELAY = 50;
-const MENU_LEVEL_3_DURATION = 200;
-const MENU_MOBILE_DURATION = 200;
+const SIDEBAR_ADMIN_DURATION = 200;
 const CLOSE_OTHER_MENUS = false;
+const CLOSE_OTHER_MENUS_ADMIN = false;
 
 
 
 
 document.addEventListener("DOMContentLoaded", () => {
-  /**
-   FUNCTION TO MANAGE THE DESKTOP MENU
-   */
-  new HoverIntent(document.querySelectorAll('.group.inline-block'), {
-    interval: MENU_LEVEL_2_DELAY,
-    exitDelay: MENU_LEVEL_2_DELAY,
-    onEnter: function(item) {
-      const menu = item.querySelector('ul.cs-menu-level2');
-      if (menu) {
-        fadeIn(menu, MENU_LEVEL_2_DURATION);
-      }
-    },
-    onExit: function(item) {
-      const menu = item.querySelector('ul.cs-menu-level2');
-      if (menu) {
-        fadeOut(menu, MENU_LEVEL_2_DURATION);
-      }
-    }
-  });
-
-  new HoverIntent(document.querySelectorAll('.cs-dropdown'), {
-    interval: MENU_LEVEL_3_DELAY,
-    exitDelay: MENU_LEVEL_3_DELAY,
-    onEnter: function(item) {
-      const menu = item.querySelector('ul.cs-menu-level3');
-      if (menu) {
-        fadeIn(menu, MENU_LEVEL_3_DURATION);
-      }
-    },
-    onExit: function(item) {
-      const menu = item.querySelector('ul.cs-menu-level3');
-      if (menu) {
-        fadeOut(menu, MENU_LEVEL_3_DURATION);
-      }
-    }
-  });
-
-  /**
-   * FUNCTION TO MANAGE THE MOBILE MENU
-   */
-    // For click event and also reference for outer div tag
-  const btn = document.querySelector("button.cs-mobile-menu-button");
-  const menu = document.querySelector("ul.cs-mobile-menu");
-  if(btn && menu) {
-    btn.addEventListener("click", () => {
-      slideToggle(menu, MENU_MOBILE_DURATION);
-    });
-
-    document.querySelectorAll('.cs-mobile-menu-button').forEach(button => {
-      button.addEventListener('click', function () {
-        const menu = this.nextElementSibling;
-        if (menu) {
-          if (CLOSE_OTHER_MENUS) {
-            if (menu.classList.contains('cs-inner')) {
-              document.querySelectorAll('ul.active.cs-inner').forEach(activeMenu => {
-                if (activeMenu !== menu) {
-                  slideToggle(activeMenu, MENU_MOBILE_DURATION);
-                }
-              });
-              document.querySelectorAll('.cs-active').forEach(activeItem => {
-                if (activeItem !== this) {
-                  activeItem.classList.remove('cs-active');
-                }
-              });
-            } else {
-              document.querySelectorAll('ul.active').forEach(activeMenu => {
-                if (activeMenu !== menu) {
-                  slideToggle(activeMenu, MENU_MOBILE_DURATION);
-                }
-              });
-              document.querySelectorAll('.cs-active').forEach(activeItem => {
-                if (activeItem !== this) {
-                  activeItem.classList.remove('cs-active');
-                }
-              });
-            }
-          }
-
-          if (menu.classList.contains('active')) {
-            slideToggle(menu, MENU_MOBILE_DURATION);
-            menu.classList.remove('active');
-            this.classList.remove('cs-active');
-          } else {
-            menu.classList.add('active');
-            this.classList.add('cs-active');
-            slideToggle(menu, MENU_MOBILE_DURATION);
-          }
-        }
-      });
-    });
-  }
 
   /**
    * FUNCTION TO MANAGE THE USER MENU (BOTH MOBILE AND DESKTOP)
@@ -160,6 +67,90 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
 
+
+  /**
+   * ADMIN SIDEBAR MENU
+   */
+  document.querySelectorAll('.cs-admin-submenu-button').forEach(button => {
+    button.addEventListener('click', function () {
+      const menu = this.nextElementSibling;
+      if (menu) {
+        if (CLOSE_OTHER_MENUS_ADMIN) {
+          document.querySelectorAll('ul.active').forEach(activeMenu => {
+            if (activeMenu !== menu) {
+              slideToggle(activeMenu, SIDEBAR_ADMIN_DURATION);
+            }
+          });
+          document.querySelectorAll('.cs-active').forEach(activeItem => {
+            if (activeItem !== this) {
+              activeItem.classList.remove('cs-active');
+            }
+          });
+        }
+
+        if (menu.classList.contains('active')) {
+          slideToggle(menu, SIDEBAR_ADMIN_DURATION);
+          menu.classList.remove('active');
+          this.classList.remove('cs-active');
+        } else {
+          menu.classList.add('active');
+          this.classList.add('cs-active');
+          slideToggle(menu, SIDEBAR_ADMIN_DURATION);
+        }
+      }
+    });
+  });
+
+  const expandButton = document.querySelector('.cs-admin-expand');
+  if(expandButton !== null) {
+    expandButton.addEventListener('click', function () {
+      document.querySelectorAll('.cs-admin-submenu-button').forEach(button => {
+        if (!button.classList.contains('cs-active')) {
+          button.classList.add('cs-active');
+        }
+      });
+      document.querySelectorAll('.cs-admin-submenu').forEach(menu => {
+        if (!menu.classList.contains('active')) {
+          menu.classList.add('active');
+          slideDown(menu, SIDEBAR_ADMIN_DURATION);
+        }
+      });
+    });
+  }
+
+  const collapseButton = document.querySelector('.cs-admin-collapse');
+  if(collapseButton !== null) {
+    collapseButton.addEventListener('click', function () {
+      document.querySelectorAll('.cs-admin-submenu-button').forEach(button => {
+        if (button.classList.contains('cs-active')) {
+          button.classList.remove('cs-active');
+        }
+      });
+      document.querySelectorAll('.cs-admin-submenu').forEach(menu => {
+        if (menu.classList.contains('active')) {
+          menu.classList.remove('active');
+          slideUp(menu, SIDEBAR_ADMIN_DURATION);
+        }
+      });
+    });
+  }
+
+  const navbar = document.getElementById("navbar");
+  const sidebar = document.getElementById("sidebar");
+  const btnSidebarToggler = document.getElementById("btnSidebarToggler");
+  const main = document.querySelector(".main-admin");
+
+  if(btnSidebarToggler) {
+    console.log('here');
+    btnSidebarToggler.addEventListener("click", (e) => {
+      e.preventDefault();
+
+      sidebar.classList.toggle("show");
+      main.classList.toggle("md:ml-80");
+    });
+
+    sidebar.style.top = parseInt(navbar.clientHeight) - 1 + "px";
+  }
 });
 
 
@@ -186,9 +177,9 @@ function toggleAccordion(index) {
     `;
 
   //toggle text color
-    text.forEach((el) => {
-        el.classList.toggle('hidden');
-    });
+  text.forEach((el) => {
+    el.classList.toggle('hidden');
+  });
 
   // Toggle the content's max-height for smooth opening and closing
   if (content.style.maxHeight && content.style.maxHeight !== '0px') {
@@ -198,16 +189,7 @@ function toggleAccordion(index) {
     content.style.maxHeight = content.scrollHeight + 'px';
     icon.innerHTML = minusSVG;
   }
-
-
 }
-
-
-window.togglePassword = (el) => {
-  const i = el.closest('div').querySelector('input');
-  i.type = i.type=='password' ? 'text': 'password'
-  el.classList.toggle('active');
-};
 
 window.toggleAccordion = toggleAccordion;
 
@@ -289,11 +271,11 @@ const fadeIn = (el, duration, delay = 0) => {
 };
 
 const fadeToggle = (el, display, duration = 500) => {
-    if (window.getComputedStyle(el).display === 'none') {
-        return fadeAnime(el, duration, 'fadeIn');
-    } else {
-        return fadeAnime(el, duration, 'fadeOut');
-    }
+  if (window.getComputedStyle(el).display === 'none') {
+    return fadeAnime(el, duration, 'fadeIn');
+  } else {
+    return fadeAnime(el, duration, 'fadeOut');
+  }
 }
 
 const fadeAnime = async (target, duration, type) => {
@@ -354,113 +336,3 @@ const fadeAnime = async (target, duration, type) => {
     targetStyle.display = textNone;
   }
 }
-
-// load namespace
-
-const HoverIntent = (function() {
-
-  // constructor
-  return function(elements, userConfig) {
-
-    // private members
-
-    const defaultOptions = {
-      exitDelay: 200,
-      interval: 100,
-      sensitivity: 7,
-    };
-    let config = {};
-
-    let currX, currY, prevX, prevY;
-    let allElems, pollTimer, exitTimer;
-
-    // private methods
-
-    // override default options with user config
-    const extend = function(defaults, userArgs) {
-      for (let i in userArgs) {
-        defaults[i] = userArgs[i];
-      }
-
-      return defaults;
-    };
-
-    // update mouse position
-    const mouseTrack = function(ev) {
-      currX = ev.pageX;
-      currY = ev.pageY;
-    };
-
-    // check if mouse movement has slowed enough to trigger active state
-    const mouseCompare = function(targetElem) {
-      const distX = prevX - currX, distY = prevY - currY;
-      const distance = Math.sqrt(distX*distX + distY*distY);
-
-      if (distance < config.sensitivity) {
-        // if we re-entered an element, cancel delayed exit and clear any active elements immediately
-        clearTimeout(exitTimer);
-        for (let elem of allElems) {
-          if (elem.isActive) {
-            config.onExit(elem);
-            elem.isActive = false;
-          }
-        }
-
-        // trigger hover
-        config.onEnter(targetElem);
-        targetElem.isActive = true;
-      } else {
-        // update previous coordinates and try again later
-        prevX = currX;
-        prevY = currY;
-        pollTimer = setTimeout(function() {
-          mouseCompare(targetElem);
-        }, config.interval);
-      }
-    };
-
-    const init = function(elements, userConfig) {
-      if (!userConfig || !userConfig.onEnter || !userConfig.onExit) {
-        throw 'onEnter and onExit callbacks must be provided';
-      }
-      config = extend(defaultOptions, userConfig);
-      allElems = elements;
-
-      for (let elem of allElems) {
-        // holds current element state
-        elem.isActive = false;
-        // keeps track of mouse position
-        elem.addEventListener('mousemove', mouseTrack);
-
-        elem.addEventListener('mouseenter', function(ev) {
-          // set initial entry position
-          prevX = ev.pageX;
-          prevY = ev.pageY;
-          // if this element is already active, cancel exit
-          if (elem.isActive) {
-            clearTimeout(exitTimer);
-            return;
-          }
-
-          // while mouse is over this element, check distance every 100ms
-          pollTimer = setTimeout(function() {
-            mouseCompare(elem);
-          }, config.interval);
-        });
-        elem.addEventListener('mouseleave', function(ev) {
-          clearTimeout(pollTimer);
-          if (!elem.isActive)
-            return;
-
-          exitTimer = setTimeout(function() {
-            config.onExit(elem);
-            elem.isActive = false;
-          }, config.exitDelay);
-        });
-      }
-    };
-
-    init(elements, userConfig);
-  };
-
-})();
