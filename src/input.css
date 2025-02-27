@@ -550,6 +550,35 @@
         rounded-lg;
     }
 
+    .cs-course-tag {
+        @apply
+        rounded-xl
+        px-2
+        border
+        border-transparent
+        flex
+        flex-row
+        items-center
+        font-sans
+        tracking-widest
+        cs-fs-badge;
+    }
+
+    .cs-course-chip {
+        @apply
+        rounded-xl
+        uppercase
+        bg-white
+        px-2 py-0
+        border
+        border-transparent
+        text-black
+        flex flex-row
+        items-center
+        font-sans
+        tracking-widest
+        cs-fs-badge;
+    }
 
 }
 
