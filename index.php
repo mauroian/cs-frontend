@@ -19,6 +19,8 @@
                 <div class="cs-fs-sm"><a href="/login_components">Login components</a></div>
                 <div class="cs-fs-sm"><a href="/course">Course Registration</a></div>
                 <div class="cs-fs-sm"><a href="/admin">Admin</a></div>
+                <div class="cs-fs-sm"><a href="/your_dashboard">Your Dashboard</a></div>
+                <div class="cs-fs-sm"><a href="/bible-course">Bible Timeline Course</a></div>
             </div>
 
             <div class="cs-fs-xs">(cs-fs-xs) The quick brown fox jumps over the lazy dog</div>

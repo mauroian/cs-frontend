@@ -586,47 +586,47 @@
 
 .cs-form-box {
     @apply
-    md:w-auto
+    box:w-auto
     shadow-cs-all-around
-    md:rounded-[30px]
+    box:rounded-[30px]
     w-[98%]
-    md:mx-0;
+    box:mx-0;
 }
 
 .cs-form-container {
     @apply
     bg-cs-paper
     w-full
-    md:rounded-b-[30px]
+    box:rounded-b-[30px]
     flex
     flex-col
     items-center
     pt-9
     pb-12
     px-6
-    sm:px-10  /* [param] padding between outer auth form and input textboxes */
+    box:px-10  /* [param] padding between outer auth form and input textboxes */
 }
 
 .cs-form-box-success {
     @apply
     w-auto
     shadow-cs-all-around
-    md:rounded-[30px]
-    md:mx-0;
+    box:rounded-[30px]
+    box:mx-0;
 }
 
 .cs-form-container-success {
     @apply
     bg-cs-paper
     w-auto
-    md:rounded-[30px]
+    box:rounded-[30px]
     flex
     flex-col
     items-center
     pt-9
     pb-12
     px-6
-    sm:px-10  /* [param] padding between outer auth form and input textboxes */
+    box:px-10  /* [param] padding between outer auth form and input textboxes */
 }
 
 .cs-form-login-header {
@@ -639,9 +639,9 @@
     bg-cs-red-main
     h-28
     pt-12
-    md:px-20 /*  greatr than 20 for an effect */
+    box:px-20 /*  greatr than 20 for an effect */
     w-full
-    md:rounded-t-[30px];
+    box:rounded-t-[30px];
 }
 
 .cs-form-header-bigger-letter {
@@ -653,7 +653,7 @@
     font-serif
     uppercase
     cs-fs-lg
-    md:tracking-[0.45rem]
+    box:tracking-[0.45rem]
     tracking-wider
     text-cs-paper
     bg-cs-red-main
@@ -663,9 +663,9 @@
     justify-center
     h-20
     pt-4
-    md:px-10
+    box:px-10
     w-full
-    md:rounded-t-[30px];
+    box:rounded-t-[30px];
 }
 
 .cs-form-title {
@@ -676,14 +676,14 @@
     w-full
     mb-6
     max-w-[450px]
-    md:max-w-full
+    box:max-w-full
     text-cs-red-main;
 }
 
 .cs-form-text {
     @apply
     w-full
-    md:max-w-[550px]
+    box:max-w-[550px]
     mb-6
     text-left
     cs-fs-sm
@@ -729,7 +729,7 @@
         pl-4
         md:pl-12
         w-full
-        sm:min-w-[400px]
+        box:min-w-[400px]
         md:w-[550px];
     }
 
@@ -783,33 +783,33 @@
     @apply
     bg-cs-paper-shade
     w-full
-    md:rounded-b-[30px]
+    box:rounded-b-[30px]
     flex
     flex-col
     items-center
     pt-9
     pb-12
     px-6
-    sm:px-10 /* [param] padding between outer auth form and input textboxes */;
+    box:px-10 /* [param] padding between outer auth form and input textboxes */;
 }
 
-    .cs-course-header {
-        @apply
-        font-sans
-        cs-fs-lg
-        font-semibold
-        text-cs-paper
-        bg-cs-red-dark
-        flex
-        flex-row
-        items-baseline
-        justify-center
-        h-20
-        pt-6
-        md:px-10
-        w-full
-        md:rounded-t-[30px];
-    }
+.cs-course-header {
+    @apply
+    font-sans
+    cs-fs-lg
+    font-semibold
+    text-cs-paper
+    bg-cs-red-dark
+    flex
+    flex-row
+    items-baseline
+    justify-center
+    h-20
+    pt-6
+    box:px-10
+    w-full
+    box:rounded-t-[30px];
+}
 
 .cs-course-input,
 .cs-course-select {
@@ -973,3 +973,95 @@
 }
 
 /* #### USER PERSONAL AREA #### */
+.cs-personal-area-container {
+    @apply
+    w-full
+    box:w-auto
+    box:rounded-[30px]
+    max-w-[650px]
+    gap-7;
+}
+
+.cs-personal-area-box {
+    @apply
+    shadow-cs-all-around
+    box:rounded-xl
+    bg-cs-blue-main
+    md:min-w-[650px];
+}
+
+
+.cs-personal-accordion-header {
+    @apply
+    py-2
+    font-semibold
+    cs-fs-base
+    min-h-10
+    pl-9
+    pr-5
+    text-white;
+}
+
+.cs-personal-accordion-content {
+    @apply
+    py-5
+    box:cs-fs-sm
+    cs-fs-xs
+    px-8
+    gap-4
+    text-cs-grey
+    bg-cs-paper-dark
+    box:rounded-b-xl;
+}
+
+/** BIBLE COURSE AREA **/
+
+.cs-bible-area-box {
+    @apply
+    w-full
+    md:w-auto
+    shadow-cs-all-around
+    box:rounded-xl
+    bg-cs-paper-dark
+    md:min-w-[650px];
+}
+
+.cs-bible-accordion-header {
+    @apply
+    py-2
+    font-semibold
+    cs-fs-lg
+    min-h-10
+    box:pl-9
+    pl-4
+    pr-5
+    text-black;
+}
+
+
+.cs-bible-accordion-subtitle {
+    @apply
+    uppercase
+    font-serif
+    cs-fs-base
+    font-semibold
+    box:px-8
+    px-4
+    py-4
+    tracking-widest
+    gap-2;
+}
+
+.cs-bible-accordion-content {
+    @apply
+    py-6
+    cs-fs-sm
+    px-4
+    md:px-8
+    font-semibold
+    gap-6
+    text-cs-grey
+    bg-cs-paper-dark
+    cs-fs-base
+    box:rounded-b-xl;
+}

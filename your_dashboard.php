@@ -17,13 +17,13 @@
             <span class="uppercase tracking-widest">Welcome back, Mauro</span>
             <h1 class="font-serif text-left text-6xl">Your Dashboard</h1>
         </div>
-        <div class="flex flex-col items-center w-[98%] md:w-auto rounded-[30px] max-w-[650px] gap-7">
+        <div class="flex flex-col items-center cs-personal-area-container">
             <div class="">
 
             </div>
-            <div class="w-full md:w-auto cs-my-area-box shadow-cs-all-around rounded-xl bg-cs-blue-main md:min-w-[650px]">
+            <div class="w-full md:w-auto cs-personal-area-box">
                 <button type="button" onclick="toggleAccordion(1)"
-                        class="w-full flex justify-between items-center py-7 font-semibold cs-fs-base h-10 pl-9 pr-5 text-white">
+                        class="w-full flex justify-between items-center cs-personal-accordion-header">
                     <span>Your Courses</span>
                     <span id="icon-1" class="text-white transition-transform duration-300">
                           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor"
@@ -33,16 +33,16 @@
                         </span>
                 </button>
                 <div id="content-1" class="max-h-0 overflow-hidden transition-all duration-300 ease-in-out">
-                    <div class="py-5 cs-fs-sm px-8 flex flex-col font-semibold gap-4 text-cs-grey bg-cs-paper-dark cs-fs-base rounded-b-xl">
+                    <div class="cs-personal-accordion-content flex flex-col  font-semibold">
                         <a href="/bible-course.php" >The Bible Timeline Course</a>
                         <a href="#">Advent 2024 Bible Series</a>
                         <a href="#">Lenten 2024 Bible Series</a>
                     </div>
                 </div>
             </div>
-            <div class="w-full md:w-auto cs-my-area-box shadow-cs-all-around rounded-xl bg-cs-blue-main md:min-w-[650px]">
+            <div class="w-full md:w-auto cs-personal-area-box">
                 <button type="button" onclick="toggleAccordion(2)"
-                        class="w-full flex justify-between items-center py-7 font-semibold cs-fs-base h-10 pl-9 pr-5 text-white">
+                        class="w-full flex justify-between items-center cs-personal-accordion-header">
                     <span>Information for Come & See Mission Partners</span>
                     <span id="icon-2" class="text-white transition-transform duration-300">
                           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor"
@@ -52,7 +52,7 @@
                         </span>
                 </button>
                 <div id="content-2" class="max-h-0 overflow-hidden transition-all duration-300 ease-in-out">
-                    <div class="py-6 cs-fs-sm px-9 flex flex-col gap-4 text-cs-grey bg-cs-paper-dark cs-fs-sm rounded-b-xl">
+                    <div class="cs-personal-accordion-content flex flex-col">
                         The next monthly Mass (September 2024) for our generous Come & See Mission Partners will be offered on Monday 2nd Sept 2024.
                         <br/>
                         For your diary, the next monthly Masses will be celebrated as always every first Monday of the month on these days:
@@ -65,9 +65,9 @@
                     </div>
                 </div>
             </div>
-            <div class="w-full md:w-auto cs-my-area-box shadow-cs-all-around rounded-xl bg-cs-blue-main md:min-w-[650px]">
+            <div class="w-full md:w-auto cs-personal-area-box">
                 <button type="button" onclick="toggleAccordion(3)"
-                        class="w-full flex justify-between items-center py-7 font-semibold cs-fs-base h-10 pl-9 pr-5 text-white">
+                        class="w-full flex justify-between items-center cs-personal-accordion-header">
                     <span>Join our Bible Timeline WhatsApp Group</span>
                     <span id="icon-3" class="text-white transition-transform duration-300">
                           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor"
@@ -77,7 +77,7 @@
                         </span>
                 </button>
                 <div id="content-3" class="max-h-0 overflow-hidden transition-all duration-300 ease-in-out">
-                    <div class="py-6 cs-fs-sm px-9 flex flex-col gap-4 text-cs-grey bg-cs-paper-dark cs-fs-sm rounded-b-xl">
+                    <div class="cs-personal-accordion-content flex flex-col">
                         This is not a group to chat (the chat option is disabled!) but for me, the Administrator, to share with you some course communications.
                         <br/><br/>
                         If you want to join, use this link from your mobile phone:

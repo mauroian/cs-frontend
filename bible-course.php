@@ -33,13 +33,13 @@
             </ol>
             <h1 class="font-serif text-left text-6xl">The Bible Timeline Course</h1>
         </div>
-        <div class="flex flex-col items-center w-[98%] md:w-auto rounded-[30px] max-w-[650px] gap-7">
+        <div class="flex flex-col items-center cs-personal-area-container">
             <div class="">
 
             </div>
-            <div class="w-full md:w-auto cs-my-area-box shadow-cs-all-around rounded-xl bg-cs-paper-dark md:min-w-[650px]">
+            <div class="cs-bible-area-box">
                 <button type="button" onclick="toggleAccordion(1)"
-                        class="w-full flex justify-between items-center py-8 font-semibold cs-fs-lg h-10 pl-9 pr-5 text-black">
+                        class="w-full flex justify-between items-center cs-bible-accordion-header">
                     <span>Session 1</span>
                     <span id="icon-1" class="text-black transition-transform duration-300">
                           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor"
@@ -49,8 +49,8 @@
                         </span>
                 </button>
                 <div id="content-1" class="max-h-0 overflow-hidden transition-all duration-300 ease-in-out">
-                    <div class="bg-cs-paper text-black uppercase font-serif cs-fs-base font-semibold px-8 py-4 tracking-widest">Course Introduction</div>
-                    <div class="py-6 cs-fs-sm px-8 flex flex-col font-semibold gap-6 text-cs-grey bg-cs-paper-dark cs-fs-base rounded-b-xl">
+                    <div class="bg-cs-paper text-black  cs-bible-accordion-subtitle flex flex-row justify-start">Course Introduction</div>
+                    <div class="cs-bible-accordion-content flex flex-col">
                         <div class="cs-course-item">
                             <a href="#" class="flex flex-row gap-4">
                                 <img src="/src/assets/video-icon.svg" class="inline-block w-8 h-8 mr-2" alt="Video"/>
@@ -63,9 +63,9 @@
                     </div>
                 </div>
             </div>
-            <div class="w-full md:w-auto cs-my-area-box shadow-cs-all-around rounded-xl bg-cs-paper-dark md:min-w-[650px]">
+            <div class="cs-bible-area-box">
                 <button type="button" onclick="toggleAccordion(2)"
-                        class="w-full flex justify-between items-center py-8 font-semibold cs-fs-lg h-10 pl-9 pr-5 text-black">
+                        class="w-full flex justify-between items-center cs-bible-accordion-header">
                     <span>Session 2</span>
                     <span id="icon-2" class="text-black transition-transform duration-300">
                           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor"
@@ -75,21 +75,25 @@
                         </span>
                 </button>
                 <div id="content-2" class="max-h-0 overflow-hidden transition-all duration-300 ease-in-out">
-                    <div class="bg-cs-period1-pri text-white uppercase font-serif cs-fs-base font-semibold px-8 py-4 tracking-widest flex flex-row justify-start gap-2">
+                    <div class="bg-cs-period1-pri text-white  cs-bible-accordion-subtitle flex flex-row justify-start">
                         <div class="rounded-xl bg-cs-period1-sec cs-course-tag">
                             Period 1
                         </div>
                         EARLY WORLD</div>
-                    <div class="py-6 cs-fs-sm px-8 flex flex-col font-semibold gap-6 text-cs-grey bg-cs-paper-dark cs-fs-base rounded-b-xl">
+                    <div class="cs-bible-accordion-content flex flex-col">
                         <div class="cs-course-item">
                             <a href="#" class="flex flex-row gap-4">
                                 <img src="/src/assets/pdf-icon.svg" class="inline-block w-8 h-8 mr-2" alt="Pdf"/>
-                                Bible Reading
-                                <div class="cs-course-chip">
-                                    pre-session
-                                </div>
-                                <div class="cs-course-chip">
-                                    optional
+                                <div class="flex flex-col gap-2">
+                                    Bible Reading
+                                    <div class="flex flex-row gap-1.5 md:gap-2">
+                                        <div class="cs-course-chip">
+                                            pre-session
+                                        </div>
+                                        <div class="cs-course-chip">
+                                            optional
+                                        </div>
+                                    </div>
                                 </div>
                             </a>
                         </div>
@@ -102,13 +106,17 @@
                         <div class="cs-course-item">
                             <a href="#" class="flex flex-row gap-4">
                                 <img src="/src/assets/pdf-icon.svg" class="inline-block w-8 h-8 mr-2" alt="Pdf"/>
-                                Study Questions
-                                <div class="cs-course-chip">
-                                    post-session
-                                </div>
-                                <div class="cs-course-chip">
-                                    optional
-                                </div>
+                                    <div class="flex flex-col gap-2">
+                                        Study Questions
+                                        <div class="flex flex-row gap-1.5 md:gap-2">
+                                            <div class="cs-course-chip">
+                                                post-session
+                                            </div>
+                                            <div class="cs-course-chip">
+                                                optional
+                                            </div>
+                                        </div>
+                                    </div>
                             </a>
                         </div>
                         <div>
@@ -123,9 +131,9 @@
                     </div>
                 </div>
             </div>
-            <div class="w-full md:w-auto cs-my-area-box shadow-cs-all-around rounded-xl bg-cs-paper-dark md:min-w-[650px]">
+            <div class="cs-bible-area-box">
                 <button type="button" onclick="toggleAccordion(3)"
-                        class="w-full flex justify-between items-center py-8 font-semibold cs-fs-lg h-10 pl-9 pr-5 text-black">
+                        class="w-full flex justify-between items-center cs-bible-accordion-header">
                     <span>Session 3</span>
                     <span id="icon-3" class="text-black transition-transform duration-300">
                           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor"
@@ -135,21 +143,25 @@
                         </span>
                 </button>
                 <div id="content-3" class="max-h-0 overflow-hidden transition-all duration-300 ease-in-out">
-                    <div class="bg-cs-period2-pri text-white uppercase font-serif cs-fs-base font-semibold px-8 py-4 tracking-widest flex flex-row justify-start gap-2">
+                    <div class="bg-cs-period2-pri text-white cs-bible-accordion-subtitle flex flex-row justify-start">
                         <div class="rounded-xl bg-cs-period2-sec cs-course-tag">
                             Period 2
                         </div>
                         patriarchs</div>
-                    <div class="py-6 cs-fs-sm px-8 flex flex-col font-semibold gap-6 text-cs-grey bg-cs-paper-dark cs-fs-base rounded-b-xl">
+                    <div class="cs-bible-accordion-content flex flex-col">
                         <div class="cs-course-item">
                             <a href="#" class="flex flex-row gap-4">
                                 <img src="/src/assets/pdf-icon.svg" class="inline-block w-8 h-8 mr-2" alt="Pdf"/>
-                                Bible Reading
-                                <div class="cs-course-chip">
-                                    pre-session
-                                </div>
-                                <div class="cs-course-chip">
-                                    optional
+                                <div class="flex flex-col gap-2">
+                                    Bible Reading
+                                    <div class="flex flex-row gap-1.5 md:gap-2">
+                                        <div class="cs-course-chip">
+                                            pre-session
+                                        </div>
+                                        <div class="cs-course-chip">
+                                            optional
+                                        </div>
+                                    </div>
                                 </div>
                             </a>
                         </div>
@@ -162,12 +174,16 @@
                         <div class="cs-course-item">
                             <a href="#" class="flex flex-row gap-4">
                                 <img src="/src/assets/pdf-icon.svg" class="inline-block w-8 h-8 mr-2" alt="Pdf"/>
-                                Study Questions
-                                <div class="cs-course-chip">
-                                    post-session
-                                </div>
-                                <div class="cs-course-chip">
-                                    optional
+                                <div class="flex flex-col gap-2">
+                                    Study Questions
+                                    <div class="flex flex-row gap-1.5 md:gap-2">
+                                        <div class="cs-course-chip">
+                                            post-session
+                                        </div>
+                                        <div class="cs-course-chip">
+                                            optional
+                                        </div>
+                                    </div>
                                 </div>
                             </a>
                         </div>
