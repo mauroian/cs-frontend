@@ -32,14 +32,25 @@
     .cs-fs-xl {
         @apply text-3xl sm:text-3xl
     }
+    .cs-fs-2xl {
+        @apply text-4xl sm:text-4xl
+    }
+    .cs-fs-3xl {
+        @apply text-5xl sm:text-5xl
+    }
+    .cs-fs-4xl {
+        @apply text-6xl sm:text-6xl
+    }
 }
 
 @layer components {
 
     .cs-main {
-     @apply mt-20 mb-44   /* [param] sets margins for <main> element.
+     @apply 
+     mt-20 pb-44   /* [param] sets margins for <main> element.
     It depends if we have <header class="md:relative"> or not - if we have, the navbar would scroll from md (instead of being fixed like in mobile) - and I have to readjust mt and mb accordingly here.
     */
+    bg-cs-paper-shade
     }
 
 
@@ -601,12 +612,12 @@
     md:w-[600px] /* [param] */
     box:shadow-cs-all-around /* [param] */
     box:rounded-[30px]
-    box:mx-0;
+    box:mx-0
+    bg-cs-paper;
 }
 
 .cs-form-container-success {
     @apply
-    bg-cs-paper
     w-auto
     box:rounded-[30px]
     flex
@@ -770,7 +781,7 @@
 
 .cs-course-container {
     @apply
-    bg-cs-paper-shade
+    bg-cs-paper
     w-full
     box:rounded-b-[30px]
     flex
@@ -815,7 +826,7 @@
     border-2
     rounded-l-[30px]
     rounded-r-xl
-    bg-cs-paper
+    bg-cs-paper-shade
     pl-4
     md:pl-12
     w-full
@@ -848,7 +859,7 @@
     rounded-r-xl
     w-full
     min-w-[150px]
-    bg-cs-paper
+    bg-cs-paper-shade
     pl-10;
 }
 .cs-course-phone-number {
@@ -861,7 +872,7 @@
     border-cs-red-dark
     border-2
     rounded-xl
-    bg-cs-paper
+    bg-cs-paper-shade
     rounded-l-[30px]
     md:rounded-l-none
     w-full
@@ -892,7 +903,7 @@
 
 .cs-course-accordion-content {
     @apply
-    px-3 pb-5 text-sm text-black bg-cs-paper cs-fs-sm;
+    px-3 pt-3 pb-5 text-sm text-black bg-cs-paper cs-fs-sm;
 }
 
 .cs-course-submit {
@@ -953,7 +964,8 @@
     box:w-auto
     box:rounded-[30px]
     max-w-[600px]
-    gap-7;
+    mt-16
+    gap-14;
 }
 
 .cs-personal-area-box {
@@ -971,7 +983,7 @@
 
 .cs-personal-accordion-header {
     @apply
-    py-2 pr-5 font-semibold text-white cs-fs-base min-h-10 pl-9 text-left gap-4;
+    gap-4 py-2 pr-5 font-semibold text-left text-white cs-fs-base min-h-10 pl-9;
 }
 
 .cs-personal-accordion-content {
@@ -995,7 +1007,7 @@
 
 .cs-bible-accordion-header {
     @apply
-    py-2 pl-4 pr-5 font-semibold text-black cs-fs-lg min-h-10 box:pl-9 gap-4 text-left;
+    gap-4 py-2 pl-4 pr-5 font-semibold text-left text-black cs-fs-lg min-h-10 box:pl-9;
 }
 
 

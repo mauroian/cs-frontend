@@ -34,9 +34,7 @@
                 <h1 class="font-serif text-6xl text-left">The Bible Timeline Course</h1>
             </div>
             <div class="flex flex-col items-center cs-personal-area-container">
-                <div class="">
 
-                </div>
                 <div class="cs-bible-area-box">
                     <button type="button" onclick="toggleAccordion(1)"
                         class="flex items-center justify-between w-full cs-bible-accordion-header">
@@ -69,7 +67,7 @@
                         <span>Session 2</span>
                         <span id="icon-2" class="text-black transition-transform duration-300">
                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor"
-                                 class="w-6 h-6">
+                                class="w-6 h-6">
                                 <path d="M8.75 3.75a.75.75 0 0 0-1.5 0v3.5h-3.5a.75.75 0 0 0 0 1.5h3.5v3.5a.75.75 0 0 0 1.5 0v-3.5h3.5a.75.75 0 0 0 0-1.5h-3.5v-3.5Z" />
                             </svg>
                         </span>
@@ -138,7 +136,7 @@
                         <span>Session 3</span>
                         <span id="icon-3" class="text-black transition-transform duration-300">
                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor"
-                                 class="w-6 h-6">
+                                class="w-6 h-6">
                                 <path d="M8.75 3.75a.75.75 0 0 0-1.5 0v3.5h-3.5a.75.75 0 0 0 0 1.5h3.5v3.5a.75.75 0 0 0 1.5 0v-3.5h3.5a.75.75 0 0 0 0-1.5h-3.5v-3.5Z" />
                             </svg>
                         </span>

@@ -11,16 +11,16 @@
 
 <body class="flex flex-col min-h-screen">
     <?php require_once 'header.php'; ?>
-    <main class="flex-grow mt-20">
+    <main class="flex-grow cs-main">
         <div class="flex flex-col items-center gap-2 mt-8 mb-32">
 
             <div class="flex flex-col gap-2 mb-8">
                 <div class="cs-fs-sm"><a href="/login">Login</a></div>
-                <div class="cs-fs-sm"><a href="/login_components">Login components</a></div>
-                <div class="cs-fs-sm"><a href="/course">Course Registration</a></div>
+                <div class="cs-fs-sm"><a href="/auth">Auth</a></div>
+                <div class="cs-fs-sm"><a href="/course-registration">Course Registration</a></div>
                 <div class="cs-fs-sm"><a href="/admin">Admin</a></div>
-                <div class="cs-fs-sm"><a href="/your_dashboard">Your Dashboard</a></div>
-                <div class="cs-fs-sm"><a href="/bible-course">Bible Timeline Course</a></div>
+                <div class="cs-fs-sm"><a href="/your-dashboard">Your Dashboard</a></div>
+                <div class="cs-fs-sm"><a href="/bible-timeline-course">Bible Timeline Course</a></div>
             </div>
 
             <div class="cs-fs-xs">(cs-fs-xs) The quick brown fox jumps over the lazy dog</div>

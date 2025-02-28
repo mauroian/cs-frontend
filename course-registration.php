@@ -12,18 +12,18 @@
 <body class="flex flex-col min-h-screen">
     <?php require_once 'header.php'; ?>
     <main class="flex flex-col items-center justify-center flex-grow gap-5 cs-main">
-        <div class="flex flex-col items-center w-full py-12 text-white bg-cs-red-main">
+        <div class="flex flex-col items-center w-full px-5 py-6 text-white bg-cs-red-main">
             <span class="tracking-widest uppercase">course registration</span>
-            <h1 class="font-serif italic font-semibold text-center text-7xl">Bible Timeline Course</h1>
-            <span class="tracking-widest uppercase cs-fs-xl ">September 2024</span>
+            <h1 class="font-serif italic font-semibold leading-[55px] my-3 text-center cs-fs-3xl">Bible Timeline Course</h1>
+            <span class="tracking-widest uppercase cs-fs-base ">September 2024</span>
         </div>
-        <div class="flex flex-col items-center cs-form-box">
+        <div class="flex flex-col items-center mt-10 cs-form-box">
             <!-- Box Titolo -->
             <div class="cs-course-header">
                 Create an Account
             </div>
             <!-- Box Form -->
-            <div class="cs-course-container bg-cs-paper-shade">
+            <div class="cs-course-container">
                 <form class="flex flex-col items-start w-full">
                     <label for="firstname" class="cs-form-label">First Name</label>
                     <!-- Input Firstname -->
@@ -119,7 +119,7 @@
             </div>
         </div>
 
-        <div class="flex flex-col items-center cs-form-box">
+        <div class="flex flex-col items-center mt-10 cs-form-box">
             <!-- Box Titolo -->
             <div class="cs-course-header">
                 Course Registration

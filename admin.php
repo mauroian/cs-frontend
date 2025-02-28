@@ -8,12 +8,13 @@
     <script type="module" src="/src/admin.js" defer></script>
     <title>Come & See</title>
 </head>
-<body class="flex flex-col min-h-screen">
-<?php require_once 'header_admin.php'; ?>
 
-<main class="flex-grow mt-20 md:mt-0 md:ml-0 transform duration-300 main-admin">
-<?php require_once 'add_membership.php'; ?>
-</main>
+<body class="flex flex-col min-h-screen">
+    <?php require_once 'header-admin.php'; ?>
+
+    <main class="flex-grow mt-20 duration-300 transform md:mt-0 md:ml-0 main-admin">
+        <?php require_once 'add-membership.php'; ?>
+    </main>
 </body>
 
 </html>
