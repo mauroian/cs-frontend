@@ -36,6 +36,13 @@
 
 @layer components {
 
+    .cs-main {
+     @apply mt-20 mb-44   /* [param] sets margins for <main> element.
+    It depends if we have <header class="md:relative"> or not - if we have, the navbar would scroll from md (instead of being fixed like in mobile) - and I have to readjust mt and mb accordingly here.
+    */
+    }
+
+
     /* whole navbar features (desktop & mobile) */
     .cs-header {
         @apply
@@ -552,32 +559,12 @@
 
     .cs-course-tag {
         @apply
-        rounded-xl
-        px-2
-        border
-        border-transparent
-        flex
-        flex-row
-        items-center
-        font-sans
-        tracking-widest
-        cs-fs-badge;
+        flex flex-row items-center px-2 font-sans tracking-widest border border-transparent rounded-xl cs-fs-badge;
     }
 
     .cs-course-chip {
         @apply
-        rounded-xl
-        uppercase
-        bg-white
-        px-2 py-0
-        border
-        border-transparent
-        text-black
-        flex flex-row
-        items-center
-        font-sans
-        tracking-widest
-        cs-fs-badge;
+        flex flex-row items-center px-2 py-0 font-sans tracking-widest text-black uppercase bg-white border border-transparent rounded-xl cs-fs-badge;
     }
 
 }
@@ -586,11 +573,11 @@
 
 .cs-form-box {
     @apply
-    box:w-auto
-    shadow-cs-all-around
-    box:rounded-[30px]
-    w-[98%]
-    box:mx-0;
+    w-full /* [param] */
+    box:w-[480px] /* [param] */
+    md:w-[600px] /* [param] */
+    box:shadow-cs-all-around /* [param] */
+    box:rounded-[30px];
 }
 
 .cs-form-container {
@@ -609,8 +596,10 @@
 
 .cs-form-box-success {
     @apply
-    w-auto
-    shadow-cs-all-around
+    w-full /* [param] */
+    box:w-[480px] /* [param] */
+    md:w-[600px] /* [param] */
+    box:shadow-cs-all-around /* [param] */
     box:rounded-[30px]
     box:mx-0;
 }
@@ -683,7 +672,7 @@
 .cs-form-text {
     @apply
     w-full
-    box:max-w-[550px]
+    /*box:max-w-[450px]*/
     mb-6
     text-left
     cs-fs-sm
@@ -730,7 +719,7 @@
         md:pl-12
         w-full
         box:min-w-[400px]
-        md:w-[550px];
+        md:w-full;
     }
 
     .cs-form-input + img
@@ -843,7 +832,7 @@
 }
 
 .cs-course-arrow {
-    @apply bg-cs-red-dark w-8 sm:h-9 h-10 rounded-r-lg text-white;
+    @apply w-8 h-10 text-white rounded-r-lg bg-cs-red-dark sm:h-9;
 }
 
 .cs-course-phone-prefix {
@@ -882,22 +871,12 @@
 
 .cs-course-checkbox {
     @apply
-    w-4
-    h-4
-    text-cs-red-dark
-    bg-white border
-    border-cs-red-dark
-    rounded-md;
+    w-4 h-4 bg-white border rounded-md text-cs-red-dark border-cs-red-dark;
 }
 
 .cs-course-checkbox-label {
     @apply
-    ms-2
-    uppercase
-    cs-fs-sm
-    font-bold
-    tracking-wider
-    text-black;
+    font-bold tracking-wider text-black uppercase ms-2 cs-fs-sm;
 }
 
 .cs-course-accordion-button {
@@ -913,12 +892,7 @@
 
 .cs-course-accordion-content {
     @apply
-    pb-5
-    text-sm
-    px-3
-    text-black
-    bg-cs-paper
-    cs-fs-sm;
+    px-3 pb-5 text-sm text-black bg-cs-paper cs-fs-sm;
 }
 
 .cs-course-submit {
@@ -984,34 +958,24 @@
 
 .cs-personal-area-box {
     @apply
-    shadow-cs-all-around
-    box:rounded-xl
+    w-full /* [param] */
+    box:w-[480px] /* [param] */
+    md:w-[600px] /* [param] */
+    box:shadow-cs-all-around /* [param] */
+    box:rounded-[30px]
     bg-cs-blue-main
-    md:min-w-[650px];
+    min-w-[600px];
 }
 
 
 .cs-personal-accordion-header {
     @apply
-    py-2
-    font-semibold
-    cs-fs-base
-    min-h-10
-    pl-9
-    pr-5
-    text-white;
+    py-2 pr-5 font-semibold text-white cs-fs-base min-h-10 pl-9;
 }
 
 .cs-personal-accordion-content {
     @apply
-    py-5
-    box:cs-fs-sm
-    cs-fs-xs
-    px-8
-    gap-4
-    text-cs-grey
-    bg-cs-paper-dark
-    box:rounded-b-xl;
+    gap-4 px-8 py-5 box:cs-fs-sm cs-fs-xs text-cs-grey bg-cs-paper-dark box:rounded-b-xl;
 }
 
 /** BIBLE COURSE AREA **/
@@ -1028,40 +992,16 @@
 
 .cs-bible-accordion-header {
     @apply
-    py-2
-    font-semibold
-    cs-fs-lg
-    min-h-10
-    box:pl-9
-    pl-4
-    pr-5
-    text-black;
+    py-2 pl-4 pr-5 font-semibold text-black cs-fs-lg min-h-10 box:pl-9;
 }
 
 
 .cs-bible-accordion-subtitle {
     @apply
-    uppercase
-    font-serif
-    cs-fs-base
-    font-semibold
-    box:px-8
-    px-4
-    py-4
-    tracking-widest
-    gap-2;
+    gap-2 px-4 py-4 font-serif font-semibold tracking-widest uppercase cs-fs-base box:px-8;
 }
 
 .cs-bible-accordion-content {
     @apply
-    py-6
-    cs-fs-sm
-    px-4
-    md:px-8
-    font-semibold
-    gap-6
-    text-cs-grey
-    bg-cs-paper-dark
-    cs-fs-base
-    box:rounded-b-xl;
+    gap-6 px-4 py-6 font-semibold cs-fs-sm md:px-8 text-cs-grey bg-cs-paper-dark cs-fs-base box:rounded-b-xl;
 }

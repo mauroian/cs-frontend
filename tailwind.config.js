@@ -82,11 +82,12 @@ export default {
       animation: {
         "cs-slide-in-down": "cs-slide-in-down 0.25s linear 1 ",
       },
-      boxShadow: {
+      boxShadow: { /* needed as the shadow I wanted was not provided by Tailwind */
         'cs-all-around': '0 0 10px 7px rgba(0, 0, 0, 0.1)',
       }
     },
   },
+  /* 'safelist' makes sure that the class is generated even if it is not found in any HTML files (in this case I need it as it is needed for Javascript) */
   safelist: [
     "ml-80",
     "md:ml-80"

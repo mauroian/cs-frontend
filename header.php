@@ -2,7 +2,8 @@
 // changing the following variable to false will toggle the user logged state
 $isLogged = isset($_GET['logged']) && $_GET['logged'] === 'true';
 ?>
-<header class="fixed top-0 z-50 w-full bg-cs-paper md:relative">
+<!--  <header class="md:relative"> would make the navbar scroll from md (instead of being fixed like in mobile)-->
+<header class="fixed top-0 z-50 w-full bg-cs-paper">
     <!-- Container nav for header (desktop & mobile) -->
     <nav class="z-10 flex items-center w-full p-4 mx-auto bg-cs-paper cs-header" aria-label="Header">
         <!-- Container div for logo (desktop & mobile)-->

@@ -10,10 +10,12 @@
 </head>
 
 <body class="flex flex-col min-h-screen">
+
     <?php require_once 'header.php'; ?>
-    <main class="flex-grow flex justify-center items-center bg-[url('/src/assets/background-login.png')] bg-no-repeat bg-center bg-cover min-h-[746px] mt-20 md:mt-0">
+
+    <main class="flex-grow flex justify-center items-center bg-[url('/src/assets/background-login.png')] bg-no-repeat bg-center bg-cover min-h-[746px] mt-20">
         <!-- Box -->
-        <div class="flex flex-col items-center w-full box:w-auto">
+        <div class="flex flex-col items-center mt-6 cs-form-box">
             <!-- Box Titolo -->
             <div class="relative flex flex-row items-baseline justify-center cs-form-login-header">
                 <img src="/src/assets/logo-login.svg" class="absolute -top-[80px] block" alt="Login">
@@ -22,6 +24,9 @@
             <!-- Box Form -->
             <div class="cs-form-container">
                 <form class="flex flex-col items-start w-full">
+                    <div class="cs-form-text">
+                        Prova testo.
+                    </div>
                     <label for="email" class="cs-form-label">Email</label>
                     <!-- Input Email -->
                     <div class="relative w-full my-2">
@@ -34,7 +39,7 @@
                     <div class="relative w-full my-2">
                         <input id="password" required type="password" placeholder="Enter your password" class="cs-form-input" />
                         <img src="/src/assets/password-login.svg" />
-                        <button type="button" class="cs-password-eye absolute inset-y-0 end-0 flex items-center z-20 px-3 cursor-pointer text-cs-red-main" onclick="togglePassword(this)">
+                        <button type="button" class="absolute inset-y-0 z-20 flex items-center px-3 cursor-pointer cs-password-eye end-0 text-cs-red-main" onclick="togglePassword(this)">
                             <svg class="shrink-0 size-5" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                                 <path class="hs-password-active" d="M9.88 9.88a3 3 0 1 0 4.24 4.24"></path>
                                 <path class="hs-password-active" d="M10.73 5.08A10.43 10.43 0 0 1 12 5c7 0 10 7 10 7a13.16 13.16 0 0 1-1.67 2.68"></path>

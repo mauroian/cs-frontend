@@ -11,7 +11,7 @@
 
 <body class="flex flex-col min-h-screen">
     <?php require_once 'header.php'; ?>
-    <main class="flex-grow flex flex-col gap-6 justify-center items-center min-h-[746px] mt-20 md:mt-0 mb-8">
+    <main class="flex-grow flex flex-col gap-6 justify-center items-center min-h-[746px] cs-main">
         <!-- Box -->
         <div class="flex flex-col items-center mt-12 cs-form-box">
             <!-- Box Titolo -->
@@ -70,7 +70,7 @@
                     <div class="relative cs-form-input-container">
                         <input id="password" required type="password" placeholder="Password" class="cs-form-input" />
                         <img src="/src/assets/password-login.svg" />
-                        <button type="button" class="cs-password-eye absolute inset-y-0 end-0 flex items-center z-20 px-3 cursor-pointer text-cs-red-main" onclick="togglePassword(this)">
+                        <button type="button" class="absolute inset-y-0 z-20 flex items-center px-3 cursor-pointer cs-password-eye end-0 text-cs-red-main" onclick="togglePassword(this)">
                             <svg class="shrink-0 size-5" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                                 <path class="hs-password-active" d="M9.88 9.88a3 3 0 1 0 4.24 4.24"></path>
                                 <path class="hs-password-active" d="M10.73 5.08A10.43 10.43 0 0 1 12 5c7 0 10 7 10 7a13.16 13.16 0 0 1-1.67 2.68"></path>
@@ -86,7 +86,7 @@
                     <div class="relative cs-form-input-container">
                         <input id="password_confirmation" required type="password" placeholder="Password confirmation"
                             class="cs-form-input" />
-                        <button type="button" class="cs-password-eye absolute inset-y-0 end-0 flex items-center z-20 px-3 cursor-pointer text-cs-red-main" onclick="togglePassword(this)">
+                        <button type="button" class="absolute inset-y-0 z-20 flex items-center px-3 cursor-pointer cs-password-eye end-0 text-cs-red-main" onclick="togglePassword(this)">
                             <svg class="shrink-0 size-5" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                                 <path class="hs-password-active" d="M9.88 9.88a3 3 0 1 0 4.24 4.24"></path>
                                 <path class="hs-password-active" d="M10.73 5.08A10.43 10.43 0 0 1 12 5c7 0 10 7 10 7a13.16 13.16 0 0 1-1.67 2.68"></path>
@@ -146,7 +146,7 @@
                     <!-- Input Phone -->
                     <div class="relative cs-form-input-container">
                         <input id="phone" required type="text" placeholder="" class="cs-form-input" />
-                        <img src="/src/assets/phone.svg"  class="size-6" />
+                        <img src="/src/assets/phone.svg" class="size-6" />
                     </div>
                     <button class="cs-form-submit">Submit</button>
                 </form>
