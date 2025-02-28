@@ -873,8 +873,7 @@
     border-2
     rounded-xl
     bg-cs-paper-shade
-    rounded-l-[30px]
-    md:rounded-l-none
+    rounded-l-none
     w-full
     pl-4
     md:pl-4

@@ -42,11 +42,11 @@
                         <span id="icon-1" class="text-black transition-transform duration-300">
                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor"
                                 class="w-6 h-6">
-                                <path d="M8.75 3.75a.75.75 0 0 0-1.5 0v3.5h-3.5a.75.75 0 0 0 0 1.5h3.5v3.5a.75.75 0 0 0 1.5 0v-3.5h3.5a.75.75 0 0 0 0-1.5h-3.5v-3.5Z" />
+        <path d="M3.75 7.25a.75.75 0 0 0 0 1.5h8.5a.75.75 0 0 0 0-1.5h-8.5Z" />
                             </svg>
                         </span>
                     </button>
-                    <div id="content-1" class="overflow-hidden transition-all duration-300 ease-in-out max-h-0">
+                    <div id="content-1" class="overflow-hidden transition-all duration-300 ease-in-out">
                         <div class="flex flex-row justify-start text-black bg-cs-paper cs-bible-accordion-subtitle">Course Introduction</div>
                         <div class="flex flex-col cs-bible-accordion-content">
                             <div class="cs-course-item">
@@ -68,11 +68,11 @@
                         <span id="icon-2" class="text-black transition-transform duration-300">
                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor"
                                 class="w-6 h-6">
-                                <path d="M8.75 3.75a.75.75 0 0 0-1.5 0v3.5h-3.5a.75.75 0 0 0 0 1.5h3.5v3.5a.75.75 0 0 0 1.5 0v-3.5h3.5a.75.75 0 0 0 0-1.5h-3.5v-3.5Z" />
+        <path d="M3.75 7.25a.75.75 0 0 0 0 1.5h8.5a.75.75 0 0 0 0-1.5h-8.5Z" />
                             </svg>
                         </span>
                     </button>
-                    <div id="content-2" class="overflow-hidden transition-all duration-300 ease-in-out max-h-0">
+                    <div id="content-2" class="overflow-hidden transition-all duration-300 ease-in-out">
                         <div class="flex flex-row justify-start text-white bg-cs-period1-pri cs-bible-accordion-subtitle">
                             <div class="rounded-xl bg-cs-period1-sec cs-course-tag">
                                 Period 1
@@ -137,11 +137,11 @@
                         <span id="icon-3" class="text-black transition-transform duration-300">
                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor"
                                 class="w-6 h-6">
-                                <path d="M8.75 3.75a.75.75 0 0 0-1.5 0v3.5h-3.5a.75.75 0 0 0 0 1.5h3.5v3.5a.75.75 0 0 0 1.5 0v-3.5h3.5a.75.75 0 0 0 0-1.5h-3.5v-3.5Z" />
+                                <path d="M3.75 7.25a.75.75 0 0 0 0 1.5h8.5a.75.75 0 0 0 0-1.5h-8.5Z" />
                             </svg>
                         </span>
                     </button>
-                    <div id="content-3" class="overflow-hidden transition-all duration-300 ease-in-out max-h-0">
+                    <div id="content-3" class="overflow-hidden transition-all duration-300 ease-in-out">
                         <div class="flex flex-row justify-start text-white bg-cs-period2-pri cs-bible-accordion-subtitle">
                             <div class="rounded-xl bg-cs-period2-sec cs-course-tag">
                                 Period 2

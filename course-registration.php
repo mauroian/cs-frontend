@@ -183,7 +183,7 @@
                         <input id="parish" required type="text" placeholder="" class="cs-course-input" />
                     </div>
                     <label for="phone" class="cs-form-label">Your Mobile Number</label>
-                    <div class="relative flex flex-col gap-3 cs-form-input-container md:flex-row">
+                    <div class="relative flex gap-3 cs-form-input-container flex-row">
                         <!-- create a combobox with flag and number for mobile -->
                         <div class="relative">
                             <select id="country" required class="cs-course-phone-prefix">

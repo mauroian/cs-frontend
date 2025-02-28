@@ -28,13 +28,13 @@
                         <span id="icon-1" class="text-white transition-transform duration-300">
                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor"
                                 class="w-6 h-6">
-                                <path d="M8.75 3.75a.75.75 0 0 0-1.5 0v3.5h-3.5a.75.75 0 0 0 0 1.5h3.5v3.5a.75.75 0 0 0 1.5 0v-3.5h3.5a.75.75 0 0 0 0-1.5h-3.5v-3.5Z" />
+        <path d="M3.75 7.25a.75.75 0 0 0 0 1.5h8.5a.75.75 0 0 0 0-1.5h-8.5Z" />
                             </svg>
                         </span>
                     </button>
-                    <div id="content-1" class="overflow-hidden transition-all duration-300 ease-in-out max-h-0">
+                    <div id="content-1" class="overflow-hidden transition-all duration-300 ease-in-out">
                         <div class="flex flex-col font-semibold cs-personal-accordion-content">
-                            <a href="/bible-course.php">The Bible Timeline Course</a>
+                            <a href="/bible-timeline-course.php">The Bible Timeline Course</a>
                             <a href="#">Advent 2024 Bible Series</a>
                             <a href="#">Lenten 2024 Bible Series</a>
                         </div>
@@ -47,11 +47,11 @@
                         <span id="icon-2" class="text-white transition-transform duration-300">
                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor"
                                 class="w-6 h-6">
-                                <path d="M8.75 3.75a.75.75 0 0 0-1.5 0v3.5h-3.5a.75.75 0 0 0 0 1.5h3.5v3.5a.75.75 0 0 0 1.5 0v-3.5h3.5a.75.75 0 0 0 0-1.5h-3.5v-3.5Z" />
+                                    <path d="M3.75 7.25a.75.75 0 0 0 0 1.5h8.5a.75.75 0 0 0 0-1.5h-8.5Z" />
                             </svg>
                         </span>
                     </button>
-                    <div id="content-2" class="overflow-hidden transition-all duration-300 ease-in-out max-h-0">
+                    <div id="content-2" class="overflow-hidden transition-all duration-300 ease-in-out">
                         <div class="flex flex-col cs-personal-accordion-content">
                             The next monthly Mass (September 2024) for our generous Come & See Mission Partners will be offered on Monday 2nd Sept 2024.
                             <br />
@@ -72,11 +72,11 @@
                         <span id="icon-3" class="text-white transition-transform duration-300">
                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor"
                                 class="w-6 h-6">
-                                <path d="M8.75 3.75a.75.75 0 0 0-1.5 0v3.5h-3.5a.75.75 0 0 0 0 1.5h3.5v3.5a.75.75 0 0 0 1.5 0v-3.5h3.5a.75.75 0 0 0 0-1.5h-3.5v-3.5Z" />
+                                <path d="M3.75 7.25a.75.75 0 0 0 0 1.5h8.5a.75.75 0 0 0 0-1.5h-8.5Z" />
                             </svg>
                         </span>
                     </button>
-                    <div id="content-3" class="overflow-hidden transition-all duration-300 ease-in-out max-h-0">
+                    <div id="content-3" class="overflow-hidden transition-all duration-300 ease-in-out">
                         <div class="flex flex-col cs-personal-accordion-content">
                             This is not a group to chat (the chat option is disabled!) but for me, the Administrator, to share with you some course communications.
                             <br /><br />
