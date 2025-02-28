@@ -29,7 +29,7 @@
                     <div class="relative cs-form-input-container">
                         <input id="email" required type="text" placeholder="Your email on our system"
                             class="cs-form-input" />
-                        <img src="/src/assets/email-login.svg" />
+                        <img src="/src/assets/e mail-login.svg" />
                     </div>
                     <button class="cs-form-submit">Send me the password&nbsp;reset&nbsp;link</button>
                 </form>

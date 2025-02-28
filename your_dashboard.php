@@ -27,7 +27,7 @@
                     <span>Your Courses</span>
                     <span id="icon-1" class="text-white transition-transform duration-300">
                           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor"
-                               class="w-4 h-4">
+                               class="w-6 h-6">
                             <path d="M8.75 3.75a.75.75 0 0 0-1.5 0v3.5h-3.5a.75.75 0 0 0 0 1.5h3.5v3.5a.75.75 0 0 0 1.5 0v-3.5h3.5a.75.75 0 0 0 0-1.5h-3.5v-3.5Z"/>
                           </svg>
                         </span>
@@ -43,10 +43,10 @@
             <div class="w-full md:w-auto cs-personal-area-box">
                 <button type="button" onclick="toggleAccordion(2)"
                         class="w-full flex justify-between items-center cs-personal-accordion-header">
-                    <span>Information for Come & See Mission Partners</span>
+                    <span>Information for Come & See Mission&nbsp;Partners</span>
                     <span id="icon-2" class="text-white transition-transform duration-300">
                           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor"
-                               class="w-4 h-4">
+                               class="w-6 h-6">
                             <path d="M8.75 3.75a.75.75 0 0 0-1.5 0v3.5h-3.5a.75.75 0 0 0 0 1.5h3.5v3.5a.75.75 0 0 0 1.5 0v-3.5h3.5a.75.75 0 0 0 0-1.5h-3.5v-3.5Z"/>
                           </svg>
                         </span>
@@ -68,10 +68,10 @@
             <div class="w-full md:w-auto cs-personal-area-box">
                 <button type="button" onclick="toggleAccordion(3)"
                         class="w-full flex justify-between items-center cs-personal-accordion-header">
-                    <span>Join our Bible Timeline WhatsApp Group</span>
+                    <span>Join our Bible Timeline WhatsApp&nbsp;Group</span>
                     <span id="icon-3" class="text-white transition-transform duration-300">
                           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor"
-                               class="w-4 h-4">
+                               class="w-6 h-6">
                             <path d="M8.75 3.75a.75.75 0 0 0-1.5 0v3.5h-3.5a.75.75 0 0 0 0 1.5h3.5v3.5a.75.75 0 0 0 1.5 0v-3.5h3.5a.75.75 0 0 0 0-1.5h-3.5v-3.5Z"/>
                           </svg>
                         </span>

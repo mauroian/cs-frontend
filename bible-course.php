@@ -11,7 +11,7 @@
 
 <body class="flex flex-col min-h-screen">
     <?php require_once 'header.php'; ?>
-    <main class="flex-grow cs-form-box bg-cs-paper ">
+    <main class="flex-grow mt-20 bg-cs-paper">
         <div class="flex flex-col items-center gap-2 mb-32 ">
             <div class="flex flex-col items-start w-full py-12 pl-10 text-white bg-cs-blue-light">
                 <ol class="flex flex-wrap items-center w-full tracking-widest uppercase rounded-md cs-fs-xs">
@@ -43,7 +43,7 @@
                         <span>Session 1</span>
                         <span id="icon-1" class="text-black transition-transform duration-300">
                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor"
-                                class="w-4 h-4">
+                                class="w-6 h-6">
                                 <path d="M8.75 3.75a.75.75 0 0 0-1.5 0v3.5h-3.5a.75.75 0 0 0 0 1.5h3.5v3.5a.75.75 0 0 0 1.5 0v-3.5h3.5a.75.75 0 0 0 0-1.5h-3.5v-3.5Z" />
                             </svg>
                         </span>
@@ -69,7 +69,7 @@
                         <span>Session 2</span>
                         <span id="icon-2" class="text-black transition-transform duration-300">
                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor"
-                                class="w-4 h-4">
+                                 class="w-6 h-6">
                                 <path d="M8.75 3.75a.75.75 0 0 0-1.5 0v3.5h-3.5a.75.75 0 0 0 0 1.5h3.5v3.5a.75.75 0 0 0 1.5 0v-3.5h3.5a.75.75 0 0 0 0-1.5h-3.5v-3.5Z" />
                             </svg>
                         </span>
@@ -138,7 +138,7 @@
                         <span>Session 3</span>
                         <span id="icon-3" class="text-black transition-transform duration-300">
                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor"
-                                class="w-4 h-4">
+                                 class="w-6 h-6">
                                 <path d="M8.75 3.75a.75.75 0 0 0-1.5 0v3.5h-3.5a.75.75 0 0 0 0 1.5h3.5v3.5a.75.75 0 0 0 1.5 0v-3.5h3.5a.75.75 0 0 0 0-1.5h-3.5v-3.5Z" />
                             </svg>
                         </span>
