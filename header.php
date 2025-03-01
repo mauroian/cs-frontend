@@ -2,7 +2,7 @@
 // changing the following variable to false will toggle the user logged state
 $isLogged = isset($_GET['logged']) && $_GET['logged'] === 'true';
 ?>
-<!--  <header class="md:relative"> would make the navbar scroll from md (instead of being fixed like in mobile)-->
+<!--  <header class="md:relative"> would make the navbar scroll from md (instead of being sticky like in mobile)-->
 <header class="fixed top-0 z-50 w-full bg-cs-paper">
     <!-- Container nav for header (desktop & mobile) -->
     <nav class="z-10 flex items-center w-full p-4 mx-auto bg-cs-paper cs-header" aria-label="Header">
@@ -233,9 +233,9 @@ $isLogged = isset($_GET['logged']) && $_GET['logged'] === 'true';
                     <div class="flex flex-row items-center cs-menu-logged-top ">
                         <img class="w-8 h-8 rounded-full ring-2 ring-white" src="/src/assets/sample_avatar.png"
                             alt="Bordered avatar">
-                        <div class="flex flex-col cs-fs-badge">
-                            <span class="font-serif italic cs-fs-base">Mauro Ianicelli</span>
-                            <span class="font-sans font-medium truncate text-[14px]">name@flowbite.com</span>
+                        <div class="flex flex-col">
+                            <span class="font-serif italic cs-fs-base">Mauro Iannicelli</span>
+                            <span class="font-sans font-medium truncate cs-fs-3xs">mauro.iannicelli@comeandsee.org</span>
                         </div>
                     </div>
                     <!-- Container list for L1 user menu items (desktop & mobile) -->
@@ -544,4 +544,4 @@ $isLogged = isset($_GET['logged']) && $_GET['logged'] === 'true';
     </div>
 </header>
 
-<?php require_once 'breakpoints_widget.php'; ?>
+<?php require_once 'breakpoints-widget.php'; ?>

@@ -35,9 +35,9 @@
                 <div class="flex flex-row items-center cs-menu-logged-top ">
                     <img class="w-8 h-8 rounded-full ring-2 ring-white" src="/src/assets/sample_avatar.png"
                         alt="Bordered avatar">
-                    <div class="flex flex-col cs-fs-badge">
-                        <span class="font-serif italic cs-fs-base">Mauro Ianicelli</span>
-                        <span class="font-sans font-medium truncate text-[14px]">name@flowbite.com</span>
+                    <div class="flex flex-col">
+                        <span class="font-serif italic cs-fs-base">Mauro Iannicelli</span>
+                        <span class="font-sans font-medium truncate cs-fs-3xs">mauro.iannicelli@comeandsee.org</span>
                     </div>
                 </div>
                 <!-- Container list for L1 user menu items (desktop & mobile) -->
@@ -220,4 +220,4 @@
     </div>
     <div class="mx-auto lg:ml-80"></div>
 </div>
-<?php require_once 'breakpoints_widget.php'; ?>
+<?php require_once 'breakpoints-widget.php'; ?>

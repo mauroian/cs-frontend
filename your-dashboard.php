@@ -10,25 +10,32 @@
 </head>
 
 <body class="flex flex-col min-h-screen">
-    <?php require_once 'header.php'; ?>
-    <main class="flex-grow cs-main bg-cs-paper ">
-        <div class="flex flex-col items-center gap-2 mb-32 ">
-            <div class="flex flex-col items-start w-full py-12 pl-10 text-white bg-cs-blue-light">
-                <span class="tracking-widest uppercase">Welcome back, Mauro</span>
-                <h1 class="font-serif text-left cs-fs-3xl">Your Dashboard</h1>
-            </div>
-            <div class="flex flex-col items-center cs-personal-area-container">
-                <div class="">
 
-                </div>
-                <div class="w-full md:w-auto cs-personal-area-box">
+    <?php require_once 'header.php'; ?>
+
+    <main class="flex-grow cs-main bg-cs-paper ">
+
+        <!-- Outer container -->
+        <div class="flex flex-col items-center mb-32 ">
+
+            <!-- 'Title' container -->
+            <div class="flex flex-col items-start w-full pt-8 pb-5 pl-10 text-white bg-cs-blue-light">
+                <span class="tracking-widest uppercase">Welcome back, Mauro</span>
+                <h1 class="font-serif text-left sm:cs-fs-3xl cs-fs-2xl">Your Dashboard</h1>
+            </div>
+
+            <!-- Container of all the accordions -->
+            <div class="flex flex-col items-center cs-personal-area-container">
+
+                <!-- 'Your Courses' accordion -->
+                <div class="cs-personal-area-box">
                     <button type="button" onclick="toggleAccordion(1)"
                         class="flex items-center justify-between w-full cs-personal-accordion-header">
                         <span>Your Courses</span>
                         <span id="icon-1" class="text-white transition-transform duration-300">
                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor"
                                 class="w-6 h-6">
-        <path d="M3.75 7.25a.75.75 0 0 0 0 1.5h8.5a.75.75 0 0 0 0-1.5h-8.5Z" />
+                                <path d="M3.75 7.25a.75.75 0 0 0 0 1.5h8.5a.75.75 0 0 0 0-1.5h-8.5Z" />
                             </svg>
                         </span>
                     </button>
@@ -40,14 +47,16 @@
                         </div>
                     </div>
                 </div>
-                <div class="w-full md:w-auto cs-personal-area-box">
+
+                <!-- 'Information for Come & See...' accordion -->
+                <div class="cs-personal-area-box">
                     <button type="button" onclick="toggleAccordion(2)"
                         class="flex items-center justify-between w-full cs-personal-accordion-header">
                         <span>Information for Come & See Mission&nbsp;Partners</span>
                         <span id="icon-2" class="text-white transition-transform duration-300">
                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor"
                                 class="w-6 h-6">
-                                    <path d="M3.75 7.25a.75.75 0 0 0 0 1.5h8.5a.75.75 0 0 0 0-1.5h-8.5Z" />
+                                <path d="M3.75 7.25a.75.75 0 0 0 0 1.5h8.5a.75.75 0 0 0 0-1.5h-8.5Z" />
                             </svg>
                         </span>
                     </button>
@@ -65,7 +74,9 @@
                         </div>
                     </div>
                 </div>
-                <div class="w-full md:w-auto cs-personal-area-box">
+
+                <!-- 'Join our Bible Timeline WhatsApp...' accordion -->
+                <div class="cs-personal-area-box">
                     <button type="button" onclick="toggleAccordion(3)"
                         class="flex items-center justify-between w-full cs-personal-accordion-header">
                         <span>Join our Bible Timeline WhatsApp&nbsp;Group</span>

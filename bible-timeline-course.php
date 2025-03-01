@@ -13,8 +13,10 @@
     <?php require_once 'header.php'; ?>
     <main class="flex-grow mt-20 bg-cs-paper">
         <div class="flex flex-col items-center gap-2 mb-32 ">
-            <div class="flex flex-col items-start w-full py-12 pl-10 text-white bg-cs-blue-light">
-                <ol class="flex flex-wrap items-center w-full tracking-widest uppercase rounded-md cs-fs-xs">
+
+            <!-- 'Title' container -->
+            <div class="flex flex-col items-start w-full py-5 pl-10 text-white sm:py-10 bg-cs-blue-light">
+                <ol class="flex flex-wrap items-center w-full tracking-widest uppercase rounded-md cs-fs-2xs">
                     <li class="flex items-center cursor-pointer ">
                         <a href="#">Your Dashboard</a>
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" data-slot="icon" class="w-4 h-4 ml-1">
@@ -31,8 +33,9 @@
                         <a href="#">Bible Timeline Course</a>
                     </li>
                 </ol>
-                <h1 class="font-serif text-6xl text-left">The Bible Timeline Course</h1>
+                <h1 class="font-serif text-left sm:cs-fs-3xl cs-fs-2xl leading-[40px] mt-3 sm:mt-5">The Bible Timeline Course</h1>
             </div>
+
             <div class="flex flex-col items-center cs-personal-area-container">
 
                 <div class="cs-bible-area-box">
@@ -42,7 +45,7 @@
                         <span id="icon-1" class="text-black transition-transform duration-300">
                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor"
                                 class="w-6 h-6">
-        <path d="M3.75 7.25a.75.75 0 0 0 0 1.5h8.5a.75.75 0 0 0 0-1.5h-8.5Z" />
+                                <path d="M3.75 7.25a.75.75 0 0 0 0 1.5h8.5a.75.75 0 0 0 0-1.5h-8.5Z" />
                             </svg>
                         </span>
                     </button>
@@ -52,7 +55,7 @@
                             <div class="cs-course-item">
                                 <a href="#" class="flex flex-row gap-4">
                                     <img src="/src/assets/video-icon.svg" class="inline-block w-8 h-8 mr-2" alt="Video" />
-                                    Video recording of Session 1
+                                    Video recording of Session&nbsp;1
                                 </a>
                                 <div class="mt-3">
                                     <span class="inline-block font-sans italic font-normal cs-fs-sm">There are no Study Questions, Bible Reading or Course Notes for Session 1.</span>
@@ -68,7 +71,7 @@
                         <span id="icon-2" class="text-black transition-transform duration-300">
                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor"
                                 class="w-6 h-6">
-        <path d="M3.75 7.25a.75.75 0 0 0 0 1.5h8.5a.75.75 0 0 0 0-1.5h-8.5Z" />
+                                <path d="M3.75 7.25a.75.75 0 0 0 0 1.5h8.5a.75.75 0 0 0 0-1.5h-8.5Z" />
                             </svg>
                         </span>
                     </button>
@@ -99,7 +102,7 @@
                             <div class="cs-course-item">
                                 <a href="#" class="flex flex-row gap-4">
                                     <img src="/src/assets/video-icon.svg" class="inline-block w-8 h-8 mr-2" alt="Video" />
-                                    Video recording of Session 2
+                                    Video recording of Session&nbsp;2
                                 </a>
                             </div>
                             <div class="cs-course-item">
@@ -168,7 +171,7 @@
                             <div class="cs-course-item">
                                 <a href="#" class="flex flex-row gap-4">
                                     <img src="/src/assets/video-icon.svg" class="inline-block w-8 h-8 mr-2" alt="Video" />
-                                    Video recording of Session 3
+                                    Video recording of Session&nbsp;3
                                 </a>
                             </div>
                             <div class="cs-course-item">

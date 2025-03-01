@@ -11,10 +11,11 @@
 
 <body class="flex flex-col min-h-screen">
     <?php require_once 'header.php'; ?>
-    <main class="flex-grow flex flex-col gap-6 justify-center items-center min-h-[746px] cs-main">
+    <main class="flex-grow flex flex-col gap-36 justify-center items-center min-h-[746px] cs-main pt-14 px-5 sm:px-8">
+
         <!-- Box -->
         <div class="flex flex-col items-center mt-12 cs-form-box">
-            <!-- Box Titolo -->
+            <!-- Box Title -->
             <div class="cs-form-header">
                 <span class="cs-form-header-bigger-letter">R</span>eset <span class="cs-form-header-bigger-letter">&nbsp;P</span>assword
             </div>

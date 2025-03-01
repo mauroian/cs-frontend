@@ -13,13 +13,14 @@
 
     <?php require_once 'header.php'; ?>
 
-    <main class="flex-grow flex justify-center items-center bg-[url('/src/assets/background-login.png')] bg-no-repeat bg-center bg-cover min-h-[746px] cs-main">
-        <!-- Box -->
+    <main class="flex flex-col flex-grow items-center justify-items bg-[url('/src/assets/background-login.png')] bg-no-repeat bg-center bg-cover min-h-[746px] cs-main px-5 sm:px-8">
+
+        <!-- Outer Login Box -->
         <div class="flex flex-col items-center mt-36 cs-form-box">
             <!-- Box Titolo -->
             <div class="relative flex flex-row items-baseline justify-center cs-form-login-header">
                 <img src="/src/assets/logo-login.svg" class="absolute -top-[80px] block" alt="Login">
-                <span class="cs-form-header-bigger-letter">W</span>elcome <span class="cs-form-header-bigger-letter">&nbsp;B</span>ack.
+                <span class="cs-form-header-bigger-letter">W</span>elcome<span class="cs-form-header-bigger-letter">&nbsp;B</span>ack.
             </div>
             <!-- Box Form -->
             <div class="cs-form-container">

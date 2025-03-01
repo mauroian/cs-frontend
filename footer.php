@@ -4,7 +4,7 @@
     <div class="flex flex-col items-center justify-center w-auto mt-12 mb-8">
 
         <!-- LOGO | GET IN TOUCH | QUICK LINKS container -->
-        <div class="flex flex-col-reverse items-start justify-center gap-8 md:items-start md:flex-row">
+        <div class="flex flex-col-reverse items-start justify-center gap-8 px-3 md:items-start md:flex-row">
 
             <!-- LOGO | GET IN TOUCH container -->
             <div class="flex flex-col items-start md:flex-col">
@@ -63,7 +63,7 @@
         </div>
 
         <!-- T&C block -->
-        <div class="flex flex-col items-center mb-10 mt-14 sm:mt-6 cs-fs-xs">
+        <div class="flex flex-col items-center px-3 mb-10 mt-14 sm:mt-6 cs-fs-xs">
             <p class="font-sans tracking-wider">Come & See 2023 - All rights Reserved</p>
             <p class="font-sans tracking-wider">Terms and Conditions | Privacy | Cookies</p>
         </div>

@@ -17,6 +17,7 @@
             <div class="flex flex-col gap-2 mb-8">
                 <div class="cs-fs-sm"><a href="/login">Login</a></div>
                 <div class="cs-fs-sm"><a href="/auth">Auth</a></div>
+                <div class="cs-fs-sm"><a href="/auth2">Auth2</a></div>
                 <div class="cs-fs-sm"><a href="/course-registration">Course Registration</a></div>
                 <div class="cs-fs-sm"><a href="/admin">Admin</a></div>
                 <div class="cs-fs-sm"><a href="/your-dashboard">Your Dashboard</a></div>
