@@ -11,9 +11,14 @@
     .cs-fs-badge {
             @apply text-[0.65rem]
     }
-
+    .cs-fs-3xs {
+        @apply text-xs sm:text-xs
+    }
+    .cs-fs-2xs {
+        @apply text-sm sm:text-sm
+    }
     .cs-fs-xs {
-        @apply text-base sm:text-sm
+        @apply text-base sm:text-base
     }
 
     .cs-fs-sm {
@@ -48,7 +53,7 @@
     .cs-main {
      @apply 
      mt-20 pb-44   /* [param] sets margins for <main> element.
-    It depends if we have <header class="md:relative"> or not - if we have, the navbar would scroll from md (instead of being fixed like in mobile) - and I have to readjust mt and mb accordingly here.
+    It depends if we want the navbar non-sticky or sticky <header class="md:relative"> or not - if we have, the navbar would scroll from md (instead of being fixed like in mobile) - and I have to readjust mt and mb accordingly here.
     */
     bg-cs-paper-shade
     }
@@ -228,7 +233,7 @@
             mr-2 /* [param] right margin of the auth 'block' and dropdown user menu (mobile) */
             md:mr-2 /* [param] right margin of the auth 'block' and dropdown user menu (desktop) */
             md:min-w-8
-            lg:min-w-40; /* [param] the minimum width of the of the auth 'block': : must not be too small to have the desired effect of not making L1 items change position if user is logged or not */
+            lg:min-w-56; /* [param] the minimum width of the of the auth 'block': : must not be too small to have the desired effect of not making L1 items change position if user is logged or not */
     }
 
     /* menu auth block (desktop) */
@@ -290,7 +295,7 @@
     .cs-logged-name {
         @apply
         text-black /* [param] */
-        cs-fs-xs; /* [param] */
+        cs-fs-3xs; /* [param] */
     }
 
     /* user menu outer container (desktop, mobile) */
@@ -300,7 +305,7 @@
             -right-5
             top-12 /* [param] (desktop, mobile) */
             z-10
-            w-[300px] /* [param] (desktop, mobile) */
+            w-[340px] /* [param] (desktop, mobile) */
             rounded-xl
             bg-white
             shadow-cs-all-around
@@ -584,25 +589,24 @@
 
 .cs-form-box {
     @apply
-    w-full /* [param] */
-    box:w-[480px] /* [param] */
-    md:w-[600px] /* [param] */
-    box:shadow-cs-all-around /* [param] */
-    box:rounded-[30px];
+        w-full 
+        max-w-[600px] 
+        shadow-cs-all-around 
+        rounded-[30px]; 
 }
 
 .cs-form-container {
     @apply
     bg-cs-paper
     w-full
-    box:rounded-b-[30px]
+    rounded-b-[30px]
     flex
     flex-col
     items-center
     pt-9
     pb-12
     px-6
-    box:px-10  /* [param] padding between outer auth form and input textboxes */
+    box:px-10  /* [param] padding towards input textboxes */
 }
 
 .cs-form-box-success {
@@ -610,8 +614,8 @@
     w-full /* [param] */
     box:w-[480px] /* [param] */
     md:w-[600px] /* [param] */
-    box:shadow-cs-all-around /* [param] */
-    box:rounded-[30px]
+    shadow-cs-all-around /* [param] */
+    rounded-[30px]
     box:mx-0
     bg-cs-paper;
 }
@@ -619,7 +623,7 @@
 .cs-form-container-success {
     @apply
     w-auto
-    box:rounded-[30px]
+    rounded-[30px]
     flex
     flex-col
     items-center
@@ -639,9 +643,8 @@
     bg-cs-red-main
     h-28
     pt-12
-    box:px-20 /*  greatr than 20 for an effect */
     w-full
-    box:rounded-t-[30px];
+    rounded-t-[30px];
 }
 
 .cs-form-header-bigger-letter {
@@ -663,9 +666,8 @@
     justify-center
     h-20
     pt-4
-    box:px-10
     w-full
-    box:rounded-t-[30px];
+    rounded-t-[30px];
 }
 
 .cs-form-title {
@@ -783,7 +785,7 @@
     @apply
     bg-cs-paper
     w-full
-    box:rounded-b-[30px]
+    rounded-b-[30px]
     flex
     flex-col
     items-center
@@ -808,7 +810,7 @@
     pt-6
     box:px-10
     w-full
-    box:rounded-t-[30px];
+    rounded-t-[30px];
 }
 
 .cs-course-input,
@@ -959,35 +961,31 @@
 /* #### USER PERSONAL AREA #### */
 .cs-personal-area-container {
     @apply
-    w-full
-    box:w-auto
-    box:rounded-[30px]
-    max-w-[600px]
-    mt-16
-    gap-14;
+    px-5
+    sm:px-8
+    max-w-[800px] /* [param] */
+    rounded-[30px]
+    mt-16    
+    gap-16;
 }
 
 .cs-personal-area-box {
     @apply
-    w-full /* [param] */
-    box:w-[510px] /* [param] */
-    md:w-[600px] /* [param] */
-    box:shadow-cs-all-around /* [param] */
-    box:rounded-[30px]
+    w-full /* [param] */ 
+    shadow-cs-all-around /* [param] */
+    rounded-[30px]
     bg-cs-blue-main
-    box:min-w-[500px]
-    md:min-w-[600px];
 }
 
 
 .cs-personal-accordion-header {
     @apply
-    gap-4 py-2 pr-5 font-semibold text-left text-white cs-fs-base min-h-10 pl-9;
+    gap-4 py-2 pr-5 font-semibold text-left text-white cs-fs-lg min-h-10 pl-9;
 }
 
 .cs-personal-accordion-content {
     @apply
-    gap-4 px-8 py-5 box:cs-fs-sm cs-fs-xs text-cs-grey bg-cs-paper-dark box:rounded-b-xl;
+    gap-4 px-8 py-5 box:cs-fs-base cs-fs-base text-cs-grey bg-cs-paper-dark rounded-b-xl;
 }
 
 /** BIBLE COURSE AREA **/
@@ -995,13 +993,9 @@
 .cs-bible-area-box {
     @apply
     w-full /* [param] */
-    box:w-[510px] /* [param] */
-    md:w-[600px] /* [param] */
-    box:shadow-cs-all-around /* [param] */
-    box:rounded-xl
-  bg-cs-paper-dark
-    box:min-w-[500px]
-    md:min-w-[600px];
+    shadow-cs-all-around /* [param] */
+    rounded-xl
+  bg-cs-paper-dark;
 }
 
 .cs-bible-accordion-header {
@@ -1017,5 +1011,5 @@
 
 .cs-bible-accordion-content {
     @apply
-    gap-6 px-4 py-6 font-semibold cs-fs-sm md:px-8 text-cs-grey bg-cs-paper-dark cs-fs-base box:rounded-b-xl;
+    gap-6 px-4 py-6 font-semibold cs-fs-sm md:px-8 text-cs-grey bg-cs-paper-dark cs-fs-base rounded-b-xl;
 }
