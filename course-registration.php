@@ -47,19 +47,19 @@
                         <label for="email" class="cs-form-label">Email</label>
                         <!-- Input Email -->
                         <div class="relative cs-form-input-container">
-                            <input id="email" required type="text" placeholder="" class="cs-course-input" />
+                            <input id="email" required type="text" placeholder="" class="cs-course-input cs-course-input-icon" />
                             <img src="/src/assets/email-login.svg" />
                         </div>
                         <label for="confirm_email" class="cs-form-label">Confirm Email</label>
                         <!-- Input Email -->
                         <div class="relative cs-form-input-container">
-                            <input id="confirm_email" required type="text" placeholder="" class="cs-course-input" />
+                            <input id="confirm_email" required type="text" placeholder="" class="cs-course-input  cs-course-input-icon" />
                             <img src="/src/assets/email-login.svg" />
                         </div>
                         <label for="password" class="cs-form-label">Password</label>
                         <!-- Input Phone -->
                         <div class="relative cs-form-input-container">
-                            <input id="password" required type="password" placeholder="" class="cs-course-input" />
+                            <input id="password" required type="password" placeholder="" class="cs-course-input  cs-course-input-icon" />
                             <img src="/src/assets/password-login.svg" />
                             <button type="button" class="absolute inset-y-0 z-20 flex items-center px-3 cursor-pointer cs-password-eye end-0 text-cs-red-dark" onclick="togglePassword(this)">
                                 <svg class="shrink-0 size-5" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
@@ -75,7 +75,7 @@
                         <label for="confirm_password" class="cs-form-label">Confirm Password</label>
                         <!-- Input Phone -->
                         <div class="relative cs-form-input-container">
-                            <input id="confirm_password" required type="password" placeholder="" class="cs-course-input" />
+                            <input id="confirm_password" required type="password" placeholder="" class="cs-course-input  cs-course-input-icon" />
                             <img src="/src/assets/password-login.svg" />
                             <button type="button" class="absolute inset-y-0 z-20 flex items-center px-3 cursor-pointer cs-password-eye end-0 text-cs-red-dark" onclick="togglePassword(this)">
                                 <svg class="shrink-0 size-5" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
@@ -143,13 +143,13 @@
                     <form class="flex flex-col items-start w-full">
                         <label for="birthdate" class="cs-form-label">Your Year of birth</label>
                         <!-- Input YOB -->
-                        <div class="relative cs-form-input-container md:!w-1/2">
-                            <input id="birthdate" required type="date" placeholder="" class="cs-course-input  md:!min-w-full" />
+                        <div class="relative cs-form-input-container cs-form-small-container">
+                            <input id="birthdate" required type="date" placeholder="" class="cs-course-input" />
                         </div>
                         <label for="sex" class="cs-form-label">Your sex</label>
                         <!-- Input Sex -->
-                        <div class="relative cs-form-input-container  md:!w-1/2">
-                            <select id="sex" required class="cs-course-select md:!min-w-full">
+                        <div class="relative cs-form-input-container cs-form-small-container">
+                            <select id="sex" required class="cs-course-select">
                                 <option value=""></option>
                                 <option value="M">Male</option>
                                 <option value="F">Female</option>

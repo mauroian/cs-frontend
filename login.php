@@ -31,14 +31,14 @@
                     <label for="email" class="cs-form-label">Email</label>
                     <!-- Input Email -->
                     <div class="relative w-full my-2">
-                        <input id="email" required type="text" placeholder="Your email address" class="cs-form-input" />
+                        <input id="email" required type="text" placeholder="Your email address" class="cs-form-input cs-form-input-icon" />
                         <img src="/src/assets/email-login.svg" />
                     </div>
                     <a class="cs-form-link" href="#">Forgot email?</a>
                     <label for="password" class="mt-6 cs-form-label">Password</label>
                     <!-- Input Password -->
                     <div class="relative w-full my-2">
-                        <input id="password" required type="password" placeholder="Enter your password" class="cs-form-input" />
+                        <input id="password" required type="password" placeholder="Enter your password" class="cs-form-input cs-form-input-icon" />
                         <img src="/src/assets/password-login.svg" />
                         <button type="button" class="absolute inset-y-0 z-20 flex items-center px-3 cursor-pointer cs-password-eye end-0 text-cs-red-main" onclick="togglePassword(this)">
                             <svg class="shrink-0 size-5" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
