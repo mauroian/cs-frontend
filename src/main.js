@@ -164,6 +164,29 @@ document.addEventListener("DOMContentLoaded", () => {
     el.style.maxHeight = el.clientHeight + 'px';
 
   });
+
+  /** EXPAND FULLY ALL ELEMENT OF ACCORDION **/
+  const expandButton = document.querySelector('.cs-accordion-expand');
+  if(expandButton !== null) {
+    expandButton.addEventListener('click', function () {
+      document.querySelectorAll('button.cs-bible-accordion-header, button.cs-personal-accordion-header').forEach(el => {
+        if(el.nextElementSibling.style.maxHeight === '0px') {
+          el.click();
+        }
+      });
+    });
+  }
+
+  const collapseButton = document.querySelector('.cs-accordion-collapse');
+  if(collapseButton !== null) {
+    collapseButton.addEventListener('click', function () {
+      document.querySelectorAll('button.cs-bible-accordion-header, button.cs-personal-accordion-header').forEach(el => {
+        if(el.nextElementSibling.style.maxHeight !== '0px') {
+          el.click();
+        }
+      });
+    });
+  }
 });
 
 
