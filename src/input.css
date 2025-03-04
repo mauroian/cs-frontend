@@ -246,7 +246,8 @@
 
     /* menu auth block (desktop): gap between signup block and login block */
     .cs-menu-auth-gap {
-        @apply md:mr-4; /* [param] gap between signup block and login block (desktop) */
+        @apply
+        md:mr-2 lg:mr-4; /* [param] gap between signup block and login block (desktop) */
     }
 
     /* menu auth items (desktop) */

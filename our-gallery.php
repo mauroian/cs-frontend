@@ -17,8 +17,9 @@
         <div class="flex flex-col items-center mb-32">
             <!-- 'Title' container -->
             <div class="flex flex-col items-center justify-center flex-wrap w-full h-36 sm:h-48 text-cs-red-main bg-[url('/src/assets/our-gallery-header.png')] bg-center bg-cover bg-opacity-10">
-                <h2 class="font-serif italic cs-fs-xl sm:cs-fs-3xl">We bring <b>people</b> together</h2>
-                <h2 class="font-serif italic cs-fs-xl sm:cs-fs-3xl">with our <b>courses</b> and <b>socials.</b></h2>
+                <div class="w-full max-w-[600px] text-center px-5">
+                    <h2 class="font-serif italic cs-fs-xl md:cs-fs-3xl sm:cs-fs-2xl">We bring <b>people</b> together with our <b>courses</b> and <b>socials.</b></h2>
+                </div>
             </div>
 
             <!-- Content container -->
