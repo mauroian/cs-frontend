@@ -13,10 +13,10 @@
 
     <?php require_once 'header.php'; ?>
 
-    <main class="flex flex-col flex-grow items-center justify-items bg-[url('/src/assets/background-login.png')] bg-no-repeat bg-center bg-cover min-h-[746px] cs-main px-5 sm:px-8">
+    <main class="flex flex-col flex-grow items-center justify-items sm:bg-[url('/src/assets/background-login.png')] bg-no-repeat bg-center bg-cover min-h-[746px] cs-main px-5 sm:px-8">
 
         <!-- Outer Login Box -->
-        <div class="flex flex-col items-center mt-36 cs-form-box">
+        <div class="flex flex-col items-center mt-28 sm:mt-36 cs-form-box">
             <!-- Box Titolo -->
             <div class="relative flex flex-row items-baseline justify-center cs-form-login-header">
                 <img src="/src/assets/logo-login.svg" class="absolute -top-[80px] block" alt="Login">
@@ -25,9 +25,6 @@
             <!-- Box Form -->
             <div class="cs-form-container">
                 <form class="flex flex-col items-start w-full">
-                    <div class="cs-form-text">
-                        Prova testo.
-                    </div>
                     <label for="email" class="cs-form-label">Email</label>
                     <!-- Input Email -->
                     <div class="relative w-full my-2">
