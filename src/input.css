@@ -606,17 +606,17 @@
     pt-9
     pb-12
     px-6
-    box:px-10  /* [param] padding towards input textboxes */
+    sm:px-10  /* [param] padding towards input textboxes */
 }
 
 .cs-form-box-success {
     @apply
     w-full /* [param] */
-    box:w-[480px] /* [param] */
+    sm:w-[480px] /* [param] */
     md:w-[600px] /* [param] */
     shadow-cs-all-around /* [param] */
     rounded-[30px]
-    box:mx-0
+    sm:mx-0
     bg-cs-paper;
 }
 
@@ -630,7 +630,7 @@
     pt-9
     pb-12
     px-6
-    box:px-10  /* [param] padding between outer auth form and input textboxes */
+    sm:px-10  /* [param] padding between outer auth form and input textboxes */
 }
 
 .cs-form-login-header {
@@ -656,7 +656,7 @@
     font-serif
     uppercase
     cs-fs-lg
-    box:tracking-[0.45rem]
+    sm:tracking-[0.30rem]
     tracking-wider
     text-cs-paper
     bg-cs-red-main
@@ -678,14 +678,13 @@
     w-full
     mb-6
     max-w-[450px]
-    box:max-w-full
+    sm:max-w-full
     text-cs-red-main;
 }
 
 .cs-form-text {
     @apply
     w-full
-    /*box:max-w-[450px]*/
     mb-6
     text-left
     cs-fs-sm
@@ -734,7 +733,6 @@
         bg-cs-paper-shade
         pl-4
         w-full
-        box:min-w-[400px]
         md:w-full;
     }
 
@@ -799,7 +797,7 @@
     pt-9
     pb-12
     px-6
-    box:px-10 /* [param] padding between outer auth form and input textboxes */;
+    sm:px-10 /* [param] padding between outer auth form and input textboxes */;
 }
 
 .cs-course-header {
@@ -815,7 +813,7 @@
     justify-center
     h-20
     pt-6
-    box:px-10
+    sm:px-10
     w-full
     rounded-t-[30px];
 }
@@ -1003,7 +1001,7 @@
 
 .cs-personal-accordion-content {
     @apply
-    gap-4 px-8 py-5 box:cs-fs-base cs-fs-base text-cs-grey bg-cs-paper-dark rounded-b-xl;
+    gap-4 px-8 py-5 cs-fs-base text-cs-grey bg-cs-paper-dark rounded-b-xl;
 }
 
 /** BIBLE COURSE AREA **/
@@ -1019,13 +1017,13 @@
 
 .cs-bible-accordion-header {
     @apply
-    gap-4 py-2 pl-4 pr-5 font-semibold text-left text-black cs-fs-lg min-h-10 box:pl-9;
+    gap-4 py-2 pl-4 pr-5 font-semibold text-left text-black cs-fs-lg min-h-10 sm:pl-9;
 }
 
 
 .cs-bible-accordion-subtitle {
     @apply
-    gap-2 px-4 py-4 font-serif font-semibold tracking-widest uppercase cs-fs-base box:px-8;
+    gap-2 px-4 py-4 font-serif font-semibold tracking-widest uppercase cs-fs-base sm:px-8;
 }
 
 .cs-bible-accordion-content {
