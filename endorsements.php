@@ -16,7 +16,7 @@
     <main class="flex-grow cs-main bg-cs-paper">
         <div class="flex flex-col items-center mb-32">
             <!-- 'Title' container -->
-            <div class="relative flex flex-col items-end justify-center w-full h-36 sm:h-48  text-white bg-[url('/src/assets/endorsement.png')] bg-top bg-cover">
+            <div class="relative flex flex-col items-end justify-center w-full h-36 sm:h-48  text-white bg-[url('/src/assets/endorsements-header.png')] bg-top bg-cover">
                 <div class="absolute top-0 left-0 w-full h-full bg-white bg-opacity-50"></div>
             </div>
 

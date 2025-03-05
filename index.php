@@ -20,7 +20,7 @@
                 <div class="cs-fs-sm"><a href="/endorsements">Endorsements</a></div>
                 <div class="cs-fs-sm"><a href="/testimonials">Testimonials</a></div>
                 <div class="cs-fs-sm"><a href="/our-gallery">Our gallery</a></div>
-                <div class="cs-fs-sm"><a href="/ascension-press-resources">Ascension press</a></div>
+                <div class="cs-fs-sm"><a href="/ascension-press">Ascension Press</a></div>
                 <div class="cs-fs-sm"><a href="/your-dashboard">Your Dashboard</a></div>
                 <div class="cs-fs-sm"><a href="/bible-timeline-course">Bible Timeline Course</a></div>
                 <div class="cs-fs-sm"><a href="/admin">Admin</a></div>
