@@ -28,6 +28,7 @@
             <div class="flex flex-col items-center justify-end min-w-10">
                 <!-- user avatar picture (desktop & mobile) -->
                 <img class="cs-logged-avatar cs-admin-logged-avatar" src="/src/assets/sample_avatar.png" alt="Bordered avatar">
+                <img class="cs-logged-avatar cs-admin-logged-avatar hidden p-3" src="/src/assets/close-icon.svg" alt="Bordered avatar">
             </div>
             <!-- Container div for user menu (desktop & mobile) -->
             <div class="absolute flex-col justify-start invisible opacity-0 cs-menu-logged">

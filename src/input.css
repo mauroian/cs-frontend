@@ -289,7 +289,9 @@
             h-8 /* [param] */
             rounded-full
             ring-2 /* [param] */
-            ring-cs-blue-light; /* [param] */
+            ring-cs-blue-light /* [param] */
+            bg-cs-blue-light
+            transform transition-opacity duration-300 ease-in-out;
     }
 
     /* user firstname under avatar (desktop) */

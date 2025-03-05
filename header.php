@@ -224,6 +224,7 @@ $isLogged = isset($_GET['logged']) && $_GET['logged'] === 'true';
                 <div class="flex flex-col items-center justify-end">
                     <!-- user avatar picture (desktop & mobile) -->
                     <img class="cs-logged-avatar" src="/src/assets/sample_avatar.png" alt="Bordered avatar">
+                    <img class="cs-logged-avatar hidden p-2" src="/src/assets/close-icon.svg" alt="Bordered avatar">
                     <!-- user avatar name (desktop & mobile) -->
                     <span class="hidden cs-logged-name md:block">Mauro</span>
                 </div>
