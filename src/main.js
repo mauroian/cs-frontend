@@ -33,8 +33,8 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 
   new HoverIntent(document.querySelectorAll('.cs-dropdown'), {
-    interval: MENU_LEVEL_3_DELAY,
-    exitDelay: MENU_LEVEL_3_DELAY,
+    interval: 0,
+    exitDelay: 0,
     onEnter: function(item) {
       const menu = item.querySelector('ul.cs-menu-level3');
       if (menu) {
