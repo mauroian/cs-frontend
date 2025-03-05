@@ -62,7 +62,7 @@ $isLogged = isset($_GET['logged']) && $_GET['logged'] === 'true';
                             id="menu-lang"
                             aria-hidden="true"
                             class="absolute border bg-cs-paper-dark rounded-xl cs-menu-level3 min-w-32">
-                            <!-- L3 public menu item -->
+                            <!-- L3 public menu item (desktop) -->
                             <li class="cs-menu-voice-item">
                                 <a href="" class="flex items-center cs-menu-item">
                                     <span class="cs-menu-item-span">Advent journey</span>
@@ -77,7 +77,7 @@ $isLogged = isset($_GET['logged']) && $_GET['logged'] === 'true';
                         </ul>
                     </li>
                     <!-- L2 public menu item (desktop) -->
-                    <li class="relative rounded-sm cs-menu-voice-item cs-dropdown">
+                    <li class="relative cs-menu-voice-item cs-dropdown">
                         <a
                             aria-haspopup="true"
                             aria-controls="menu-lang"
@@ -224,7 +224,7 @@ $isLogged = isset($_GET['logged']) && $_GET['logged'] === 'true';
                 <div class="flex flex-col items-center justify-end">
                     <!-- user avatar picture (desktop & mobile) -->
                     <img class="cs-logged-avatar" src="/src/assets/sample_avatar.png" alt="Bordered avatar">
-                    <img class="cs-logged-avatar hidden p-2" src="/src/assets/close-icon.svg" alt="Bordered avatar">
+                    <img class="hidden p-2 cs-logged-avatar" src="/src/assets/close-icon.svg" alt="Bordered avatar">
                     <!-- user avatar name (desktop & mobile) -->
                     <span class="hidden cs-logged-name md:block">Mauro</span>
                 </div>
@@ -394,7 +394,7 @@ $isLogged = isset($_GET['logged']) && $_GET['logged'] === 'true';
                         </ul>
                     </li>
                     <!-- L2 public menu item (mobile) -->
-                    <li class="relative rounded-sm cs-menu-item">
+                    <li class="relative cs-menu-item">
                         <a
                             aria-haspopup="true"
                             aria-controls="menu-lang"

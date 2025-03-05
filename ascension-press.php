@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="/src/input.css" />
     <script type="module" src="/src/main.js" defer></script>
-    <title>Come & See - Our Gallery</title>
+    <title>Come & See - Ascension Press</title>
 </head>
 
 <body class="flex flex-col min-h-screen">
@@ -16,9 +16,9 @@
     <main class="flex-grow cs-main bg-cs-paper">
         <div class="flex flex-col items-center mb-32">
             <!-- 'Title' container -->
-            <div class="flex flex-col items-center justify-center flex-wrap w-full h-36 sm:h-48  text-white bg-[url('/src/assets/ascension-press-header.png')] bg-center bg-cover">
-                <div class="w-full max-w-[700px] text-center px-2">
-                    <h2 class="font-serif italic max-sm:leading-7 cs-fs-lg md:cs-fs-3xl sm:cs-fs-2xl">The <b>resources</b> that have changed the&nbsp;way <b>Catholics</b> read the <b>Bible</b>.</h2>
+            <div class="flex flex-col items-center justify-center flex-wrap w-full h-48 sm:h-80  text-white bg-[url('/src/assets/ascension-press-header.png')] bg-center bg-cover">
+                <div class="w-full max-w-[700px] text-center px-2 pb-3">
+                    <h2 class="font-serif italic max-sm:leading-7 cs-fs-lg md:cs-fs-3xl sm:cs-fs-2xl">The <b>resources</b> <br>that have changed the&nbsp;way <br> <b>Catholics</b> read the <b>Bible.</b></h2>
                 </div>
             </div>
 

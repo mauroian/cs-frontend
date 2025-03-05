@@ -11,24 +11,26 @@
 
 <body class="flex flex-col min-h-screen">
 
-<?php require_once 'header.php'; ?>
+    <?php require_once 'header.php'; ?>
 
-<main class="flex-grow cs-main bg-cs-paper">
-    <div class="flex flex-col items-center mb-32">
-        <!-- 'Title' container -->
-        <div class="relative flex flex-col items-end justify-center w-full h-96 text-white bg-[url('/src/assets/testimonial-header.jpeg')] bg-center bg-cover bg-opacity-10">
-            <div class="absolute top-0 left-0 w-full h-full bg-white bg-opacity-30"></div>
-            <h2 class="z-10 font-serif italic cs-fs-4xl mr-12 bg-cs-red-main px-6 h-28">What our past students</h2>
-            <h2 class="z-10 font-serif font-bold italic cs-fs-4xl mr-6 bg-cs-red-bright -mt-4 px-6 h-28">have to say</h2>
+    <main class="flex-grow cs-main bg-cs-paper">
+        <div class="flex flex-col items-center mb-32">
+            <!-- 'Title' container -->
+            <div class="relative flex flex-col items-end justify-center w-full h-48 sm:h-80 text-white bg-[url('/src/assets/testimonials-header.jpeg')] bg-top bg-cover">
+                <div class="absolute top-0 left-0 flex items-center justify-center w-full h-full px-4 bg-white bg-opacity-30">
+                    <div class="w-[1000px] mt-16">
+                        <img src="/src/assets/what-our-past-students.png" class="sm:w-[500px] w-[300px] ml-auto" />
+                    </div>
+                </div>
+            </div>
+
+            <!-- Content container -->
+            <div class="w-full max-w-5xl px-6 mt-12 sm:px-10">
+            </div>
         </div>
+    </main>
 
-        <!-- Content container -->
-        <div class="w-full max-w-5xl px-6 mt-12 sm:px-10">
-        </div>
-    </div>
-</main>
-
-<?php require_once 'footer.php'; ?>
+    <?php require_once 'footer.php'; ?>
 </body>
 
 </html>

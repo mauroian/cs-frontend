@@ -573,7 +573,7 @@
         cs-fs-sm
         font-bold
         text-center
-        rounded-lg;
+        rounded-xl;
     }
 
     .cs-course-tag {
@@ -583,7 +583,7 @@
 
     .cs-course-chip {
         @apply
-        flex flex-row items-center px-2 py-0 font-sans tracking-widest text-black uppercase bg-white border border-transparent rounded-xl cs-fs-badge;
+        flex flex-row items-center px-2 pt-0.5 font-sans tracking-widest text-black uppercase bg-white border border-transparent rounded-xl cs-fs-badge;
     }
 
 }
@@ -595,14 +595,14 @@
         w-full 
         max-w-[600px] 
         shadow-cs-all-around 
-        rounded-[30px]; 
+        rounded-3xl; 
 }
 
 .cs-form-container {
     @apply
     bg-cs-paper
     w-full
-    rounded-b-[30px]
+    rounded-b-3xl
     flex
     flex-col
     items-center
@@ -618,7 +618,7 @@
     sm:w-[480px] /* [param] */
     md:w-[600px] /* [param] */
     shadow-cs-all-around /* [param] */
-    rounded-[30px]
+    rounded-3xl
     sm:mx-0
     bg-cs-paper;
 }
@@ -626,7 +626,7 @@
 .cs-form-container-success {
     @apply
     w-auto
-    rounded-[30px]
+    rounded-3xl
     flex
     flex-col
     items-center
@@ -647,7 +647,7 @@
     h-28
     pt-12
     w-full
-    rounded-t-[30px];
+    rounded-t-3xl;
 }
 
 .cs-form-header-bigger-letter {
@@ -670,7 +670,7 @@
     h-20
     pt-4
     w-full
-    rounded-t-[30px];
+    rounded-t-3xl;
 }
 
 .cs-form-title {
@@ -687,11 +687,7 @@
 
 .cs-form-text {
     @apply
-    w-full
-    mb-6
-    text-left
-    cs-fs-sm
-    text-black;
+    w-full mb-6 text-left text-black cs-fs-sm;
 }
 
     .cs-form-text.cs-form-thank-you {
@@ -731,7 +727,7 @@
         cs-fs-xs
         border-cs-red-main
         border-2
-        rounded-l-[30px]
+        rounded-l-3xl
         rounded-r-xl
         bg-cs-paper-shade
         pl-4
@@ -793,7 +789,7 @@
     @apply
     bg-cs-paper
     w-full
-    rounded-b-[30px]
+    rounded-b-3xl
     flex
     flex-col
     items-center
@@ -805,20 +801,7 @@
 
 .cs-course-header {
     @apply
-    font-sans
-    cs-fs-lg
-    font-semibold
-    text-cs-paper
-    bg-cs-red-dark
-    flex
-    flex-row
-    items-baseline
-    justify-center
-    h-20
-    pt-6
-    sm:px-10
-    w-full
-    rounded-t-[30px];
+    flex flex-row items-baseline justify-center w-full h-20 pt-6 font-sans font-semibold cs-fs-lg text-cs-paper bg-cs-red-dark sm:px-10 rounded-t-3xl;
 }
 
 .cs-course-input,
@@ -834,7 +817,7 @@
     cs-fs-xs
     border-cs-red-dark
     border-2
-    rounded-l-[30px]
+    rounded-l-3xl
     rounded-r-xl
     bg-cs-paper-shade
     pl-4
@@ -868,7 +851,7 @@
     cs-fs-xs
     border-cs-red-dark
     border-2
-    rounded-l-[30px]
+    rounded-l-3xl
     rounded-r-xl
     w-full
     min-w-[150px]
@@ -886,7 +869,6 @@
     border-2
     rounded-xl
     bg-cs-paper-shade
-    rounded-l-none
     w-full
     pl-4
     md:pl-4
@@ -904,13 +886,7 @@
 
 .cs-course-accordion-button {
     @apply
-    mt-4
-    uppercase
-    py-2
-    rounded-[30px]
-    px-5
-    bg-cs-paper-dark
-    text-cs-red-dark;
+    px-5 py-2 mt-4 uppercase rounded-3xl bg-cs-paper-dark text-cs-red-dark;
 }
 
 .cs-course-accordion-content {
@@ -975,16 +951,12 @@
     px-5
     sm:px-8
     max-w-[800px] /* [param] */
-    rounded-[30px];
+    rounded-3xl;
 }
 
 .cs-accordion-manager {
     @apply
-    mt-8
-    h-10
-    w-full
-    gap-2
-    mb-8;
+    w-full h-10 gap-2 mt-8 mb-8;
 }
 
 .cs-personal-area-box {
@@ -992,19 +964,20 @@
     mb-16
     w-full /* [param] */ 
     shadow-cs-all-around /* [param] */
-    rounded-[30px]
+    rounded-3xl
     bg-cs-blue-main
 }
 
 
 .cs-personal-accordion-header {
     @apply
-    gap-4 py-2 pr-5 font-semibold text-left text-white cs-fs-lg min-h-10 pl-9;
+    gap-4 pt-1 pr-5 my-4 font-semibold text-left text-white cs-fs-lg pl-9;
 }
 
 .cs-personal-accordion-content {
     @apply
-    gap-4 px-8 py-5 cs-fs-base text-cs-grey bg-cs-paper-dark rounded-b-xl;
+    gap-4 px-8 py-5 cs-fs-base text-cs-grey bg-cs-paper-dark rounded-b-[1.44rem];
+    /* MI: It shoud be rounded-b-3xl, but a tiny blue from the underlying element would appear in the curvature! Hence this fix. */
 }
 
 /** BIBLE COURSE AREA **/
@@ -1014,13 +987,13 @@
     mb-16
     w-full /* [param] */
     shadow-cs-all-around /* [param] */
-    rounded-xl
+    rounded-3xl
   bg-cs-paper-dark;
 }
 
 .cs-bible-accordion-header {
     @apply
-    gap-4 py-2 pl-4 pr-5 font-semibold text-left text-black cs-fs-lg min-h-10 sm:pl-9;
+    gap-4 pt-1 pl-4 pr-5 my-4 font-semibold text-left text-black cs-fs-lg sm:pl-9;
 }
 
 
@@ -1031,5 +1004,5 @@
 
 .cs-bible-accordion-content {
     @apply
-    gap-6 px-4 py-6 font-semibold cs-fs-sm md:px-8 text-cs-grey bg-cs-paper-dark cs-fs-base rounded-b-xl;
+    gap-6 px-4 py-6 font-semibold cs-fs-sm md:px-8 text-cs-grey bg-cs-paper-dark cs-fs-base rounded-b-3xl;
 }

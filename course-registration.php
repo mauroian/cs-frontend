@@ -53,13 +53,13 @@
                         <label for="confirm_email" class="cs-form-label">Confirm Email</label>
                         <!-- Input Email -->
                         <div class="relative cs-form-input-container">
-                            <input id="confirm_email" required type="text" placeholder="" class="cs-course-input  cs-course-input-icon" />
+                            <input id="confirm_email" required type="text" placeholder="" class="cs-course-input cs-course-input-icon" />
                             <img src="/src/assets/email-login.svg" />
                         </div>
                         <label for="password" class="cs-form-label">Password</label>
                         <!-- Input Phone -->
                         <div class="relative cs-form-input-container">
-                            <input id="password" required type="password" placeholder="" class="cs-course-input  cs-course-input-icon" />
+                            <input id="password" required type="password" placeholder="" class="cs-course-input cs-course-input-icon" />
                             <img src="/src/assets/password-login.svg" />
                             <button type="button" class="absolute inset-y-0 z-20 flex items-center px-3 cursor-pointer cs-password-eye end-0 text-cs-red-dark" onclick="togglePassword(this)">
                                 <svg class="shrink-0 size-5" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
@@ -75,7 +75,7 @@
                         <label for="confirm_password" class="cs-form-label">Confirm Password</label>
                         <!-- Input Phone -->
                         <div class="relative cs-form-input-container">
-                            <input id="confirm_password" required type="password" placeholder="" class="cs-course-input  cs-course-input-icon" />
+                            <input id="confirm_password" required type="password" placeholder="" class="cs-course-input cs-course-input-icon" />
                             <img src="/src/assets/password-login.svg" />
                             <button type="button" class="absolute inset-y-0 z-20 flex items-center px-3 cursor-pointer cs-password-eye end-0 text-cs-red-dark" onclick="togglePassword(this)">
                                 <svg class="shrink-0 size-5" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
@@ -95,7 +95,7 @@
                                 <span class="text-1">Show terms and conditions</span>
                                 <span class="hidden text-1">Hide terms and conditions</span>
                                 <span id="icon-1" class="transition-transform duration-300">
-                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" class="w-4 h-4">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" class="w-6 h-6">
                                         <path d="M8.75 3.75a.75.75 0 0 0-1.5 0v3.5h-3.5a.75.75 0 0 0 0 1.5h3.5v3.5a.75.75 0 0 0 1.5 0v-3.5h3.5a.75.75 0 0 0 0-1.5h-3.5v-3.5Z" />
                                     </svg>
                                 </span>
@@ -218,7 +218,7 @@
                                 <span class="text-2">Show terms and conditions</span>
                                 <span class="hidden text-2">Hide terms and conditions</span>
                                 <span id="icon-2" class="transition-transform duration-300">
-                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" class="w-4 h-4">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" class="w-6 h-6">
                                         <path d="M8.75 3.75a.75.75 0 0 0-1.5 0v3.5h-3.5a.75.75 0 0 0 0 1.5h3.5v3.5a.75.75 0 0 0 1.5 0v-3.5h3.5a.75.75 0 0 0 0-1.5h-3.5v-3.5Z" />
                                     </svg>
                                 </span>
