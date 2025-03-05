@@ -111,11 +111,13 @@ document.addEventListener("DOMContentLoaded", () => {
   const loggedMenu = document.querySelector('.cs-menu-logged');
   if (loggedMenuBtn) {
     onClickOutside(() => {
-      document.querySelectorAll('.cs-logged-avatar').forEach(el => el.classList.toggle('hidden'));
-      loggedMenu.classList.add('invisible');
-      loggedMenu.classList.remove('visible');
-      loggedMenu.classList.remove("opacity-100");
-      loggedMenu.classList.add("opacity-0");
+      if(loggedMenu.classList.contains('visible')) {
+        document.querySelectorAll('.cs-logged-avatar').forEach(el => el.classList.toggle('hidden'));
+        loggedMenu.classList.add('invisible');
+        loggedMenu.classList.remove('visible');
+        loggedMenu.classList.remove("opacity-100");
+        loggedMenu.classList.add("opacity-0");
+      }
     });
 
     loggedMenuBtn.addEventListener("click", () => {
@@ -240,24 +242,25 @@ window.togglePassword = (el) => {
 window.toggleAccordion = toggleAccordion;
 
 const slideUp = (target, duration=500) => {
-  target.style.transitionProperty = 'height, margin, padding';
-  target.style.transitionDuration = duration + 'ms';
   target.style.boxSizing = 'border-box';
   target.style.height = target.offsetHeight + 'px';
-  target.offsetHeight;
   target.style.overflow = 'hidden';
+  target.offsetHeight;
+  target.style.transitionProperty = 'height, margin, padding';
+  target.style.transitionDuration = duration + 'ms';
   target.style.height = 0;
   target.style.paddingTop = 0;
   target.style.paddingBottom = 0;
   target.style.marginTop = 0;
   target.style.marginBottom = 0;
+  target.style.removeProperty('padding-top');
+  target.style.removeProperty('padding-bottom');
+  target.style.removeProperty('margin-top');
+  target.style.removeProperty('margin-bottom');
   window.setTimeout( () => {
     target.style.display = 'none';
     target.style.removeProperty('height');
-    target.style.removeProperty('padding-top');
-    target.style.removeProperty('padding-bottom');
-    target.style.removeProperty('margin-top');
-    target.style.removeProperty('margin-bottom');
+
     target.style.removeProperty('overflow');
     target.style.removeProperty('transition-duration');
     target.style.removeProperty('transition-property');

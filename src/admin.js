@@ -18,11 +18,13 @@ document.addEventListener("DOMContentLoaded", () => {
   const loggedMenu = document.querySelector('.cs-menu-logged');
   if (loggedMenuBtn) {
     onClickOutside(() => {
-      document.querySelectorAll('.cs-logged-avatar').forEach(el => el.classList.toggle('hidden'));
-      loggedMenu.classList.add('invisible');
-      loggedMenu.classList.remove('visible');
-      loggedMenu.classList.remove("opacity-100");
-      loggedMenu.classList.add("opacity-0");
+      if(loggedMenu.classList.contains('visible')) {
+        document.querySelectorAll('.cs-logged-avatar').forEach(el => el.classList.toggle('hidden'));
+        loggedMenu.classList.add('invisible');
+        loggedMenu.classList.remove('visible');
+        loggedMenu.classList.remove("opacity-100");
+        loggedMenu.classList.add("opacity-0");
+      }
     });
 
     loggedMenuBtn.addEventListener("click", () => {
