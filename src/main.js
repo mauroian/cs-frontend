@@ -121,6 +121,9 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 
     loggedMenuBtn.addEventListener("click", () => {
+      if(loggedMenu.classList.contains('invisible') && window.getComputedStyle(menu).display === 'block') {
+        btn.click();
+      }
       document.querySelectorAll('.cs-logged-avatar').forEach(el => el.classList.toggle('hidden'));
       loggedMenu.classList.toggle('invisible');
       loggedMenu.classList.toggle('visible');
