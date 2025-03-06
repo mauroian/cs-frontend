@@ -11,7 +11,7 @@
 
                 <!-- LOGO block -->
                 <div class="flex flex-col gap-3 mt-8 sm:mt-0 ">
-                    <img src="/src/assets/logo_footer.svg" class="" alt="Logo" />
+                    <img src="/src/assets/logos/cs-logo-paper-name-white.svg" class="h-20 mr-auto" alt="Logo" />
                     <h6 class="font-sans font-bold tracking-widest uppercase cs-fs-xs">Serving parishes with teachings, </br>formation & new evangelisation.</h6>
                 </div>
 
