@@ -9,7 +9,7 @@ $isLogged = isset($_GET['logged']) && $_GET['logged'] === 'true';
         <!-- Container div for logo (desktop & mobile)-->
         <div class="flex cs-menu-logo">
             <a href="/">
-                <img src="/src/assets/logo.svg" class="h-14" alt="Logo" />
+                <img src="/src/assets/cs-logo-name-paper.png" class="h-20" alt="Logo" />
             </a>
         </div>
         <!-- Container list for public menu (desktop) -->

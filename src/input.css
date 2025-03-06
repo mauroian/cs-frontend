@@ -52,7 +52,7 @@
 
     .cs-main {
      @apply 
-     mt-20 pb-44   /* [param] sets margins for <main> element.
+     mt-24 pb-44   /* [param] sets margins for <main> element.
     It depends if we want the navbar non-sticky or sticky <header class="md:relative"> or not - if we have, the navbar would scroll from md (instead of being fixed like in mobile) - and I have to readjust mt and mb accordingly here.
     */
     bg-cs-paper-shade
@@ -62,7 +62,7 @@
     /* whole navbar features (desktop & mobile) */
     .cs-header {
         @apply
-            h-20  /* [param] header height (desktop, mobile) */
+            h-24  /* [param] header height (desktop, mobile) */
             border-b-4 /* [param] thickness of header's bottom line (mobile) */
             md:border-0
             border-cs-red-main /* [param] colour of header's bottom line (mobile) */

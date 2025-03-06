@@ -19,7 +19,7 @@
         <div class="flex flex-col items-center mt-28 sm:mt-36 cs-form-box">
             <!-- Box Titolo -->
             <div class="relative flex flex-row items-baseline justify-center cs-form-login-header">
-                <img src="/src/assets/logo-login.svg" class="absolute -top-[80px] block" alt="Login">
+                <img src="/src/assets/cs-logo-white.png" class="absolute -top-[70px] block h-28" alt="Login">
                 <span class="cs-form-header-bigger-letter">W</span>elcome<span class="cs-form-header-bigger-letter">&nbsp;B</span>ack.
             </div>
             <!-- Box Form -->
