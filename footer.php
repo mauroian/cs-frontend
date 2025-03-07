@@ -1,5 +1,5 @@
 <footer class="bg-cs-red-main text-cs-paper">
-
+    <?php require_once 'breakpoints-widget.php'; ?>
     <!-- OUTEST DIV -->
     <div class="flex flex-col items-center justify-center w-auto mt-12 mb-8">
 

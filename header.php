@@ -5,11 +5,13 @@ $isLogged = isset($_GET['logged']) && $_GET['logged'] === 'true';
 <!--  <header class="md:relative"> would make the navbar scroll from md (instead of being sticky like in mobile)-->
 <header class="fixed top-0 z-50 w-full bg-cs-paper">
     <!-- Container nav for header (desktop & mobile) -->
+
     <nav class="z-10 flex items-center w-full p-4 mx-auto bg-cs-paper cs-header" aria-label="Header">
+
         <!-- Container div for logo (desktop & mobile)-->
         <div class="flex cs-menu-logo">
             <a href="/">
-                <img src="/src/assets/logos/cs-logo-paper-name-red.png" class="h-20" alt="Logo" />
+                <img src="/src/assets/logos/cs-logo-name-all-red.png" class="h-20" alt="Logo" />
             </a>
         </div>
         <!-- Container list for public menu (desktop) -->
@@ -544,5 +546,3 @@ $isLogged = isset($_GET['logged']) && $_GET['logged'] === 'true';
         </ul>
     </div>
 </header>
-
-<?php require_once 'breakpoints-widget.php'; ?>

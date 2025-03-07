@@ -579,7 +579,7 @@
         @apply
         flex flex-row items-center px-2 font-sans tracking-widest border border-transparent rounded-xl cs-fs-badge;
     }
-
+    
     .cs-course-chip {
         @apply
         flex flex-row items-center px-2 pt-0.5 font-sans tracking-widest text-black uppercase bg-white border border-transparent rounded-xl cs-fs-badge;

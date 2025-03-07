@@ -221,4 +221,3 @@
     </div>
     <div class="mx-auto lg:ml-80"></div>
 </div>
-<?php require_once 'breakpoints-widget.php'; ?>

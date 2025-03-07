@@ -41,27 +41,27 @@
             <div class="flex flex-col items-center cs-personal-area-container">
                 <div class="flex flex-row items-center justify-end cs-accordion-manager">
                     <button class="mr-1 cs-accordion-expand text-cs-blue-light">
-                        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" class="h-6 w-6 fill-cs-blue-light"
-                             viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve" fill="currentColor">
+                        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" class="w-6 h-6 fill-cs-blue-light"
+                            viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve" fill="currentColor">
                             <g>
                                 <g>
                                     <path d="M257,0C116.39,0,0,114.39,0,255s116.39,257,257,257s255-116.39,255-257S397.61,0,257,0z M392,285H287v107
                                         c0,16.54-13.47,30-30,30c-16.54,0-30-13.46-30-30V285H120c-16.54,0-30-13.46-30-30c0-16.54,13.46-30,30-30h107V120
-                                        c0-16.54,13.46-30,30-30c16.53,0,30,13.46,30,30v105h105c16.53,0,30,13.46,30,30S408.53,285,392,285z"/>
+                                        c0-16.54,13.46-30,30-30c16.53,0,30,13.46,30,30v105h105c16.53,0,30,13.46,30,30S408.53,285,392,285z" />
                                 </g>
                             </g>
-                            </svg>
+                        </svg>
                     </button>
                     <button class=" cs-accordion-collapse">
-                        <svg class="h-6 w-6 fill-cs-blue-light" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill="currentColor" x="0px" y="0px"
-                             viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve">
+                        <svg class="w-6 h-6 fill-cs-blue-light" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill="currentColor" x="0px" y="0px"
+                            viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve">
                             <g>
                                 <g>
                                     <path d="M257,0C116.39,0,0,114.39,0,255s116.39,257,257,257s255-116.39,255-257S397.61,0,257,0z M392,285H120
-                                        c-16.54,0-30-13.46-30-30c0-16.54,13.46-30,30-30h272c16.53,0,30,13.46,30,30S408.53,285,392,285z"/>
+                                        c-16.54,0-30-13.46-30-30c0-16.54,13.46-30,30-30h272c16.53,0,30,13.46,30,30S408.53,285,392,285z" />
                                 </g>
                             </g>
-                            </svg>
+                        </svg>
                     </button>
                 </div>
                 <div class="cs-bible-area-box">
@@ -69,14 +69,14 @@
                         class="flex items-center justify-between w-full cs-bible-accordion-header">
                         <span class=" text-cs-blue-light">Session 1</span>
                         <span id="icon-1" class="text-black transition-transform duration-300">
-                        <svg class="h-6 w-6 fill-cs-blue-light" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill="currentColor" x="0px" y="0px"
-                             viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve">
-                            <g>
+                            <svg class="w-6 h-6 fill-cs-blue-light" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill="currentColor" x="0px" y="0px"
+                                viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve">
                                 <g>
-                                    <path d="M257,0C116.39,0,0,114.39,0,255s116.39,257,257,257s255-116.39,255-257S397.61,0,257,0z M392,285H120
-                                        c-16.54,0-30-13.46-30-30c0-16.54,13.46-30,30-30h272c16.53,0,30,13.46,30,30S408.53,285,392,285z"/>
+                                    <g>
+                                        <path d="M257,0C116.39,0,0,114.39,0,255s116.39,257,257,257s255-116.39,255-257S397.61,0,257,0z M392,285H120
+                                        c-16.54,0-30-13.46-30-30c0-16.54,13.46-30,30-30h272c16.53,0,30,13.46,30,30S408.53,285,392,285z" />
+                                    </g>
                                 </g>
-                            </g>
                             </svg>
                         </span>
                     </button>
@@ -100,14 +100,14 @@
                         class="flex items-center justify-between w-full cs-bible-accordion-header">
                         <span class=" text-cs-blue-light">Session 2</span>
                         <span id="icon-2" class="text-black transition-transform duration-300">
-                        <svg class="h-6 w-6 fill-cs-blue-light" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill="currentColor" x="0px" y="0px"
-                             viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve">
-                            <g>
+                            <svg class="w-6 h-6 fill-cs-blue-light" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill="currentColor" x="0px" y="0px"
+                                viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve">
                                 <g>
-                                    <path d="M257,0C116.39,0,0,114.39,0,255s116.39,257,257,257s255-116.39,255-257S397.61,0,257,0z M392,285H120
-                                        c-16.54,0-30-13.46-30-30c0-16.54,13.46-30,30-30h272c16.53,0,30,13.46,30,30S408.53,285,392,285z"/>
+                                    <g>
+                                        <path d="M257,0C116.39,0,0,114.39,0,255s116.39,257,257,257s255-116.39,255-257S397.61,0,257,0z M392,285H120
+                                        c-16.54,0-30-13.46-30-30c0-16.54,13.46-30,30-30h272c16.53,0,30,13.46,30,30S408.53,285,392,285z" />
+                                    </g>
                                 </g>
-                            </g>
                             </svg>
                         </span>
                     </button>
@@ -174,14 +174,14 @@
                         class="flex items-center justify-between w-full cs-bible-accordion-header">
                         <span class=" text-cs-blue-light">Session 3</span>
                         <span id="icon-3" class="text-black transition-transform duration-300">
-                        <svg class="h-6 w-6 fill-cs-blue-light" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill="currentColor" x="0px" y="0px"
-                             viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve">
-                            <g>
+                            <svg class="w-6 h-6 fill-cs-blue-light" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill="currentColor" x="0px" y="0px"
+                                viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve">
                                 <g>
-                                    <path d="M257,0C116.39,0,0,114.39,0,255s116.39,257,257,257s255-116.39,255-257S397.61,0,257,0z M392,285H120
-                                        c-16.54,0-30-13.46-30-30c0-16.54,13.46-30,30-30h272c16.53,0,30,13.46,30,30S408.53,285,392,285z"/>
+                                    <g>
+                                        <path d="M257,0C116.39,0,0,114.39,0,255s116.39,257,257,257s255-116.39,255-257S397.61,0,257,0z M392,285H120
+                                        c-16.54,0-30-13.46-30-30c0-16.54,13.46-30,30-30h272c16.53,0,30,13.46,30,30S408.53,285,392,285z" />
+                                    </g>
                                 </g>
-                            </g>
                             </svg>
                         </span>
                     </button>

@@ -16,9 +16,9 @@
     <main class="flex-grow cs-main bg-cs-paper">
         <div class="flex flex-col items-center mb-32">
             <!-- 'Title' container -->
-            <div class="flex flex-col items-center justify-center flex-wrap w-full h-48 sm:h-80  text-white bg-[url('/src/assets/ascension-press-header.png')] bg-center bg-cover">
-                <div class="w-full max-w-[700px] text-center px-2 pb-3">
-                    <h2 class="font-serif italic max-sm:leading-7 cs-fs-lg md:cs-fs-3xl sm:cs-fs-2xl">The <b>resources</b> <br>that have changed the&nbsp;way <br> <b>Catholics</b> read the <b>Bible.</b></h2>
+            <div class="flex flex-col items-center justify-center flex-wrap w-full h-36 sm:h-44 md:h-64  text-white bg-[url('/src/assets/ascension-press-header.png')] bg-center bg-cover">
+                <div class="w-full leading-tight max-w-[700px] text-center px-2 pb-3">
+                    <h2 class="font-sans cs-fs-lg md:cs-fs-3xl sm:cs-fs-xl">The <b>resources</b> <br>that have changed the&nbsp;way <br> <b>Catholics</b> read the <b>Bible.</b></h2>
                 </div>
             </div>
 

@@ -18,7 +18,7 @@
         <!-- Page Title container -->
         <div class="flex flex-col items-center w-full px-5 py-6 text-white bg-cs-red-main">
             <span class="tracking-widest uppercase sm:cs-fs-sm cs-fs-xs">course registration</span>
-            <h1 class="font-serif italic font-semibold leading-[45px] my-3 text-center cs-fs-2xl sm:cs-fs-3xl">Bible Timeline Course</h1>
+            <h1 class="font-sans  font-semibold leading-[45px] my-3 text-center cs-fs-2xl sm:cs-fs-3xl">Bible Timeline Course</h1>
             <span class="tracking-widest uppercase sm:cs-fs-sm cs-fs-xs">September 2024</span>
         </div>
 
@@ -95,16 +95,16 @@
                                 <span class="text-1">Show terms and conditions</span>
                                 <span class="hidden text-1">Hide terms and conditions</span>
                                 <span id="icon-1" class="transition-transform duration-300">
-                                     <svg class="h-6 w-6" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                                          viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve" fill="currentColor">
+                                    <svg class="w-6 h-6" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                                        viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve" fill="currentColor">
                                         <g>
                                             <g>
                                                 <path d="M257,0C116.39,0,0,114.39,0,255s116.39,257,257,257s255-116.39,255-257S397.61,0,257,0z M392,285H287v107
                                                     c0,16.54-13.47,30-30,30c-16.54,0-30-13.46-30-30V285H120c-16.54,0-30-13.46-30-30c0-16.54,13.46-30,30-30h107V120
-                                                    c0-16.54,13.46-30,30-30c16.53,0,30,13.46,30,30v105h105c16.53,0,30,13.46,30,30S408.53,285,392,285z"/>
+                                                    c0-16.54,13.46-30,30-30c16.53,0,30,13.46,30,30v105h105c16.53,0,30,13.46,30,30S408.53,285,392,285z" />
                                             </g>
                                         </g>
-                                        </svg>
+                                    </svg>
                                 </span>
                             </button>
                             <div id="content-1" class="overflow-hidden transition-all duration-300 ease-in-out max-h-0">
@@ -225,16 +225,16 @@
                                 <span class="text-2">Show terms and conditions</span>
                                 <span class="hidden text-2">Hide terms and conditions</span>
                                 <span id="icon-2" class="transition-transform duration-300">
-                                 <svg class="h-6 w-6" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                                      viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve" fill="currentColor">
+                                    <svg class="w-6 h-6" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                                        viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve" fill="currentColor">
                                         <g>
                                             <g>
                                                 <path d="M257,0C116.39,0,0,114.39,0,255s116.39,257,257,257s255-116.39,255-257S397.61,0,257,0z M392,285H287v107
                                                     c0,16.54-13.47,30-30,30c-16.54,0-30-13.46-30-30V285H120c-16.54,0-30-13.46-30-30c0-16.54,13.46-30,30-30h107V120
-                                                    c0-16.54,13.46-30,30-30c16.53,0,30,13.46,30,30v105h105c16.53,0,30,13.46,30,30S408.53,285,392,285z"/>
+                                                    c0-16.54,13.46-30,30-30c16.53,0,30,13.46,30,30v105h105c16.53,0,30,13.46,30,30S408.53,285,392,285z" />
                                             </g>
                                         </g>
-                                        </svg>
+                                    </svg>
                                 </span>
                             </button>
                             <div id="content-2" class="overflow-hidden transition-all duration-300 ease-in-out max-h-0">
