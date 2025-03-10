@@ -172,6 +172,10 @@ document.addEventListener("DOMContentLoaded", () => {
 
   });
 
+  document.querySelectorAll('div[id*=read-full-]').forEach((el, index) => {
+    el.style.maxHeight = el.clientHeight + 'px';
+  });
+
   /** EXPAND FULLY ALL ELEMENT OF ACCORDION **/
   const expandButton = document.querySelector('.cs-accordion-expand');
   if(expandButton !== null) {
@@ -200,6 +204,27 @@ document.addEventListener("DOMContentLoaded", () => {
 /**
  * FROM HERE AFTER THERE ARE THE FUNCTIONS TO MANAGE THE ANIMATIONS AND SPECIAL JQUERY MIGRATIONS
  */
+
+function toggleRead(el, index) {
+  const content = document.getElementById(`read-full-${index}`);
+  const text = el.querySelectorAll(`span`);
+
+  console.log(content.style.maxHeight);
+
+  text.forEach((el) => {
+    el.classList.toggle('hidden');
+  });
+
+  content.classList.toggle('max-h-[240px]');
+  if ((content.style.maxHeight && parseInt(content.style.maxHeight) > 240)) {
+    content.style.maxHeight = '240px';
+  } else {
+    content.style.maxHeight = content.scrollHeight + 'px';
+  }
+}
+
+window.toggleRead = toggleRead;
+
 function toggleAccordion(index) {
   const content = document.getElementById(`content-${index}`);
   const icon = document.getElementById(`icon-${index}`);
