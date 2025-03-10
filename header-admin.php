@@ -20,7 +20,7 @@
         <!-- Container div for logo (desktop & mobile)-->
         <div class="flex flex-grow cs-menu-logo">
             <a href="/">
-                <img src="/src/assets/admin-logo.svg" class="h-10" alt="Logo" />
+                <img src="/src/assets/logos/cs-logo-paper.png" class="h-12" alt="Logo" />
             </a>
         </div>
         <!-- Container div for user avatar and user menu (desktop & mobile) | If user is logged -->
@@ -28,6 +28,7 @@
             <div class="flex flex-col items-center justify-end min-w-10">
                 <!-- user avatar picture (desktop & mobile) -->
                 <img class="cs-logged-avatar cs-admin-logged-avatar" src="/src/assets/sample_avatar.png" alt="Bordered avatar">
+                <img class="hidden p-3 cs-logged-avatar cs-admin-logged-avatar" src="/src/assets/close-icon.svg" alt="Bordered avatar">
             </div>
             <!-- Container div for user menu (desktop & mobile) -->
             <div class="absolute flex-col justify-start invisible opacity-0 cs-menu-logged">
@@ -220,4 +221,3 @@
     </div>
     <div class="mx-auto lg:ml-80"></div>
 </div>
-<?php require_once 'breakpoints-widget.php'; ?>

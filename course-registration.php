@@ -18,7 +18,7 @@
         <!-- Page Title container -->
         <div class="flex flex-col items-center w-full px-5 py-6 text-white bg-cs-red-main">
             <span class="tracking-widest uppercase sm:cs-fs-sm cs-fs-xs">course registration</span>
-            <h1 class="font-serif italic font-semibold leading-[45px] my-3 text-center cs-fs-2xl sm:cs-fs-3xl">Bible Timeline Course</h1>
+            <h1 class="font-sans  font-semibold leading-[45px] my-3 text-center cs-fs-2xl sm:cs-fs-3xl">Bible Timeline Course</h1>
             <span class="tracking-widest uppercase sm:cs-fs-sm cs-fs-xs">September 2024</span>
         </div>
 
@@ -47,19 +47,19 @@
                         <label for="email" class="cs-form-label">Email</label>
                         <!-- Input Email -->
                         <div class="relative cs-form-input-container">
-                            <input id="email" required type="text" placeholder="" class="cs-course-input" />
+                            <input id="email" required type="text" placeholder="" class="cs-course-input cs-course-input-icon" />
                             <img src="/src/assets/email-login.svg" />
                         </div>
                         <label for="confirm_email" class="cs-form-label">Confirm Email</label>
                         <!-- Input Email -->
                         <div class="relative cs-form-input-container">
-                            <input id="confirm_email" required type="text" placeholder="" class="cs-course-input" />
+                            <input id="confirm_email" required type="text" placeholder="" class="cs-course-input cs-course-input-icon" />
                             <img src="/src/assets/email-login.svg" />
                         </div>
                         <label for="password" class="cs-form-label">Password</label>
                         <!-- Input Phone -->
                         <div class="relative cs-form-input-container">
-                            <input id="password" required type="password" placeholder="" class="cs-course-input" />
+                            <input id="password" required type="password" placeholder="" class="cs-course-input cs-course-input-icon" />
                             <img src="/src/assets/password-login.svg" />
                             <button type="button" class="absolute inset-y-0 z-20 flex items-center px-3 cursor-pointer cs-password-eye end-0 text-cs-red-dark" onclick="togglePassword(this)">
                                 <svg class="shrink-0 size-5" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
@@ -75,7 +75,7 @@
                         <label for="confirm_password" class="cs-form-label">Confirm Password</label>
                         <!-- Input Phone -->
                         <div class="relative cs-form-input-container">
-                            <input id="confirm_password" required type="password" placeholder="" class="cs-course-input" />
+                            <input id="confirm_password" required type="password" placeholder="" class="cs-course-input cs-course-input-icon" />
                             <img src="/src/assets/password-login.svg" />
                             <button type="button" class="absolute inset-y-0 z-20 flex items-center px-3 cursor-pointer cs-password-eye end-0 text-cs-red-dark" onclick="togglePassword(this)">
                                 <svg class="shrink-0 size-5" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
@@ -95,8 +95,15 @@
                                 <span class="text-1">Show terms and conditions</span>
                                 <span class="hidden text-1">Hide terms and conditions</span>
                                 <span id="icon-1" class="transition-transform duration-300">
-                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" class="w-4 h-4">
-                                        <path d="M8.75 3.75a.75.75 0 0 0-1.5 0v3.5h-3.5a.75.75 0 0 0 0 1.5h3.5v3.5a.75.75 0 0 0 1.5 0v-3.5h3.5a.75.75 0 0 0 0-1.5h-3.5v-3.5Z" />
+                                    <svg class="w-6 h-6" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                                        viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve" fill="currentColor">
+                                        <g>
+                                            <g>
+                                                <path d="M257,0C116.39,0,0,114.39,0,255s116.39,257,257,257s255-116.39,255-257S397.61,0,257,0z M392,285H287v107
+                                                    c0,16.54-13.47,30-30,30c-16.54,0-30-13.46-30-30V285H120c-16.54,0-30-13.46-30-30c0-16.54,13.46-30,30-30h107V120
+                                                    c0-16.54,13.46-30,30-30c16.53,0,30,13.46,30,30v105h105c16.53,0,30,13.46,30,30S408.53,285,392,285z" />
+                                            </g>
+                                        </g>
                                     </svg>
                                 </span>
                             </button>
@@ -143,13 +150,13 @@
                     <form class="flex flex-col items-start w-full">
                         <label for="birthdate" class="cs-form-label">Your Year of birth</label>
                         <!-- Input YOB -->
-                        <div class="relative cs-form-input-container md:!w-1/2">
-                            <input id="birthdate" required type="date" placeholder="" class="cs-course-input  md:!min-w-full" />
+                        <div class="relative cs-form-input-container cs-form-small-container">
+                            <input id="birthdate" required type="date" placeholder="" class="cs-course-input" />
                         </div>
                         <label for="sex" class="cs-form-label">Your sex</label>
                         <!-- Input Sex -->
-                        <div class="relative cs-form-input-container  md:!w-1/2">
-                            <select id="sex" required class="cs-course-select md:!min-w-full">
+                        <div class="relative cs-form-input-container cs-form-small-container">
+                            <select id="sex" required class="cs-course-select">
                                 <option value=""></option>
                                 <option value="M">Male</option>
                                 <option value="F">Female</option>
@@ -218,8 +225,15 @@
                                 <span class="text-2">Show terms and conditions</span>
                                 <span class="hidden text-2">Hide terms and conditions</span>
                                 <span id="icon-2" class="transition-transform duration-300">
-                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" class="w-4 h-4">
-                                        <path d="M8.75 3.75a.75.75 0 0 0-1.5 0v3.5h-3.5a.75.75 0 0 0 0 1.5h3.5v3.5a.75.75 0 0 0 1.5 0v-3.5h3.5a.75.75 0 0 0 0-1.5h-3.5v-3.5Z" />
+                                    <svg class="w-6 h-6" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                                        viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve" fill="currentColor">
+                                        <g>
+                                            <g>
+                                                <path d="M257,0C116.39,0,0,114.39,0,255s116.39,257,257,257s255-116.39,255-257S397.61,0,257,0z M392,285H287v107
+                                                    c0,16.54-13.47,30-30,30c-16.54,0-30-13.46-30-30V285H120c-16.54,0-30-13.46-30-30c0-16.54,13.46-30,30-30h107V120
+                                                    c0-16.54,13.46-30,30-30c16.53,0,30,13.46,30,30v105h105c16.53,0,30,13.46,30,30S408.53,285,392,285z" />
+                                            </g>
+                                        </g>
                                     </svg>
                                 </span>
                             </button>

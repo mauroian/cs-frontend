@@ -34,7 +34,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   new HoverIntent(document.querySelectorAll('.cs-dropdown'), {
     interval: MENU_LEVEL_3_DELAY,
-    exitDelay: MENU_LEVEL_3_DELAY,
+    exitDelay: 0,
     onEnter: function(item) {
       const menu = item.querySelector('ul.cs-menu-level3');
       if (menu) {
@@ -111,13 +111,20 @@ document.addEventListener("DOMContentLoaded", () => {
   const loggedMenu = document.querySelector('.cs-menu-logged');
   if (loggedMenuBtn) {
     onClickOutside(() => {
-      loggedMenu.classList.add('invisible');
-      loggedMenu.classList.remove('visible');
-      loggedMenu.classList.remove("opacity-100");
-      loggedMenu.classList.add("opacity-0");
+      if(loggedMenu.classList.contains('visible')) {
+        document.querySelectorAll('.cs-logged-avatar').forEach(el => el.classList.toggle('hidden'));
+        loggedMenu.classList.add('invisible');
+        loggedMenu.classList.remove('visible');
+        loggedMenu.classList.remove("opacity-100");
+        loggedMenu.classList.add("opacity-0");
+      }
     });
 
     loggedMenuBtn.addEventListener("click", () => {
+      if(loggedMenu.classList.contains('invisible') && window.getComputedStyle(menu).display === 'block') {
+        btn.click();
+      }
+      document.querySelectorAll('.cs-logged-avatar').forEach(el => el.classList.toggle('hidden'));
       loggedMenu.classList.toggle('invisible');
       loggedMenu.classList.toggle('visible');
       loggedMenu.classList.toggle("opacity-0");
@@ -164,28 +171,91 @@ document.addEventListener("DOMContentLoaded", () => {
     el.style.maxHeight = el.clientHeight + 'px';
 
   });
+
+  document.querySelectorAll('div[id*=read-full-]').forEach((el, index) => {
+    el.style.maxHeight = el.clientHeight + 'px';
+  });
+
+  /** EXPAND FULLY ALL ELEMENT OF ACCORDION **/
+  const expandButton = document.querySelector('.cs-accordion-expand');
+  if(expandButton !== null) {
+    expandButton.addEventListener('click', function () {
+      document.querySelectorAll('button.cs-bible-accordion-header, button.cs-personal-accordion-header').forEach(el => {
+        if(el.nextElementSibling.style.maxHeight === '0px') {
+          el.click();
+        }
+      });
+    });
+  }
+
+  const collapseButton = document.querySelector('.cs-accordion-collapse');
+  if(collapseButton !== null) {
+    collapseButton.addEventListener('click', function () {
+      document.querySelectorAll('button.cs-bible-accordion-header, button.cs-personal-accordion-header').forEach(el => {
+        if(el.nextElementSibling.style.maxHeight !== '0px') {
+          el.click();
+        }
+      });
+    });
+  }
 });
 
 
 /**
  * FROM HERE AFTER THERE ARE THE FUNCTIONS TO MANAGE THE ANIMATIONS AND SPECIAL JQUERY MIGRATIONS
  */
+
+function toggleRead(el, index) {
+  const content = document.getElementById(`read-full-${index}`);
+  const text = el.querySelectorAll(`span`);
+
+  console.log(content.style.maxHeight);
+
+  text.forEach((el) => {
+    el.classList.toggle('hidden');
+  });
+
+  content.classList.toggle('max-h-[240px]');
+  if ((content.style.maxHeight && parseInt(content.style.maxHeight) > 240)) {
+    content.style.maxHeight = '240px';
+  } else {
+    content.style.maxHeight = content.scrollHeight + 'px';
+  }
+}
+
+window.toggleRead = toggleRead;
+
 function toggleAccordion(index) {
   const content = document.getElementById(`content-${index}`);
   const icon = document.getElementById(`icon-${index}`);
   const text = document.querySelectorAll(`.text-${index}`);
+  //get current classlist and apply
+  const iconClass = icon.querySelector('svg').classList;
   // SVG for Minus icon
   const minusSVG = `
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" class="w-6 h-6">
-        <path d="M3.75 7.25a.75.75 0 0 0 0 1.5h8.5a.75.75 0 0 0 0-1.5h-8.5Z" />
-      </svg>
+        <svg  class="${iconClass}" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill="currentColor" x="0px" y="0px"
+              viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve">
+              <g>
+              <g>
+                 <path d="M257,0C116.39,0,0,114.39,0,255s116.39,257,257,257s255-116.39,255-257S397.61,0,257,0z M392,285H120
+                     c-16.54,0-30-13.46-30-30c0-16.54,13.46-30,30-30h272c16.53,0,30,13.46,30,30S408.53,285,392,285z"/>
+              </g>
+              </g>
+        </svg>
     `;
 
   // SVG for Plus icon
   const plusSVG = `
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" class="w-6 h-6">
-        <path d="M8.75 3.75a.75.75 0 0 0-1.5 0v3.5h-3.5a.75.75 0 0 0 0 1.5h3.5v3.5a.75.75 0 0 0 1.5 0v-3.5h3.5a.75.75 0 0 0 0-1.5h-3.5v-3.5Z" />
-      </svg>
+                        <svg class="${iconClass}" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" 
+                             viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve" fill="currentColor">
+                            <g>
+                                <g>
+                                    <path d="M257,0C116.39,0,0,114.39,0,255s116.39,257,257,257s255-116.39,255-257S397.61,0,257,0z M392,285H287v107
+                                        c0,16.54-13.47,30-30,30c-16.54,0-30-13.46-30-30V285H120c-16.54,0-30-13.46-30-30c0-16.54,13.46-30,30-30h107V120
+                                        c0-16.54,13.46-30,30-30c16.53,0,30,13.46,30,30v105h105c16.53,0,30,13.46,30,30S408.53,285,392,285z"/>
+                                </g>
+                            </g>
+                            </svg>
     `;
 
   //toggle text color
@@ -215,24 +285,25 @@ window.togglePassword = (el) => {
 window.toggleAccordion = toggleAccordion;
 
 const slideUp = (target, duration=500) => {
-  target.style.transitionProperty = 'height, margin, padding';
-  target.style.transitionDuration = duration + 'ms';
   target.style.boxSizing = 'border-box';
   target.style.height = target.offsetHeight + 'px';
-  target.offsetHeight;
   target.style.overflow = 'hidden';
+  target.offsetHeight;
+  target.style.transitionProperty = 'height, margin, padding';
+  target.style.transitionDuration = duration + 'ms';
   target.style.height = 0;
   target.style.paddingTop = 0;
   target.style.paddingBottom = 0;
   target.style.marginTop = 0;
   target.style.marginBottom = 0;
+  target.style.removeProperty('padding-top');
+  target.style.removeProperty('padding-bottom');
+  target.style.removeProperty('margin-top');
+  target.style.removeProperty('margin-bottom');
   window.setTimeout( () => {
     target.style.display = 'none';
     target.style.removeProperty('height');
-    target.style.removeProperty('padding-top');
-    target.style.removeProperty('padding-bottom');
-    target.style.removeProperty('margin-top');
-    target.style.removeProperty('margin-bottom');
+
     target.style.removeProperty('overflow');
     target.style.removeProperty('transition-duration');
     target.style.removeProperty('transition-property');
@@ -280,15 +351,15 @@ const slideToggle = (target, duration = 500) => {
 }
 
 const fadeOut = (el, duration, delay = 0) => {
-  setTimeout(() => {
-    fadeAnime(el, duration, 'fadeOut');
-  }, delay);
+  //throttle(() =>
+    fadeAnime(el, duration, 'fadeOut')
+  //, delay);
 };
 
 const fadeIn = (el, duration, delay = 0) => {
-  setTimeout(() => {
-    fadeAnime(el, duration, 'fadeIn');
-  }, delay);
+ // throttle(() =>
+    fadeAnime(el, duration, 'fadeIn')
+ // , delay);
 };
 
 const fadeToggle = (el, display, duration = 500) => {
@@ -359,6 +430,19 @@ const fadeAnime = async (target, duration, type) => {
 }
 
 // load namespace
+function throttle(mainFunction, delay) {
+  let timerFlag = null; // Variable to keep track of the timer
+
+  // Returning a throttled version
+  return (...args) => {
+    if (timerFlag === null) { // If there is no timer currently running
+      mainFunction(...args); // Execute the main function
+      timerFlag = setTimeout(() => { // Set a timer to clear the timerFlag after the specified delay
+        timerFlag = null; // Clear the timerFlag to allow the main function to be executed again
+      }, delay);
+    }
+  };
+}
 
 const HoverIntent = (function() {
 
@@ -370,7 +454,7 @@ const HoverIntent = (function() {
     const defaultOptions = {
       exitDelay: 200,
       interval: 100,
-      sensitivity: 7,
+      sensitivity: 10,
     };
     let config = {};
 

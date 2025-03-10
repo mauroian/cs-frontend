@@ -29,7 +29,7 @@
                     <!-- Input Email -->
                     <div class="relative cs-form-input-container">
                         <input id="email" required type="text" placeholder="Your email on our system"
-                            class="cs-form-input" />
+                            class="cs-form-input cs-form-input-icon" />
                         <img src="/src/assets/email-login.svg" />
                     </div>
                     <button class="cs-form-submit">Send me the password&nbsp;reset&nbsp;link</button>
@@ -63,13 +63,13 @@
                     <label for="email" class="cs-form-label">Email</label>
                     <!-- Input Email -->
                     <div class="relative cs-form-input-container">
-                        <input id="email" required type="text" placeholder="youremail@example.com" class="cs-form-input" />
+                        <input id="email" required type="text" placeholder="youremail@example.com" class="cs-form-input cs-form-input-icon" />
                         <img src="/src/assets/email-login.svg" />
                     </div>
                     <label for="password" class="cs-form-label">Password</label>
                     <!-- Input Password -->
                     <div class="relative cs-form-input-container">
-                        <input id="password" required type="password" placeholder="Password" class="cs-form-input" />
+                        <input id="password" required type="password" placeholder="Password" class="cs-form-input cs-form-input-icon" />
                         <img src="/src/assets/password-login.svg" />
                         <button type="button" class="absolute inset-y-0 z-20 flex items-center px-3 cursor-pointer cs-password-eye end-0 text-cs-red-main" onclick="togglePassword(this)">
                             <svg class="shrink-0 size-5" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
@@ -86,7 +86,8 @@
                     <!-- Input Password -->
                     <div class="relative cs-form-input-container">
                         <input id="password_confirmation" required type="password" placeholder="Password confirmation"
-                            class="cs-form-input" />
+                            class="cs-form-input cs-form-input-icon" />
+                        <img src="/src/assets/password-login.svg" />
                         <button type="button" class="absolute inset-y-0 z-20 flex items-center px-3 cursor-pointer cs-password-eye end-0 text-cs-red-main" onclick="togglePassword(this)">
                             <svg class="shrink-0 size-5" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                                 <path class="hs-password-active" d="M9.88 9.88a3 3 0 1 0 4.24 4.24"></path>
@@ -140,13 +141,13 @@
                     <label for="email" class="cs-form-label">Alternative Email to Contact You</label>
                     <!-- Input Email -->
                     <div class="relative cs-form-input-container">
-                        <input id="email" required type="text" placeholder="youremail@example.com" class="cs-form-input" />
+                        <input id="email" required type="text" placeholder="youremail@example.com" class="cs-form-input cs-form-input-icon" />
                         <img src="/src/assets/email-login.svg" />
                     </div>
                     <label for="phone" class="cs-form-label">Your phone number</label>
                     <!-- Input Phone -->
                     <div class="relative cs-form-input-container">
-                        <input id="phone" required type="text" placeholder="" class="cs-form-input" />
+                        <input id="phone" required type="text" placeholder="" class="cs-form-input cs-form-input-icon" />
                         <img src="/src/assets/phone.svg" class="size-6" />
                     </div>
                     <button class="cs-form-submit">Submit</button>

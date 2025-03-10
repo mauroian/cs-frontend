@@ -13,32 +13,29 @@
 
     <?php require_once 'header.php'; ?>
 
-    <main class="flex flex-col flex-grow items-center justify-items bg-[url('/src/assets/background-login.png')] bg-no-repeat bg-center bg-cover min-h-[746px] cs-main px-5 sm:px-8">
+    <main class="flex flex-col flex-grow items-center justify-items sm:bg-[url('/src/assets/background-login.png')] bg-no-repeat bg-center bg-cover min-h-[746px] cs-main px-5 sm:px-8">
 
         <!-- Outer Login Box -->
-        <div class="flex flex-col items-center mt-36 cs-form-box">
+        <div class="flex flex-col items-center mt-28 sm:mt-36 cs-form-box">
             <!-- Box Titolo -->
             <div class="relative flex flex-row items-baseline justify-center cs-form-login-header">
-                <img src="/src/assets/logo-login.svg" class="absolute -top-[80px] block" alt="Login">
+                <img src="/src/assets/logos/cs-logo-paper.png" class="absolute -top-[70px] block h-28" alt="Login">
                 <span class="cs-form-header-bigger-letter">W</span>elcome<span class="cs-form-header-bigger-letter">&nbsp;B</span>ack.
             </div>
             <!-- Box Form -->
             <div class="cs-form-container">
                 <form class="flex flex-col items-start w-full">
-                    <div class="cs-form-text">
-                        Prova testo.
-                    </div>
                     <label for="email" class="cs-form-label">Email</label>
                     <!-- Input Email -->
                     <div class="relative w-full my-2">
-                        <input id="email" required type="text" placeholder="Your email address" class="cs-form-input" />
+                        <input id="email" required type="text" placeholder="Your email address" class="cs-form-input cs-form-input-icon" />
                         <img src="/src/assets/email-login.svg" />
                     </div>
                     <a class="cs-form-link" href="#">Forgot email?</a>
                     <label for="password" class="mt-6 cs-form-label">Password</label>
                     <!-- Input Password -->
                     <div class="relative w-full my-2">
-                        <input id="password" required type="password" placeholder="Enter your password" class="cs-form-input" />
+                        <input id="password" required type="password" placeholder="Enter your password" class="cs-form-input cs-form-input-icon" />
                         <img src="/src/assets/password-login.svg" />
                         <button type="button" class="absolute inset-y-0 z-20 flex items-center px-3 cursor-pointer cs-password-eye end-0 text-cs-red-main" onclick="togglePassword(this)">
                             <svg class="shrink-0 size-5" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">

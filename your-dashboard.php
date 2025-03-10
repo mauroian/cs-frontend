@@ -19,23 +19,54 @@
         <div class="flex flex-col items-center mb-32 ">
 
             <!-- 'Title' container -->
-            <div class="flex flex-col items-start w-full pt-8 pb-5 pl-10 text-white bg-cs-blue-light">
-                <span class="tracking-widest uppercase">Welcome back, Mauro</span>
-                <h1 class="font-serif text-left sm:cs-fs-3xl cs-fs-2xl">Your Dashboard</h1>
+            <div class="flex flex-col items-center w-full pt-8 pb-5 pl-10 text-white bg-cs-blue-light">
+                <div class="w-full max-w-[1000px]">
+                    <span class="tracking-widest uppercase">Welcome back, Mauro</span>
+                    <h1 class="font-serif text-left sm:cs-fs-3xl cs-fs-2xl">Your Dashboard</h1>
+                </div>
             </div>
 
             <!-- Container of all the accordions -->
             <div class="flex flex-col items-center cs-personal-area-container">
-
+                <div class="flex flex-row items-center justify-end cs-accordion-manager">
+                    <button class="mr-1 cs-accordion-expand text-cs-blue-light">
+                        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" class="h-6 w-6 fill-cs-blue-light"
+                             viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve" fill="currentColor">
+                            <g>
+                                <g>
+                                    <path d="M257,0C116.39,0,0,114.39,0,255s116.39,257,257,257s255-116.39,255-257S397.61,0,257,0z M392,285H287v107
+                                        c0,16.54-13.47,30-30,30c-16.54,0-30-13.46-30-30V285H120c-16.54,0-30-13.46-30-30c0-16.54,13.46-30,30-30h107V120
+                                        c0-16.54,13.46-30,30-30c16.53,0,30,13.46,30,30v105h105c16.53,0,30,13.46,30,30S408.53,285,392,285z"/>
+                                </g>
+                            </g>
+                            </svg>
+                    </button>
+                    <button class=" cs-accordion-collapse">
+                        <svg class="h-6 w-6 fill-cs-blue-light" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill="currentColor" x="0px" y="0px"
+                             viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve">
+                            <g>
+                                <g>
+                                    <path d="M257,0C116.39,0,0,114.39,0,255s116.39,257,257,257s255-116.39,255-257S397.61,0,257,0z M392,285H120
+                                        c-16.54,0-30-13.46-30-30c0-16.54,13.46-30,30-30h272c16.53,0,30,13.46,30,30S408.53,285,392,285z"/>
+                                </g>
+                            </g>
+                            </svg>
+                    </button>
+                </div>
                 <!-- 'Your Courses' accordion -->
                 <div class="cs-personal-area-box">
                     <button type="button" onclick="toggleAccordion(1)"
                         class="flex items-center justify-between w-full cs-personal-accordion-header">
                         <span>Your Courses</span>
                         <span id="icon-1" class="text-white transition-transform duration-300">
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor"
-                                class="w-6 h-6">
-                                <path d="M3.75 7.25a.75.75 0 0 0 0 1.5h8.5a.75.75 0 0 0 0-1.5h-8.5Z" />
+                        <svg class="h-6 w-6 fill-white" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill="currentColor" x="0px" y="0px"
+                             viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve">
+                            <g>
+                                <g>
+                                    <path d="M257,0C116.39,0,0,114.39,0,255s116.39,257,257,257s255-116.39,255-257S397.61,0,257,0z M392,285H120
+                                        c-16.54,0-30-13.46-30-30c0-16.54,13.46-30,30-30h272c16.53,0,30,13.46,30,30S408.53,285,392,285z"/>
+                                </g>
+                            </g>
                             </svg>
                         </span>
                     </button>
@@ -52,11 +83,16 @@
                 <div class="cs-personal-area-box">
                     <button type="button" onclick="toggleAccordion(2)"
                         class="flex items-center justify-between w-full cs-personal-accordion-header">
-                        <span>Information for Come & See Mission&nbsp;Partners</span>
+                        <span>Information for Come & See Mission&nbsp;<br>Partners</span>
                         <span id="icon-2" class="text-white transition-transform duration-300">
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor"
-                                class="w-6 h-6">
-                                <path d="M3.75 7.25a.75.75 0 0 0 0 1.5h8.5a.75.75 0 0 0 0-1.5h-8.5Z" />
+                       <svg class="h-6 w-6 fill-white" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill="currentColor" x="0px" y="0px"
+                            viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve">
+                            <g>
+                                <g>
+                                    <path d="M257,0C116.39,0,0,114.39,0,255s116.39,257,257,257s255-116.39,255-257S397.61,0,257,0z M392,285H120
+                                        c-16.54,0-30-13.46-30-30c0-16.54,13.46-30,30-30h272c16.53,0,30,13.46,30,30S408.53,285,392,285z"/>
+                                </g>
+                            </g>
                             </svg>
                         </span>
                     </button>
@@ -81,9 +117,14 @@
                         class="flex items-center justify-between w-full cs-personal-accordion-header">
                         <span>Join our Bible Timeline WhatsApp&nbsp;Group</span>
                         <span id="icon-3" class="text-white transition-transform duration-300">
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor"
-                                class="w-6 h-6">
-                                <path d="M3.75 7.25a.75.75 0 0 0 0 1.5h8.5a.75.75 0 0 0 0-1.5h-8.5Z" />
+                       <svg class="h-6 w-6 fill-white" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill="currentColor" x="0px" y="0px"
+                            viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve">
+                            <g>
+                                <g>
+                                    <path d="M257,0C116.39,0,0,114.39,0,255s116.39,257,257,257s255-116.39,255-257S397.61,0,257,0z M392,285H120
+                                        c-16.54,0-30-13.46-30-30c0-16.54,13.46-30,30-30h272c16.53,0,30,13.46,30,30S408.53,285,392,285z"/>
+                                </g>
+                            </g>
                             </svg>
                         </span>
                     </button>
