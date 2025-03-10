@@ -803,3 +803,73 @@
 
 }
 
+.cs-testimonials-select {
+    @apply
+    w-72
+    h-9
+    pl-4
+    placeholder:text-cs-red-main
+    text-cs-red-main
+    text-left
+    autofill:text-cs-red-main
+    autofill:cs-fs-3xs
+    font-semibold
+    cs-fs-3xs
+    border-cs-red-main
+    border-2
+    rounded-l-[30px]
+    rounded-r-xl
+    bg-cs-paper-shade
+}
+
+.cs-testimonials-show {
+    @apply
+    h-9
+    font-sans
+    font-bold
+    uppercase
+    cs-fs-2xs
+    tracking-wider
+    rounded-lg
+    bg-cs-red-main
+    text-white
+    py-1.5
+    px-4
+    border
+    border-transparent
+    text-center
+    transition-all
+    shadow-sm
+    hover:bg-cs-red-dark
+    disabled:pointer-events-none
+    disabled:opacity-50
+    disabled:shadow-none;
+}
+
+.cs-testimonials-course-arrow {
+    @apply w-9 h-9 text-white rounded-r-lg bg-cs-red-main sm:h-9;
+}
+
+.cs-testimonials-box {
+    @apply w-full rounded-[20px] border-4;
+}
+
+.cs-testimonials-box-author {
+    @apply cs-fs-lg text-white h-20 pt-2 w-full rounded-t-[13px];
+}
+
+.cs-testimonials-counter {
+    @apply font-sans min-w-[75px] py-1 h-auto rounded-[20px] bg-cs-paper border-4 cs-fs-3xs font-bold text-center;
+}
+
+.cs-become-student {
+    @apply w-full rounded-[20px] bg-cs-blue-main;
+}
+
+.cs-become-student-font {
+    @apply font-serif cs-fs-3xl italic leading-tight;
+}
+
+.cs-become-student-button {
+    @apply w-28 h-9 rounded-[6px] bg-cs-paper text-cs-blue-main uppercase font-extrabold cs-fs-2xs tracking-wider;
+}
