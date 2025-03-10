@@ -11,10 +11,7 @@ $isLogged = isset($_GET['logged']) && $_GET['logged'] === 'true';
         <!-- Container div for logo (desktop & mobile)-->
         <div class="flex cs-menu-logo">
             <a href="/">
-                <img src="/src/assets/logos/cs-logo-red-name-red.svg" class="hidden h-20 md:block" alt="Logo" />
-
-                <img src="/src/assets/logos/cs-logo-red-bg-transp.svg" class="block h-20 md:hidden" alt="Logo" />
-
+                <img src="/src/assets/logos/cs-logo-red-name-red.svg" class="h-20" alt="Logo" />
             </a>
         </div>
         <!-- Container list for public menu (desktop) -->
@@ -38,17 +35,103 @@ $isLogged = isset($_GET['logged']) && $_GET['logged'] === 'true';
                     <!-- L2 public menu item (desktop) -->
                     <li class="cs-menu-voice-item">
                         <a href="" class="flex items-center cs-menu-item">
-                            <span class="cs-menu-item-span">Bible timeline course</span>
+                            <span class="cs-menu-item-span">The bible timeline course</span>
                         </a>
                     </li>
                     <!-- L2 public menu item (desktop) -->
                     <li class="cs-menu-voice-item">
                         <a href="" class="flex items-center cs-menu-item">
-                            <span class="cs-menu-item-span">Biblical journey through the Mass</span>
+                            <span class="cs-menu-item-span">The bible and the mass</span>
+                        </a>
+                    </li>
+                    <!-- L2 public menu item (desktop) -->
+                    <li class="relative cs-menu-voice-item cs-dropdown">
+                        <a
+                            aria-haspopup="true"
+                            aria-controls="menu-lang"
+                            class="w-full text-left flex items-center cs-menu-item h-3.5"
+                            href="#">
+                            <span class="pr-1 cs-menu-item-span">Sunday gospels</span>
+                            <span class="ml-auto">
+                                <img src="src/assets/menu-arrow-down.svg"
+                                    class="cs-menu-item-icon object-contain shrink-0 self-stretch my-auto w-3 aspect-[1.5]"
+                                    alt="Arrow Down" />
+
+                            </span>
+                        </a>
+                        <!-- Container list for L3 public menu items (desktop) -->
+                        <ul
+                            id="menu-lang"
+                            aria-hidden="true"
+                            class="absolute cs-menu-level3 min-w-32">
+                            <!-- L3 public menu item (desktop) -->
+                            <li class="cs-menu-voice-item">
+                                <a href="" class="flex items-center cs-menu-item">
+                                    <span class="cs-menu-item-span">Advent journey</span>
+                                </a>
+                            </li>
+                            <!-- L3 public menu item (desktop) -->
+                            <li class="cs-menu-voice-item">
+                                <a href="" class="flex items-center cs-menu-item">
+                                    <span class="cs-menu-item-span">Lenten journey</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <!-- L2 public menu item (desktop) -->
+                    <li class="relative cs-menu-voice-item cs-dropdown">
+                        <a
+                            aria-haspopup="true"
+                            aria-controls="menu-lang"
+                            class="w-full text-left flex items-center cs-menu-item  h-3.5"
+                            href="#">
+                            <span class="pr-1 cs-menu-item-span">The four last things</span>
+                            <span class="ml-auto">
+                                <img src="src/assets/menu-arrow-down.svg"
+                                    class="cs-menu-item-icon object-contain shrink-0 self-stretch my-auto w-3 aspect-[1.5]"
+                                    alt="Arrow Down" />
+                            </span>
+                        </a>
+                        <!-- Container list for L3 public menu items (desktop) -->
+                        <ul
+                            id="menu-lang"
+                            aria-hidden="true"
+                            class="absolute cs-menu-level3 min-w-32">
+                            <!-- L3 public menu item (desktop) -->
+                            <li class="cs-menu-voice-item">
+                                <a href="" class="flex items-center cs-menu-item">
+                                    <span class="cs-menu-item-span">Hell</span>
+                                </a>
+                            </li>
+                            <!-- L3 public menu item (desktop) -->
+                            <li class="cs-menu-voice-item">
+                                <a href="" class="flex items-center cs-menu-item">
+                                    <span class="cs-menu-item-span">Purgatory</span>
+                                </a>
+                            </li>
+                            <!-- L3 public menu item (desktop) -->
+                            <li class="cs-menu-voice-item">
+                                <a href="" class="flex items-center cs-menu-item">
+                                    <span class="cs-menu-item-span">Heaven</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <!-- L2 public menu item (desktop) -->
+                    <li class="cs-menu-voice-item">
+                        <a href="" class="flex items-center cs-menu-item">
+                            <span class="cs-menu-item-span">Prayer with a rule of life</span>
+                        </a>
+                    </li>
+                    <!-- L2 public menu item (desktop) -->
+                    <li class="cs-menu-voice-item">
+                        <a href="" class="flex items-center cs-menu-item">
+                            <span class="cs-menu-item-span">Concise Catechism</span>
                         </a>
                     </li>
                 </ul>
             </li>
+            <!-- L1 public menu item (desktop) -->
 
             <!-- L1 public menu item (desktop) -->
             <li class="relative inline-block group">
@@ -56,7 +139,7 @@ $isLogged = isset($_GET['logged']) && $_GET['logged'] === 'true';
                     aria-haspopup="true"
                     aria-controls="menu-2"
                     class="flex items-center cs-menu-item cs-menu-item-active">
-                    <span class="cs-menu-item-span">Our Ministry</span>
+                    <span class="cs-menu-item-span">Resources</span>
                     <img src="src/assets/menu-arrow-down.svg"
                         class="cs-menu-item-icon object-contain shrink-0 self-stretch my-auto w-3 aspect-[1.5]"
                         alt="Arrow Down" />
@@ -66,43 +149,49 @@ $isLogged = isset($_GET['logged']) && $_GET['logged'] === 'true';
                     id="menu-2"
                     aria-hidden="true"
                     class="mx-auto tracking-widest cs-menu-level2">
-
-                    <!-- L2 public menu item (desktop) -->
-                    <li class="cs-menu-voice-item">
-                        <a href="" class="flex items-center cs-menu-item">
-                            <span class="cs-menu-item-span">Let's get personal</span>
-                        </a>
-                    </li>
-
-                    <!-- L2 public menu item (desktop) -->
-                    <li class="cs-menu-voice-item">
-                        <a href="" class="flex items-center cs-menu-item">
-                            <span class="cs-menu-item-span">Our gallery</span>
-                        </a>
-                    </li>
-
-                    <!-- L2 public menu item (desktop) -->
-                    <li class="cs-menu-voice-item">
-                        <a href="" class="flex items-center cs-menu-item">
-                            <span class="cs-menu-item-span">Support us</span>
-                        </a>
-                    </li>
-
                     <!-- L2 public menu item (desktop) -->
                     <li class="cs-menu-voice-item">
                         <a href="" class="flex items-center cs-menu-item">
                             <span class="cs-menu-item-span">Ascension Press</span>
                         </a>
                     </li>
+                    <!-- L2 public menu item (desktop) -->
+                    <li class="cs-menu-voice-item">
+                        <a href="" class="flex items-center cs-menu-item">
+                            <span class="cs-menu-item-span">Bible Tools</span>
+                        </a>
+                    </li>
                 </ul>
             </li>
-
             <!-- L1 public menu item (desktop) -->
             <li class="relative inline-block group">
                 <a
+                    aria-haspopup="true"
+                    aria-controls="menu-2"
                     class="flex items-center cs-menu-item cs-menu-item-active">
-                    <span class="cs-menu-item-span">Endorsements</span>
+                    <span class="cs-menu-item-span">About us</span>
+                    <img src="src/assets/menu-arrow-down.svg"
+                        class="cs-menu-item-icon object-contain shrink-0 self-stretch my-auto w-3 aspect-[1.5]"
+                        alt="Arrow Down" />
                 </a>
+                <!-- Container list for L2 public menu items (desktop) -->
+                <ul
+                    id="menu-2"
+                    aria-hidden="true"
+                    class="mx-auto tracking-widest cs-menu-level2">
+                    <!-- L2 public menu item (desktop) -->
+                    <li class="cs-menu-voice-item">
+                        <a href="" class="flex items-center cs-menu-item">
+                            <span class="cs-menu-item-span">Let's get personal</span>
+                        </a>
+                    </li>
+                    <!-- L2 public menu item (desktop) -->
+                    <li class="cs-menu-voice-item">
+                        <a href="" class="flex items-center cs-menu-item">
+                            <span class="cs-menu-item-span">Gallery</span>
+                        </a>
+                    </li>
+                </ul>
             </li>
             <!-- L1 public menu item (desktop) -->
             <li>
@@ -116,10 +205,10 @@ $isLogged = isset($_GET['logged']) && $_GET['logged'] === 'true';
 
         <!-- Hamburger button (mobile) -->
         <div class="flex justify-end cs-mobile-menu-container lg2:hidden">
-            <button class="inline-flex items-center justify-center mt-2 mr-2 text-center transition w-9 h-9 cs-mobile-menu-button group"
+            <button class="inline-flex items-center justify-center w-6 h-6 text-center transition cs-mobile-menu-button group"
                 aria-pressed="false"
                 onclick="this.setAttribute('aria-pressed', !(this.getAttribute('aria-pressed') === 'true'))">
-                <svg class="pointer-events-none fill-current w-9 h-9" viewBox="0 0 16 16"
+                <svg class="w-6 h-6 pointer-events-none fill-current" viewBox="0 0 16 16"
                     xmlns="http://www.w3.org/2000/svg">
                     <rect class="origin-center -translate-y-[5px] transition-all duration-300 ease-[cubic-bezier(.5,.85,.25,1.1)] group-[[aria-pressed=true]]:translate-x-0 group-[[aria-pressed=true]]:translate-y-0 group-[[aria-pressed=true]]:rotate-[315deg]"
                         y="7" width="16" height="2" rx="1"></rect>
@@ -134,11 +223,11 @@ $isLogged = isset($_GET['logged']) && $_GET['logged'] === 'true';
         <?php
         if ($isLogged) { ?>
             <!-- Container div for user avatar and user menu (desktop & mobile) | If user is logged -->
-            <div class="relative z-30 flex flex-col items-end justify-end min-w-0 pt-1 cs-menu-auth-logged group lg2:min-w-20 xl:min-w-52">
+            <div class="relative z-30 flex flex-col items-end justify-end pt-1 cs-menu-auth-logged group">
                 <div class="flex flex-col items-center justify-end">
                     <!-- user avatar picture (desktop & mobile) -->
-                    <img class="mt-1 h-11 w-11 cs-logged-avatar" src="/src/assets/sample_avatar.png" alt="Bordered avatar">
-                    <img class="hidden p-2 mt-1 ml-2 w-11 h-11 cs-logged-avatar" src="/src/assets/close-icon.svg" alt="Bordered avatar">
+                    <img class="cs-logged-avatar" src="/src/assets/sample_avatar.png" alt="Bordered avatar">
+                    <img class="hidden p-2 cs-logged-avatar" src="/src/assets/close-icon.svg" alt="Bordered avatar">
                     <!-- user avatar name (desktop & mobile) -->
                     <span class="hidden pt-1 cs-logged-name lg2:block">Mauro</span>
                 </div>
@@ -242,14 +331,10 @@ $isLogged = isset($_GET['logged']) && $_GET['logged'] === 'true';
             </div>
         <?php } ?>
     </nav>
-
-
-
     <!-- Container of public menu (mobile) -->
     <div class="z-20 w-full lg2:hidden overscroll-contain overflow-auto cs-mobile-menu-container bg-transparent max-h-[89dvh]">
         <!-- Inner container of public menu (mobile) -->
         <ul class="hidden h-full cs-mobile-menu cs-menu-mobile-level1">
-
             <!-- Container div for L1 public menu item (mobile) -->
             <li class="flex flex-col items-center w-full group cs-menu-item">
                 <!-- L1 public menu item (mobile) -->
@@ -276,7 +361,90 @@ $isLogged = isset($_GET['logged']) && $_GET['logged'] === 'true';
                     <!-- L2 public menu item (mobile) -->
                     <li class="cs-menu-voice-item">
                         <a href="" class="flex items-center cs-menu-item">
-                            <span class="cs-menu-item-span">Biblical journey through the Mass</span>
+                            <span class="cs-menu-item-span">The bible and the mass</span>
+                        </a>
+                    </li>
+                    <!-- L2 public menu item (mobile) -->
+                    <li class="relative w-full cs-menu-item">
+                        <a
+                            aria-haspopup="true"
+                            aria-controls="cs-menu-lang"
+                            href="#"
+                            class="flex items-center w-full text-left cs-mobile-menu-button cs-menu-voice-item cs-menu-item">
+                            <span class="pr-1 cs-menu-item-span">Sunday gospels</span>
+                            <span class="flex justify-end flex-1 ml-auto">
+                                <img src="src/assets/menu-arrow-down.svg"
+                                    class="cs-menu-item-icon object-contain shrink-0 self-stretch my-auto w-3 aspect-[1.5]"
+                                    alt="Arrow Down" />
+                            </span>
+                        </a>
+                        <!-- Container list for L3 public menu items (mobile) -->
+                        <ul
+                            aria-hidden="true"
+                            class="hidden overflow-hidden border cs-menu-mobile-level3 cs-mobile-menu min-w-32 cs-inner">
+                            <!-- L3 public menu item (mobile) -->
+                            <li class="cs-menu-voice-item">
+                                <a href="" class="flex items-center cs-menu-item">
+                                    <span class="cs-menu-item-span">Advent journey</span>
+                                </a>
+                            </li>
+                            <!-- L3 public menu item (mobile) -->
+                            <li class="cs-menu-voice-item ">
+                                <a href="" class="flex items-center cs-menu-item">
+                                    <span class="cs-menu-item-span">Lenten journey</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <!-- L2 public menu item (mobile) -->
+                    <li class="relative cs-menu-item">
+                        <a
+                            aria-haspopup="true"
+                            aria-controls="menu-lang"
+                            href="#"
+                            class="flex items-center w-full text-left cs-mobile-menu-button cs-menu-voice-item cs-menu-item">
+                            <span class="pr-1 cs-menu-item-span">The four last things</span>
+                            <span class="flex justify-end flex-1 ml-auto">
+                                <img src="src/assets/menu-arrow-down.svg"
+                                    class="cs-menu-item-icon object-contain shrink-0 self-stretch my-auto w-3 aspect-[1.5]"
+                                    alt="Arrow Down" />
+
+                            </span>
+                        </a>
+                        <!-- Container list for L3 public menu items (mobile) -->
+                        <ul
+                            aria-hidden="true"
+                            class="hidden overflow-hidden border cs-menu-mobile-level3 cs-mobile-menu min-w-32 cs-inner">
+                            <!-- L3 public menu item (mobile) -->
+                            <li class="cs-menu-voice-item">
+                                <a href="" class="flex items-center cs-menu-item">
+                                    <span class="cs-menu-item-span">Hell</span>
+                                </a>
+                            </li>
+                            <!-- L3 public menu item (mobile) -->
+                            <li class="cs-menu-voice-item">
+                                <a href="" class="flex items-center cs-menu-item">
+                                    <span class="cs-menu-item-span">Purgatory</span>
+                                </a>
+                            </li>
+                            <!-- L3 public menu item (mobile) -->
+                            <li class="cs-menu-voice-item ">
+                                <a href="" class="flex items-center cs-menu-item">
+                                    <span class="cs-menu-item-span">Heaven</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <!-- L2 public menu item (mobile) -->
+                    <li class="cs-menu-voice-item">
+                        <a href="" class="flex items-center cs-menu-item">
+                            <span class="cs-menu-item-span">Prayer with a rule of life</span>
+                        </a>
+                    </li>
+                    <!-- L2 public menu item (mobile) -->
+                    <li class="cs-menu-voice-item ">
+                        <a href="" class="flex items-center cs-menu-item">
+                            <span class="cs-menu-item-span">Concise Catechism</span>
                         </a>
                     </li>
                 </ul>
@@ -287,18 +455,53 @@ $isLogged = isset($_GET['logged']) && $_GET['logged'] === 'true';
                 <!-- L1 public menu item (mobile) -->
                 <a
                     aria-haspopup="true"
-                    aria-controls="menu"
+                    aria-controls="menu-2"
                     href="#"
                     class="flex items-center w-full cs-mobile-menu-button cs-menu-item cs-menu-voice-item cs-menu-item-active">
-                    <span class="cs-menu-item-span">Our ministry</span>
+
+                    <span class="cs-menu-item-span">Resources</span>
                     <img src="src/assets/menu-arrow-down.svg"
                         class="cs-menu-item-icon object-contain shrink-0 self-stretch my-auto w-3 aspect-[1.5]"
                         alt="Arrow Down" />
                 </a>
                 <!-- Container list for L2 public menu items (mobile) -->
                 <ul
+                    id="menu-2"
                     aria-hidden="true"
-                    class="hidden w-full mx-auto tracking-widest cs-mobile-menu cs-menu-mobile-level2">
+                    class="hidden w-full mx-auto overflow-hidden tracking-widest cs-mobile-menu cs-menu-mobile-level2">
+                    <!-- L2 public menu item (mobile) -->
+                    <li class="cs-menu-voice-item">
+                        <a href="" class="flex items-center cs-menu-item">
+                            <span class="cs-menu-item-span">Ascension Press</span>
+                        </a>
+                    </li>
+                    <!-- L2 public menu item (mobile) -->
+                    <li class="cs-menu-voice-item ">
+                        <a href="" class="flex items-center cs-menu-item">
+                            <span class="cs-menu-item-span">Bible Tools</span>
+                        </a>
+                    </li>
+                </ul>
+            </li>
+
+            <!-- Container div for L1 public menu item (mobile) -->
+            <li class="flex flex-col items-center w-full group cs-menu-item">
+                <!-- L1 public menu item (mobile) -->
+                <a
+                    aria-haspopup="true"
+                    aria-controls="menu-2"
+                    href="#"
+                    class="flex items-center w-full cs-mobile-menu-button cs-menu-item cs-menu-voice-item cs-menu-item-active">
+                    <span class="cs-menu-item-span">About us</span>
+                    <img src="src/assets/menu-arrow-down.svg"
+                        class="cs-menu-item-icon object-contain shrink-0 self-stretch my-auto w-3 aspect-[1.5]"
+                        alt="Arrow Down" />
+                </a>
+                <!-- Container list for L2 public menu items (mobile) -->
+                <ul
+                    id="menu-2"
+                    aria-hidden="true"
+                    class="hidden w-full mx-auto overflow-hidden tracking-widest cs-mobile-menu cs-menu-mobile-level2">
                     <!-- L2 public menu item (mobile) -->
                     <li class="cs-menu-voice-item">
                         <a href="" class="flex items-center cs-menu-item">
@@ -306,44 +509,27 @@ $isLogged = isset($_GET['logged']) && $_GET['logged'] === 'true';
                         </a>
                     </li>
                     <!-- L2 public menu item (mobile) -->
-                    <li class="cs-menu-voice-item">
+                    <li class="cs-menu-voice-item ">
                         <a href="" class="flex items-center cs-menu-item">
-                            <span class="cs-menu-item-span">Our Gallery</span>
+                            <span class="cs-menu-item-span">Endorsements</span>
                         </a>
                     </li>
                     <!-- L2 public menu item (mobile) -->
-                    <li class="cs-menu-voice-item">
+                    <li class="cs-menu-voice-item ">
                         <a href="" class="flex items-center cs-menu-item">
-                            <span class="cs-menu-item-span">Support</span>
-                        </a>
-                    </li>
-                    <!-- L2 public menu item (mobile) -->
-                    <li class="cs-menu-voice-item">
-                        <a href="" class="flex items-center cs-menu-item">
-                            <span class="cs-menu-item-span">Ascension Press</span>
+                            <span class="cs-menu-item-span">Gallery</span>
                         </a>
                     </li>
                 </ul>
             </li>
 
-            <!-- Container div for L1 public menu item (mobile) -->
-            <li class="flex flex-col items-center w-full group cs-menu-item">
-                <!-- L1 public menu item (mobile) -->
-                <a
-                    aria-haspopup="true"
-                    aria-controls="menu"
-                    href="#"
-                    class="flex items-center w-full cs-mobile-menu-button cs-menu-item cs-menu-voice-item cs-menu-item-active">
-                    <span class="cs-menu-item-span">Endorsements</span>
-                </a>
-            </li>
 
             <!-- Container div for L1 public menu item (mobile) -->
             <li class="flex flex-col items-center w-full group cs-menu-item">
                 <!-- L1 public menu item (mobile) -->
                 <a
                     aria-haspopup="true"
-                    aria-controls="menu"
+                    aria-controls="menu-2"
                     href="#"
                     class="flex items-center w-full cs-mobile-menu-button cs-menu-item cs-menu-voice-item cs-menu-item-active">
                     <span class="cs-menu-item-span !mr-2">Testimonials</span>
@@ -353,22 +539,23 @@ $isLogged = isset($_GET['logged']) && $_GET['logged'] === 'true';
 
             <?php if (!$isLogged) { ?>
                 <!-- Sign up button (mobile) | If user is not logged -->
-                <a href="#" class="flex flex-row items-center cs-mobile-menu-auth-item">
-                    <img src="src/assets/sign-up-paper.svg" class="w-auto h-5 my-auto mr-2 cs-mobile-menu-auth-icon" alt="Sign Up" />
+                <a href="#" class="flex flex-row items-center cs-fs-base cs-mobile-menu-auth-item">
+                    <img src="src/assets/sign-up-paper.svg" class="w-auto my-auto mr-2 cs-mobile-menu-auth-icon" alt="Sign Up" />
                     <span>Sign Up</span>
                 </a>
                 <!-- Log in button (mobile) | If user is not logged -->
-                <a href="/?logged=true" class="flex flex-row items-center cs-mobile-menu-auth-item">
-                    <img src="src/assets/log-in-paper.svg" class="w-auto h-6 my-auto mr-3 cs-mobile-menu-auth-icon" alt="Log In" />
+                <a href="/?logged=true" class="flex flex-row items-center cs-fs-base cs-mobile-menu-auth-item">
+                    <img src="src/assets/log-in-paper.svg" class="w-auto my-auto mr-4 cs-mobile-menu-auth-icon" alt="Log In" />
                     <span>Log In</span>
                 </a>
             <?php } else { ?>
                 <!-- Log out button (mobile) | If user is logged -->
-                <a href="/" class="flex flex-row items-center cs-mobile-menu-auth-item">
-                    <img src="src/assets/log-out-paper.svg" class="w-auto h-6 my-auto mr-2 cs-mobile-menu-auth-icon" alt="Log Out" />
+                <a href="/" class="flex flex-row items-center cs-fs-base cs-mobile-menu-auth-item">
+                    <img src="src/assets/log-in.svg" class="w-auto my-auto cs-mobile-menu-auth-icon" alt="Log Out" />
                     <span>Log Out</span>
                 </a>
             <?php } ?>
+
             <li class="flex flex-col items-center cs-mobile-menu-footer-item">
                 <span>Come & See 2025</span>
                 <span>All rights Reserved</span>

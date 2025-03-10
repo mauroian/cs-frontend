@@ -17,9 +17,9 @@
 
         <!-- Page Title container -->
         <div class="flex flex-col items-center w-full px-5 py-6 text-white bg-cs-red-main">
-            <span class="tracking-widest uppercase sm:cs-fs-sm cs-fs-xs">course registration</span>
+            <span class="tracking-widest uppercase sm:cs-fs-sm cs-fs-sm">course registration!</span>
             <h1 class="font-sans  font-semibold leading-[45px] my-3 text-center cs-fs-2xl sm:cs-fs-3xl">Bible Timeline Course</h1>
-            <span class="tracking-widest uppercase sm:cs-fs-sm cs-fs-xs">September 2024</span>
+            <span class="tracking-widest uppercase sm:cs-fs-sm cs-fs-sm">September 2024</span>
         </div>
 
         <!-- Outer container -->
@@ -142,7 +142,7 @@
                     Course Registration
                 </div>
                 <!-- Box Form -->
-                <div class="cs-course-container bg-cs-paper-shade">
+                <div class="cs-course-container">
                     <p class="mb-6 cs-course-text">
                         Our long-term vision is to create <span class="font-bold">faith-sharing small groups</span> according to
                         similar age brackets, balanced gender ratio & location.
@@ -153,7 +153,7 @@
                         <div class="relative cs-form-input-container cs-form-small-container">
                             <input id="birthdate" required type="date" placeholder="" class="cs-course-input" />
                         </div>
-                        <label for="sex" class="cs-form-label">Your sex</label>
+                        <label for="sex" class="cs-form-label">Your gender</label>
                         <!-- Input Sex -->
                         <div class="relative cs-form-input-container cs-form-small-container">
                             <select id="sex" required class="cs-course-select">

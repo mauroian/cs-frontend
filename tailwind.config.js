@@ -8,8 +8,9 @@ export default {
     screens: {
       xsm: "400px",
       sm: "480px",
-      md: "920px",  /* "768px" */
+      md: "920px",  /* standard would be "768px" */
       lg: "1024px",
+      lg2: "1150px", /* used only for controlling when menu switches. If I want to do so, I only need to act here. Everything else will adapt automatically. This is true and tested for lg2 > lg. If I want to switch menu below lg, not sure what will happen (but I see no reason for such a case) */
       xl: "1280px",
       "2xl": "1536px",
     },
@@ -35,6 +36,9 @@ export default {
         "9xl": "7rem",
       },
       colors: {
+        "cs-red-light-1": "#F7EFED",
+        "cs-red-light-2": "#F2E4E1",
+        "cs-red-light-3": "#E4CECA",
         "cs-red-dark": "#570208",
         "cs-red-main": "#86171E",
         "cs-red-medium": "#BF0511",

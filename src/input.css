@@ -11,13 +11,13 @@
             @apply text-[0.65rem]
     }
     .cs-fs-3xs {
-        @apply text-xs sm:text-xs
+        @apply text-xs sm:text-[0.6rem]
     }
     .cs-fs-2xs {
-        @apply text-sm sm:text-sm
+        @apply text-sm sm:text-xs
     }
     .cs-fs-xs {
-        @apply text-base sm:text-base
+        @apply text-base sm:text-sm
     }
 
     .cs-fs-sm {
@@ -28,11 +28,9 @@
         @apply text-xl sm:text-[1.25rem]
         /* "xl": "1.25rem" */
     }
-
     .cs-fs-lg {
         @apply text-2xl sm:text-2xl
     }
-
     .cs-fs-xl {
         @apply text-3xl sm:text-3xl
     }
@@ -48,7 +46,6 @@
 }
 
 @layer components {
-
     .cs-main {
      @apply 
      mt-24 pb-44   /* [param] sets margins for <main> element.
@@ -56,14 +53,12 @@
     */
     bg-cs-paper-shade
     }
-
-
     /* whole navbar features (desktop & mobile) */
     .cs-header {
         @apply
+            lg2:border-0
             h-24  /* [param] header height (desktop, mobile) */
             border-b-4 /* [param] thickness of header's bottom line (mobile) */
-            md:border-0
             border-cs-red-main /* [param] colour of header's bottom line (mobile) */
             max-w-[1500px] /* [param] max width of container of logo and auth buttons (desktop) */
           text-cs-red-main /* [param] font colour of header (desktop, mobile) */
@@ -74,8 +69,7 @@
     .cs-menu-level1 {
         @apply
         gap-6
-        md:gap-4
-        lg:gap-6
+        mt-4
         /* [param] gap between public menu items (desktop) */
         ml-auto
         /* [param] left margin of public menu items container div (desktop) */
@@ -100,7 +94,7 @@
         @apply
             ml-2 /* [param] left margin of logo (desktop, mobile) */
             mr-auto /* for mobile, this must be set */
-            md:mr-0 /* [param] right margin of logo (desktop) */
+            lg2:mr-0 /* [param] right margin of logo (desktop) */
             min-w-56
             sm:min-w-56
     }
@@ -112,10 +106,9 @@
             font-serif /* [param] font family for public menu items (desktop & mobile) */
             font-medium
             cs-fs-base /* [param] font size for public menu items (desktop & mobile) */
-            md:cs-fs-xs
+            lg2:cs-fs-sm
             tracking-normal /* [param] letter spacing for public menu items (desktop & mobile) */
-            uppercase /* [param] words case for public menu items (desktop & mobile) */
-            md:w-auto;
+            uppercase; /* [param] words case for public menu items (desktop & mobile) */
     }
 
     /*
@@ -148,7 +141,7 @@
     /* menu item text element */
     /* underline hover effect (part 1) */
     .cs-menu-item-span {
-        @apply relative mr-auto md:mr-0;
+        @apply relative mr-auto lg2:mr-0;
         line-height: 1;
         transition-duration: 0.3s;
         transition-property: all;
@@ -160,6 +153,9 @@
     .cs-menu-item:hover > .cs-menu-item-span:after {
         @apply
         w-0 left-1/2 md:w-full md:left-0;
+        /* ??? should replace md with lg2? 
+         And what do these directives do?
+        */
     }
 
     /** rule for mobile menu */
@@ -182,7 +178,7 @@
 
             border-b  /* [param] thickness of divider line of public menu items (desktop & mobile) */
             border-cs-red-main /* [param] color of divider line of public menu items (desktop & mobile) */
-            md:last:border-b-0
+            lg2:last:border-b-0 /* must act from when the menu switches to desktop */
             flex
             flex-wrap
             items-center
@@ -208,7 +204,7 @@
             uppercase
             origin-top
             rounded-xl /* [param] roundness of Level 2 box of public menu items (desktop) */
-            bg-cs-paper-shade /* [param] background colour of Level 2 box of public menu items (desktop) */
+            bg-cs-red-light-2 /* [param] background colour of Level 2 box of public menu items (desktop) */
             text-cs-red-main /* [param] font colour of Level 2 box of public menu items (desktop) */
             shadow-cs-all-around; /* [param] kind of shadow of Level 2 box of public menu items (desktop) */
     }
@@ -220,19 +216,34 @@
             right-2 /* [param] left-shift of Level 3 box from the relative level 2 menu item in public manu (desktop) */
             hidden
             z-20
-            shadow-cs-all-around; /* [param] kind of shadow of Level 3 box of public menu items (desktop) */
+            shadow-cs-all-around /* [param] kind of shadow of Level 3 box of public menu items (desktop) */
+            bg-cs-red-light-3
+            rounded-xl;
     }
 
+    .cs-menu-mobile-level1 {
+        @apply bg-cs-red-light-1;
+    }
+
+    .cs-menu-mobile-level2 {
+        @apply bg-cs-red-light-2;
+    }
+
+    .cs-menu-mobile-level3 {
+        @apply bg-cs-red-light-3;
+    }
+        
     /* auth 'block' and dropdown user menu (desktop & mobile) */
     .cs-menu-auth-logged,
     .cs-menu-auth {
         @apply
+            /* border   -- to debug */
             ml-4 /* [param] left margin of the auth 'block' and dropdown user menu (mobile): controls the gap between user avatar and hamburger  */
             md:ml-4 /* [param] left margin of the auth 'block' and dropdown user menu (desktop): controls the gap from the L1 menu items, if these are right aligned */
             mr-2 /* [param] right margin of the auth 'block' and dropdown user menu (mobile) */
             md:mr-2 /* [param] right margin of the auth 'block' and dropdown user menu (desktop) */
-            md:min-w-8
-            lg:min-w-56; /* [param] the minimum width of the of the auth 'block': : must not be too small to have the desired effect of not making L1 items change position if user is logged or not */
+            md:min-w-20
+            xl:min-w-52; /* [param] the minimum width of the of the auth 'block': : must not be too small to have the desired effect of not making L1 items change position if user is logged or not */
     }
 
     /* menu auth block (desktop) */
@@ -255,17 +266,17 @@
             font-sans /* [param] (desktop) */
             font-medium /* [param] (desktop) */
             uppercase /* [param] (desktop) */
-            cs-fs-xs /* [param] (desktop) */
+            cs-fs-sm /* [param] (desktop) */
     }
 
     .cs-menu-auth-item span {
         @apply
-          md:hidden lg:inline-block;
+          hidden xl:inline-block; /* "Sign Up" and "Log In" words disappera below xl leaving only the two icons */
     }
 
     .cs-mobile-menu-footer-item {
         @apply
-            py-5 tracking-wide border-b cs-fs-badge border-cs-red-main;
+            py-8 tracking-wide border-b cs-fs-xs border-cs-red-main;
     }
 
     /* testimonials badge (desktop) */
@@ -297,7 +308,7 @@
     .cs-logged-name {
         @apply
         text-black /* [param] */
-        cs-fs-3xs; /* [param] */
+        cs-fs-2xs; /* [param] */
     }
 
     /* user menu outer container (desktop, mobile) */
@@ -305,7 +316,7 @@
         @apply
             md:right-0 /* [param] (desktop, mobile) */
             -right-5
-            top-12 /* [param] (desktop, mobile) */
+            top-16 /* [param] (desktop, mobile) */
             z-10
             w-[340px] /* [param] (desktop, mobile) */
             rounded-xl
@@ -333,7 +344,6 @@
     .cs-menu-logged-items {
         @apply
             cs-fs-sm
-            sm:cs-fs-xs
             font-medium
             tracking-wider /* [param] (desktop, mobile) */
             uppercase /* [param] (desktop, mobile) */
@@ -433,23 +443,23 @@
     /* public menu auth items (mobile) */
     .cs-mobile-menu-auth-item {
         @apply
-
+            cs-fs-base
             pl-4 /* [param] (mobile) */
             py-3 /* [param] (mobile) */
             font-sans /* [param] (mobile) */
             font-medium /* [param] (mobile) */
             uppercase /* [param] (mobile) */
             border-b /* [param] (mobile) */
-            border-cs-red-main /* [param] (mobile) */
-            bg-cs-red-main/10 /* [param] (mobile) */
+            text-cs-paper
+            border-cs-red-light-3 /* [param] (mobile) */
+            bg-cs-red-main /* [param] (mobile) */
     }
 
     /* public menu auth items (mobile) */
     .cs-mobile-menu-auth-icon {
         @apply
-            h-4 /* [param] (mobile) */
+            h-5 /* [param] (mobile) */
             ml-0 /* [param] (mobile) */
-            mr-2 /* [param] (mobile) */
     }
 
     /* public menu L2 items (mobile) */
@@ -490,16 +500,9 @@
         ring-white; /* [param] */
     }
 
-    /* user firstname under avatar (desktop) */
-    .cs-admin-logged-name {
-        @apply
-        text-white /* [param] */
-        cs-fs-xs; /* [param] */
-    }
-
     .cs-admin-breadcrumb {
         @apply
-        cs-fs-xs
+        cs-fs-sm
         font-thin
         text-cs-breadcrumb
         transition-colors duration-300
@@ -654,7 +657,7 @@
     }
 
     .cs-form-input {
-        @apply py-1.5 placeholder:text-cs-red-main/50 autofill:text-cs-red-main/50 autofill:cs-fs-xs text-cs-red-main font-semibold cs-fs-xs border-cs-red-main border-2 rounded-l-3xl rounded-r-xl bg-cs-paper-shade pl-4 w-full md:w-full;
+        @apply py-1.5 placeholder:text-cs-red-main/50 autofill:text-cs-red-main/50 autofill:cs-fs-sm text-cs-red-main font-semibold cs-fs-sm border-cs-red-main border-2 rounded-l-3xl rounded-r-xl bg-cs-paper-shade pl-4 w-full md:w-full;
     }
 
     .cs-form-input.cs-form-input-icon {
@@ -697,7 +700,7 @@
 
     .cs-course-input,
     .cs-course-select {
-        @apply py-1.5 placeholder:text-cs-red-dark/50 text-cs-red-dark autofill:text-cs-red-dark/50 autofill:text-cs-red-dark autofill:cs-fs-xs font-semibold cs-fs-xs border-cs-red-dark border-2 rounded-l-3xl rounded-r-xl bg-cs-paper-shade pl-4 w-full;
+        @apply py-1.5 placeholder:text-cs-red-dark/50 text-cs-red-dark autofill:text-cs-red-dark/50 autofill:text-cs-red-dark autofill:cs-fs-sm font-semibold cs-fs-sm border-cs-red-dark border-2 rounded-l-3xl rounded-r-xl bg-cs-paper-shade pl-4 w-full;
     }
 
 
@@ -714,15 +717,15 @@
     }
 
     .cs-course-arrow {
-        @apply w-8 h-10 text-white rounded-r-lg bg-cs-red-dark sm:h-10;
+        @apply w-8 text-white rounded-r-lg bg-cs-red-dark h-10 sm:h-[2.4rem] pt-1;
     }
 
     .cs-course-phone-prefix {
-        @apply py-1.5 placeholder:text-cs-red-dark text-cs-red-dark font-semibold cs-fs-xs border-cs-red-dark border-2 rounded-l-3xl rounded-r-xl w-full min-w-[150px] bg-cs-paper-shade pl-10;
+        @apply py-1.5 placeholder:text-cs-red-dark text-cs-red-dark font-semibold cs-fs-sm border-cs-red-dark border-2 rounded-l-3xl rounded-r-xl w-full min-w-[150px] bg-cs-paper-shade pl-10;
     }
 
     .cs-course-phone-number {
-        @apply py-1.5 placeholder:text-cs-red-dark text-cs-red-dark font-semibold cs-fs-xs border-cs-red-dark border-2 rounded-xl bg-cs-paper-shade w-full pl-4 md:pl-4
+        @apply py-1.5 placeholder:text-cs-red-dark text-cs-red-dark font-semibold cs-fs-sm border-cs-red-dark border-2 rounded-xl bg-cs-paper-shade w-full pl-4 md:pl-4
     }
 
     .cs-course-checkbox {
