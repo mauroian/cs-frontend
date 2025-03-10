@@ -136,12 +136,16 @@ $isLogged = isset($_GET['logged']) && $_GET['logged'] === 'true';
             <!-- Container div for user avatar and user menu (desktop & mobile) | If user is logged -->
             <div class="relative z-30 flex flex-col items-end justify-end min-w-0 pt-1 cs-menu-auth-logged group lg2:min-w-20 xl:min-w-52">
                 <div class="flex flex-col items-center justify-end">
+
                     <!-- user avatar picture (desktop & mobile) -->
-                    <img class="mt-1 h-11 w-11 cs-logged-avatar" src="/src/assets/sample_avatar.png" alt="Bordered avatar">
-                    <img class="hidden p-2 mt-1 ml-2 w-11 h-11 cs-logged-avatar" src="/src/assets/close-icon.svg" alt="Bordered avatar">
+                    <img class="mt-1 h-11 w-11 cs-logged-avatar" src="/src/assets/sample_avatar.png" alt="">
+
+                    <img class="hidden p-2 mt-1 ml-0 w-11 h-11 cs-logged-avatar" src="/src/assets/close-icon.svg" alt="">
+
                     <!-- user avatar name (desktop & mobile) -->
                     <span class="hidden pt-1 cs-logged-name lg2:block">Mauro</span>
                 </div>
+
                 <!-- Container div for user menu (desktop & mobile) -->
                 <div class="absolute flex-col justify-start invisible opacity-0 cs-menu-logged">
                     <!-- Container div for user menu upper part (user picture, name and email) (desktop & mobile) -->
@@ -153,6 +157,7 @@ $isLogged = isset($_GET['logged']) && $_GET['logged'] === 'true';
                             <span class="font-sans font-medium truncate cs-fs-2xs">mauro.iannicelli@comeandsee.org</span>
                         </div>
                     </div>
+
                     <!-- Container list for L1 user menu items (desktop & mobile) -->
                     <ul class="cs-menu-logged-items" aria-labelledby="Logged Menu">
                         <!-- L1 user menu item (desktop & mobile) -->
