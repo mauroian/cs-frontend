@@ -13,7 +13,7 @@
     <?php require_once 'header-admin.php'; ?>
 
     <main class="flex-grow mt-20 duration-300 transform md:mt-0 md:ml-0 main-admin">
-        <?php require_once 'add-membership.php'; ?>
+        <?php require_once 'add-user.php'; ?>
     </main>
 </body>
 

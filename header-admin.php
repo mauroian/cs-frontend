@@ -20,7 +20,7 @@
         <!-- Container div for logo (desktop & mobile)-->
         <div class="flex flex-grow cs-menu-logo">
             <a href="/">
-                <img src="/src/assets/logos/cs-logo-paper.png" class="h-12" alt="Logo" />
+                <img src="/src/assets/logos/cs-logo-paper-bg-transp.svg" class="h-12" alt="Logo" />
             </a>
         </div>
         <!-- Container div for user avatar and user menu (desktop & mobile) | If user is logged -->
@@ -38,14 +38,14 @@
                         alt="Bordered avatar">
                     <div class="flex flex-col">
                         <span class="font-serif italic cs-fs-base">Mauro Iannicelli</span>
-                        <span class="font-sans font-medium truncate cs-fs-3xs">mauro.iannicelli@comeandsee.org</span>
+                        <span class="font-sans font-medium truncate cs-fs-2xs">mauro.iannicelli@comeandsee.org</span>
                     </div>
                 </div>
                 <!-- Container list for L1 user menu items (desktop & mobile) -->
                 <ul class="cs-menu-logged-items" aria-labelledby="Logged Menu">
                     <!-- L1 user menu item (desktop & mobile) -->
                     <li class="block cs-menu-logged-item">
-                        <a class="flex flex-row justify-between w-full" href="#">Your personal page</a>
+                        <a class="flex flex-row justify-between w-full" href="#">Your area</a>
                     </li>
                     <!-- L1 user menu item (desktop & mobile) -->
                     <li class="block cs-menu-logged-item cs-logged-nested">
@@ -130,8 +130,8 @@
                     <li>
                         <a class="flex items-center active cs-sidebar-item"
                             href="#">
-                            <img src="/src/assets/dashboard.svg" alt="Dashboard" class="w-5 h-5">
-                            <span class="uppercase select-none">Dashboard</span>
+                            <img src="/src/assets/dashboard.svg" alt="Your Area" class="w-5 h-5">
+                            <span class="uppercase select-none">Your area</span>
                         </a>
                     </li>
                     <li>
