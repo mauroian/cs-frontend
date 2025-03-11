@@ -29,15 +29,34 @@
             <!-- QUICK LINKS block -->
             <div class="font-sans cs-fs-sm">
                 <p class="mb-5 font-bold sm:ml-5">Quick links</p>
-                <div class="flex flex-col flex-wrap justify-start sm:h-[290px]  mt-3 gap-2.5 cs-quicklinks">
+                <div class="flex flex-col flex-wrap justify-start sm:h-[510px]  mt-3 gap-2.5 cs-quicklinks">
                     <a href="#"><span>Bible Timeline Course</span></a>
                     <a href="#"><span>Biblical Journey </br>Through the Mass</span></a>
-                    <a href="#"><span>Let's get personal!</span></a>
-                    <a href="#"><span>Our Gallery</span></a>
-                    <a href="#"><span>Support Us</span></a>
-                    <a href="#"><span>Ascension Press</span></a>
+                    <a href="#"><span>Sunday Gospels</span></a>
+                    <a href="#"><span>Advent Journey</span></a>
+                    <a href="#"><span>Lenten Journey</span></a>
+                    <a href="#"><span>The Four Last Things</span></a>
+                    <a href="#"><span>Hell</span></a>
+                    <a href="#"><span>Purgatory</span></a>
+                    <a href="#"><span>Heaven</span></a>
+                    <a href="#"><span>Prayer with a </br>Rule of Life</span></a>
+                    <a href="#"><span>Concise Catechism</span></a>
                     <a href="#"><span>Endorsements</span></a>
+                    <a href="#"><span>Ascension Press</span></a>
+                    <a href="#"><span>Bible Tools</span></a>
+                    <a href="#"><span>Let's get personal!</span></a>
+                    <a href="#"><span>Gallery</span></a>
                     <a href="#"><span>Testimonials</span></a>
+                    <a href="#"><span>Bible Timeline Course</span></a>
+                    <a href="#"><span>Biblical Journey </br>Through the Mass</span></a>
+                    <a href="#"><span>Sunday Gospels</span></a>
+                    <a href="#"><span>Advent Journey</span></a>
+                    <a href="#"><span>Lenten Journey</span></a>
+                    <a href="#"><span>The Four Last Things</span></a>
+                    <a href="#"><span>Hell</span></a>
+                    <a href="#"><span>Purgatory</span></a>
+                    <a href="#"><span>Heaven</span></a>
+
                 </div>
             </div> <!-- END QUICK LINKS block -->
 

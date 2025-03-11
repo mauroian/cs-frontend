@@ -370,8 +370,8 @@ const fadeToggle = (el, display, duration = 500) => {
     }
 }
 
+let prevAnimation = false;
 const fadeAnime = async (target, duration, type) => {
-  'use strict';
 
   const typeFadeToggle = 'fadeToggle';
   const typeFadeIn = 'fadeIn';
@@ -400,33 +400,38 @@ const fadeAnime = async (target, duration, type) => {
 
   const targetStyle = target.style;
   const displayStyle = options.displayStyle;
-
+  if(prevAnimation !== false){
+    cancelAnimationFrame(prevAnimation);
+  }
   let opacityAnimeValue;
-  if(isFadeOut) {
-    targetStyle.opacity = 1;
-    opacityAnimeValue = 0;
+  prevAnimation = requestAnimationFrame(async() => {
+    if (isFadeOut) {
+      targetStyle.opacity = 1;
+      opacityAnimeValue = 0;
 
-  } else {
-    targetStyle.display = displayStyle;
-    targetStyle.opacity = 0;
-    opacityAnimeValue = 1;
-  }
-  await target.animate(
-    {
-      opacity: opacityAnimeValue
-    },
-    {
-      duration: duration,
-      easing: options.easing
+    } else {
+      targetStyle.display = displayStyle;
+      targetStyle.opacity = 0;
+      opacityAnimeValue = 1;
     }
-  ).finished;
+    await target.animate(
+      {
+        opacity: opacityAnimeValue
+      },
+      {
+        duration: duration,
+        easing: options.easing
+      }
+    ).finished;
 
-  targetStyle.opacity = '';
+    prevAnimation = false;
 
+    targetStyle.opacity = '';
 
-  if(isFadeOut) {
-    targetStyle.display = textNone;
-  }
+    if(isFadeOut) {
+      targetStyle.display = textNone;
+    }
+  });
 }
 
 // load namespace
