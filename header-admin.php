@@ -52,7 +52,7 @@
                         <a href="#" class="flex flex-row justify-between w-full">
                             Your account
                             <!-- L1 dropdown harrow (desktop & mobile) -->
-                            <img src="src/assets/logged-arrow-down.svg"
+                            <img src="/src/assets/logged-arrow-down.svg"
                                 class="cs-menu-item-icon object-contain shrink-0 self-stretch my-auto w-3 aspect-[1.5]"
                                 alt="Arrow Down" />
                         </a>
@@ -73,7 +73,7 @@
                     <!-- L1 user menu item (desktop & mobile) -->
                     <li class="block cs-menu-logged-item cs-logged-nested">
                         <a href="#" class="flex flex-row justify-between w-full">Options
-                            <img src="src/assets/logged-arrow-down.svg"
+                            <img src="/src/assets/logged-arrow-down.svg"
                                 class="cs-menu-item-icon object-contain shrink-0 self-stretch my-auto w-3 aspect-[1.5]"
                                 alt="Arrow Down" />
                         </a>
@@ -104,7 +104,7 @@
                 <!-- L1 Log out user menu item (desktop & mobile) -->
                 <div class="flex cs-menu-logged-bottom">
                     <a href="/" class="flex flex-row items-center">
-                        <img src="src/assets/log-out.svg" class="w-auto h-6 my-auto cs-menu-logout-icon"
+                        <img src="/src/assets/log-out.svg" class="w-auto h-6 my-auto cs-menu-logout-icon"
                             alt="Log Out" />
                         Log out
                     </a>
@@ -161,7 +161,7 @@
                             <img src="/src/assets/stats.svg" alt="Stats" class="w-5 h-5">
                             <span class="uppercase select-none">Stats</span>
                             <span class="flex justify-end flex-1 ml-auto">
-                                <img src="src/assets/admin-arrow.svg"
+                                <img src="/src/assets/admin-arrow.svg"
                                     class="cs-menu-item-icon object-contain shrink-0 self-stretch my-auto w-3 aspect-[1.5]"
                                     alt="Arrow Down" />
 
@@ -173,7 +173,7 @@
                                     href="#">
                                     <span class="uppercase select-none">Devices</span>
                                     <span class="flex justify-end flex-1 ml-auto">
-                                        <img src="src/assets/admin-arrow.svg"
+                                        <img src="/src/assets/admin-arrow.svg"
                                             class="cs-menu-item-icon object-contain shrink-0 self-stretch my-auto w-3 aspect-[1.5]"
                                             alt="Arrow Down" />
 
