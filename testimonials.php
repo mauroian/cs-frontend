@@ -34,7 +34,7 @@
         </div>
         <div class="max-w-[800px] w-full px-4">
             <!-- Selettori -->
-            <div class="flex sm:flex-row flex-col w-full gap-3.5 py-10 items-center justify-start">
+            <div class="flex sm:flex-row flex-col w-full gap-2 py-10 items-center justify-start">
                 <div class="relative max-sm:w-full">
                     <select id="country" required class="cs-testimonials-select">
                         <option value="">All Testimonials (1,252)</option>
