@@ -400,12 +400,7 @@
     /* since nested groups are not supported we have to use
        regular css for the nested dropdowns event    */
     .cs-menu-level2 li > ul {
-        transform: translatex(100%);
-        opacity: 0;
-    }
-
-    .cs-menu-level2 li:hover > ul {
-        transform: translatex(101%);
+       transform: translatex(101%);
         opacity: 1;
     }
 

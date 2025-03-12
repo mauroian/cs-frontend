@@ -371,9 +371,9 @@ const fadeOut = (el, duration, delay = 0) => {
 };
 
 const fadeIn = (el, duration, delay = 0) => {
- // throttle(() =>
+  //throttle(() =>
     fadeAnime(el, duration, 'fadeIn')
- // , delay);
+  //, 10);
 };
 
 const fadeToggle = (el, display, duration = 500) => {
@@ -384,7 +384,8 @@ const fadeToggle = (el, display, duration = 500) => {
     }
 }
 
-let prevAnimation = false;
+let prevAnimation = {};
+let animationQueue = {};
 const fadeAnime = async (target, duration, type) => {
 
   const typeFadeToggle = 'fadeToggle';
@@ -414,11 +415,14 @@ const fadeAnime = async (target, duration, type) => {
 
   const targetStyle = target.style;
   const displayStyle = options.displayStyle;
-  if(prevAnimation !== false){
-    cancelAnimationFrame(prevAnimation);
+  if(prevAnimation.hasOwnProperty(target) && prevAnimation[target] !== false){
+    cancelAnimationFrame(animationQueue[target]);
+    delete animationQueue[target];
+    prevAnimation[target] = false;
   }
   let opacityAnimeValue;
-  prevAnimation = requestAnimationFrame(async() => {
+  prevAnimation[target] = animeType;
+  animationQueue[target] = requestAnimationFrame(async() => {
     if (isFadeOut) {
       targetStyle.opacity = 1;
       opacityAnimeValue = 0;
@@ -438,7 +442,7 @@ const fadeAnime = async (target, duration, type) => {
       }
     ).finished;
 
-    prevAnimation = false;
+    prevAnimation[target] = false;
 
     targetStyle.opacity = '';
 
