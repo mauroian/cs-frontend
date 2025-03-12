@@ -16,8 +16,8 @@
     <main class="flex-grow cs-main bg-cs-paper">
         <div class="flex flex-col items-center md:mb-32">
             <!-- 'Title' container -->
-            <div class="relative flex flex-col items-end justify-center w-full h-36 sm:h-48  text-white bg-[url('/src/assets/endorsements-header.png')] 2xl:bg-[position:50%_7%] bg-cover">
-                <div class="absolute top-0 left-0 w-full h-full bg-white bg-opacity-40"></div>
+            <div class="relative flex flex-col items-end justify-center w-full h-64 text-white bg-[url('/src/assets/endorsement.png')] bg-top bg-cover">
+                <div class="absolute top-0 left-0 w-full h-full bg-white bg-opacity-50"></div>
             </div>
 
             <!-- Content container -->
@@ -38,7 +38,7 @@
                                     <span class="hidden">close full text</span>
                                 </button>
                             </div>
-                            <div id="read-full-1" class="transition-all duration-300 ease-in-out max-h-[240px] overflow-y-scroll px-6 py-4 text-cs-grey font-serif font-light text-left cs-fs-lg bg-cs-paper-shade text-clip">
+                            <div id="read-full-1" class="transition-all duration-300 ease-in-out max-h-0 overflow-y-auto px-6 text-cs-grey font-serif font-light text-left cs-fs-lg bg-cs-paper-shade text-clip">
                                 Hey, I want to say “hi!” to all my friends in the UK. You know, with the Great Adventure Bible Timeline I am always interested in finding people who can teach it and who can convey the beautiful mysteries of the Catholic faith by opening up Scripture.
                                 In Mauro Iannicelli I have found such a friend and he has such a depth of knowledge of the Bible and theology that it's an honour for me to give my [...]
                             </div>
@@ -92,7 +92,7 @@
                             </button>
                             [1 min. 09 secs.]
                         </div>
-                        <div id="read-full-2" class="transition-all duration-300 ease-in-out max-h-[240px] overflow-y-scroll px-6 py-4 text-cs-grey font-serif font-light text-left cs-fs-lg bg-cs-paper-dark">
+                        <div id="read-full-2" class="transition-all duration-300 ease-in-out max-h-0 overflow-y-auto  px-6 text-cs-grey font-serif font-light text-left cs-fs-lg bg-cs-paper-dark">
                             Hello. I'd like to introduce you to the Bible Timeline course, which is run by Mauro. In the last two years here in San Patrick’s in Soho, we have run the Bible Timeline course twice. Each time it’s amazed me by the number of people who have come. There's been a least 100 people on each occasion.
 
                             Those who come do so with great enthusiasm. And...
@@ -116,7 +116,7 @@
                                     <span>read full text</span>
                                     <span class="hidden">close full text</span></button>
                             </div>
-                            <div id="read-full-3" class="transition-all duration-300 ease-in-out max-h-[240px] overflow-y-scroll px-6 py-4 text-cs-grey font-serif font-light text-left cs-fs-lg bg-cs-paper-shade">
+                            <div id="read-full-3" class="transition-all duration-300 ease-in-out max-h-0 overflow-y-auto  px-6 text-cs-grey font-serif font-light text-left cs-fs-lg bg-cs-paper-shade">
                                 Mauro ran a Bible Timeline Course on Zoom for Youth 2000 and it was amazing!
                                 We had 130 participants who completed the seven sessions of the course and their feedback was excellent.
                                 Many reported they now can see the Bible narrative[...]

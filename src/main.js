@@ -172,9 +172,9 @@ document.addEventListener("DOMContentLoaded", () => {
 
   });
 
-  document.querySelectorAll('div[id*=read-full-]').forEach((el, index) => {
+ /* document.querySelectorAll('div[id*=read-full-]').forEach((el, index) => {
     el.style.maxHeight = el.clientHeight + 'px';
-  });
+  }); */
 
   /** EXPAND FULLY ALL ELEMENT OF ACCORDION **/
   const expandButton = document.querySelector('.cs-accordion-expand');
@@ -215,9 +215,9 @@ function toggleRead(el, index) {
     el.classList.toggle('hidden');
   });
 
-  content.classList.toggle('max-h-[240px]');
-  if ((content.style.maxHeight && parseInt(content.style.maxHeight) > 240)) {
-    content.style.maxHeight = '240px';
+  content.classList.toggle('max-h-0]');
+  if ((content.style.maxHeight && parseInt(content.style.maxHeight) !== 0)) {
+    content.style.maxHeight = '0px';
   } else {
     content.style.maxHeight = content.scrollHeight + 'px';
   }
@@ -274,6 +274,20 @@ function toggleAccordion(index) {
 
 
 }
+
+function toggleViewport(col){
+  console.log('toggle');
+  document.querySelectorAll('.cs-testimonial-viewport-toggle svg').forEach((el) => {
+    el.classList.toggle('hidden');
+  });
+  const el = document.querySelector('.cs-testimonials-viewport');
+  const classes = el.className.split(" ").filter(c => !c.startsWith('grid-cols-'));
+  el.className = classes.join(" ").trim();
+  console.log('grid-cols-'+col);
+  el.classList.add('grid-cols-'+col);
+}
+
+window.toggleViewport = toggleViewport;
 
 
 window.togglePassword = (el) => {

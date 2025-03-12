@@ -115,7 +115,7 @@
 <div id="containerSidebar" class="z-40">
     <div class="relative z-40 navbar-menu">
         <nav id="sidebar"
-            class="fixed bottom-0 left-0 flex flex-col overflow-y-auto -translate-x-full cs-sidebar">
+            class="fixed bottom-0 left-0 flex flex-col overflow-y-auto -translate-x-full cs-sidebar show">
             <div class="px-5 pb-6">
                 <button class="mr-1 cs-admin-expand">
                     <img src="/src/assets/plus.svg" alt="Expand" class="w-6 h-6">

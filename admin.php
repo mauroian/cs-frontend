@@ -12,7 +12,7 @@
 <body class="flex flex-col min-h-screen">
     <?php require_once 'header-admin.php'; ?>
 
-    <main class="flex-grow mt-20 duration-300 transform md:mt-0 md:ml-0 main-admin">
+    <main class="flex-grow mt-20 duration-300 transform md:mt-0 md:ml-80 main-admin">
         <?php require_once 'add-user.php'; ?>
     </main>
 </body>

@@ -94,7 +94,9 @@ export default {
   /* 'safelist' makes sure that the class is generated even if it is not found in any HTML files (in this case I need it as it is needed for Javascript) */
   safelist: [
     "ml-80",
-    "md:ml-80"
+    "md:ml-80",
+    "grid-cols-1",
+    "grid-cols-2"
   ],
   plugins: [require('tailwindcss-motion')],
   variants: {
