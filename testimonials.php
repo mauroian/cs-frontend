@@ -25,17 +25,17 @@
         </div>
         <!-- 'Testimonials' hero -->
         <div class="flex flex-col w-full py-10 bg-cs-paper-shade font-sans cs-fs-base text-cs-red-main items-center">
-            <div class="max-w-[800px] w-full"><span
+            <div class="max-w-[800px] w-full px-4"><span
                         class="pb-2 pl-1 cs-fs-3xs uppercase tracking-widest">Testimonials</span>
                 <p class="max-w-[550px] justify-self-start">We are so encouraged by the <b>1,252 testimonials</b> from
                     participants who have attended
                     Mauro’s
                     courses, from 2018 to now. Take a look below!</p></div>
         </div>
-        <div class="max-w-[800px] w-full">
+        <div class="max-w-[800px] w-full px-4">
             <!-- Selettori -->
-            <div class="flex flex-row w-full gap-3.5 py-10 items-center justify-start">
-                <div class="relative">
+            <div class="flex sm:flex-row flex-col w-full gap-3.5 py-10 items-center justify-start">
+                <div class="relative max-sm:w-full">
                     <select id="country" required class="cs-testimonials-select">
                         <option value="">All Testimonials (1,252)</option>
                     </select>
@@ -47,6 +47,7 @@
                         </svg>
                     </div>
                 </div>
+                <div class="flex flex-row max-sm:flex-row w-full items-center">
                 <button class="cs-testimonials-show">Show</button>
                 <div class="ml-auto mt-2">
                     <button class="cs-testimonial-viewport-toggle" onclick="toggleViewport(1)">
@@ -101,13 +102,14 @@
                         </svg>
                     </button>
                 </div>
+                </div>
             </div>
             <div class="grid grid-cols-1 gap-5 row-auto grid-flow-row cs-testimonials-viewport">
             <!-- 'Testimonials' Box -->
             <div class="flex flex-col w-full items-center cs-testimonials-box mb-5 border-cs-red-medium">
                 <!-- Box Autore -->
                 <div class="relative flex flex-col items-baseline justify-center cs-testimonials-box-author bg-cs-red-medium">
-                    <div class="cs-testimonials-counter absolute -top-[16px] left-[25px] block h-28 border-cs-red-medium text-cs-red-medium"># 1,252</div>
+                    <div class="cs-testimonials-counter absolute -top-[16px] left-[25px] block border-cs-red-medium text-cs-red-medium"># 1,252</div>
                     <div class="text-white pl-[25px]"><span class="italic font-serif font-bold">Anne B.</span>
                         <p class="cs-fs-3xs uppercase tracking-widest">Advent Sunday Gospels - Nov 2021</p>
                     </div>
@@ -128,7 +130,7 @@
             <div class="flex flex-col w-full items-center cs-testimonials-box mb-5 border-cs-red-main">
                 <!-- Box Autore -->
                 <div class="relative flex flex-col items-baseline justify-center cs-testimonials-box-author bg-cs-red-main">
-                    <div class="cs-testimonials-counter absolute -top-[16px] left-[25px] block h-28 border-cs-red-main text-cs-red-main"># 1,252</div>
+                    <div class="cs-testimonials-counter absolute -top-[16px] left-[25px] block  border-cs-red-main text-cs-red-main"># 1,252</div>
                     <div class="text-white pl-[25px]"><span class="italic font-serif font-bold">Anita P.</span>
                         <p class="cs-fs-3xs uppercase tracking-widest">Advent Sunday Gospels - Nov 2021</p>
                     </div>
@@ -149,7 +151,7 @@
             <div class="flex flex-col w-full items-center cs-testimonials-box mb-5 border-cs-red-dark">
                 <!-- Box Autore -->
                 <div class="relative flex flex-col items-baseline justify-center cs-testimonials-box-author bg-cs-red-dark">
-                    <div class="cs-testimonials-counter absolute -top-[16px] left-[25px] block h-28 border-cs-red-dark text-cs-red-dark"># 1,252</div>
+                    <div class="cs-testimonials-counter absolute -top-[16px] left-[25px] block border-cs-red-dark text-cs-red-dark"># 1,252</div>
                     <div class="text-white pl-[25px]"><span class="italic font-serif font-bold">Helen B.</span>
                         <p class="cs-fs-3xs uppercase tracking-widest">Advent Sunday Gospels - Nov 2021</p>
                     </div>

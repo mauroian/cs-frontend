@@ -809,6 +809,7 @@
     placeholder:text-cs-red-main
     text-cs-red-main
     text-left
+    max-sm:w-full
     autofill:text-cs-red-main
     autofill:cs-fs-3xs
     font-semibold
