@@ -88,9 +88,10 @@
                                     <img src="/src/assets/video-icon.svg" class="inline-block w-8 h-8 mr-2" alt="Video" />
                                     Video recording of Session&nbsp;1
                                 </a>
-                                <div class="mt-3">
-                                    <span class="inline-block font-sans italic font-normal cs-fs-sm">There are no Study Questions, Bible Reading or Course Notes for Session 1.</span>
-                                </div>
+
+                            </div>
+                            <div class="cs-course-item">
+                                <span class="inline-block font-sans italic font-normal cs-fs-sm">There are no Study Questions, Bible Reading or Course Notes for Session 1.</span>
                             </div>
                         </div>
                     </div>
@@ -157,7 +158,7 @@
                                     </div>
                                 </a>
                             </div>
-                            <div>
+                            <div class="cs-course-item">
                                 <span class="inline-block font-sans font-normal cs-fs-sm">Course Notes relative to the periods covered in this session:</span>
                             </div>
                             <div class="cs-course-item">
@@ -231,7 +232,7 @@
                                     </div>
                                 </a>
                             </div>
-                            <div>
+                            <div class="cs-course-item">
                                 <span class="inline-block font-sans font-normal cs-fs-sm">Course Notes relative to the periods covered in this session:</span>
                             </div>
                             <div class="cs-course-item">

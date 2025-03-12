@@ -796,7 +796,11 @@
     }
 
     .cs-bible-accordion-content {
-        @apply gap-6 px-4 py-6 font-semibold cs-fs-sm md:px-8 text-cs-grey bg-cs-paper-dark cs-fs-base rounded-b-3xl;
+        @apply font-semibold cs-fs-sm text-cs-grey bg-cs-paper-dark cs-fs-base rounded-b-3xl;
+    }
+
+    .cs-course-item {
+        @apply w-full min-h-20 flex items-center py-3 px-4 md:px-8;
     }
 
 }
