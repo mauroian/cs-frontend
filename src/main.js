@@ -230,33 +230,9 @@ function toggleAccordion(index) {
   const icon = document.getElementById(`icon-${index}`);
   const text = document.querySelectorAll(`.text-${index}`);
   //get current classlist and apply
-  const iconClass = icon.querySelector('svg').classList;
-  // SVG for Minus icon
-  const minusSVG = `
-        <svg  class="${iconClass}" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill="currentColor" x="0px" y="0px"
-              viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve">
-              <g>
-              <g>
-                 <path d="M257,0C116.39,0,0,114.39,0,255s116.39,257,257,257s255-116.39,255-257S397.61,0,257,0z M392,285H120
-                     c-16.54,0-30-13.46-30-30c0-16.54,13.46-30,30-30h272c16.53,0,30,13.46,30,30S408.53,285,392,285z"/>
-              </g>
-              </g>
-        </svg>
-    `;
-
-  // SVG for Plus icon
-  const plusSVG = `
-                        <svg class="${iconClass}" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" 
-                             viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve" fill="currentColor">
-                            <g>
-                                <g>
-                                    <path d="M257,0C116.39,0,0,114.39,0,255s116.39,257,257,257s255-116.39,255-257S397.61,0,257,0z M392,285H287v107
-                                        c0,16.54-13.47,30-30,30c-16.54,0-30-13.46-30-30V285H120c-16.54,0-30-13.46-30-30c0-16.54,13.46-30,30-30h107V120
-                                        c0-16.54,13.46-30,30-30c16.53,0,30,13.46,30,30v105h105c16.53,0,30,13.46,30,30S408.53,285,392,285z"/>
-                                </g>
-                            </g>
-                            </svg>
-    `;
+  icon.querySelectorAll('img').forEach((el) => {
+    el.classList.toggle('hidden');
+  });
 
   //toggle text color
     text.forEach((el) => {
@@ -266,10 +242,8 @@ function toggleAccordion(index) {
   // Toggle the content's max-height for smooth opening and closing
   if ((content.style.maxHeight && content.style.maxHeight !== '0px')) {
     content.style.maxHeight = '0';
-    icon.innerHTML = plusSVG;
   } else {
     content.style.maxHeight = content.scrollHeight + 'px';
-    icon.innerHTML = minusSVG;
   }
 
 
@@ -277,10 +251,14 @@ function toggleAccordion(index) {
 
 function toggleViewport(col){
   console.log('toggle');
-  document.querySelectorAll('.cs-testimonial-viewport-toggle svg').forEach((el) => {
+
+  const el = document.querySelector('.cs-testimonials-viewport');
+  if(el.classList.contains('grid-cols-'+col)) {
+    return;
+  }
+  document.querySelectorAll('.cs-testimonial-viewport-toggle img').forEach((el) => {
     el.classList.toggle('hidden');
   });
-  const el = document.querySelector('.cs-testimonials-viewport');
   const classes = el.className.split(" ").filter(c => !c.startsWith('grid-cols-'));
   el.className = classes.join(" ").trim();
   console.log('grid-cols-'+col);

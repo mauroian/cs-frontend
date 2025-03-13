@@ -62,14 +62,8 @@
                             <input id="password" required type="password" placeholder="" class="cs-course-input cs-course-input-icon" >
                             <img src="/src/assets/password-login.svg" alt="Password">
                             <button type="button" class="absolute inset-y-0 z-20 flex items-center px-3 cursor-pointer cs-password-eye end-0 text-cs-red-dark" onclick="togglePassword(this)">
-                                <svg class="shrink-0 size-5" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                                    <path class="hs-password-active" d="M9.88 9.88a3 3 0 1 0 4.24 4.24"></path>
-                                    <path class="hs-password-active" d="M10.73 5.08A10.43 10.43 0 0 1 12 5c7 0 10 7 10 7a13.16 13.16 0 0 1-1.67 2.68"></path>
-                                    <path class="hs-password-active" d="M6.61 6.61A13.526 13.526 0 0 0 2 12s3 7 10 7a9.74 9.74 0 0 0 5.39-1.61"></path>
-                                    <line class="hs-password-active" x1="2" x2="22" y1="2" y2="22"></line>
-                                    <path class="hs-password-deactive" d="M2 12s3-7 10-7 10 7 10 7-3 7-10 7-10-7-10-7Z"></path>
-                                    <circle class="hs-password-deactive" cx="12" cy="12" r="3"></circle>
-                                </svg>
+                                <img src="/src/assets/password-eye.svg" alt="Mask" class="shrink-0 size-5 hs-password-deactive">
+                                <img src="/src/assets/password-eye-closed.svg" alt="Mask" class="shrink-0 size-5 hs-password-active">
                             </button>
                         </div>
                         <label for="confirm_password" class="cs-form-label">Confirm Password</label>
@@ -78,14 +72,8 @@
                             <input id="confirm_password" required type="password" placeholder="" class="cs-course-input cs-course-input-icon" >
                             <img src="/src/assets/password-login.svg" alt="Password">
                             <button type="button" class="absolute inset-y-0 z-20 flex items-center px-3 cursor-pointer cs-password-eye end-0 text-cs-red-dark" onclick="togglePassword(this)">
-                                <svg class="shrink-0 size-5" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                                    <path class="hs-password-active" d="M9.88 9.88a3 3 0 1 0 4.24 4.24"></path>
-                                    <path class="hs-password-active" d="M10.73 5.08A10.43 10.43 0 0 1 12 5c7 0 10 7 10 7a13.16 13.16 0 0 1-1.67 2.68"></path>
-                                    <path class="hs-password-active" d="M6.61 6.61A13.526 13.526 0 0 0 2 12s3 7 10 7a9.74 9.74 0 0 0 5.39-1.61"></path>
-                                    <line class="hs-password-active" x1="2" x2="22" y1="2" y2="22"></line>
-                                    <path class="hs-password-deactive" d="M2 12s3-7 10-7 10 7 10 7-3 7-10 7-10-7-10-7Z"></path>
-                                    <circle class="hs-password-deactive" cx="12" cy="12" r="3"></circle>
-                                </svg>
+                                <img src="/src/assets/password-eye.svg" alt="Mask" class="shrink-0 size-5 hs-password-deactive">
+                                <img src="/src/assets/password-eye-closed.svg" alt="Mask" class="shrink-0 size-5 hs-password-active">
                             </button>
                         </div>
                         <div class="w-full md:w-auto">
@@ -95,16 +83,8 @@
                                 <span class="text-1">Show terms and conditions</span>
                                 <span class="hidden text-1">Hide terms and conditions</span>
                                 <span id="icon-1" class="transition-transform duration-300">
-                                    <svg class="w-6 h-6" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                                        viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve" fill="currentColor">
-                                        <g>
-                                            <g>
-                                                <path d="M257,0C116.39,0,0,114.39,0,255s116.39,257,257,257s255-116.39,255-257S397.61,0,257,0z M392,285H287v107
-                                                    c0,16.54-13.47,30-30,30c-16.54,0-30-13.46-30-30V285H120c-16.54,0-30-13.46-30-30c0-16.54,13.46-30,30-30h107V120
-                                                    c0-16.54,13.46-30,30-30c16.53,0,30,13.46,30,30v105h105c16.53,0,30,13.46,30,30S408.53,285,392,285z" />
-                                            </g>
-                                        </g>
-                                    </svg>
+                                    <img src="/src/assets/accordion-expand-red.svg" class="w-6 h-6" alt="Expand" >
+                                    <img src="/src/assets/accordion-collapse-red.svg" class="w-6 h-6 hidden" alt="Expand" >
                                 </span>
                             </button>
                             <div id="content-1" class="overflow-hidden transition-all duration-300 ease-in-out max-h-0">
@@ -162,10 +142,7 @@
                                 <option value="F">Female</option>
                             </select>
                             <div class="absolute top-0 right-0 flex flex-row items-center justify-center pointer-events-none cs-course-arrow">
-                                <svg width="23" height="10" viewBox="0 0 23 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M12.0365 8.90009C11.7091 9.10825 11.2909 9.10825 10.9635 8.90009L0.976737 2.5506C0.1323 2.01372 0.512612 0.706726 1.51327 0.706726L21.4867 0.706728C22.4874 0.706728 22.8677 2.01372 22.0233 2.55061L12.0365 8.90009Z"
-                                        fill="#FEFBF7" />
-                                </svg>
+                                <img src="/src/assets/select-arrow.svg" class="w-4 h-4" alt="Arrow" >
                             </div>
                         </div>
                         <label for="country" class="cs-form-label">Your Country</label>
@@ -178,10 +155,7 @@
                                 <option value="CA">Canada</option>
                             </select>
                             <div class="absolute top-0 right-0 flex flex-row items-center justify-center pointer-events-none cs-course-arrow">
-                                <svg width="23" height="10" viewBox="0 0 23 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M12.0365 8.90009C11.7091 9.10825 11.2909 9.10825 10.9635 8.90009L0.976737 2.5506C0.1323 2.01372 0.512612 0.706726 1.51327 0.706726L21.4867 0.706728C22.4874 0.706728 22.8677 2.01372 22.0233 2.55061L12.0365 8.90009Z"
-                                        fill="#FEFBF7" />
-                                </svg>
+                                <img src="/src/assets/select-arrow.svg" class="w-4 h-4" alt="Arrow" >
                             </div>
                         </div>
                         <label for="city" class="cs-form-label">Your City</label>
@@ -210,10 +184,7 @@
                                     <option value="011">+011</option>
                                 </select>
                                 <div class="absolute top-0 right-0 flex flex-row items-center justify-center pointer-events-none cs-course-arrow">
-                                    <svg width="23" height="10" viewBox="0 0 23 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M12.0365 8.90009C11.7091 9.10825 11.2909 9.10825 10.9635 8.90009L0.976737 2.5506C0.1323 2.01372 0.512612 0.706726 1.51327 0.706726L21.4867 0.706728C22.4874 0.706728 22.8677 2.01372 22.0233 2.55061L12.0365 8.90009Z"
-                                            fill="#FEFBF7" />
-                                    </svg>
+                                    <img src="/src/assets/select-arrow.svg" class="w-4 h-4" alt="Arrow" >
                                 </div>
                             </div>
                             <input id="phone" required type="text" placeholder="" class="cs-course-phone-number" >
@@ -225,16 +196,8 @@
                                 <span class="text-2">Show terms and conditions</span>
                                 <span class="hidden text-2">Hide terms and conditions</span>
                                 <span id="icon-2" class="transition-transform duration-300">
-                                    <svg class="w-6 h-6" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                                        viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve" fill="currentColor">
-                                        <g>
-                                            <g>
-                                                <path d="M257,0C116.39,0,0,114.39,0,255s116.39,257,257,257s255-116.39,255-257S397.61,0,257,0z M392,285H287v107
-                                                    c0,16.54-13.47,30-30,30c-16.54,0-30-13.46-30-30V285H120c-16.54,0-30-13.46-30-30c0-16.54,13.46-30,30-30h107V120
-                                                    c0-16.54,13.46-30,30-30c16.53,0,30,13.46,30,30v105h105c16.53,0,30,13.46,30,30S408.53,285,392,285z" />
-                                            </g>
-                                        </g>
-                                    </svg>
+                                    <img src="/src/assets/accordion-expand-red.svg" class="w-6 h-6" alt="Expand" >
+                                    <img src="/src/assets/accordion-collapse-red.svg" class="w-6 h-6 hidden" alt="Expand" >
                                 </span>
                             </button>
                             <div id="content-2" class="overflow-hidden transition-all duration-300 ease-in-out max-h-0">

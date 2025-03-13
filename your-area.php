@@ -30,27 +30,10 @@
             <div class="flex flex-col items-center cs-personal-area-container">
                 <div class="flex flex-row items-center justify-end cs-accordion-manager">
                     <button class="mr-1 cs-accordion-expand text-cs-blue-light">
-                        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" class="w-6 h-6 fill-cs-blue-light"
-                            viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve" fill="currentColor">
-                            <g>
-                                <g>
-                                    <path d="M257,0C116.39,0,0,114.39,0,255s116.39,257,257,257s255-116.39,255-257S397.61,0,257,0z M392,285H287v107
-                                        c0,16.54-13.47,30-30,30c-16.54,0-30-13.46-30-30V285H120c-16.54,0-30-13.46-30-30c0-16.54,13.46-30,30-30h107V120
-                                        c0-16.54,13.46-30,30-30c16.53,0,30,13.46,30,30v105h105c16.53,0,30,13.46,30,30S408.53,285,392,285z" />
-                                </g>
-                            </g>
-                        </svg>
+                        <img src="/src/assets/accordion-expand.svg" class="w-6 h-6" alt="Expand" >
                     </button>
                     <button class=" cs-accordion-collapse">
-                        <svg class="w-6 h-6 fill-cs-blue-light" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill="currentColor" x="0px" y="0px"
-                            viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve">
-                            <g>
-                                <g>
-                                    <path d="M257,0C116.39,0,0,114.39,0,255s116.39,257,257,257s255-116.39,255-257S397.61,0,257,0z M392,285H120
-                                        c-16.54,0-30-13.46-30-30c0-16.54,13.46-30,30-30h272c16.53,0,30,13.46,30,30S408.53,285,392,285z" />
-                                </g>
-                            </g>
-                        </svg>
+                        <img src="/src/assets/accordion-collapse.svg" class="w-6 h-6" alt="Collapse" >
                     </button>
                 </div>
                 <!-- 'Your Courses' accordion -->
@@ -59,15 +42,8 @@
                         class="flex items-center justify-between w-full cs-personal-accordion-header">
                         <span>Your Courses</span>
                         <span id="icon-1" class="text-white transition-transform duration-300">
-                            <svg class="w-6 h-6 fill-white" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill="currentColor" x="0px" y="0px"
-                                viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve">
-                                <g>
-                                    <g>
-                                        <path d="M257,0C116.39,0,0,114.39,0,255s116.39,257,257,257s255-116.39,255-257S397.61,0,257,0z M392,285H120
-                                        c-16.54,0-30-13.46-30-30c0-16.54,13.46-30,30-30h272c16.53,0,30,13.46,30,30S408.53,285,392,285z" />
-                                    </g>
-                                </g>
-                            </svg>
+                            <img src="/src/assets/accordion-expand-white.svg" class="w-6 h-6" alt="Expand" >
+                            <img src="/src/assets/accordion-collapse-white.svg" class="w-6 h-6 hidden" alt="Expand" >
                         </span>
                     </button>
                     <div id="content-1" class="overflow-hidden transition-all duration-300 ease-in-out">
@@ -85,15 +61,8 @@
                         class="flex items-center justify-between w-full cs-personal-accordion-header">
                         <span>Information for Come & See Mission&nbsp;<br>Partners</span>
                         <span id="icon-2" class="text-white transition-transform duration-300">
-                            <svg class="w-6 h-6 fill-white" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill="currentColor" x="0px" y="0px"
-                                viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve">
-                                <g>
-                                    <g>
-                                        <path d="M257,0C116.39,0,0,114.39,0,255s116.39,257,257,257s255-116.39,255-257S397.61,0,257,0z M392,285H120
-                                        c-16.54,0-30-13.46-30-30c0-16.54,13.46-30,30-30h272c16.53,0,30,13.46,30,30S408.53,285,392,285z" />
-                                    </g>
-                                </g>
-                            </svg>
+                            <img src="/src/assets/accordion-expand-white.svg" class="w-6 h-6" alt="Expand" >
+                            <img src="/src/assets/accordion-collapse-white.svg" class="w-6 h-6 hidden" alt="Expand" >
                         </span>
                     </button>
                     <div id="content-2" class="overflow-hidden transition-all duration-300 ease-in-out">
@@ -117,15 +86,8 @@
                         class="flex items-center justify-between w-full cs-personal-accordion-header">
                         <span>Join our Bible Timeline WhatsApp&nbsp;Group</span>
                         <span id="icon-3" class="text-white transition-transform duration-300">
-                            <svg class="w-6 h-6 fill-white" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill="currentColor" x="0px" y="0px"
-                                viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve">
-                                <g>
-                                    <g>
-                                        <path d="M257,0C116.39,0,0,114.39,0,255s116.39,257,257,257s255-116.39,255-257S397.61,0,257,0z M392,285H120
-                                        c-16.54,0-30-13.46-30-30c0-16.54,13.46-30,30-30h272c16.53,0,30,13.46,30,30S408.53,285,392,285z" />
-                                    </g>
-                                </g>
-                            </svg>
+                            <img src="/src/assets/accordion-expand-white.svg" class="w-6 h-6" alt="Expand" >
+                            <img src="/src/assets/accordion-collapse-white.svg" class="w-6 h-6 hidden" alt="Expand" >
                         </span>
                     </button>
                     <div id="content-3" class="overflow-hidden transition-all duration-300 ease-in-out">
