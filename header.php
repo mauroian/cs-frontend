@@ -387,3 +387,4 @@ $isLogged = isset($_GET['logged']) && $_GET['logged'] === 'true';
         </ul>
     </div>
 </header>
+<?php require_once 'breakpoints-widget.php'; ?>
