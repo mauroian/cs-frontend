@@ -359,26 +359,26 @@ $isLogged = isset($_GET['logged']) && $_GET['logged'] === 'true';
             <?php if (!$isLogged) { ?>
               <li>
                 <!-- Sign up button (mobile) | If user is not logged -->
-                <a href="#" class="flex flex-row items-center cs-mobile-menu-auth-item">
-                    <img src="/src/assets/sign-up-paper.svg" class="w-auto h-5 my-auto mr-2 cs-mobile-menu-auth-icon" alt="Sign Up" >
-                    <span>Sign Up</span>
-                </a>
+                  <a href="#" class="flex flex-row items-center cs-mobile-menu-auth-item">
+                      <img src="/src/assets/sign-up-paper.svg" class="w-auto h-5 my-auto mr-2 cs-mobile-menu-auth-icon" alt="Sign Up" >
+                      <span>Sign Up</span>
+                  </a>
               </li>
-                <li>
-                <!-- Log in button (mobile) | If user is not logged -->
-                <a href="/?logged=true" class="flex flex-row items-center cs-mobile-menu-auth-item">
-                    <img src="/src/assets/log-in-paper.svg" class="w-auto h-6 my-auto mr-3 cs-mobile-menu-auth-icon" alt="Log In" >
-                    <span>Log In</span>
-                </a>
-                </li>
+              <li>
+               <!-- Log in button (mobile) | If user is not logged -->
+                  <a href="/?logged=true" class="flex flex-row items-center cs-mobile-menu-auth-item">
+                      <img src="/src/assets/log-in-paper.svg" class="w-auto h-6 my-auto mr-3 cs-mobile-menu-auth-icon" alt="Log In" >
+                      <span>Log In</span>
+                  </a>
+              </li>
             <?php } else { ?>
-                <!-- Log out button (mobile) | If user is logged -->
-                <li>
-                <a href="/" class="flex flex-row items-center cs-mobile-menu-auth-item">
-                    <img src="/src/assets/log-out-paper.svg" class="w-auto h-6 my-auto mr-2 cs-mobile-menu-auth-icon" alt="Log Out" >
-                    <span>Log Out</span>
-                </a>
-                </li>
+              <!-- Log out button (mobile) | If user is logged -->
+              <li>
+                  <a href="/" class="flex flex-row items-center cs-mobile-menu-auth-item">
+                      <img src="/src/assets/log-out-paper.svg" class="w-auto h-6 my-auto mr-2 cs-mobile-menu-auth-icon" alt="Log Out" >
+                      <span>Log Out</span>
+                  </a>
+              </li>
             <?php } ?>
             <li class="flex flex-col items-center cs-mobile-menu-footer-item">
                 <span>Come & See 2025</span>
