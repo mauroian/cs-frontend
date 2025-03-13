@@ -2,10 +2,10 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="/src/input.css" />
-    <script type="module" src="/src/main.js" defer></script>
+    <meta charset="UTF-8" >
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" >
+    <link rel="stylesheet" href="/src/input.css" >
+    <script type="module" src="/src/main.js"></script>
     <title>Come & See</title>
 </head>
 
@@ -85,7 +85,7 @@
                         <div class="flex flex-col cs-bible-accordion-content">
                             <div class="cs-course-item">
                                 <a href="#" class="flex flex-row gap-4">
-                                    <img src="/src/assets/video-icon.svg" class="inline-block w-8 h-8 mr-2" alt="Video" />
+                                    <img src="/src/assets/video-icon.svg" class="inline-block w-8 h-8 mr-2" alt="Video" >
                                     Video recording of Session&nbsp;1
                                 </a>
 
@@ -122,7 +122,7 @@
                         <div class="flex flex-col cs-bible-accordion-content">
                             <div class="cs-course-item">
                                 <a href="#" class="flex flex-row gap-4">
-                                    <img src="/src/assets/pdf-icon.svg" class="inline-block w-8 h-8 mr-2" alt="Pdf" />
+                                    <img src="/src/assets/pdf-icon.svg" class="inline-block w-8 h-8 mr-2" alt="Pdf" >
                                     <div class="flex flex-col gap-2">
                                         Bible Reading
                                         <div class="flex flex-row gap-1.5 md:gap-2">
@@ -138,13 +138,13 @@
                             </div>
                             <div class="cs-course-item">
                                 <a href="#" class="flex flex-row gap-4">
-                                    <img src="/src/assets/video-icon.svg" class="inline-block w-8 h-8 mr-2" alt="Video" />
+                                    <img src="/src/assets/video-icon.svg" class="inline-block w-8 h-8 mr-2" alt="Video" >
                                     Video recording of Session&nbsp;2
                                 </a>
                             </div>
                             <div class="cs-course-item">
                                 <a href="#" class="flex flex-row gap-4">
-                                    <img src="/src/assets/pdf-icon.svg" class="inline-block w-8 h-8 mr-2" alt="Pdf" />
+                                    <img src="/src/assets/pdf-icon.svg" class="inline-block w-8 h-8 mr-2" alt="Pdf" >
                                     <div class="flex flex-col gap-2">
                                         Study Questions
                                         <div class="flex flex-row gap-1.5 md:gap-2">
@@ -163,7 +163,7 @@
                             </div>
                             <div class="cs-course-item">
                                 <a href="#" class="flex flex-row gap-4">
-                                    <img src="/src/assets/pdf-icon.svg" class="inline-block w-8 h-8 mr-2" alt="Pdf" />
+                                    <img src="/src/assets/pdf-icon.svg" class="inline-block w-8 h-8 mr-2" alt="Pdf" >
                                     Course Notes for Period 1, Early World
                                 </a>
                             </div>
@@ -196,7 +196,7 @@
                         <div class="flex flex-col cs-bible-accordion-content">
                             <div class="cs-course-item">
                                 <a href="#" class="flex flex-row gap-4">
-                                    <img src="/src/assets/pdf-icon.svg" class="inline-block w-8 h-8 mr-2" alt="Pdf" />
+                                    <img src="/src/assets/pdf-icon.svg" class="inline-block w-8 h-8 mr-2" alt="Pdf" >
                                     <div class="flex flex-col gap-2">
                                         Bible Reading
                                         <div class="flex flex-row gap-1.5 md:gap-2">
@@ -212,13 +212,13 @@
                             </div>
                             <div class="cs-course-item">
                                 <a href="#" class="flex flex-row gap-4">
-                                    <img src="/src/assets/video-icon.svg" class="inline-block w-8 h-8 mr-2" alt="Video" />
+                                    <img src="/src/assets/video-icon.svg" class="inline-block w-8 h-8 mr-2" alt="Video" >
                                     Video recording of Session&nbsp;3
                                 </a>
                             </div>
                             <div class="cs-course-item">
                                 <a href="#" class="flex flex-row gap-4">
-                                    <img src="/src/assets/pdf-icon.svg" class="inline-block w-8 h-8 mr-2" alt="Pdf" />
+                                    <img src="/src/assets/pdf-icon.svg" class="inline-block w-8 h-8 mr-2" alt="Pdf" >
                                     <div class="flex flex-col gap-2">
                                         Study Questions
                                         <div class="flex flex-row gap-1.5 md:gap-2">
@@ -237,7 +237,7 @@
                             </div>
                             <div class="cs-course-item">
                                 <a href="#" class="flex flex-row gap-4">
-                                    <img src="/src/assets/pdf-icon.svg" class="inline-block w-8 h-8 mr-2" alt="Pdf" />
+                                    <img src="/src/assets/pdf-icon.svg" class="inline-block w-8 h-8 mr-2" alt="Pdf" >
                                     Course Notes for Period 2, Patriarchs
                                 </a>
                             </div>

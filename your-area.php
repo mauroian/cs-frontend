@@ -2,10 +2,10 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="/src/input.css" />
-    <script type="module" src="/src/main.js" defer></script>
+    <meta charset="UTF-8" >
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" >
+    <link rel="stylesheet" href="/src/input.css" >
+    <script type="module" src="/src/main.js"></script>
     <title>Come & See</title>
 </head>
 
@@ -99,9 +99,9 @@
                     <div id="content-2" class="overflow-hidden transition-all duration-300 ease-in-out">
                         <div class="flex flex-col cs-personal-accordion-content">
                             The next monthly Mass (September 2024) for our generous Come & See Mission Partners will be offered on Monday 2nd Sept 2024.
-                            <br />
+                            <br>
                             For your diary, the next monthly Masses will be celebrated as always every first Monday of the month on these days:
-                            <br />
+                            <br>
                             <ul class="ml-8 uppercase list-disc cs-fs-sm">
                                 <li>7th October 2024</li>
                                 <li>4th November 2024</li>
@@ -131,9 +131,9 @@
                     <div id="content-3" class="overflow-hidden transition-all duration-300 ease-in-out">
                         <div class="flex flex-col cs-personal-accordion-content">
                             This is not a group to chat (the chat option is disabled!) but for me, the Administrator, to share with you some course communications.
-                            <br /><br />
+                            <br><br>
                             If you want to join, use this link from your mobile phone:
-                            <br /><br />
+                            <br><br>
                             <a href="#" class="mb-4 ml-2 font-bold uppercase cs-fs-sm">Join Group</a>
                         </div>
                     </div>

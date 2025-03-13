@@ -800,7 +800,7 @@
     }
 
     .cs-course-item {
-        @apply w-full min-h-20 flex items-center py-3 px-4 md:px-8;
+        @apply w-full min-h-20 flex items-center py-3 px-4 md:px-8 border-b border-cs-red-main last:border-b-0;
     }
 
 }

@@ -20,7 +20,7 @@
         <!-- Container div for logo (desktop & mobile)-->
         <div class="flex flex-grow cs-menu-logo">
             <a href="/">
-                <img src="/src/assets/logos/cs-logo-paper-bg-transp.svg" class="h-12" alt="Logo" />
+                <img src="/src/assets/logos/cs-logo-paper-bg-transp.svg" class="h-12" alt="Logo" >
             </a>
         </div>
         <!-- Container div for user avatar and user menu (desktop & mobile) | If user is logged -->
@@ -42,7 +42,7 @@
                     </div>
                 </div>
                 <!-- Container list for L1 user menu items (desktop & mobile) -->
-                <ul class="cs-menu-logged-items" aria-labelledby="Logged Menu">
+                <ul class="cs-menu-logged-items">
                     <!-- L1 user menu item (desktop & mobile) -->
                     <li class="block cs-menu-logged-item">
                         <a class="flex flex-row justify-between w-full" href="#">Your area</a>
@@ -54,7 +54,7 @@
                             <!-- L1 dropdown harrow (desktop & mobile) -->
                             <img src="/src/assets/logged-arrow-down.svg"
                                 class="cs-menu-item-icon object-contain shrink-0 self-stretch my-auto w-3 aspect-[1.5]"
-                                alt="Arrow Down" />
+                                alt="Arrow Down" >
                         </a>
                         <!-- Container list for L2 user menu items (desktop & mobile) -->
                         <ul class="hidden overflow-hidden list-none dropdown-menu">
@@ -75,7 +75,7 @@
                         <a href="#" class="flex flex-row justify-between w-full">Options
                             <img src="/src/assets/logged-arrow-down.svg"
                                 class="cs-menu-item-icon object-contain shrink-0 self-stretch my-auto w-3 aspect-[1.5]"
-                                alt="Arrow Down" />
+                                alt="Arrow Down" >
                         </a>
                         <ul class="hidden overflow-hidden list-none dropdown-menu">
                             <!-- L2 user menu item (desktop & mobile) -->
@@ -105,12 +105,13 @@
                 <div class="flex cs-menu-logged-bottom">
                     <a href="/" class="flex flex-row items-center">
                         <img src="/src/assets/log-out.svg" class="w-auto h-6 my-auto cs-menu-logout-icon"
-                            alt="Log Out" />
+                            alt="Log Out" >
                         Log out
                     </a>
                 </div>
             </div>
         </div>
+    </nav>
 </header>
 <div id="containerSidebar" class="z-40">
     <div class="relative z-40 navbar-menu">
@@ -163,7 +164,7 @@
                             <span class="flex justify-end flex-1 ml-auto">
                                 <img src="/src/assets/admin-arrow.svg"
                                     class="cs-menu-item-icon object-contain shrink-0 self-stretch my-auto w-3 aspect-[1.5]"
-                                    alt="Arrow Down" />
+                                    alt="Arrow Down" >
 
                             </span>
                         </a>
@@ -175,7 +176,7 @@
                                     <span class="flex justify-end flex-1 ml-auto">
                                         <img src="/src/assets/admin-arrow.svg"
                                             class="cs-menu-item-icon object-contain shrink-0 self-stretch my-auto w-3 aspect-[1.5]"
-                                            alt="Arrow Down" />
+                                            alt="Arrow Down" >
 
                                     </span>
                                 </a>

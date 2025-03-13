@@ -11,16 +11,17 @@
 
                 <!-- LOGO block -->
                 <div class="flex flex-col gap-3 mt-8 sm:mt-0 ">
-                    <img src="/src/assets/logos/cs-logo-paper-name-paper.svg" class="h-20 mr-auto" alt="Logo" />
-                    <h6 class="font-sans font-bold tracking-widest uppercase cs-fs-sm">Serving parishes with teachings, </br>formation & new evangelisation.</h6>
+                    <img src="/src/assets/logos/cs-logo-paper-name-paper.svg" class="h-20 mr-auto" alt="Logo" >
+                    <h6 class="font-sans font-bold tracking-widest uppercase cs-fs-sm">Serving parishes with teachings, <br>formation & new evangelisation.</h6>
                 </div>
 
                 <!-- GET IN TOUCH block -->
                 <div class="flex flex-col mt-14">
                     <h2 class="font-sans font-bold tracking-widest uppercase cs-fs-sm">Get in touch</h2>
-                    <img src="/src/assets/email_comeandsee.svg" class="h-5 mt-1 sm:h-4" alt="Email" />
+                    <img src="/src/assets/email_comeandsee.svg" class="h-5 mt-1 sm:h-4" alt="Email" >
                     <div class="flex flex-row gap-3 mt-2">
-                        <img src="/src/assets/youtube.svg"><img src="/src/assets/facebook.svg">
+                        <img src="/src/assets/youtube.svg" alt="Youtube">
+                        <img src="/src/assets/facebook.svg" alt="Facebook">
                     </div>
                 </div>
 
@@ -31,7 +32,7 @@
                 <p class="mb-5 font-bold sm:ml-5">Quick links</p>
                 <div class="flex flex-col flex-wrap justify-start sm:h-[290px]  mt-3 gap-2.5 cs-quicklinks">
                     <a href="#"><span>Bible Timeline Course</span></a>
-                    <a href="#"><span>Biblical Journey </br>Through the Mass</span></a>
+                    <a href="#"><span>Biblical Journey <br>Through the Mass</span></a>
                     <a href="#"><span>Let's get personal!</span></a>
                     <a href="#"><span>Our Gallery</span></a>
                     <a href="#"><span>Support Us</span></a>

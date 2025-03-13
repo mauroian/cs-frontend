@@ -2,10 +2,10 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="/src/input.css" />
-    <script type="module" src="/src/main.js" defer></script>
+    <meta charset="UTF-8" >
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" >
+    <link rel="stylesheet" href="/src/input.css" >
+    <script type="module" src="/src/main.js"></script>
     <title>Come & See</title>
 </head>
 
@@ -28,15 +28,15 @@
                     <label for="email" class="cs-form-label">Email</label>
                     <!-- Input Email -->
                     <div class="relative w-full my-2">
-                        <input id="email" required type="text" placeholder="Your email address" class="cs-form-input cs-form-input-icon" />
-                        <img src="/src/assets/email-login.svg" />
+                        <input id="email" required type="text" placeholder="Your email address" class="cs-form-input cs-form-input-icon" >
+                        <img src="/src/assets/email-login.svg" alt="Email">
                     </div>
                     <a class="cs-form-link" href="#">Forgot email?</a>
                     <label for="password" class="mt-6 cs-form-label">Password</label>
                     <!-- Input Password -->
                     <div class="relative w-full my-2">
-                        <input id="password" required type="password" placeholder="Enter your password" class="cs-form-input cs-form-input-icon" />
-                        <img src="/src/assets/password-login.svg" />
+                        <input id="password" required type="password" placeholder="Enter your password" class="cs-form-input cs-form-input-icon" >
+                        <img src="/src/assets/password-login.svg" alt="Password" >
                         <button type="button" class="absolute inset-y-0 z-20 flex items-center px-3 cursor-pointer cs-password-eye end-0 text-cs-red-main" onclick="togglePassword(this)">
                             <svg class="shrink-0 size-5" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                                 <path class="hs-password-active" d="M9.88 9.88a3 3 0 1 0 4.24 4.24"></path>

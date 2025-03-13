@@ -2,10 +2,10 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="/src/input.css" />
-    <script type="module" src="/src/main.js" defer></script>
+    <meta charset="UTF-8" >
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" >
+    <link rel="stylesheet" href="/src/input.css" >
+    <script type="module" src="/src/main.js"></script>
     <title>Come & See</title>
 </head>
 
@@ -37,30 +37,30 @@
                         <label for="firstname" class="cs-form-label">First Name</label>
                         <!-- Input Firstname -->
                         <div class="relative cs-form-input-container">
-                            <input id="firstname" required type="text" placeholder="" class="cs-course-input" />
+                            <input id="firstname" required type="text" placeholder="" class="cs-course-input" >
                         </div>
                         <label for="lastname" class="cs-form-label">Last Name</label>
                         <!-- Input Lastname -->
                         <div class="relative cs-form-input-container">
-                            <input id="lastname" required type="text" placeholder="" class="cs-course-input" />
+                            <input id="lastname" required type="text" placeholder="" class="cs-course-input" >
                         </div>
                         <label for="email" class="cs-form-label">Email</label>
                         <!-- Input Email -->
                         <div class="relative cs-form-input-container">
-                            <input id="email" required type="text" placeholder="" class="cs-course-input cs-course-input-icon" />
-                            <img src="/src/assets/email-login.svg" />
+                            <input id="email" required type="text" placeholder="" class="cs-course-input cs-course-input-icon" >
+                            <img src="/src/assets/email-login.svg" alt="Email">
                         </div>
                         <label for="confirm_email" class="cs-form-label">Confirm Email</label>
                         <!-- Input Email -->
                         <div class="relative cs-form-input-container">
-                            <input id="confirm_email" required type="text" placeholder="" class="cs-course-input cs-course-input-icon" />
-                            <img src="/src/assets/email-login.svg" />
+                            <input id="confirm_email" required type="text" placeholder="" class="cs-course-input cs-course-input-icon" >
+                            <img src="/src/assets/email-login.svg" alt="Email">
                         </div>
                         <label for="password" class="cs-form-label">Password</label>
                         <!-- Input Phone -->
                         <div class="relative cs-form-input-container">
-                            <input id="password" required type="password" placeholder="" class="cs-course-input cs-course-input-icon" />
-                            <img src="/src/assets/password-login.svg" />
+                            <input id="password" required type="password" placeholder="" class="cs-course-input cs-course-input-icon" >
+                            <img src="/src/assets/password-login.svg" alt="Password">
                             <button type="button" class="absolute inset-y-0 z-20 flex items-center px-3 cursor-pointer cs-password-eye end-0 text-cs-red-dark" onclick="togglePassword(this)">
                                 <svg class="shrink-0 size-5" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                                     <path class="hs-password-active" d="M9.88 9.88a3 3 0 1 0 4.24 4.24"></path>
@@ -75,8 +75,8 @@
                         <label for="confirm_password" class="cs-form-label">Confirm Password</label>
                         <!-- Input Phone -->
                         <div class="relative cs-form-input-container">
-                            <input id="confirm_password" required type="password" placeholder="" class="cs-course-input cs-course-input-icon" />
-                            <img src="/src/assets/password-login.svg" />
+                            <input id="confirm_password" required type="password" placeholder="" class="cs-course-input cs-course-input-icon" >
+                            <img src="/src/assets/password-login.svg" alt="Password">
                             <button type="button" class="absolute inset-y-0 z-20 flex items-center px-3 cursor-pointer cs-password-eye end-0 text-cs-red-dark" onclick="togglePassword(this)">
                                 <svg class="shrink-0 size-5" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                                     <path class="hs-password-active" d="M9.88 9.88a3 3 0 1 0 4.24 4.24"></path>
@@ -125,7 +125,7 @@
                             <input id="agree" type="checkbox" value=""
                                 class="cs-course-checkbox">
                             <label for="agree" class="cs-course-checkbox-label">Yes, i
-                                agree <span class="font-normal">(required)<span></label>
+                                agree <span class="font-normal">(required)</span></label>
                         </div>
                         <div class="flex flex-row justify-end w-full gap-4">
                             <button class="cs-course-reset">Reset</button>
@@ -151,13 +151,13 @@
                         <label for="birthdate" class="cs-form-label">Your Year of birth</label>
                         <!-- Input YOB -->
                         <div class="relative cs-form-input-container cs-form-small-container">
-                            <input id="birthdate" required type="date" placeholder="" class="cs-course-input" />
+                            <input id="birthdate" required type="date" class="cs-course-input" >
                         </div>
                         <label for="sex" class="cs-form-label">Your gender</label>
                         <!-- Input Sex -->
                         <div class="relative cs-form-input-container cs-form-small-container">
                             <select id="sex" required class="cs-course-select">
-                                <option value=""></option>
+                                <option value="">-</option>
                                 <option value="M">Male</option>
                                 <option value="F">Female</option>
                             </select>
@@ -172,7 +172,7 @@
                         <!-- Input Country -->
                         <div class="relative cs-form-input-container">
                             <select id="country" required class="cs-course-select">
-                                <option value=""></option>
+                                <option value="">-</option>
                                 <option value="UK">United Kingdom</option>
                                 <option value="US">United States</option>
                                 <option value="CA">Canada</option>
@@ -187,24 +187,24 @@
                         <label for="city" class="cs-form-label">Your City</label>
                         <!-- Input City -->
                         <div class="relative cs-form-input-container">
-                            <input id="city" required type="text" placeholder="" class="cs-course-input" />
+                            <input id="city" required type="text" placeholder="" class="cs-course-input" >
                         </div>
                         <label for="diocese" class="cs-form-label">Your Diocese</label>
                         <!-- Input Diocese -->
                         <div class="relative cs-form-input-container">
-                            <input id="diocese" required type="text" placeholder="" class="cs-course-input" />
+                            <input id="diocese" required type="text" placeholder="" class="cs-course-input" >
                         </div>
                         <label for="parish" class="cs-form-label">Your Parish</label>
                         <!-- Input Parish -->
                         <div class="relative cs-form-input-container">
-                            <input id="parish" required type="text" placeholder="" class="cs-course-input" />
+                            <input id="parish" required type="text" placeholder="" class="cs-course-input" >
                         </div>
                         <label for="phone" class="cs-form-label">Your Mobile Number</label>
                         <div class="relative flex flex-row gap-3 cs-form-input-container">
                             <!-- create a combobox with flag and number for mobile -->
                             <div class="relative">
-                                <select id="country" required class="cs-course-phone-prefix">
-                                    <option value=""></option>
+                                <select required class="cs-course-phone-prefix">
+                                    <option value="">-</option>
                                     <option value="44">+44</option>
                                     <option value="1">+1</option>
                                     <option value="011">+011</option>
@@ -216,7 +216,7 @@
                                     </svg>
                                 </div>
                             </div>
-                            <input id="phone" required type="text" placeholder="" class="cs-course-phone-number" />
+                            <input id="phone" required type="text" placeholder="" class="cs-course-phone-number" >
                         </div>
                         <div class="w-full md:w-auto">
                             <span class="tracking-widest uppercase cs-fs-sm">agree to Terms and Conditions</span>
@@ -252,10 +252,10 @@
                             </div>
                         </div>
                         <div class="flex items-center my-6">
-                            <input id="agree" type="checkbox" value=""
+                            <input id="agree_2" type="checkbox" value=""
                                 class="cs-course-checkbox">
-                            <label for="agree" class="cs-course-checkbox-label">Yes, i
-                                agree <span class="font-normal">(required)<span></label>
+                            <label for="agree_2" class="cs-course-checkbox-label">Yes, i
+                                agree <span class="font-normal">(required)</span></label>
                         </div>
                         <div class="flex flex-row justify-end w-full gap-4">
                             <button class="cs-course-reset">Reset</button>

@@ -2,10 +2,10 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="/src/input.css" />
-    <script type="module" src="/src/main.js" defer></script>
+    <meta charset="UTF-8" >
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" >
+    <link rel="stylesheet" href="/src/input.css" >
+    <script type="module" src="/src/main.js"></script>
     <title>Come & See - Endorsements</title>
 </head>
 
@@ -30,7 +30,7 @@
                 </div>
                 <div class="flex md:flex-row flex-col">
                     <div class="flex flex-col w-full md:w-1/2">
-                        <img src="/src/assets/endorsement-jeff-cavins.png" class="w-full rounded-3xl" alt="" />
+                        <img src="/src/assets/endorsement-jeff-cavins.png" class="w-full rounded-3xl" alt="" >
                             <div class="w-full flex justify-between items-center my-6 font-normal uppercase text-cs-grey cs-fs-sm">
                                 [1 min. 09 secs.]
                                 <button class="flex items-center justify-center rounded-3xl uppercase font-bold h-8 px-3 text-white bg-cs-red-main" onclick="toggleRead(this, 1)">
@@ -84,7 +84,7 @@
 
                     </div>
                     <div class="flex flex-col md:w-1/2 w-full">
-                        <img src="/src/assets/endorsement-fr-alexander.png" class="rounded-3xl" alt="" />
+                        <img src="/src/assets/endorsement-fr-alexander.png" class="rounded-3xl" alt="" >
                         <div class="w-full flex justify-between items-center my-6 font-normal uppercase text-cs-grey cs-fs-sm">
                             <button class="flex items-center justify-center rounded-3xl uppercase font-bold h-8 px-3 text-white bg-cs-blue-main" onclick="toggleRead(this, 2)">
                                 <span>read full text</span>
@@ -109,7 +109,7 @@
                     </div>
                     <div class="flex md:flex-row flex-col">
                         <div class="flex flex-col md:w-1/2 w-full">
-                            <img src="/src/assets/endorsement-annabel-ward.png" class="rounded-3xl" alt="" />
+                            <img src="/src/assets/endorsement-annabel-ward.png" class="rounded-3xl" alt="" >
                             <div class="w-full flex justify-between items-center my-6 font-normal uppercase text-cs-grey cs-fs-sm">
                                 [0 min. 24 secs.]
                                 <button class="flex items-center justify-center rounded-3xl uppercase font-bold h-8 px-3 text-white bg-cs-red-main" onclick="toggleRead(this, 3)">

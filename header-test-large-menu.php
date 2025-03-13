@@ -11,7 +11,7 @@ $isLogged = isset($_GET['logged']) && $_GET['logged'] === 'true';
         <!-- Container div for logo (desktop & mobile)-->
         <div class="flex cs-menu-logo">
             <a href="/">
-                <img src="/src/assets/logos/cs-logo-red-name-red.svg" class="h-20" alt="Logo" />
+                <img src="/src/assets/logos/cs-logo-red-name-red.svg" class="h-20" alt="Logo" >
             </a>
         </div>
         <!-- Container list for public menu (desktop) -->
@@ -25,7 +25,7 @@ $isLogged = isset($_GET['logged']) && $_GET['logged'] === 'true';
                     <span class="cs-menu-item-span">What we offer</span>
                     <img src="/src/assets/menu-arrow-down.svg"
                         class="cs-menu-item-icon object-contain shrink-0 self-stretch my-auto w-3 aspect-[1.5]"
-                        alt="Arrow Down" />
+                        alt="Arrow Down" >
                 </a>
                 <!-- Container list for L2 public menu items (desktop) -->
                 <ul
@@ -55,13 +55,13 @@ $isLogged = isset($_GET['logged']) && $_GET['logged'] === 'true';
                             <span class="ml-auto">
                                 <img src="/src/assets/menu-arrow-down.svg"
                                     class="cs-menu-item-icon object-contain shrink-0 self-stretch my-auto w-3 aspect-[1.5]"
-                                    alt="Arrow Down" />
+                                    alt="Arrow Down" >
 
                             </span>
                         </a>
                         <!-- Container list for L3 public menu items (desktop) -->
                         <ul
-                            id="menu-lang"
+                            id="menu-journey"
                             aria-hidden="true"
                             class="absolute cs-menu-level3 min-w-32">
                             <!-- L3 public menu item (desktop) -->
@@ -82,14 +82,14 @@ $isLogged = isset($_GET['logged']) && $_GET['logged'] === 'true';
                     <li class="relative cs-menu-voice-item cs-dropdown">
                         <a
                             aria-haspopup="true"
-                            aria-controls="menu-lang"
+                            aria-controls="menu-journey"
                             class="w-full text-left flex items-center cs-menu-item  h-3.5"
                             href="#">
                             <span class="pr-1 cs-menu-item-span">The four last things</span>
                             <span class="ml-auto">
                                 <img src="/src/assets/menu-arrow-down.svg"
                                     class="cs-menu-item-icon object-contain shrink-0 self-stretch my-auto w-3 aspect-[1.5]"
-                                    alt="Arrow Down" />
+                                    alt="Arrow Down" >
                             </span>
                         </a>
                         <!-- Container list for L3 public menu items (desktop) -->
@@ -142,7 +142,7 @@ $isLogged = isset($_GET['logged']) && $_GET['logged'] === 'true';
                     <span class="cs-menu-item-span">Resources</span>
                     <img src="/src/assets/menu-arrow-down.svg"
                         class="cs-menu-item-icon object-contain shrink-0 self-stretch my-auto w-3 aspect-[1.5]"
-                        alt="Arrow Down" />
+                        alt="Arrow Down" >
                 </a>
                 <!-- Container list for L2 public menu items (desktop) -->
                 <ul
@@ -167,16 +167,16 @@ $isLogged = isset($_GET['logged']) && $_GET['logged'] === 'true';
             <li class="relative inline-block group">
                 <a
                     aria-haspopup="true"
-                    aria-controls="menu-2"
+                    aria-controls="menu-3"
                     class="flex items-center cs-menu-item cs-menu-item-active">
                     <span class="cs-menu-item-span">About us</span>
                     <img src="/src/assets/menu-arrow-down.svg"
                         class="cs-menu-item-icon object-contain shrink-0 self-stretch my-auto w-3 aspect-[1.5]"
-                        alt="Arrow Down" />
+                        alt="Arrow Down" >
                 </a>
                 <!-- Container list for L2 public menu items (desktop) -->
                 <ul
-                    id="menu-2"
+                    id="menu-3"
                     aria-hidden="true"
                     class="mx-auto tracking-widest cs-menu-level2">
                     <!-- L2 public menu item (desktop) -->
@@ -245,7 +245,7 @@ $isLogged = isset($_GET['logged']) && $_GET['logged'] === 'true';
                     </div>
 
                     <!-- Container list for L1 user menu items (desktop & mobile) -->
-                    <ul class="cs-menu-logged-items" aria-labelledby="Logged Menu">
+                    <ul class="cs-menu-logged-items">
                         <!-- L1 user menu item (desktop & mobile) -->
                         <li class="block cs-menu-logged-item">
                             <a class="flex flex-row justify-between w-full" href="#">Your area</a>
@@ -257,7 +257,7 @@ $isLogged = isset($_GET['logged']) && $_GET['logged'] === 'true';
                                 <!-- L1 dropdown harrow (desktop & mobile) -->
                                 <img src="/src/assets/logged-arrow-down.svg"
                                     class="cs-menu-item-icon object-contain shrink-0 self-stretch my-auto w-3 aspect-[1.5]"
-                                    alt="Arrow Down" />
+                                    alt="Arrow Down" >
                             </a>
                             <!-- Container list for L2 user menu items (desktop & mobile) -->
                             <ul class="hidden overflow-hidden list-none dropdown-menu">
@@ -278,7 +278,7 @@ $isLogged = isset($_GET['logged']) && $_GET['logged'] === 'true';
                             <a href="#" class="flex flex-row justify-between w-full">Options
                                 <img src="/src/assets/logged-arrow-down.svg"
                                     class="cs-menu-item-icon object-contain shrink-0 self-stretch my-auto w-3 aspect-[1.5]"
-                                    alt="Arrow Down" />
+                                    alt="Arrow Down" >
                             </a>
                             <ul class="hidden overflow-hidden list-none dropdown-menu">
                                 <!-- L2 user menu item (desktop & mobile) -->
@@ -308,7 +308,7 @@ $isLogged = isset($_GET['logged']) && $_GET['logged'] === 'true';
                     <div class="flex cs-menu-logged-bottom">
                         <a href="/" class="flex flex-row items-center">
                             <img src="/src/assets/log-out.svg" class="w-auto h-6 my-auto cs-menu-logout-icon"
-                                alt="Log Out" />
+                                alt="Log Out" >
                             Log out
                         </a>
                     </div>
@@ -322,13 +322,13 @@ $isLogged = isset($_GET['logged']) && $_GET['logged'] === 'true';
 
                 <a href="#" class="flex flex-row items-center cs-menu-auth-item">
                     <span>Sign Up</span>
-                    <img src="/src/assets/sign-up.svg" class="w-auto my-auto cs-menu-auth-icon cs-menu-auth-gap" alt="Sign Up" />
+                    <img src="/src/assets/sign-up.svg" class="w-auto my-auto cs-menu-auth-icon cs-menu-auth-gap" alt="Sign Up" >
                 </a>
 
                 <!-- Log in button (desktop) | If user is not logged -->
                 <a href="/?logged=true" class="flex flex-row items-center cs-menu-auth-item">
                     <span>Log In</span>
-                    <img src="/src/assets/log-in.svg" class="w-auto my-auto cs-menu-auth-icon" alt="Log In" />
+                    <img src="/src/assets/log-in.svg" class="w-auto my-auto cs-menu-auth-icon" alt="Log In" >
                 </a>
             </div>
         <?php } ?>
@@ -348,7 +348,7 @@ $isLogged = isset($_GET['logged']) && $_GET['logged'] === 'true';
                     <span class="cs-menu-item-span">What we offer</span>
                     <img src="/src/assets/menu-arrow-down.svg"
                         class="cs-menu-item-icon object-contain shrink-0 self-stretch my-auto w-3 aspect-[1.5]"
-                        alt="Arrow Down" />
+                        alt="Arrow Down" >
                 </a>
                 <!-- Container list for L2 public menu items (mobile) -->
                 <ul
@@ -377,11 +377,12 @@ $isLogged = isset($_GET['logged']) && $_GET['logged'] === 'true';
                             <span class="flex justify-end flex-1 ml-auto">
                                 <img src="/src/assets/menu-arrow-down.svg"
                                     class="cs-menu-item-icon object-contain shrink-0 self-stretch my-auto w-3 aspect-[1.5]"
-                                    alt="Arrow Down" />
+                                    alt="Arrow Down" >
                             </span>
                         </a>
                         <!-- Container list for L3 public menu items (mobile) -->
                         <ul
+                            id="cs-menu-lang"
                             aria-hidden="true"
                             class="hidden overflow-hidden border cs-menu-mobile-level3 cs-mobile-menu min-w-32 cs-inner">
                             <!-- L3 public menu item (mobile) -->
@@ -409,7 +410,7 @@ $isLogged = isset($_GET['logged']) && $_GET['logged'] === 'true';
                             <span class="flex justify-end flex-1 ml-auto">
                                 <img src="/src/assets/menu-arrow-down.svg"
                                     class="cs-menu-item-icon object-contain shrink-0 self-stretch my-auto w-3 aspect-[1.5]"
-                                    alt="Arrow Down" />
+                                    alt="Arrow Down" >
 
                             </span>
                         </a>
@@ -457,18 +458,18 @@ $isLogged = isset($_GET['logged']) && $_GET['logged'] === 'true';
                 <!-- L1 public menu item (mobile) -->
                 <a
                     aria-haspopup="true"
-                    aria-controls="menu-2"
+                    aria-controls="menu-4"
                     href="#"
                     class="flex items-center w-full cs-mobile-menu-button cs-menu-item cs-menu-voice-item cs-menu-item-active">
 
                     <span class="cs-menu-item-span">Resources</span>
                     <img src="/src/assets/menu-arrow-down.svg"
                         class="cs-menu-item-icon object-contain shrink-0 self-stretch my-auto w-3 aspect-[1.5]"
-                        alt="Arrow Down" />
+                        alt="Arrow Down" >
                 </a>
                 <!-- Container list for L2 public menu items (mobile) -->
                 <ul
-                    id="menu-2"
+                    id="menu-4"
                     aria-hidden="true"
                     class="hidden w-full mx-auto overflow-hidden tracking-widest cs-mobile-menu cs-menu-mobile-level2">
                     <!-- L2 public menu item (mobile) -->
@@ -491,17 +492,17 @@ $isLogged = isset($_GET['logged']) && $_GET['logged'] === 'true';
                 <!-- L1 public menu item (mobile) -->
                 <a
                     aria-haspopup="true"
-                    aria-controls="menu-2"
+                    aria-controls="menu-5"
                     href="#"
                     class="flex items-center w-full cs-mobile-menu-button cs-menu-item cs-menu-voice-item cs-menu-item-active">
                     <span class="cs-menu-item-span">About us</span>
                     <img src="/src/assets/menu-arrow-down.svg"
                         class="cs-menu-item-icon object-contain shrink-0 self-stretch my-auto w-3 aspect-[1.5]"
-                        alt="Arrow Down" />
+                        alt="Arrow Down" >
                 </a>
                 <!-- Container list for L2 public menu items (mobile) -->
                 <ul
-                    id="menu-2"
+                    id="menu-5"
                     aria-hidden="true"
                     class="hidden w-full mx-auto overflow-hidden tracking-widest cs-mobile-menu cs-menu-mobile-level2">
                     <!-- L2 public menu item (mobile) -->
@@ -530,8 +531,6 @@ $isLogged = isset($_GET['logged']) && $_GET['logged'] === 'true';
             <li class="flex flex-col items-center w-full group cs-menu-item">
                 <!-- L1 public menu item (mobile) -->
                 <a
-                    aria-haspopup="true"
-                    aria-controls="menu-2"
                     href="#"
                     class="flex items-center w-full cs-mobile-menu-button cs-menu-item cs-menu-voice-item cs-menu-item-active">
                     <span class="cs-menu-item-span !mr-2">Testimonials</span>
@@ -540,22 +539,28 @@ $isLogged = isset($_GET['logged']) && $_GET['logged'] === 'true';
             </li>
 
             <?php if (!$isLogged) { ?>
+                <li>
                 <!-- Sign up button (mobile) | If user is not logged -->
-                <a href="#" class="flex flex-row items-center cs-mobile-menu-auth-item">
-                    <img src="/src/assets/sign-up-paper.svg" class="w-auto h-5 my-auto mr-2 cs-mobile-menu-auth-icon" alt="Sign Up" />
-                    <span>Sign Up</span>
-                </a>
+                    <a href="#" class="flex flex-row items-center cs-mobile-menu-auth-item">
+                        <img src="/src/assets/sign-up-paper.svg" class="w-auto h-5 my-auto mr-2 cs-mobile-menu-auth-icon" alt="Sign Up" >
+                        <span>Sign Up</span>
+                    </a>
+                </li>
                 <!-- Log in button (mobile) | If user is not logged -->
-                <a href="/?logged=true" class="flex flex-row items-center cs-mobile-menu-auth-item">
-                    <img src="/src/assets/log-in-paper.svg" class="w-auto h-6 my-auto mr-3 cs-mobile-menu-auth-icon" alt="Log In" />
-                    <span>Log In</span>
-                </a>
+                <li>
+                    <a href="/?logged=true" class="flex flex-row items-center cs-mobile-menu-auth-item">
+                        <img src="/src/assets/log-in-paper.svg" class="w-auto h-6 my-auto mr-3 cs-mobile-menu-auth-icon" alt="Log In" >
+                        <span>Log In</span>
+                    </a>
+                </li>
             <?php } else { ?>
                 <!-- Log out button (mobile) | If user is logged -->
-                <a href="/" class="flex flex-row items-center cs-mobile-menu-auth-item">
-                    <img src="/src/assets/log-out-paper.svg" class="w-auto h-6 my-auto mr-2 cs-mobile-menu-auth-icon" alt="Log Out" />
-                    <span>Log Out</span>
-                </a>
+                <li>
+                    <a href="/" class="flex flex-row items-center cs-mobile-menu-auth-item">
+                        <img src="/src/assets/log-out-paper.svg" class="w-auto h-6 my-auto mr-2 cs-mobile-menu-auth-icon" alt="Log Out" >
+                        <span>Log Out</span>
+                    </a>
+                </li>
             <?php } ?>
             <li class="flex flex-col items-center cs-mobile-menu-footer-item">
                 <span>Come & See 2025</span>
