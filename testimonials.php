@@ -16,7 +16,7 @@
     <main class="flex-grow cs-main bg-cs-paper">
         <div class="flex flex-col items-center mb-32">
             <!-- 'Title' container -->
-            <div class="relative flex flex-col items-end justify-center w-full h-48 sm:h-80 text-white bg-[url('/src/assets/testimonials-header.jpeg')] bg-top bg-cover">
+            <div class="relative flex flex-col items-end justify-center w-full h-48 sm:h-80 text-white cs-bg-testimonials">
                 <div class="absolute top-0 left-0 flex items-center justify-center w-full h-full px-4 bg-white bg-opacity-30">
                     <div class="w-[1000px] mt-16">
                         <img src="/src/assets/what-our-past-students.png" class="sm:w-[500px] w-[300px] ml-auto" alt="Header">

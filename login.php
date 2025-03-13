@@ -13,7 +13,7 @@
 
     <?php require_once 'header.php'; ?>
 
-    <main class="flex flex-col flex-grow items-center justify-items sm:bg-[url('/src/assets/background-login.png')] bg-no-repeat bg-center bg-cover min-h-[746px] cs-main px-5 sm:px-8">
+    <main class="flex flex-col flex-grow items-center justify-items min-h-[746px] cs-main px-5 sm:px-8 cs-bg-login">
 
         <!-- Outer Login Box -->
         <div class="flex flex-col items-center mt-28 sm:mt-36 cs-form-box">

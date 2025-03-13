@@ -803,6 +803,42 @@
         @apply w-full min-h-20 flex items-center py-3 px-4 md:px-8 border-b border-cs-red-main last:border-b-0;
     }
 
+    /* #### BG VANILLA CSS #### */
+    .cs-bg-login {
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+    }
+
+    .cs-bg-ascension-press {
+        background-image: url('/src/assets/ascension-press-header.png');
+        background-position: center;
+        background-size: cover;
+    }
+
+    .cs-bg-endorsements {
+        background-image: url('/src/assets/endorsement.png');
+        background-position: top;
+        background-size: cover;
+    }
+
+    .cs-bg-our-gallery {
+        background-image: url('/src/assets/our-gallery.png');
+        background-position: center;
+        background-size: cover;
+    }
+
+    .cs-bg-testimonials {
+        background-image: url('/src/assets/testimonials-header.jpeg');
+        background-position: top;
+        background-size: cover;
+    }
+
+    @media (min-width: 480px) {
+        .cs-bg-login {
+            background-image: url('/src/assets/background-login.png');
+        }
+    }
 }
 
 .cs-testimonials-select {
