@@ -803,6 +803,115 @@
         @apply w-full min-h-20 flex items-center py-3 px-4 md:px-8 border-b border-cs-red-main last:border-b-0;
     }
 
+    /* #### TESTIMONIALS #### */
+
+    .cs-testimonials-select {
+        @apply
+        w-72
+        h-9
+        pl-4
+        placeholder:text-cs-red-main
+        text-cs-red-main
+        text-left
+        max-sm:w-full
+        autofill:text-cs-red-main
+        autofill:cs-fs-3xs
+        font-semibold
+        cs-fs-3xs
+        border-cs-red-main
+        border-2
+        rounded-l-[30px]
+        rounded-r-xl
+        bg-cs-paper-shade
+    }
+
+    .cs-testimonials-show {
+        @apply
+        h-9
+        font-sans
+        font-bold
+        uppercase
+        cs-fs-2xs
+        tracking-wider
+        rounded-lg
+        bg-cs-red-main
+        text-white
+        py-1.5
+        px-4
+        border
+        border-transparent
+        text-center
+        transition-all
+        shadow-sm
+        hover:bg-cs-red-dark
+        disabled:pointer-events-none
+        disabled:opacity-50
+        disabled:shadow-none;
+    }
+
+    .cs-testimonials-course-arrow {
+        @apply w-9 h-9 text-white rounded-r-lg bg-cs-red-main sm:h-9;
+    }
+
+    .cs-testimonials-box {
+        @apply w-full rounded-[20px] border-4;
+    }
+
+    .cs-testimonials-box-author {
+        @apply cs-fs-lg text-white h-20 pt-2 w-full rounded-t-[13px];
+    }
+
+    .cs-testimonials-counter {
+        @apply font-sans min-w-[75px] py-1 h-auto rounded-[20px] bg-cs-paper border-4 cs-fs-3xs font-bold text-center;
+    }
+
+    .cs-become-student {
+        @apply w-full rounded-[20px] bg-cs-blue-main;
+    }
+
+    .cs-become-student-font {
+        @apply font-serif cs-fs-3xl italic leading-tight;
+    }
+
+    .cs-become-student-button {
+        @apply w-28 h-9 rounded-[6px] bg-cs-paper text-cs-blue-main uppercase font-extrabold cs-fs-2xs tracking-wider;
+    }
+
+    /* #### SUPPORT US #### */
+
+    .cs-support-us-box {
+        @apply mb-16 w-full
+            /* [param] */
+        shadow-cs-all-around
+            /* [param] */
+        rounded-3xl;
+    }
+
+    .cs-support-us-accordion-header {
+        @apply gap-4 px-5 my-3 font-semibold text-left cs-fs-2xl;
+    }
+
+    .cs-support-us-tag {
+        @apply
+        flex flex-row items-center px-4 py-2 font-sans tracking-widest font-bold uppercase border border-transparent rounded-2xl cs-fs-xs rounded-xl ;
+    }
+
+    .cs-support-us-item {
+        @apply w-full min-h-20 flex items-center py-3 px-4 md:px-8;
+    }
+
+    .cs-support-us-button {
+        @apply self-end font-sans font-bold uppercase cs-fs-sm tracking-wider rounded-xl bg-cs-red-main text-white py-1.5 px-6 border border-transparent text-center transition-all shadow-sm hover:bg-cs-red-dark disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none;
+    }
+
+    .cs-support-us-steps {
+        @apply grid grid-cols-1 md:grid-cols-3 gap-3 md:gap-4 my-8;
+    }
+
+    .cs-support-us-step {
+        @apply flex flex-col gap-4 md:gap-6 items-center bg-cs-paper-shade p-6 text-center md:min-h-80 rounded-lg;
+    }
+
     /* #### BG VANILLA CSS #### */
     .cs-bg-login {
         background-repeat: no-repeat;
@@ -839,76 +948,4 @@
             background-image: url('/src/assets/background-login.png');
         }
     }
-}
-
-.cs-testimonials-select {
-    @apply
-    w-72
-    h-9
-    pl-4
-    placeholder:text-cs-red-main
-    text-cs-red-main
-    text-left
-    max-sm:w-full
-    autofill:text-cs-red-main
-    autofill:cs-fs-3xs
-    font-semibold
-    cs-fs-3xs
-    border-cs-red-main
-    border-2
-    rounded-l-[30px]
-    rounded-r-xl
-    bg-cs-paper-shade
-}
-
-.cs-testimonials-show {
-    @apply
-    h-9
-    font-sans
-    font-bold
-    uppercase
-    cs-fs-2xs
-    tracking-wider
-    rounded-lg
-    bg-cs-red-main
-    text-white
-    py-1.5
-    px-4
-    border
-    border-transparent
-    text-center
-    transition-all
-    shadow-sm
-    hover:bg-cs-red-dark
-    disabled:pointer-events-none
-    disabled:opacity-50
-    disabled:shadow-none;
-}
-
-.cs-testimonials-course-arrow {
-    @apply w-9 h-9 text-white rounded-r-lg bg-cs-red-main sm:h-9;
-}
-
-.cs-testimonials-box {
-    @apply w-full rounded-[20px] border-4;
-}
-
-.cs-testimonials-box-author {
-    @apply cs-fs-lg text-white h-20 pt-2 w-full rounded-t-[13px];
-}
-
-.cs-testimonials-counter {
-    @apply font-sans min-w-[75px] py-1 h-auto rounded-[20px] bg-cs-paper border-4 cs-fs-3xs font-bold text-center;
-}
-
-.cs-become-student {
-    @apply w-full rounded-[20px] bg-cs-blue-main;
-}
-
-.cs-become-student-font {
-    @apply font-serif cs-fs-3xl italic leading-tight;
-}
-
-.cs-become-student-button {
-    @apply w-28 h-9 rounded-[6px] bg-cs-paper text-cs-blue-main uppercase font-extrabold cs-fs-2xs tracking-wider;
 }

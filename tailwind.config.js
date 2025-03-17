@@ -75,7 +75,13 @@ export default {
         "cs-period11-sec": "#B08600",
         "cs-period12-pri": "#FFFFFF",
         "cs-period12-sec": "#D9D9D9",
-        "cs-breadcrumb": "#676767"
+        "cs-breadcrumb": "#676767",
+        "cs-bronze": "#A97142",
+        "cs-bronze-dark": "#83552E",
+        "cs-silver": "#C4C4C4",
+        "cs-silver-light": "#FEFBF7",
+        "cs-gold": "#B48900",
+        "cs-gold-light": "#D3A100",
       },
       keyframes: {
         'cs-slide-in-down': {
