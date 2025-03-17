@@ -2,7 +2,7 @@
     <ol class="flex flex-wrap items-center w-full px-4 py-2 uppercase">
         <li class="flex items-center cursor-pointer cs-admin-breadcrumb">
             <a href="#">Users</a>
-            <img src="src/assets/admin-breadcrumb.svg" class="w-4 h-4 ml-1" alt="Breadcrumb Arrow">
+            <img src="/src/assets/admin-breadcrumb.svg" class="w-4 h-4 ml-1" alt="Breadcrumb Arrow">
         </li>
         <li class="flex items-center cursor-pointer cs-admin-breadcrumb">
             <a href="#">Add User</a>
