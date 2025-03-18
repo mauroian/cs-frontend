@@ -580,7 +580,7 @@
     
     .cs-course-chip {
         @apply
-        flex flex-row items-center px-2 pt-0.5 font-sans tracking-widest text-black uppercase bg-white border border-transparent rounded-xl cs-fs-badge;
+        flex flex-row items-center px-2 pt-0.5 font-sans font-semibold tracking-widest text-black uppercase bg-white border border-transparent rounded-xl cs-fs-badge;
     }
 
     /* #### AUTH FORMS #### */
@@ -796,11 +796,15 @@
     }
 
     .cs-bible-accordion-content {
-        @apply font-semibold cs-fs-sm text-cs-grey bg-cs-paper-dark cs-fs-base rounded-b-3xl;
+        @apply text-cs-grey bg-cs-paper-dark rounded-b-3xl;
     }
 
     .cs-course-item {
-        @apply w-full min-h-20 flex items-center py-3 px-4 md:px-8 border-b border-cs-red-main last:border-b-0;
+        @apply flex items-center w-full px-4 py-5 border-b min-h-20 md:px-8 border-cs-blue-light last:border-b-0 hover:bg-gray-100;
+    }
+
+    .cs-course-border-b {
+        @apply border-b border-cs-blue-light;
     }
 
     /* #### TESTIMONIALS #### */
@@ -850,7 +854,7 @@
     }
 
     .cs-testimonials-course-arrow {
-        @apply w-9 h-9 text-white rounded-r-lg bg-cs-red-main sm:h-9;
+        @apply text-white rounded-r-lg w-9 h-9 bg-cs-red-main sm:h-9;
     }
 
     .cs-testimonials-box {
@@ -870,7 +874,7 @@
     }
 
     .cs-become-student-font {
-        @apply font-serif cs-fs-3xl italic leading-tight;
+        @apply font-serif italic leading-tight cs-fs-3xl;
     }
 
     .cs-become-student-button {
@@ -893,11 +897,11 @@
 
     .cs-support-us-tag {
         @apply
-        flex flex-row items-center px-4 py-2 font-sans tracking-widest font-bold uppercase border border-transparent rounded-2xl cs-fs-xs rounded-xl ;
+        flex flex-row items-center px-4 py-2 font-sans font-bold tracking-widest uppercase border border-transparent rounded-2xl cs-fs-xs rounded-xl ;
     }
 
     .cs-support-us-item {
-        @apply w-full min-h-20 flex items-center py-3 px-4 md:px-8;
+        @apply flex items-center w-full px-4 py-3 min-h-20 md:px-8;
     }
 
     .cs-support-us-button {
@@ -905,11 +909,11 @@
     }
 
     .cs-support-us-steps {
-        @apply grid grid-cols-1 md:grid-cols-3 gap-3 md:gap-4 my-8;
+        @apply grid grid-cols-1 gap-3 my-8 md:grid-cols-3 md:gap-4;
     }
 
     .cs-support-us-step {
-        @apply flex flex-col gap-4 md:gap-6 items-center bg-cs-paper-shade p-6 text-center md:min-h-80 rounded-lg;
+        @apply flex flex-col items-center gap-4 p-6 text-center rounded-lg md:gap-6 bg-cs-paper-shade md:min-h-80;
     }
 
     /* #### BG VANILLA CSS #### */
