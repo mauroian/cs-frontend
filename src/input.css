@@ -200,6 +200,7 @@
         @apply
             absolute
             hidden
+            z-20
             mt-6 /* [param] distance of Level 2 box of public menu items from the reative level 1 word (desktop) */
             uppercase
             origin-top

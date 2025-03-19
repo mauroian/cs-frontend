@@ -13,8 +13,13 @@
     <?php require_once 'header.php'; ?>
     <main class="flex-grow mt-20 bg-cs-paper">
         <div class="flex flex-col items-center gap-2 mb-32">
+
             <img src="/src/assets/mauro-janet-lake.jpg" class="mt-10">
             <img src="/src/assets/lets-get-personal.png">
+            <img src="/src/assets/mauro-janet-standing.jpg">
+            <img src="/src/assets/mauro-janet-standing-no-bg.png">
+            <img src="/src/assets/janet-closeup.jpg">
+            <img src="/src/assets/mauro-closeup.jpg">
 
         </div>
     </main>
