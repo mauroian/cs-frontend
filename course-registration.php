@@ -47,8 +47,9 @@
                         <label for="email" class="cs-form-label">Email</label>
                         <!-- Input Email -->
                         <div class="relative cs-form-input-container">
-                            <input id="email" required type="text" placeholder="" class="cs-course-input cs-course-input-icon" >
+                            <input id="email" required type="text" placeholder="" class="cs-course-input cs-course-input-icon !bg-cs-red-bright/20" >
                             <img src="/src/assets/email-login.svg" alt="Email">
+                            <span class="p-2 text-sm text-cs-red-main">This email is already in use</span>
                         </div>
                         <label for="confirm_email" class="cs-form-label">Confirm Email</label>
                         <!-- Input Email -->
@@ -106,6 +107,11 @@
                                 class="cs-course-checkbox">
                             <label for="agree" class="cs-course-checkbox-label">Yes, i
                                 agree <span class="font-normal">(required)</span></label>
+                        </div>
+                        <div class="mx-auto max-w-2/3 flex items-center justify-center">
+                            <span class="text-cs-red-main bg-cs-red-bright/20 p-2 rounded-md">
+                                Messaggio di errore globale!
+                            </span>
                         </div>
                         <div class="flex flex-row justify-end w-full gap-4">
                             <button class="cs-course-reset">Reset</button>
