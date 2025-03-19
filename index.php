@@ -2,9 +2,9 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8" >
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" >
-    <link rel="stylesheet" href="/src/input.css" >
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/src/input.css">
     <script type="module" src="/src/main.js"></script>
     <title>Come & See</title>
 </head>
@@ -24,6 +24,8 @@
                     <div class="cs-fs-sm"><a href="/testimonials.php" target="_blank">Testimonials</a></div>
                     <div class="cs-fs-sm"><a href="/our-gallery.php" target="_blank">Our gallery</a></div>
                     <div class="cs-fs-sm"><a href="/ascension-press.php" target="_blank">Ascension Press</a></div>
+                    <div class="cs-fs-sm"><a href="/support-us.php" target="_blank">Support Us</a></div>
+                    <div class="cs-fs-sm"><a href="/about-us.php" target="_blank">About Us</a></div>
                     <div class="cs-fs-sm"><a href="/your-area.php" target="_blank">Your Area</a></div>
                     <div class="cs-fs-sm"><a href="/bible-timeline-course.php" target="_blank">Bible Timeline Course</a></div>
                     <div class="cs-fs-sm"><a href="/admin.php" target="_blank">Admin</a></div>
