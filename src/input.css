@@ -46,6 +46,7 @@
 }
 
 @layer components {
+
     .cs-main {
      @apply 
      mt-24 pb-44   /* [param] sets margins for <main> element.
