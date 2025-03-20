@@ -13,8 +13,8 @@
 
     <?php require_once 'header.php'; ?>
 
-    <main class="flex-grow cs-main bg-cs-paper">
-        <div class="flex flex-col items-center mb-32">
+    <main class="cs-main bg-cs-paper">
+        <div class="cs-main-div">
             <!-- 'Title' container -->
             <div class="relative flex flex-col items-end justify-center w-full h-48 sm:h-80 text-white cs-bg-testimonials">
                 <div class="absolute top-0 left-0 flex items-center justify-center w-full h-full px-4 bg-white bg-opacity-30">
@@ -124,7 +124,7 @@
                     <div class="flex flex-col items-center w-full mb-5 cs-testimonials-box border-cs-red-bright">
                         <!-- Box Autore -->
                         <div class="relative flex flex-col items-baseline justify-center cs-testimonials-box-author bg-cs-red-bright">
-                            <div class="cs-testimonials-counter absolute -top-[16px] left-[25px] block h-28 border-cs-red-bright text-cs-red-bright"># 1,252</div>
+                            <div class="cs-testimonials-counter absolute -top-[16px] left-[25px] block border-cs-red-bright text-cs-red-bright"># 1,252</div>
                             <div class="text-white pl-[25px]"><span class="font-serif italic font-bold">Marie D.</span>
                                 <p class="tracking-widest uppercase cs-fs-3xs">Advent Sunday Gospels - Nov 2021</p>
                             </div>

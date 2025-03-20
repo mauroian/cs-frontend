@@ -11,8 +11,8 @@
 
 <body class="flex flex-col min-h-screen">
     <?php require_once 'header.php'; ?>
-    <main class="flex-grow cs-main">
-        <div class="flex flex-col items-center gap-2 mt-8 mb-32">
+    <main class="cs-main">
+        <div class="cs-main-div">
             <div class="flex flex-col gap-2 mb-8">
                 <div class="cs-fs-3xl">Home.</div>
                 <div class="mt-6 font-semibold cs-fs-base">Quick links:</div>

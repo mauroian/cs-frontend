@@ -13,10 +13,8 @@
 
     <?php require_once 'header.php'; ?>
 
-    <main class="flex-grow cs-main bg-cs-paper ">
-
-        <!-- Outer container -->
-        <div class="flex flex-col items-center mb-32 ">
+    <main class="cs-main bg-cs-paper">
+        <div class="cs-main-div">
 
             <!-- 'Title' container -->
             <div class="flex flex-col items-center w-full pt-8 pb-5 pl-10 text-white bg-cs-blue-light">
@@ -38,15 +36,15 @@
                 </div>
                 <!-- 'Your Courses' accordion -->
                 <div class="cs-personal-area-box">
-                    <button type="button" onclick="toggleAccordion(1)"
+                    <button type="button" onclick="toggleAccordion(this)"
                         class="flex items-center justify-between w-full cs-personal-accordion-header">
                         <span>Your Courses</span>
-                        <span id="icon-1" class="text-white transition-transform duration-300">
+                        <span class="cs-icon text-white transition-transform duration-300">
                             <img src="/src/assets/accordion-expand-white.svg" class="w-6 h-6" alt="Expand" >
                             <img src="/src/assets/accordion-collapse-white.svg" class="w-6 h-6 hidden" alt="Expand" >
                         </span>
                     </button>
-                    <div id="content-1" class="overflow-hidden transition-all duration-300 ease-in-out">
+                    <div class="cs-content overflow-hidden transition-all duration-300 ease-in-out">
                         <div class="flex flex-col font-semibold cs-personal-accordion-content">
                             <a href="/bible-timeline-course.php">The Bible Timeline Course</a>
                             <a href="#">Advent 2024 Bible Series</a>
@@ -57,15 +55,15 @@
 
                 <!-- 'Information for Come & See...' accordion -->
                 <div class="cs-personal-area-box">
-                    <button type="button" onclick="toggleAccordion(2)"
+                    <button type="button" onclick="toggleAccordion(this)"
                         class="flex items-center justify-between w-full cs-personal-accordion-header">
                         <span>Information for Come & See Mission&nbsp;<br>Partners</span>
-                        <span id="icon-2" class="text-white transition-transform duration-300">
+                        <span class="cs-icon text-white transition-transform duration-300">
                             <img src="/src/assets/accordion-expand-white.svg" class="w-6 h-6" alt="Expand" >
                             <img src="/src/assets/accordion-collapse-white.svg" class="w-6 h-6 hidden" alt="Expand" >
                         </span>
                     </button>
-                    <div id="content-2" class="overflow-hidden transition-all duration-300 ease-in-out">
+                    <div class="cs-content overflow-hidden transition-all duration-300 ease-in-out">
                         <div class="flex flex-col cs-personal-accordion-content">
                             The next monthly Mass (September 2024) for our generous Come & See Mission Partners will be offered on Monday 2nd Sept 2024.
                             <br>
@@ -82,15 +80,15 @@
 
                 <!-- 'Join our Bible Timeline WhatsApp...' accordion -->
                 <div class="cs-personal-area-box">
-                    <button type="button" onclick="toggleAccordion(3)"
+                    <button type="button" onclick="toggleAccordion(this)"
                         class="flex items-center justify-between w-full cs-personal-accordion-header">
                         <span>Join our Bible Timeline WhatsApp&nbsp;Group</span>
-                        <span id="icon-3" class="text-white transition-transform duration-300">
+                        <span class="cs-icon text-white transition-transform duration-300">
                             <img src="/src/assets/accordion-expand-white.svg" class="w-6 h-6" alt="Expand" >
                             <img src="/src/assets/accordion-collapse-white.svg" class="w-6 h-6 hidden" alt="Expand" >
                         </span>
                     </button>
-                    <div id="content-3" class="overflow-hidden transition-all duration-300 ease-in-out">
+                    <div class="cs-content overflow-hidden transition-all duration-300 ease-in-out">
                         <div class="flex flex-col cs-personal-accordion-content">
                             This is not a group to chat (the chat option is disabled!) but for me, the Administrator, to share with you some course communications.
                             <br><br>

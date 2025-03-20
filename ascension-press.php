@@ -13,8 +13,8 @@
 
     <?php require_once 'header.php'; ?>
 
-    <main class="flex-grow cs-main bg-cs-paper">
-        <div class="flex flex-col items-center mb-32">
+    <main class="cs-main bg-cs-paper">
+        <div class="cs-main-div">
             <!-- 'Title' container -->
             <div class="flex flex-col items-center justify-center flex-wrap w-full h-36 sm:h-44 md:h-64  text-white  cs-bg-ascension-press">
                 <div class="w-full leading-tight max-w-[700px] text-center px-2 pb-3">

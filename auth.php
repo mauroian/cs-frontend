@@ -11,8 +11,8 @@
 
 <body class="flex flex-col min-h-screen">
     <?php require_once 'header.php'; ?>
-    <main class="flex-grow flex flex-col gap-36 justify-center items-center min-h-[746px] cs-main pt-14 px-5 sm:px-8">
-
+    <main class="cs-main">
+        <div class="cs-main-div gap-36  pt-14 px-5 sm:px-8">
         <!-- Box -->
         <div class="flex flex-col items-center mt-12 cs-form-box">
             <!-- Box Title -->
@@ -153,6 +153,7 @@
                     We will try to contact you within a few hours with instructions.
                 </div>
             </div>
+        </div>
         </div>
     </main>
     <?php require_once 'footer.php'; ?>

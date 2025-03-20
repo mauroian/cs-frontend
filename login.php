@@ -13,10 +13,9 @@
 
     <?php require_once 'header.php'; ?>
 
-    <main class="flex flex-col flex-grow items-center justify-items min-h-[746px] cs-main px-5 sm:px-8 cs-bg-login">
-
+    <main class="flex flex-col items-center justify-items min-h-[746px] cs-main px-5 sm:px-8 cs-bg-login">
         <!-- Outer Login Box -->
-        <div class="flex flex-col items-center mt-28 sm:mt-36 cs-form-box">
+        <div class="cs-main-div mt-28 sm:mt-36 cs-form-box">
             <!-- Box Titolo -->
             <div class="relative flex flex-row items-baseline justify-center cs-form-login-header">
                 <img src="/src/assets/logos/cs-logo-red-bg-circle-paper.svg" class="absolute -top-[70px] block h-28" alt="Login">

@@ -5,7 +5,12 @@
 @tailwind components;
 @tailwind utilities;
 
+
 @layer utilities {
+
+    body {
+        @apply cs-fs-base;
+    }
 
     .cs-fs-badge {
             @apply text-[0.65rem]
@@ -48,11 +53,18 @@
 @layer components {
 
     .cs-main {
-     @apply 
+     @apply
+     flex-grow
      mt-24 pb-44   /* [param] sets margins for <main> element.
     It depends if we want the navbar non-sticky or sticky <header class="md:relative"> or not - if we have, the navbar would scroll from md (instead of being fixed like in mobile) - and I have to readjust mt and mb accordingly here.
     */
     bg-cs-paper-shade
+    }
+    .cs-main-div {
+        @apply
+        flex
+        flex-col
+        items-center;
     }
     /* whole navbar features (desktop & mobile) */
     .cs-header {
@@ -918,6 +930,12 @@
         @apply flex flex-col items-center gap-4 p-6 text-center rounded-lg md:gap-6 bg-cs-paper-shade md:min-h-80;
     }
 
+    /* #### ABOUT US #### */
+
+    .cs-about-us-meet {
+        @apply self-end font-sans font-bold uppercase cs-fs-sm tracking-wider rounded-md text-white py-1.5 px-2 border border-transparent text-center transition-all shadow-sm disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none;
+    }
+
     /* #### BG VANILLA CSS #### */
     .cs-bg-login {
         background-repeat: no-repeat;
@@ -945,6 +963,18 @@
 
     .cs-bg-testimonials {
         background-image: url('/src/assets/testimonials-header.jpeg');
+        background-position: top;
+        background-size: cover;
+    }
+
+    .cs-bg-about-us {
+        background-image: url('/src/assets/mauro-janet-lake.jpg');
+        background-position: top;
+        background-size: cover;
+    }
+
+    .cs-bg-about-us-rabbi {
+        background-image: url('/src/assets/mauro-janet-lake.jpg');
         background-position: top;
         background-size: cover;
     }

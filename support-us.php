@@ -11,8 +11,8 @@
 
 <body class="flex flex-col min-h-screen">
     <?php require_once 'header.php'; ?>
-    <main class="flex-grow mt-20 bg-cs-paper">
-        <div class="flex flex-col items-center gap-2 mb-32 ">
+    <main class="cs-main bg-cs-paper">
+        <div class="cs-main-div">
 
             <!-- 'Title' container -->
             <div class="flex flex-col items-center w-full py-5 pl-10 text-cs-red-main sm:py-10 bg-cs-paper-shade">

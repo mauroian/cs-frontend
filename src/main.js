@@ -167,7 +167,7 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
 
-  document.querySelectorAll('div[id*=content-]').forEach((el, index) => {
+  document.querySelectorAll('.cs-content').forEach((el, index) => {
     el.style.maxHeight = el.clientHeight + 'px';
 
   });
@@ -225,10 +225,12 @@ function toggleRead(el, index) {
 
 window.toggleRead = toggleRead;
 
-function toggleAccordion(index) {
-  const content = document.getElementById(`content-${index}`);
-  const icon = document.getElementById(`icon-${index}`);
-  const text = document.querySelectorAll(`.text-${index}`);
+function toggleAccordion(el) {
+  const container = el.parentElement;
+  console.log(container);
+  const content = container.querySelector(`.cs-content`);
+  const icon = container.querySelector(`.cs-icon`);
+  const text = container.querySelectorAll(`.text`);
   //get current classlist and apply
   icon.querySelectorAll('img').forEach((el) => {
     el.classList.toggle('hidden');

@@ -13,7 +13,8 @@
 
     <?php require_once 'header.php'; ?>
 
-    <main class="flex-grow cs-main">
+    <main class="cs-main">
+        <div class="cs-main-div">
 
         <!-- Page Title container -->
         <div class="flex flex-col items-center w-full px-5 py-6 text-white bg-cs-red-main">
@@ -79,16 +80,16 @@
                         </div>
                         <div class="w-full md:w-auto">
                             <span class="tracking-widest uppercase cs-fs-sm">agree to Terms and Conditions</span>
-                            <button type="button" onclick="toggleAccordion(1)"
+                            <button type="button" onclick="toggleAccordion(this)"
                                 class="flex items-center justify-between w-full cs-course-accordion-button">
-                                <span class="text-1">Show terms and conditions</span>
-                                <span class="hidden text-1">Hide terms and conditions</span>
-                                <span id="icon-1" class="transition-transform duration-300">
+                                <span class="text">Show terms and conditions</span>
+                                <span class="hidden text">Hide terms and conditions</span>
+                                <span class="cs-icon transition-transform duration-300">
                                     <img src="/src/assets/accordion-expand-red.svg" class="w-6 h-6" alt="Expand" >
                                     <img src="/src/assets/accordion-collapse-red.svg" class="w-6 h-6 hidden" alt="Expand" >
                                 </span>
                             </button>
-                            <div id="content-1" class="overflow-hidden transition-all duration-300 ease-in-out max-h-0">
+                            <div class="cs-content overflow-hidden transition-all duration-300 ease-in-out max-h-0">
                                 <div class="cs-course-accordion-content">
                                     In order to comply with GDPR data protection rules, please confirm by ticking the box that
                                     you agree that your personal details provided by you above may be retained and used by Mauro
@@ -197,16 +198,16 @@
                         </div>
                         <div class="w-full md:w-auto">
                             <span class="tracking-widest uppercase cs-fs-sm">agree to Terms and Conditions</span>
-                            <button type="button" onclick="toggleAccordion(2)"
+                            <button type="button" onclick="toggleAccordion(this)"
                                 class="flex items-center justify-between w-full cs-course-accordion-button">
-                                <span class="text-2">Show terms and conditions</span>
-                                <span class="hidden text-2">Hide terms and conditions</span>
-                                <span id="icon-2" class="transition-transform duration-300">
+                                <span class="text">Show terms and conditions</span>
+                                <span class="hidden text">Hide terms and conditions</span>
+                                <span class="cs-icon transition-transform duration-300">
                                     <img src="/src/assets/accordion-expand-red.svg" class="w-6 h-6" alt="Expand" >
                                     <img src="/src/assets/accordion-collapse-red.svg" class="w-6 h-6 hidden" alt="Expand" >
                                 </span>
                             </button>
-                            <div id="content-2" class="overflow-hidden transition-all duration-300 ease-in-out max-h-0">
+                            <div class="cs-content overflow-hidden transition-all duration-300 ease-in-out max-h-0">
                                 <div class="cs-course-accordion-content">
                                     In order to comply with GDPR data protection rules, please confirm by ticking the box that
                                     you agree that your personal details provided by you above may be retained and used by Mauro
@@ -233,6 +234,7 @@
                     </form>
                 </div>
             </div>
+        </div>
         </div>
     </main>
     <?php require_once 'footer.php'; ?>
