@@ -257,25 +257,6 @@ function toggleAccordion(el) {
 
 }
 
-function toggleViewport(col){
-  console.log('toggle');
-
-  const el = document.querySelector('.cs-testimonials-viewport');
-  if(el.classList.contains('grid-cols-'+col)) {
-    return;
-  }
-  document.querySelectorAll('.cs-testimonial-viewport-toggle img').forEach((el) => {
-    el.classList.toggle('hidden');
-  });
-  const classes = el.className.split(" ").filter(c => !c.startsWith('grid-cols-'));
-  el.className = classes.join(" ").trim();
-  console.log('grid-cols-'+col);
-  el.classList.add('grid-cols-'+col);
-}
-
-window.toggleViewport = toggleViewport;
-
-
 window.togglePassword = (el) => {
   const i = el.closest('div').querySelector('input');
   i.type = i.type=='password' ? 'text': 'password'
