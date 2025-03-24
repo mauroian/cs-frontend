@@ -53,11 +53,11 @@
                     <div class="flex flex-col items-center w-full mb-5 cs-testimonials-box border-cs-red-medium">
                         <!-- Box Autore -->
                         <div class="relative flex flex-col items-baseline justify-center cs-testimonials-box-author bg-cs-red-medium pl-[20px]">
-                            <div class="flex flex-row justify-start items-center gap-2">
+                            <div class="flex flex-row items-center justify-start gap-2">
                                 <div class="cs-testimonials-counter border-cs-red-medium text-cs-red-medium"># 1,252</div>
-                                <span class="text-white font-bold">Anne B.</span>
+                                <span class="font-bold text-white">Anne B.</span>
                             </div>
-                                <p class="text-white tracking-widest uppercase cs-fs-3xs">Advent Sunday Gospels - Nov 2021</p>
+                            <p class="mt-1 tracking-widest text-white uppercase cs-fs-3xs">Advent Sunday Gospels - Nov 2021</p>
                         </div>
                         <!-- Box Post -->
                         <div class="p-[20px] cs-fs-2xs">
@@ -75,11 +75,11 @@
                     <div class="flex flex-col items-center w-full mb-5 cs-testimonials-box border-cs-red-main">
                         <!-- Box Autore -->
                         <div class="relative flex flex-col items-baseline justify-center cs-testimonials-box-author bg-cs-red-main pl-[20px]">
-                            <div class="flex flex-row justify-start items-center gap-2">
+                            <div class="flex flex-row items-center justify-start gap-2">
                                 <div class="cs-testimonials-counter border-cs-red-main text-cs-red-main"># 1,252</div>
-                                <span class="text-white font-bold">Anita P.</span>
+                                <span class="font-bold text-white">Anita P.</span>
                             </div>
-                             <p class="text-white tracking-widest uppercase cs-fs-3xs">Advent Sunday Gospels - Nov 2021</p>
+                            <p class="tracking-widest text-white uppercase cs-fs-3xs">Advent Sunday Gospels - Nov 2021</p>
                         </div>
                         <!-- Box Post -->
                         <div class="p-[20px] cs-fs-2xs">
@@ -97,11 +97,11 @@
                     <div class="flex flex-col items-center w-full mb-5 cs-testimonials-box border-cs-red-dark">
                         <!-- Box Autore -->
                         <div class="relative flex flex-col items-baseline justify-center cs-testimonials-box-author bg-cs-red-dark pl-[20px]">
-                            <div class="flex flex-row justify-start items-center gap-2">
+                            <div class="flex flex-row items-center justify-start gap-2">
                                 <div class="cs-testimonials-counter border-cs-red-dark text-cs-red-dark"># 1,252</div>
-                                <span class="text-white font-bold">Helen B.</span>
+                                <span class="font-bold text-white">Helen B.</span>
                             </div>
-                            <p class="text-white tracking-widest uppercase cs-fs-3xs">Advent Sunday Gospels - Nov 2021</p>
+                            <p class="tracking-widest text-white uppercase cs-fs-3xs">Advent Sunday Gospels - Nov 2021</p>
                         </div>
                         <!-- Box Post -->
                         <div class="p-[20px] cs-fs-2xs">
@@ -117,11 +117,11 @@
                     <div class="flex flex-col items-center w-full mb-5 cs-testimonials-box border-cs-red-bright">
                         <!-- Box Autore -->
                         <div class="relative flex flex-col items-baseline justify-center cs-testimonials-box-author bg-cs-red-bright pl-[20px]">
-                            <div class="flex flex-row justify-start items-center gap-2">
-                            <div class="cs-testimonials-counter border-cs-red-bright text-cs-red-bright"># 1,252</div>
-                                <span class="text-white font-bold">Marie D.</span>
+                            <div class="flex flex-row items-center justify-start gap-2">
+                                <div class="cs-testimonials-counter border-cs-red-bright text-cs-red-bright"># 1,252</div>
+                                <span class="font-bold text-white">Marie D.</span>
                             </div>
-                            <p class="text-white tracking-widest uppercase cs-fs-3xs">Advent Sunday Gospels - Nov 2021</p>
+                            <p class="tracking-widest text-white uppercase cs-fs-3xs">Advent Sunday Gospels - Nov 2021</p>
                         </div>
                         <!-- Box Post -->
                         <div class="p-[20px] cs-fs-2xs">

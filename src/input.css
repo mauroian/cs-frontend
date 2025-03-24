@@ -836,7 +836,7 @@
         max-sm:w-full
         autofill:cs-fs-3xs
         font-semibold
-        cs-fs-3xs
+        cs-fs-xs
         border-cs-red-main
         border-2
         rounded-l-[30px]
@@ -881,7 +881,7 @@
     }
 
     .cs-testimonials-counter {
-        @apply font-sans min-w-[60px] py-1 h-auto rounded-[20px] bg-cs-paper border-4 cs-fs-3xs font-bold text-center;
+        @apply font-sans min-w-[60px] pt-0.5 pb-0 pl-3 pr-3 h-auto rounded-[20px] bg-cs-paper border-4 cs-fs-2xs font-bold text-center;
     }
 
     .cs-become-student {
