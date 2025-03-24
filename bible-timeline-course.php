@@ -6,12 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/src/input.css">
     <script type="module" src="/src/main.js"></script>
-    <title>Come & See</title>
+    <title>Bible Timeline Course (Your Area)</title>
 </head>
 
 <body class="flex flex-col min-h-screen">
     <?php require_once 'header.php'; ?>
-    <main class="cs-main bg-cs-paper">
+    <main class="cs-main">
         <div class="cs-main-div">
 
             <!-- BIBLE TIMELINE COURSE HEADER SECTION -->
@@ -61,14 +61,14 @@
                     <button type="button" onclick="toggleAccordion(this)"
                         class="flex items-center justify-between w-full cs-bible-accordion-header">
                         <span class=" text-cs-blue-light">Session 1</span>
-                        <span class="cs-icon transition-transform duration-300">
+                        <span class="transition-transform duration-300 cs-icon">
                             <img src="/src/assets/accordion-expand.svg" class="w-6 h-6" alt="Expand">
                             <img src="/src/assets/accordion-collapse.svg" class="hidden w-6 h-6" alt="Expand">
                         </span>
                     </button>
 
                     <!-- SESSION 1 CONTAINER BELOW HEADER -->
-                    <div  class="cs-content overflow-hidden transition-all duration-300 ease-in-out">
+                    <div class="overflow-hidden transition-all duration-300 ease-in-out cs-content">
 
                         <!-- PERIOD 1 EARLY WORLD -->
                         <div class="flex flex-col">
@@ -119,14 +119,14 @@
                     <button type="button" onclick="toggleAccordion(this)"
                         class="flex items-center justify-between w-full cs-bible-accordion-header">
                         <span class=" text-cs-blue-light">Session 2</span>
-                        <span class="cs-icon transition-transform duration-300">
+                        <span class="transition-transform duration-300 cs-icon">
                             <img src="/src/assets/accordion-expand.svg" class="w-6 h-6" alt="Expand">
                             <img src="/src/assets/accordion-collapse.svg" class="hidden w-6 h-6" alt="Expand">
                         </span>
                     </button>
 
                     <!-- SESSION 2 CONTAINER BELOW HEADER -->
-                    <div class="cs-content overflow-hidden transition-all duration-300 ease-in-out">
+                    <div class="overflow-hidden transition-all duration-300 ease-in-out cs-content">
 
                         <!-- PERIOD 1 EARLY WORLD -->
                         <div class="flex flex-col">
@@ -236,14 +236,14 @@
                     <button type="button" onclick="toggleAccordion(this)"
                         class="flex items-center justify-between w-full cs-bible-accordion-header">
                         <span class=" text-cs-blue-light">Session 3</span>
-                        <span class="cs-icon transition-transform duration-300">
+                        <span class="transition-transform duration-300 cs-icon">
                             <img src="/src/assets/accordion-expand.svg" class="w-6 h-6" alt="Expand">
                             <img src="/src/assets/accordion-collapse.svg" class="hidden w-6 h-6" alt="Expand">
                         </span>
                     </button>
 
                     <!-- SESSION 3 CONTAINER BELOW HEADER -->
-                    <div class="cs-content overflow-hidden transition-all duration-300 ease-in-out">
+                    <div class="overflow-hidden transition-all duration-300 ease-in-out cs-content">
 
                         <!-- PERIOD 2 PATRIARCHS -->
                         <div class="flex flex-col">
@@ -353,14 +353,14 @@
                     <button type="button" onclick="toggleAccordion(this)"
                         class="flex items-center justify-between w-full cs-bible-accordion-header">
                         <span class=" text-cs-blue-light">Session 4</span>
-                        <span class="cs-icon transition-transform duration-300">
+                        <span class="transition-transform duration-300 cs-icon">
                             <img src="/src/assets/accordion-expand.svg" class="w-6 h-6" alt="Expand">
                             <img src="/src/assets/accordion-collapse.svg" class="hidden w-6 h-6" alt="Expand">
                         </span>
                     </button>
 
                     <!-- SESSION 4 CONTAINER BELOW HEADER -->
-                    <div class="cs-content overflow-hidden transition-all duration-300 ease-in-out">
+                    <div class="overflow-hidden transition-all duration-300 ease-in-out cs-content">
 
                         <!-- PERIOD 3 EGYPT & EXODUS -->
                         <div class="flex flex-col">

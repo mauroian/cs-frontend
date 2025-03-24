@@ -2,21 +2,21 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8" >
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" >
-    <link rel="stylesheet" href="/src/input.css" >
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/src/input.css">
     <script type="module" src="/src/main.js"></script>
-    <title>Come & See - Testimonials</title>
+    <title>Testimonials</title>
 </head>
 
 <body class="flex flex-col min-h-screen">
 
     <?php require_once 'header.php'; ?>
 
-    <main class="cs-main bg-cs-paper">
+    <main class="cs-main">
         <div class="cs-main-div">
             <!-- 'Title' container -->
-            <div class="relative flex flex-col items-end justify-center w-full h-48 sm:h-80 text-white cs-bg-testimonials">
+            <div class="relative flex flex-col items-end justify-center w-full h-48 text-white sm:h-80 cs-bg-testimonials">
                 <div class="absolute top-0 left-0 flex items-center justify-center w-full h-full px-4 bg-white bg-opacity-30">
                     <div class="w-[1000px] mt-16">
                         <img src="/src/assets/what-our-past-students.png" class="sm:w-[500px] w-[300px] ml-auto" alt="Header">
@@ -41,19 +41,19 @@
                             <option value="">All Testimonials (1,252)</option>
                         </select>
                         <div class="absolute top-0 right-0 flex flex-row items-center justify-center pointer-events-none cs-testimonials-course-arrow">
-                            <img src="/src/assets/select-arrow.svg" class="w-4 h-4" alt="Arrow" >
+                            <img src="/src/assets/select-arrow.svg" class="w-4 h-4" alt="Arrow">
                         </div>
                     </div>
                     <div class="flex flex-row items-center w-full max-sm:flex-row">
                         <button class="cs-testimonials-show">Show</button>
                         <div class="mt-2 ml-auto">
                             <button class="cs-testimonial-viewport-toggle" onclick="toggleViewport(1)">
-                                <img src="/src/assets/testimonial-list-active.svg" class="w-9 h-9" alt="Grid" >
-                                <img src="/src/assets/testimonial-list.svg" class="hidden border rounded-lg h-9 w-9 border-cs-red-main" alt="Grid" >
+                                <img src="/src/assets/testimonial-list-active.svg" class="w-9 h-9" alt="Grid">
+                                <img src="/src/assets/testimonial-list.svg" class="hidden border rounded-lg h-9 w-9 border-cs-red-main" alt="Grid">
                             </button>
                             <button class="cs-testimonial-viewport-toggle" onclick="toggleViewport(2)">
-                                <img src="/src/assets/testimonial-column-active.svg" class="w-9 h-9 hidden" alt="Grid" >
-                                <img src="/src/assets/testimonial-column.svg" class="border rounded-lg h-9 w-9 border-cs-red-main" alt="Grid" >
+                                <img src="/src/assets/testimonial-column-active.svg" class="hidden w-9 h-9" alt="Grid">
+                                <img src="/src/assets/testimonial-column.svg" class="border rounded-lg h-9 w-9 border-cs-red-main" alt="Grid">
                             </button>
                         </div>
                     </div>

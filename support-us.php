@@ -6,12 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/src/input.css">
     <script type="module" src="/src/main.js"></script>
-    <title>Come & See - Support Us</title>
+    <title>Support Us</title>
 </head>
 
 <body class="flex flex-col min-h-screen">
     <?php require_once 'header.php'; ?>
-    <main class="cs-main bg-cs-paper">
+    <main class="cs-main">
         <div class="cs-main-div">
 
             <!-- 'Title' container -->

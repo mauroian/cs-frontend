@@ -2,11 +2,11 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8" >
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" >
-    <link rel="stylesheet" href="/src/input.css" >
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/src/input.css">
     <script type="module" src="/src/admin.js"></script>
-    <title>Come & See</title>
+    <title>Admin</title>
 </head>
 
 <body class="flex flex-col min-h-screen">
