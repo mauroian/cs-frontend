@@ -26,14 +26,17 @@
 
             <!-- Container of all the accordions -->
             <div class="flex flex-col items-center cs-personal-area-container">
+
+                <!-- Plus Minus 'global' -->
                 <div class="flex flex-row items-center justify-end cs-accordion-manager">
                     <button class="mr-1 cs-accordion-expand text-cs-blue-light">
                         <img src="/src/assets/accordion-expand.svg" class="w-6 h-6" alt="Expand">
                     </button>
-                    <button class=" cs-accordion-collapse">
+                    <button class="cs-accordion-collapse">
                         <img src="/src/assets/accordion-collapse.svg" class="w-6 h-6" alt="Collapse">
                     </button>
                 </div>
+
                 <!-- 'Your Courses' accordion -->
                 <div class="cs-personal-area-box">
                     <button type="button" onclick="toggleAccordion(this)"

@@ -9,6 +9,10 @@
 @layer utilities {
 
     body {
+        /* To set default font size in all pages.
+        This MUST NOT be put in HTML tag, because the modern browsers work with REM not pixel
+        and for this reason there would be many problems
+        */
         @apply cs-fs-base;
     }
 
@@ -826,11 +830,10 @@
         w-72
         h-9
         pl-4
-        placeholder:text-cs-red-main
+        placeholder:text-cs-red-main /* when user does not select anything */
         text-cs-red-main
         text-left
         max-sm:w-full
-        autofill:text-cs-red-main
         autofill:cs-fs-3xs
         font-semibold
         cs-fs-3xs

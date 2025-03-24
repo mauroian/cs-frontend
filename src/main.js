@@ -9,12 +9,12 @@ const MENU_MOBILE_DURATION = 200;
 const CLOSE_OTHER_MENUS = false;
 
 
-
-
 document.addEventListener("DOMContentLoaded", () => {
-  /**
-   FUNCTION TO MANAGE THE DESKTOP MENU
-   */
+
+  /********
+   FUNCTIONS TO MANAGE THE DESKTOP MENU
+   ********/
+
   new HoverIntent(document.querySelectorAll('.group.inline-block'), {
     interval: MENU_LEVEL_2_DELAY,
     exitDelay: MENU_LEVEL_2_DELAY,
@@ -49,10 +49,11 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   });
 
-  /**
-   * FUNCTION TO MANAGE THE MOBILE MENU
-   */
-    // For click event and also reference for outer div tag
+  /********
+   * FUNCTIONS TO MANAGE THE MOBILE MENU
+   ********/
+  
+  // For click event and also reference for outer div tag
   const btn = document.querySelector("button.cs-mobile-menu-button");
   const menu = document.querySelector("ul.cs-mobile-menu");
   if(btn && menu) {
@@ -104,9 +105,10 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
 
-  /**
-   * FUNCTION TO MANAGE THE USER MENU (BOTH MOBILE AND DESKTOP)
-   */
+  /********
+   * FUNCTIONS TO MANAGE THE USER MENU (BOTH MOBILE AND DESKTOP)
+   ********/
+
   const loggedMenuBtn = document.querySelector('.cs-logged-avatar');
   const loggedMenu = document.querySelector('.cs-menu-logged');
   if (loggedMenuBtn) {
@@ -160,23 +162,26 @@ document.addEventListener("DOMContentLoaded", () => {
       }
     });
   });
-  /** function to close the menu when clicking outside **/
+
   function onClickOutside(cb) {
-    document.addEventListener('click', event => {
+    // function to close the menu when clicking outside
+      document.addEventListener('click', event => {
       if (!loggedMenu.contains(event.target) && !loggedMenuBtn.contains(event.target)) cb();
     });
   }
 
+
+
+
+  /********
+   *  FUNCTIONS TO MANAGE ACCORDIONS
+   ********/
+
   document.querySelectorAll('.cs-content').forEach((el, index) => {
     el.style.maxHeight = el.clientHeight + 'px';
-
   });
 
- /* document.querySelectorAll('div[id*=read-full-]').forEach((el, index) => {
-    el.style.maxHeight = el.clientHeight + 'px';
-  }); */
-
-  /** EXPAND FULLY ALL ELEMENT OF ACCORDION **/
+  //expand all elements of accordion
   const expandButton = document.querySelector('.cs-accordion-expand');
   if(expandButton !== null) {
     expandButton.addEventListener('click', function () {
@@ -188,6 +193,7 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
 
+  //collapse all elements of accordion
   const collapseButton = document.querySelector('.cs-accordion-collapse');
   if(collapseButton !== null) {
     collapseButton.addEventListener('click', function () {
@@ -201,9 +207,9 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 
-/**
+/********
  * FROM HERE AFTER THERE ARE THE FUNCTIONS TO MANAGE THE ANIMATIONS AND SPECIAL JQUERY MIGRATIONS
- */
+ ********/
 
 function toggleRead(el, index) {
   const content = document.getElementById(`read-full-${index}`);

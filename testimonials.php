@@ -69,7 +69,7 @@
                             </div>
                         </div>
                         <!-- Box Post -->
-                        <div class="cs-form-container p-[20px] cs-fs-2xs">
+                        <div class="p-[20px] cs-fs-2xs">
                             The depth Mauro goes to to open the Sunday Gospel is astounding. Mauro's teaching is 100% Catholic, and will bring something new to everyone, whatever their level of understanding of the Faith and their knowledge of the Scripture.
 
                             We met as a little group in the church hall, watched together and stayed all behind after the session to discuss the questions. This was the best way to exchange, share and grow together in the Holy Spirit. Only two of us could be at the hall for the last session, but we met the others on Zoom, and could still have our discussion group going.
@@ -90,7 +90,7 @@
                             </div>
                         </div>
                         <!-- Box Post -->
-                        <div class="cs-form-container p-[20px] cs-fs-2xs">
+                        <div class="p-[20px] cs-fs-2xs">
                             Just SO surprisingly interesting and informative! Mauro's infectious enthusiasm and his analysis
                             interspersed with interesting historical facts and (often surprising) connections within the
                             Bible, lures and retains one's attention.
@@ -111,7 +111,7 @@
                             </div>
                         </div>
                         <!-- Box Post -->
-                        <div class="cs-form-container p-[20px] cs-fs-2xs">
+                        <div class="p-[20px] cs-fs-2xs">
                             I feel completely blessed by the Advent Bible Series (as I have by all the courses I have taken with comeandsee.org to be honest), it has brought the scripture to life for me and helped me to see things in a totally new way.
 
                             I love that the sessions are live and that I am taking part with others from all over the world at the same time - it gives me such a feeling of fellowship.
@@ -130,7 +130,7 @@
                             </div>
                         </div>
                         <!-- Box Post -->
-                        <div class="cs-form-container p-[20px] cs-fs-2xs">
+                        <div class="p-[20px] cs-fs-2xs">
                             This course has been such a blessing from God in my life! Each and every session has been jam packed with in depth teachings that have taught me more than I could ever imagine!
 
                             The study of the Bible passages is so so in depth and interesting and it is so evident how much love, care, prayer and time Mauro puts into each session! It has been the highlight of my week throughout advent!
