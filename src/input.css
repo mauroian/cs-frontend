@@ -912,7 +912,7 @@
 
     .cs-support-us-tag {
         @apply
-        flex flex-row items-center px-4 py-2 font-sans font-bold tracking-widest uppercase border border-transparent rounded-2xl cs-fs-xs rounded-xl ;
+        flex flex-row items-center px-4 py-2 font-sans font-bold tracking-widest uppercase border border-transparent rounded-2xl cs-fs-xs ;
     }
 
     .cs-support-us-item {
