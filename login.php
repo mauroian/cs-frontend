@@ -11,15 +11,15 @@
 
 <body class="flex flex-col min-h-screen">
 
-    <?php require_once 'header.php'; ?>
+    <?php require_once 'components/header.php'; ?>
 
     <main class="cs-login">
         <div class="cs-main-div">
-        <!-- Outer Login Box -->
-        <?php require_once 'login-form.php' ?>
+            <!-- Outer Login Box -->
+            <?php require_once 'components/login-form.php' ?>
         </div>
     </main>
-    <?php require_once 'footer.php'; ?>
+    <?php require_once 'components/footer.php'; ?>
 </body>
 
 </html>

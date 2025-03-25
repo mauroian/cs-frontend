@@ -74,15 +74,17 @@
             <div class="w-full md:w-auto">
                 <span class="tracking-widest uppercase cs-fs-sm">agree to Terms and Conditions</span>
                 <button type="button" onclick="toggleAccordion(this)"
-                        class="flex items-center justify-between w-full cs-course-accordion-button">
+                    class="flex items-center justify-between w-full cs-course-accordion-button">
                     <span class="text">Show terms and conditions</span>
                     <span class="hidden text">Hide terms and conditions</span>
                     <span class="transition-transform duration-300 cs-icon">
-                                        <img src="/src/assets/accordion-expand-red.svg" class="w-6 h-6" alt="Expand">
-                                        <img src="/src/assets/accordion-collapse-red.svg" class="hidden w-6 h-6" alt="Expand">
-                                    </span>
+                        <!-- Note: cs-icon is called by Javascript -->
+                        <img src="/src/assets/accordion-expand-red.svg" class="w-6 h-6" alt="Expand">
+                        <img src="/src/assets/accordion-collapse-red.svg" class="hidden w-6 h-6" alt="Expand">
+                    </span>
                 </button>
                 <div class="overflow-hidden transition-all duration-300 ease-in-out cs-content max-h-0">
+                    <!-- Note: cs-content is called by Javascript -->
                     <div class="cs-course-accordion-content">
                         In order to comply with GDPR data protection rules, please confirm by ticking the box that
                         you agree that your personal details provided by you above may be retained and used by Mauro
@@ -92,13 +94,13 @@
                         that they will be kept confidential unless otherwise requested by you. You can contact us
                         anytime at info [[at]] comeandsee.org to withdraw your consent. By submitting this form you
                         also agree to the Terms and Conditions which you can find at <a
-                          href="https://comeandsee.org/terms-and-conditions" target="_blank">https://comeandsee.org/terms-and-conditions</a>.
+                            href="https://comeandsee.org/terms-and-conditions" target="_blank">https://comeandsee.org/terms-and-conditions</a>.
                     </div>
                 </div>
             </div>
             <div class="flex items-center my-6">
                 <input id="agree_2" type="checkbox" value=""
-                       class="cs-course-checkbox">
+                    class="cs-course-checkbox">
                 <label for="agree_2" class="cs-course-checkbox-label">Yes, i
                     agree <span class="font-normal">(required)</span></label>
             </div>

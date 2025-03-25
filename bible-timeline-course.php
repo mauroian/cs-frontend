@@ -10,7 +10,7 @@
 </head>
 
 <body class="flex flex-col min-h-screen">
-    <?php require_once 'header.php'; ?>
+    <?php require_once 'components/header.php'; ?>
     <main class="cs-main">
         <div class="cs-main-div">
 
@@ -41,9 +41,11 @@
                 <!-- EXPAND/COLLAPSE BUTTONS -->
                 <div class="flex flex-row items-center justify-end cs-accordion-manager">
                     <button class="mr-1 cs-accordion-expand text-cs-blue-light">
+                        <!-- Note: cs-accordion-expand is called by Javascript -->
                         <img src="/src/assets/accordion-expand.svg" class="w-6 h-6" alt="Expand">
                     </button>
                     <button class=" cs-accordion-collapse">
+                        <!-- Note: cs-accordion-collapse is called by Javascript -->
                         <img src="/src/assets/accordion-collapse.svg" class="w-6 h-6" alt="Collapse">
                     </button>
                 </div>
@@ -62,6 +64,7 @@
                         class="flex items-center justify-between w-full cs-bible-accordion-header">
                         <span class=" text-cs-blue-light">Session 1</span>
                         <span class="transition-transform duration-300 cs-icon">
+                            <!-- Note: cs-icon is called by Javascript -->
                             <img src="/src/assets/accordion-expand.svg" class="w-6 h-6" alt="Expand">
                             <img src="/src/assets/accordion-collapse.svg" class="hidden w-6 h-6" alt="Expand">
                         </span>
@@ -69,6 +72,7 @@
 
                     <!-- SESSION 1 CONTAINER BELOW HEADER -->
                     <div class="overflow-hidden transition-all duration-300 ease-in-out cs-content">
+                        <!-- Note: cs-content is called by Javascript -->
 
                         <!-- PERIOD 1 EARLY WORLD -->
                         <div class="flex flex-col">
@@ -120,6 +124,7 @@
                         class="flex items-center justify-between w-full cs-bible-accordion-header">
                         <span class=" text-cs-blue-light">Session 2</span>
                         <span class="transition-transform duration-300 cs-icon">
+                            <!-- Note: cs-icon is called by Javascript -->
                             <img src="/src/assets/accordion-expand.svg" class="w-6 h-6" alt="Expand">
                             <img src="/src/assets/accordion-collapse.svg" class="hidden w-6 h-6" alt="Expand">
                         </span>
@@ -127,6 +132,7 @@
 
                     <!-- SESSION 2 CONTAINER BELOW HEADER -->
                     <div class="overflow-hidden transition-all duration-300 ease-in-out cs-content">
+                        <!-- Note: cs-content is called by Javascript -->
 
                         <!-- PERIOD 1 EARLY WORLD -->
                         <div class="flex flex-col">
@@ -237,6 +243,7 @@
                         class="flex items-center justify-between w-full cs-bible-accordion-header">
                         <span class=" text-cs-blue-light">Session 3</span>
                         <span class="transition-transform duration-300 cs-icon">
+                            <!-- Note: cs-icon is called by Javascript -->
                             <img src="/src/assets/accordion-expand.svg" class="w-6 h-6" alt="Expand">
                             <img src="/src/assets/accordion-collapse.svg" class="hidden w-6 h-6" alt="Expand">
                         </span>
@@ -244,6 +251,7 @@
 
                     <!-- SESSION 3 CONTAINER BELOW HEADER -->
                     <div class="overflow-hidden transition-all duration-300 ease-in-out cs-content">
+                        <!-- Note: cs-content is called by Javascript -->
 
                         <!-- PERIOD 2 PATRIARCHS -->
                         <div class="flex flex-col">
@@ -354,6 +362,7 @@
                         class="flex items-center justify-between w-full cs-bible-accordion-header">
                         <span class=" text-cs-blue-light">Session 4</span>
                         <span class="transition-transform duration-300 cs-icon">
+                            <!-- Note: cs-icon is called by Javascript -->
                             <img src="/src/assets/accordion-expand.svg" class="w-6 h-6" alt="Expand">
                             <img src="/src/assets/accordion-collapse.svg" class="hidden w-6 h-6" alt="Expand">
                         </span>
@@ -361,6 +370,7 @@
 
                     <!-- SESSION 4 CONTAINER BELOW HEADER -->
                     <div class="overflow-hidden transition-all duration-300 ease-in-out cs-content">
+                        <!-- Note: cs-content is called by Javascript -->
 
                         <!-- PERIOD 3 EGYPT & EXODUS -->
                         <div class="flex flex-col">
@@ -486,7 +496,7 @@
 
         </div>
     </main>
-    <?php require_once 'footer.php'; ?>
+    <?php require_once 'components/footer.php'; ?>
 </body>
 
 </html>

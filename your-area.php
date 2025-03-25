@@ -11,7 +11,7 @@
 
 <body class="flex flex-col min-h-screen">
 
-    <?php require_once 'header.php'; ?>
+    <?php require_once 'components/header.php'; ?>
 
     <main class="cs-main">
         <div class="cs-main-div">
@@ -43,11 +43,13 @@
                         class="flex items-center justify-between w-full cs-personal-accordion-header">
                         <span>Your Courses</span>
                         <span class="text-white transition-transform duration-300 cs-icon">
+                            <!-- Note: cs-icon is called by Javascript -->
                             <img src="/src/assets/accordion-expand-white.svg" class="w-6 h-6" alt="Expand">
                             <img src="/src/assets/accordion-collapse-white.svg" class="hidden w-6 h-6" alt="Expand">
                         </span>
                     </button>
                     <div class="overflow-hidden transition-all duration-300 ease-in-out cs-content">
+                        <!-- Note: cs-content is called by Javascript -->
                         <div class="flex flex-col font-semibold cs-personal-accordion-content">
                             <a href="/bible-timeline-course.php">The Bible Timeline Course</a>
                             <a href="#">Advent 2024 Bible Series</a>
@@ -62,11 +64,13 @@
                         class="flex items-center justify-between w-full cs-personal-accordion-header">
                         <span>Information for Come & See Mission&nbsp;<br>Partners</span>
                         <span class="text-white transition-transform duration-300 cs-icon">
+                            <!-- Note: cs-icon is called by Javascript -->
                             <img src="/src/assets/accordion-expand-white.svg" class="w-6 h-6" alt="Expand">
                             <img src="/src/assets/accordion-collapse-white.svg" class="hidden w-6 h-6" alt="Expand">
                         </span>
                     </button>
                     <div class="overflow-hidden transition-all duration-300 ease-in-out cs-content">
+                        <!-- Note: cs-content is called by Javascript -->
                         <div class="flex flex-col cs-personal-accordion-content">
                             The next monthly Mass (September 2024) for our generous Come & See Mission Partners will be offered on Monday 2nd Sept 2024.
                             <br>
@@ -87,11 +91,13 @@
                         class="flex items-center justify-between w-full cs-personal-accordion-header">
                         <span>Join our Bible Timeline WhatsApp&nbsp;Group</span>
                         <span class="text-white transition-transform duration-300 cs-icon">
+                            <!-- Note: cs-icon is called by Javascript -->
                             <img src="/src/assets/accordion-expand-white.svg" class="w-6 h-6" alt="Expand">
                             <img src="/src/assets/accordion-collapse-white.svg" class="hidden w-6 h-6" alt="Expand">
                         </span>
                     </button>
                     <div class="overflow-hidden transition-all duration-300 ease-in-out cs-content">
+                        <!-- Note: cs-content is called by Javascript -->
                         <div class="flex flex-col cs-personal-accordion-content">
                             This is not a group to chat (the chat option is disabled!) but for me, the Administrator, to share with you some course communications.
                             <br><br>
@@ -104,7 +110,7 @@
             </div>
         </div>
     </main>
-    <?php require_once 'footer.php'; ?>
+    <?php require_once 'components/footer.php'; ?>
 </body>
 
 </html>

@@ -20,7 +20,7 @@
         <!-- Container div for logo (desktop & mobile)-->
         <div class="flex flex-grow cs-menu-logo">
             <a href="/">
-                <img src="/src/assets/logos/cs-logo-paper-bg-transp.svg" class="h-12" alt="Logo" >
+                <img src="/src/assets/logos/cs-logo-paper-bg-transp.svg" class="h-12" alt="Logo">
             </a>
         </div>
         <!-- Container div for user avatar and user menu (desktop & mobile) | If user is logged -->
@@ -31,7 +31,7 @@
                 <img class="hidden p-3 cs-logged-avatar cs-admin-logged-avatar" src="/src/assets/close-icon.svg" alt="Bordered avatar">
             </div>
             <!-- Container div for user menu (desktop & mobile) -->
-            <?php require_once 'user-menu.php'; ?>
+            <?php require_once 'components/user-menu.php'; ?>
         </div>
     </nav>
 </header>
@@ -40,10 +40,10 @@
         <nav id="sidebar"
             class="fixed bottom-0 left-0 flex flex-col overflow-y-auto -translate-x-full cs-sidebar show">
             <div class="px-5 pb-6">
-                <button class="mr-1 cs-admin-expand">
+                <button class="mr-1 cs-admin-expand"> <!-- Note: cs-admin-expand is called by Javascript -->
                     <img src="/src/assets/plus.svg" alt="Expand" class="w-6 h-6">
                 </button>
-                <button class=" cs-admin-collapse">
+                <button class=" cs-admin-collapse"> <!-- Note: cs-admin-collapse is called by Javascript -->
                     <img src="/src/assets/minus.svg" alt="Collapse" class="w-6 h-6">
                 </button>
             </div>
@@ -86,7 +86,7 @@
                             <span class="flex justify-end flex-1 ml-auto">
                                 <img src="/src/assets/admin-arrow.svg"
                                     class="cs-menu-item-icon object-contain shrink-0 self-stretch my-auto w-3 aspect-[1.5]"
-                                    alt="Arrow Down" >
+                                    alt="Arrow Down">
 
                             </span>
                         </a>
@@ -98,7 +98,7 @@
                                     <span class="flex justify-end flex-1 ml-auto">
                                         <img src="/src/assets/admin-arrow.svg"
                                             class="cs-menu-item-icon object-contain shrink-0 self-stretch my-auto w-3 aspect-[1.5]"
-                                            alt="Arrow Down" >
+                                            alt="Arrow Down">
 
                                     </span>
                                 </a>
