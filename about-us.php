@@ -17,7 +17,7 @@
             <div class="relative flex flex-col items-start justify-center w-full h-48 text-white md:h-80 cs-bg-about-us">
                 <div class="absolute top-0 left-0 flex items-center justify-center w-full h-full px-4 bg-white bg-opacity-30">
                     <div class="w-[1000px] -mb-28 sm:-mb-36 md:-mb-48">
-                        <img src="/src/assets/lets-get-personal.png" class="sm:w-[500px] w-[300px] mr-auto" alt="Header">
+                        <img src="/src/assets/lets-get-personal.png" class="md:w-[500px] sm:w-[400px] w-[300px] mr-auto" alt="Header">
                     </div>
                 </div>
             </div>

@@ -827,8 +827,9 @@
 
     .cs-testimonials-select {
         @apply
-        w-72
-        h-9
+        w-80
+        h-10
+        sm:h-10
         pl-4
         placeholder:text-cs-red-main /* when user does not select anything */
         text-cs-red-main
@@ -836,7 +837,7 @@
         max-sm:w-full
         autofill:cs-fs-3xs
         font-semibold
-        cs-fs-xs
+        
         border-cs-red-main
         border-2
         rounded-l-[30px]
@@ -846,11 +847,12 @@
 
     .cs-testimonials-show {
         @apply
-        h-9
+        h-10
+        sm:h-10
         font-sans
         font-bold
         uppercase
-        cs-fs-2xs
+        cs-fs-sm
         tracking-wider
         rounded-lg
         bg-cs-red-main
@@ -869,7 +871,7 @@
     }
 
     .cs-testimonials-course-arrow {
-        @apply text-white rounded-r-lg w-9 h-9 bg-cs-red-main sm:h-9;
+        @apply h-10 text-white rounded-r-lg w-9 bg-cs-red-main sm:h-10;
     }
 
     .cs-testimonials-box {
@@ -881,7 +883,7 @@
     }
 
     .cs-testimonials-counter {
-        @apply font-sans min-w-[60px] pt-0.5 pb-0 pl-3 pr-3 h-auto rounded-[20px] bg-cs-paper border-4 cs-fs-2xs font-bold text-center;
+        @apply font-sans min-w-[60px] pt-0.5 pb-0 pl-2 pr-2 h-auto rounded-[20px] bg-cs-paper cs-fs-xs font-bold text-center;
     }
 
     .cs-become-student {
