@@ -998,7 +998,7 @@
     }
 
     @media (min-width: 480px) {
-        .cs-bg-login {
+        .cs-login {
             background-image: url('/src/assets/background-login.png');
         }
     }
