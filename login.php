@@ -13,7 +13,7 @@
 
     <?php require_once 'header.php'; ?>
 
-    <main class="cs-login flex flex-col items-center min-h-[746px] cs-main px-5 sm:px-8">
+    <main class="cs-login">
         <!-- Outer Login Box -->
         <?php require_once 'login-form.php' ?>
     </main>

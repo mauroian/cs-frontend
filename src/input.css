@@ -956,6 +956,7 @@
 
     /* #### BG VANILLA CSS #### */
     .cs-login {
+        @apply  flex flex-col items-center min-h-[746px] cs-main px-5 sm:px-8;
         background-repeat: no-repeat;
         background-position: center;
         background-size: cover;
