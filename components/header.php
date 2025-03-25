@@ -147,7 +147,7 @@ $isLogged = isset($_GET['logged']) && $_GET['logged'] === 'true';
                 </div>
 
                 <!-- Container div for user menu (desktop & mobile) -->
-                <?php require_once 'user-menu.php'; ?>
+                <?php require_once 'components/user-menu.php'; ?>
             </div>
         <?php } else { ?>
             <!-- Container div for auth buttons (desktop) | If user is not logged -->
@@ -308,4 +308,4 @@ $isLogged = isset($_GET['logged']) && $_GET['logged'] === 'true';
         </ul>
     </div>
 </header>
-<?php require_once 'breakpoints-widget.php'; ?>
+<?php require_once 'components/breakpoints-widget.php'; ?>
