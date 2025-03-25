@@ -14,8 +14,10 @@
     <?php require_once 'header.php'; ?>
 
     <main class="cs-login">
+        <div class="cs-main-div">
         <!-- Outer Login Box -->
         <?php require_once 'login-form.php' ?>
+        </div>
     </main>
     <?php require_once 'footer.php'; ?>
 </body>

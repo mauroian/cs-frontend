@@ -1,4 +1,4 @@
-<div class="cs-main-div mt-28 sm:mt-36 cs-form-box">
+<div class="mt-28 sm:mt-36 cs-form-box">
     <!-- Box Titolo -->
     <div class="relative flex flex-row items-baseline justify-center cs-form-login-header">
         <img src="/src/assets/logos/cs-logo-red-bg-circle-paper.svg" class="absolute -top-[70px] block h-28" alt="Login">
