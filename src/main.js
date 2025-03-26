@@ -204,6 +204,23 @@ document.addEventListener("DOMContentLoaded", () => {
       });
     });
   }
+
+  /*Get all anchor links, you can be more specific or use a classname to be sure it only selects the links you want.*/
+  const links = document .querySelectorAll('a[href*="#"]');
+
+  /*Loop through each link to add the click event*/
+  for (let i = 0; i < links.length; i++) {
+    links[i].onclick = function(e){
+      e.preventDefault();
+      const c = this.getAttribute("href").substring(1);
+      const el = document.getElementById(c);
+        el.scrollIntoView({
+            behavior: 'smooth',
+            block: 'start',
+            inline: 'nearest',
+        });
+    };
+  }
 });
 
 
@@ -211,34 +228,15 @@ document.addEventListener("DOMContentLoaded", () => {
  * FROM HERE AFTER THERE ARE THE FUNCTIONS TO MANAGE THE ANIMATIONS AND SPECIAL JQUERY MIGRATIONS
  ********/
 
-function toggleRead(el, index) {
-  const content = document.getElementById(`read-full-${index}`);
-  const text = el.querySelectorAll(`span`);
-
-  console.log(content.style.maxHeight);
-
-  text.forEach((el) => {
-    el.classList.toggle('hidden');
-  });
-
-  content.classList.toggle('max-h-0]');
-  if ((content.style.maxHeight && parseInt(content.style.maxHeight) !== 0)) {
-    content.style.maxHeight = '0px';
-  } else {
-    content.style.maxHeight = content.scrollHeight + 'px';
-  }
-}
-
-window.toggleRead = toggleRead;
-
 function toggleAccordion(el) {
-  const container = el.parentElement;
-  console.log(container);
+  let container = el.closest('.cs-accordion');
+  if(!container) container = el.parentElement;
+
   const content = container.querySelector(`.cs-content`);
   const icon = container.querySelector(`.cs-icon`);
   const text = container.querySelectorAll(`.text`);
   //get current classlist and apply
-  icon.querySelectorAll('img').forEach((el) => {
+  icon?.querySelectorAll('img').forEach((el) => {
     el.classList.toggle('hidden');
   });
 

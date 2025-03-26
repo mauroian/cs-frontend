@@ -38,8 +38,8 @@
                         knowledge, skills, and wisdom gained from our diverse careers and previous ministry work.
                     </p>
                     <div class="flex flex-col items-center justify-end w-full gap-3 my-10 sm:flex-row">
-                        <button class="cs-about-us-meet bg-cs-red-main hover:bg-cs-red-dark ">Meet Mauro</button>
-                        <button class="cs-about-us-meet bg-cs-red-bright hover:bg-cs-red-main ">Meet Janet</button>
+                        <a href="#meet-mauro" class="cs-about-us-meet bg-cs-red-main hover:bg-cs-red-dark ">Meet Mauro</a>
+                        <a href="#meet-janet" class="cs-about-us-meet bg-cs-red-bright hover:bg-cs-red-main ">Meet Janet</a>
                     </div>
                 </div>
 
@@ -72,7 +72,7 @@
                         <div class="flex flex-col mb-10 md:flex-row md:mb-0">
                             <div class="w-full h-32 md:w-1/3"></div>
                             <div class="flex flex-col items-center gap-2 md:items-start">
-                                <h3 class="text-cs-red-main cs-fs-sm uppercase max-w-[700px] text-center">Mauro's
+                                <h3 id="meet-mauro" class="text-cs-red-main cs-fs-sm uppercase max-w-[700px] text-center">Mauro's
                                     Story</h3>
                                 <h3 class="text-cs-red-main cs-fs-lg font-semibold max-w-[700px] text-center">Mauro
                                     introduces himself...</h3>
@@ -117,7 +117,7 @@
                         <div class="flex flex-col mb-10 md:flex-row md:mb-0">
                             <div class="w-full h-32 md:w-1/3"></div>
                             <div class="flex flex-col items-center gap-2 md:items-start">
-                                <h3 class="text-cs-red-bright cs-fs-sm uppercase max-w-[700px] text-center">Janet’s
+                                <h3 id="meet-janet" class="text-cs-red-bright cs-fs-sm uppercase max-w-[700px] text-center">Janet’s
                                     story</h3>
                                 <h3 class="text-cs-red-bright cs-fs-lg font-semibold max-w-[700px] text-center">Janet
                                     introduces himself...</h3>
