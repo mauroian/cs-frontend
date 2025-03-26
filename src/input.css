@@ -930,6 +930,11 @@
         @apply gap-4 px-5 my-3 font-semibold text-left cs-fs-2xl;
     }
 
+    .cs-support-us-chip {
+        @apply
+        flex flex-row items-center px-2 py-0 font-sans font-semibold tracking-widest w-fit text-black uppercase bg-white border border-transparent rounded-xl;
+    }
+
     .cs-support-us-tag {
         @apply
         flex flex-row items-center px-4 py-2 font-sans font-bold tracking-widest uppercase border border-transparent rounded-2xl cs-fs-xs ;
@@ -944,11 +949,11 @@
     }
 
     .cs-support-us-steps {
-        @apply grid grid-cols-1 gap-3 my-8 md:grid-cols-3 md:gap-4;
+        @apply flex flex-col gap-3 my-8 md:gap-3;
     }
 
     .cs-support-us-step {
-        @apply flex flex-col items-center gap-4 p-6 text-center rounded-lg md:gap-6 bg-cs-paper-shade md:min-h-80;
+        @apply flex flex-col items-start gap-4 p-6 text-center rounded-lg md:gap-9 bg-cs-paper-shade w-full;
     }
 
     /* #### ABOUT US #### */

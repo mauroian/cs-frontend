@@ -32,10 +32,12 @@
                     </div>
                     <h2 class="mb-5 font-serif italic font-semibold cs-fs-2xl sm:cs-fs-3xl text-cs-red-main max-sm:text-right">
                         Hello! I’m Mauro Iannicelli and I am married to Janet.</h2>
-                    <p class="clear-none">We are a Catholic couple in love with Jesus Christ and with one another.
-                        <br><br>
+                    <div class="clear-none flex flex-col gap-2"
+                    <p>We are a Catholic couple in love with Jesus Christ and with one another.</p>
+                    <p>
                         We help <b>Catholic parishes, groups & individuals in the tasks of formation and
-                            evangelisation.</b><br><br>
+                            evangelisation.</b></p>
+                    <p>
                         We bring a wealth of experience to our ministry—Mauro spent four years training at the seminary
                         in London before discerning his calling to Holy Marriage. Together, we draw a rich blend of
                         knowledge, skills, and wisdom gained from our diverse careers and previous ministry work.
@@ -82,34 +84,57 @@
                             </div>
                         </div>
                         <div class="cs-about-us-bio ">
-                            <p class="cs-fs-sm">
-                                I am an Italian from Rome. Despite being from the Holy City, I spent my twenties being quite
-                                far from the Church.<br><br>
+                            <div class="flex flex-col gap-2">
+                                <p class="cs-fs-sm">
+                                    I am an Italian from Rome. Despite being from the Holy City, I spent my twenties
+                                    being quite
+                                    far from the Church.
+                                </p>
+                                <p class="cs-fs-sm">
 
-                                About 20 years ago, the Lord in his unfathomable mercy chose to disclose to me that Pearl of
-                                Infinite Value, namely the relationship with Him.<br><br>
+                                    About 20 years ago, the Lord in his unfathomable mercy chose to disclose to me that
+                                    Pearl of
+                                    Infinite Value, namely the relationship with Him.
+                                </p>
+                                <p class="cs-fs-sm">
 
-                                I moved to London for work in 2006 and after a <b>13 years career in IT as a Software
-                                    Developer</b> , I decided to leave my then employer JP Morgan Investment Bank to serve the
-                                greatest of all masters – The Lord.<br><br>
+                                    I moved to London for work in 2006 and after a <b>13 years career in IT as a
+                                        Software
+                                        Developer</b> , I decided to leave my then employer JP Morgan Investment Bank to
+                                    serve the
+                                    greatest of all masters – The Lord.
+                                </p>
+                            </div>
+                            <div class="flex flex-col gap-2">
+                                <p class="cs-fs-sm">
 
-                                Feeling great admiration and attraction for the Catholic Priesthood, I decided to test my
-                                calling. I spent four years as a <b>seminarian for the Diocese of Westminster</b>, but the Lord
-                                gradually revealed to me he had different plans for me.<br><br>
-                            </p>
-                            <p class="cs-fs-sm">
-                                I left the seminary in 2016 and the Lord brought my future spouse into my life - <b>my precious
-                                    Janet, whom I married in July 2019.</b><br><br>
-
-                                My passion is for all things Catholic! After spending many years studying and growing in my
-                                faith, the Lord gradually made clear that he had given me <b>a charism for teaching the
-                                    faith.</b><br><br>
-
-                                I am passionate about implementing models of parish evangelisation & formation. Throughout
-                                the last 10 years, I have run courses (especially Bible studies) and given talks in various
-                                settings. I have left the IT industry and am now in <b>full time ministry of parish
-                                    evangelisation and formation.</b>
-                            </p>
+                                    Feeling great admiration and attraction for the Catholic Priesthood, I decided to
+                                    test my
+                                    calling. I spent four years as a <b>seminarian for the Diocese of Westminster</b>,
+                                    but the Lord
+                                    gradually revealed to me he had different plans for me.
+                                </p>
+                                <p class="cs-fs-sm">
+                                    I left the seminary in 2016 and the Lord brought my future spouse into my life - <b>my
+                                        precious
+                                        Janet, whom I married in July 2019.</b>
+                                </p>
+                                <p class="cs-fs-sm">
+                                    My passion is for all things Catholic! After spending many years studying and
+                                    growing in my
+                                    faith, the Lord gradually made clear that he had given me <b>a charism for teaching
+                                        the
+                                        faith.</b>
+                                </p>
+                                <p class="cs-fs-sm">
+                                    I am passionate about implementing models of parish evangelisation & formation.
+                                    Throughout
+                                    the last 10 years, I have run courses (especially Bible studies) and given talks in
+                                    various
+                                    settings. I have left the IT industry and am now in <b>full time ministry of parish
+                                        evangelisation and formation.</b>
+                                </p>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -127,33 +152,45 @@
                             </div>
                         </div>
                         <div class="cs-about-us-bio ">
-                            <p class="cs-fs-sm">
-                                I am a Catholic British Indian raised in London. Like Mauro, I fell away from the Church during
-                                my twenties but had a huge Sacramental Conversion through the Mission of Youth 2000.<br><br>
-
-                                Since University, I have worked full-time in both Investment Banking Operations & now Finance.
-                                However, after my huge conversion I always knew that <b>my heart lies in ministry working for
-                                    the
-                                    Lord.</b><br><br>
-
-                                I served the Lord whilst being a <b>Trustee of Youth 2000 from 2009 - 2015</b>. My role also
-                                included
-                                fundraising for the mission which enabled me to run Black Tie fundraisers for over 150 guests -
-                                my passion was put into practice!<br><br>
-                            </p>
-                            <p class="cs-fs-sm">
-                                It was also a way to move in my charisms of <b>Administration, Hospitality &
-                                    Pastoring</b>.<br><br>
-
-                                During my vocational discernment, I visited many lay & religious communities but I knew my
-                                calling was for marriage! After praying for my vocation for just over 20 years, the Lord
-                                honoured my prayer & brought Mauro into my life for the <b>Sacrament of Marriage in 2019</b> -
-                                he is
-                                certainly a Gift from the Lord & an answer to prayer.<br><br>
-
-                                After much discernment, in January 2021 I joined Come & See Ministries to work alongside Mauro
-                                in <b>full-time lay ministry</b>.
-                            </p>
+                            <div class="flex flex-col gap-2">
+                                <p class="cs-fs-sm">
+                                    I am a Catholic British Indian raised in London. Like Mauro, I fell away from the
+                                    Church during
+                                    my twenties but had a huge Sacramental Conversion through the Mission of Youth 2000.
+                                </p>
+                                <p class="cs-fs-sm">
+                                    Since University, I have worked full-time in both Investment Banking Operations &
+                                    now Finance.
+                                    However, after my huge conversion I always knew that <b>my heart lies in ministry
+                                        working for
+                                        the
+                                        Lord.</b>
+                                </p>
+                            </div>
+                            <div class="flex flex-col gap-2">
+                                <p class="cs-fs-sm">
+                                    I served the Lord whilst being a <b>Trustee of Youth 2000 from 2009 - 2015</b>. My
+                                    role also included
+                                    fundraising for the mission which enabled me to run Black Tie fundraisers for over
+                                    150 guests - my passion was put into practice!
+                                </p>
+                                <p class="cs-fs-sm">
+                                    It was also a way to move in my charisms of <b>Administration, Hospitality &
+                                        Pastoring</b>.
+                                </p>
+                                <p class="cs-fs-sm">
+                                    During my vocational discernment, I visited many lay & religious communities but I
+                                    knew my
+                                    calling was for marriage! After praying for my vocation for just over 20 years, the
+                                    Lord
+                                    honoured my prayer & brought Mauro into my life for the <b>Sacrament of Marriage in
+                                        2019</b> - he is certainly a Gift from the Lord & an answer to prayer.
+                                </p>
+                                <p class="cs-fs-sm">
+                                    After much discernment, in January 2021 I joined Come & See Ministries to work
+                                    alongside Mauro in <b>full-time lay ministry</b>.
+                                </p>
+                            </div>
                         </div>
                     </div>
                 </div>

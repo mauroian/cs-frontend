@@ -1,4 +1,4 @@
-<nav aria-label="breadcrumb" class="hidden mt-3 w-max justify-self-end md:flex">
+<nav class="hidden mt-3 w-max justify-self-end md:flex">
     <ol class="flex flex-wrap items-center w-full px-4 py-2 uppercase">
         <li class="flex items-center cursor-pointer cs-admin-breadcrumb">
             <a href="#">Users</a>

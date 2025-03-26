@@ -1,18 +1,18 @@
 <header class="fixed top-0 z-50 w-full bg-cs-blue-main md:relative" id="navbar">
     <!-- Container nav for header (desktop & mobile) -->
-    <nav class="z-10 flex items-center w-full cs-admin-header" aria-label="Header">
+    <nav class="z-10 flex items-center w-full cs-admin-header">
         <!-- Hamburger button (mobile) -->
         <div class="flex justify-start cs-mobile-menu-container">
             <button id="btnSidebarToggler" class="inline-flex items-center justify-center w-10 h-10 text-center transition bg-white rounded-lg cs-navbar-button group"
-                aria-pressed="false"
-                onclick="this.setAttribute('aria-pressed', !(this.getAttribute('aria-pressed') === 'true'))">
+                data-pressed="false"
+                onclick="this.setAttribute('data-pressed', !(this.getAttribute('data-pressed') === 'true'))">
                 <svg class="w-6 h-6 pointer-events-none fill-cs-blue-main" viewBox="0 0 16 16"
                     xmlns="http://www.w3.org/2000/svg">
-                    <rect class="origin-center -translate-y-[5px] transition-all duration-300 ease-[cubic-bezier(.5,.85,.25,1.1)] group-[[aria-pressed=true]]:translate-x-0 group-[[aria-pressed=true]]:translate-y-0 group-[[aria-pressed=true]]:rotate-[315deg]"
+                    <rect class="origin-center -translate-y-[5px] transition-all duration-300 ease-[cubic-bezier(.5,.85,.25,1.1)] group-[[data-pressed=true]]:translate-x-0 group-[[data-pressed=true]]:translate-y-0 group-[[data-pressed=true]]:rotate-[315deg]"
                         y="7" width="16" height="2" rx="1"></rect>
-                    <rect class="origin-center transition-all duration-300 ease-[cubic-bezier(.5,.85,.25,1.8)] group-[[aria-pressed=true]]:rotate-45"
+                    <rect class="origin-center transition-all duration-300 ease-[cubic-bezier(.5,.85,.25,1.8)] group-[[data-pressed=true]]:rotate-45"
                         y="7" width="16" height="2" rx="1"></rect>
-                    <rect class="origin-center translate-y-[5px] transition-all duration-300 ease-[cubic-bezier(.5,.85,.25,1.1)] group-[[aria-pressed=true]]:translate-y-0 group-[[aria-pressed=true]]:rotate-[135deg]"
+                    <rect class="origin-center translate-y-[5px] transition-all duration-300 ease-[cubic-bezier(.5,.85,.25,1.1)] group-[[data-pressed=true]]:translate-y-0 group-[[data-pressed=true]]:rotate-[135deg]"
                         y="7" width="16" height="2" rx="1"></rect>
                 </svg>
             </button>
