@@ -10,7 +10,7 @@
 </head>
 
 <body class="flex flex-col min-h-screen">
-    <?php require_once 'header-test-large-menu.php'; ?>
+    <?php require_once 'components/header-test-large-menu.php'; ?>
     <main class="cs-main">
         <div class="cs-main-div">
             <div class="flex flex-col pt-20">
@@ -18,7 +18,7 @@
             </div>
         </div>
     </main>
-    <?php require_once 'footer-test-large-menu.php'; ?>
+    <?php require_once 'components/footer-test-large-menu.php'; ?>
 </body>
 
 </html>

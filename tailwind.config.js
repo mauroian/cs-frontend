@@ -1,8 +1,12 @@
 /** @type {import('tailwindcss').Config} */
 export default {
   content: [
-    './src/**/*.html',
     './*.php',
+    './*.html',
+        './src/**/*.php',
+    './src/**/*.html',
+    './components/*.php',
+    './components/*.html'
   ],
   theme: {
     screens: {

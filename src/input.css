@@ -175,6 +175,7 @@
 
     /** rule for mobile menu */
     .cs-menu-item.cs-active > .cs-menu-item-span:after {
+        /* note: cs-active called by Javascript */
         @apply
         left-0 w-full;
     }
@@ -212,6 +213,7 @@
 
     /* Level 2 menu items container box features (desktop) */
     .cs-menu-level2 {
+        /* note: class called by Javascript */
         @apply
             absolute
             hidden
@@ -227,6 +229,7 @@
 
     /* Level 3 menu items container box features (desktop) */
     .cs-menu-level3 {
+        /* note: class called by Javascript */
         @apply
             top-3 /* [param] vertical drop of Level 3 box from the relative level 2 menu item in public manu (desktop) */
             right-2 /* [param] left-shift of Level 3 box from the relative level 2 menu item in public manu (desktop) */
@@ -310,6 +313,7 @@
 
     /* user avatar (desktop, mobile) */
     .cs-logged-avatar {
+        /* note: cs-logged-avatar called by Javascript */
         @apply
             w-8 /* [param] */
             h-8 /* [param] */
@@ -329,6 +333,7 @@
 
     /* user menu outer container (desktop, mobile) */
     .cs-menu-logged {
+        /* note: cs-menu-logged called by Javascript */
         @apply
             md:right-0 /* [param] (desktop, mobile) */
             -right-5
@@ -433,10 +438,14 @@
 
     /* public menu items (mobile) */
     .cs-mobile-menu {
+        /* note: cs-mobile-menu called by Javascript */
         @apply text-cs-red-main; /* [param] public menu items colour (mobile) */
     }
     .cs-mobile-menu-button.cs-active .cs-menu-item-icon,
-    .cs-logged-nested.cs-active .cs-menu-item-icon {
+    .cs-logged-nested.cs-active .cs-menu-item-icon {        
+        /* note: cs-logged-nested called by Javascript */
+        /* note: cs-active called by Javascript */
+        /* note: cs-mobile-menu-button called by Javascript */
         transform: rotate(-180deg);
     }
 
@@ -475,11 +484,13 @@
 
     /* public menu L2 items (mobile) */
     .cs-mobile-menu ul .cs-menu-voice-item {
+        /* note: cs-mobile-menu called by Javascript */
         @apply pl-6; /* [param] L2 menu items indentation (mobile) */
     }
 
     /* public menu L3 items (mobile) */
     .cs-mobile-menu ul ul  .cs-menu-voice-item {
+        /* note: cs-mobile-menu called by Javascript */
         @apply pl-12; /* [param] L3 menu items indentation (mobile) */
     }
 
@@ -550,19 +561,24 @@
     }
 
     .cs-admin-submenu {
+        /* note: class called by Javascript */
         @apply mx-2;
     }
 
     .cs-admin-submenu a:before {
+        /* note: class called by Javascript */
         @apply block w-5 h-5 -mt-5;
         content: url("/src/assets/admin-caret.svg");
     }
 
     .cs-admin-submenu-button img.cs-menu-item-icon {
+        /* note: cs-admin-submenu-button called by Javascript */
         transform: rotate(-180deg);
     }
 
     .cs-admin-submenu-button.cs-active img.cs-menu-item-icon {
+        /* note: cs-admin-submenu-button called by Javascript */
+        /* note: cs-active called by Javascript */
         transform: rotate(0deg);
     }
 
@@ -784,6 +800,7 @@
 
 
     .cs-personal-accordion-header {
+        /* note: class called by Javascript */
         @apply gap-4 pt-1 pr-5 my-4 font-semibold text-left text-white cs-fs-lg pl-9;
     }
 
@@ -803,6 +820,7 @@
     }
 
     .cs-bible-accordion-header {
+        /* note: class called by Javascript */
         @apply gap-4 pt-1 pl-4 pr-5 my-4 font-semibold text-left text-black cs-fs-lg sm:pl-9;
     }
 

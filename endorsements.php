@@ -11,7 +11,7 @@
 
 <body class="flex flex-col min-h-screen">
 
-    <?php require_once 'header.php'; ?>
+    <?php require_once 'components/header.php'; ?>
 
     <main class="cs-main">
         <div class="cs-main-div">
@@ -157,7 +157,7 @@
             </div>
         </div>
     </main>
-    <?php require_once 'footer.php'; ?>
+    <?php require_once 'components/footer.php'; ?>
 </body>
 
 </html>

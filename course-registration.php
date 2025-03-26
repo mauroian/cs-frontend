@@ -11,7 +11,7 @@
 
 <body class="flex flex-col min-h-screen">
 
-    <?php require_once 'header.php'; ?>
+    <?php require_once 'components/header.php'; ?>
 
     <main class="cs-main bg-cs-paper-shade">
         <div class="cs-main-div">
@@ -27,14 +27,14 @@
             <div class="flex flex-col items-center px-4 sm:px-4">
 
                 <!-- Create account -->
-                <?php require_once 'create-account-form.php' ?>
+                <?php require_once 'components/create-account-form.php' ?>
 
                 <!-- Course Registration -->
-                <?php require_once 'course-registration-form.php' ?>
+                <?php require_once 'components/course-registration-form.php' ?>
             </div>
         </div>
     </main>
-    <?php require_once 'footer.php'; ?>
+    <?php require_once 'components/footer.php'; ?>
 </body>
 
 </html>

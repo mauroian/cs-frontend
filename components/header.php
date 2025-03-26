@@ -17,6 +17,14 @@ $isLogged = isset($_GET['logged']) && $_GET['logged'] === 'true';
 
             </a>
         </div>
+
+
+        <!-- PLEASE NOTE: 
+            If I want the Level 1 menu items split on two rows, I must change from:
+            <ul class="flex-row hidden lg2:flex cs-menu-level1">
+            To:
+            <ul class="flex-row hidden lg2:flex cs-menu-level1 flex-wrap justify-center max-w-[800px]">
+        -->
         <!-- Container list for public menu (desktop) -->
         <ul class="flex-row hidden lg2:flex cs-menu-level1">
             <!-- L1 public menu item (desktop) -->
@@ -147,7 +155,7 @@ $isLogged = isset($_GET['logged']) && $_GET['logged'] === 'true';
                 </div>
 
                 <!-- Container div for user menu (desktop & mobile) -->
-                <?php require_once 'user-menu.php'; ?>
+                <?php require_once 'components/user-menu.php'; ?>
             </div>
         <?php } else { ?>
             <!-- Container div for auth buttons (desktop) | If user is not logged -->
@@ -308,4 +316,4 @@ $isLogged = isset($_GET['logged']) && $_GET['logged'] === 'true';
         </ul>
     </div>
 </header>
-<?php require_once 'breakpoints-widget.php'; ?>
+<?php require_once 'components/breakpoints-widget.php'; ?>
