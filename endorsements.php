@@ -33,16 +33,17 @@
                     </div>
                 </div>
                 <div class="flex flex-col m-auto xl:flex-row xl:max-w-7xl max-w-[700px]">
-                    <div class="cs-accordion flex flex-col w-full xl:w-1/2">
+                    <div class="flex flex-col w-full cs-accordion xl:w-1/2">
                         <img src="/src/assets/endorsement-jeff-cavins.png" class="w-full rounded-3xl" alt="">
                         <div class="flex items-center justify-between w-full my-6 font-normal uppercase text-cs-grey cs-fs-sm">
                             [1 min. 09 secs.]
                             <button class="h-8 px-3 font-bold text-white uppercase cs-fs-xs md:cs-fs-sm min-w-[140px] md:min-w-[180px] rounded-3xl bg-cs-red-main" onclick="toggleAccordion(this)">
+                                <!-- Note: cs-text is called by Javascript -->
                                 <span class="cs-text">read full text</span>
-                                <span class="cs-text hidden">close full text</span>
+                                <span class="hidden cs-text">close full text</span>
                             </button>
                         </div>
-                        <div class="cs-content overflow-y-hidden font-light text-left transition-all duration-300 ease-in-out max-h-0 text-cs-grey bg-cs-paper text-clip">
+                        <div class="overflow-y-hidden font-light text-left transition-all duration-300 ease-in-out cs-content max-h-0 text-cs-grey bg-cs-paper text-clip">
                             <div class="flex flex-col gap-4 px-6 py-6 ">
                                 <p>Hey I want to say 'hi' to all my friends in the UK. You know, with the Great Adventure Bible Timeline I am always interested in finding people who can teach it and who can convey the beautiful mysteries of the Catholic faith by opening up Scripture.</p>
                                 <p>In Mauro Iannicelli I have found such a friend and he has such a depth of knowledge of the Bible and theology that it's an honour for me to give my endorsement to him as a wonderful teacher.</p>
@@ -91,16 +92,17 @@
                         <div class="font-serif italic text-center cs-fs-base">Parish Priest, St Patrick’s, Soho, London</div>
 
                     </div>
-                    <div class="cs-accordion flex flex-col w-full xl:w-1/2">
+                    <div class="flex flex-col w-full cs-accordion xl:w-1/2">
                         <img src="/src/assets/endorsement-fr-alexander.png" class="rounded-3xl" alt="">
                         <div class="flex items-center justify-between w-full my-6 font-normal uppercase text-cs-grey cs-fs-sm">
                             <button class="h-8 px-3 font-bold text-white uppercase cs-fs-xs md:cs-fs-sm min-w-[140px] md:min-w-[180px] rounded-3xl bg-cs-blue-main" onclick="toggleAccordion(this)">
+                                <!-- Note: cs-text is called by Javascript -->
                                 <span class="cs-text">read full text</span>
-                                <span class="cs-text hidden">close full text</span>
+                                <span class="hidden cs-text">close full text</span>
                             </button>
                             [1 min. 48 secs.]
                         </div>
-                        <div class="cs-content overflow-y-hidden font-light text-left transition-all duration-300 ease-in-out max-h-0 text-cs-grey bg-cs-paper-dark text-clip">
+                        <div class="overflow-y-hidden font-light text-left transition-all duration-300 ease-in-out cs-content max-h-0 text-cs-grey bg-cs-paper-dark text-clip">
                             <div class="flex flex-col gap-4 px-6 py-6 ">
                                 <p>Hello. I'd like to introduce you to the Bible Timeline course, which is run by Mauro. In the last two years here in San Patrick's in Soho, we have run the Bible Timeline course twice. Each time it’s amazed me by the number of people who have come. There's been a least 100 people on each occasion.</p>
                                 <p>Those who come do so with great enthusiasm. And they speak about how Mauro, through his very engaged teaching, really brings the Bible alive and helps people not only in their prayer on using the Bible for Lectio Divina, but also for the more foursome celebration of Holy Mass and being able to follow the reading. They have a great sense of the completeness of the Scriptures, of how to use the Scriptures and, most importantly, to grow in their faith.</p>
@@ -122,16 +124,17 @@
                     </div>
                 </div>
                 <div class="flex flex-col m-auto xl:flex-row xl:max-w-7xl max-w-[700px]">
-                    <div class="cs-accordion flex flex-col w-full xl:w-1/2">
+                    <div class="flex flex-col w-full cs-accordion xl:w-1/2">
 
                         <img src="/src/assets/endorsement-annabel-ward.png" class="rounded-3xl" alt="">
                         <div class="flex items-center justify-between w-full my-6 font-normal uppercase text-cs-grey cs-fs-sm">
                             [0 min. 24 secs.]
                             <button class="h-8 px-3 font-bold text-white uppercase cs-fs-xs md:cs-fs-sm min-w-[140px] md:min-w-[180px] rounded-3xl bg-cs-red-main" onclick="toggleAccordion(this)">
+                                <!-- Note: cs-text is called by Javascript -->
                                 <span class="cs-text">read full text</span>
-                                <span class="cs-text hidden">close full text</span></button>
+                                <span class="hidden cs-text">close full text</span></button>
                         </div>
-                        <div class="cs-content overflow-y-hidden font-light text-left transition-all duration-300 ease-in-out max-h-0 text-cs-grey bg-cs-paper text-clip">
+                        <div class="overflow-y-hidden font-light text-left transition-all duration-300 ease-in-out cs-content max-h-0 text-cs-grey bg-cs-paper text-clip">
                             <div class="flex flex-col gap-4 px-6 py-6 ">
                                 <p>Mauro ran a Bible Timeline Course on Zoom for Youth 2000 and it was amazing!</p>
                                 <p>We had 130 participants who completed the seven sessions of the course and their feedback was excellent.</p>

@@ -75,6 +75,7 @@
                 <span class="tracking-widest uppercase cs-fs-sm">agree to Terms and Conditions</span>
                 <button type="button" onclick="toggleAccordion(this)"
                     class="flex items-center justify-between w-full cs-course-accordion-button">
+                    <!-- Note: cs-text is called by Javascript -->
                     <span class="cs-text">Show terms and conditions</span>
                     <span class="hidden cs-text">Hide terms and conditions</span>
                     <span class="transition-transform duration-300 cs-icon">
