@@ -38,8 +38,8 @@
                         <div class="flex items-center justify-between w-full my-6 font-normal uppercase text-cs-grey cs-fs-sm">
                             [1 min. 09 secs.]
                             <button class="h-8 px-3 font-bold text-white uppercase cs-fs-xs md:cs-fs-sm min-w-[140px] md:min-w-[180px] rounded-3xl bg-cs-red-main" onclick="toggleAccordion(this)">
-                                <span class="text">read full text</span>
-                                <span class="text hidden">close full text</span>
+                                <span class="cs-text">read full text</span>
+                                <span class="cs-text hidden">close full text</span>
                             </button>
                         </div>
                         <div class="cs-content overflow-y-hidden font-light text-left transition-all duration-300 ease-in-out max-h-0 text-cs-grey bg-cs-paper text-clip">
@@ -95,8 +95,8 @@
                         <img src="/src/assets/endorsement-fr-alexander.png" class="rounded-3xl" alt="">
                         <div class="flex items-center justify-between w-full my-6 font-normal uppercase text-cs-grey cs-fs-sm">
                             <button class="h-8 px-3 font-bold text-white uppercase cs-fs-xs md:cs-fs-sm min-w-[140px] md:min-w-[180px] rounded-3xl bg-cs-blue-main" onclick="toggleAccordion(this)">
-                                <span class="text">read full text</span>
-                                <span class="text hidden">close full text</span>
+                                <span class="cs-text">read full text</span>
+                                <span class="cs-text hidden">close full text</span>
                             </button>
                             [1 min. 48 secs.]
                         </div>
@@ -128,8 +128,8 @@
                         <div class="flex items-center justify-between w-full my-6 font-normal uppercase text-cs-grey cs-fs-sm">
                             [0 min. 24 secs.]
                             <button class="h-8 px-3 font-bold text-white uppercase cs-fs-xs md:cs-fs-sm min-w-[140px] md:min-w-[180px] rounded-3xl bg-cs-red-main" onclick="toggleAccordion(this)">
-                                <span class="text">read full text</span>
-                                <span class="text hidden">close full text</span></button>
+                                <span class="cs-text">read full text</span>
+                                <span class="cs-text hidden">close full text</span></button>
                         </div>
                         <div class="cs-content overflow-y-hidden font-light text-left transition-all duration-300 ease-in-out max-h-0 text-cs-grey bg-cs-paper text-clip">
                             <div class="flex flex-col gap-4 px-6 py-6 ">

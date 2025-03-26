@@ -67,7 +67,7 @@ document.addEventListener("DOMContentLoaded", () => {
         if (menu) {
           if (CLOSE_OTHER_MENUS) {
             if (menu.classList.contains('cs-inner')) {
-              document.querySelectorAll('ul.active.cs-inner').forEach(activeMenu => {
+              document.querySelectorAll('ul.cs-active.cs-inner').forEach(activeMenu => {
                 if (activeMenu !== menu) {
                   slideToggle(activeMenu, MENU_MOBILE_DURATION);
                 }
@@ -78,7 +78,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 }
               });
             } else {
-              document.querySelectorAll('ul.active').forEach(activeMenu => {
+              document.querySelectorAll('ul.cs-active').forEach(activeMenu => {
                 if (activeMenu !== menu) {
                   slideToggle(activeMenu, MENU_MOBILE_DURATION);
                 }
@@ -91,12 +91,12 @@ document.addEventListener("DOMContentLoaded", () => {
             }
           }
 
-          if (menu.classList.contains('active')) {
+          if (menu.classList.contains('cs-active')) {
             slideToggle(menu, MENU_MOBILE_DURATION);
-            menu.classList.remove('active');
+            menu.classList.remove('cs-active');
             this.classList.remove('cs-active');
           } else {
-            menu.classList.add('active');
+            menu.classList.add('cs-active');
             this.classList.add('cs-active');
             slideToggle(menu, MENU_MOBILE_DURATION);
           }
@@ -139,7 +139,7 @@ document.addEventListener("DOMContentLoaded", () => {
       const menu = this.querySelector(".dropdown-menu");
       if (menu) {
         if(CLOSE_OTHER_MENUS) {
-          document.querySelectorAll('ul.dropdown-menu.active').forEach(activeMenu => {
+          document.querySelectorAll('ul.dropdown-menu.cs-active').forEach(activeMenu => {
             if(activeMenu !== menu) {
               slideUp(activeMenu, MENU_LEVEL_2_DURATION);
             }
@@ -150,12 +150,12 @@ document.addEventListener("DOMContentLoaded", () => {
             }
           });
         }
-        if (menu.classList.contains('active')) {
+        if (menu.classList.contains('cs-active')) {
           slideToggle(menu, MENU_LEVEL_2_DURATION);
-          menu.classList.remove('active');
+          menu.classList.remove('cs-active');
           this.classList.remove('cs-active');
         } else {
-          menu.classList.add('active');
+          menu.classList.add('cs-active');
           this.classList.add('cs-active');
           slideToggle(menu, MENU_LEVEL_2_DURATION);
         }
@@ -205,22 +205,7 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
 
-  /*Get all anchor links, you can be more specific or use a classname to be sure it only selects the links you want.*/
-  const links = document .querySelectorAll('a[href*="#"]');
 
-  /*Loop through each link to add the click event*/
-  for (let i = 0; i < links.length; i++) {
-    links[i].onclick = function(e){
-      e.preventDefault();
-      const c = this.getAttribute("href").substring(1);
-      const el = document.getElementById(c);
-        el.scrollIntoView({
-            behavior: 'smooth',
-            block: 'start',
-            inline: 'nearest',
-        });
-    };
-  }
 });
 
 
@@ -234,7 +219,7 @@ function toggleAccordion(el) {
 
   const content = container.querySelector(`.cs-content`);
   const icon = container.querySelector(`.cs-icon`);
-  const text = container.querySelectorAll(`.text`);
+  const text = container.querySelectorAll(`.cs-text`);
   //get current classlist and apply
   icon?.querySelectorAll('img').forEach((el) => {
     el.classList.toggle('hidden');
@@ -252,13 +237,12 @@ function toggleAccordion(el) {
     content.style.maxHeight = content.scrollHeight + 'px';
   }
 
-
 }
 
 window.togglePassword = (el) => {
   const i = el.closest('div').querySelector('input');
   i.type = i.type=='password' ? 'text': 'password'
-  el.classList.toggle('active');
+  el.classList.toggle('cs-active');
 };
 
 window.toggleAccordion = toggleAccordion;

@@ -41,7 +41,7 @@ document.addEventListener("DOMContentLoaded", () => {
       const menu = this.querySelector(".dropdown-menu");
       if (menu) {
         if(CLOSE_OTHER_MENUS) {
-          document.querySelectorAll('ul.dropdown-menu.active').forEach(activeMenu => {
+          document.querySelectorAll('ul.dropdown-menu.cs-active').forEach(activeMenu => {
             if(activeMenu !== menu) {
               slideUp(activeMenu, MENU_LEVEL_2_DURATION);
             }
@@ -52,12 +52,12 @@ document.addEventListener("DOMContentLoaded", () => {
             }
           });
         }
-        if (menu.classList.contains('active')) {
+        if (menu.classList.contains('cs-active')) {
           slideToggle(menu, MENU_LEVEL_2_DURATION);
-          menu.classList.remove('active');
+          menu.classList.remove('cs-active');
           this.classList.remove('cs-active');
         } else {
-          menu.classList.add('active');
+          menu.classList.add('cs-active');
           this.classList.add('cs-active');
           slideToggle(menu, MENU_LEVEL_2_DURATION);
         }
@@ -80,7 +80,7 @@ document.addEventListener("DOMContentLoaded", () => {
       const menu = this.nextElementSibling;
       if (menu) {
         if (CLOSE_OTHER_MENUS_ADMIN) {
-          document.querySelectorAll('ul.active').forEach(activeMenu => {
+          document.querySelectorAll('ul.cs-active').forEach(activeMenu => {
             if (activeMenu !== menu) {
               slideToggle(activeMenu, SIDEBAR_ADMIN_DURATION);
             }
@@ -92,12 +92,12 @@ document.addEventListener("DOMContentLoaded", () => {
           });
         }
 
-        if (menu.classList.contains('active')) {
+        if (menu.classList.contains('cs-active')) {
           slideToggle(menu, SIDEBAR_ADMIN_DURATION);
-          menu.classList.remove('active');
+          menu.classList.remove('cs-active');
           this.classList.remove('cs-active');
         } else {
-          menu.classList.add('active');
+          menu.classList.add('cs-active');
           this.classList.add('cs-active');
           slideToggle(menu, SIDEBAR_ADMIN_DURATION);
         }
@@ -114,8 +114,8 @@ document.addEventListener("DOMContentLoaded", () => {
         }
       });
       document.querySelectorAll('.cs-admin-submenu').forEach(menu => {
-        if (!menu.classList.contains('active')) {
-          menu.classList.add('active');
+        if (!menu.classList.contains('cs-active')) {
+          menu.classList.add('cs-active');
           slideDown(menu, SIDEBAR_ADMIN_DURATION);
         }
       });
@@ -131,8 +131,8 @@ document.addEventListener("DOMContentLoaded", () => {
         }
       });
       document.querySelectorAll('.cs-admin-submenu').forEach(menu => {
-        if (menu.classList.contains('active')) {
-          menu.classList.remove('active');
+        if (menu.classList.contains('cs-active')) {
+          menu.classList.remove('cs-active');
           slideUp(menu, SIDEBAR_ADMIN_DURATION);
         }
       });
@@ -161,24 +161,17 @@ document.addEventListener("DOMContentLoaded", () => {
 /**
  * FROM HERE AFTER THERE ARE THE FUNCTIONS TO MANAGE THE ANIMATIONS AND SPECIAL JQUERY MIGRATIONS
  */
-function toggleAccordion(index) {
-  const content = document.getElementById(`content-${index}`);
-  const icon = document.getElementById(`icon-${index}`);
-  const text = document.querySelectorAll(`.text-${index}`);
+function toggleAccordion(el) {
+  let container = el.closest('.cs-accordion');
+  if(!container) container = el.parentElement;
 
-  // SVG for Minus icon
-  const minusSVG = `
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" class="w-4 h-4">
-        <path d="M3.75 7.25a.75.75 0 0 0 0 1.5h8.5a.75.75 0 0 0 0-1.5h-8.5Z" />
-      </svg>
-    `;
-
-  // SVG for Plus icon
-  const plusSVG = `
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" class="w-4 h-4">
-        <path d="M8.75 3.75a.75.75 0 0 0-1.5 0v3.5h-3.5a.75.75 0 0 0 0 1.5h3.5v3.5a.75.75 0 0 0 1.5 0v-3.5h3.5a.75.75 0 0 0 0-1.5h-3.5v-3.5Z" />
-      </svg>
-    `;
+  const content = container.querySelector(`.cs-content`);
+  const icon = container.querySelector(`.cs-icon`);
+  const text = container.querySelectorAll(`.cs-text`);
+  //get current classlist and apply
+  icon?.querySelectorAll('img').forEach((el) => {
+    el.classList.toggle('hidden');
+  });
 
   //toggle text color
   text.forEach((el) => {
@@ -186,13 +179,12 @@ function toggleAccordion(index) {
   });
 
   // Toggle the content's max-height for smooth opening and closing
-  if (content.style.maxHeight && content.style.maxHeight !== '0px') {
+  if ((content.style.maxHeight && content.style.maxHeight !== '0px')) {
     content.style.maxHeight = '0';
-    icon.innerHTML = plusSVG;
   } else {
     content.style.maxHeight = content.scrollHeight + 'px';
-    icon.innerHTML = minusSVG;
   }
+
 }
 
 window.toggleAccordion = toggleAccordion;
