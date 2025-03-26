@@ -67,7 +67,7 @@ document.addEventListener("DOMContentLoaded", () => {
         if (menu) {
           if (CLOSE_OTHER_MENUS) {
             if (menu.classList.contains('cs-inner')) {
-              document.querySelectorAll('ul.active.cs-inner').forEach(activeMenu => {
+              document.querySelectorAll('ul.cs-active.cs-inner').forEach(activeMenu => {
                 if (activeMenu !== menu) {
                   slideToggle(activeMenu, MENU_MOBILE_DURATION);
                 }
@@ -78,7 +78,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 }
               });
             } else {
-              document.querySelectorAll('ul.active').forEach(activeMenu => {
+              document.querySelectorAll('ul.cs-active').forEach(activeMenu => {
                 if (activeMenu !== menu) {
                   slideToggle(activeMenu, MENU_MOBILE_DURATION);
                 }
@@ -91,12 +91,12 @@ document.addEventListener("DOMContentLoaded", () => {
             }
           }
 
-          if (menu.classList.contains('active')) {
+          if (menu.classList.contains('cs-active')) {
             slideToggle(menu, MENU_MOBILE_DURATION);
-            menu.classList.remove('active');
+            menu.classList.remove('cs-active');
             this.classList.remove('cs-active');
           } else {
-            menu.classList.add('active');
+            menu.classList.add('cs-active');
             this.classList.add('cs-active');
             slideToggle(menu, MENU_MOBILE_DURATION);
           }
@@ -139,7 +139,7 @@ document.addEventListener("DOMContentLoaded", () => {
       const menu = this.querySelector(".dropdown-menu");
       if (menu) {
         if(CLOSE_OTHER_MENUS) {
-          document.querySelectorAll('ul.dropdown-menu.active').forEach(activeMenu => {
+          document.querySelectorAll('ul.dropdown-menu.cs-active').forEach(activeMenu => {
             if(activeMenu !== menu) {
               slideUp(activeMenu, MENU_LEVEL_2_DURATION);
             }
@@ -150,12 +150,12 @@ document.addEventListener("DOMContentLoaded", () => {
             }
           });
         }
-        if (menu.classList.contains('active')) {
+        if (menu.classList.contains('cs-active')) {
           slideToggle(menu, MENU_LEVEL_2_DURATION);
-          menu.classList.remove('active');
+          menu.classList.remove('cs-active');
           this.classList.remove('cs-active');
         } else {
-          menu.classList.add('active');
+          menu.classList.add('cs-active');
           this.classList.add('cs-active');
           slideToggle(menu, MENU_LEVEL_2_DURATION);
         }
@@ -204,6 +204,8 @@ document.addEventListener("DOMContentLoaded", () => {
       });
     });
   }
+
+
 });
 
 
@@ -211,34 +213,15 @@ document.addEventListener("DOMContentLoaded", () => {
  * FROM HERE AFTER THERE ARE THE FUNCTIONS TO MANAGE THE ANIMATIONS AND SPECIAL JQUERY MIGRATIONS
  ********/
 
-function toggleRead(el, index) {
-  const content = document.getElementById(`read-full-${index}`);
-  const text = el.querySelectorAll(`span`);
-
-  console.log(content.style.maxHeight);
-
-  text.forEach((el) => {
-    el.classList.toggle('hidden');
-  });
-
-  content.classList.toggle('max-h-0]');
-  if ((content.style.maxHeight && parseInt(content.style.maxHeight) !== 0)) {
-    content.style.maxHeight = '0px';
-  } else {
-    content.style.maxHeight = content.scrollHeight + 'px';
-  }
-}
-
-window.toggleRead = toggleRead;
-
 function toggleAccordion(el) {
-  const container = el.parentElement;
-  console.log(container);
+  let container = el.closest('.cs-accordion');
+  if(!container) container = el.parentElement;
+
   const content = container.querySelector(`.cs-content`);
   const icon = container.querySelector(`.cs-icon`);
-  const text = container.querySelectorAll(`.text`);
+  const text = container.querySelectorAll(`.cs-text`);
   //get current classlist and apply
-  icon.querySelectorAll('img').forEach((el) => {
+  icon?.querySelectorAll('img').forEach((el) => {
     el.classList.toggle('hidden');
   });
 
@@ -254,13 +237,12 @@ function toggleAccordion(el) {
     content.style.maxHeight = content.scrollHeight + 'px';
   }
 
-
 }
 
 window.togglePassword = (el) => {
   const i = el.closest('div').querySelector('input');
   i.type = i.type=='password' ? 'text': 'password'
-  el.classList.toggle('active');
+  el.classList.toggle('cs-active');
 };
 
 window.toggleAccordion = toggleAccordion;
