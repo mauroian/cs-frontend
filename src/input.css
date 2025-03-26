@@ -957,6 +957,10 @@
         @apply self-end font-sans font-bold uppercase cs-fs-sm tracking-wider rounded-md text-white py-1.5 px-2 border border-transparent text-center transition-all shadow-sm disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none;
     }
 
+    .cs-about-us-fade-img {
+        box-shadow: inset -2px 3px 55px 8px white;
+    }
+
     .cs-about-us-bio {
         @apply grid grid-cols-1 gap-4 md:grid-cols-2;
     }
@@ -964,6 +968,7 @@
     .cs-about-us-grid {
         @apply grid grid-cols-1 gap-6 px-6 md:grid-cols-2 md:px-0;
     }
+
     .cs-about-us-grid-item {
         @apply flex flex-col items-center gap-4 my-4 border-b-8 border-cs-red-medium min-h-96 justify-evenly;
     }

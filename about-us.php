@@ -25,8 +25,11 @@
             <!-- Content container -->
             <div class="flex flex-col items-center w-full mt-20">
                 <div class="w-full max-w-4xl px-4 md:px-0">
-                    <img class="hidden float-left m-8 rounded-xl md:block max-w-60"
+                    <div class="relative hidden float-left m-8 md:block">
+                    <img class="max-w-60 rounded-xl"
                         src="/src/assets/mauro-janet-standing.jpg" alt="Mauro and Janet">
+                        <div class="w-full absolute bottom-0 top-0 cs-about-us-fade-img "></div>
+                    </div>
                     <h2 class="mb-5 font-serif italic font-semibold cs-fs-2xl sm:cs-fs-3xl text-cs-red-main max-sm:text-right">
                         Hello! I’m Mauro Iannicelli and I am married to Janet.</h2>
                     <p class="clear-none">We are a Catholic couple in love with Jesus Christ and with one another.
@@ -67,12 +70,12 @@
                 </div>
                 <div class="flex flex-col items-center w-full pb-20 mx-auto bg-cs-paper-shade">
                     <div class="relative w-full max-w-3xl px-4 py-10 md:px-0">
-                        <img src="/src/assets/mauro-closeup.jpg"
-                            class="h-48 w-auto object-cover rounded-full absolute left-1/2 -translate-x-1/2 md:-translate-x-0  md:left-[5%] -top-8" alt="Mauro">
+                        <img src="/src/assets/mauro-closeup.jpg" id="meet-mauro"
+                             class="h-48 w-auto object-cover rounded-full absolute left-1/2 -translate-x-1/2 md:-translate-x-0  md:left-[5%] -top-8" alt="Mauro">
                         <div class="flex flex-col mb-10 md:flex-row md:mb-0">
                             <div class="w-full h-32 md:w-1/3"></div>
                             <div class="flex flex-col items-center gap-2 md:items-start">
-                                <h3 id="meet-mauro" class="text-cs-red-main cs-fs-sm uppercase max-w-[700px] text-center">Mauro's
+                                <h3 class="text-cs-red-main cs-fs-sm uppercase max-w-[700px] text-center">Mauro's
                                     Story</h3>
                                 <h3 class="text-cs-red-main cs-fs-lg font-semibold max-w-[700px] text-center">Mauro
                                     introduces himself...</h3>
@@ -112,12 +115,12 @@
                 </div>
                 <div class="flex flex-col items-center w-full pb-20 mx-auto bg-cs-paper-dark">
                     <div class="relative w-full max-w-3xl px-4 py-10 md:px-0">
-                        <img src="/src/assets/janet-closeup.jpg"
-                            class="h-48 w-auto object-cover rounded-full absolute left-1/2 -translate-x-1/2 md:-translate-x-0 md:left-[5%] -top-12" alt="Janet">
+                        <img src="/src/assets/janet-closeup.jpg" id="meet-janet"
+                             class="h-48 w-auto object-cover rounded-full absolute left-1/2 -translate-x-1/2 md:-translate-x-0 md:left-[5%] -top-12" alt="Janet">
                         <div class="flex flex-col mb-10 md:flex-row md:mb-0">
                             <div class="w-full h-32 md:w-1/3"></div>
                             <div class="flex flex-col items-center gap-2 md:items-start">
-                                <h3 id="meet-janet" class="text-cs-red-bright cs-fs-sm uppercase max-w-[700px] text-center">Janet’s
+                                <h3 class="text-cs-red-bright cs-fs-sm uppercase max-w-[700px] text-center">Janet’s
                                     story</h3>
                                 <h3 class="text-cs-red-bright cs-fs-lg font-semibold max-w-[700px] text-center">Janet
                                     introduces himself...</h3>
