@@ -618,11 +618,12 @@
     /* #### AUTH FORMS #### */
 
     .cs-form-box {
-        @apply w-full max-w-[600px] shadow-cs-all-around rounded-3xl;
+        @apply w-full max-w-[600px] shadow-cs-all-around rounded-3xl 
+        bg-cs-paper-dark;
     }
 
     .cs-form-container {
-        @apply bg-cs-paper w-full rounded-b-3xl flex flex-col items-center pt-9 pb-12 px-6 sm:px-10
+        @apply w-full rounded-b-3xl flex flex-col items-center pt-9 pb-12 px-6 sm:px-10
         /* [param] padding towards input textboxes */
     }
 
@@ -635,7 +636,8 @@
         /* [param] */
         shadow-cs-all-around
         /* [param] */
-        rounded-3xl sm:mx-0 bg-cs-paper;
+        rounded-3xl sm:mx-0
+        bg-cs-paper-dark;
     }
 
     .cs-form-container-success {
@@ -684,7 +686,7 @@
     }
 
     .cs-form-input {
-        @apply py-1.5 placeholder:text-cs-red-main/50 autofill:text-cs-red-main/50 autofill:cs-fs-sm text-cs-red-main font-semibold cs-fs-sm border-cs-red-main border-2 rounded-l-3xl rounded-r-xl bg-cs-paper-shade pl-4 w-full md:w-full;
+        @apply py-1.5 placeholder:text-cs-red-main/50 autofill:text-cs-red-main/50 autofill:cs-fs-sm text-cs-red-main font-semibold cs-fs-sm border-cs-red-main border-2 rounded-l-3xl rounded-r-xl bg-cs-paper pl-4 w-full md:w-full;
     }
 
     .cs-form-input.cs-form-input-icon {
@@ -716,7 +718,7 @@
     /* #### COURSE REGISTRATION FORMS #### */
 
     .cs-course-container {
-        @apply bg-cs-paper w-full rounded-b-3xl flex flex-col items-center pt-9 pb-12 px-6 sm:px-10
+        @apply bg-cs-paper-dark w-full rounded-b-3xl flex flex-col items-center pt-9 pb-12 px-6 sm:px-10
         /* [param] padding between outer auth form and input textboxes */
         ;
     }
@@ -727,7 +729,7 @@
 
     .cs-course-input,
     .cs-course-select {
-        @apply py-1.5 placeholder:text-cs-red-dark/50 text-cs-red-dark autofill:text-cs-red-dark/50 autofill:text-cs-red-dark autofill:cs-fs-sm font-semibold cs-fs-sm border-cs-red-dark border-2 rounded-l-3xl rounded-r-xl bg-cs-paper-shade pl-4 w-full;
+        @apply py-1.5 placeholder:text-cs-red-dark/50 text-cs-red-dark autofill:text-cs-red-dark/50 autofill:text-cs-red-dark autofill:cs-fs-sm font-semibold cs-fs-sm border-cs-red-dark border-2 rounded-l-3xl rounded-r-xl bg-cs-paper pl-4 w-full;
     }
 
 
@@ -748,11 +750,11 @@
     }
 
     .cs-course-phone-prefix {
-        @apply py-1.5 placeholder:text-cs-red-dark text-cs-red-dark font-semibold cs-fs-sm border-cs-red-dark border-2 rounded-l-3xl rounded-r-xl w-full min-w-[150px] bg-cs-paper-shade pl-10;
+        @apply py-1.5 placeholder:text-cs-red-dark text-cs-red-dark font-semibold cs-fs-sm border-cs-red-dark border-2 rounded-l-3xl rounded-r-xl w-full min-w-[150px] bg-cs-paper pl-10;
     }
 
     .cs-course-phone-number {
-        @apply py-1.5 placeholder:text-cs-red-dark text-cs-red-dark font-semibold cs-fs-sm border-cs-red-dark border-2 rounded-xl bg-cs-paper-shade w-full pl-4 md:pl-4
+        @apply py-1.5 placeholder:text-cs-red-dark text-cs-red-dark font-semibold cs-fs-sm border-cs-red-dark border-2 rounded-xl bg-cs-paper w-full pl-4 md:pl-4
     }
 
     .cs-course-checkbox {
@@ -932,7 +934,7 @@
 
     .cs-support-us-chip {
         @apply
-        flex flex-row items-center px-2 py-0 font-sans font-semibold tracking-widest w-fit text-black uppercase bg-white border border-transparent rounded-xl;
+        flex flex-row items-center px-2 py-0 font-sans font-semibold tracking-widest text-black uppercase bg-white border border-transparent w-fit rounded-xl;
     }
 
     .cs-support-us-tag {
@@ -953,7 +955,7 @@
     }
 
     .cs-support-us-step {
-        @apply flex flex-col items-start gap-4 p-6 text-center rounded-lg md:gap-9 bg-cs-paper-shade w-full;
+        @apply flex flex-col items-start w-full gap-4 p-6 text-center rounded-lg md:gap-9 bg-cs-paper-shade;
     }
 
     /* #### ABOUT US #### */

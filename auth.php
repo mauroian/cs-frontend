@@ -11,7 +11,7 @@
 
 <body class="flex flex-col min-h-screen">
     <?php require_once 'components/header.php'; ?>
-    <main class="cs-main bg-cs-paper-shade">
+    <main class="cs-main">
         <div class="px-5 cs-main-div gap-36 pt-14 sm:px-8">
             <!-- Reset Password Form -->
             <?php require_once 'components/reset-password-form.php' ?>

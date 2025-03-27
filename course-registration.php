@@ -13,7 +13,7 @@
 
     <?php require_once 'components/header.php'; ?>
 
-    <main class="cs-main bg-cs-paper-shade">
+    <main class="cs-main">
         <div class="cs-main-div">
 
             <!-- Page Title container -->

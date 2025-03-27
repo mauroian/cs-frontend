@@ -14,7 +14,7 @@
             <!-- Input Email -->
             <div class="relative cs-form-input-container">
                 <input id="email" required type="text" placeholder="Your email on our system"
-                       class="cs-form-input cs-form-input-icon">
+                    class="cs-form-input cs-form-input-icon">
                 <img src="/src/assets/email-login.svg" alt="Email">
             </div>
             <button class="cs-form-submit">Send me the password&nbsp;reset&nbsp;link</button>
