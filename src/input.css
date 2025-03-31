@@ -618,7 +618,7 @@
     /* #### AUTH FORMS #### */
 
     .cs-form-box {
-        @apply w-full max-w-[600px] shadow-cs-all-around rounded-3xl 
+        @apply w-full max-w-[600px] shadow-cs-all-around rounded-3xl mb-5
         bg-cs-paper-dark;
     }
 
@@ -665,6 +665,10 @@
         @apply w-full mb-6 text-left text-black cs-fs-sm;
     }
 
+    .cs-form-text-error-message {
+        @apply font-bold cs-fs-sm text-cs-red-medium;
+    }
+    
     .cs-form-text.cs-form-thank-you {
         @apply max-w-[450px];
     }
@@ -687,6 +691,10 @@
 
     .cs-form-input {
         @apply py-1.5 placeholder:text-cs-red-main/50 autofill:text-cs-red-main/50 autofill:cs-fs-sm text-cs-red-main font-semibold cs-fs-sm border-cs-red-main border-2 rounded-l-3xl rounded-r-xl bg-cs-paper pl-4 w-full md:w-full;
+    }
+    
+    .cs-form-input:disabled {
+        @apply bg-zinc-300;
     }
 
     .cs-form-input.cs-form-input-icon {
