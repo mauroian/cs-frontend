@@ -6,12 +6,12 @@ $isLogged = isset($_GET['logged']) && $_GET['logged'] === 'true';
 <header class="fixed top-0 z-50 w-full bg-cs-paper">
     <!-- Container nav for header (desktop & mobile) -->
 
-    <nav class="z-10 flex items-center w-full p-4 mx-auto bg-cs-paper cs-header" >
+    <nav class="z-10 flex items-center w-full p-4 mx-auto bg-cs-paper cs-header">
 
         <!-- Container div for logo (desktop & mobile)-->
         <div class="flex cs-menu-logo">
             <a href="/">
-                <img src="/src/assets/logos/cs-logo-red-name-red.svg" class="h-20" alt="Logo">
+                <img src="/src/assets/logos/cs-logo-red-name-red-h200.png" class="h-20" alt="Logo">
             </a>
         </div>
 

@@ -20,7 +20,7 @@
         <!-- Container div for logo (desktop & mobile)-->
         <div class="flex flex-grow cs-menu-logo">
             <a href="/">
-                <img src="/src/assets/logos/cs-logo-paper-bg-transp.svg" class="h-12" alt="Logo">
+                <img src="/src/assets/logos/cs-logo-paper-bg-transp-h200.png" class="h-12" alt="Logo">
             </a>
         </div>
         <!-- Container div for user avatar and user menu (desktop & mobile) | If user is logged -->

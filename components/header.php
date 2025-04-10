@@ -11,9 +11,9 @@ $isLogged = isset($_GET['logged']) && $_GET['logged'] === 'true';
         <!-- Container div for logo (desktop & mobile)-->
         <div class="flex cs-menu-logo">
             <a href="/">
-                <img src="/src/assets/logos/cs-logo-red-name-red.svg" class="hidden h-20 md:block" alt="Logo">
+                <img src="/src/assets/logos/cs-logo-red-name-red-h200.png" class="hidden h-20 md:block" alt="Logo">
 
-                <img src="/src/assets/logos/cs-logo-red-bg-transp.svg" class="block h-20 md:hidden" alt="Logo">
+                <img src="/src/assets/logos/cs-logo-red-bg-transp-h200.png" class="block h-20 md:hidden" alt="Logo">
 
             </a>
         </div>
