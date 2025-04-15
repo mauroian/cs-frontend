@@ -992,6 +992,25 @@
         @apply w-20 h-20;
     }
 
+    /* #### ASCENSION PRESS #### */
+    .cs-ascension-recommended {
+        @apply uppercase text-cs-grey border-[3px] pr-4 border-cs-blue-main rounded-3xl  flex flex-row items-center gap-2 cs-fs-xs md:cs-fs-base;
+    }
+
+    .cs-ascension-box {
+        @apply flex flex-col-reverse md:flex-row gap-8 my-10;
+    }
+
+    .cs-ascension-box-text {
+        @apply flex flex-col gap-8  text-base md:cs-fs-base md:my-6 text-cs-grey;
+    }
+
+    .cs-ascension-box-text a {
+        @apply break-all;
+    }
+
+
+
     /* #### BG VANILLA CSS #### */
     .cs-login {
         @apply  flex flex-col items-center min-h-[746px] cs-main px-5 sm:px-8;

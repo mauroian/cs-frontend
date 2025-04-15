@@ -46,6 +46,7 @@ export default {
         "cs-red-dark": "#570208",
         "cs-red-main": "#86171E",
         "cs-red-medium": "#BF0511",
+        "cs-red-shade": "#A3050F",
         "cs-red-bright": "#FA4238",
         "cs-red-main-transp": "#F2E4E1",
         "cs-blue-main": "#113F59",
