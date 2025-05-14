@@ -942,7 +942,7 @@
 
     .cs-support-us-chip {
         @apply
-        flex flex-row items-center px-2 py-0 font-sans font-semibold tracking-widest text-black uppercase bg-white border border-transparent w-fit rounded-xl;
+        flex flex-row items-center px-2 py-0 my-2 font-sans font-semibold tracking-widest text-black uppercase bg-white border border-transparent w-fit rounded-xl;
     }
 
     .cs-support-us-tag {
@@ -952,6 +952,10 @@
 
     .cs-support-us-item {
         @apply flex items-center w-full px-4 py-3 min-h-20 md:px-8;
+    }
+
+    .cs-support-us-paragraphs-block {
+        @apply flex flex-col gap-3 font-sans font-normal;
     }
 
     .cs-support-us-button {
@@ -985,7 +989,7 @@
     }
 
     .cs-about-us-grid-item {
-        @apply flex flex-col items-center gap-4 my-4 border-b-8 border-cs-red-medium min-h-96 justify-evenly;
+        @apply flex flex-col items-center justify-start gap-4 pb-10 mx-4 my-4 border-b-8 border-cs-red-medium;
     }
 
     .cs-about-us-grid-item-icon {
@@ -998,11 +1002,11 @@
     }
 
     .cs-ascension-box {
-        @apply flex flex-col-reverse md:flex-row gap-8 my-10;
+        @apply flex flex-col-reverse gap-8 my-10 md:flex-row;
     }
 
     .cs-ascension-box-text {
-        @apply flex flex-col gap-8  text-base md:cs-fs-base md:my-6 text-cs-grey;
+        @apply flex flex-col gap-8 text-base md:cs-fs-base md:my-6 text-cs-grey;
     }
 
     .cs-ascension-box-text a {
