@@ -52,6 +52,9 @@
     .cs-fs-4xl {
         @apply text-6xl sm:text-6xl
     }
+    .cs-fs-5xl {
+        @apply text-7xl sm:text-7xl
+    }
 }
 
 @layer components {
@@ -1014,6 +1017,12 @@
     }
 
 
+    /* #### GRADIENT TEXT #### */
+    .cs-gradient-text {
+        background: linear-gradient(to bottom, #FA4238 0%, #C80000 30%, #881A21 66%, #570208 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent;
+    }
+
+
 
     /* #### BG VANILLA CSS #### */
     .cs-login {
@@ -1043,6 +1052,18 @@
 
     .cs-bg-testimonials {
         background-image: url('/src/assets/testimonials-header.jpeg');
+        background-position: top;
+        background-size: cover;
+    }
+
+    .cs-bg-testimonials-bible {
+        background-image: url('/src/assets/bible-timeline/testimonial_header.png');
+        background-position: center;
+        background-size: cover;
+    }
+
+    .cs-bg-jerome-quote {
+        background-image: url('/src/assets/bible-timeline/path-bible.png');
         background-position: top;
         background-size: cover;
     }
