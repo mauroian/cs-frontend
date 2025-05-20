@@ -88,11 +88,11 @@
                         </p>
                     </div>
                     <div class="flex flex-row items-center justify-start w-full gap-2 md:gap-8">
-                        <button class="cs-support-us-button bg-cs-red-medium">Buy</button>
-                        <button class="cs-ascension-recommended">
+                        <a href="#how-to-order" class="cs-support-us-button bg-cs-red-medium">Buy</a>
+                        <div class="cs-ascension-recommended">
                             <img src="/src/assets/ascension-recommended.svg" alt="Recommended" class="w-8 h-8 -m-[1px]">
-                            highly recommended
-                        </button>
+                            highly&nbsp;recommended
+                        </div>
                     </div>
                 </div>
             </div>
@@ -118,7 +118,7 @@
                         </p>
                     </div>
                     <div class="flex flex-row items-center justify-start w-full gap-2 md:gap-8">
-                        <button class="cs-support-us-button bg-cs-red-medium">Buy</button>
+                        <a href="#how-to-order" class="cs-support-us-button bg-cs-red-medium">Buy</a>
                         <button class="cs-ascension-recommended">
                             <img src="/src/assets/ascension-recommended.svg" alt="Recommended" class="w-8 h-8 -m-[1px]">
                             highly recommended
@@ -179,7 +179,7 @@
                             text is the RSV-CE 2nd ed. (Revised Standard Version - Catholic Edition - 2nd Edition).</p>
                     </div>
                     <div class="flex flex-row items-center justify-start w-full gap-2 md:gap-8">
-                        <button class="cs-support-us-button bg-cs-red-medium">Buy</button>
+                        <a href="#how-to-order" class="cs-support-us-button bg-cs-red-medium">Buy</a>
                     </div>
                 </div>
             </div>
@@ -212,7 +212,7 @@
                             class="w-full max-w-[800px] h-auto">
                     </div>
                     <div class="flex flex-row items-center justify-start w-full gap-2 md:gap-8">
-                        <button class="cs-support-us-button bg-cs-red-medium">Buy</button>
+                        <a href="#how-to-order" class="cs-support-us-button bg-cs-red-medium">Buy</a>
                     </div>
                 </div>
             </div>
@@ -245,7 +245,7 @@
                             class="w-full max-w-[800px] h-auto">
                     </div>
                     <div class="flex flex-row items-center justify-start w-full gap-2 md:gap-8">
-                        <button class="cs-support-us-button bg-cs-red-medium">Buy</button>
+                        <a href="#how-to-order" class="cs-support-us-button bg-cs-red-medium">Buy</a>
                     </div>
                 </div>
             </div>
@@ -269,17 +269,20 @@
                         <img src="/src/assets/ascension-press/biblical-walk-mass-front.jpg"
                             alt="A Biblical Walk through the Mass" class="w-auto h-auto max-w-80 md:-mt-14">
                     </div>
+                    <div class="flex flex-row items-center justify-start w-full gap-2 md:gap-8">
+                        <a href="#how-to-order" class="cs-support-us-button bg-cs-red-medium">Buy</a>
+                    </div>
                 </div>
             </div>
 
             <!-- How to order -->
-            <div class="flex flex-col items-center w-full p-5 sm:p-10 bg-cs-paper-dark">
+            <div id="how-to-order" class="flex flex-col items-center w-full p-5 sm:p-10 bg-cs-paper-dark">
                 <div class="w-full max-w-[1000px] my-10 flex flex-col gap-6">
                     <span class="tracking-widest text-center uppercase sm:cs-fs-xs cs-fs-xs text-cs-grey">buy</span>
                     <h2 class="font-serif italic text-center cs-fs-xl sm:cs-fs-3xl text-cs-red-shade">How to order these
                         Resources</h2>
                     <div class="cs-ascension-box-text">
-                        <p class="font-bold cs-fs-base md:cs-fs-lg">If you are in the United Kingdom:</p>
+                        <p class="font-bold cs-fs-base md:cs-fs-lg">If you are in the United Kingdom</p>
                         <p>Place your order directly through the Goodnews Books website (the official UK distributor for Ascension Press) at <a href="https://www.goodnewsbooks.co.uk">www.goodnewsbooks.co.uk</a></p>
                         <p>Alternatively, you contact them by email or phone:<br>
                             Email: <a href="mailto:orders@goodnewsbooks.co.uk">orders@goodnewsbooks.co.uk</a><br>
@@ -287,7 +290,7 @@
                         </p>
                         <p>Their shipping fees to the UK are £4.50.</p>
 
-                        <p class="font-bold cs-fs-base md:cs-fs-lg">If you are in Ireland:</p>
+                        <p class="font-bold cs-fs-base md:cs-fs-lg">If you are in Ireland</p>
                         <p>
                             Place your order directly through St. Pauls Ireland (Ireland Distributors for Ascension Press)
                         </p>

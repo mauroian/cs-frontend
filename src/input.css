@@ -998,7 +998,7 @@
 
     /* #### ASCENSION PRESS #### */
     .cs-ascension-recommended {
-        @apply uppercase text-cs-grey border-[3px] pr-4 border-cs-blue-main rounded-3xl  flex flex-row items-center gap-2 cs-fs-xs md:cs-fs-base;
+        @apply uppercase text-cs-grey border-[3px] pr-4 border-cs-blue-main rounded-3xl flex flex-row items-center gap-2 cs-fs-2xs xsm:cs-fs-xs md:cs-fs-base;
     }
 
     .cs-ascension-box {

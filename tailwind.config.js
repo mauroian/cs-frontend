@@ -25,6 +25,7 @@ export default {
         mono: ["Courier New", "monospace"], // Custom monospace font
       },
       fontSize: {
+        "2xs": "0.65rem",
         "xs": "0.75rem",
         "sm": "0.875rem",
         "base": "1rem",

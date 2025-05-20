@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/src/input.css">
     <script type="module" src="/src/main.js"></script>
-    <title>Support Us</title>
+    <title>Support Us2</title>
 </head>
 
 <body class="flex flex-col min-h-screen">
@@ -16,23 +16,17 @@
 
 
             <!-- 'Title' container (1) -->
-            <div class="flex flex-col items-center w-full py-10 sm:py-10 bg-cs-paper-dark">
-                <div class="max-w-[850px] px-8">
-
-                    <div class="tracking-widest uppercase cs-fs-sm">Give to our ministry</div>
-
-                    <div class="pt-2">
-                        <h1 class="font-serif italic font-bold leading-tight text-left sm:cs-fs-3xl cs-fs-2xl text-cs-red-shade">Support Mauro and Janet's ministry.</h1>
-                    </div>
-
-                    <div class="pt-4 font-semibold text-left sm:cs-fs-lg cs-fs-sm text-cs-red-shade">We'd love to have <b>YOU</b> as our mission partner!</div>
-
+            <!--
+            <div class="flex flex-col items-center w-full py-10 sm:py-14 bg-cs-paper-shade">
+                <div class="w-full max-w-[800px] px-8">
+                    <span class="tracking-widest uppercase">Give to our ministry</span>
+                    <h1 class="font-serif italic font-semibold text-left sm:cs-fs-3xl cs-fs-2xl text-cs-red-main">Support Mauro and Janet's ministry.</h1>
                 </div>
             </div>
+            -->
 
 
             <!-- 'Title' container (2) -->
-            <!--
             <div class="flex flex-col items-center w-full py-10 text-white sm:py-14 bg-cs-paper-shade">
                 <div class="flex items-center mx-auto">
                     <div>
@@ -40,7 +34,6 @@
                     </div>
                 </div>
             </div>
-            -->
 
             <!-- 'Title' container (3)  (WITH VIDEO)-->
             <!--
@@ -62,6 +55,8 @@
 
                 <div class="flex flex-col justify-start gap-2 mt-16 text-cs-grey">
 
+                    <p class="font-bold uppercase cs-fs-lg">We'd love to have YOU as our mission partner!</p>
+
                     <p>We are delighted to offer you our courses, LIVE, totally <b>FREE OF CHARGE!</b></p>
 
                     <p>However, my wife Janet and I would be so blessed <b>if you could help us financially by buying our Study Resources.</b></p>
@@ -82,7 +77,7 @@
                     <div class="bg-cs-paper-dark">
                         <div class="flex flex-col py-6 cs-bible-accordion-content">
                             <div class="cs-support-us-item">
-                                <a href="#" class="flex flex-row gap-4 items-top">
+                                <a href="#" class="flex flex-row items-center gap-4">
                                     <img src="/src/assets/support-bronze-badge.png" class="inline-block w-16 h-16 mr-2" alt="Bronze">
                                     <span class="flex flex-col font-bold cs-fs-lg">
                                         Bible Timeline Course Notes
@@ -121,7 +116,7 @@
                     <div class="bg-cs-paper-dark">
                         <div class="flex flex-col py-6 cs-bible-accordion-content">
                             <div class="cs-support-us-item">
-                                <a href="#" class="flex flex-row gap-4 items-top">
+                                <a href="#" class="flex flex-row items-center gap-4">
                                     <img src="/src/assets/support-silver-badge.png" class="inline-block w-16 h-16 mr-2" alt="Bronze">
                                     <span class="flex flex-col font-bold cs-fs-lg">
                                         Bible Timeline Course Notes
@@ -132,7 +127,7 @@
                                 </a>
                             </div>
                             <div class="cs-support-us-item">
-                                <a href="#" class="flex flex-row gap-4 items-top">
+                                <a href="#" class="flex flex-row items-center gap-4">
                                     <img src="/src/assets/support-silver-badge.png" class="inline-block w-16 h-16 mr-2" alt="Bronze">
                                     <span class="flex flex-col font-bold cs-fs-lg">
                                         Video Recordings of ALL the Course Sessions
@@ -169,7 +164,7 @@
                     <div class="bg-cs-paper-dark">
                         <div class="flex flex-col py-6 cs-bible-accordion-content">
                             <div class="cs-support-us-item">
-                                <a href="#" class="flex flex-row gap-4 items-top">
+                                <a href="#" class="flex flex-row items-center gap-4">
                                     <img src="/src/assets/support-gold-badge.png" class="inline-block w-16 h-16 mr-2" alt="Bronze">
                                     <span class="flex flex-col font-bold cs-fs-lg">
                                         Bible Timeline Course Notes
@@ -180,7 +175,7 @@
                                 </a>
                             </div>
                             <div class="cs-support-us-item">
-                                <a href="#" class="flex flex-row gap-4 items-top">
+                                <a href="#" class="flex flex-row items-center gap-4">
                                     <img src="/src/assets/support-gold-badge.png" class="inline-block w-16 h-16 mr-2" alt="Bronze">
                                     <span class="flex flex-col font-bold cs-fs-lg">
                                         Video Recordings of ALL the Course Sessions
@@ -191,7 +186,7 @@
                                 </a>
                             </div>
                             <div class="cs-support-us-item">
-                                <a href="#" class="flex flex-row gap-4 items-top">
+                                <a href="#" class="flex flex-row items-center gap-4">
                                     <img src="/src/assets/support-gold-badge.png" class="inline-block w-16 h-16 mr-2" alt="Bronze">
                                     <span class="flex flex-col font-bold cs-fs-lg">
                                         Membership to our “Come and See Mission Partners” group for next 12 months
@@ -199,7 +194,7 @@
                                 </a>
                             </div>
                             <div class="cs-support-us-item">
-                                <a href="#" class="flex flex-row gap-4 items-top">
+                                <a href="#" class="flex flex-row items-center gap-4">
                                     <img src="/src/assets/support-gold-badge.png" class="inline-block w-16 h-16 mr-2" alt="Bronze">
                                     <span class="flex flex-col font-bold cs-fs-lg">
                                         Be included in our Come and See Monthly Mass offering for next 12 months
