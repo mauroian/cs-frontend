@@ -1,4 +1,4 @@
-<div class="fixed top-0 left-0 z-50 flex flex-col items-center justify-center w-full gap-2 text-center text-black bg-transparent sm:flex-row cs-fs-sm">
+<div class="fixed top-0 left-0 z-50 flex pointer-events-none flex-col items-center justify-center w-full gap-2 text-center text-black bg-transparent sm:flex-row cs-fs-sm">
   <div id="current-width"></div>
   <div class="inline xsm:hidden"> less than xsm (0 - 400) </div>
   <div class="hidden xsm:inline sm:hidden"> xsm (400 - 480) </div>
