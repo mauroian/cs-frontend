@@ -16,16 +16,260 @@
 <main class="cs-main pb-0">
     <div class="cs-main-div">
         <!-- Hero Section -->
-        <div class="relative flex flex-col flex-wrap items-center justify-center w-full text-white min-h-[400px] md:min-h-[600px] overflow-hidden">
+        <div class="relative flex flex-col flex-wrap items-center justify-center w-full text-white min-h-[300px] md:min-h-[600px] overflow-hidden">
             <div class="absolute inset-0 z-0">
                 <img src="/src/assets/bible-timeline/sixteen-miles-out.jpg" alt="Header Background" class="object-cover w-full h-full opacity-80">
             </div>
             <div class="relative z-10 w-full max-w-[1100px] text-center py-12 md:py-24">
-                <span class="tracking-widest uppercase sm:cs-fs-xs cs-fs-xs text-cs-red-main">Come & See Presents</span>
-                <h1 class="font-sans font-bold cs-fs-xl md:cs-fs-5xl sm:cs-fs-2xl cs-gradient-text">The Bible Timeline Course</h1>
-                <p class="font-sans font-bold tracking-widest cs-fs-lg md:cs-fs-2xl sm:cs-fs-lg mt-2 uppercase text-cs-red-main">12 Periods, one story</p>
-                <div class="flex flex-col sm:flex-row items-center justify-center gap-4 mt-12">
+                <div class="tracking-widest uppercase sm:cs-fs-xs cs-fs-xs text-cs-red-main">Come & See Presents</div>
+                <div class="font-sans font-bold cs-fs-xl md:cs-fs-5xl sm:cs-fs-2xl cs-gradient-text"><h1>The Bible Timeline Course</h1></div>
+                <div class="font-sans font-bold tracking-widest cs-fs-lg md:cs-fs-2xl sm:cs-fs-lg mt-2 uppercase text-cs-red-main">12 Periods, one story</div>
+                <div class="hidden md:flex flex-col sm:flex-row items-center justify-center gap-4 mt-12">
                     <img src="/src/assets/bible-timeline/12-periods-with-larger-characters.jpg" alt="12 Periods Larger"/>
+                </div>
+            </div>
+        </div>
+
+        <!-- Box Mobile Timeline -->
+        <div class="relative flex flex-col flex-wrap items-center justify-center w-full text-white overflow-hidden text-center">
+            <div class="w-full max-w-[1100px] md:hidden ">
+                <div class=" flex flex-row">
+                    <div class="cs-box-timeline-number bg-cs-period1-sec">
+                        1
+                    </div>
+                    <div class="cs-box-timeline-description bg-cs-period1-pri ">
+                        <div class="flex flex-row">
+                            <span class="w-0.5 h-full bg-white"></span>
+                            <div class="flex flex-col ml-2 items-start">
+                                <h4 class="cs-fs-lg font-bold">Early World</h4>
+                                <p class="cs-fs-3xs font-thin -mt-1">Creation and Fall of Humankind</p>
+                            </div>
+                        </div>
+                        <span class="cs-course-chip uppercase ml-3 mt-2 bg-cs-period1-sec text-white font-normal tracking-normal">
+                              genesis 1-11
+                        </span>
+                    </div>
+                </div>
+                <div class=" flex flex-row">
+                    <div class="cs-box-timeline-number bg-cs-period2-sec">
+                        2
+                    </div>
+                    <div class="cs-box-timeline-description bg-cs-period2-pri ">
+                        <div class="flex flex-row">
+                            <span class="w-0.5 h-full bg-white"></span>
+                            <div class="flex flex-col ml-2 items-start">
+                                <h4 class="cs-fs-lg font-bold">Patriarchs</h4>
+                                <p class="cs-fs-3xs font-thin -mt-1">Creation and Fall of Humankind</p>
+                            </div>
+                        </div>
+                        <span class="cs-course-chip uppercase ml-3 mt-2 bg-cs-period2-sec text-white font-normal tracking-normal">
+                              genesis 12-50
+                        </span>
+                    </div>
+                </div>
+                <div class=" flex flex-row">
+                    <div class="cs-box-timeline-number bg-cs-period3-sec">
+                        3
+                    </div>
+                    <div class="cs-box-timeline-description bg-cs-period3-pri ">
+                        <div class="flex flex-row">
+                            <span class="w-0.5 h-full bg-white"></span>
+                            <div class="flex flex-col ml-2 items-start">
+                                <h4 class="cs-fs-lg font-bold">Egypt & Exodus</h4>
+                                <p class="cs-fs-3xs font-thin -mt-1">Creation and Fall of Humankind</p>
+                            </div>
+                        </div>
+                        <span class="cs-course-chip uppercase ml-3 mt-2 bg-cs-period3-sec text-white font-normal tracking-normal">
+                              exodus
+                        </span>
+                    </div>
+                </div>
+                <div class=" flex flex-row">
+                    <div class="cs-box-timeline-number bg-cs-period4-sec">
+                        4
+                    </div>
+                    <div class="cs-box-timeline-description bg-cs-period4-pri ">
+                        <div class="flex flex-row">
+                            <span class="w-0.5 h-full bg-white"></span>
+                            <div class="flex flex-col ml-2 items-start">
+                                <h4 class="cs-fs-lg font-bold">Desert Wanderings</h4>
+                                <p class="cs-fs-3xs font-thin -mt-1">Refusal to enter the Promised Land</p>
+                            </div>
+                        </div>
+                        <span class="cs-course-chip uppercase ml-3 mt-2 bg-cs-period4-sec text-white font-normal tracking-normal">
+                              exodus
+                        </span>
+                    </div>
+                </div>
+                <div class=" flex flex-row">
+                    <div class="cs-box-timeline-number bg-cs-period5-sec">
+                        5
+                    </div>
+                    <div class="cs-box-timeline-description bg-cs-period5-pri ">
+                        <div class="flex flex-row">
+                            <span class="w-0.5 h-full bg-white"></span>
+                            <div class="flex flex-col ml-2 items-start">
+                                <h4 class="cs-fs-lg font-bold">Conquest & Judges</h4>
+                                <p class="cs-fs-3xs font-thin -mt-1">Conquest of the Promised Land</p>
+                            </div>
+                        </div>
+                        <div class="flex-row flex">
+                            <span class="cs-course-chip uppercase ml-3 mt-2 bg-cs-period5-sec text-white font-normal tracking-normal">
+                                  Joshua
+                            </span>
+                            <span class="cs-course-chip uppercase ml-2 mt-2 bg-cs-period5-sec text-white font-normal tracking-normal">
+                                   Judges
+                            </span>
+                            <span class="cs-course-chip uppercase ml-2 mt-2 bg-cs-period5-sec text-white font-normal tracking-normal">
+                                  1 Samuel 1-8
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <div class=" flex flex-row">
+                    <div class="cs-box-timeline-number bg-cs-period6-sec">
+                        6
+                    </div>
+                    <div class="cs-box-timeline-description bg-cs-period6-pri ">
+                        <div class="flex flex-row">
+                            <span class="w-0.5 h-full bg-white"></span>
+                            <div class="flex flex-col ml-2 items-start">
+                                <h4 class="cs-fs-lg font-bold">Royal Kingdom</h4>
+                                <p class="cs-fs-3xs font-thin -mt-1">Establishment of the Davidic Kingdom</p>
+                            </div>
+                        </div>
+                        <div class="flex-row flex">
+                            <span class="cs-course-chip uppercase ml-3 mt-2 bg-cs-period6-sec text-white font-normal tracking-normal">
+                                  1 Samuel 9-31
+                            </span>
+                            <span class="cs-course-chip uppercase ml-2 mt-2 bg-cs-period6-sec text-white font-normal tracking-normal">
+                                   2 Samuel
+                            </span>
+                            <span class="cs-course-chip uppercase ml-2 mt-2 bg-cs-period6-sec text-white font-normal tracking-normal">
+                                  1 Kings 1-11
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <div class=" flex flex-row">
+                    <div class="cs-box-timeline-number bg-cs-period7-sec">
+                        7
+                    </div>
+                    <div class="cs-box-timeline-description bg-cs-period7-pri ">
+                        <div class="flex flex-row">
+                            <span class="w-0.5 h-full bg-white"></span>
+                            <div class="flex flex-col ml-2 items-start">
+                                <h4 class="cs-fs-lg font-bold">Divided Kingdom</h4>
+                                <p class="cs-fs-3xs font-thin -mt-1">The Kingdom splits in two</p>
+                            </div>
+                        </div>
+                        <div class="flex-row flex">
+                            <span class="cs-course-chip uppercase ml-3 mt-2 bg-cs-period7-sec text-white font-normal tracking-normal">
+                                  1 Kings 12-22
+                            </span>
+                            <span class="cs-course-chip uppercase ml-2 mt-2 bg-cs-period7-sec text-white font-normal tracking-normal">
+                                   2 Kings 1-16
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <div class=" flex flex-row">
+                    <div class="cs-box-timeline-number bg-cs-period8-sec">
+                        8
+                    </div>
+                    <div class="cs-box-timeline-description bg-cs-period8-pri ">
+                        <div class="flex flex-row">
+                            <span class="w-0.5 h-full bg-white"></span>
+                            <div class="flex flex-col ml-2 items-start">
+                                <h4 class="cs-fs-lg font-bold">Exile</h4>
+                                <p class="cs-fs-3xs font-thin -mt-1">The Israelites are sent into exile</p>
+                            </div>
+                        </div>
+                        <div class="flex-row flex">
+                            <span class="cs-course-chip uppercase ml-3 mt-2 bg-cs-period8-sec text-white font-normal tracking-normal">
+                                  2 Kings 17-25
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <div class=" flex flex-row text-black">
+                    <div class="cs-box-timeline-number bg-cs-period9-sec">
+                        9
+                    </div>
+                    <div class="cs-box-timeline-description bg-cs-period9-pri ">
+                        <div class="flex flex-row">
+                            <span class="w-0.5 h-full bg-black"></span>
+                            <div class="flex flex-col ml-2 items-start">
+                                <h4 class="cs-fs-lg font-bold">Return</h4>
+                                <p class="cs-fs-3xs font-thin -mt-1">The tribe of Judah returns to the Promised land</p>
+                            </div>
+                        </div>
+                        <div class="flex-row flex">
+                            <span class="cs-course-chip uppercase ml-3 mt-2 bg-cs-period9-sec font-normal tracking-normal">
+                                  Ezra
+                            </span>
+                            <span class="cs-course-chip uppercase ml-2 mt-2 bg-cs-period9-sec font-normal tracking-normal">
+                                   Nehemiah
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <div class=" flex flex-row">
+                    <div class="cs-box-timeline-number bg-cs-period10-sec">
+                        10
+                    </div>
+                    <div class="cs-box-timeline-description bg-cs-period10-pri ">
+                        <div class="flex flex-row">
+                            <span class="w-0.5 h-full bg-white"></span>
+                            <div class="flex flex-col ml-2 items-start">
+                                <h4 class="cs-fs-lg font-bold">Maccabean Revolt</h4>
+                                <p class="cs-fs-3xs font-thin -mt-1">The Israelites rebel against the Greeks</p>
+                            </div>
+                        </div>
+                        <div class="flex-row flex">
+                            <span class="cs-course-chip uppercase ml-3 mt-2 bg-cs-period10-sec text-white font-normal tracking-normal">
+                                  1 Maccabees
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <div class=" flex flex-row">
+                    <div class="cs-box-timeline-number bg-cs-period11-sec">
+                        11
+                    </div>
+                    <div class="cs-box-timeline-description bg-cs-period11-pri ">
+                        <div class="flex flex-row">
+                            <span class="w-0.5 h-full bg-white"></span>
+                            <div class="flex flex-col ml-2 items-start">
+                                <h4 class="cs-fs-lg font-bold">Messianic Fulfillment</h4>
+                                <p class="cs-fs-3xs font-thin -mt-1">The coming of the Jesus Christ</p>
+                            </div>
+                        </div>
+                        <div class="flex-row flex">
+                            <span class="cs-course-chip uppercase ml-3 mt-2 bg-cs-period11-sec text-white font-normal tracking-normal">
+                                  LUKE
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <div class=" flex flex-row text-black">
+                    <div class="cs-box-timeline-number bg-cs-period12-sec">
+                        12
+                    </div>
+                    <div class="cs-box-timeline-description bg-cs-period12-pri ">
+                        <div class="flex flex-row">
+                            <span class="w-0.5 h-full bg-black"></span>
+                            <div class="flex flex-col ml-2 items-start">
+                                <h4 class="cs-fs-lg font-bold">The Church</h4>
+                                <p class="cs-fs-3xs font-thin -mt-1">The spreading of the Christian faith</p>
+                            </div>
+                        </div>
+                        <div class="flex-row flex">
+                            <span class="cs-course-chip uppercase ml-3 mt-2 bg-cs-period12-sec font-normal tracking-normal">
+                                  ACTS
+                            </span>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
