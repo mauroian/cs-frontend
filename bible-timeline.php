@@ -13,7 +13,7 @@
 
 <?php require_once 'components/header.php'; ?>
 
-<main class="cs-main pb-0">
+<main class="cs-main">
     <div class="cs-main-div">
         <!-- Hero Section -->
         <div class="relative flex flex-col flex-wrap items-center justify-center w-full text-white min-h-[300px] md:min-h-[600px] overflow-hidden">
@@ -39,7 +39,7 @@
                     </div>
                     <div class="cs-box-timeline-description bg-cs-period1-pri ">
                         <div class="flex flex-row">
-                            <span class="w-0.5 h-full bg-white"></span>
+                            <span class="cs-box-timeline-vertical-line bg-white"></span>
                             <div class="flex flex-col ml-2 items-start">
                                 <h4 class="cs-fs-lg font-bold">Early World</h4>
                                 <p class="cs-fs-3xs font-thin -mt-1">Creation and Fall of Humankind</p>
@@ -56,7 +56,7 @@
                     </div>
                     <div class="cs-box-timeline-description bg-cs-period2-pri ">
                         <div class="flex flex-row">
-                            <span class="w-0.5 h-full bg-white"></span>
+                            <span class="cs-box-timeline-vertical-line bg-white"></span>
                             <div class="flex flex-col ml-2 items-start">
                                 <h4 class="cs-fs-lg font-bold">Patriarchs</h4>
                                 <p class="cs-fs-3xs font-thin -mt-1">Creation and Fall of Humankind</p>
@@ -73,7 +73,7 @@
                     </div>
                     <div class="cs-box-timeline-description bg-cs-period3-pri ">
                         <div class="flex flex-row">
-                            <span class="w-0.5 h-full bg-white"></span>
+                            <span class="cs-box-timeline-vertical-line bg-white"></span>
                             <div class="flex flex-col ml-2 items-start">
                                 <h4 class="cs-fs-lg font-bold">Egypt & Exodus</h4>
                                 <p class="cs-fs-3xs font-thin -mt-1">Creation and Fall of Humankind</p>
@@ -90,7 +90,7 @@
                     </div>
                     <div class="cs-box-timeline-description bg-cs-period4-pri ">
                         <div class="flex flex-row">
-                            <span class="w-0.5 h-full bg-white"></span>
+                            <span class="cs-box-timeline-vertical-line bg-white"></span>
                             <div class="flex flex-col ml-2 items-start">
                                 <h4 class="cs-fs-lg font-bold">Desert Wanderings</h4>
                                 <p class="cs-fs-3xs font-thin -mt-1">Refusal to enter the Promised Land</p>
@@ -107,7 +107,7 @@
                     </div>
                     <div class="cs-box-timeline-description bg-cs-period5-pri ">
                         <div class="flex flex-row">
-                            <span class="w-0.5 h-full bg-white"></span>
+                            <span class="cs-box-timeline-vertical-line bg-white"></span>
                             <div class="flex flex-col ml-2 items-start">
                                 <h4 class="cs-fs-lg font-bold">Conquest & Judges</h4>
                                 <p class="cs-fs-3xs font-thin -mt-1">Conquest of the Promised Land</p>
@@ -132,7 +132,7 @@
                     </div>
                     <div class="cs-box-timeline-description bg-cs-period6-pri ">
                         <div class="flex flex-row">
-                            <span class="w-0.5 h-full bg-white"></span>
+                            <span class="cs-box-timeline-vertical-line bg-white"></span>
                             <div class="flex flex-col ml-2 items-start">
                                 <h4 class="cs-fs-lg font-bold">Royal Kingdom</h4>
                                 <p class="cs-fs-3xs font-thin -mt-1">Establishment of the Davidic Kingdom</p>
@@ -157,7 +157,7 @@
                     </div>
                     <div class="cs-box-timeline-description bg-cs-period7-pri ">
                         <div class="flex flex-row">
-                            <span class="w-0.5 h-full bg-white"></span>
+                            <span class="cs-box-timeline-vertical-line bg-white"></span>
                             <div class="flex flex-col ml-2 items-start">
                                 <h4 class="cs-fs-lg font-bold">Divided Kingdom</h4>
                                 <p class="cs-fs-3xs font-thin -mt-1">The Kingdom splits in two</p>
@@ -179,7 +179,7 @@
                     </div>
                     <div class="cs-box-timeline-description bg-cs-period8-pri ">
                         <div class="flex flex-row">
-                            <span class="w-0.5 h-full bg-white"></span>
+                            <span class="cs-box-timeline-vertical-line bg-white"></span>
                             <div class="flex flex-col ml-2 items-start">
                                 <h4 class="cs-fs-lg font-bold">Exile</h4>
                                 <p class="cs-fs-3xs font-thin -mt-1">The Israelites are sent into exile</p>
@@ -198,7 +198,7 @@
                     </div>
                     <div class="cs-box-timeline-description bg-cs-period9-pri ">
                         <div class="flex flex-row">
-                            <span class="w-0.5 h-full bg-black"></span>
+                            <span class="cs-box-timeline-vertical-line bg-black"></span>
                             <div class="flex flex-col ml-2 items-start">
                                 <h4 class="cs-fs-lg font-bold">Return</h4>
                                 <p class="cs-fs-3xs font-thin -mt-1">The tribe of Judah returns to the Promised land</p>
@@ -220,7 +220,7 @@
                     </div>
                     <div class="cs-box-timeline-description bg-cs-period10-pri ">
                         <div class="flex flex-row">
-                            <span class="w-0.5 h-full bg-white"></span>
+                            <span class="cs-box-timeline-vertical-line bg-white"></span>
                             <div class="flex flex-col ml-2 items-start">
                                 <h4 class="cs-fs-lg font-bold">Maccabean Revolt</h4>
                                 <p class="cs-fs-3xs font-thin -mt-1">The Israelites rebel against the Greeks</p>
@@ -239,7 +239,7 @@
                     </div>
                     <div class="cs-box-timeline-description bg-cs-period11-pri ">
                         <div class="flex flex-row">
-                            <span class="w-0.5 h-full bg-white"></span>
+                            <span class="cs-box-timeline-vertical-line bg-white"></span>
                             <div class="flex flex-col ml-2 items-start">
                                 <h4 class="cs-fs-lg font-bold">Messianic Fulfillment</h4>
                                 <p class="cs-fs-3xs font-thin -mt-1">The coming of the Jesus Christ</p>
@@ -258,7 +258,7 @@
                     </div>
                     <div class="cs-box-timeline-description bg-cs-period12-pri ">
                         <div class="flex flex-row">
-                            <span class="w-0.5 h-full bg-black"></span>
+                            <span class="cs-box-timeline-vertical-line bg-black"></span>
                             <div class="flex flex-col ml-2 items-start">
                                 <h4 class="cs-fs-lg font-bold">The Church</h4>
                                 <p class="cs-fs-3xs font-thin -mt-1">The spreading of the Christian faith</p>
@@ -564,8 +564,8 @@
         </div>
 
         <!-- Box Come & See -->
-        <div class="flex flex-col items-center w-full p-8 sm:p-16 bg-cs-paper text-cs-red-main">
-            <div class="w-full max-w-[1000px] my-10 flex flex-col items-center gap-8 text-center">
+        <div class="flex flex-col items-center w-full pt-8 sm:pt-16 bg-cs-paper text-cs-red-main">
+            <div class="w-full max-w-[1000px] mt-10 flex flex-col items-center gap-8 text-center">
                 <img src="/src/assets/bible-timeline/come-and-see-logo-no-text.png" class="w-1/2 md:w-1/4" alt="Come & See Logo">
                 <img src="/src/assets/bible-timeline/come-and-see-text.svg" class="w-1/2 md:w-1/3" alt="Come & See Text">
                 <p class="cs-fs-base md:cs-fs-lg italic font-serif mt-6">Serving Dioceses, Parishes & Individuals<br> with Teachings & Formation</p>

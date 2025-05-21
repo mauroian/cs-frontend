@@ -1025,6 +1025,10 @@
         @apply flex flex-col  items-start pt-4 flex-grow pb-2;
     }
 
+    .cs-box-timeline-vertical-line {
+        @apply w-0.5 h-full;
+    }
+
 
         /* #### GRADIENT TEXT #### */
     .cs-gradient-text {
