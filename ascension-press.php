@@ -134,11 +134,11 @@
                     <h2 class="font-serif italic font-bold cs-fs-xl sm:cs-fs-3xl text-cs-blue-main">The Great Adventure
                         Bible</h2>
                     <span class="font-semibold tracking-wide text-cs-grey sm:cs-fs-xl cs-fs-base">Ascension Press</span>
-                    <div class="flex flex-row gap-2 md:gap-14 ">
+                    <div class="flex flex-row justify-evenly">
                         <img src="/src/assets/ascension-press/tga-bible-paperback.png" alt="Great Adventure Bible"
-                            class="w-1/2 sm:max-w-[50%] md:w-auto h-auto flex-grow">
+                            class="max-w-[43%] sm:max-w-[40%] md:max-w-[35%] md:w-auto h-auto flex-grow">
                         <img src="/src/assets/ascension-press/tga-bible-leather.png" alt="Great Adventure Bible Back"
-                            class="w-1/2 sm:max-w-[50%] md:w-auto h-auto flex-grow">
+                            class="max-w-[43%] sm:max-w-[40%] md:max-w-[35%] md:w-auto h-auto flex-grow">
                     </div>
                     <div class="cs-ascension-box-text">
                         <p>
