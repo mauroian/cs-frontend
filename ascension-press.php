@@ -104,11 +104,11 @@
                     <h2 class="font-serif italic font-bold cs-fs-xl sm:cs-fs-3xl text-cs-blue-main">Walking with God: A
                         Journey Through the Bible</h2>
                     <span class="font-semibold tracking-wide text-cs-grey sm:cs-fs-xl cs-fs-base">By Tim Gray & Jeff Cavins</span>
-                    <div class="flex flex-row gap-2 md:gap-14 ">
+                    <div class="flex flex-row justify-evenly ">
                         <img src="/src/assets/ascension-press/wwg-front.jpg" alt="Walking with God Book Cover"
-                            class="w-1/2 sm:max-w-[50%] md:max-w-[30%] md:w-auto h-auto flex-grow">
+                            class="max-w-[43%] sm:max-w-[40%] md:max-w-[35%] md:w-auto h-auto flex-grow">
                         <img src="/src/assets/ascension-press/wwg-back.jpg" alt="Walking with God Book Pages"
-                            class="w-1/2 sm:max-w-[50%] md:max-w-[30%] md:w-auto h-auto flex-grow">
+                            class="max-w-[43%] sm:max-w-[40%] md:max-w-[35%] md:w-auto h-auto flex-grow">
                     </div>
                     <div class="cs-ascension-box-text">
                         <p class="tracking-wide ">This book is simply exceptional and has changed the lives of
