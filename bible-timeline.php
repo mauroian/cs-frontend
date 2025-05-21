@@ -62,7 +62,7 @@
                                 <div class="cs-fs-3xs font-thin -mt-1">Creation and Fall of Humankind</div>
                             </div>
                         </div>
-                        <span class="cs-course-chip uppercase ml-3 mt-2 bg-cs-period2-sec text-white font-normal tracking-normal">
+                        <span class="cs-box-timeline-chip bg-cs-period2-sec">
                               genesis 12-50
                         </span>
                     </div>
@@ -281,17 +281,17 @@
                 <div class="font-sans font-bold cs-fs-xl md:cs-fs-2xl sm:cs-fs-2xl cs-gradient-text">Jeff Cavins’ world-famous
                     Catholic Bible Study</div>
                 <div class="flex md:flex-row flex-col md:gap-10 gap-3 items-center">
-                    <div class="flex flex-col items-center text-center p-6 bg-cs-paper-shade rounded-xl shadow-cs-all-around min-w-[30%]">
+                    <div class="flex flex-col items-center text-center p-6 bg-cs-paper-shade rounded-xl shadow-cs-all-around min-w-[30%] max-w-[400px]">
                         <img src="/src/assets/bible-timeline/free-course.svg" alt="Comprehensive" class="w-48 h-24 mb-4">
                         <div class="text-cs-grey mt-4">This course is free for everyone—for <b>individuals, parishes & dioceses.</b></div>
                     </div>
-                    <div class="flex flex-col items-center text-center p-6 bg-cs-paper-shade rounded-xl shadow-cs-all-around min-w-[30%]">
+                    <div class="flex flex-col items-center text-center p-6 bg-cs-paper-shade rounded-xl shadow-cs-all-around min-w-[30%] max-w-[400px]">
                         <img src="/src/assets/bible-timeline/live-streamed.svg" alt="Simple" class="w-48 h-24 mb-4">
                         <img src="/src/assets/mauro-closeup.jpg" id="meet-mauro"
                              class="h-48 w-auto object-cover rounded-full" alt="Mauro">
                         <div class="text-cs-grey mt-4">Delivered by presenter <b>Mauro Iannicelli</b> through  live-streamed, interactive sessions.</div>
                     </div>
-                    <div class="flex flex-col items-center text-center p-6 bg-cs-paper-shade rounded-xl shadow-cs-all-around min-w-[30%]">
+                    <div class="flex flex-col items-center text-center p-6 bg-cs-paper-shade rounded-xl shadow-cs-all-around min-w-[30%] max-w-[400px]">
                         <img src="/src/assets/bible-timeline/life-changing.svg" alt="Transformative" class="w-48 h-24 mb-4">
                         <div class="text-cs-grey mt-4">Grasp the Big Picture of the Bible from start to finish!</div>
                     </div>

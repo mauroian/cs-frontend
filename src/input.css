@@ -1030,7 +1030,7 @@
     }
 
     .cs-box-timeline-chip {
-        @apply uppercase ml-3 mt-2 font-normal tracking-normal
+        @apply uppercase first:ml-3 ml-2 mt-2 font-normal tracking-normal
         flex flex-row items-center px-2 pt-0.5 font-sans border border-transparent rounded-xl cs-fs-badge;
     }
 
