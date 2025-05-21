@@ -41,11 +41,11 @@
                         <div class="flex flex-row">
                             <span class="cs-box-timeline-vertical-line bg-white"></span>
                             <div class="flex flex-col ml-2 items-start">
-                                <h4 class="cs-fs-lg font-bold">Early World</h4>
-                                <p class="cs-fs-3xs font-thin -mt-1">Creation and Fall of Humankind</p>
+                                <div class="cs-fs-lg font-bold">Early World</div>
+                                <div class="cs-fs-3xs font-thin -mt-1">Creation and Fall of Humankind</div>
                             </div>
                         </div>
-                        <span class="cs-course-chip uppercase ml-3 mt-2 bg-cs-period1-sec text-white font-normal tracking-normal">
+                        <span class="cs-box-timeline-chip bg-cs-period1-sec">
                               genesis 1-11
                         </span>
                     </div>
@@ -58,8 +58,8 @@
                         <div class="flex flex-row">
                             <span class="cs-box-timeline-vertical-line bg-white"></span>
                             <div class="flex flex-col ml-2 items-start">
-                                <h4 class="cs-fs-lg font-bold">Patriarchs</h4>
-                                <p class="cs-fs-3xs font-thin -mt-1">Creation and Fall of Humankind</p>
+                                <div class="cs-fs-lg font-bold">Patriarchs</div>
+                                <div class="cs-fs-3xs font-thin -mt-1">Creation and Fall of Humankind</div>
                             </div>
                         </div>
                         <span class="cs-course-chip uppercase ml-3 mt-2 bg-cs-period2-sec text-white font-normal tracking-normal">
@@ -75,8 +75,8 @@
                         <div class="flex flex-row">
                             <span class="cs-box-timeline-vertical-line bg-white"></span>
                             <div class="flex flex-col ml-2 items-start">
-                                <h4 class="cs-fs-lg font-bold">Egypt & Exodus</h4>
-                                <p class="cs-fs-3xs font-thin -mt-1">Creation and Fall of Humankind</p>
+                                <div class="cs-fs-lg font-bold">Egypt & Exodus</div>
+                                <div class="cs-fs-3xs font-thin -mt-1">Creation and Fall of Humankind</div>
                             </div>
                         </div>
                         <span class="cs-course-chip uppercase ml-3 mt-2 bg-cs-period3-sec text-white font-normal tracking-normal">
@@ -92,8 +92,8 @@
                         <div class="flex flex-row">
                             <span class="cs-box-timeline-vertical-line bg-white"></span>
                             <div class="flex flex-col ml-2 items-start">
-                                <h4 class="cs-fs-lg font-bold">Desert Wanderings</h4>
-                                <p class="cs-fs-3xs font-thin -mt-1">Refusal to enter the Promised Land</p>
+                                <div class="cs-fs-lg font-bold">Desert Wanderings</div>
+                                <div class="cs-fs-3xs font-thin -mt-1">Refusal to enter the Promised Land</div>
                             </div>
                         </div>
                         <span class="cs-course-chip uppercase ml-3 mt-2 bg-cs-period4-sec text-white font-normal tracking-normal">
@@ -109,8 +109,8 @@
                         <div class="flex flex-row">
                             <span class="cs-box-timeline-vertical-line bg-white"></span>
                             <div class="flex flex-col ml-2 items-start">
-                                <h4 class="cs-fs-lg font-bold">Conquest & Judges</h4>
-                                <p class="cs-fs-3xs font-thin -mt-1">Conquest of the Promised Land</p>
+                                <div class="cs-fs-lg font-bold">Conquest & Judges</div>
+                                <div class="cs-fs-3xs font-thin -mt-1">Conquest of the Promised Land</div>
                             </div>
                         </div>
                         <div class="flex-row flex">
@@ -134,8 +134,8 @@
                         <div class="flex flex-row">
                             <span class="cs-box-timeline-vertical-line bg-white"></span>
                             <div class="flex flex-col ml-2 items-start">
-                                <h4 class="cs-fs-lg font-bold">Royal Kingdom</h4>
-                                <p class="cs-fs-3xs font-thin -mt-1">Establishment of the Davidic Kingdom</p>
+                                <div class="cs-fs-lg font-bold">Royal Kingdom</div>
+                                <div class="cs-fs-3xs font-thin -mt-1">Establishment of the Davidic Kingdom</div>
                             </div>
                         </div>
                         <div class="flex-row flex">
@@ -159,8 +159,8 @@
                         <div class="flex flex-row">
                             <span class="cs-box-timeline-vertical-line bg-white"></span>
                             <div class="flex flex-col ml-2 items-start">
-                                <h4 class="cs-fs-lg font-bold">Divided Kingdom</h4>
-                                <p class="cs-fs-3xs font-thin -mt-1">The Kingdom splits in two</p>
+                                <div class="cs-fs-lg font-bold">Divided Kingdom</div>
+                                <div class="cs-fs-3xs font-thin -mt-1">The Kingdom splits in two</div>
                             </div>
                         </div>
                         <div class="flex-row flex">
@@ -181,8 +181,8 @@
                         <div class="flex flex-row">
                             <span class="cs-box-timeline-vertical-line bg-white"></span>
                             <div class="flex flex-col ml-2 items-start">
-                                <h4 class="cs-fs-lg font-bold">Exile</h4>
-                                <p class="cs-fs-3xs font-thin -mt-1">The Israelites are sent into exile</p>
+                                <div class="cs-fs-lg font-bold">Exile</div>
+                                <div class="cs-fs-3xs font-thin -mt-1">The Israelites are sent into exile</div>
                             </div>
                         </div>
                         <div class="flex-row flex">
@@ -200,8 +200,8 @@
                         <div class="flex flex-row">
                             <span class="cs-box-timeline-vertical-line bg-black"></span>
                             <div class="flex flex-col ml-2 items-start">
-                                <h4 class="cs-fs-lg font-bold">Return</h4>
-                                <p class="cs-fs-3xs font-thin -mt-1">The tribe of Judah returns to the Promised land</p>
+                                <div class="cs-fs-lg font-bold">Return</div>
+                                <div class="cs-fs-3xs font-thin -mt-1">The tribe of Judah returns to the Promised land</div>
                             </div>
                         </div>
                         <div class="flex-row flex">
@@ -222,8 +222,8 @@
                         <div class="flex flex-row">
                             <span class="cs-box-timeline-vertical-line bg-white"></span>
                             <div class="flex flex-col ml-2 items-start">
-                                <h4 class="cs-fs-lg font-bold">Maccabean Revolt</h4>
-                                <p class="cs-fs-3xs font-thin -mt-1">The Israelites rebel against the Greeks</p>
+                                <div class="cs-fs-lg font-bold">Maccabean Revolt</div>
+                                <div class="cs-fs-3xs font-thin -mt-1">The Israelites rebel against the Greeks</div>
                             </div>
                         </div>
                         <div class="flex-row flex">
@@ -241,8 +241,8 @@
                         <div class="flex flex-row">
                             <span class="cs-box-timeline-vertical-line bg-white"></span>
                             <div class="flex flex-col ml-2 items-start">
-                                <h4 class="cs-fs-lg font-bold">Messianic Fulfillment</h4>
-                                <p class="cs-fs-3xs font-thin -mt-1">The coming of the Jesus Christ</p>
+                                <div class="cs-fs-lg font-bold">Messianic Fulfillment</div>
+                                <div class="cs-fs-3xs font-thin -mt-1">The coming of the Jesus Christ</div>
                             </div>
                         </div>
                         <div class="flex-row flex">
@@ -260,8 +260,8 @@
                         <div class="flex flex-row">
                             <span class="cs-box-timeline-vertical-line bg-black"></span>
                             <div class="flex flex-col ml-2 items-start">
-                                <h4 class="cs-fs-lg font-bold">The Church</h4>
-                                <p class="cs-fs-3xs font-thin -mt-1">The spreading of the Christian faith</p>
+                                <div class="cs-fs-lg font-bold">The Church</div>
+                                <div class="cs-fs-3xs font-thin -mt-1">The spreading of the Christian faith</div>
                             </div>
                         </div>
                         <div class="flex-row flex">
@@ -278,28 +278,28 @@
         <div class="flex flex-col items-center w-full p-5 sm:p-10 bg-cs-paper">
             <div class="w-full max-w-[1000px] flex flex-col gap-6 text-center my-10">
                 <span class="tracking-widest uppercase sm:cs-fs-xs cs-fs-xs text-cs-red-main">register today</span>
-                <h2 class="font-sans font-bold cs-fs-xl md:cs-fs-2xl sm:cs-fs-2xl cs-gradient-text">Jeff Cavins’ world-famous
-                    Catholic Bible Study</h2>
+                <div class="font-sans font-bold cs-fs-xl md:cs-fs-2xl sm:cs-fs-2xl cs-gradient-text">Jeff Cavins’ world-famous
+                    Catholic Bible Study</div>
                 <div class="flex md:flex-row flex-col md:gap-10 gap-3 items-center">
                     <div class="flex flex-col items-center text-center p-6 bg-cs-paper-shade rounded-xl shadow-cs-all-around min-w-[30%]">
                         <img src="/src/assets/bible-timeline/free-course.svg" alt="Comprehensive" class="w-48 h-24 mb-4">
-                        <p class="text-cs-grey mt-4">This course is free for everyone—for <b>individuals, parishes & dioceses.</b></p>
+                        <div class="text-cs-grey mt-4">This course is free for everyone—for <b>individuals, parishes & dioceses.</b></div>
                     </div>
                     <div class="flex flex-col items-center text-center p-6 bg-cs-paper-shade rounded-xl shadow-cs-all-around min-w-[30%]">
                         <img src="/src/assets/bible-timeline/live-streamed.svg" alt="Simple" class="w-48 h-24 mb-4">
                         <img src="/src/assets/mauro-closeup.jpg" id="meet-mauro"
                              class="h-48 w-auto object-cover rounded-full" alt="Mauro">
-                        <p class="text-cs-grey mt-4">Delivered by presenter <b>Mauro Iannicelli</b> through  live-streamed, interactive sessions.</p>
+                        <div class="text-cs-grey mt-4">Delivered by presenter <b>Mauro Iannicelli</b> through  live-streamed, interactive sessions.</div>
                     </div>
                     <div class="flex flex-col items-center text-center p-6 bg-cs-paper-shade rounded-xl shadow-cs-all-around min-w-[30%]">
                         <img src="/src/assets/bible-timeline/life-changing.svg" alt="Transformative" class="w-48 h-24 mb-4">
-                        <p class="text-cs-grey mt-4">Grasp the Big Picture of the Bible from start to finish!</p>
+                        <div class="text-cs-grey mt-4">Grasp the Big Picture of the Bible from start to finish!</div>
                     </div>
                 </div>
                 <div class="w-full">
-                    <p class="text-cs-grey mt-4 text-center cs-fs-lg mb-8">
+                    <div class="text-cs-grey mt-4 text-center cs-fs-lg mb-8">
                         Register today for our <b>8 session course</b> which takes you through <b>Salvation History</b>.
-                    </p>
+                    </div>
                     <button class="cs-support-us-button bg-cs-red-main">Sign up</button>
                 </div>
             </div>
@@ -309,7 +309,7 @@
         <div class="flex flex-col items-center w-full p-5 sm:p-10 bg-cs-paper-dark">
             <div class="w-full max-w-[1000px] my-5 flex flex-col gap-6  text-center items-center">
                 <span class="tracking-widest uppercase sm:cs-fs-xs cs-fs-xs text-cs-red-main">watch</span>
-                <h2 class="font-sans font-bold cs-fs-xl md:cs-fs-3xl sm:cs-fs-2xl cs-gradient-text">Mauro’s course introduction:</h2>
+                <div class="font-sans font-bold cs-fs-xl md:cs-fs-3xl sm:cs-fs-2xl cs-gradient-text">Mauro’s course introduction:</div>
                 <img src="/src/assets/bible-timeline/image-36.jpg" alt="Mauro's Introduction" class="w-full max-w-3xl h-auto rounded-xl shadow-cs-all-around">
                 <div class="w-full text-center mt-10">
                     <button class="cs-support-us-button bg-cs-red-main">Register</button>
@@ -320,11 +320,11 @@
         <!-- "Go into the Bible" Section -->
         <div class="flex flex-col items-center w-full p-5 sm:p-10 bg-cs-paper">
             <div class="relative w-full max-w-[1000px] my-10 flex flex-col gap-6">
-                <h2 class="font-sans font-bold cs-fs-xl lg:cs-fs-3xl md:cs-fs-2xl text-cs-red-medium cs-gradient-text">Do you find the Bible <br>too big and complicated?</h2>
-                <p class="cs-fs-xl w-[65%]">
+                <div class="font-sans font-bold cs-fs-xl lg:cs-fs-3xl md:cs-fs-2xl text-cs-red-medium cs-gradient-text">Do you find the Bible <br>too big and complicated?</div>
+                <div class="cs-fs-xl w-[65%]">
                     There are <b>so many characters and stories,</b>
                     especially in the Old Testament!
-                </p>
+                </div>
                 <img src="/src/assets/bible-timeline/vector-14.svg" class="absolute right-2 -bottom-24 md:right-32 md:top-20 w-56 md:w-80">
             </div>
         </div>
@@ -340,23 +340,23 @@
         <!-- Course Details -->
         <div class="flex flex-col items-center w-full p-5 sm:p-10 bg-cs-paper">
             <div class=" relative w-full max-w-[1000px] my-10 flex flex-col gap-6">
-                <h2 class="font-sans cs-fs-xl lg:cs-fs-3xl md:cs-fs-2xl text-cs-red-main text-right cs-gradient-text">
+                <div class="font-sans cs-fs-xl lg:cs-fs-3xl md:cs-fs-2xl text-cs-red-main text-right cs-gradient-text">
                     Many Catholics long to read<br/> the Bible, but
                     <span class="font-bold">don’t know<br/> where to start.</span>
-                </h2>
-                <p class="cs-fs-xl w-full text-right -mt-4">
+                </div>
+                <div class="cs-fs-xl w-full text-right -mt-4">
                     So they often begin, and <b>then give up</b>.
-                </p>
+                </div>
                 <img src="/src/assets/bible-timeline/vector-17.svg" class=" -right-10 md:right-32 top-20 w-3/4 ml-10">
-                <h2 class="font-sans cs-fs-xl lg:cs-fs-3xl md:cs-fs-2xl text-cs-red-main text-left cs-gradient-text">
+                <div class="font-sans cs-fs-xl lg:cs-fs-3xl md:cs-fs-2xl text-cs-red-main text-left cs-gradient-text">
                     What if we told you
                     <b>there is a<br/> definitive solution</b>
                     to this<br/> problem?
-                </h2>
+                </div>
                 <div class="bg-contain bg-[url(/src/assets/bible-timeline/trail.svg)] pt-[30%] md:pt-[36%] bg-no-repeat bg-[0rem_0rem] md:bg-[4rem]">
-                    <p class="cs-fs-lg text-left -mt-4 w-[70%] md:w-[50%]">
+                    <div class="cs-fs-lg text-left -mt-4 w-[70%] md:w-[50%]">
                         The Bible Timeline methodology breaks the Bible into <b>12 colour-coded time periods</b> that are easy to understand and memorize.
-                    </p>
+                    </div>
                 </div>
                 <img src="/src/assets/bible-timeline/12-periods-only.jpg" class="w-full bg-cs-paper-shade py-8" alt="12 Periods Only"/>
                 <div class="w-full relative h-20 md:h-28">
@@ -367,16 +367,16 @@
                         <img src="/src/assets/bible-timeline/involved.svg" class="w-40 md:w-52 lg:w-60"
                              alt="Vector 17">
                     </div>
-                    <h2 class="relative font-sans cs-fs-xl lg:cs-fs-3xl md:cs-fs-2xl text-cs-red-main text-right w-3/4 md:w-2/3 self-end cs-gradient-text mt-4">
+                    <div class="relative font-sans cs-fs-xl lg:cs-fs-3xl md:cs-fs-2xl text-cs-red-main text-right w-3/4 md:w-2/3 self-end cs-gradient-text mt-4">
                         During this course, presenter Mauro Iannicelli will walk you through <b>each of the
                             12 Periods.</b>
-                    </h2>
+                    </div>
                 </div>
                 <div class="w-full md:w-1/2 flex flex-col self-end">
                     <img src="/src/assets/bible-timeline/bt2-mauro-pointing-screen.jpg" alt="12 Periods Larger"/>
-                    <p class="cs-fs-lg text-right mt-6">
+                    <div class="cs-fs-lg text-right mt-6">
                         With this approach, you will grasp <b>the Big Picture of the Bible</b> from start to finish, the Old and the New Testament... for life!
-                    </p>
+                    </div>
                 </div>
             </div>
         </div>
@@ -384,31 +384,31 @@
             <div class="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-[800px]">
                 <div class="flex flex-col items-center space-x-4 bg-cs-paper pb-8">
                     <img src="/src/assets/bible-timeline/icons-06.jpg" class="max-w-72" alt="Vision & Strategy">
-                    <h4 class="font-bold text-center text-cs-red-main cs-fs-3xl cs-gradient-text  -mt-4">Discover</h4>
-                    <p class="p-2 text-center cs-fs-sm">
+                    <div class="font-bold text-center text-cs-red-main cs-fs-3xl cs-gradient-text  -mt-4">Discover</div>
+                    <div class="p-2 text-center cs-fs-sm">
                         how the key people, places, and events in the Bible fit together.
-                    </p>
+                    </div>
                 </div>
                 <div class="flex flex-col items-center space-x-4 bg-cs-paper pb-8">
                     <img src="/src/assets/bible-timeline/icons-07.jpg" class="max-w-72" alt="Vision & Strategy">
-                    <h4 class="font-bold text-center text-cs-red-main cs-fs-3xl cs-gradient-text  -mt-4">Gain</h4>
-                    <p class="p-2 text-center cs-fs-sm">
+                    <div class="font-bold text-center text-cs-red-main cs-fs-3xl cs-gradient-text  -mt-4">Gain</div>
+                    <div class="p-2 text-center cs-fs-sm">
                         a greater understanding for the Scripture readings you hear at mass.
-                    </p>
+                    </div>
                 </div>
                 <div class="flex flex-col items-center space-x-4 bg-cs-paper pb-8">
                     <img src="/src/assets/bible-timeline/icons-03.jpg" class="max-w-72" alt="Vision & Strategy">
-                    <h4 class="font-bold text-center text-cs-red-main cs-fs-3xl cs-gradient-text  -mt-4">Understand</h4>
-                    <p class="p-2 text-center cs-fs-sm">
+                    <div class="font-bold text-center text-cs-red-main cs-fs-3xl cs-gradient-text  -mt-4">Understand</div>
+                    <div class="p-2 text-center cs-fs-sm">
                         how the events in the Old Testament are fulfilled in the New Testament.
-                    </p>
+                    </div>
                 </div>
                 <div class="flex flex-col items-center space-x-4 bg-cs-paper pb-8">
                     <img src="/src/assets/bible-timeline/icons-05.jpg" class="max-w-72" alt="Vision & Strategy">
-                    <h4 class="font-bold text-center text-cs-red-main cs-fs-3xl cs-gradient-text -mt-4">Learn</h4>
-                    <p class="p-2 text-center cs-fs-sm">
+                    <div class="font-bold text-center text-cs-red-main cs-fs-3xl cs-gradient-text -mt-4">Learn</div>
+                    <div class="p-2 text-center cs-fs-sm">
                         how God’s Word applies to your life today.
-                    </p>
+                    </div>
                 </div>
             </div>
         </div>
@@ -417,12 +417,12 @@
         <div class=" flex flex-col items-center w-full p-5 sm:p-10 bg-cs-paper">
             <div class="relative w-full max-w-[1000px] mt-48 mb-5 flex flex-col gap-6 text-center items-center">
                 <img src="/src/assets/bible-timeline/vector-27.svg" class="absolute left-10 md:left-1/4 -top-64 w-72 md:w-96">
-                <h2 class="relative font-sans font-bold cs-fs-xl md:cs-fs-3xl sm:cs-fs-2xl cs-gradient-text -mt-10 md:mt-4">We make the complex <br>simple.
+                <div class="relative font-sans font-bold cs-fs-xl md:cs-fs-3xl sm:cs-fs-2xl cs-gradient-text -mt-10 md:mt-4">We make the complex <br>simple.
                     <img src="/src/assets/bible-timeline/im-in.svg" class="absolute -right-4 w-40 md:w-48 top-36 md:top-20">
-                </h2>
-                <p class="cs-fs-lg w-full text-center">
+                </div>
+                <div class="cs-fs-lg w-full text-center">
                     Join us online. <b>Come and see!</b>
-                </p>
+                </div>
                 <div class="w-full text-center my-10">
                     <button class="cs-support-us-button bg-cs-red-main">Register</button>
                 </div>
@@ -433,8 +433,8 @@
         <div class="flex flex-col items-center w-full p-5 sm:p-10 bg-cs-paper-dark">
             <div class="w-full max-w-[1000px] my-10 flex flex-col gap-6  text-center items-center">
                 <span class="tracking-widest uppercase sm:cs-fs-xs cs-fs-xs text-cs-red-main">endorsement</span>
-                <h2 class="font-sans font-bold cs-fs-xl md:cs-fs-3xl sm:cs-fs-2xl cs-gradient-text">Jeff Cavins endorses
-                    Mauro Iannicelli as Bible Timeline teacher</h2>
+                <div class="font-sans font-bold cs-fs-xl md:cs-fs-3xl sm:cs-fs-2xl cs-gradient-text">Jeff Cavins endorses
+                    Mauro Iannicelli as Bible Timeline teacher</div>
                 <img src="/src/assets/bible-timeline/image-34.jpg" alt="Mauro's Introduction"
                      class="w-full max-w-2xl h-auto rounded-xl">
                 <div class="mt-2 font-serif font-bold text-center md:mt-16 cs-fs-3xl">
@@ -474,7 +474,7 @@
                         <div class="flex flex-row items-center justify-start gap-2 -mt-1">
                             <span class="font-bold text-white">Helen B.</span>
                         </div>
-                        <p class="tracking-widest text-white uppercase cs-fs-2xs">Advent Sunday Gospels - Nov 2021</p>
+                        <div class="tracking-widest text-white uppercase cs-fs-2xs">Advent Sunday Gospels - Nov 2021</div>
                     </div>
                     <!-- Box Post -->
                     <div class="flex flex-col gap-5 px-8 py-8">
@@ -491,7 +491,7 @@
                         <div class="flex flex-row items-center justify-start gap-2 -mt-1">
                             <span class="font-bold text-white">Marie D.</span>
                         </div>
-                        <p class="tracking-widest text-white uppercase cs-fs-2xs">Advent Sunday Gospels - Nov 2021</p>
+                        <div class="tracking-widest text-white uppercase cs-fs-2xs">Advent Sunday Gospels - Nov 2021</div>
                     </div>
                     <!-- Box Post -->
                     <div class="flex flex-col gap-5 px-8 py-8">
@@ -508,7 +508,7 @@
                         <div class="flex flex-row items-center justify-start gap-2 -mt-1">
                             <span class="font-bold text-white">Anne B.</span>
                         </div>
-                        <p class="mt-1 tracking-widest text-white uppercase cs-fs-2xs">Advent Sunday Gospels - Nov 2021</p>
+                        <div class="mt-1 tracking-widest text-white uppercase cs-fs-2xs">Advent Sunday Gospels - Nov 2021</div>
                     </div>
                     <!-- Box Post -->
                     <div class="flex flex-col gap-5 px-8 py-8">
@@ -523,7 +523,7 @@
                         <div class="flex flex-row items-center justify-start gap-2 -mt-1">
                             <span class="font-bold text-white">Anita P.</span>
                         </div>
-                        <p class="mt-1 tracking-widest text-white uppercase cs-fs-2xs">Advent Sunday Gospels - Nov 2021</p>
+                        <div class="mt-1 tracking-widest text-white uppercase cs-fs-2xs">Advent Sunday Gospels - Nov 2021</div>
                     </div>
                     <!-- Box Post -->
                     <div class="flex flex-col gap-5 px-8 py-8">
@@ -555,8 +555,8 @@
         <!-- Call to Action -->
         <div class="flex flex-col items-center w-full p-8 sm:p-16 bg-cs-red-main text-white">
             <div class="w-full max-w-[1000px] my-5 flex flex-col items-center gap-8 text-center">
-                <h2 class="font-sans text-white cs-fs-2xl sm:cs-fs-4xl font-bold">This course is free</h2>
-                <p class="cs-fs-xl md:cs-fs-2xl">for all individuals, parishes & dioceses.</p>
+                <div class="font-sans text-white cs-fs-2xl sm:cs-fs-4xl font-bold">This course is free</div>
+                <div class="cs-fs-xl md:cs-fs-2xl">for all individuals, parishes & dioceses.</div>
                 <button class="bg-white text-cs-red-main uppercase font-bold py-3 px-8 rounded-xl cs-fs-base hover:bg-cs-paper transition-colors">
                         Register
                 </button>
@@ -568,7 +568,7 @@
             <div class="w-full max-w-[1000px] mt-10 flex flex-col items-center gap-8 text-center">
                 <img src="/src/assets/bible-timeline/come-and-see-logo-no-text.png" class="w-1/2 md:w-1/4" alt="Come & See Logo">
                 <img src="/src/assets/bible-timeline/come-and-see-text.svg" class="w-1/2 md:w-1/3" alt="Come & See Text">
-                <p class="cs-fs-base md:cs-fs-lg italic font-serif mt-6">Serving Dioceses, Parishes & Individuals<br> with Teachings & Formation</p>
+                <div class="cs-fs-base md:cs-fs-lg italic font-serif mt-6">Serving Dioceses, Parishes & Individuals<br> with Teachings & Formation</div>
             </div>
         </div>
     </div>
