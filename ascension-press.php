@@ -136,9 +136,9 @@
                     <span class="font-semibold tracking-wide text-cs-grey sm:cs-fs-xl cs-fs-base">Ascension Press</span>
                     <div class="flex flex-row justify-evenly">
                         <img src="/src/assets/ascension-press/tga-bible-paperback.png" alt="Great Adventure Bible"
-                            class="max-w-[43%] sm:max-w-[40%] md:max-w-[35%] md:w-auto h-auto flex-grow">
+                            class="max-w-[43%] sm:max-w-[40%] md:max-w-[35%] lg:max-w-[30%] md:w-auto h-auto flex-grow">
                         <img src="/src/assets/ascension-press/tga-bible-leather.png" alt="Great Adventure Bible Back"
-                            class="max-w-[43%] sm:max-w-[40%] md:max-w-[35%] md:w-auto h-auto flex-grow">
+                            class="max-w-[43%] sm:max-w-[40%] md:max-w-[35%] lg:max-w-[30%] md:w-auto h-auto flex-grow">
                     </div>
                     <div class="cs-ascension-box-text">
                         <p>
