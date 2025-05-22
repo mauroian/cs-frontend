@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/src/input.css">
     <script type="module" src="/src/main.js"></script>
-    <title>Support Us2</title>
+    <title>Support Us</title>
 </head>
 
 <body class="flex flex-col min-h-screen">
@@ -14,29 +14,7 @@
     <main class="cs-main">
         <div class="cs-main-div">
 
-
-            <!-- 'Title' container (1) -->
-            <!--
-            <div class="flex flex-col items-center w-full py-10 sm:py-14 bg-cs-paper-shade">
-                <div class="w-full max-w-[800px] px-8">
-                    <span class="tracking-widest uppercase">Give to our ministry</span>
-                    <h1 class="font-serif italic font-semibold text-left sm:cs-fs-3xl cs-fs-2xl text-cs-red-main">Support Mauro and Janet's ministry.</h1>
-                </div>
-            </div>
-            -->
-
-
-            <!-- 'Title' container (2) -->
-            <div class="flex flex-col items-center w-full py-10 text-white sm:py-14 bg-cs-paper-shade">
-                <div class="flex items-center mx-auto">
-                    <div>
-                        <img src="/src/assets/support-us-header.png" class="md:w-[600px] sm:w-[500px] w-[400px] px-4" alt="Header">
-                    </div>
-                </div>
-            </div>
-
-            <!-- 'Title' container (3)  (WITH VIDEO)-->
-            <!--
+            <!-- 'Title' container (WITH VIDEO)-->
             <div class="relative flex flex-col items-center max-w-[800px] mb-24 text-cs-red-main bg-cs-paper-shade md:mb-48">
                 <video autoplay loop muted playsinline class="w-auto min-w-full">
                     <source src="/src/assets/videos/bg-video-support-us.mp4" type="video/mp4" />
@@ -44,16 +22,15 @@
                 <div class="absolute bottom-0 left-0 flex items-center justify-center w-full h-full px-4 bg-white bg-opacity-30">
                 </div>
                 <div class="absolute bottom-0 flex items-center w-full max-w-4xl mx-auto">
-                    <div class="-mb-20 sm:-mb-24 md:-mb-36">
+                    <div class="mx-10 -mb-20 sm:-mb-24 md:-mb-36">
                         <img src="/src/assets/support-us-header.png" class="md:w-[700px] sm:w-[500px] w-[400px] mr-auto" alt="Header">
                     </div>
                 </div>
             </div>
-            -->
 
             <div class="flex flex-col items-center cs-personal-area-container sm:cs-fs-base cs-fs-base">
 
-                <div class="flex flex-col justify-start gap-2 mt-16 text-cs-grey">
+                <div class="flex flex-col justify-start gap-2 mt-8 text-cs-grey">
 
                     <p class="font-bold uppercase cs-fs-lg">We'd love to have YOU as our mission partner!</p>
 

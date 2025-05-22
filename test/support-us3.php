@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/src/input.css">
     <script type="module" src="/src/main.js"></script>
-    <title>Support Us4</title>
+    <title>Support Us</title>
 </head>
 
 <body class="flex flex-col min-h-screen">
