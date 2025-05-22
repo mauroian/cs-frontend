@@ -1018,11 +1018,11 @@
 
     /* #### BIBLE TIMELINE #### */
     .cs-box-timeline-number {
-        @apply  w-14 pt-4 font-bold cs-fs-lg;
+        @apply  pt-4 font-bold w-14 cs-fs-lg;
     }
 
     .cs-box-timeline-description {
-        @apply flex flex-col  items-start pt-4 flex-grow pb-2;
+        @apply flex flex-col items-start flex-grow pt-4 pb-2;
     }
 
     .cs-box-timeline-vertical-line {
@@ -1035,12 +1035,56 @@
     }
 
 
-        /* #### GRADIENT TEXT #### */
+    /* #### GRADIENT TEXT #### */
     .cs-gradient-text {
         background: linear-gradient(to bottom, #FA4238 0%, #C80000 30%, #881A21 66%, #570208 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent;
     }
 
+    /* #### BIBLE TIMELINE COURSE #### */
 
+    .cs-bt-uppercase-prompt-fs {
+        @apply text-sm xsm:text-base;
+    }
+
+    .cs-bt-one-story-fs {
+        @apply text-lg;
+    }
+
+    .cs-bt-fs-extralarge {
+        @apply text-3xl leading-snug xsm:text-4xl sm:text-4xl md:text-6xl;
+    }
+
+    .cs-bt-fs-large {
+        @apply text-2xl sm:text-3xl;
+    }
+
+    .cs-bt-fs-medium {
+        @apply text-2xl;
+    }
+
+    .cs-bt-fs-base {
+        @apply text-lg sm:text-2xl;
+    }
+
+    .cs-bt-fs-video-title {
+        @apply text-3xl leading-snug xsm:text-4xl sm:text-5xl md:text-5xl;
+    }
+
+    .cs-benefit-box {
+        @apply gap-4 py-8 sm:gap-6;
+    }
+
+    .cs-benefit-icon {
+        @apply w-2/5 xsm:w-1/3 sm:w-1/2 max-w-32;
+    }
+
+    .cs-benefit {
+        @apply cs-fs-xl sm:cs-fs-lg md:cs-fs-2xl;
+    }
+
+    .cs-benefit-descr {
+        @apply px-6 cs-fs-sm sm:cs-fs-xs md:cs-fs-sm;
+    }
 
     /* #### BG VANILLA CSS #### */
     .cs-login {
@@ -1103,4 +1147,6 @@
             background-image: url('/src/assets/background-login.png');
         }
     }
+
+
 }
