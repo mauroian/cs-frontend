@@ -27,7 +27,7 @@
                     </div>
                     <div class="mt-3 font-sans font-bold tracking-widest uppercase cs-bt-one-story-fs text-cs-red-main">73 Books, one story</div>
                     <div class="flex-col items-center justify-center hidden gap-4 mt-12 md:flex sm:flex-row">
-                        <img src="/src/assets/bible-timeline/12-periods-with-larger-characters.jpg" alt="12 Periods Larger" />
+                        <img src="/src/assets/bible-timeline/btc-whole.png" alt="12 Periods Larger" />
                     </div>
                 </div>
             </div>
