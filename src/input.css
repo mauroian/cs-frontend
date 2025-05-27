@@ -1075,7 +1075,7 @@
     }
 
     .cs-box-timeline-description {
-        @apply flex flex-col items-start flex-grow pt-4 pb-4;
+        @apply flex flex-col items-start flex-grow pt-4 pb-6;
     }
 
     .cs-box-timeline-vertical-line {
@@ -1083,7 +1083,7 @@
     }
 
     .cs-box-timeline-chip {
-        @apply uppercase first:ml-5 ml-2 mt-2 font-normal tracking-normal flex flex-row items-center px-2 pt-0.5 font-sans border border-transparent rounded-xl cs-fs-badge;
+        @apply uppercase first:ml-5 ml-2 mt-3 font-normal tracking-normal flex flex-row items-center px-2 pt-0.5 font-sans border border-transparent rounded-xl cs-fs-2xs;
     }
 
     .cs-box-timeline-title {
@@ -1091,7 +1091,7 @@
     }
 
     .cs-box-timeline-legend {
-        @apply -mt-1 font-thin cs-fs-3xs;
+        @apply pr-2 -mt-0 font-thin text-left cs-fs-xs;
     }
 
     .cs-box-timeline-container {
