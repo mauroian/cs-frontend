@@ -1079,7 +1079,7 @@
     }
 
     .cs-box-timeline-vertical-line {
-        @apply w-0.5 h-full;
+        @apply w-1 h-full;
     }
 
     .cs-box-timeline-chip {
