@@ -1071,7 +1071,7 @@
 
     /* #### BIBLE TIMELINE CHART MOBILE #### */
     .cs-box-timeline-number {
-        @apply pt-4 font-bold w-14 cs-fs-lg;
+        @apply pt-4 font-bold min-w-14 cs-fs-lg;
     }
 
     .cs-box-timeline-description {
