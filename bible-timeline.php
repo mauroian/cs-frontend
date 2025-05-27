@@ -47,9 +47,11 @@
                                 <div class="cs-box-timeline-legend">Creation and Fall of Humankind</div>
                             </div>
                         </div>
-                        <span class="cs-box-timeline-chip bg-cs-period1-sec">
-                              genesis 1-11
-                        </span>
+                        <div class="flex-row flex">
+                            <span class="cs-box-timeline-chip bg-cs-period1-sec">
+                                  genesis 1-11
+                            </span>
+                        </div>
                     </div>
                 </div>
                 <div class=" flex flex-row">
@@ -64,9 +66,11 @@
                                 <div class="cs-box-timeline-legend">Creation and Fall of Humankind</div>
                             </div>
                         </div>
-                        <span class="cs-box-timeline-chip bg-cs-period2-sec">
-                              genesis 12-50
-                        </span>
+                        <div class="flex-row flex">
+                            <span class="cs-box-timeline-chip bg-cs-period2-sec">
+                                  genesis 12-50
+                            </span>
+                        </div>
                     </div>
                 </div>
                 <div class=" flex flex-row">
@@ -81,9 +85,11 @@
                                 <div class="cs-box-timeline-legend">Creation and Fall of Humankind</div>
                             </div>
                         </div>
-                        <span class="cs-box-timeline-chip  bg-cs-period3-sec">
-                              exodus
-                        </span>
+                        <div class="flex-row flex">
+                            <span class="cs-box-timeline-chip  bg-cs-period3-sec">
+                                  exodus
+                            </span>
+                        </div>
                     </div>
                 </div>
                 <div class=" flex flex-row">
@@ -98,9 +104,11 @@
                                 <div class="cs-box-timeline-legend">Refusal to enter the Promised Land</div>
                             </div>
                         </div>
-                        <span class="cs-box-timeline-chip bg-cs-period4-sec">
-                              exodus
-                        </span>
+                        <div class="flex-row flex">
+                            <span class="cs-box-timeline-chip bg-cs-period4-sec">
+                                  exodus
+                            </span>
+                        </div>
                     </div>
                 </div>
                 <div class=" flex flex-row">
