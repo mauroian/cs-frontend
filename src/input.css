@@ -1034,6 +1034,18 @@
         flex flex-row items-center px-2 pt-0.5 font-sans border border-transparent rounded-xl cs-fs-badge;
     }
 
+    .cs-box-timeline-title {
+        @apply cs-fs-lg font-bold;
+    }
+
+    .cs-box-timeline-legend {
+        @apply cs-fs-3xs font-thin -mt-1;
+    }
+
+    .cs-box-timeline-container {
+        @apply ml-2 items-start;
+    }
+
 
     /* #### GRADIENT TEXT #### */
     .cs-gradient-text {
