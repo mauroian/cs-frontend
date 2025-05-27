@@ -1016,43 +1016,14 @@
         @apply break-all;
     }
 
-    /* #### BIBLE TIMELINE #### */
-    .cs-box-timeline-number {
-        @apply  pt-4 font-bold w-14 cs-fs-lg;
-    }
-
-    .cs-box-timeline-description {
-        @apply flex flex-col items-start flex-grow pt-4 pb-2;
-    }
-
-    .cs-box-timeline-vertical-line {
-        @apply w-0.5 h-full;
-    }
-
-    .cs-box-timeline-chip {
-        @apply uppercase first:ml-3 ml-2 mt-2 font-normal tracking-normal
-        flex flex-row items-center px-2 pt-0.5 font-sans border border-transparent rounded-xl cs-fs-badge;
-    }
-
-    .cs-box-timeline-title {
-        @apply cs-fs-lg font-bold;
-    }
-
-    .cs-box-timeline-legend {
-        @apply cs-fs-3xs font-thin -mt-1;
-    }
-
-    .cs-box-timeline-container {
-        @apply ml-2 items-start;
-    }
-
-
-    /* #### GRADIENT TEXT #### */
-    .cs-gradient-text {
-        background: linear-gradient(to bottom, #FA4238 0%, #C80000 30%, #881A21 66%, #570208 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent;
-    }
-
+    
     /* #### BIBLE TIMELINE COURSE #### */
+
+    /*  GRADIENT TEXT  */
+    .cs-gradient-text {
+        background: linear-gradient(to bottom, #FA4238 0%, #C80000 30%, #881A21 66%, #570208 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;   }
 
     .cs-bt-uppercase-prompt-fs {
         @apply text-sm xsm:text-base;
@@ -1096,6 +1067,35 @@
 
     .cs-benefit-descr {
         @apply px-6 cs-fs-sm sm:cs-fs-xs md:cs-fs-sm;
+    }
+
+    /* #### BIBLE TIMELINE CHART MOBILE #### */
+    .cs-box-timeline-number {
+        @apply pt-4 font-bold w-14 cs-fs-lg;
+    }
+
+    .cs-box-timeline-description {
+        @apply flex flex-col items-start flex-grow pt-4 pb-2;
+    }
+
+    .cs-box-timeline-vertical-line {
+        @apply w-0.5 h-full;
+    }
+
+    .cs-box-timeline-chip {
+        @apply uppercase first:ml-3 ml-2 mt-2 font-normal tracking-normal flex flex-row items-center px-2 pt-0.5 font-sans border border-transparent rounded-xl cs-fs-badge;
+    }
+
+    .cs-box-timeline-title {
+        @apply font-bold cs-fs-lg;
+    }
+
+    .cs-box-timeline-legend {
+        @apply -mt-1 font-thin cs-fs-3xs;
+    }
+
+    .cs-box-timeline-container {
+        @apply items-start ml-2;
     }
 
     /* #### BG VANILLA CSS #### */
