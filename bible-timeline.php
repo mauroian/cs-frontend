@@ -16,7 +16,7 @@
     <main class="cs-main">
         <div class="cs-main-div">
             <!-- Hero Section -->
-            <div class="relative flex flex-col flex-wrap items-center justify-center w-full text-white min-h-[200px] md:min-h-[500px] overflow-hidden">
+            <div class="relative flex flex-col flex-wrap items-center justify-center w-full text-white min-h-[200px] md:min-h-[500px]">
                 <div class="absolute inset-0 z-0">
                     <img src="/src/assets/bible-timeline/sixteen-miles-out.jpg" alt="Header Background" class="object-cover w-full h-full opacity-80">
                 </div>
@@ -26,8 +26,42 @@
                         <h1>The&nbsp;Bible&nbsp;Timeline Course</h1>
                     </div>
                     <div class="mt-3 font-sans font-bold tracking-widest uppercase cs-bt-one-story-fs text-cs-red-main">73 Books, one story</div>
-                    <div class="flex-col items-center justify-center hidden gap-4 mt-12 md:flex sm:flex-row">
-                        <img src="/src/assets/bible-timeline/btc-whole.png" alt="12 Periods Larger" />
+                    <div class="flex-col items-center justify-center hidden gap-0 mt-12 md:flex sm:flex-row flex-nowrap relative" id="timeline-desktop">
+                        <!-- Immagini dei periodi -->
+                        <img src="/src/assets/bible-timeline/p1.png" alt="Period 1" class="w-1/12 object-contain timeline-period-img" data-index="0">
+                        <img src="/src/assets/bible-timeline/p2.png" alt="Period 2" class="w-1/12 object-contain timeline-period-img" data-index="1">
+                        <img src="/src/assets/bible-timeline/p3.png" alt="Period 3" class="w-1/12 object-contain timeline-period-img" data-index="2">
+                        <img src="/src/assets/bible-timeline/p4.png" alt="Period 4" class="w-1/12 object-contain timeline-period-img" data-index="3">
+                        <img src="/src/assets/bible-timeline/p5.png" alt="Period 5" class="w-1/12 object-contain timeline-period-img" data-index="4">
+                        <img src="/src/assets/bible-timeline/p6.png" alt="Period 6" class="w-1/12 object-contain timeline-period-img" data-index="5">
+                        <img src="/src/assets/bible-timeline/p7.png" alt="Period 7" class="w-1/12 object-contain timeline-period-img" data-index="6">
+                        <img src="/src/assets/bible-timeline/p8.png" alt="Period 8" class="w-1/12 object-contain timeline-period-img" data-index="7">
+                        <img src="/src/assets/bible-timeline/p9.png" alt="Period9" class="w-1/12 object-contain timeline-period-img" data-index="8">
+                        <img src="/src/assets/bible-timeline/p10.png" alt="Period 10" class="w-1/12 object-contain timeline-period-img" data-index="9">
+                        <img src="/src/assets/bible-timeline/p11.png" alt="Period 11" class="w-1/12 object-contain timeline-period-img" data-index="10">
+                        <img src="/src/assets/bible-timeline/p12.png" alt="Period 12" class="w-1/12 object-contain timeline-period-img" data-index="11">
+
+                        <!-- Card tooltip nascosta di default -->
+                        <div id="timeline-tooltip-card" class="absolute left-0 top-full mt-4 z-20 transition-all duration-300 " style="min-width:350px; max-width:400px;">
+                            <div  class="w-full relative bg-white rounded-lg border border-gray-200 shadow-lg flex flex-col items-center">
+                                <div id="timeline-tooltip-header" class="w-full flex flex-row justify-between items-center h-16 px-3 rounded-t-lg">
+                                    <button id="timeline-tooltip-prev" class=" flex items-center justify-center transition uppercase cs-fs-3xs disabled:opacity-0 gap-2"><img src="/src/assets/bible-timeline/prev.svg" /> prev</button>
+                                    <div class=" font-bold cs-fs-3xl" id="timeline-tooltip-period">1</div>
+                                    <button id="timeline-tooltip-next" class="  flex items-center justify-center transition uppercase cs-fs-3xs disabled:opacity-0 gap-2">next <img src="/src/assets/bible-timeline/next.svg" /></button>
+                                </div>
+                                <div id="timeline-tooltip-box" class="cs-timeline-card-content rounded-b-lg px-10 py-5 w-full flex flex-col items-center justify-center">
+                                    <div class="cs-box-timeline-title text-center " id="timeline-tooltip-title">Titolo periodo</div>
+                                    <div class=" text-sm text-center" id="timeline-tooltip-desc">Descrizione periodo</div>
+                                    <div class="flex flex-wrap gap-2 justify-center my-5" id="timeline-tooltip-books">
+                                        <!-- badge libri -->
+                                        <span class="cs-box-timeline-chip first:ml-0">
+                                            genesis 1-11
+                                        </span>
+                                    </div>
+                                    <img id="timeline-tooltip-img" src="/src/assets/bible-timeline/card1.png" alt="" class="w-auto object-contain border-gray-600 bg-gray-50" />
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -289,7 +323,7 @@
                 <div class="w-full max-w-[1000px] flex flex-col text-center gap-16 py-16 px-6">
                     <div>
                         <div class="mb-6 tracking-widest uppercase cs-bt-uppercase-prompt-fs text-cs-red-main">Register today</div>
-                        <div class="font-sans font-bold cs-bt-fs-medium cs-gradient-text">Jeff Cavins’ world-famous Catholic Bible Study</div>
+                        <div class="font-sans font-bold cs-bt-fs-medium cs-gradient-text">Jeff Cavins' world-famous Catholic Bible Study</div>
                     </div>
                     <div class="flex flex-col items-center gap-6 md:flex-row md:gap-10">
                         <div class="flex flex-col items-center text-center p-6 bg-cs-paper-shade rounded-xl shadow-cs-all-around min-w-[30%] max-w-[400px]">
@@ -325,7 +359,7 @@
 
                     <span class="tracking-widest uppercase cs-bt-uppercase-prompt-fs text-cs-red-main">watch</span>
 
-                    <div class="font-sans font-bold cs-bt-fs-video-title cs-gradient-text">Mauro’s course introduction:</div>
+                    <div class="font-sans font-bold cs-bt-fs-video-title cs-gradient-text">Mauro's course introduction:</div>
 
                     <img src="/src/assets/bible-timeline/image-36.jpg" alt="Mauro's Introduction" class="w-full h-auto max-w-3xl rounded-xl shadow-cs-all-around">
 
@@ -375,7 +409,7 @@
             <div class="flex flex-col items-center w-full px-5 sm:px-10 bg-cs-paper">
                 <div class=" relative w-full max-w-[1000px] my-0 flex flex-col">
                     <div class="mt-12 font-sans text-right cs-bt-fs-extralarge text-cs-red-main cs-gradient-text">
-                        Many&nbsp;Catholics long&nbsp;to&nbsp;read the&nbsp;Bible, but&nbsp;<span class="font-bold">don’t&nbsp;know where&nbsp;to&nbsp;start.</span>
+                        Many&nbsp;Catholics long&nbsp;to&nbsp;read the&nbsp;Bible, but&nbsp;<span class="font-bold">don't&nbsp;know where&nbsp;to&nbsp;start.</span>
                     </div>
                     <div class="w-full mt-8 text-right cs-bt-fs-large">
                         So&nbsp;they&nbsp;often&nbsp;begin,
@@ -480,7 +514,7 @@
                         <img src="/src/assets/bible-timeline/icon-lightbulb.png" class="cs-benefit-icon" alt="Learn">
                         <div class="font-bold text-center text-cs-red-main cs-benefit cs-gradient-text">Learn</div>
                         <div class="text-center cs-benefit-descr">
-                            how God’s Word applies to your life&nbsp;today.
+                            how God's Word applies to your life&nbsp;today.
                         </div>
                     </div>
                 </div>

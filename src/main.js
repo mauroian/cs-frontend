@@ -563,3 +563,208 @@ const HoverIntent = (function() {
   };
 
 })();
+
+// === TIMELINE DESKTOP TOOLTIP LOGIC ===
+const timelinePeriods = [
+  {
+    title: 'Early World',
+    desc: 'Creation of the Universe, Fall of Adam and Eve and Spread of Sin throughout Humanity.',
+    books: 'Genesis 1-11',
+    img: '/src/assets/bible-timeline/card1.png',
+    primaryColor: 'cs-period1-pri',
+    secondaryColor: 'cs-period1-sec',
+    textColor: 'text-white',
+  },
+  {
+    title: 'Patriarchs',
+    desc: 'The call of Abraham and the Patriarchs',
+    books: 'Genesis 12-50',
+    img: '/src/assets/bible-timeline/card1.png',
+    primaryColor: 'cs-period2-pri',
+    secondaryColor: 'cs-period2-sec',
+    textColor: 'text-white',
+  },
+  {
+    title: 'Egypt & Exodus',
+    desc: 'Israelites enslaved and freed from Egypt',
+    books: 'Exodus',
+    img: '/src/assets/bible-timeline/card1.png',
+    primaryColor: 'cs-period3-pri',
+    secondaryColor: 'cs-period3-sec',
+    textColor: 'text-white',
+
+  },
+  {
+    title: 'Desert Wanderings',
+    desc: 'Wandering in the desert before entering the Promised Land',
+    books: 'Numbers',
+    img: '/src/assets/bible-timeline/card1.png',
+    primaryColor: 'cs-period4-pri',
+    secondaryColor: 'cs-period4-sec',
+    textColor: 'text-black',
+  },
+  {
+    title: 'Conquest & Judges',
+    desc: 'Conquest of the Promised Land and the time of the Judges',
+    books: 'Joshua, Judges, 1 Samuel 1-8',
+    img: '/src/assets/bible-timeline/card1.png',
+    primaryColor: 'cs-period5-pri',
+    secondaryColor: 'cs-period5-sec',
+    textColor: 'text-white',
+  },
+  {
+    title: 'Royal Kingdom',
+    desc: 'The reigns of Saul, David, and Solomon',
+    books: '1 Samuel 9-31, 2 Samuel, 1 Kings 1-11',
+    img: '/src/assets/bible-timeline/card1.png',
+    primaryColor: 'cs-period6-pri',
+    secondaryColor: 'cs-period6-sec',
+    textColor: 'text-white',
+  },
+  {
+    title: 'Divided Kingdom',
+    desc: 'The kingdom splits into Israel and Judah',
+    books: '1 Kings 12-22, 2 Kings 1-16',
+    img: '/src/assets/bible-timeline/card1.png',
+    primaryColor: 'cs-period7-pri',
+    secondaryColor: 'cs-period7-sec',
+    textColor: 'text-white',
+  },
+  {
+    title: 'Exile',
+    desc: 'The Israelites are sent into exile',
+    books: '2 Kings 17-25',
+    img: '/src/assets/bible-timeline/card1.png',
+    primaryColor: 'cs-period8-pri',
+    secondaryColor: 'cs-period8-sec',
+    textColor: 'text-white',
+  },
+  {
+    title: 'Return',
+    desc: 'The tribe of Judah returns to the Promised Land',
+    books: 'Ezra, Nehemiah',
+    img: '/src/assets/bible-timeline/card1.png',
+    primaryColor: 'cs-period9-pri',
+    secondaryColor: 'cs-period9-sec',
+    textColor: 'text-black',
+  },
+  {
+    title: 'Maccabean Revolt',
+    desc: 'The Israelites rebel against the Greeks',
+    books: '1 Maccabees',
+    img: '/src/assets/bible-timeline/card1.png',
+    primaryColor: 'cs-period10-pri',
+    secondaryColor: 'cs-period10-sec',
+    textColor: 'text-white',
+  },
+  {
+    title: 'Messianic Fulfillment',
+    desc: 'The coming of Jesus Christ',
+    books: 'Luke',
+    img: '/src/assets/bible-timeline/card1.png',
+    primaryColor: 'cs-period11-pri',
+    secondaryColor: 'cs-period11-sec',
+    textColor: 'text-white',
+  },
+  {
+    title: 'The Church',
+    desc: 'The spreading of the Christian faith',
+    books: 'Acts',
+    img: '/src/assets/bible-timeline/card1.png',
+    primaryColor: 'cs-period12-pri',
+    secondaryColor: 'cs-period12-sec',
+    textColor: 'text-black',
+  },
+];
+
+const timelineDesktop = document.getElementById('timeline-desktop');
+const tooltipBox = document.getElementById('timeline-tooltip-box');
+const tooltipHeader = document.getElementById('timeline-tooltip-header');
+const tooltipCard = document.getElementById('timeline-tooltip-card');
+const tooltipTitle = document.getElementById('timeline-tooltip-title');
+const tooltipDesc = document.getElementById('timeline-tooltip-desc');
+const tooltipBooks = document.getElementById('timeline-tooltip-books');
+const btnPrev = document.getElementById('timeline-tooltip-prev');
+const btnNext = document.getElementById('timeline-tooltip-next');
+const tooltipImg = document.getElementById('timeline-tooltip-img');
+const timelinePeriod = document.getElementById('timeline-tooltip-period');
+
+let currentPeriodIndex = null;
+let hideTimeout = null;
+
+if (timelineDesktop && tooltipCard) {
+  const imgs = timelineDesktop.querySelectorAll('.timeline-period-img');
+
+  function showTooltip(index, anchorImg) {
+    const period = timelinePeriods[index];
+    if (!period) return;
+    currentPeriodIndex = index;
+    tooltipBox.classList.add(`bg-${period.primaryColor}`);
+    tooltipHeader.classList.add(`bg-${period.secondaryColor}`);
+    tooltipCard.classList.add(`${period.textColor}`);
+    tooltipTitle.textContent = period.title;
+    tooltipDesc.textContent = period.desc;
+    tooltipImg.src = period.img;
+    tooltipImg.alt = period.title;
+    timelinePeriod.textContent = `${index + 1}`;
+    // Badge libri
+    tooltipBooks.innerHTML = '';
+    period.books.split(',').forEach(book => {
+      const span = document.createElement('span');
+      span.textContent = book.trim();
+      span.className = `first:ml-0 cs-box-timeline-chip bg-${period.secondaryColor}`;
+      tooltipBooks.appendChild(span);
+    });
+    // Posiziona la card sotto l'immagine attiva
+    const rect = anchorImg.getBoundingClientRect();
+    const parentRect = timelineDesktop.getBoundingClientRect();
+    const left = rect.left - parentRect.left + rect.width / 2;
+    tooltipCard.style.left = `calc(${left}px - 15%)`;
+    tooltipCard.style.top = `calc(${rect.bottom - parentRect.top + 2}px)`;
+    // Mostra la card con transizione
+    tooltipCard.classList.remove('hidden');
+    setTimeout(() => {
+      tooltipCard.classList.add('opacity-100');
+      tooltipCard.classList.remove('opacity-0');
+    }, 10);
+    // Gestisci pulsanti
+    btnPrev.disabled = index === 0 ? 'disabled' : '';
+    btnNext.disabled = index === timelinePeriods.length - 1 ? 'disabled' : '';
+  }
+
+  function hideTooltip() {
+    tooltipCard.classList.remove('opacity-100');
+    tooltipCard.classList.add('opacity-0');
+    hideTimeout = setTimeout(() => {
+      tooltipCard.classList.add('hidden');
+    }, 400);
+  }
+
+  imgs.forEach((img, idx) => {
+    img.addEventListener('mouseenter', (e) => {
+      clearTimeout(hideTimeout);
+      showTooltip(idx, img);
+    });
+    img.addEventListener('mouseleave', (e) => {
+      hideTimeout = setTimeout(hideTooltip, 200);
+    });
+  });
+  tooltipCard.addEventListener('mouseenter', () => {
+    clearTimeout(hideTimeout);
+  });
+  tooltipCard.addEventListener('mouseleave', () => {
+    hideTimeout = setTimeout(hideTooltip, 200);
+  });
+  btnPrev.addEventListener('click', (e) => {
+    e.stopPropagation();
+    if (currentPeriodIndex > 0) {
+      showTooltip(currentPeriodIndex - 1, imgs[currentPeriodIndex - 1]);
+    }
+  });
+  btnNext.addEventListener('click', (e) => {
+    e.stopPropagation();
+    if (currentPeriodIndex < timelinePeriods.length - 1) {
+      showTooltip(currentPeriodIndex + 1, imgs[currentPeriodIndex + 1]);
+    }
+  });
+}
