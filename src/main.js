@@ -677,6 +677,10 @@ const timelinePeriods = [
   },
 ];
 
+//Timeline params config
+const TOP_OFFSET = 10; // Offset from the top of the image to the tooltip
+const FADE_DURATION = 400; // Duration for fade in/out animations
+
 const timelineDesktop = document.getElementById('timeline-desktop');
 const tooltipBox = document.getElementById('timeline-tooltip-box');
 const tooltipHeader = document.getElementById('timeline-tooltip-header');
@@ -740,7 +744,7 @@ if (timelineDesktop && tooltipCard) {
     // correzione se esce a destra
     if (left + cardWidth > containerWidth) left = containerWidth - cardWidth;
     tooltipCard.style.left = `${left}px`;
-    tooltipCard.style.top = `calc(${rect.bottom - parentRect.top + 10}px)`;
+    tooltipCard.style.top = `calc(${rect.bottom - parentRect.top + TOP_OFFSET}px)`;
     // Mostra la card con transizione
     tooltipCard.classList.remove('hidden');
     setTimeout(() => {
@@ -757,7 +761,7 @@ if (timelineDesktop && tooltipCard) {
     tooltipCard.classList.add('opacity-0');
     hideTimeout = setTimeout(() => {
       tooltipCard.classList.add('hidden');
-    }, 400);
+    }, FADE_DURATION);
   }
 
   imgs.forEach((img, idx) => {
