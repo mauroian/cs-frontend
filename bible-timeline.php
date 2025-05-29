@@ -42,7 +42,7 @@
                         <img src="/src/assets/bible-timeline/p12.png" alt="Period 12" class="w-1/12 object-contain timeline-period-img" data-index="11">
 
                         <!-- Card tooltip nascosta di default -->
-                        <div id="timeline-tooltip-card" class="absolute left-0 top-full z-20 transition-all duration-300 " style="width: 400px;">
+                        <div id="timeline-tooltip-card" class="absolute hidden left-0 top-full z-20 transition-all duration-300 " style="width: 400px;">
                             <div class="w-full relative rounded-lg border border-gray-200 shadow-lg flex flex-col items-center">
                                 <div id="timeline-tooltip-header" class="cs-tooltip-header w-full flex flex-row justify-between items-center">
                                     <button id="timeline-tooltip-prev" class="cs-tooltip-navigation flex items-center justify-center transition disabled:opacity-0"><img src="/src/assets/bible-timeline/prev.svg" /> prev</button>
