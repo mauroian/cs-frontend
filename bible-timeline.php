@@ -42,23 +42,23 @@
                         <img src="/src/assets/bible-timeline/p12.png" alt="Period 12" class="w-1/12 object-contain timeline-period-img" data-index="11">
 
                         <!-- Card tooltip nascosta di default -->
-                        <div id="timeline-tooltip-card" class="absolute left-0 top-full mt-4 z-20 transition-all duration-300 " style="min-width:350px; max-width:400px;">
-                            <div  class="w-full relative bg-white rounded-lg border border-gray-200 shadow-lg flex flex-col items-center">
-                                <div id="timeline-tooltip-header" class="w-full flex flex-row justify-between items-center h-16 px-3 rounded-t-lg">
-                                    <button id="timeline-tooltip-prev" class=" flex items-center justify-center transition uppercase cs-fs-3xs disabled:opacity-0 gap-2"><img src="/src/assets/bible-timeline/prev.svg" /> prev</button>
-                                    <div class=" font-bold cs-fs-3xl" id="timeline-tooltip-period">1</div>
-                                    <button id="timeline-tooltip-next" class="  flex items-center justify-center transition uppercase cs-fs-3xs disabled:opacity-0 gap-2">next <img src="/src/assets/bible-timeline/next.svg" /></button>
+                        <div id="timeline-tooltip-card" class="absolute left-0 top-full z-20 transition-all duration-300 " style="width: 400px;">
+                            <div class="w-full relative rounded-lg border border-gray-200 shadow-lg flex flex-col items-center">
+                                <div id="timeline-tooltip-header" class="cs-tooltip-header w-full flex flex-row justify-between items-center">
+                                    <button id="timeline-tooltip-prev" class="cs-tooltip-navigation flex items-center justify-center transition disabled:opacity-0"><img src="/src/assets/bible-timeline/prev.svg" /> prev</button>
+                                    <div class="cs-tooltip-period" id="timeline-tooltip-period">1</div>
+                                    <button id="timeline-tooltip-next" class="cs-tooltip-navigation flex items-center justify-center transition disabled:opacity-0">next <img src="/src/assets/bible-timeline/next.svg" /></button>
                                 </div>
-                                <div id="timeline-tooltip-box" class="cs-timeline-card-content rounded-b-lg px-10 py-5 w-full flex flex-col items-center justify-center">
-                                    <div class="cs-box-timeline-title text-center " id="timeline-tooltip-title">Titolo periodo</div>
+                                <div id="timeline-tooltip-box" class="cs-tooltip-card-content w-full flex flex-col items-center justify-center">
+                                    <div class="cs-tooltip-card-title" id="timeline-tooltip-title">Titolo periodo</div>
                                     <div class=" text-sm text-center" id="timeline-tooltip-desc">Descrizione periodo</div>
-                                    <div class="flex flex-wrap gap-2 justify-center my-5" id="timeline-tooltip-books">
+                                    <div class="flex flex-wrap justify-center cs-tooltip-card-tags" id="timeline-tooltip-books">
                                         <!-- badge libri -->
                                         <span class="cs-box-timeline-chip first:ml-0">
                                             genesis 1-11
                                         </span>
                                     </div>
-                                    <img id="timeline-tooltip-img" src="/src/assets/bible-timeline/card1.png" alt="" class="w-auto object-contain border-gray-600 bg-gray-50" />
+                                    <img id="timeline-tooltip-img" src="/src/assets/bible-timeline/card1.png" alt="" class="cs-tooltip-card-img" />
                                 </div>
                             </div>
                         </div>

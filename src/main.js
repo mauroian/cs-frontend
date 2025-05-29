@@ -691,6 +691,9 @@ const timelinePeriod = document.getElementById('timeline-tooltip-period');
 
 let currentPeriodIndex = null;
 let hideTimeout = null;
+let lastPrimary = null;
+let lastSecondary = null;
+let lastText = null;
 
 if (timelineDesktop && tooltipCard) {
   const imgs = timelineDesktop.querySelectorAll('.timeline-period-img');
@@ -698,10 +701,19 @@ if (timelineDesktop && tooltipCard) {
   function showTooltip(index, anchorImg) {
     const period = timelinePeriods[index];
     if (!period) return;
-    currentPeriodIndex = index;
+    // Rimuovi le vecchie classi colore
+    if (lastPrimary) tooltipBox.classList.remove(`bg-${lastPrimary}`);
+    if (lastSecondary) tooltipHeader.classList.remove(`bg-${lastSecondary}`);
+    if (lastText) tooltipCard.classList.remove(lastText);
+    // Aggiungi le nuove classi colore
     tooltipBox.classList.add(`bg-${period.primaryColor}`);
     tooltipHeader.classList.add(`bg-${period.secondaryColor}`);
-    tooltipCard.classList.add(`${period.textColor}`);
+    tooltipCard.classList.add(period.textColor);
+    // Aggiorna i tracker
+    lastPrimary = period.primaryColor;
+    lastSecondary = period.secondaryColor;
+    lastText = period.textColor;
+    currentPeriodIndex = index;
     tooltipTitle.textContent = period.title;
     tooltipDesc.textContent = period.desc;
     tooltipImg.src = period.img;
@@ -718,9 +730,17 @@ if (timelineDesktop && tooltipCard) {
     // Posiziona la card sotto l'immagine attiva
     const rect = anchorImg.getBoundingClientRect();
     const parentRect = timelineDesktop.getBoundingClientRect();
-    const left = rect.left - parentRect.left + rect.width / 2;
-    tooltipCard.style.left = `calc(${left}px - 15%)`;
-    tooltipCard.style.top = `calc(${rect.bottom - parentRect.top + 2}px)`;
+    const cardWidth = tooltipCard.offsetWidth || 400; // fallback se non ancora renderizzata
+    const containerWidth = parentRect.width;
+    // posizione ideale centrata
+    let left = rect.left - parentRect.left + rect.width / 2 - cardWidth / 2;
+    // correzione se esce a sinistra
+    console.log(rect.left , parentRect.left , rect.width , cardWidth / 2);
+    if (left < 0) left = 0;
+    // correzione se esce a destra
+    if (left + cardWidth > containerWidth) left = containerWidth - cardWidth;
+    tooltipCard.style.left = `${left}px`;
+    tooltipCard.style.top = `calc(${rect.bottom - parentRect.top + 10}px)`;
     // Mostra la card con transizione
     tooltipCard.classList.remove('hidden');
     setTimeout(() => {
