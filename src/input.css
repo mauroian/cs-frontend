@@ -1106,7 +1106,36 @@
         @apply items-start ml-4;
     }
 
-    /* #### BG VANILLA CSS #### */
+    /* #### BIBLE TIMELINE CHART DESKTOP #### */
+    .cs-tooltip-header {
+        @apply  h-16 px-3 rounded-t-lg;
+    }
+
+    .cs-tooltip-period {
+        @apply  font-bold cs-fs-3xl;
+    }
+
+    .cs-tooltip-navigation {
+        @apply uppercase cs-fs-3xs disabled:opacity-0 gap-2;
+    }
+
+    .cs-tooltip-card-content {
+        @apply  rounded-b-lg px-10 py-5;
+    }
+
+    .cs-tooltip-card-title {
+        @apply font-bold cs-fs-lg  text-center;
+    }
+
+    .cs-tooltip-card-tags {
+        @apply gap-2 my-5;
+    }
+
+    .cs-tooltip-card-img {
+        @apply w-auto object-contain border-gray-600 bg-gray-50;
+    }
+
+        /* #### BG VANILLA CSS #### */
     .cs-login {
         @apply  flex flex-col items-center min-h-[746px] cs-main px-5 sm:px-8;
         background-repeat: no-repeat;
