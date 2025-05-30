@@ -192,7 +192,7 @@
                                 <a href="#" class="flex flex-row mt-4">
                                     <img src="/src/assets/pdf-icon.svg" class="inline-block w-8 h-8" alt="Pdf">
                                     <span class="ml-5 font-semibold cs-fs-base">
-                                        Bible reading
+                                        Study Questions
                                     </span>
                                 </a>
 
@@ -311,7 +311,7 @@
                                 <a href="#" class="flex flex-row mt-4">
                                     <img src="/src/assets/pdf-icon.svg" class="inline-block w-8 h-8" alt="Pdf">
                                     <span class="ml-5 font-semibold cs-fs-base">
-                                        Bible reading
+                                        Study Questions
                                     </span>
                                 </a>
 
@@ -442,7 +442,7 @@
                                 <a href="#" class="flex flex-row mt-4">
                                     <img src="/src/assets/pdf-icon.svg" class="inline-block w-8 h-8" alt="Pdf">
                                     <span class="ml-5 font-semibold cs-fs-base">
-                                        Bible reading
+                                        Study Questions
                                     </span>
                                 </a>
 

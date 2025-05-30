@@ -26,32 +26,32 @@
                         <h1>The&nbsp;Bible&nbsp;Timeline Course</h1>
                     </div>
                     <div class="mt-3 font-sans font-bold tracking-widest uppercase cs-bt-one-story-fs text-cs-red-main">73 Books, one story</div>
-                    <div class="flex-col items-center justify-center hidden gap-0 mt-12 md:flex sm:flex-row flex-nowrap relative" id="timeline-desktop">
+                    <div class="relative flex-col items-center justify-center hidden gap-0 mt-12 md:flex sm:flex-row flex-nowrap" id="timeline-desktop">
                         <!-- Immagini dei periodi -->
-                        <img src="/src/assets/bible-timeline/p1.png" alt="Period 1" class="w-1/12 object-contain timeline-period-img" data-index="0">
-                        <img src="/src/assets/bible-timeline/p2.png" alt="Period 2" class="w-1/12 object-contain timeline-period-img" data-index="1">
-                        <img src="/src/assets/bible-timeline/p3.png" alt="Period 3" class="w-1/12 object-contain timeline-period-img" data-index="2">
-                        <img src="/src/assets/bible-timeline/p4.png" alt="Period 4" class="w-1/12 object-contain timeline-period-img" data-index="3">
-                        <img src="/src/assets/bible-timeline/p5.png" alt="Period 5" class="w-1/12 object-contain timeline-period-img" data-index="4">
-                        <img src="/src/assets/bible-timeline/p6.png" alt="Period 6" class="w-1/12 object-contain timeline-period-img" data-index="5">
-                        <img src="/src/assets/bible-timeline/p7.png" alt="Period 7" class="w-1/12 object-contain timeline-period-img" data-index="6">
-                        <img src="/src/assets/bible-timeline/p8.png" alt="Period 8" class="w-1/12 object-contain timeline-period-img" data-index="7">
-                        <img src="/src/assets/bible-timeline/p9.png" alt="Period9" class="w-1/12 object-contain timeline-period-img" data-index="8">
-                        <img src="/src/assets/bible-timeline/p10.png" alt="Period 10" class="w-1/12 object-contain timeline-period-img" data-index="9">
-                        <img src="/src/assets/bible-timeline/p11.png" alt="Period 11" class="w-1/12 object-contain timeline-period-img" data-index="10">
-                        <img src="/src/assets/bible-timeline/p12.png" alt="Period 12" class="w-1/12 object-contain timeline-period-img" data-index="11">
+                        <img src="/src/assets/bible-timeline/p1.png" alt="Period 1" class="object-contain w-1/12 timeline-period-img" data-index="0">
+                        <img src="/src/assets/bible-timeline/p2.png" alt="Period 2" class="object-contain w-1/12 timeline-period-img" data-index="1">
+                        <img src="/src/assets/bible-timeline/p3.png" alt="Period 3" class="object-contain w-1/12 timeline-period-img" data-index="2">
+                        <img src="/src/assets/bible-timeline/p4.png" alt="Period 4" class="object-contain w-1/12 timeline-period-img" data-index="3">
+                        <img src="/src/assets/bible-timeline/p5.png" alt="Period 5" class="object-contain w-1/12 timeline-period-img" data-index="4">
+                        <img src="/src/assets/bible-timeline/p6.png" alt="Period 6" class="object-contain w-1/12 timeline-period-img" data-index="5">
+                        <img src="/src/assets/bible-timeline/p7.png" alt="Period 7" class="object-contain w-1/12 timeline-period-img" data-index="6">
+                        <img src="/src/assets/bible-timeline/p8.png" alt="Period 8" class="object-contain w-1/12 timeline-period-img" data-index="7">
+                        <img src="/src/assets/bible-timeline/p9.png" alt="Period9" class="object-contain w-1/12 timeline-period-img" data-index="8">
+                        <img src="/src/assets/bible-timeline/p10.png" alt="Period 10" class="object-contain w-1/12 timeline-period-img" data-index="9">
+                        <img src="/src/assets/bible-timeline/p11.png" alt="Period 11" class="object-contain w-1/12 timeline-period-img" data-index="10">
+                        <img src="/src/assets/bible-timeline/p12.png" alt="Period 12" class="object-contain w-1/12 timeline-period-img" data-index="11">
 
                         <!-- Card tooltip nascosta di default -->
-                        <div id="timeline-tooltip-card" class="absolute hidden left-0 top-full z-20 transition-all duration-300 " style="width: 400px;">
-                            <div class="w-full relative rounded-lg border border-gray-200 shadow-lg flex flex-col items-center">
-                                <div id="timeline-tooltip-header" class="cs-tooltip-header w-full flex flex-row justify-between items-center">
-                                    <button id="timeline-tooltip-prev" class="cs-tooltip-navigation flex items-center justify-center transition disabled:opacity-0"><img src="/src/assets/bible-timeline/prev.svg" /> prev</button>
+                        <div id="timeline-tooltip-card" class="absolute left-0 z-20 hidden transition-all duration-300 top-full " style="width: 400px;">
+                            <div class="relative flex flex-col items-center w-full border border-gray-800 rounded-lg shadow-lg">
+                                <div id="timeline-tooltip-header" class="flex flex-row items-center justify-between w-full cs-tooltip-header">
+                                    <button id="timeline-tooltip-prev" class="flex items-center justify-center transition cs-tooltip-navigation disabled:opacity-0"><img src="/src/assets/bible-timeline/prev.svg" /> prev</button>
                                     <div class="cs-tooltip-period" id="timeline-tooltip-period">1</div>
-                                    <button id="timeline-tooltip-next" class="cs-tooltip-navigation flex items-center justify-center transition disabled:opacity-0">next <img src="/src/assets/bible-timeline/next.svg" /></button>
+                                    <button id="timeline-tooltip-next" class="flex items-center justify-center transition cs-tooltip-navigation disabled:opacity-0">next <img src="/src/assets/bible-timeline/next.svg" /></button>
                                 </div>
-                                <div id="timeline-tooltip-box" class="cs-tooltip-card-content w-full flex flex-col items-center justify-center">
+                                <div id="timeline-tooltip-box" class="flex flex-col items-center justify-center w-full cs-tooltip-card-content">
                                     <div class="cs-tooltip-card-title" id="timeline-tooltip-title">Titolo periodo</div>
-                                    <div class=" text-sm text-center" id="timeline-tooltip-desc">Descrizione periodo</div>
+                                    <div class="text-sm text-center cs-tooltip-card-description" id="timeline-tooltip-desc">Descrizione periodo</div>
                                     <div class="flex flex-wrap justify-center cs-tooltip-card-tags" id="timeline-tooltip-books">
                                         <!-- badge libri -->
                                         <span class="cs-box-timeline-chip first:ml-0">

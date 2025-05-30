@@ -1116,23 +1116,33 @@
     }
 
     .cs-tooltip-navigation {
-        @apply uppercase cs-fs-3xs disabled:opacity-0 gap-2;
+        @apply gap-2 uppercase cs-fs-3xs disabled:opacity-0;
     }
 
     .cs-tooltip-card-content {
-        @apply  rounded-b-lg px-10 py-5;
+        @apply  px-10 py-5 rounded-b-lg;
     }
 
     .cs-tooltip-card-title {
-        @apply font-bold cs-fs-lg  text-center;
+        @apply font-bold text-center cs-fs-lg;
+    }
+
+    .cs-tooltip-card-description {
+        @apply min-h-10;
     }
 
     .cs-tooltip-card-tags {
-        @apply gap-2 my-5;
+        @apply gap-2 mt-2 mb-5;
     }
 
     .cs-tooltip-card-img {
-        @apply w-auto object-contain border-gray-600 bg-gray-50;
+        /* Larghezza immagine riempie la card
+            @apply object-contain w-auto border-gray-600 bg-gray-50;
+        */
+        /* Altezza immagine costante
+            @apply object-cover w-auto h-40 border-gray-600 bg-gray-50;
+        */
+        @apply object-contain w-auto border-gray-600 bg-gray-50;
     }
 
         /* #### BG VANILLA CSS #### */

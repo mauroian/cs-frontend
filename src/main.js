@@ -565,6 +565,12 @@ const HoverIntent = (function() {
 })();
 
 // === TIMELINE DESKTOP TOOLTIP LOGIC ===
+
+//Timeline params config
+const TOP_OFFSET = 10; // Offset from the top of the image to the tooltip
+const FADE_DURATION = 2000;   // 400; // Duration for fade in/out animations
+
+//Configurable card content
 const timelinePeriods = [
   {
     title: 'Early World',
@@ -677,9 +683,9 @@ const timelinePeriods = [
   },
 ];
 
-//Timeline params config
-const TOP_OFFSET = 10; // Offset from the top of the image to the tooltip
-const FADE_DURATION = 400; // Duration for fade in/out animations
+
+
+//code continues (not for config)
 
 const timelineDesktop = document.getElementById('timeline-desktop');
 const tooltipBox = document.getElementById('timeline-tooltip-box');
