@@ -579,7 +579,7 @@ const timelinePeriods = [
     title: 'Patriarchs',
     desc: 'The call of Abraham and the Patriarchs',
     books: 'Genesis 12-50',
-    img: '/src/assets/bible-timeline/card1.png',
+    img: '/src/assets/bible-timeline/card2.png',
     primaryColor: 'cs-period2-pri',
     secondaryColor: 'cs-period2-sec',
     textColor: 'text-white',
