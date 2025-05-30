@@ -858,6 +858,10 @@
         @apply border-b border-cs-blue-light;
     }
 
+    .cs-course-border-t {
+        @apply border-t border-cs-blue-light;
+    }
+
     /* #### TESTIMONIALS #### */
 
     .cs-testimonials-select {

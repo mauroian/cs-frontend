@@ -51,15 +51,10 @@
                 </div>
 
 
-
-
-
-
-
                 <!-- SESSION 1 OUTER CONTAINER -->
                 <div class="cs-bible-area-box">
 
-                    <!-- SESSION 1HEADER -->
+                    <!-- SESSION 1 HEADER -->
                     <button type="button" onclick="toggleAccordion(this)"
                         class="flex items-center justify-between w-full cs-bible-accordion-header">
                         <span class=" text-cs-blue-light">Session 1</span>
@@ -74,7 +69,7 @@
                     <div class="overflow-hidden transition-all duration-300 ease-in-out cs-content">
                         <!-- Note: cs-content is called by Javascript -->
 
-                        <!-- PERIOD 1 EARLY WORLD -->
+                        <!-- INTRODUCTION -->
                         <div class="flex flex-col">
                             <div class="flex flex-row justify-start bg-white text-cs-grey cs-bible-accordion-subtitle">
                                 <div>
