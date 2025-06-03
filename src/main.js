@@ -567,14 +567,15 @@ const HoverIntent = (function() {
 // === TIMELINE DESKTOP TOOLTIP LOGIC ===
 
 //Timeline params config
+const FADE_DURATION = 400;   //DO NOT CHANGE THIS
+
 const TOP_OFFSET = 10; // Offset from the top of the image to the tooltip
-const FADE_DURATION = 2000;   // 400; // Duration for fade in/out animations
 
 //Configurable card content
 const timelinePeriods = [
   {
     title: 'Early World',
-    desc: 'Creation of the Universe, Fall of Adam and Eve and Spread of Sin throughout Humanity.',
+    desc: '<div>Creation of the Universe, <b>Fall of Adam and Eve</b> and Spread of Sin throughout Humanity.</div>',
     books: 'Genesis 1-11',
     img: '/src/assets/bible-timeline/bt-card-p1.png',
     primaryColor: 'cs-period1-pri',
