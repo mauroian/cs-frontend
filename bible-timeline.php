@@ -20,7 +20,7 @@
                 <div class="absolute inset-0 z-0">
                     <img src="/src/assets/bible-timeline/sixteen-miles-out.jpg" alt="Header Background" class="object-cover w-full h-full opacity-80">
                 </div>
-                <div class="relative z-10 w-full max-w-[1100px] text-center py-8 md:py-12">
+                <div class="relative z-10 w-full max-w-[1100px] text-center py-8 md:py-12 px-6">
                     <div class="-mt-0 tracking-widest uppercase cs-bt-uppercase-prompt-fs text-cs-red-main">Come & See Presents</div>
                     <div class="px-3 mt-3 font-sans font-bold cs-bt-fs-extralarge cs-gradient-text">
                         <h1>The&nbsp;Bible&nbsp;Timeline Course</h1>
@@ -64,7 +64,7 @@
                         </div>
                     </div>
                     <div class="relative flex-col items-center justify-center hidden gap-0 mt-7 md:flex sm:flex-row flex-nowrap">
-                        <img src="/src/assets/bible-timeline/btc-characters.png" alt="Characters" class="object-contain w-full" >
+                        <img src="/src/assets/bible-timeline/btc-characters.png" alt="Characters" class="object-contain w-full">
                     </div>
                 </div>
             </div>
@@ -397,8 +397,8 @@
                         in&nbsp;the&nbsp;Old&nbsp;Testament!
                     </div>
 
-                    <img src="/src/assets/bible-timeline/vector-14.svg" class="hidden sm:inline-block absolute w-40 left-64 bottom-0 md:left-96 md:bottom-0 md:w-40">
-                    <img src="/src/assets/bible-timeline/yes-mobile.svg" class="sm:hidden absolute w-40 right-8 -bottom-10">
+                    <img src="/src/assets/bible-timeline/vector-14.svg" class="absolute bottom-0 hidden w-40 sm:inline-block left-64 md:left-96 md:bottom-0 md:w-40">
+                    <img src="/src/assets/bible-timeline/yes-mobile.svg" class="absolute w-40 sm:hidden right-8 -bottom-10">
 
                 </div>
             </div>
@@ -524,8 +524,8 @@
 
             <div class="flex flex-col items-center w-full bg-cs-paper">
                 <div class="relative w-full max-w-[1000px] flex flex-col gap-8 text-center items-center py-16">
-                    <div class="relative font-sans font-bold cs-fs-xl md:cs-fs-3xl sm:cs-fs-2xl cs-gradient-text flex flex-col items-center">We&nbsp;make the&nbsp;complex <br> simple.
-                        <img src="/src/assets/bible-timeline/im-in.svg" class="w-32 ml-40" >
+                    <div class="relative flex flex-col items-center font-sans font-bold cs-fs-xl md:cs-fs-3xl sm:cs-fs-2xl cs-gradient-text">We&nbsp;make the&nbsp;complex <br> simple.
+                        <img src="/src/assets/bible-timeline/im-in.svg" class="w-32 ml-40">
                     </div>
                     <div class="w-full px-8 text-center cs-fs-lg">
                         Join us online. <b>Come&nbsp;and&nbsp;see!</b>
