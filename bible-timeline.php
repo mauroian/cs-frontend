@@ -66,6 +66,7 @@
                     <div class="relative flex-col items-center justify-center hidden gap-0 mt-7 md:flex sm:flex-row flex-nowrap">
                         <img src="/src/assets/bible-timeline/btc-characters.png" alt="Characters" class="object-contain w-full" >
                     </div>
+                </div>
             </div>
 
             <!-- Box Mobile Timeline -->
