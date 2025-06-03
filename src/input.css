@@ -855,7 +855,7 @@
     }
 
     .cs-course-border-b {
-        @apply border-b border-cs-blue-light;
+        @apply border-b border-cs-blue-light last:border-b-0;
     }
 
     .cs-course-border-t {

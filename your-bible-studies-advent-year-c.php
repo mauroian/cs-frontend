@@ -38,11 +38,11 @@
                 <div class="flex flex-row items-center justify-end cs-accordion-manager">
                     <button class="mr-1 cs-accordion-expand text-cs-blue-light">
                         <!-- Note: cs-accordion-expand is called by Javascript -->
-                        <img src="/src/assets/accordion-expand.svg" class="w-6 h-6" alt="Expand">
+                        <img src="/src/assets/accordion-collapse.svg" class="w-6 h-6" alt="Expand">
                     </button>
                     <button class=" cs-accordion-collapse">
                         <!-- Note: cs-accordion-collapse is called by Javascript -->
-                        <img src="/src/assets/accordion-collapse.svg" class="w-6 h-6" alt="Collapse">
+                        <img src="/src/assets/accordion-expand.svg" class="w-6 h-6" alt="Collapse">
                     </button>
                 </div>
 

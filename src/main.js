@@ -725,7 +725,7 @@ if (timelineDesktop && tooltipCard) {
     lastText = period.textColor;
     currentPeriodIndex = index;
     tooltipTitle.textContent = period.title;
-    tooltipDesc.textContent = period.desc;
+    tooltipDesc.innerHTML = period.desc;
     tooltipImg.src = period.img;
     tooltipImg.alt = period.title;
     timelinePeriod.textContent = `${index + 1}`;

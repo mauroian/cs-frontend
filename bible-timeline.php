@@ -384,7 +384,7 @@
                         <br />complicated?
                     </div>
 
-                    <div class="mt-20 mb-6 cs-bt-fs-large w-[65%]">
+                    <div class="mt-48 mb-6 cs-bt-fs-large w-[65%]">
                         There&nbsp;are&nbsp;<b>so&nbsp;many
                             <br />
                             characters&nbsp;and
@@ -394,7 +394,8 @@
                         in&nbsp;the&nbsp;Old&nbsp;Testament!
                     </div>
 
-                    <img src="/src/assets/bible-timeline/vector-14.svg" class="absolute w-56 right-2 -bottom-24 md:right-32 md:top-20 md:w-80">
+                    <img src="/src/assets/bible-timeline/vector-14.svg" class="hidden sm:inline-block absolute w-40 left-64 bottom-0 md:left-96 md:bottom-0 md:w-40">
+                    <img src="/src/assets/bible-timeline/yes-mobile.svg" class="sm:hidden absolute w-40 right-8 -bottom-10">
 
                 </div>
             </div>
@@ -413,10 +414,9 @@
                     </div>
                     <div class="w-full mt-8 text-right cs-bt-fs-large">
                         So&nbsp;they&nbsp;often&nbsp;begin,
-                        <br />
                         and&nbsp;<b>then&nbsp;give&nbsp;up</b>.
                     </div>
-                    <img src="/src/assets/bible-timeline/vector-17.svg" class="w-3/4 ml-10 -right-10 md:right-32 top-20">
+                    <img src="/src/assets/bible-timeline/vector-17.svg" class="w-[70%] ml-10 -right-10 md:right-32 top-20">
                     <div class="font-sans text-left cs-bt-fs-extralarge text-cs-red-main cs-gradient-text">
                         <span class="whitespace-nowrap">
                             What if we told you
@@ -431,7 +431,7 @@
                             to this problem?
                         </span>
                     </div>
-                    <div class="bg-contain bg-[url(/src/assets/bible-timeline/trail.svg)] pt-[30%] md:pt-[36%] bg-no-repeat bg-[0rem_0rem] md:bg-[4rem]">
+                    <div class="bg-contain bg-[url(/src/assets/bible-timeline/trail.svg)] pt-[30%] md:pt-[25%] bg-no-repeat bg-[0rem_0rem] md:bg-[4rem]">
                         <div class="cs-bt-fs-base text-left w-[70%] md:w-[50%]">
                             <span class="whitespace-nowrap">
                                 The Bible Timeline methodology
@@ -457,9 +457,11 @@
                         <img src="/src/assets/bible-timeline/hooked.svg" class="absolute ml-10 right-28 md:right-72 w-36 md:w-48" alt="Vector 17">
                     </div>
 
-                    <div class="flex flex-row items-end">
-
-                        <div class="w-full mt-8 font-sans text-right cs-bt-fs-large text-cs-red-main cs-gradient-text">
+                    <div class="flex flex-row items-end gap-4">
+                        <div class="w-[55%] flex-col flex items-end">
+                            <img class="w-60 pb-2" src="/src/assets/bible-timeline/involved.svg" alt="Involved">
+                        </div>
+                        <div class="w-[45%] mt-8 font-sans text-right cs-bt-fs-large text-cs-red-main cs-gradient-text">
                             <span class="whitespace-nowrap">
                                 During this course,
                             </span><br />
@@ -510,6 +512,7 @@
                             how the events in the Old Testament are fulfilled in the New&nbsp;Testament.
                         </div>
                     </div>
+                    </div>
                     <div class="flex flex-col items-center cs-benefit-box bg-cs-paper">
                         <img src="/src/assets/bible-timeline/icon-lightbulb.png" class="cs-benefit-icon" alt="Learn">
                         <div class="font-bold text-center text-cs-red-main cs-benefit cs-gradient-text">Learn</div>
@@ -522,8 +525,8 @@
 
             <div class="flex flex-col items-center w-full bg-cs-paper">
                 <div class="relative w-full max-w-[1000px] flex flex-col gap-8 text-center items-center py-16">
-                    <div class="relative font-sans font-bold cs-fs-xl md:cs-fs-3xl sm:cs-fs-2xl cs-gradient-text">We&nbsp;make<br />the&nbsp;complex <br />simple.
-                        <img src="/src/assets/bible-timeline/im-in.svg" class="absolute w-40 -right-4 md:w-48 top-36 md:top-20">
+                    <div class="relative font-sans font-bold cs-fs-xl md:cs-fs-3xl sm:cs-fs-2xl cs-gradient-text flex flex-col items-center">We&nbsp;make the&nbsp;complex <br> simple.
+                        <img src="/src/assets/bible-timeline/im-in.svg" class="w-32 ml-40" >
                     </div>
                     <div class="w-full px-8 text-center cs-fs-lg">
                         Join us online. <b>Come&nbsp;and&nbsp;see!</b>

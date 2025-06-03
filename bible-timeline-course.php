@@ -42,11 +42,11 @@
                 <div class="flex flex-row items-center justify-end cs-accordion-manager">
                     <button class="mr-1 cs-accordion-expand text-cs-blue-light">
                         <!-- Note: cs-accordion-expand is called by Javascript -->
-                        <img src="/src/assets/accordion-expand.svg" class="w-6 h-6" alt="Expand">
+                        <img src="/src/assets/accordion-collapse.svg" class="w-6 h-6" alt="Expand">
                     </button>
                     <button class=" cs-accordion-collapse">
                         <!-- Note: cs-accordion-collapse is called by Javascript -->
-                        <img src="/src/assets/accordion-collapse.svg" class="w-6 h-6" alt="Collapse">
+                        <img src="/src/assets/accordion-expand.svg" class="w-6 h-6" alt="Collapse">
                     </button>
                 </div>
 
@@ -94,7 +94,7 @@
                             </div> <!-- END OF VIDEO RECORDING CONTAINER -->
 
                             <!-- COURSE NOTES CONTAINER -->
-                            <div class="flex flex-col items-start px-8 pt-6 pb-6 hover:bg-gray-100 hover:rounded-b-3xl">
+                            <div class="flex flex-col items-start px-8 pt-6 pb-6 hover:bg-gray-100 hover:rounded-b-3xl cs-course-border-b">
 
                                 <div class="flex flex-row mt-0">
                                     <span class="font-sans font-normal cs-fs-sm">
@@ -199,7 +199,7 @@
                             </div> <!-- END OF STUDY QUESTIONS CONTAINER -->
 
                             <!-- COURSE NOTES CONTAINER -->
-                            <div class="flex flex-col items-start px-8 pt-6 pb-6 hover:bg-gray-100 hover:rounded-b-3xl">
+                            <div class="flex flex-col items-start px-8 pt-6 pb-6 hover:bg-gray-100 hover:rounded-b-3xl cs-course-border-b">
 
                                 <div class="flex flex-row mt-0">
                                     <span class="ml-0 cs-course-chip">
@@ -318,7 +318,7 @@
                             </div> <!-- END OF STUDY QUESTIONS CONTAINER -->
 
                             <!-- COURSE NOTES CONTAINER -->
-                            <div class="flex flex-col items-start px-8 pt-6 pb-6 hover:bg-gray-100 hover:rounded-b-3xl">
+                            <div class="flex flex-col items-start px-8 pt-6 pb-6 hover:bg-gray-100 hover:rounded-b-3xl cs-course-border-b">
 
                                 <div class="flex flex-row mt-0">
                                     <span class="ml-0 cs-course-chip">
@@ -449,7 +449,7 @@
                             </div> <!-- END OF STUDY QUESTIONS CONTAINER -->
 
                             <!-- COURSE NOTES CONTAINER -->
-                            <div class="flex flex-col items-start px-8 pt-6 pb-6 hover:bg-gray-100 hover:rounded-b-3xl">
+                            <div class="flex flex-col items-start px-8 pt-6 pb-6 hover:bg-gray-100 hover:rounded-b-3xl cs-course-border-b">
 
                                 <div class="flex flex-row mt-0">
                                     <span class="ml-0 cs-course-chip">
