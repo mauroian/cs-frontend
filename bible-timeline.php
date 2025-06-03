@@ -58,7 +58,7 @@
                                             genesis 1-11
                                         </span>
                                     </div>
-                                    <img id="timeline-tooltip-img" src="/src/assets/bible-timeline/card1.png" alt="" class="cs-tooltip-card-img" />
+                                    <img id="timeline-tooltip-img" src="/src/assets/bible-timeline/bt-card-p1.png" alt="" class="cs-tooltip-card-img" />
                                 </div>
                             </div>
                         </div>
