@@ -1046,7 +1046,7 @@
     }
 
     .cs-bt-fs-large {
-        @apply text-2xl sm:text-3xl;
+        @apply text-xl sm:text-3xl;
     }
 
     .cs-bt-fs-medium {
