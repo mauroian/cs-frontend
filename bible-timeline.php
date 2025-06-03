@@ -458,10 +458,7 @@
                     </div>
 
                     <div class="flex flex-row items-end gap-4">
-                        <div class="w-[55%] flex-col flex items-end">
-                            <img class="w-60 pb-2" src="/src/assets/bible-timeline/involved.svg" alt="Involved">
-                        </div>
-                        <div class="w-[45%] mt-8 font-sans text-right cs-bt-fs-large text-cs-red-main cs-gradient-text">
+                        <div class="w-full mt-8 font-sans text-right cs-bt-fs-large text-cs-red-main cs-gradient-text">
                             <span class="whitespace-nowrap">
                                 During this course,
                             </span><br />
@@ -511,7 +508,6 @@
                         <div class="text-center cs-benefit-descr">
                             how the events in the Old Testament are fulfilled in the New&nbsp;Testament.
                         </div>
-                    </div>
                     </div>
                     <div class="flex flex-col items-center cs-benefit-box bg-cs-paper">
                         <img src="/src/assets/bible-timeline/icon-lightbulb.png" class="cs-benefit-icon" alt="Learn">
