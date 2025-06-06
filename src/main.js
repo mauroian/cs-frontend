@@ -813,15 +813,15 @@ if (timelineDesktop && tooltipCard) {
 
 // Timeline sequential fade-in animation configuration
 const TIMELINE_ANIMATION = {
-  initialDelay: 300,  // Delay before the first image appears (ms)
+  initialDelay: 0,  // Delay before the first image appears (ms)
   itemDelay: 100,     // Delay between each image appearance (ms)
-  fadeDuration: 800,  // Duration of each fade animation (ms)
+  fadeDuration: 600,  // Duration of each fade animation (ms)
   easing: 'ease-in-out' // Animation timing function
 };
 
 // Animation config for the "timeline-characters" image
 const TIMELINE_CHARACTERS_ANIMATION = {
-  delay: 800,        // Delay before the characters image appears (ms)
+  delay: 1000,        // Delay before the characters image appears (ms)
   fadeDuration: 2000, // Duration of the fade animation (ms)
   easing: 'ease-in-out'
 };
