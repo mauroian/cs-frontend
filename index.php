@@ -29,6 +29,7 @@
                     <div class="cs-fs-sm"><a href="/your-area.php" target="_blank">Your Area</a></div>
                     <div class="cs-fs-sm"><a href="/bible-timeline-course.php" target="_blank">Bible Timeline Course</a></div>
                     <div class="cs-fs-sm"><a href="/bible-timeline.php" target="_blank">Bible Timeline</a></div>
+                    <div class="cs-fs-sm"><a href="/our-ministry.php" target="_blank">Our Ministry</a></div>
                     <div class="cs-fs-sm"><a href="/admin.php" target="_blank">Admin</a></div>
                     <div class="font-bold cs-fs-sm"><a href="/index-test-large-menu.php" target="_blank">Index Test Large Menu</a></div>
                 </div>

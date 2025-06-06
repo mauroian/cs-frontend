@@ -1107,6 +1107,11 @@
     }
 
     /* #### BIBLE TIMELINE CHART DESKTOP #### */
+
+    .timeline-period-img {
+        @apply opacity-0;
+    }
+
     .cs-tooltip-header {
         @apply  h-16 px-3 rounded-t-lg;
     }
@@ -1143,6 +1148,31 @@
             @apply object-cover w-auto h-40 border-gray-600 bg-gray-50;
         */
         @apply object-contain w-auto border-gray-600 bg-gray-50;
+    }
+
+
+    /* #### OUR MINISTRY #### */
+    .cs-ministry-container {
+        @apply shadow-cs-all-around rounded-3xl bg-cs-paper-shade;
+    }
+    .cs-ministry-header {
+        @apply text-cs-red-main px-5 my-5 font-bold text-left cs-fs-2xl;
+    }
+
+    .cs-ministry-item {
+        @apply flex items-center w-full px-4 py-3 min-h-20 md:px-8;
+    }
+
+    .cs-ministry-content-container {
+        @apply bg-cs-paper  rounded-b-3xl text-cs-grey  py-6;
+    }
+
+    .cs-ministry-button-container {
+        @apply w-full px-4 py-3 min-h-20 md:px-8 gap-5;
+    }
+
+    .cs-ministry-button {
+        @apply font-sans font-bold uppercase cs-fs-sm tracking-wider rounded-md bg-cs-red-main text-white py-1.5 px-6 border border-transparent text-center transition-all shadow-sm hover:bg-cs-red-dark disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none;
     }
 
         /* #### BG VANILLA CSS #### */

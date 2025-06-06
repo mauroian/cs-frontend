@@ -218,6 +218,9 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
 
+  setTimeout(animateTimelineImages, 100);
+
+
 });
 
 
@@ -740,17 +743,21 @@ if (timelineDesktop && tooltipCard) {
     });
     // Posiziona la card sotto l'immagine attiva
     const rect = anchorImg.getBoundingClientRect();
+    const viewportWidth = window.innerWidth;
     const parentRect = timelineDesktop.getBoundingClientRect();
     const cardWidth = tooltipCard.offsetWidth || 400; // fallback se non ancora renderizzata
-    const containerWidth = parentRect.width;
     // posizione ideale centrata
-    let left = rect.left - parentRect.left + rect.width / 2 - cardWidth / 2;
+    let left = rect.left + (rect.width / 2) - (cardWidth / 2);
     // correzione se esce a sinistra
-    console.log(rect.left , parentRect.left , rect.width , cardWidth / 2);
-    if (left < 0) left = 0;
+    if (left < 10) {
+      left = 10; // 10px padding from left edge of viewport
+    } else if (left + cardWidth > viewportWidth - 10) {
+      left = viewportWidth - cardWidth - 10; // 10px padding from right edge
+    }
     // correzione se esce a destra
-    if (left + cardWidth > containerWidth) left = containerWidth - cardWidth;
-    tooltipCard.style.left = `${left}px`;
+    const relativeLeft = left - parentRect.left;
+
+    tooltipCard.style.left = `${relativeLeft}px`;
     tooltipCard.style.top = `calc(${rect.bottom - parentRect.top + TOP_OFFSET}px)`;
     // Mostra la card con transizione
     tooltipCard.classList.remove('hidden');
@@ -799,3 +806,64 @@ if (timelineDesktop && tooltipCard) {
     }
   });
 }
+
+
+// === START OF IMAGE ANIMATION FOR BIBLE TIMELINE ===
+// Add this at the end of your JavaScript file
+
+// Timeline sequential fade-in animation configuration
+const TIMELINE_ANIMATION = {
+  initialDelay: 300,  // Delay before the first image appears (ms)
+  itemDelay: 100,     // Delay between each image appearance (ms)
+  fadeDuration: 800,  // Duration of each fade animation (ms)
+  easing: 'ease-in-out' // Animation timing function
+};
+
+// Function to animate the timeline images
+function animateTimelineImages() {
+  const timelineContainer = document.getElementById('timeline-desktop');
+  if (!timelineContainer) return;
+
+  const images = timelineContainer.querySelectorAll('.timeline-period-img');
+  if (!images.length) return;
+
+  // Set initial state - all images invisible
+  images.forEach(img => {
+    img.style.opacity = '0';
+    img.style.transition = `opacity ${TIMELINE_ANIMATION.fadeDuration}ms ${TIMELINE_ANIMATION.easing}`;
+    img.style.display = 'block'; // Ensure display is set correctly
+  });
+
+  // Animate each image sequentially
+  let delay = TIMELINE_ANIMATION.initialDelay;
+
+  images.forEach((img, index) => {
+    setTimeout(() => {
+      img.style.opacity = '1';
+    }, delay);
+
+    delay += TIMELINE_ANIMATION.itemDelay + TIMELINE_ANIMATION.fadeDuration/2;
+  });
+}
+
+// Optional: Re-trigger animation if timeline becomes visible after being hidden
+// This uses the Intersection Observer API for better performance
+function setupTimelineObserver() {
+  const timeline = document.getElementById('timeline-desktop');
+  if (!timeline) return;
+
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        animateTimelineImages();
+        observer.unobserve(entry.target); // Only trigger once
+      }
+    });
+  }, {
+    threshold: 0.2 // Trigger when at least 20% of the timeline is visible
+  });
+
+  observer.observe(timeline);
+}
+
+setupTimelineObserver();
