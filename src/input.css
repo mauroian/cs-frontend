@@ -995,18 +995,6 @@
         @apply grid grid-cols-1 gap-4 md:grid-cols-2;
     }
 
-    .cs-about-us-grid {
-        @apply grid grid-cols-1 gap-6 px-6 md:grid-cols-2 md:px-0;
-    }
-
-    .cs-about-us-grid-item {
-        @apply flex flex-col items-center justify-start gap-4 pb-10 mx-4 my-4 border-b-8 border-cs-red-medium;
-    }
-
-    .cs-about-us-grid-item-icon {
-        @apply w-20 h-20;
-    }
-
     /* #### ASCENSION PRESS #### */
     .cs-ascension-recommended {
         @apply uppercase text-cs-grey border-[3px] pr-4 border-cs-blue-main rounded-3xl flex flex-row items-center gap-2 cs-fs-highly-recommended;
@@ -1156,7 +1144,7 @@
         @apply shadow-cs-all-around rounded-3xl bg-cs-paper-shade;
     }
     .cs-ministry-header {
-        @apply text-cs-red-main px-5 my-5 font-bold text-left cs-fs-2xl;
+        @apply px-5 my-5 font-bold text-left text-cs-red-main cs-fs-2xl;
     }
 
     .cs-ministry-item {
@@ -1164,11 +1152,23 @@
     }
 
     .cs-ministry-content-container {
-        @apply bg-cs-paper  rounded-b-3xl text-cs-grey  py-6;
+        @apply py-6 bg-cs-paper rounded-b-3xl text-cs-grey;
     }
 
     .cs-ministry-button-container {
-        @apply w-full px-4 py-3 min-h-20 md:px-8 gap-5;
+        @apply w-full gap-5 px-4 py-3 min-h-20 md:px-8;
+    }
+
+    .cs-ministry-grid {
+        @apply grid grid-cols-1 gap-6 px-6 md:grid-cols-2 md:px-0;
+    }
+
+    .cs-ministry-grid-item {
+        @apply flex flex-col items-center justify-start gap-4 pb-10 mx-4 my-4 border-b-8 border-cs-red-medium;
+    }
+
+    .cs-ministry-grid-item-icon {
+        @apply w-20 h-20;
     }
 
     .cs-ministry-button {
