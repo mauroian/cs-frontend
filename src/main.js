@@ -584,6 +584,11 @@ const timelinePeriods = [
     primaryColor: 'cs-period1-pri',
     secondaryColor: 'cs-period1-sec',
     textColor: 'text-white',
+    toolTipTitle: 'The Creation of Adam',
+    toolTipAuthor: 'Michelangelo (1508-1512)',
+    toolTipLocation: 'Sistine Chapel, Vatican City',
+    toolTipScripture: 'Genesis 1:26-27; 2:7',
+    imgWrapperColor: 'cs-period1-third'
   },
   {
     title: 'Patriarchs',
@@ -593,6 +598,11 @@ const timelinePeriods = [
     primaryColor: 'cs-period2-pri',
     secondaryColor: 'cs-period2-sec',
     textColor: 'text-white',
+    toolTipTitle: 'The Sacrifice of Isaac',
+    toolTipAuthor: 'Caravaggio (1603)',
+    toolTipLocation: 'Uffizi Gallery, Florence, Italy',
+    toolTipScripture: 'Genesis 22:1-18',
+    imgWrapperColor: 'cs-period2-third'
   },
   {
     title: 'Egypt & Exodus',
@@ -602,7 +612,11 @@ const timelinePeriods = [
     primaryColor: 'cs-period3-pri',
     secondaryColor: 'cs-period3-sec',
     textColor: 'text-white',
-
+    toolTipTitle: 'The Children of Israel Crossing the Red Sea',
+    toolTipAuthor: 'Frédéric Schopin (1804–1880)',
+    toolTipLocation: 'Bristol Museum, United Kingdom',
+    toolTipScripture: 'Exodus 14:1-31',
+    imgWrapperColor: 'cs-period3-third'
   },
   {
     title: 'Desert Wanderings',
@@ -612,6 +626,11 @@ const timelinePeriods = [
     primaryColor: 'cs-period4-pri',
     secondaryColor: 'cs-period4-sec',
     textColor: 'text-black',
+    toolTipTitle: 'Moses and the Brazen Serpent',
+    toolTipAuthor: 'Anthony Van Dyck (1620)',
+    toolTipLocation: 'Prado Museum, Madrid, Spain',
+    toolTipScripture: 'Numbers 21:5-9',
+    imgWrapperColor: 'cs-period4-third'
   },
   {
     title: 'Conquest & Judges',
@@ -621,6 +640,11 @@ const timelinePeriods = [
     primaryColor: 'cs-period5-pri',
     secondaryColor: 'cs-period5-sec',
     textColor: 'text-white',
+    toolTipTitle: 'Joshua\'s Victory over the Amorites',
+    toolTipAuthor: 'Nicolas Poussin (1624-1626)',
+    toolTipLocation: 'Pushkin Museum, Moscow, Russia',
+    toolTipScripture: 'Joshua 10:1-14',
+    imgWrapperColor: 'cs-period5-third'
   },
   {
     title: 'Royal Kingdom',
@@ -630,6 +654,11 @@ const timelinePeriods = [
     primaryColor: 'cs-period6-pri',
     secondaryColor: 'cs-period6-sec',
     textColor: 'text-white',
+    toolTipTitle: 'David with the Head of Goliath',
+    toolTipAuthor: 'Caravaggio (1610)',
+    toolTipLocation: 'Borghese Gallery, Rome, Italy',
+    toolTipScripture: '1 Samuel 17:1-58',
+    imgWrapperColor: 'cs-period6-third'
   },
   {
     title: 'Divided Kingdom',
@@ -639,6 +668,11 @@ const timelinePeriods = [
     primaryColor: 'cs-period7-pri',
     secondaryColor: 'cs-period7-sec',
     textColor: 'text-white',
+    toolTipTitle: 'The Sacrifice of Elijah Before the Priests of Baal',
+    toolTipAuthor: 'Domenico Fetti (1622)',
+    toolTipLocation: 'Royal Collection, Buckingham Palace, London, United Kingdom',
+    toolTipScripture: '1 Kings 18:7-40',
+    imgWrapperColor: 'cs-period7-third'
   },
   {
     title: 'Exile',
@@ -648,6 +682,11 @@ const timelinePeriods = [
     primaryColor: 'cs-period8-pri',
     secondaryColor: 'cs-period8-sec',
     textColor: 'text-white',
+    toolTipTitle: 'The destruction of the Temple of Jerusalem',
+    toolTipAuthor: 'Francesco Hayez (1867)',
+    toolTipLocation: 'Accademia Galleries, Venice, Italy',
+    toolTipScripture: '2 Kings 25:1-21',
+    imgWrapperColor: 'cs-period8-third'
   },
   {
     title: 'Return',
@@ -657,6 +696,11 @@ const timelinePeriods = [
     primaryColor: 'cs-period9-pri',
     secondaryColor: 'cs-period9-sec',
     textColor: 'text-black',
+    toolTipTitle: 'The Banquet of Esther and Ahasuerus',
+    toolTipAuthor: 'Jan Victors (1640)',
+    toolTipLocation: 'State Museums, Kassel, Germany',
+    toolTipScripture: 'Esther 3:1 to 7:10',
+    imgWrapperColor: 'cs-period9-third'
   },
   {
     title: 'Maccabean Revolt',
@@ -666,6 +710,11 @@ const timelinePeriods = [
     primaryColor: 'cs-period10-pri',
     secondaryColor: 'cs-period10-sec',
     textColor: 'text-white',
+    toolTipTitle: 'The Martyrdom of the Seven Maccabees',
+    toolTipAuthor: 'Antonio Ciseri (857–63)',
+    toolTipLocation: 'Church of Santa Felicita, Florence, Italy',
+    toolTipScripture: '2 Maccabees 7:1-42',
+    imgWrapperColor: 'cs-period10-third'
   },
   {
     title: 'Messianic Fulfillment',
@@ -675,6 +724,11 @@ const timelinePeriods = [
     primaryColor: 'cs-period11-pri',
     secondaryColor: 'cs-period11-sec',
     textColor: 'text-white',
+    toolTipTitle: 'Christ Pantocrator',
+    toolTipAuthor: 'Ieremias Palladas (between 1608-1645)',
+    toolTipLocation: 'Panagia tou Kastrou, Rhodes, Greece',
+    toolTipScripture: 'Revelation 1:8',
+    imgWrapperColor: 'cs-period11-third'
   },
   {
     title: 'The Church',
@@ -684,12 +738,16 @@ const timelinePeriods = [
     primaryColor: 'cs-period12-pri',
     secondaryColor: 'cs-period12-sec',
     textColor: 'text-black',
+    toolTipTitle: 'The Descent of the Holy Spirit at Pentecost',
+    toolTipAuthor: 'Titian (1546)',
+    toolTipLocation: 'Santa Maria della Salute Basilica, Venice, Italy',
+    toolTipScripture: 'Acts 2:1-47',
+    imgWrapperColor: 'cs-period12-third'
   },
 ];
 
 
-
-//code continues (not for config)
+//code continues (not for config: don't change it)
 
 const timelineDesktop = document.getElementById('timeline-desktop');
 const tooltipBox = document.getElementById('timeline-tooltip-box');
