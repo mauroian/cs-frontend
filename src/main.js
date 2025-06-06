@@ -755,7 +755,7 @@ if (timelineDesktop && tooltipCard) {
       left = viewportWidth - cardWidth - 10; // 10px padding from right edge
     }
     // correzione se esce a destra
-    const relativeLeft = left - parentRect.left;
+    const relativeLeft = left - parentRect.left - 20;
 
     tooltipCard.style.left = `${relativeLeft}px`;
     tooltipCard.style.top = `calc(${rect.bottom - parentRect.top + TOP_OFFSET}px)`;
@@ -819,6 +819,13 @@ const TIMELINE_ANIMATION = {
   easing: 'ease-in-out' // Animation timing function
 };
 
+// Animation config for the "timeline-characters" image
+const TIMELINE_CHARACTERS_ANIMATION = {
+  delay: 800,        // Delay before the characters image appears (ms)
+  fadeDuration: 2000, // Duration of the fade animation (ms)
+  easing: 'ease-in-out'
+};
+
 // Function to animate the timeline images
 function animateTimelineImages() {
   const timelineContainer = document.getElementById('timeline-desktop');
@@ -844,6 +851,19 @@ function animateTimelineImages() {
 
     delay += TIMELINE_ANIMATION.itemDelay + TIMELINE_ANIMATION.fadeDuration/2;
   });
+
+  // Animate the "timeline-characters" image independently
+  const charactersImg = document.getElementById('timeline-characters');
+  if (charactersImg) {
+    // Set initial state
+    charactersImg.style.opacity = '0';
+    charactersImg.style.transition = `opacity ${TIMELINE_CHARACTERS_ANIMATION.fadeDuration}ms ${TIMELINE_CHARACTERS_ANIMATION.easing}`;
+    charactersImg.style.display = 'block';
+
+    setTimeout(() => {
+      charactersImg.style.opacity = '1';
+    }, TIMELINE_CHARACTERS_ANIMATION.delay);
+  }
 }
 
 // Optional: Re-trigger animation if timeline becomes visible after being hidden

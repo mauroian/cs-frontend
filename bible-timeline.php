@@ -64,7 +64,7 @@
                         </div>
                     </div>
                     <div class="relative flex-col items-center justify-center hidden gap-0 mt-7 md:flex sm:flex-row flex-nowrap">
-                        <img src="/src/assets/bible-timeline/btc-characters.png" alt="Characters" class="object-contain w-full">
+                        <img src="/src/assets/bible-timeline/btc-characters.png" alt="Characters" class="object-contain w-full opacity-0" id="timeline-characters">
                     </div>
                 </div>
             </div>
