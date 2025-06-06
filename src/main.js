@@ -752,10 +752,10 @@ if (timelineDesktop && tooltipCard) {
     if (left < 10) {
       left = 10; // 10px padding from left edge of viewport
     } else if (left + cardWidth > viewportWidth - 10) {
-      left = viewportWidth - cardWidth - 10; // 10px padding from right edge
+      left = viewportWidth - cardWidth - 30; // 10px padding from right edge
     }
     // correzione se esce a destra
-    const relativeLeft = left - parentRect.left - 20;
+    const relativeLeft = left - parentRect.left;
 
     tooltipCard.style.left = `${relativeLeft}px`;
     tooltipCard.style.top = `calc(${rect.bottom - parentRect.top + TOP_OFFSET}px)`;
