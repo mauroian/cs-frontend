@@ -849,7 +849,7 @@ function animateTimelineImages() {
       img.style.opacity = '1';
     }, delay);
 
-    delay += TIMELINE_ANIMATION.itemDelay + TIMELINE_ANIMATION.fadeDuration/2;
+    delay = TIMELINE_ANIMATION.itemDelay * (index +1); // Increment delay for each image
   });
 
   // Animate the "timeline-characters" image independently
