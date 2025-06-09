@@ -902,6 +902,8 @@ const SHADOW_ANIMATION = {
 const TIMELINE_CHARACTERS_ANIMATION = {
   delay: 1000,        // Delay before the characters image appears (ms)
   fadeDuration: 2000, // Duration of the fade animation (ms)
+  slideDuration: 1600,  // Duration of the slide animation (ms)
+  slideDistance: '100px', // Distance to slide from left
   easing: 'ease-in-out'
 };
 
@@ -932,7 +934,7 @@ function animateTimelineImages() {
   });
 
   setTimeout(() => {
-    document.getElementById('timeline-desktop').classList.add('shadow-cs-all-around');
+    document.getElementById('timeline-desktop').classList.add('shadow-cs-bible-timeline');
   }, SHADOW_ANIMATION.delay);
 
   // Animate the "timeline-characters" image independently
@@ -940,11 +942,17 @@ function animateTimelineImages() {
   if (charactersImg) {
     // Set initial state
     charactersImg.style.opacity = '0';
+    charactersImg.style.transform = `translateX(-${TIMELINE_CHARACTERS_ANIMATION.slideDistance})`;
     charactersImg.style.transition = `opacity ${TIMELINE_CHARACTERS_ANIMATION.fadeDuration}ms ${TIMELINE_CHARACTERS_ANIMATION.easing}`;
+    charactersImg.style.transition = `
+      opacity ${TIMELINE_CHARACTERS_ANIMATION.fadeDuration}ms ${TIMELINE_CHARACTERS_ANIMATION.easing},
+      transform ${TIMELINE_CHARACTERS_ANIMATION.slideDuration}ms ${TIMELINE_CHARACTERS_ANIMATION.easing}
+    `;
     charactersImg.style.display = 'block';
 
     setTimeout(() => {
       charactersImg.style.opacity = '1';
+      charactersImg.style.transform = 'translateX(0)';
     }, TIMELINE_CHARACTERS_ANIMATION.delay);
   }
 }

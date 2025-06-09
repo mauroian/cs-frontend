@@ -1096,7 +1096,7 @@
 
     /* #### BIBLE TIMELINE CHART DESKTOP #### */
     .cs-timeline-tooltip-card {
-        @apply w-[400px] shadow-cs-all-around;
+        @apply w-[400px] shadow-cs-bible-timeline;
     }
 
     .timeline-period-img {

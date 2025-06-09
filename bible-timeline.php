@@ -26,7 +26,7 @@
                         <h1>The&nbsp;Bible&nbsp;Timeline Course</h1>
                     </div>
                     <div class="mt-3 font-sans font-bold tracking-widest uppercase cs-bt-one-story-fs text-cs-red-main">73 Books, one story</div>
-                    <div class="relative flex-col items-center justify-center hidden gap-0 mt-12 md:flex sm:flex-row flex-nowrap"
+                    <div class="relative flex-col items-center justify-center hidden gap-0 mt-12 md:flex sm:flex-row flex-nowrap rounded-lg"
                          id="timeline-desktop">
                         <!-- Immagini dei periodi -->
                         <img src="/src/assets/bible-timeline/p1.png" alt="Period 1"
@@ -56,8 +56,8 @@
 
                         <!-- Card tooltip nascosta di default -->
                         <div id="timeline-tooltip-card"
-                             class="absolute left-0 z-20 hidden transition-all duration-300 top-full cs-timeline-tooltip-card">
-                            <div class="relative flex flex-col items-center w-full border border-gray-800 rounded-lg shadow-lg">
+                             class="absolute left-0 z-20 hidden transition-all duration-300 top-full cs-timeline-tooltip-card rounded-lg">
+                            <div class="relative flex flex-col items-center w-full border border-gray-800 rounded-lg group">
                                 <div id="timeline-tooltip-header"
                                      class="flex flex-row items-center justify-between w-full cs-tooltip-header">
                                     <button id="timeline-tooltip-prev"
@@ -85,7 +85,7 @@
                                 </div>
                                 <div id="timeline-tooltip-img-box"
                                      class="flex flex-col items-center justify-center w-full relative cs-tooltip-card-content">
-                                    <div class="relative w-full group text-left">
+                                    <div class="relative w-full text-left">
                                         <img id="timeline-tooltip-img" src="/src/assets/bible-timeline/bt-card-p1.png"
                                              alt="" class="cs-tooltip-card-img"/>
                                         <div id="timeline-tooltip-overlay"

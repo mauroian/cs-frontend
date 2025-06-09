@@ -78,8 +78,45 @@
                         Each element in our logo reflects a core aspect of our mission and teachings.
                     </div>
                     <div class="flex flex-col md:flex-row gap-12 items-center mt-3">
-                        <div class="w-full flex justify-center">
-                            <img src="/src/assets/our-flame-full.svg" class="w-full" alt="Come & See Logo">
+                        <div class="w-full flex justify-center relative pb-32">
+                            <img src="/src/assets/our-logo-flame.svg" class="w-full" alt="Come & See Logo">
+                            <div class="hidden">
+                                <div class="absolute left-[-215px] w-[400px] top-[140px] text-cs-grey text-left">The
+                                    people highlight our dedication to fostering an authentic Christian community.
+                                    Through our courses and events, we intentionally cultivate spaces where lasting
+                                    bonds of friendship and spiritual support can flourish.
+                                </div>
+                                <div class="absolute left-[-100px] w-[400px] bottom-[0px] text-cs-grey text-left">The
+                                    bible symbolizes our commitment to nurturing the faith of our students through deep
+                                    engagement with the Word of God.
+                                </div>
+                                <div class="absolute right-[-240px] w-[400px] bottom-[55px] text-cs-grey text-left">
+                                    These represent the central place of the Eucharist and Eucharistic Adoration in the
+                                    Christian life, which we proclaim and celebrate.
+                                </div>
+                                <div class="absolute right-[-185px] w-[400px] top-[40px] text-cs-grey text-left">The
+                                    flame signifies our desire to be continually renewed and empowered by the Holy
+                                    Spirit, drawing ever closer to His presence.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex md:hidden flex-col gap-6 my-8">
+                        <div class="flex flex-col items-start justify-start">
+                            <div class="text-cs-red-dark uppercase w-full text-left font-semibold">the people</div>
+                            <div class="text-cs-grey text-left">The people highlight our dedication to fostering an authentic Christian community. Through our courses and events, we intentionally cultivate spaces where lasting bonds of friendship and spiritual support can flourish.</div>
+                        </div>
+                        <div class="flex flex-col items-start justify-start">
+                            <div class="text-cs-red-dark uppercase w-full text-left font-semibold">The Bible</div>
+                            <div class="text-cs-grey text-left">The bible symbolizes our commitment to nurturing the faith of our students through deep engagement with the Word of God.</div>
+                        </div>
+                        <div class="flex flex-col items-start justify-start">
+                            <div class="text-cs-red-dark uppercase w-full text-left font-semibold">The Host and Chalice</div>
+                            <div class="text-cs-grey text-left">These represent the central place of the Eucharist and Eucharistic Adoration in the Christian life, which we proclaim and celebrate.</div>
+                        </div>
+                        <div class="flex flex-col items-start justify-start">
+                            <div class="text-cs-red-dark uppercase w-full text-left font-semibold">The Flame</div>
+                            <div class="text-cs-grey text-left">The flame signifies our desire to be continually renewed and empowered by the Holy Spirit, drawing ever closer to His presence.</div>
                         </div>
                     </div>
                 </div>
