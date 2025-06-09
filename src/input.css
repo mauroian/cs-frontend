@@ -1095,6 +1095,9 @@
     }
 
     /* #### BIBLE TIMELINE CHART DESKTOP #### */
+    .cs-timeline-tooltip-card {
+        @apply w-[400px] shadow-cs-all-around;
+    }
 
     .timeline-period-img {
         @apply opacity-0;
@@ -1113,7 +1116,7 @@
     }
 
     .cs-tooltip-card-content {
-        @apply  px-10 py-5 rounded-b-lg;
+        @apply  px-10 pt-5 last:pb-5 last:rounded-b-lg;
     }
 
     .cs-tooltip-card-title {

@@ -200,6 +200,86 @@
                     </div>
                 </div>
             </div>
+            <div class="flex flex-col items-center w-full pb-20 mx-auto bg-cs-paper-shade">
+                <div class="flex flex-col items-center w-full max-w-3xl gap-8 py-10">
+                    <h3 class="text-cs-grey cs-fs-sm uppercase max-w-[700px] text-center">our strengths</h3>
+                    <h3 class="text-cs-red-medium font-serif cs-fs-3xl italic max-w-[700px] text-center">What we do best at Come & See Formation&nbsp;Ministries:</h3>
+                    <div class="cs-ministry-grid">
+                        <div class="cs-ministry-grid-item">
+                            <img src="/src/assets/vision.svg" class="cs-ministry-grid-item-icon" alt="Vision & Strategy">
+                            <h4 class="font-serif font-bold text-center text-cs-red-main cs-fs-lg">Vision & Strategy</h4>
+                            <p class="p-2 text-center cs-fs-sm">
+                                Discerning God's will and setting your priorities accordingly is perhaps the most important aspect of effectively running an evangelisation ministry.
+                            </p>
+                        </div>
+                        <div class="cs-ministry-grid-item">
+                            <img src="/src/assets/teach.svg" class="cs-ministry-grid-item-icon" alt="Vision & Strategy">
+                            <div class="font-serif font-bold text-center text-cs-red-main cs-fs-lg">Content Creation</div>
+                            <p class="p-2 text-center cs-fs-sm">
+                                We are passionate about seeing people grow in their faith in Jesus Christ, so we strive to create high-quality courses and events that nourish both the hearts and minds of our guests.
+                            </p>
+                        </div>
+                        <div class="cs-ministry-grid-item">
+                            <img src="/src/assets/microphone.svg" class="cs-ministry-grid-item-icon" alt="Teaching & Delivery">
+                            <h4 class="font-serif font-bold text-center text-cs-red-main cs-fs-lg">Teaching & Delivery</h4>
+                            <p class="p-2 text-center cs-fs-sm">
+                                A high-quality course must be matched by high-quality delivery. The message should not only inform, but also transform.
+                            </p>
+                        </div>
+                        <div class="cs-ministry-grid-item">
+                            <img src="/src/assets/checklist.svg" class="cs-ministry-grid-item-icon" alt="Administration">
+                            <h4 class="font-serif font-bold text-center text-cs-red-main cs-fs-lg">Administration</h4>
+                            <p class="p-2 text-center cs-fs-sm">
+                                Administration is a gift of the Holy Spirit—one that calls for keen attention to detail, skill with numbers, swift execution, innate kindness, and a graceful sense of diplomacy.
+                            </p>
+                        </div>
+                        <div class="cs-ministry-grid-item">
+                            <img src="/src/assets/pray.svg" class="cs-ministry-grid-item-icon" alt="Prayer">
+                            <div class="font-serif font-bold text-center text-cs-red-main cs-fs-lg">Prayer</div>
+                            <p class="p-2 text-center cs-fs-sm">
+                                "Work as if everything depends on you, but pray as if everything depends on God." We recognize that holiness—and every effort in evangelization—ultimately relies on God's grace, with prayer as the primary channel through which that grace is received.
+                            </p>
+                        </div>
+                        <div class="cs-ministry-grid-item">
+                            <img src="/src/assets/search.svg" class="cs-ministry-grid-item-icon" alt="Proofing, Editing & Counselling">
+                            <h4 class="font-serif font-bold text-center text-cs-red-main cs-fs-lg">Review, Guidance &&nbsp;Advice
+                            </h4>
+                            <p class="p-2 text-center cs-fs-sm">
+                                Every team member requires sounding boards—individuals with wisdom and experience who can review and offer guidance on created materials, as well as provide advice on decisions regarding the direction of the ministry.
+                            </p>
+                        </div>
+                        <div class="cs-ministry-grid-item">
+                            <img src="/src/assets/it.svg" class="cs-ministry-grid-item-icon" alt="IT Infrastructure">
+                            <h4 class="font-serif font-bold text-center text-cs-red-main cs-fs-lg">IT Infrastructure</h4>
+                            <p class="p-2 text-center cs-fs-sm">
+                                This encompasses IT networking solutions, databases, productivity and collaboration tools, programming languages, web development, and more.
+                            </p>
+                        </div>
+                        <div class="cs-ministry-grid-item">
+                            <img src="/src/assets/video.svg" class="cs-ministry-grid-item-icon" alt="Video Production & Live Streaming">
+                            <h4 class="font-serif font-bold text-center text-cs-red-main cs-fs-lg">Live Streaming &&nbsp;Video&nbsp;Production
+                            </h4>
+                            <p class="p-2 text-center cs-fs-sm">
+                                As a core element of our ministry, this requires proficiency in live streaming software to broadcast teaching sessions online, as well as expertise in video editing to create engaging and impactful content.
+                            </p>
+                        </div>
+                        <div class="cs-ministry-grid-item">
+                            <img src="/src/assets/relations.svg" class="cs-ministry-grid-item-icon" alt="Public Relations & Networking">
+                            <h4 class="font-serif font-bold text-center text-cs-red-main cs-fs-lg">Public Relations &&nbsp;Networking</h4>
+                            <p class="p-2 text-center cs-fs-sm">
+                                The social aspect plays a vital role in our evangelization ministry. We are passionate about organizing events that bring people together, with the dual purpose of building each other up for God's Kingdom and fostering genuine Christian fellowship and friendship.
+                            </p>
+                        </div>
+                        <div class="justify-center cs-ministry-grid-item bg-cs-paper-shade">
+                            <div class="font-serif italic font-bold text-cs-red-main cs-fs-3xl">Get involved!</div>
+                            <p class="text-center cs-fs-sm"><b>Join us</b><br>
+                                for life-changing courses that will transform your journey.</p>
+                            <button class="self-center cs-support-us-button bg-cs-red-medium">sign up</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
         </div>
     </main>
     <?php require_once 'components/footer.php'; ?>

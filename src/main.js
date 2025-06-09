@@ -751,6 +751,7 @@ const timelinePeriods = [
 
 const timelineDesktop = document.getElementById('timeline-desktop');
 const tooltipBox = document.getElementById('timeline-tooltip-box');
+const tooltipImgBox = document.getElementById('timeline-tooltip-img-box');
 const tooltipHeader = document.getElementById('timeline-tooltip-header');
 const tooltipCard = document.getElementById('timeline-tooltip-card');
 const tooltipTitle = document.getElementById('timeline-tooltip-title');
@@ -766,6 +767,7 @@ let hideTimeout = null;
 let lastPrimary = null;
 let lastSecondary = null;
 let lastText = null;
+let lastImgBox = null;
 
 if (timelineDesktop && tooltipCard) {
   const imgs = timelineDesktop.querySelectorAll('.timeline-period-img');
@@ -777,20 +779,35 @@ if (timelineDesktop && tooltipCard) {
     if (lastPrimary) tooltipBox.classList.remove(`bg-${lastPrimary}`);
     if (lastSecondary) tooltipHeader.classList.remove(`bg-${lastSecondary}`);
     if (lastText) tooltipCard.classList.remove(lastText);
+    if (lastImgBox) tooltipImgBox.classList.remove(`bg-${lastImgBox}`);
     // Aggiungi le nuove classi colore
     tooltipBox.classList.add(`bg-${period.primaryColor}`);
     tooltipHeader.classList.add(`bg-${period.secondaryColor}`);
+    tooltipImgBox.classList.add(`bg-${period.imgWrapperColor}`);
     tooltipCard.classList.add(period.textColor);
     // Aggiorna i tracker
     lastPrimary = period.primaryColor;
     lastSecondary = period.secondaryColor;
     lastText = period.textColor;
+    lastImgBox = period.imgWrapperColor;
     currentPeriodIndex = index;
     tooltipTitle.textContent = period.title;
     tooltipDesc.innerHTML = period.desc;
     tooltipImg.src = period.img;
     tooltipImg.alt = period.title;
     timelinePeriod.textContent = `${index + 1}`;
+
+    // Populate artwork tooltip information
+    const artTitle = document.getElementById('timeline-tooltip-art-title');
+    const artAuthor = document.getElementById('timeline-tooltip-art-author');
+    const artLocation = document.getElementById('timeline-tooltip-art-location');
+    const artScripture = document.getElementById('timeline-tooltip-scripture');
+
+    if (artTitle) artTitle.textContent = period.toolTipTitle || '';
+    if (artAuthor) artAuthor.textContent = period.toolTipAuthor || '';
+    if (artLocation) artLocation.textContent = period.toolTipLocation || '';
+    if (artScripture) artScripture.textContent = period.toolTipScripture || '';
+
     // Badge libri
     tooltipBooks.innerHTML = '';
     period.books.split(',').forEach(book => {
@@ -877,6 +894,10 @@ const TIMELINE_ANIMATION = {
   easing: 'ease-in-out' // Animation timing function
 };
 
+const SHADOW_ANIMATION = {
+    delay: 2000,        // Delay before the shadow appears (ms)
+}
+
 // Animation config for the "timeline-characters" image
 const TIMELINE_CHARACTERS_ANIMATION = {
   delay: 1000,        // Delay before the characters image appears (ms)
@@ -909,6 +930,10 @@ function animateTimelineImages() {
 
     delay = TIMELINE_ANIMATION.itemDelay * (index +1); // Increment delay for each image
   });
+
+  setTimeout(() => {
+    document.getElementById('timeline-desktop').classList.add('shadow-cs-all-around');
+  }, SHADOW_ANIMATION.delay);
 
   // Animate the "timeline-characters" image independently
   const charactersImg = document.getElementById('timeline-characters');
