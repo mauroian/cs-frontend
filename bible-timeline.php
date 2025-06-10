@@ -497,8 +497,7 @@
                                 <b>each of the 12 Periods.</b>
                             </span>
                         </div>
-                        <img class="w-auto max-w-[600px]" src="/src/assets/bible-timeline/bt2-mauro-pointing-screen.jpg" alt="12 Periods Larger" />
-
+                        <img class="md:w-1/2 lg:max-w-[600px]" src="/src/assets/bible-timeline/bt2-mauro-pointing-screen.jpg" alt="12 Periods Larger" />
                     </div>
 
                     <div class="flex flex-col items-center justify-center w-full mt-20">
