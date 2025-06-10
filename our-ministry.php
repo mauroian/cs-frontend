@@ -86,11 +86,11 @@
                                     Through our courses and events, we intentionally cultivate spaces where lasting
                                     bonds of friendship and spiritual support can flourish.
                                 </div>
-                                <div class="absolute left-[-100px] w-[380px] bottom-[0px] text-cs-grey text-left">The
+                                <div class="absolute left-[-100px] w-[380px] top-[420px] text-cs-grey text-left">The
                                     bible symbolizes our commitment to nurturing the faith of our students through deep
                                     engagement with the Word of God.
                                 </div>
-                                <div class="absolute right-[-165px] w-[350px] bottom-[55px] text-cs-grey text-left">
+                                <div class="absolute right-[-165px] w-[350px] top-[360px] text-cs-grey text-left">
                                     These represent the central place of the Eucharist and Eucharistic Adoration in the
                                     Christian life, which we proclaim and celebrate.
                                 </div>
