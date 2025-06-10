@@ -902,8 +902,8 @@ const SHADOW_ANIMATION = {
 const TIMELINE_CHARACTERS_ANIMATION = {
   delay: 1000,        // Delay before the characters image appears (ms)
   fadeDuration: 2000, // Duration of the fade animation (ms)
-  slideDuration: 1600,  // Duration of the slide animation (ms)
-  slideDistance: '100px', // Distance to slide from left
+  slideDuration: 1600,  // Duration of the slide animation (ms) | CHANGE THIS FOR THE SPEED OF THE TIMELINE CHAR COMING IN
+  slideDistance: '4000px', // Distance to slide from left | CHANGE THIS
   easing: 'ease-in-out'
 };
 

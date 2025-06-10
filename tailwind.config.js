@@ -112,7 +112,8 @@ export default {
       },
       boxShadow: { /* needed as the shadow I wanted was not provided by Tailwind */
         'cs-all-around': '0 0 10px 7px rgba(0, 0, 0, 0.1)',
-        'cs-bible-timeline': '0 0 10px 7px rgba(0, 0, 0, 0.3)',
+        'cs-bible-timeline': '0 0 10px 7px rgba(0, 0, 0, 0.15)',
+        'cs-bible-timeline-cards': '0 0 10px 7px rgba(0, 0, 0, 0.30)',
       }
     },
   },
