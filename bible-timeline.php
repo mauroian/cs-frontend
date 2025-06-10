@@ -26,57 +26,57 @@
                         <h1>The&nbsp;Bible&nbsp;Timeline Course</h1>
                     </div>
                     <div class="mt-3 font-sans font-bold tracking-widest uppercase cs-bt-one-story-fs text-cs-red-main">73 Books, one story</div>
-                    <div class="relative flex-col items-center justify-center hidden gap-0 mt-12 md:flex sm:flex-row flex-nowrap rounded-lg"
-                         id="timeline-desktop">
+                    <div class="relative flex-col items-center justify-center hidden gap-0 mt-12 rounded-lg md:flex sm:flex-row flex-nowrap"
+                        id="timeline-desktop">
                         <!-- Immagini dei periodi -->
                         <img src="/src/assets/bible-timeline/p1.png" alt="Period 1"
-                             class="object-contain w-1/12 timeline-period-img" data-index="0">
+                            class="object-contain w-1/12 timeline-period-img" data-index="0">
                         <img src="/src/assets/bible-timeline/p2.png" alt="Period 2"
-                             class="object-contain w-1/12 timeline-period-img" data-index="1">
+                            class="object-contain w-1/12 timeline-period-img" data-index="1">
                         <img src="/src/assets/bible-timeline/p3.png" alt="Period 3"
-                             class="object-contain w-1/12 timeline-period-img" data-index="2">
+                            class="object-contain w-1/12 timeline-period-img" data-index="2">
                         <img src="/src/assets/bible-timeline/p4.png" alt="Period 4"
-                             class="object-contain w-1/12 timeline-period-img" data-index="3">
+                            class="object-contain w-1/12 timeline-period-img" data-index="3">
                         <img src="/src/assets/bible-timeline/p5.png" alt="Period 5"
-                             class="object-contain w-1/12 timeline-period-img" data-index="4">
+                            class="object-contain w-1/12 timeline-period-img" data-index="4">
                         <img src="/src/assets/bible-timeline/p6.png" alt="Period 6"
-                             class="object-contain w-1/12 timeline-period-img" data-index="5">
+                            class="object-contain w-1/12 timeline-period-img" data-index="5">
                         <img src="/src/assets/bible-timeline/p7.png" alt="Period 7"
-                             class="object-contain w-1/12 timeline-period-img" data-index="6">
+                            class="object-contain w-1/12 timeline-period-img" data-index="6">
                         <img src="/src/assets/bible-timeline/p8.png" alt="Period 8"
-                             class="object-contain w-1/12 timeline-period-img" data-index="7">
+                            class="object-contain w-1/12 timeline-period-img" data-index="7">
                         <img src="/src/assets/bible-timeline/p9.png" alt="Period9"
-                             class="object-contain w-1/12 timeline-period-img" data-index="8">
+                            class="object-contain w-1/12 timeline-period-img" data-index="8">
                         <img src="/src/assets/bible-timeline/p10.png" alt="Period 10"
-                             class="object-contain w-1/12 timeline-period-img" data-index="9">
+                            class="object-contain w-1/12 timeline-period-img" data-index="9">
                         <img src="/src/assets/bible-timeline/p11.png" alt="Period 11"
-                             class="object-contain w-1/12 timeline-period-img" data-index="10">
+                            class="object-contain w-1/12 timeline-period-img" data-index="10">
                         <img src="/src/assets/bible-timeline/p12.png" alt="Period 12"
-                             class="object-contain w-1/12 timeline-period-img" data-index="11">
+                            class="object-contain w-1/12 timeline-period-img" data-index="11">
 
                         <!-- Card tooltip nascosta di default -->
                         <div id="timeline-tooltip-card"
-                             class="absolute left-0 z-20 hidden transition-all duration-300 top-full cs-timeline-tooltip-card rounded-lg">
+                            class="absolute left-0 z-20 hidden transition-all duration-300 rounded-lg top-full cs-timeline-tooltip-card">
                             <div class="relative flex flex-col items-center w-full border border-gray-800 rounded-lg group">
                                 <div id="timeline-tooltip-header"
-                                     class="flex flex-row items-center justify-between w-full cs-tooltip-header">
+                                    class="flex flex-row items-center justify-between w-full cs-tooltip-header">
                                     <button id="timeline-tooltip-prev"
-                                            class="flex items-center justify-center transition cs-tooltip-navigation disabled:opacity-0">
-                                        <img src="/src/assets/bible-timeline/prev.svg"/> prev
+                                        class="flex items-center justify-center transition cs-tooltip-navigation disabled:opacity-0">
+                                        <img src="/src/assets/bible-timeline/prev.svg" /> prev
                                     </button>
                                     <div class="cs-tooltip-period" id="timeline-tooltip-period">1</div>
                                     <button id="timeline-tooltip-next"
-                                            class="flex items-center justify-center transition cs-tooltip-navigation disabled:opacity-0">
-                                        next <img src="/src/assets/bible-timeline/next.svg"/></button>
+                                        class="flex items-center justify-center transition cs-tooltip-navigation disabled:opacity-0">
+                                        next <img src="/src/assets/bible-timeline/next.svg" /></button>
                                 </div>
                                 <div id="timeline-tooltip-box"
-                                     class="flex flex-col items-center justify-center w-full cs-tooltip-card-content">
+                                    class="flex flex-col items-center justify-center w-full cs-tooltip-card-content">
                                     <div class="cs-tooltip-card-title" id="timeline-tooltip-title">Titolo periodo</div>
                                     <div class="text-sm text-center cs-tooltip-card-description"
-                                         id="timeline-tooltip-desc">Descrizione periodo
+                                        id="timeline-tooltip-desc">Descrizione periodo
                                     </div>
                                     <div class="flex flex-wrap justify-center cs-tooltip-card-tags"
-                                         id="timeline-tooltip-books">
+                                        id="timeline-tooltip-books">
                                         <!-- badge libri -->
                                         <span class="cs-box-timeline-chip first:ml-0">
                                             genesis 1-11
@@ -84,14 +84,14 @@
                                     </div>
                                 </div>
                                 <div id="timeline-tooltip-img-box"
-                                     class="flex flex-col items-center justify-center w-full relative cs-tooltip-card-content">
+                                    class="relative flex flex-col items-center justify-center w-full cs-tooltip-card-content">
                                     <div class="relative w-full text-left">
                                         <img id="timeline-tooltip-img" src="/src/assets/bible-timeline/bt-card-p1.png"
-                                             alt="" class="cs-tooltip-card-img"/>
+                                            alt="" class="cs-tooltip-card-img" />
                                         <div id="timeline-tooltip-overlay"
-                                             class="absolute bg-gradient-to-b from-transparent via-black/50 to-black/50 inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end px-4 py-2 text-white">
+                                            class="absolute inset-0 flex flex-col justify-end px-4 py-2 text-white transition-opacity duration-300 opacity-0 bg-gradient-to-b from-transparent via-black/50 to-black/50 group-hover:opacity-100">
                                             <h3 id="timeline-tooltip-art-title" class="font-bold cs-fs-xs"></h3>
-                                            <span id="timeline-tooltip-scripture" class="cs-fs-2xs italic"></span>
+                                            <span id="timeline-tooltip-scripture" class="italic cs-fs-2xs"></span>
                                             <p id="timeline-tooltip-art-author" class="cs-fs-2xs"></p>
                                             <p id="timeline-tooltip-art-location" class="cs-fs-2xs"></p>
                                         </div>
@@ -416,12 +416,12 @@
             <div class="flex flex-col items-center w-full px-5 sm:px-10 bg-cs-paper">
                 <div class="w-full max-w-[1000px] flex flex-col items-center justify-center">
 
-                    <div class="mt-16 font-sans font-bold cs-bt-fs-extralarge text-cs-red-medium cs-gradient-text text-center">
+                    <div class="mt-16 font-sans font-bold text-center cs-bt-fs-extralarge text-cs-red-medium cs-gradient-text">
                         Do&nbsp;you&nbsp;find the&nbsp;Bible
                         <br />too&nbsp;big&nbsp;and complicated?
                     </div>
 
-                    <img src="/src/assets/bible-timeline/vector-14.svg" class="text-center w-40 mb-20 md:w-52">
+                    <img src="/src/assets/bible-timeline/vector-14.svg" class="w-40 mb-20 text-center md:w-52">
 
                 </div>
             </div>
@@ -435,7 +435,7 @@
             <!-- Course Details -->
             <div class="flex flex-col items-center w-full px-5 sm:px-10 bg-cs-paper">
                 <div class=" relative w-full max-w-[1000px] my-0 flex flex-col items-center">
-                    <img src="/src/assets/bible-timeline/the-truth.svg" class="w-72 mt-12">
+                    <img src="/src/assets/bible-timeline/the-truth.svg" class="mt-12 w-72">
                     <div class="mt-12 font-sans text-center cs-bt-fs-extralarge text-cs-red-main cs-gradient-text">
                         Many&nbsp;Catholics long&nbsp;to&nbsp;read the&nbsp;Bible, but&nbsp;<span class="font-bold">don't&nbsp;know where&nbsp;to&nbsp;start.</span>
                     </div>
@@ -443,7 +443,7 @@
                         So&nbsp;they&nbsp;often&nbsp;begin,
                         and&nbsp;<b>then&nbsp;give&nbsp;up</b>.
                     </div>
-                    <img src="/src/assets/bible-timeline/vector-17.svg" class="w-72 mt-10">
+                    <img src="/src/assets/bible-timeline/vector-17.svg" class="mt-10 w-72">
                     <div class="font-sans text-center cs-bt-fs-extralarge text-cs-red-main cs-gradient-text">
                         <span class="whitespace-nowrap">
                             What if we told you
@@ -466,18 +466,12 @@
                     <img src="/src/assets/bible-timeline/12-periods-only.png" class="w-full mb-4" alt="12 Periods" />
 
                     <div class="cs-bt-fs-base text-center w-[70%] md:w-[50%]">
-                            <span class="whitespace-nowrap">
-                                The Bible Timeline methodology
-                            </span>
-                        <span class="whitespace-nowrap">
-                            breaks the Bible into <b>12 colour-coded</b>
-                            </span>
-                        <span class="whitespace-nowrap">
-                                <b>time periods</b>  that are easy to
-                            </span>
-                        <span class="whitespace-nowrap">
-                                understand and memorize!
-                            </span>
+
+                        The Bible Timeline methodology
+                        breaks the Bible into <b>12 colour-coded</b>
+                        <b>time periods</b> that are easy to
+                        understand and memorize!
+
                     </div>
 
                 </div>
@@ -485,10 +479,10 @@
 
             <div class="flex flex-col items-center w-full px-5 sm:px-10 bg-cs-paper">
                 <div class=" relative w-full max-w-[1000px] my-0 flex flex-col items-center">
-                    <div class=" w-full flex flex-col items-center justify-center mb-20">
-                        <img src="/src/assets/bible-timeline/hooked.svg" class="w-60 ml-20" alt="Vector 17">
+                    <div class="flex flex-col items-center justify-center w-full mb-20 ">
+                        <img src="/src/assets/bible-timeline/hooked.svg" class="ml-20 w-60" alt="Vector 17">
                     </div>
-                    <div class="flex flex-col md:flex-row items-center justify-around gap-4">
+                    <div class="flex flex-col items-center justify-around gap-4 md:flex-row">
                         <div class="w-full mt-8 font-sans text-center cs-bt-fs-large text-cs-grey">
                             <span class="whitespace-nowrap">
                                 During this course,
@@ -507,11 +501,11 @@
 
                     </div>
 
-                    <div class="flex flex-col justify-center items-center w-full mt-20">
+                    <div class="flex flex-col items-center justify-center w-full mt-20">
                         <div class="w-full mt-8 ml-auto text-center cs-bt-fs-extralarge text-cs-red-main cs-gradient-text">
                             With this approach, you will grasp <b>the Big Picture of the Bible</b> from start to finish, the Old and the New Testament... for&nbsp;life!
                         </div>
-                        <img src="/src/assets/bible-timeline/im-in.svg" class="w-60 text-center">
+                        <img src="/src/assets/bible-timeline/im-in.svg" class="text-center w-60">
 
                     </div>
                 </div>
@@ -553,7 +547,7 @@
 
             <div class="flex flex-col items-center w-full bg-cs-paper">
                 <div class="relative w-full max-w-[1000px] flex flex-col gap-8 text-center items-center py-16">
-                    <div class="w-full mt-8 ml-auto text-center cs-bt-fs-extralarge text-cs-red-main cs-gradient-text font-bold">
+                    <div class="w-full mt-8 ml-auto font-bold text-center cs-bt-fs-extralarge text-cs-red-main cs-gradient-text">
                         We make the complex<br>
                         simple.
                     </div>
@@ -723,4 +717,3 @@
 </body>
 
 </html>
-
