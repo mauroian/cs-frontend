@@ -567,6 +567,129 @@ const HoverIntent = (function() {
 
 })();
 
+
+// === BIBLICAL JOURNEY THROUGH THE MASS DESKTOP TOOLTIP LOGIC ===
+
+//Timeline params config
+const BIBLE_MASS_FADE_DURATION = 400;   //DO NOT CHANGE THIS
+
+const BIBLE_MASS_TOP_OFFSET = 10; // Offset from the top of the image to the tooltip
+
+//Configurable card content
+
+const massSections = [
+  {
+    title: 'Introductory Rites',
+    subtitle: '', //not used for this section
+    desc: '<div></div>', //not used at present
+    img: '/src/assets/bible-timeline/bm-card-s1.jpg',
+    sectionPrimaryColor: 'cs-mass-section1-pri',
+    sectionSecondaryColor: 'cs-mass-section1-sec',
+    sectionSubsectionColor: '', //not used for this section
+    momentTextBg: 'cs-mass-section1-moment-text-bg',
+    momentNumberBg: 'cs-mass-section1-moment-number-bg',
+    titleFontColor: 'cs-mass-section1-title-font',
+    momentTextFontColor: 'cs-mass-section1-moment-text-font',
+    momentNumberFontColor: 'cs-mass-section1-moment-number-font',
+    sectionCardBg: 'cs-mass-section1-card-bg',
+    toolTipTitle: 'The Mass of St Gregory with Cardinal Albrecht of Brandenburg',
+    toolTipAuthor: 'Anonymous Master from the Cranach Workshop (1520-1525)',
+    toolTipLocation: 'Johannisburg Palace, Aschaffenburg, Germany',
+  },
+  {
+    title: 'Liturgy of the Word',
+    subtitle: '', //not used for this section
+    desc: '<div></div>', //not used at present
+    img: '/src/assets/bible-timeline/bm-card-s2.jpg',
+    sectionPrimaryColor: 'cs-mass-section2-pri',
+    sectionSecondaryColor: 'cs-mass-section2-sec',
+    sectionSubsectionColor: '', //not used for this section
+    momentTextBg: 'cs-mass-section2-moment-text-bg',
+    momentNumberBg: 'cs-mass-section2-moment-number-bg',
+    titleFontColor: 'cs-mass-section2-title-font',
+    momentTextFontColor: 'cs-mass-section2-moment-text-font',
+    momentNumberFontColor: 'cs-mass-section2-moment-number-font',
+    sectionCardBg: 'cs-mass-section2-card-bg',
+    toolTipTitle: 'Pope Gregory I The Great Or Dialogue',
+    toolTipAuthor: 'Francisco De Zurbaran (1626-1627)',
+    toolTipLocation: 'Museum of Fine Arts, Seville, Spain',
+  },
+  {
+    title: 'Liturgy of the Eucharist',
+    subtitle: 'Offertory',
+    desc: '<div></div>', //not used at present
+    img: '/src/assets/bible-timeline/bm-card-s3-1.jpg',
+    sectionPrimaryColor: 'cs-mass-section3-pri',
+    sectionSecondaryColor: 'cs-mass-section3-sec',
+    sectionSubsectionColor: 'cs-mass-section3-subsection',
+    momentTextBg: 'cs-mass-section3-moment-text-bg',
+    momentNumberBg: 'cs-mass-section3-moment-number-bg',
+    titleFontColor: 'cs-mass-section3-title-font',
+    momentTextFontColor: 'cs-mass-section3-moment-text-font',
+    momentNumberFontColor: 'cs-mass-section3-moment-number-font',
+    sectionCardBg: 'cs-mass-section3-card-bg',
+    toolTipTitle: 'The Supper at Emmaus',
+    toolTipAuthor: 'Matthias Stom (1633-1639)',
+    toolTipLocation: 'National Museum Thyssen-Bornemisza, Madrid, Spain',
+  },
+  {
+    title: 'Liturgy of the Eucharist',
+    subtitle: 'Eucharistic Prayer',
+    desc: '<div></div>', //not used at present
+    img: '/src/assets/bible-timeline/bm-card-s3-2.jpg',
+    sectionPrimaryColor: 'cs-mass-section3-pri',
+    sectionSecondaryColor: 'cs-mass-section3-sec',
+    sectionSubsectionColor: 'cs-mass-section3-subsection',
+    momentTextBg: 'cs-mass-section3-moment-text-bg',
+    momentNumberBg: 'cs-mass-section3-moment-number-bg',
+    titleFontColor: 'cs-mass-section3-title-font',
+    momentTextFontColor: 'cs-mass-section3-moment-text-font',
+    momentNumberFontColor: 'cs-mass-section3-moment-number-font',
+    sectionCardBg: 'cs-mass-section3-card-bg',
+    toolTipTitle: 'Mass of St Gregory',
+    toolTipAuthor: 'Bernt Notke (1479)',
+    toolTipLocation: 'Cathedral, Aarhus, Denmark',
+  },
+  {
+    title: 'Liturgy of the Eucharist',
+    subtitle: 'Communion Rite',
+    desc: '<div></div>', //not used at present
+    img: '/src/assets/bible-timeline/bm-card-s3-3.jpg',
+    sectionPrimaryColor: 'cs-mass-section3-pri',
+    sectionSecondaryColor: 'cs-mass-section3-sec',
+    sectionSubsectionColor: 'cs-mass-section3-subsection',
+    momentTextBg: 'cs-mass-section3-moment-text-bg',
+    momentNumberBg: 'cs-mass-section3-moment-number-bg',
+    titleFontColor: 'cs-mass-section3-title-font',
+    momentTextFontColor: 'cs-mass-section3-moment-text-font',
+    momentNumberFontColor: 'cs-mass-section3-moment-number-font',
+    sectionCardBg: 'cs-mass-section3-card-bg',
+    toolTipTitle: 'Last Supper',
+    toolTipAuthor: 'Fra Angelico (1440)',
+    toolTipLocation: 'Museum of San Marco Convent, Florence, Italy',
+  },
+  {
+    title: 'Concluding Rites',
+    subtitle: '', //not used for this section
+    desc: '<div></div>', //not used at present
+    img: '/src/assets/bible-timeline/bm-card-s4.jpg',
+    sectionPrimaryColor: 'cs-mass-section4-pri',
+    sectionSecondaryColor: 'cs-mass-section4-sec',
+    sectionSubsectionColor: '', //not used for this section
+    momentTextBg: 'cs-mass-section4-moment-text-bg',
+    momentNumberBg: 'cs-mass-section4-moment-number-bg',
+    titleFontColor: 'cs-mass-section4-title-font',
+    momentTextFontColor: 'cs-mass-section4-moment-text-font',
+    momentNumberFontColor: 'cs-mass-section4-moment-number-font',
+    sectionCardBg: 'cs-mass-section4-card-bg',
+    toolTipTitle: 'Mass in a  Connemara Cabin',
+    toolTipAuthor: 'Aloysius O’Kelly (1883)',
+    toolTipLocation: 'National Gallery, Dublin; Ireland',
+  },
+];
+
+
+
 // === TIMELINE DESKTOP TOOLTIP LOGIC ===
 
 //Timeline params config

@@ -25,7 +25,7 @@
                     <div class="px-3 mt-3 font-sans font-bold cs-bt-fs-extralarge cs-gradient-text">
                         <h1>The&nbsp;Bible&nbsp;Timeline Course</h1>
                     </div>
-                    <div class="mt-3 font-sans font-bold tracking-widest uppercase cs-bt-one-story-fs text-cs-red-main">12 Periods, One Story</div>
+                    <div class="mt-3 font-sans font-bold tracking-widest uppercase cs-bt-fs-one-story text-cs-red-main">12 Periods, One Story</div>
                     <div class="relative flex-col items-center justify-center hidden gap-0 mt-12 rounded-lg md:flex sm:flex-row flex-nowrap"
                         id="timeline-desktop">
                         <!-- Immagini dei periodi -->
@@ -363,7 +363,7 @@
                 <div class="w-full max-w-[1000px] flex flex-col text-center gap-16 py-16 px-6">
                     <div>
                         <div class="mb-6 tracking-widest uppercase cs-bt-uppercase-prompt-fs text-cs-red-main">Register today</div>
-                        <div class="font-sans font-bold cs-bt-fs-medium cs-gradient-text">Jeff Cavins' world-famous Catholic Bible Study</div>
+                        <div class="font-sans font-bold cs-bt-fs-large cs-gradient-text">Jeff Cavins' world-famous Catholic Bible&nbsp;Study</div>
                     </div>
                     <div class="flex flex-col items-center gap-6 md:flex-row md:gap-10">
                         <div class="flex flex-col items-center text-center p-6 bg-cs-paper-shade rounded-xl shadow-cs-all-around min-w-[30%] max-w-[400px]">
@@ -421,21 +421,28 @@
                         <br />too&nbsp;big&nbsp;and complicated?
                     </div>
 
-                    <img src="/src/assets/bible-timeline/vector-yes.svg" class="w-40 mb-20 text-center md:w-52">
+                    <img src="/src/assets/bible-timeline/vector-yes.svg" class="w-40 mb-20 text-center sm:w-44 md:w-52">
 
                 </div>
             </div>
 
             <div class="flex flex-col items-center w-full px-5 sm:px-10 bg-cs-paper-dark">
                 <div class="w-full max-w-[1000px] flex flex-col items-center py-12">
+
                     <img src="/src/assets/bible-timeline/cloud-bible-characters.png" alt="Bible Timeline" class="z-10 w-full max-w-[600px]">
+
+                    <div class="w-full mt-14 sm:mt-20  text-center cs-bt-fs-large max-w-[600px]">
+                        There are <b>so many characters and stories</b>,
+                        especially in the Old Testament!
+                    </div>
                 </div>
+
             </div>
 
             <!-- Course Details -->
             <div class="flex flex-col items-center w-full px-5 sm:px-10 bg-cs-paper">
                 <div class=" relative w-full max-w-[1000px] my-0 flex flex-col items-center">
-                    <img src="/src/assets/bible-timeline/vector-the-truth-is.svg" class="mt-12 w-72">
+                    <img src="/src/assets/bible-timeline/vector-the-truth-is.svg" class="w-48 mt-12 sm:w-52 md:w-60">
                     <div class="mt-12 font-sans text-center cs-bt-fs-extralarge text-cs-red-main cs-gradient-text">
                         Many&nbsp;Catholics long&nbsp;to&nbsp;read the&nbsp;Bible, but&nbsp;<span class="font-bold">don't&nbsp;know where&nbsp;to&nbsp;start.</span>
                     </div>
@@ -443,7 +450,7 @@
                         So&nbsp;they&nbsp;often&nbsp;begin,
                         and&nbsp;<b>then&nbsp;give&nbsp;up</b>.
                     </div>
-                    <img src="/src/assets/bible-timeline/vector-thats-me.svg" class="mt-10 w-72">
+                    <img src="/src/assets/bible-timeline/vector-thats-me.svg" class="w-48 mt-10 sm:w-52 md:w-60">
                     <div class="font-sans text-center cs-bt-fs-extralarge text-cs-red-main cs-gradient-text">
                         <span class="whitespace-nowrap">
                             What if we told you
@@ -458,14 +465,14 @@
                             to this problem?
                         </span>
                     </div>
-                    <img src="/src/assets/bible-timeline/vector-tell-me-more.svg" class="w-72">
+                    <img src="/src/assets/bible-timeline/vector-tell-me-more.svg" class="w-48 sm:w-52 md:w-60">
                 </div>
             </div>
             <div class="flex flex-col items-center w-full px-5 sm:px-10 bg-cs-paper-shade">
                 <div class=" relative w-full max-w-[1000px] my-0 flex flex-col items-center py-8">
                     <img src="/src/assets/bible-timeline/12-periods-only.png" class="w-full mb-4" alt="12 Periods" />
 
-                    <div class="cs-bt-fs-base text-center w-[70%] md:w-[50%]">
+                    <div class="cs-bt-fs-medium text-center w-[70%] md:w-[50%] mt-4">
 
                         The Bible Timeline methodology
                         breaks the Bible into <b>12 colour-coded</b>
@@ -480,7 +487,7 @@
             <div class="flex flex-col items-center w-full px-5 sm:px-10 bg-cs-paper">
                 <div class=" relative w-full max-w-[1000px] my-0 flex flex-col items-center">
                     <div class="flex flex-col items-center justify-center w-full mb-20 ">
-                        <img src="/src/assets/bible-timeline/vector-im-hooked.svg" class="ml-20 w-60" alt="Vector 17">
+                        <img src="/src/assets/bible-timeline/vector-im-hooked.svg" class="w-48 ml-20 sm:w-52 md:w-60" alt="Vector 17">
                     </div>
                     <div class="flex flex-col items-center justify-around gap-4 md:flex-row">
                         <div class="w-full mt-8 font-sans text-center cs-bt-fs-large text-cs-grey">
@@ -501,10 +508,10 @@
                     </div>
 
                     <div class="flex flex-col items-center justify-center w-full mt-20">
-                        <div class="w-full mt-8 ml-auto text-center cs-bt-fs-extralarge text-cs-red-main cs-gradient-text">
+                        <div class="w-full mt-8 ml-auto text-center cs-bt-fs-large text-cs-red-main cs-gradient-text">
                             With this approach, you will grasp <b>the Big Picture of the Bible</b> from start to finish, the Old and the New Testament... for&nbsp;life!
                         </div>
-                        <img src="/src/assets/bible-timeline/vector-im-in.svg" class="text-center w-60">
+                        <img src="/src/assets/bible-timeline/vector-im-in.svg" class="w-40 text-center sm:w-44 md:w-52">
 
                     </div>
                 </div>
@@ -515,29 +522,29 @@
 
                     <div class="flex flex-col items-center cs-benefit-box bg-cs-paper">
                         <img src="/src/assets/bible-timeline/icon-map.png" class="cs-benefit-icon" alt="Discover">
-                        <div class="font-bold text-center text-cs-red-main cs-benefit cs-gradient-text">Discover</div>
-                        <div class="text-center cs-benefit-descr">
+                        <div class="font-bold text-center text-cs-red-main cs-bt-fs-benefit cs-gradient-text">Discover</div>
+                        <div class="px-6 text-center cs-bt-fs-base">
                             how the key people, places, and events in the Bible fit&nbsp;together.
                         </div>
                     </div>
                     <div class="flex flex-col items-center cs-benefit-box bg-cs-paper">
                         <img src="/src/assets/bible-timeline/icon-preacher.png" class="cs-benefit-icon" alt="Gain">
-                        <div class="font-bold text-center text-cs-red-main cs-benefit cs-gradient-text">Gain</div>
-                        <div class="text-center cs-benefit-descr">
+                        <div class="font-bold text-center text-cs-red-main cs-bt-fs-benefit cs-gradient-text">Gain</div>
+                        <div class="px-6 text-center cs-bt-fs-base">
                             a greater understanding for the Scripture readings you hear&nbsp;at&nbsp;mass.
                         </div>
                     </div>
                     <div class="flex flex-col items-center cs-benefit-box bg-cs-paper">
                         <img src="/src/assets/bible-timeline/icon-scroll.png" class="cs-benefit-icon" alt="Understand">
-                        <div class="font-bold text-center text-cs-red-main cs-benefit cs-gradient-text">Understand</div>
-                        <div class="text-center cs-benefit-descr">
+                        <div class="font-bold text-center text-cs-red-main cs-bt-fs-benefit cs-gradient-text">Understand</div>
+                        <div class="px-6 text-center cs-bt-fs-base">
                             how the events in the Old Testament are fulfilled in the New&nbsp;Testament.
                         </div>
                     </div>
                     <div class="flex flex-col items-center cs-benefit-box bg-cs-paper">
                         <img src="/src/assets/bible-timeline/icon-lightbulb.png" class="cs-benefit-icon" alt="Learn">
-                        <div class="font-bold text-center text-cs-red-main cs-benefit cs-gradient-text">Learn</div>
-                        <div class="text-center cs-benefit-descr">
+                        <div class="font-bold text-center text-cs-red-main cs-bt-fs-benefit cs-gradient-text">Learn</div>
+                        <div class="px-6 text-center cs-bt-fs-base">
                             how God's Word applies to your life&nbsp;today.
                         </div>
                     </div>
@@ -550,7 +557,7 @@
                         We make the complex<br>
                         simple.
                     </div>
-                    <div class="w-full px-8 text-center cs-fs-lg">
+                    <div class="w-full px-8 text-center cs-bt-fs-large">
                         Join us online. <b>Come&nbsp;and&nbsp;see!</b>
                     </div>
                     <div class="w-full text-center">
@@ -563,8 +570,7 @@
             <div class="flex flex-col items-center w-full p-5 sm:p-10 bg-cs-paper-dark">
                 <div class="w-full max-w-[1000px] my-10 flex flex-col gap-6  text-center items-center">
                     <span class="tracking-widest uppercase cs-bt-uppercase-prompt-fs text-cs-red-main">endorsement</span>
-                    <div class="max-w-2xl font-sans font-bold cs-bt-fs-video-title cs-gradient-text">Jeff Cavins endorses
-                        Mauro Iannicelli as Bible Timeline teacher</div>
+                    <div class="max-w-2xl font-sans font-bold cs-bt-fs-video-title cs-gradient-text">Jeff Cavins endorses Mauro Iannicelli as Bible Timeline teacher</div>
                     <img src="/src/assets/bible-timeline/jeff-endorsement-thumbnail.jpg" alt="Mauro's Introduction"
                         class="w-full h-auto max-w-2xl rounded-xl">
                     <div class="mt-2 font-serif font-bold text-center md:mt-16 cs-fs-3xl">

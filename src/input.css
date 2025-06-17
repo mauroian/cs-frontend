@@ -1025,24 +1025,24 @@
         @apply text-sm xsm:text-base;
     }
 
-    .cs-bt-one-story-fs {
-        @apply text-lg;
+    .cs-bt-fs-one-story {
+        @apply text-xl;
     }
 
     .cs-bt-fs-extralarge {
-        @apply text-3xl leading-snug xsm:text-4xl sm:text-4xl md:text-6xl;
+        @apply text-3xl leading-snug xsm:text-4xl sm:text-5xl md:text-6xl;
     }
 
     .cs-bt-fs-large {
-        @apply text-xl sm:text-3xl;
+        @apply text-xl leading-snug xsm:text-2xl sm:text-3xl md:text-4xl;
     }
 
     .cs-bt-fs-medium {
-        @apply text-2xl;
+        @apply text-lg leading-snug xsm:text-xl sm:text-2xl md:text-3xl;
     }
 
     .cs-bt-fs-base {
-        @apply text-lg sm:text-2xl;
+        @apply text-base leading-snug xsm:text-lg sm:text-xl md:text-2xl;
     }
 
     .cs-bt-fs-video-title {
@@ -1057,12 +1057,8 @@
         @apply w-2/5 xsm:w-1/3 sm:w-1/2 max-w-32;
     }
 
-    .cs-benefit {
+    .cs-bt-fs-benefit {
         @apply cs-fs-xl sm:cs-fs-lg md:cs-fs-2xl;
-    }
-
-    .cs-benefit-descr {
-        @apply px-6 cs-fs-sm sm:cs-fs-xs md:cs-fs-sm;
     }
 
     /* #### BIBLE TIMELINE CHART MOBILE #### */
