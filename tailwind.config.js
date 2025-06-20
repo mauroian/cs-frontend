@@ -83,7 +83,7 @@ export default {
         "cs-period8-third": "#75C0FF",
         "cs-period9-pri": "#FFF944",
         "cs-period9-sec": "#B4B000",
-        "cs-period9-third": "#FFFF86",
+        "cs-period9-third": "#DDD948",
         "cs-period10-pri": "#EA5F00",
         "cs-period10-sec": "#AC4600",
         "cs-period10-third": "#FF9132",
