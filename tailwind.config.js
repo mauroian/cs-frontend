@@ -123,7 +123,7 @@ export default {
         "cs-mass-section3-pri-subsection": "#E09191",
         "cs-mass-section3-moment-text-bg": "#EBCDCD",
         "cs-mass-section3-moment-number-bg": "#C83E3E",
-        "cs-mass-section2-title-font": "#FFFFFF",
+        "cs-mass-section3-title-font": "#FFFFFF",
         "cs-mass-section3-moment-text-font": "#980000",
         "cs-mass-section3-moment-number-font": "#FFFFFF",
         "cs-mass-section3-card-bg": "#F7EAE6",

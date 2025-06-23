@@ -62,12 +62,19 @@
                                     class="flex flex-row items-center justify-between w-full cs-tooltip-header">
                                     <button id="timeline-tooltip-prev"
                                         class="flex items-center justify-center transition cs-tooltip-navigation disabled:opacity-0">
-                                        <img src="/src/assets/bible-timeline/prev.svg" /> prev
+                                        <svg width="13" height="25" viewBox="0 0 13 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M12 24L1 12.5L12 1" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                        prev
                                     </button>
                                     <div class="cs-tooltip-period" id="timeline-tooltip-period">1</div>
                                     <button id="timeline-tooltip-next"
                                         class="flex items-center justify-center transition cs-tooltip-navigation disabled:opacity-0">
-                                        next <img src="/src/assets/bible-timeline/next.svg" /></button>
+                                        next
+                                        <svg width="13" height="25" viewBox="0 0 13 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M1 1L12 12.5L1 24" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                    </button>
                                 </div>
                                 <div id="timeline-tooltip-box"
                                     class="flex flex-col items-center justify-center w-full cs-tooltip-card-content">

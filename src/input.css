@@ -1104,7 +1104,7 @@
     }
 
     .cs-tooltip-period {
-        @apply  font-bold cs-fs-3xl;
+        @apply  font-bold cs-fs-xs font-serif uppercase opacity-70 tracking-wider;
     }
 
     .cs-tooltip-navigation {

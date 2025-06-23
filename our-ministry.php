@@ -14,23 +14,41 @@
     <main class="cs-main">
         <div class="cs-main-div">
             <!-- Hero Section -->
-            <div class="relative flex flex-col flex-wrap items-center justify-center w-full text-white  bg-cs-red-main md:bg-transparent md:bg-[url(/src/assets/our-ministry-header.png)] bg-cover bg-center">
-                <div class="relative z-10 w-full max-w-[1100px] text-center py-8 md:py-12 px-6">
-                    <div class="w-full text-center md:w-1/2 md:text-left">
-                        <div class="px-3 mt-3 font-serif italic font-bold cs-bt-fs-extralarge">
-                            <h1>Our Mission</h1>
-                        </div>
-                        <div class="mt-3 mb-5 font-sans tracking-widest cs-bt-one-story-fs">
+            <div class="relative flex flex-col flex-wrap items-center justify-center w-full text-cs-red-main md:text-white  bg-cs-paper-shade bg-[url(/src/assets/our-ministry/screen-background-1.png)] md:bg-cover md:bg-center bg-top bg-[length:118%] bg-no-repeat">
+                <div class="relative z-10 w-full max-w-[1100px] text-center py-8 md:py-12 px-6 flex flex-col-reverse md:flex-row">
+                    <div class="w-full text-center md:w-1/2 md:text-left md:items-start items-center justify-center flex flex-col mt-10 md:mt-0">
+                        <img src="/src/assets/our-ministry/our-mission.svg" class="max-w-72 sm:max-w-96 mt-3 mb-6">
+                        <div class="my-5 font-sans tracking-widest cs-bt-one-story-fs">
                             Our mission is to serve <b>individuals and groups across parishes and dioceses</b> by
                             nurturing their spiritual growth in the Catholic faith and building community—leading them
                             into a deeper relationship with Jesus Christ.
                         </div>
-                        <button class="bg-transparent border-white rounded-md cs-support-us-button ">
-                            Support US
-                        </button>
                     </div>
-                    <div class="w-full md:w-1/2">
-
+                    <div class="w-full md:w-1/2 flex items-center justify-center">
+                        <div class="items-center justify-center w-5/6 relative hidden">
+                            <img src="/src/assets/our-ministry/screen-1.png"
+                                class="hidden md:block w-full h-full object-cover">
+                            <video class="absolute top-8 w-[78%] left-[11%]">
+                                <source src="/src/assets/videos/our-ministry.mp4" type="video/mp4">
+                                Your browser does not support the video tag.
+                            </video>
+                        </div>
+                        <div class="hidden md:flex items-center justify-center w-5/6 relative">
+                            <img src="/src/assets/our-ministry/screen-2.png"
+                                 class="hidden md:block w-full h-full object-cover">
+                            <video class="absolute top-[2%] w-[96%] left-[2%]">
+                                <source src="/src/assets/videos/our-ministry.mp4" type="video/mp4">
+                                Your browser does not support the video tag.
+                            </video>
+                        </div>
+                        <div class="flex md:hidden items-center justify-center w-full relative">
+                            <img src="/src/assets/our-ministry/screen-2.png"
+                                 class=" w-full h-full object-cover">
+                            <video class="absolute top-[2%] w-[96%] left-[2%]">
+                                <source src="/src/assets/videos/our-ministry.mp4" type="video/mp4">
+                                Your browser does not support the video tag.
+                            </video>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -38,9 +56,7 @@
             <!-- Testimonial Section -->
             <div class="relative flex flex-col flex-wrap items-center justify-center w-full text-cs-red-dark min-h-[300px] md:min-h-[700px]">
                 <div class="relative z-10 w-full max-w-[900px] text-center py-8 md:py-12 px-6 flex flex-col gap-7 items-center justify-center">
-                    <div class="font-serif italic font-bold cs-bt-fs-extralarge text-cs-red-main">
-                        Our Approach
-                    </div>
+                    <img src="/src/assets/our-ministry/our-approach.svg" class="max-w-72 sm:max-w-96 mb-6">
                     <div class="font-sans tracking-widest text-left cs-bt-one-story-fs">
                         We joyfully provide <b>free, live-streamed, high quality Catholic formation</b> designed to be life-changing—<b>offering engaging courses and Bible studies</b> that enrich the mind and stir the heart.
                     </div>
@@ -57,9 +73,7 @@
             <!-- Intercessor Section -->
             <div class="flex flex-col items-center w-full p-5 sm:p-10 bg-cs-paper-dark text-cs-red-dark">
                 <div class="w-full max-w-[1000px] my-10 flex flex-col gap-6  text-center items-center">
-                    <div class="font-serif italic font-bold cs-bt-fs-extralarge text-cs-red-main">
-                        Our Intercessors
-                    </div>
+                    <img src="/src/assets/our-ministry/our-intercessors.svg" class="max-w-72 sm:max-w-96 mb-6">
                     <img src="/src/assets/our-ministry/intercessor-st-john.png"
                         class="object-cover w-56 rounded-full aspect-square" alt="St John Marie Vianney">
                     <div class="max-w-2xl font-serif italic font-bold cs-bt-fs-large ">St John Marie Vianney</div>
@@ -73,9 +87,7 @@
             <!-- Our Logo -->
             <div class="relative bg-cs-paper-shade flex flex-col flex-wrap items-center justify-center w-full text-cs-gray min-h-[300px] md:min-h-[700px]">
                 <div class="relative z-10 w-full max-w-[900px] text-center py-8 md:py-12 px-6 flex flex-col gap-7 items-center justify-center">
-                    <div class="font-serif italic font-bold cs-bt-fs-extralarge text-cs-red-main ">
-                        Our Logo
-                    </div>
+                     <img src="/src/assets/our-ministry/our-logo.svg" class="max-w-72 sm:max-w-96 mb-6">
                     <div class="font-sans text-center cs-bt-one-story-fs">
                         Each element in our logo reflects a core aspect of our mission and teachings.
                     </div>
@@ -127,9 +139,7 @@
             <!-- Our Approach Section -->
             <div class="flex flex-col items-center w-full p-5 sm:p-10 bg-cs-paper-dark text-cs-red-dark">
                 <div class="w-full max-w-[1000px] my-10 flex flex-col gap-6  text-center items-center">
-                    <div class="font-serif italic font-bold cs-bt-fs-extralarge text-cs-red-main ">
-                        Our Courses
-                    </div>
+                    <img src="/src/assets/our-ministry/our-courses.svg" class="max-w-72 sm:max-w-96 mb-6">
                     <div class="flex flex-col" id="our-courses">
                         <!-- Course Cards Grid -->
                         <div class="grid w-full grid-cols-1 gap-8 mt-8 md:grid-cols-1">
@@ -241,9 +251,7 @@
             </div>
             <div class="flex flex-col items-center w-full pb-20 mx-auto bg-cs-paper-shade">
                 <div class="flex flex-col items-center w-full max-w-3xl gap-8 py-10">
-                    <div class="font-serif italic font-bold cs-bt-fs-extralarge text-cs-red-main ">
-                        Our Strenghts
-                    </div>
+                    <img src="/src/assets/our-ministry/our-strengths.svg" class="max-w-72 sm:max-w-96 mb-6">
                     <div class="cs-ministry-grid">
                         <div class="cs-ministry-grid-item">
                             <img src="/src/assets/our-ministry/vision.svg" class="cs-ministry-grid-item-icon" alt="Vision & Strategy">

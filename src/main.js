@@ -918,7 +918,7 @@ if (timelineDesktop && tooltipCard) {
     tooltipDesc.innerHTML = period.desc;
     tooltipImg.src = period.img;
     tooltipImg.alt = period.title;
-    timelinePeriod.textContent = `${index + 1}`;
+    timelinePeriod.innerHTML = `Period <span class="cs-fs-base ml-1">${index + 1}</span>`;
 
     // Populate artwork tooltip information
     const artTitle = document.getElementById('timeline-tooltip-art-title');
