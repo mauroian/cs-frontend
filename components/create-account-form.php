@@ -58,8 +58,8 @@
                     <span class="hidden cs-text">Hide terms and conditions</span>
                     <span class="transition-transform duration-300 cs-icon">
                         <!-- Note: cs-icon is called by Javascript -->
-                        <img src="/src/assets/accordion-expand-red.svg" class="w-6 h-6" alt="Expand">
-                        <img src="/src/assets/accordion-collapse-red.svg" class="hidden w-6 h-6" alt="Expand">
+                        <img src="/src/assets/accordion-collapse-red.svg" class="w-6 h-6" alt="Expand">
+                        <img src="/src/assets/accordion-expand-red.svg" class="hidden w-6 h-6" alt="Expand">
                     </span>
                 </button>
                 <div class="overflow-hidden transition-all duration-300 ease-in-out cs-content max-h-0">
