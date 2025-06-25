@@ -147,6 +147,8 @@
                         </div>
                     </div>
                 </div>
+            </div>
+        </div>
     </main>
     <?php require_once 'components/footer.php'; ?>
 </body>
