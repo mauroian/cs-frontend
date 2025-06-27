@@ -1050,7 +1050,7 @@
     }
 
     .cs-benefit-box {
-        @apply gap-4 py-8 sm:gap-6;
+        @apply gap-4 px-1 py-8 sm:gap-6;
     }
 
     .cs-benefit-icon {
@@ -1174,7 +1174,62 @@
         @apply font-sans font-bold uppercase cs-fs-sm tracking-wider rounded-md bg-cs-red-main text-white py-1.5 px-6 border border-transparent text-center transition-all shadow-sm hover:bg-cs-red-dark disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none;
     }
 
-        /* #### BG VANILLA CSS #### */
+    /* #### BIBLE AND THE MASS #### */
+    .cs-bm-benefit-icon {
+        @apply h-3/5 xsm:h-1/3 sm:h-1/2 max-h-40;
+    }
+
+    .cs-bm-fs-benefit {
+        @apply cs-fs-base sm:cs-fs-base md:cs-fs-lg;
+    }
+
+    .mass-period-img {
+        @apply opacity-0;
+    }
+
+    .cs-mass-tooltip-card {
+        @apply w-[480px] shadow-cs-bible-timeline-cards;
+    }
+
+    .cs-mass-tooltip-header {
+        @apply  h-16 px-3 rounded-t-lg;
+    }
+
+    .cs-mass-tooltip-period {
+        @apply  font-bold cs-fs-xs font-serif uppercase opacity-70 tracking-wider;
+    }
+
+    .cs-mass-tooltip-navigation {
+        @apply gap-2 uppercase cs-fs-3xs disabled:opacity-0;
+    }
+
+    .cs-mass-tooltip-card-content {
+        @apply  px-3 pt-2 last:pb-5 last:rounded-b-lg;
+    }
+
+    .cs-mass-tooltip-card-title {
+        @apply font-bold text-center cs-fs-xl pb-2;
+    }
+
+    .cs-mass-tooltip-card-description {
+        @apply w-full uppercase font-bold tracking-widest;
+    }
+
+    .cs-mass-tooltip-chips {
+        @apply uppercase border-2 font-bold rounded-3xl flex flex-row gap-0.5 cs-fs-2xs py-0.5 pr-1;
+    }
+
+    .cs-mass-tooltip-card-img {
+        /* Larghezza immagine riempie la card
+            @apply object-contain w-auto border-gray-600 bg-gray-50;
+        */
+        /* Altezza immagine costante
+            @apply object-cover w-auto h-40 border-gray-600 bg-gray-50;
+        */
+        @apply object-contain w-auto bg-gray-50 max-w-[50%];
+    }
+
+    /* #### BG VANILLA CSS #### */
     .cs-login {
         @apply  flex flex-col items-center min-h-[746px] cs-main px-5 sm:px-8;
         background-repeat: no-repeat;
@@ -1226,6 +1281,12 @@
 
     .cs-bg-about-us-rabbi {
         background-image: url('/src/assets/about-us-welcoming.png');
+        background-position: top;
+        background-size: cover;
+    }
+
+    .cs-bg-chalice-host {
+        background-image: url('/src/assets/bible-and-the-mass/chalice-host.jpg');
         background-position: top;
         background-size: cover;
     }

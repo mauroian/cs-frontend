@@ -1101,3 +1101,312 @@ function setupTimelineObserver() {
 }
 
 setupTimelineObserver();
+
+// === MASS DESKTOP TOOLTIP LOGIC ===
+
+//Mass params config
+const FADE_DURATION_MASS = 400;   //DO NOT CHANGE THIS
+
+const TOP_OFFSET_MASS = 10; // Offset from the top of the image to the tooltip
+
+//Configurable card content
+const massPeriods = [
+  {
+    title: 'Introductory Rites',
+    books: 'Sign of the Cross, Opening Greeting, Penitential Act, Kyrie, Gloria, Collect',
+    img: '/src/assets/bible-and-the-mass/bm-card-s1.jpg',
+    primaryColor: 'cs-mass-section1-pri',
+    secondaryColor: 'cs-mass-section1-sec',
+    textColor: 'text-white',
+    imgWrapperColor: 'cs-mass-section1-card-bg',
+    chipBorder: 'cs-mass-section1-sec',
+    chipNumberBg: 'cs-mass-section1-pri',
+    chipNumber: 'cs-mass-section1-moment-number-font',
+    chipText: 'cs-mass-section1-moment-text-font',
+    chipBackground: 'cs-mass-section1-moment-text-bg',
+  },
+  {
+    title: 'Liturgy of the Word',
+    books: 'First Reading, Responsorial Psalm, Second Reading, Gospel Reading, The Homily, The Creed, The Bidding Prayers',
+    img: '/src/assets/bible-and-the-mass/bm-card-s2.jpg',
+    primaryColor: 'cs-mass-section2-pri',
+    secondaryColor: 'cs-mass-section2-sec',
+    textColor: 'text-white',
+    imgWrapperColor: 'cs-mass-section2-card-bg',
+    chipBorder: 'cs-mass-section2-sec',
+    chipNumberBg: 'cs-mass-section2-pri',
+    chipNumber: 'cs-mass-section2-moment-number-font',
+    chipText: 'cs-mass-section2-moment-text-font',
+    chipBackground: 'cs-mass-section2-moment-text-bg',
+  },
+  {
+    title: 'Liturgy of the Eucharist',
+    desc: 'OFFERTORY',
+    books: 'Presentation of the Gifts, Preparatory Prayer, Prayer over the Offerings',
+    img: '/src/assets/bible-and-the-mass/bm-card-s3-1.jpg',
+    primaryColor: 'cs-mass-section3-pri',
+    secondaryColor: 'cs-mass-section3-sec',
+    subsectionColor: 'cs-mass-section3-pri-subsection',
+    textColor: 'text-white',
+    imgWrapperColor: 'cs-mass-section3-card-bg',
+    chipBorder: 'cs-mass-section3-sec',
+    chipNumberBg: 'cs-mass-section3-pri',
+    chipNumber: 'cs-mass-section3-moment-number-font',
+    chipText: 'cs-mass-section3-moment-text-font',
+    chipBackground: 'cs-mass-section3-moment-text-bg',
+  },
+  {
+    title: 'Liturgy of the Eucharist',
+    desc: 'Eucharistic Prayer',
+    books: 'Preface Dialogue, Preface Prayer, Sanctus, Praise After The Sanctus, Epiclesis Upon the Gifts, Prayer Of Consecration, Mistery Of Faith, Anamnesis and Oblation, Epliclesis Upon the Faithful, Intercession, Doxology and Great Amen',
+    img: '/src/assets/bible-and-the-mass/bm-card-s3-2.jpg',
+    primaryColor: 'cs-mass-section3-pri',
+    secondaryColor: 'cs-mass-section3-sec',
+    subsectionColor: 'cs-mass-section3-pri-subsection',
+    textColor: 'text-white',
+    imgWrapperColor: 'cs-mass-section3-card-bg',
+    chipBorder: 'cs-mass-section3-sec',
+    chipNumberBg: 'cs-mass-section3-pri',
+    chipNumber: 'cs-mass-section3-moment-number-font',
+    chipText: 'cs-mass-section3-moment-text-font',
+    chipBackground: 'cs-mass-section3-moment-text-bg',
+  },
+  {
+    title: 'Liturgy of the Eucharist',
+    desc: 'Communion Rite',
+    books: 'Lord\'s Prayer, Sign of Peace, Breaking of the Bread, Invitation to Communion, Communion, Prayer after Communion',
+    img: '/src/assets/bible-and-the-mass/bm-card-s3-3.jpg',
+    primaryColor: 'cs-mass-section3-pri',
+    secondaryColor: 'cs-mass-section3-sec',
+    subsectionColor: 'cs-mass-section3-pri-subsection',
+    textColor: 'text-white',
+    imgWrapperColor: 'cs-mass-section3-card-bg',
+    chipBorder: 'cs-mass-section3-sec',
+    chipNumberBg: 'cs-mass-section3-pri',
+    chipNumber: 'cs-mass-section3-moment-number-font',
+    chipText: 'cs-mass-section3-moment-text-font',
+    chipBackground: 'cs-mass-section3-moment-text-bg',
+  },
+  {
+    title: 'Concluding Rites',
+    books: 'First Reading, Responsorial Psalm, Second Reading, Gospel Reading, The Homily, The Creed, The Bidding Prayers',
+    img: '/src/assets/bible-and-the-mass/bm-card-s4.jpg',
+    primaryColor: 'cs-mass-section4-pri',
+    secondaryColor: 'cs-mass-section4-sec',
+    textColor: 'text-white',
+    imgWrapperColor: 'cs-mass-section4-card-bg',
+    chipBorder: 'cs-mass-section4-sec',
+    chipNumberBg: 'cs-mass-section4-pri',
+    chipNumber: 'cs-mass-section4-moment-number-font',
+    chipText: 'cs-mass-section4-moment-text-font',
+    chipBackground: 'cs-mass-section4-moment-text-bg',
+  },
+];
+
+//code continues (not for config: don't change it)
+
+const massDesktop = document.getElementById('mass-desktop');
+const massTooltipBox = document.getElementById('mass-tooltip-box');
+const massTooltipImgBox = document.getElementById('mass-tooltip-img-box');
+const massTooltipHeader = document.getElementById('mass-tooltip-header');
+const massTooltipCard = document.getElementById('mass-tooltip-card');
+const massTooltipTitle = document.getElementById('mass-tooltip-title');
+const massTooltipDesc = document.getElementById('mass-tooltip-desc');
+const massTooltipBooks = document.getElementById('mass-tooltip-books');
+const massBtnPrev = document.getElementById('mass-tooltip-prev');
+const massBtnNext = document.getElementById('mass-tooltip-next');
+const massTooltipImg = document.getElementById('mass-tooltip-img');
+const massPeriod = document.getElementById('mass-tooltip-period');
+
+let currentMassPeriodIndex = null;
+let hideMassTimeout = null;
+let lastMassPrimary = null;
+let lastMassSecondary = null;
+let lastMassDesc = null;
+let lastMassText = null;
+let lastMassImgBox = null;
+
+if (massDesktop && massTooltipCard) {
+  const imgs = massDesktop.querySelectorAll('.mass-period-img');
+
+  function showMassTooltip(index, anchorImg) {
+    const period = massPeriods[index];
+    if (!period) return;
+    // Rimuovi le vecchie classi colore
+    if (lastMassPrimary) massTooltipBox.classList.remove(`bg-${lastMassPrimary}`);
+    if (lastMassSecondary) massTooltipHeader.classList.remove(`bg-${lastMassSecondary}`);
+    if (lastMassDesc) massTooltipDesc.classList.remove(`bg-${lastMassDesc}`);
+    if (lastMassText) massTooltipCard.classList.remove(lastMassText);
+    if (lastMassImgBox) massTooltipImgBox.classList.remove(`bg-${lastMassImgBox}`);
+    // Aggiungi le nuove classi colore
+    massTooltipBox.classList.add(`bg-${period.primaryColor}`);
+    massTooltipDesc.classList.add(`bg-${period.subsectionColor}`);
+    massTooltipHeader.classList.add(`bg-${period.secondaryColor}`);
+    massTooltipImgBox.classList.add(`bg-${period.imgWrapperColor}`);
+    massTooltipCard.classList.add(period.textColor);
+    // Aggiorna i tracker
+    lastMassPrimary = period.primaryColor;
+    lastMassSecondary = period.secondaryColor;
+    lastMassDesc = period.subsectionColor;
+    lastMassText = period.textColor;
+    lastMassImgBox = period.imgWrapperColor;
+    currentMassPeriodIndex = index;
+    massTooltipTitle.textContent = period.title;
+    if(period.desc) {
+        massTooltipDesc.innerHTML = `<div class="py-3">${period.desc}</div>`;
+    } else {
+        massTooltipDesc.innerHTML = '<div></div>'; // Placeholder if no description
+    }
+    massTooltipImg.src = period.img;
+    massTooltipImg.alt = period.title;
+    massPeriod.innerHTML = `Section <span class="cs-fs-base ml-1">${index + 1}</span>`;
+
+    // Badge libri
+    massTooltipBooks.innerHTML = '';
+    period.books.split(',').forEach((book, i, arr) => {
+      const span = document.createElement('span');
+      span.innerHTML = `<span class="rounded-full ring-2 ring-${period.chipBorder} bg-${period.chipNumberBg} px-2 py-0 text-${period.chipNumber} text-center mr-1">${i+1}</span> ${book.trim()}`;
+      span.className = [
+        'cs-mass-tooltip-chips',
+        `text-${period.chipText}`,
+        `bg-${period.chipBackground}`,
+        `border-${period.chipBorder}`,
+      ].join(' ');
+      massTooltipBooks.appendChild(span);
+    });
+    // Posiziona la card sotto l'immagine attiva
+    const rect = anchorImg.getBoundingClientRect();
+    const viewportWidth = window.innerWidth;
+    const parentRect = massDesktop.getBoundingClientRect();
+    const cardWidth = massTooltipCard.offsetWidth || 400; // fallback se non ancora renderizzata
+    // posizione ideale centrata
+    let left = rect.left + (rect.width / 2) - (cardWidth / 2);
+    // correzione se esce a sinistra
+    if (left < 10) {
+      left = 10; // 10px padding from left edge of viewport
+    } else if (left + cardWidth > viewportWidth - 10) {
+      left = viewportWidth - cardWidth - 30; // 10px padding from right edge
+    }
+    // correzione se esce a destra
+    const relativeLeft = left - parentRect.left;
+
+    massTooltipCard.style.left = `${relativeLeft}px`;
+    massTooltipCard.style.top = `calc(${rect.bottom - parentRect.top + TOP_OFFSET}px)`;
+    // Mostra la card con transizione
+    massTooltipCard.classList.remove('hidden');
+    setTimeout(() => {
+      massTooltipCard.classList.add('opacity-100');
+      massTooltipCard.classList.remove('opacity-0');
+    }, 10);
+    // Gestisci pulsanti
+    massBtnPrev.disabled = index === 0 ? 'disabled' : '';
+    massBtnNext.disabled = index === massPeriods.length - 1 ? 'disabled' : '';
+  }
+
+  function hideMassTooltip() {
+    massTooltipCard.classList.remove('opacity-100');
+    massTooltipCard.classList.add('opacity-0');
+    hideMassTimeout = setTimeout(() => {
+      massTooltipCard.classList.add('hidden');
+    }, FADE_DURATION_MASS);
+  }
+
+  imgs.forEach((img, idx) => {
+    img.addEventListener('mouseenter', (e) => {
+      clearTimeout(hideMassTimeout);
+      showMassTooltip(idx, img);
+    });
+    img.addEventListener('mouseleave', (e) => {
+      hideMassTimeout = setTimeout(hideMassTooltip, 200);
+    });
+  });
+  massTooltipCard.addEventListener('mouseenter', () => {
+    clearTimeout(hideMassTimeout);
+  });
+  massTooltipCard.addEventListener('mouseleave', () => {
+    hideMassTimeout = setTimeout(hideMassTooltip, 200);
+  });
+  massBtnPrev.addEventListener('click', (e) => {
+    e.stopPropagation();
+    if (currentMassPeriodIndex > 0) {
+      showMassTooltip(currentMassPeriodIndex - 1, imgs[currentMassPeriodIndex - 1]);
+    }
+  });
+  massBtnNext.addEventListener('click', (e) => {
+    e.stopPropagation();
+    if (currentMassPeriodIndex < massPeriods.length - 1) {
+      showMassTooltip(currentMassPeriodIndex + 1, imgs[currentMassPeriodIndex + 1]);
+    }
+  });
+}
+
+
+// === START OF IMAGE ANIMATION FOR BIBLE MASS ===
+// Add this at the end of your JavaScript file
+
+// Mass sequential fade-in animation configuration
+const MASS_ANIMATION = {
+  initialDelay: 0,  // Delay before the first image appears (ms)
+  itemDelay: 100,     // Delay between each image appearance (ms)
+  fadeDuration: 600,  // Duration of each fade animation (ms)
+  easing: 'ease-in-out' // Animation timing function
+};
+
+const MASS_SHADOW_ANIMATION = {
+  delay: 2000,        // Delay before the shadow appears (ms)
+}
+
+
+// Function to animate the mass images
+function animateMassImages() {
+  const massContainer = document.getElementById('mass-desktop');
+  if (!massContainer) return;
+
+  const images = massContainer.querySelectorAll('.mass-period-img');
+  if (!images.length) return;
+
+  // Set initial state - all images invisible
+  images.forEach(img => {
+    img.style.opacity = '0';
+    img.style.transition = `opacity ${MASS_ANIMATION.fadeDuration}ms ${MASS_ANIMATION.easing}`;
+    img.style.display = 'block'; // Ensure display is set correctly
+  });
+
+  // Animate each image sequentially
+  let delay = MASS_ANIMATION.initialDelay;
+
+  images.forEach((img, index) => {
+    setTimeout(() => {
+      img.style.opacity = '1';
+    }, delay);
+
+    delay = MASS_ANIMATION.itemDelay * (index +1); // Increment delay for each image
+  });
+
+  setTimeout(() => {
+    document.getElementById('mass-desktop').classList.add('shadow-cs-bible-mass');
+  }, MASS_SHADOW_ANIMATION.delay);
+}
+
+// Optional: Re-trigger animation if mass becomes visible after being hidden
+// This uses the Intersection Observer API for better performance
+function setupMassObserver() {
+  const mass = document.getElementById('mass-desktop');
+  if (!mass) return;
+
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        animateMassImages();
+        observer.unobserve(entry.target); // Only trigger once
+      }
+    });
+  }, {
+    threshold: 0.2 // Trigger when at least 20% of the mass is visible
+  });
+
+  observer.observe(mass);
+}
+
+setupMassObserver();
+
