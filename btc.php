@@ -3,13 +3,27 @@
 <head>
     <meta content="text/html; charset=ISO-8859-1" http-equiv="content-type"/>
     <title>BT Chart Detail</title>
-
+    <script type="text/javascript" src="/src/wheel-zoom.min.js"></script>
     <style>
         .scaled-image {
             /* empirically, 330% works well if Chrome's zoom is 90% which is what I want */
-            width: 340%;
-            height: auto;
         }
+
+        #myViewport {
+            cursor: grab;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-left: 400px;
+            margin-top: 0px;
+            margin-bottom: 0px;
+            margin-right: 500px;
+            border: 0px solid black;
+            width: 100%;
+            height: 100%;
+
+        }
+
 
         .drag-scroll--enabled {
             cursor: grab
@@ -45,40 +59,32 @@
     Bible Timeline Chart (Jeff Cavins | Ascension
     Press)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 </div>
+<div id="myViewport">
 
 <img
         src="btc.jpg"
+        id="myContent"
         class="scaled-image"
         style="
-        margin-left: 400px;
-        margin-top: 0px;
-        margin-bottom: 0px;
-        margin-right: 500px;
-        border: 0px solid black;
       "/>
+</div>
 
-<script type="text/javascript">
-  // SCROLL HORIZONTALLY
-  // http://www.dte.web.id/2013/02/event-mouse-wheel.html
+<script>
+  // WHEEL ZOOM
+  //
+  var wzoom = WZoom.create('#myContent', {
+    onGrab: function () {
+      frame.style.cursor = 'grabbing';
+    },
+    onDrop: function () {
+      frame.style.cursor = 'grab';
+    }
+  });
 
-        (function() {
-            function scrollHorizontally(e) {
-                e = window.event || e;
-                var delta = Math.max(-1, Math.min(1, e.wheelDelta || -e.detail));
-                document.documentElement.scrollLeft -= delta * 40; // Multiplied by 40
-                document.body.scrollLeft -= delta * 40; // Multiplied by 40
-            }
-            if (window.addEventListener) {
-                // IE9, Chrome, Safari, Opera
-                window.addEventListener("mousewheel", scrollHorizontally, false);
-                // Firefox
-                window.addEventListener("DOMMouseScroll", scrollHorizontally, false);
-            } else {
-                // IE 6/7/8
-                window.attachEvent("onmousewheel", scrollHorizontally);
-            }
-        })();
-    </script>
+  window.addEventListener('resize', function () {
+    if (wzoom) wzoom.prepare();
+  });
+</script>
 <script>
   (function() {
     const ref = document.getElementById('pagebody');
