@@ -48,8 +48,10 @@
   var wzoom = WZoom.create('#myContent', {
     width: null, // auto
     dragScrollable: true,
+    dblclickZoom: false,
+    clickZoom: false,
     maxScale: 10,
-    minScale: 1,
+    minScale: 0.5,
     onGrab: function () {
       document.body.style.cursor = 'grabbing';
     },
@@ -62,7 +64,10 @@
    // if (wzoom) wzoom.prepare();
   });
 
-  // Set initial zoom to x10
+  // Set initial zoom to scale 1
+  if (wzoom && wzoom.transform) {
+    wzoom.transform(0, 2700, 1);
+  }
 </script>
 </body>
 
