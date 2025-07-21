@@ -48,8 +48,7 @@
   var wzoom = WZoom.create('#myContent', {
     width: null, // auto
     dragScrollable: true,
-    dblclickZoom: false,
-    clickZoom: false,
+    zoomOnDblClick: false,
     maxScale: 10,
     minScale: 0.5,
     onGrab: function () {
@@ -68,6 +67,29 @@
   if (wzoom && wzoom.transform) {
     wzoom.transform(0, 2700, 1);
   }
+
+
+  (function() {
+    function scrollHorizontally(e) {
+      e = window.event || e;
+      if (e.shiftKey) {
+        e.preventDefault();
+        var delta = Math.max(-1, Math.min(1, e.wheelDelta || -e.detail));
+        document.documentElement.scrollLeft -= delta * 40; // Multiplied by 40
+        document.body.scrollLeft -= delta * 40; // Multiplied by 40
+        console.log("scrollHorizontally", e);
+      }
+    }
+    if (window.addEventListener) {
+      // IE9, Chrome, Safari, Opera
+      window.addEventListener("mousewheel", scrollHorizontally, false);
+      // Firefox
+      window.addEventListener("DOMMouseScroll", scrollHorizontally, false);
+    } else {
+      // IE 6/7/8
+      window.attachEvent("onmousewheel", scrollHorizontally);
+    }
+  })();
 </script>
 </body>
 
