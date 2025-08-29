@@ -1,96 +1,71 @@
+<!DOCTYPE html>
 <html>
-
 <head>
-    <meta content="text/html; charset=ISO-8859-1" http-equiv="content-type"/>
-    <title>BT Chart Detail</title>
-    <script type="text/javascript" src="/src/wheel-zoom.min.js"></script>
+    <meta content="text/html; charset=UTF-8" http-equiv="content-type"/>
+    <title>BTC Image Viewer</title>
+    <!-- Zoomist CSS -->
     <style>
         html, body {
             height: 100%;
             margin: 0;
             padding: 0;
+            overflow: hidden;
         }
-        #myViewport {
-            width: 100vw;
-            height: 90vh;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            background: #fff;
-            margin-left: 20%;
-            margin-top: 3%;
-            padding: 0;
-        }
-        .scaled-image {
-            max-height: 90vh;
-            height: 90vh;
+
+        .zoomist-image {
+            height: 100vh;
             width: auto;
-            display: block;
-            user-select: none;
-            -webkit-user-drag: none;
         }
+
+        #myContent {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+        }
+
     </style>
 </head>
 
-<body style="font-family: Arial; overflow: auto" id="pagebody">
+<body>
+    <div class="zoomist-container">
+        <div class="zoomist-wrapper">
+            <div class="zoomist-image">
+                <img src="btc.jpg" id="myContent" alt="BTC Image">
+            </div>
+        </div>
+    </div>
 
-<div id="myViewport">
+    <!-- Zoomist JS -->
+    <script src="https://unpkg.com/@panzoom/panzoom@4.6.0/dist/panzoom.min.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+          const elem = document.getElementById('myContent')
+          const panzoom = Panzoom(elem, {
+            maxScale: 10,
+            minScale: 3,
+            overflow: 'auto',
+            startX: 400,
+            startY: 0,
+          })
 
-<img
-        src="btc.jpg"
-        id="myContent"
-        class="scaled-image"/>
-</div>
+          elem.parentElement.addEventListener('dblclick', function (event) {
+              panzoom.zoomToPoint(8, event);
+          });
 
-<script>
-  // WHEEL ZOOM
-  //
-  var wzoom = WZoom.create('#myContent', {
-    width: null, // auto
-    dragScrollable: true,
-    zoomOnDblClick: false,
-    maxScale: 10,
-    minScale: 0.5,
-    onGrab: function () {
-      document.body.style.cursor = 'grabbing';
-    },
-    onDrop: function () {
-      document.body.style.cursor = 'grab';
-    }
-  });
-
-  window.addEventListener('resize', function () {
-   // if (wzoom) wzoom.prepare();
-  });
-
-  // Set initial zoom to scale 1
-  if (wzoom && wzoom.transform) {
-    wzoom.transform(0, 2700, 1);
-  }
-
-
-  (function() {
-    function scrollHorizontally(e) {
-      e = window.event || e;
-      if (e.shiftKey) {
-        e.preventDefault();
-        var delta = Math.max(-1, Math.min(1, e.wheelDelta || -e.detail));
-        document.documentElement.scrollLeft -= delta * 40; // Multiplied by 40
-        document.body.scrollLeft -= delta * 40; // Multiplied by 40
-        console.log("scrollHorizontally", e);
-      }
-    }
-    if (window.addEventListener) {
-      // IE9, Chrome, Safari, Opera
-      window.addEventListener("mousewheel", scrollHorizontally, false);
-      // Firefox
-      window.addEventListener("DOMMouseScroll", scrollHorizontally, false);
-    } else {
-      // IE 6/7/8
-      window.attachEvent("onmousewheel", scrollHorizontally);
-    }
-  })();
-</script>
+          elem.parentElement.addEventListener('wheel', function (event) {
+            if (event.shiftKey) {
+              var delta = Math.max(-1, Math.min(1, event.wheelDelta || -event.detail));
+              panzoom.pan(delta * 20 , 0,  { relative: true });
+              return;
+            }
+            // Panzoom will automatically use `deltaX` here instead
+            // of `deltaY`. On a mac, the shift modifier usually
+            // translates to horizontal scrolling, but Panzoom assumes
+            // the desired behavior is zooming.
+            panzoom.zoomWithWheel(event)
+          });
+        });
+    </script>
 </body>
 
 </html>
